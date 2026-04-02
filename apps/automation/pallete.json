@@ -1,0 +1,16 @@
+{
+  "light": {
+    "background": "#FFFFFF",
+    "foreground": "#000000",
+    "card": "#F0F0F0",
+    "card-foreground": "#000000",
+    "primary": "#007BFF"
+  },
+  "dark": {
+    "background": "#1E1E1E",
+    "foreground": "#FFFFFF",
+    "card": "#2C2C2C",
+    "card-foreground": "#FFFFFF",
+    "primary": "#007BFF"
+  }
+}
