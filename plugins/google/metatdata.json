@@ -1,7 +1,0 @@
-{
-  "label": "Google",
-  "description": "Google integration for various services and APIs.",
-  "integrations": {
-    "automation": ["Google Sheets", "Google Calendar", "Google Drive"]
-  }
-}
