@@ -1,6 +1,6 @@
 [
   {
-    "id": "http",
+    "id": "http-nodes",
     "name": "http",
     "type": "tool",
     "description": "HTTP request maker - send GET, POST, PUT, DELETE requests to any API endpoint",
