@@ -17,3 +17,6 @@
 - Python (3.10+ recommended)
 - pip
 - uv
+
+## Contribution
+See [CONTRIBUTION_RULES.md](./CONTRIBUTION_RULES.md) for contribution guidelines.
