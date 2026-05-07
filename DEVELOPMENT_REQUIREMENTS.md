@@ -9,11 +9,11 @@
 - Git
 - Docker
 
-## JavaScript / TypeScript
+## For (JavaScript / TypeScript) developers
 - Node.js (LTS recommended)
 - pnpm
 
-## Python / AI
+## For (Python / AI) developers
 - Python (3.10+ recommended)
 - pip
 - uv
