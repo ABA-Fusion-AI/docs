@@ -8,9 +8,7 @@
     "icon": "icons/httprequest.svg",
     "integrations": {
       "automation": [
-        "http-request",
-        "webhook",
-        "respond-to-webhook"
+        "http-request"
       ]
     }
   },
@@ -3428,19 +3426,7 @@
       ]
     }
   },
-  {
-    "id": "debounce-time",
-    "name": "Debounce Time",
-    "type": "tool",
-    "description": "Debounce timer - delay execution until input stops changing for a set duration",
-    "slogan": "debounce-time",
-    "icon": "icons/debounce.svg",
-    "integrations": {
-      "automation": [
-        "debounce-time"
-      ]
-    }
-  },
+
   {
     "id": "debt-consolidation",
     "name": "Debt Consolidation",
@@ -4001,19 +3987,7 @@
       ]
     }
   },
-  {
-    "id": "filter",
-    "name": "Filter",
-    "type": "tool",
-    "description": "Conditional filter - route data based on matching conditions and rules",
-    "slogan": "filter",
-    "icon": "icons/filter-array.svg",
-    "integrations": {
-      "automation": [
-        "filter"
-      ]
-    }
-  },
+  
   {
     "id": "filter-array",
     "name": "Filter Array",
@@ -4848,19 +4822,6 @@
     }
   },
   {
-    "id": "interval",
-    "name": "Interval",
-    "type": "tool",
-    "description": "Interval timer trigger - execute workflows at regular time intervals",
-    "slogan": "interval",
-    "icon": "icons/interval.svg",
-    "integrations": {
-      "automation": [
-        "interval"
-      ]
-    }
-  },
-  {
     "id": "inventory-logistics",
     "name": "Inventory Logistics",
     "type": "tool",
@@ -5288,19 +5249,6 @@
     }
   },
   {
-    "id": "log",
-    "name": "Log",
-    "type": "tool",
-    "description": "Debug logger - output data to the console for workflow debugging and monitoring",
-    "slogan": "log",
-    "icon": "icons/logs.svg",
-    "integrations": {
-      "automation": [
-        "log"
-      ]
-    }
-  },
-  {
     "id": "lopinion",
     "name": "Lopinion",
     "type": "tool",
@@ -5417,19 +5365,7 @@
       ]
     }
   },
-  {
-    "id": "manual-trigger",
-    "name": "Manual Trigger",
-    "type": "tool",
-    "description": "Manual trigger - start workflows manually with custom input parameters",
-    "slogan": "manual-trigger",
-    "icon": "icons/default-fill.svg",
-    "integrations": {
-      "automation": [
-        "manual-trigger"
-      ]
-    }
-  },
+  
   {
     "id": "map-news",
     "name": "Map News",
@@ -5586,19 +5522,7 @@
       ]
     }
   },
-  {
-    "id": "merge",
-    "name": "Merge",
-    "type": "tool",
-    "description": "Data merger - combine multiple input streams into a single output",
-    "slogan": "merge",
-    "icon": "icons/join-branches.svg",
-    "integrations": {
-      "automation": [
-        "merge"
-      ]
-    }
-  },
+  
   {
     "id": "meshy",
     "name": "Meshy",
@@ -7742,19 +7666,7 @@
       ]
     }
   },
-  {
-    "id": "switch",
-    "name": "Switch",
-    "type": "tool",
-    "description": "Switch router - route data to different outputs based on matching field values",
-    "slogan": "switch",
-    "icon": "icons/switch.svg",
-    "integrations": {
-      "automation": [
-        "switch"
-      ]
-    }
-  },
+  
   {
     "id": "symptomator",
     "name": "Symptomator",
@@ -7882,19 +7794,6 @@
     "integrations": {
       "automation": [
         "themealdb"
-      ]
-    }
-  },
-  {
-    "id": "throttle",
-    "name": "Throttle",
-    "type": "tool",
-    "description": "Throttle - limit execution rate to a maximum number of items per time window",
-    "slogan": "throttle",
-    "icon": "icons/throttle.svg",
-    "integrations": {
-      "automation": [
-        "throttle"
       ]
     }
   },
