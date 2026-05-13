@@ -4132,19 +4132,6 @@
     }
   },
   {
-    "id": "function",
-    "name": "Function",
-    "type": "tool",
-    "description": "Custom JavaScript function - execute custom code with input data transformation",
-    "slogan": "function",
-    "icon": "icons/code.svg",
-    "integrations": {
-      "automation": [
-        "function"
-      ]
-    }
-  },
-  {
     "id": "fx-hedging",
     "name": "Fx Hedging",
     "type": "tool",
