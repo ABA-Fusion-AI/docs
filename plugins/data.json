@@ -1,5 +1,18 @@
 [
   {
+    "id": "agent",
+    "name": "agent",
+    "type": "agent",
+    "description": "langchain agent",
+    "slogan": "agent",
+    "icon": "icons/ai-agent.svg",
+    "integrations": {
+      "automation": [
+        "agent"
+      ]
+    }
+  },
+  {
     "id": "http-nodes",
     "name": "http",
     "type": "tool",
