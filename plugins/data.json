@@ -1,5 +1,18 @@
 [
   {
+    "id": "langfuse",
+    "name": "langfuse",
+    "type": "ai",
+    "description": "langfuse nodes",
+    "slogan": "langfuse",
+    "icon": "icons/langfuse.svg",
+    "integrations": {
+      "automation": [
+        "langfuse"
+      ]
+    }
+  },
+  {
     "id": "agent",
     "name": "agent",
     "type": "agent",
