@@ -482,16 +482,16 @@
     }
   },
   {
-    "id": "aws-dynamodb",
+    "id": "aws-dynamo-db",
     "name": "AWS DynamoDB",
     "type": "tool",
-    "description": "AWS DynamoDB - serverless NoSQL database with fast key-value and document storage",
-    "slogan": "aws-dynamodb",
+    "description": "AWS DynamoDB - serverless NoSQL database operations and polling trigger.",
+    "slogan": "aws-dynamo-db",
     "icon": "icons/dynamodb.svg",
     "integrations": {
       "automation": [
-        "aws-dynamodb",
-        "aws-dynamodb.trigger"
+        "aws-dynamo-db",
+        "aws-dynamo-db-trigger"
       ]
     }
   },
@@ -499,15 +499,27 @@
     "id": "aws-s3",
     "name": "AWS S3",
     "type": "tool",
-    "description": "AWS S3 - scalable object storage for files, backups, and static assets",
+    "description": "AWS S3 - manage buckets, files, folders, and new-object polling trigger.",
     "slogan": "aws-s3",
     "icon": "icons/aws-s3.svg",
     "integrations": {
       "automation": [
-        "aws-s3.bucket",
-        "aws-s3.file",
-        "aws-s3.folder",
-        "aws-s3.trigger"
+        "aws-s3-bucket",
+        "aws-s3-create-bucket",
+        "aws-s3-list-buckets",
+        "aws-s3-search-buckets",
+        "aws-s3-delete-bucket",
+        "aws-s3-file",
+        "aws-s3-upload-file",
+        "aws-s3-download-file",
+        "aws-s3-list-objects",
+        "aws-s3-delete-objects",
+        "aws-s3-copy-object",
+        "aws-s3-folder",
+        "aws-s3-create-folder",
+        "aws-s3-get-folder",
+        "aws-s3-delete-folder",
+        "aws-s3-trigger"
       ]
     }
   },
@@ -580,26 +592,26 @@
     "id": "s3-compatible",
     "name": "S3 Compatible",
     "type": "tool",
-    "description": "S3-compatible storage - manage files, folders, and buckets on any S3-compatible service",
+    "description": "S3-compatible storage - manage files, folders, and buckets on any S3-compatible service.",
     "slogan": "s3-compatible",
     "icon": "icons/s3.svg",
     "integrations": {
       "automation": [
+        "s3-bucket",
         "s3-create-bucket",
-        "s3-delete-bucket",
         "s3-list-buckets",
         "s3-search-buckets",
+        "s3-delete-bucket",
+        "s3-file",
         "s3-upload-file",
         "s3-download-file",
         "s3-list-files",
-        "s3-delete-files",
+        "s3-delete-file",
         "s3-copy-file",
+        "s3-folder",
         "s3-create-folder",
-        "s3-get-folders",
-        "s3-delete-folder",
-        "s3.file",
-        "s3.folder",
-        "s3.bucket"
+        "s3-get-all-folders",
+        "s3-delete-folder"
       ]
     }
   },
@@ -3452,7 +3464,6 @@
       ]
     }
   },
-
   {
     "id": "debt-consolidation",
     "name": "Debt Consolidation",
@@ -4013,7 +4024,6 @@
       ]
     }
   },
-  
   {
     "id": "filter-array",
     "name": "Filter Array",
@@ -5378,7 +5388,6 @@
       ]
     }
   },
-  
   {
     "id": "map-news",
     "name": "Map News",
@@ -5535,7 +5544,6 @@
       ]
     }
   },
-  
   {
     "id": "meshy",
     "name": "Meshy",
@@ -7303,19 +7311,6 @@
     }
   },
   {
-    "id": "ses",
-    "name": "Ses",
-    "type": "tool",
-    "description": "Amazon SES email service - send transactional emails via AWS Simple Email Service",
-    "slogan": "ses",
-    "icon": "icons/ses.svg",
-    "integrations": {
-      "automation": [
-        "aws-ses"
-      ]
-    }
-  },
-  {
     "id": "set-field",
     "name": "Set Field",
     "type": "tool",
@@ -7679,7 +7674,6 @@
       ]
     }
   },
-  
   {
     "id": "symptomator",
     "name": "Symptomator",
@@ -8865,38 +8859,12 @@
     "id": "aws-ses",
     "name": "AWS SES",
     "type": "tool",
-    "description": "Send emails, manage identities, and work with templates using Amazon SES",
+    "description": "Amazon SES email service - send transactional emails via AWS Simple Email Service.",
     "slogan": "aws-ses",
-    "icon": "icons/aws-ses.svg",
+    "icon": "icons/ses.svg",
     "integrations": {
       "automation": [
         "aws-ses"
-      ]
-    }
-  },
-  {
-    "id": "aws-sns",
-    "name": "AWS SNS",
-    "type": "tool",
-    "description": "Send notifications via AWS Simple Notification Service",
-    "slogan": "aws-sns",
-    "icon": "icons/aws-sns.svg",
-    "integrations": {
-      "automation": [
-        "aws-sns"
-      ]
-    }
-  },
-  {
-    "id": "aws-sqs",
-    "name": "AWS SQS",
-    "type": "tool",
-    "description": "Queue messages via AWS Simple Queue Service",
-    "slogan": "aws-sqs",
-    "icon": "icons/aws-sqs.svg",
-    "integrations": {
-      "automation": [
-        "aws-sqs"
       ]
     }
   },
@@ -10331,19 +10299,6 @@
     }
   },
   {
-    "id": "aws-cognito",
-    "name": "AWS Cognito",
-    "type": "tool",
-    "description": "Manage users in AWS Cognito user pools",
-    "slogan": "aws-cognito",
-    "icon": "icons/aws-cognito.svg",
-    "integrations": {
-      "automation": [
-        "aws-cognito"
-      ]
-    }
-  },
-  {
     "id": "bitwarden",
     "name": "Bitwarden",
     "type": "tool",
@@ -10513,58 +10468,6 @@
     }
   },
   {
-    "id": "aws-acm",
-    "name": "AWS Certificate Manager",
-    "type": "tool",
-    "description": "Manage SSL/TLS certificates with AWS Certificate Manager",
-    "slogan": "aws-acm",
-    "icon": "icons/aws-acm.svg",
-    "integrations": {
-      "automation": [
-        "aws-acm"
-      ]
-    }
-  },
-  {
-    "id": "aws-elb",
-    "name": "AWS ELB",
-    "type": "tool",
-    "description": "Manage AWS Elastic Load Balancers",
-    "slogan": "aws-elb",
-    "icon": "icons/aws-elb.svg",
-    "integrations": {
-      "automation": [
-        "aws-elb"
-      ]
-    }
-  },
-  {
-    "id": "aws-iam",
-    "name": "AWS IAM",
-    "type": "tool",
-    "description": "Manage AWS IAM users, groups, policies, and roles using SigV4 auth",
-    "slogan": "aws-iam",
-    "icon": "icons/aws-iam.svg",
-    "integrations": {
-      "automation": [
-        "aws-iam"
-      ]
-    }
-  },
-  {
-    "id": "aws-lambda",
-    "name": "AWS Lambda",
-    "type": "tool",
-    "description": "Manage and invoke AWS Lambda functions",
-    "slogan": "aws-lambda",
-    "icon": "icons/aws-lambda.svg",
-    "integrations": {
-      "automation": [
-        "aws-lambda"
-      ]
-    }
-  },
-  {
     "id": "cloudflare-pages",
     "name": "Cloudflare Pages",
     "type": "tool",
@@ -10691,58 +10594,6 @@
     "integrations": {
       "automation": [
         "travisci"
-      ]
-    }
-  },
-  {
-    "id": "aws-comprehend",
-    "name": "AWS Comprehend",
-    "type": "tool",
-    "description": "Analyze text with AWS Comprehend NLP (sentiment, entities, key phrases, PII)",
-    "slogan": "aws-comprehend",
-    "icon": "icons/aws-comprehend.svg",
-    "integrations": {
-      "automation": [
-        "aws-comprehend"
-      ]
-    }
-  },
-  {
-    "id": "aws-rekognition",
-    "name": "AWS Rekognition",
-    "type": "tool",
-    "description": "Image analysis with AWS Rekognition",
-    "slogan": "aws-rekognition",
-    "icon": "icons/aws-rekognition.svg",
-    "integrations": {
-      "automation": [
-        "aws-rekognition"
-      ]
-    }
-  },
-  {
-    "id": "aws-textract",
-    "name": "AWS Textract",
-    "type": "tool",
-    "description": "Extract text, forms, tables, and expenses from documents using AWS Textract",
-    "slogan": "aws-textract",
-    "icon": "icons/aws-textract.svg",
-    "integrations": {
-      "automation": [
-        "aws-textract"
-      ]
-    }
-  },
-  {
-    "id": "aws-transcribe",
-    "name": "AWS Transcribe",
-    "type": "tool",
-    "description": "Speech-to-text with AWS Transcribe",
-    "slogan": "aws-transcribe",
-    "icon": "icons/aws-transcribe.svg",
-    "integrations": {
-      "automation": [
-        "aws-transcribe"
       ]
     }
   },
@@ -11497,6 +11348,66 @@
     "integrations": {
       "automation": [
         "workable"
+      ]
+    }
+  },
+  {
+    "id": "aws",
+    "name": "AWS",
+    "type": "tool",
+    "description": "AWS nodes for DynamoDB, S3, SES, and S3-compatible storage operations.",
+    "slogan": "aws",
+    "icon": "icons/aws.svg",
+    "integrations": {
+      "automation": [
+        "aws-dynamo-db",
+        "aws-dynamo-db-trigger",
+        "aws-s3-bucket",
+        "aws-s3-copy-object",
+        "aws-s3-create-bucket",
+        "aws-s3-create-folder",
+        "aws-s3-delete-bucket",
+        "aws-s3-delete-folder",
+        "aws-s3-delete-objects",
+        "aws-s3-download-file",
+        "aws-s3-file",
+        "aws-s3-folder",
+        "aws-s3-get-folder",
+        "aws-s3-list-buckets",
+        "aws-s3-list-objects",
+        "aws-s3-search-buckets",
+        "aws-s3-trigger",
+        "aws-s3-upload-file",
+        "aws-ses",
+        "s3-bucket",
+        "s3-copy-file",
+        "s3-create-bucket",
+        "s3-create-folder",
+        "s3-delete-bucket",
+        "s3-delete-file",
+        "s3-delete-folder",
+        "s3-download-file",
+        "s3-file",
+        "s3-folder",
+        "s3-get-all-folders",
+        "s3-list-buckets",
+        "s3-list-files",
+        "s3-search-buckets",
+        "s3-upload-file"
+      ]
+    }
+  },
+  {
+    "id": "aws-dynamo-db",
+    "name": "AWS DynamoDB",
+    "type": "tool",
+    "description": "AWS DynamoDB - serverless NoSQL database operations and polling trigger.",
+    "slogan": "aws-dynamo-db",
+    "icon": "icons/dynamodb.svg",
+    "integrations": {
+      "automation": [
+        "aws-dynamo-db",
+        "aws-dynamo-db-trigger"
       ]
     }
   }
