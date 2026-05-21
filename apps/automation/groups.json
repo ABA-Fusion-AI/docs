@@ -43,11 +43,15 @@
     "subgroups": [
       {
         "name": "Inter-Workflow",
-        "nodes": ["sub"]
+        "nodes": [
+          "sub"
+        ]
       },
       {
         "name": "Debugging",
-        "nodes": ["once"]
+        "nodes": [
+          "once"
+        ]
       }
     ]
   },
@@ -55,11 +59,16 @@
     "name": "Core",
     "icon": "icons/core-icon",
     "color": "#9370DB",
-    "nodes": ["take", "throttle"],
+    "nodes": [
+      "take",
+      "throttle"
+    ],
     "subgroups": [
       {
         "name": "Inter-Workflow",
-        "nodes": ["pub"]
+        "nodes": [
+          "pub"
+        ]
       }
     ]
   },
@@ -67,11 +76,16 @@
     "name": "Utility",
     "icon": "icons/utility-icon",
     "color": "#33FF57",
-    "nodes": ["map-keys", "select-key"],
+    "nodes": [
+      "map-keys",
+      "select-key"
+    ],
     "subgroups": [
       {
         "name": "Iterate",
-        "nodes": ["iterate"]
+        "nodes": [
+          "iterate"
+        ]
       }
     ]
   },
@@ -83,7 +97,13 @@
     "subgroups": [
       {
         "name": "Logic",
-        "nodes": ["delay", "debounce-time", "merge", "switch", "throttle-time"]
+        "nodes": [
+          "delay",
+          "debounce-time",
+          "merge",
+          "switch",
+          "throttle-time"
+        ]
       },
       {
         "name": "EDI",
@@ -213,27 +233,40 @@
       },
       {
         "name": "Elasticsearch",
-        "nodes": ["elasticsearch"]
+        "nodes": [
+          "elasticsearch"
+        ]
       },
       {
         "name": "Firebase",
-        "nodes": ["firestore"]
+        "nodes": [
+          "firestore"
+        ]
       },
       {
         "name": "FTP/SFTP",
-        "nodes": ["ftp-sftp-write-file", "sftp"]
+        "nodes": [
+          "ftp-sftp-write-file",
+          "sftp"
+        ]
       },
       {
         "name": "InfluxDB",
-        "nodes": ["influxdb"]
+        "nodes": [
+          "influxdb"
+        ]
       },
       {
         "name": "Notion",
-        "nodes": ["notion"]
+        "nodes": [
+          "notion"
+        ]
       },
       {
         "name": "Seatable",
-        "nodes": ["seatable"]
+        "nodes": [
+          "seatable"
+        ]
       },
       {
         "name": "Rymo",
@@ -285,7 +318,10 @@
     "subgroups": [
       {
         "name": "type conversion",
-        "nodes": ["parse-base64", "parse-json"]
+        "nodes": [
+          "parse-base64",
+          "parse-json"
+        ]
       }
     ]
   },
@@ -330,15 +366,24 @@
       },
       {
         "name": "Bioinformatics",
-        "nodes": ["bar"]
+        "nodes": [
+          "bar"
+        ]
       },
       {
         "name": "BBC",
-        "nodes": ["bbc-co-uk", "bbc-com", "bbci-co-uk"]
+        "nodes": [
+          "bbc-co-uk",
+          "bbc-com",
+          "bbci-co-uk"
+        ]
       },
       {
         "name": "Bing",
-        "nodes": ["bing-copilot-search", "bing-search"]
+        "nodes": [
+          "bing-copilot-search",
+          "bing-search"
+        ]
       },
       {
         "name": "Image Search",
@@ -356,11 +401,18 @@
       },
       {
         "name": "Government",
-        "nodes": ["census-gov", "federal-register", "nhtsa", "parlement-maroc"]
+        "nodes": [
+          "census-gov",
+          "federal-register",
+          "nhtsa",
+          "parlement-maroc"
+        ]
       },
       {
         "name": "Scientific Search",
-        "nodes": ["cern-opendata"]
+        "nodes": [
+          "cern-opendata"
+        ]
       },
       {
         "name": "Specialized",
@@ -373,7 +425,9 @@
       },
       {
         "name": "Emergency Management",
-        "nodes": ["copernicus-ems"]
+        "nodes": [
+          "copernicus-ems"
+        ]
       },
       {
         "name": "Academic Search",
@@ -430,99 +484,157 @@
       },
       {
         "name": "Reference",
-        "nodes": ["free-dictionary", "quotable"]
+        "nodes": [
+          "free-dictionary",
+          "quotable"
+        ]
       },
       {
         "name": "Utilities",
-        "nodes": ["genderize", "nationalize"]
+        "nodes": [
+          "genderize",
+          "nationalize"
+        ]
       },
       {
         "name": "Icons",
-        "nodes": ["iconhorse"]
+        "nodes": [
+          "iconhorse"
+        ]
       },
       {
         "name": "Space",
-        "nodes": ["launch-library-2", "spacex-launches"]
+        "nodes": [
+          "launch-library-2",
+          "spacex-launches"
+        ]
       },
       {
         "name": "Media",
-        "nodes": ["listennotes"]
+        "nodes": [
+          "listennotes"
+        ]
       },
       {
         "name": "Marches Publics",
-        "nodes": ["marches-publics"]
+        "nodes": [
+          "marches-publics"
+        ]
       },
       {
         "name": "Blogging",
-        "nodes": ["medium"]
+        "nodes": [
+          "medium"
+        ]
       },
       {
         "name": "Environement",
-        "nodes": ["mrds"]
+        "nodes": [
+          "mrds"
+        ]
       },
       {
         "name": "Nasa",
-        "nodes": ["nasa-apod", "nasa-media-search", "nasa"]
+        "nodes": [
+          "nasa-apod",
+          "nasa-media-search",
+          "nasa"
+        ]
       },
       {
         "name": "Content & Feeds",
-        "nodes": ["news-article", "rss-feed", "wikipedia"]
+        "nodes": [
+          "news-article",
+          "rss-feed",
+          "wikipedia"
+        ]
       },
       {
         "name": "Nobel Prize",
-        "nodes": ["nobel-prize"]
+        "nodes": [
+          "nobel-prize"
+        ]
       },
       {
         "name": "Book Search",
-        "nodes": ["open-library-search", "project-gutenberg-search"]
+        "nodes": [
+          "open-library-search",
+          "project-gutenberg-search"
+        ]
       },
       {
         "name": "Travel",
-        "nodes": ["opentable-reviews-search", "tripadvisor-search"]
+        "nodes": [
+          "opentable-reviews-search",
+          "tripadvisor-search"
+        ]
       },
       {
         "name": "Pharmacy on duty",
-        "nodes": ["pharmacy-scraper"]
+        "nodes": [
+          "pharmacy-scraper"
+        ]
       },
       {
         "name": "Quran",
-        "nodes": ["quran"]
+        "nodes": [
+          "quran"
+        ]
       },
       {
         "name": "Social Media",
-        "nodes": ["reddit-api"]
+        "nodes": [
+          "reddit-api"
+        ]
       },
       {
         "name": "Rekrute",
-        "nodes": ["rekrutema-detail"]
+        "nodes": [
+          "rekrutema-detail"
+        ]
       },
       {
         "name": "General",
-        "nodes": ["serpapi", "tavily"]
+        "nodes": [
+          "serpapi",
+          "tavily"
+        ]
       },
       {
         "name": "Stock Media",
-        "nodes": ["shutterstock"]
+        "nodes": [
+          "shutterstock"
+        ]
       },
       {
         "name": "Music",
-        "nodes": ["soundcloud"]
+        "nodes": [
+          "soundcloud"
+        ]
       },
       {
         "name": "Recipes",
-        "nodes": ["themealdb"]
+        "nodes": [
+          "themealdb"
+        ]
       },
       {
         "name": "USA Patents",
-        "nodes": ["usa-patents"]
+        "nodes": [
+          "usa-patents"
+        ]
       },
       {
         "name": "Knowledge Base",
-        "nodes": ["wikidata"]
+        "nodes": [
+          "wikidata"
+        ]
       },
       {
         "name": "Name Analysis",
-        "nodes": ["agify"]
+        "nodes": [
+          "agify"
+        ]
       },
       {
         "name": "Google",
@@ -550,7 +662,10 @@
     "subgroups": [
       {
         "name": "Stocks",
-        "nodes": ["alpha-vantage", "financial-modeling-prep"]
+        "nodes": [
+          "alpha-vantage",
+          "financial-modeling-prep"
+        ]
       },
       {
         "name": "Utilities",
@@ -598,23 +713,34 @@
       },
       {
         "name": "Binga",
-        "nodes": ["binga-create-payment-request"]
+        "nodes": [
+          "binga-create-payment-request"
+        ]
       },
       {
         "name": "CMI",
-        "nodes": ["cmi-generate-payment-form"]
+        "nodes": [
+          "cmi-generate-payment-form"
+        ]
       },
       {
         "name": "Document Management",
-        "nodes": ["docusign"]
+        "nodes": [
+          "docusign"
+        ]
       },
       {
         "name": "Currency",
-        "nodes": ["exchangerate-api", "frankfurter-exchange"]
+        "nodes": [
+          "exchangerate-api",
+          "frankfurter-exchange"
+        ]
       },
       {
         "name": "CRM",
-        "nodes": ["hubspot"]
+        "nodes": [
+          "hubspot"
+        ]
       },
       {
         "name": "Payments",
@@ -628,11 +754,16 @@
       },
       {
         "name": "Companies",
-        "nodes": ["opencorporates"]
+        "nodes": [
+          "opencorporates"
+        ]
       },
       {
         "name": "PayPal",
-        "nodes": ["paypal-capture-payment", "paypal-create-order"]
+        "nodes": [
+          "paypal-capture-payment",
+          "paypal-create-order"
+        ]
       },
       {
         "name": "Salesforce",
@@ -652,27 +783,39 @@
       },
       {
         "name": "Stocks & Analysis",
-        "nodes": ["sec-edgar"]
+        "nodes": [
+          "sec-edgar"
+        ]
       },
       {
         "name": "Tax & Invoicing",
-        "nodes": ["vatcomply"]
+        "nodes": [
+          "vatcomply"
+        ]
       },
       {
         "name": "Social",
-        "nodes": ["wallstreetbets-reddit"]
+        "nodes": [
+          "wallstreetbets-reddit"
+        ]
       },
       {
         "name": "Accounting",
-        "nodes": ["xero"]
+        "nodes": [
+          "xero"
+        ]
       },
       {
         "name": "Banking",
-        "nodes": ["yodlee"]
+        "nodes": [
+          "yodlee"
+        ]
       },
       {
         "name": "Stripe",
-        "nodes": ["stripe-create-payment-link"]
+        "nodes": [
+          "stripe-create-payment-link"
+        ]
       }
     ]
   },
@@ -732,47 +875,75 @@
     "subgroups": [
       {
         "name": "AMQP",
-        "nodes": ["amqp-consume", "amqp-publish"]
+        "nodes": [
+          "amqp-consume",
+          "amqp-publish"
+        ]
       },
       {
         "name": "BACnet",
-        "nodes": ["bacnet-read", "bacnet-write"]
+        "nodes": [
+          "bacnet-read",
+          "bacnet-write"
+        ]
       },
       {
         "name": "CoAP",
-        "nodes": ["coap-client"]
+        "nodes": [
+          "coap-client"
+        ]
       },
       {
         "name": "DNP3",
-        "nodes": ["dnp3-master"]
+        "nodes": [
+          "dnp3-master"
+        ]
       },
       {
         "name": "EtherNet/IP",
-        "nodes": ["ethernet-ip-read", "ethernet-ip-write"]
+        "nodes": [
+          "ethernet-ip-read",
+          "ethernet-ip-write"
+        ]
       },
       {
         "name": "Modbus",
-        "nodes": ["modbus-read", "modbus-write"]
+        "nodes": [
+          "modbus-read",
+          "modbus-write"
+        ]
       },
       {
         "name": "MQTT",
-        "nodes": ["mqtt-publisher"]
+        "nodes": [
+          "mqtt-publisher"
+        ]
       },
       {
         "name": "OPC UA",
-        "nodes": ["opc"]
+        "nodes": [
+          "opc"
+        ]
       },
       {
         "name": "OSIsoft PI",
-        "nodes": ["osisoft"]
+        "nodes": [
+          "osisoft"
+        ]
       },
       {
         "name": "PROFINET",
-        "nodes": ["profinet-read", "profinet-write"]
+        "nodes": [
+          "profinet-read",
+          "profinet-write"
+        ]
       },
       {
         "name": "SCADA",
-        "nodes": ["scada-read", "scada-write"]
+        "nodes": [
+          "scada-read",
+          "scada-write"
+        ]
       }
     ]
   },
@@ -784,7 +955,11 @@
     "subgroups": [
       {
         "name": "Other Medical Sources",
-        "nodes": ["biorxiv", "pmc", "google-scholar"]
+        "nodes": [
+          "biorxiv",
+          "pmc",
+          "google-scholar"
+        ]
       },
       {
         "name": "Biology & Life Sciences",
@@ -800,67 +975,103 @@
       },
       {
         "name": "FHIR",
-        "nodes": ["bonfhir-client"]
+        "nodes": [
+          "bonfhir-client"
+        ]
       },
       {
         "name": "Chemistry & Life Sciences",
-        "nodes": ["cactus", "rsc"]
+        "nodes": [
+          "cactus",
+          "rsc"
+        ]
       },
       {
         "name": "Chemistry",
-        "nodes": ["chembl"]
+        "nodes": [
+          "chembl"
+        ]
       },
       {
         "name": "Clinical Databases",
-        "nodes": ["clinical-tables-search"]
+        "nodes": [
+          "clinical-tables-search"
+        ]
       },
       {
         "name": "Clinical Trials",
-        "nodes": ["clinical-trials-search"]
+        "nodes": [
+          "clinical-trials-search"
+        ]
       },
       {
         "name": "Biodiversity",
-        "nodes": ["gbif-occurrence", "gbif", "perenual", "plantnet"]
+        "nodes": [
+          "gbif-occurrence",
+          "gbif",
+          "perenual",
+          "plantnet"
+        ]
       },
       {
         "name": "Health Topics",
-        "nodes": ["health-topics-search"]
+        "nodes": [
+          "health-topics-search"
+        ]
       },
       {
         "name": "Healthcare Integration",
-        "nodes": ["hl7-client"]
+        "nodes": [
+          "hl7-client"
+        ]
       },
       {
         "name": "ICD",
-        "nodes": ["icd11-search"]
+        "nodes": [
+          "icd11-search"
+        ]
       },
       {
         "name": "Médicaments API FR",
-        "nodes": ["medicaments-api"]
+        "nodes": [
+          "medicaments-api"
+        ]
       },
       {
         "name": "Pre-print Articles",
-        "nodes": ["medrxiv-search"]
+        "nodes": [
+          "medrxiv-search"
+        ]
       },
       {
         "name": "Mendeley",
-        "nodes": ["mendeley"]
+        "nodes": [
+          "mendeley"
+        ]
       },
       {
         "name": "OpenFoodFacts",
-        "nodes": ["openfoodfacts"]
+        "nodes": [
+          "openfoodfacts"
+        ]
       },
       {
         "name": "Imaging / PACS",
-        "nodes": ["orthanc"]
+        "nodes": [
+          "orthanc"
+        ]
       },
       {
         "name": "Patient Data",
-        "nodes": ["patientview"]
+        "nodes": [
+          "patientview"
+        ]
       },
       {
         "name": "Medicaments",
-        "nodes": ["pharmamaroc"]
+        "nodes": [
+          "pharmamaroc"
+        ]
       },
       {
         "name": "PubMed",
@@ -873,19 +1084,27 @@
       },
       {
         "name": "RCSB",
-        "nodes": ["rcsb-pdb"]
+        "nodes": [
+          "rcsb-pdb"
+        ]
       },
       {
         "name": "Diagnosis",
-        "nodes": ["symptomator"]
+        "nodes": [
+          "symptomator"
+        ]
       },
       {
         "name": "WHO GHO",
-        "nodes": ["who-gho-odata"]
+        "nodes": [
+          "who-gho-odata"
+        ]
       },
       {
         "name": "Zotero",
-        "nodes": ["zotero"]
+        "nodes": [
+          "zotero"
+        ]
       },
       {
         "name": "BioNeMo",
@@ -976,7 +1195,9 @@
     "subgroups": [
       {
         "name": "Version Control",
-        "nodes": ["bitbucket"]
+        "nodes": [
+          "bitbucket"
+        ]
       },
       {
         "name": "Utilities",
@@ -998,35 +1219,55 @@
       },
       {
         "name": "Testing",
-        "nodes": ["beeceptor", "httpbin", "httpstat"]
+        "nodes": [
+          "beeceptor",
+          "httpbin",
+          "httpstat"
+        ]
       },
       {
         "name": "Libraries",
-        "nodes": ["cdnjs"]
+        "nodes": [
+          "cdnjs"
+        ]
       },
       {
         "name": "CI/CD",
-        "nodes": ["circleci"]
+        "nodes": [
+          "circleci"
+        ]
       },
       {
         "name": "Containers",
-        "nodes": ["docker-hub", "docker"]
+        "nodes": [
+          "docker-hub",
+          "docker"
+        ]
       },
       {
         "name": "Network",
-        "nodes": ["ipify", "ipinfo"]
+        "nodes": [
+          "ipify",
+          "ipinfo"
+        ]
       },
       {
         "name": "Authentication",
-        "nodes": ["keycloak"]
+        "nodes": [
+          "keycloak"
+        ]
       },
       {
         "name": "Package Managers",
-        "nodes": ["npm"]
+        "nodes": [
+          "npm"
+        ]
       },
       {
         "name": "SSH",
-        "nodes": ["ssh"]
+        "nodes": [
+          "ssh"
+        ]
       }
     ]
   },
@@ -1038,19 +1279,33 @@
     "subgroups": [
       {
         "name": "Utility",
-        "nodes": ["banana-dev", "hugging-face-inference", "shotstack"]
+        "nodes": [
+          "banana-dev",
+          "hugging-face-inference",
+          "shotstack"
+        ]
       },
       {
         "name": "Avatar Video",
-        "nodes": ["d-id", "heygen", "synthesia"]
+        "nodes": [
+          "d-id",
+          "heygen",
+          "synthesia"
+        ]
       },
       {
         "name": "Audio",
-        "nodes": ["deepgram", "play-ht", "suno-ai"]
+        "nodes": [
+          "deepgram",
+          "play-ht",
+          "suno-ai"
+        ]
       },
       {
         "name": "Image Recognition",
-        "nodes": ["facecheck"]
+        "nodes": [
+          "facecheck"
+        ]
       },
       {
         "name": "Image Generation",
@@ -1071,11 +1326,17 @@
       },
       {
         "name": "Gemini File Search",
-        "nodes": ["gemini-file-search"]
+        "nodes": [
+          "gemini-file-search"
+        ]
       },
       {
         "name": "Video Generation",
-        "nodes": ["hailuo-ai", "luma-dream-machine", "runwayml"]
+        "nodes": [
+          "hailuo-ai",
+          "luma-dream-machine",
+          "runwayml"
+        ]
       },
       {
         "name": "Jina",
@@ -1092,19 +1353,28 @@
       },
       {
         "name": "3D Models",
-        "nodes": ["meshy", "tripo-ai"]
+        "nodes": [
+          "meshy",
+          "tripo-ai"
+        ]
       },
       {
         "name": "Mistral",
-        "nodes": ["mistral-doc"]
+        "nodes": [
+          "mistral-doc"
+        ]
       },
       {
         "name": "Image Processing",
-        "nodes": ["remove-bg"]
+        "nodes": [
+          "remove-bg"
+        ]
       },
       {
         "name": "Salesforce Einstein",
-        "nodes": ["salesforce.einstein"]
+        "nodes": [
+          "salesforce.einstein"
+        ]
       },
       {
         "name": "Eleven Labs",
@@ -1162,7 +1432,9 @@
       },
       {
         "name": "Google Speech",
-        "nodes": ["google-speech"]
+        "nodes": [
+          "google-speech"
+        ]
       }
     ]
   },
@@ -1196,27 +1468,42 @@
     "subgroups": [
       {
         "name": "Network Calc",
-        "nodes": ["network-calc-security", "networkcalc"]
+        "nodes": [
+          "network-calc-security",
+          "networkcalc"
+        ]
       },
       {
         "name": "Vulnerability Scanning",
-        "nodes": ["snyk"]
+        "nodes": [
+          "snyk"
+        ]
       },
       {
         "name": "SSL/TLS",
-        "nodes": ["ssl-labs"]
+        "nodes": [
+          "ssl-labs"
+        ]
       },
       {
         "name": "TOTP",
-        "nodes": ["totp"]
+        "nodes": [
+          "totp"
+        ]
       },
       {
         "name": "Web Archive",
-        "nodes": ["wayback-machine"]
+        "nodes": [
+          "wayback-machine"
+        ]
       },
       {
         "name": "URL Scan",
-        "nodes": ["url-scan-get-result", "url-scan-search", "url-scan-submit"]
+        "nodes": [
+          "url-scan-get-result",
+          "url-scan-search",
+          "url-scan-submit"
+        ]
       }
     ]
   },
@@ -1236,7 +1523,9 @@
     "subgroups": [
       {
         "name": "Blob Storage",
-        "nodes": ["blob-storage"]
+        "nodes": [
+          "blob-storage"
+        ]
       },
       {
         "name": "Azure Cosmos DB",
@@ -1289,47 +1578,69 @@
     "subgroups": [
       {
         "name": "Networking",
-        "nodes": ["cisco"]
+        "nodes": [
+          "cisco"
+        ]
       },
       {
         "name": "Bunny",
-        "nodes": ["bunny"]
+        "nodes": [
+          "bunny"
+        ]
       },
       {
         "name": "CapRover",
-        "nodes": ["caprover"]
+        "nodes": [
+          "caprover"
+        ]
       },
       {
         "name": "Cloudflare",
-        "nodes": ["cloudflare-pages"]
+        "nodes": [
+          "cloudflare-pages"
+        ]
       },
       {
         "name": "DigitalOcean",
-        "nodes": ["digitalocean-app"]
+        "nodes": [
+          "digitalocean-app"
+        ]
       },
       {
         "name": "Dokku",
-        "nodes": ["dokku"]
+        "nodes": [
+          "dokku"
+        ]
       },
       {
         "name": "Firebase",
-        "nodes": ["firebase-hosting"]
+        "nodes": [
+          "firebase-hosting"
+        ]
       },
       {
         "name": "Heroku",
-        "nodes": ["heroku"]
+        "nodes": [
+          "heroku"
+        ]
       },
       {
         "name": "Netlify",
-        "nodes": ["netlify"]
+        "nodes": [
+          "netlify"
+        ]
       },
       {
         "name": "Render",
-        "nodes": ["render"]
+        "nodes": [
+          "render"
+        ]
       },
       {
         "name": "Vercel",
-        "nodes": ["vercel"]
+        "nodes": [
+          "vercel"
+        ]
       },
       {
         "name": "VastAi",
@@ -1397,31 +1708,51 @@
     "subgroups": [
       {
         "name": "Jokes",
-        "nodes": ["dad-jokes"]
+        "nodes": [
+          "dad-jokes"
+        ]
       },
       {
         "name": "Games",
-        "nodes": ["deck-of-cards", "dnd5e", "ffxiv", "open-trivia", "pokeapi"]
+        "nodes": [
+          "deck-of-cards",
+          "dnd5e",
+          "ffxiv",
+          "open-trivia",
+          "pokeapi"
+        ]
       },
       {
         "name": "Memes",
-        "nodes": ["imgflip"]
+        "nodes": [
+          "imgflip"
+        ]
       },
       {
         "name": "Anime",
-        "nodes": ["jikan"]
+        "nodes": [
+          "jikan"
+        ]
       },
       {
         "name": "Quotes",
-        "nodes": ["kanye-rest", "advice-slip"]
+        "nodes": [
+          "kanye-rest",
+          "advice-slip"
+        ]
       },
       {
         "name": "Movies",
-        "nodes": ["omdb"]
+        "nodes": [
+          "omdb"
+        ]
       },
       {
         "name": "TV Shows",
-        "nodes": ["rick-and-morty", "tvmaze"]
+        "nodes": [
+          "rick-and-morty",
+          "tvmaze"
+        ]
       }
     ]
   },
@@ -1433,35 +1764,56 @@
     "subgroups": [
       {
         "name": "Address Validation",
-        "nodes": ["data-gouv-fr"]
+        "nodes": [
+          "data-gouv-fr"
+        ]
       },
       {
         "name": "Data Transformation",
-        "nodes": ["geojson", "address-validator"]
+        "nodes": [
+          "geojson",
+          "address-validator"
+        ]
       },
       {
         "name": "Geography",
-        "nodes": ["geonames"]
+        "nodes": [
+          "geonames"
+        ]
       },
       {
         "name": "Mapping",
-        "nodes": ["graphhopper-route", "mapbox", "openstreetmap"]
+        "nodes": [
+          "graphhopper-route",
+          "mapbox",
+          "openstreetmap"
+        ]
       },
       {
         "name": "IP Geolocation",
-        "nodes": ["ip-api", "ip2location"]
+        "nodes": [
+          "ip-api",
+          "ip2location"
+        ]
       },
       {
         "name": "Topography",
-        "nodes": ["opentopodata"]
+        "nodes": [
+          "opentopodata"
+        ]
       },
       {
         "name": "Postal Codes",
-        "nodes": ["postcode-io", "zippopotam"]
+        "nodes": [
+          "postcode-io",
+          "zippopotam"
+        ]
       },
       {
         "name": "Maps & Navigation",
-        "nodes": ["tomtom"]
+        "nodes": [
+          "tomtom"
+        ]
       }
     ]
   },
@@ -1473,11 +1825,18 @@
     "subgroups": [
       {
         "name": "Discord",
-        "nodes": ["discord-api"]
+        "nodes": [
+          "discord-api"
+        ]
       },
       {
         "name": "SMS",
-        "nodes": ["dialy-sms", "infobip-sms", "pender-sms", "twilio"]
+        "nodes": [
+          "dialy-sms",
+          "infobip-sms",
+          "pender-sms",
+          "twilio"
+        ]
       },
       {
         "name": "Emailing",
@@ -1491,47 +1850,72 @@
       },
       {
         "name": "Mattermost",
-        "nodes": ["mattermost-webhook"]
+        "nodes": [
+          "mattermost-webhook"
+        ]
       },
       {
         "name": "NATS",
-        "nodes": ["nats-publish", "nats-subscribe"]
+        "nodes": [
+          "nats-publish",
+          "nats-subscribe"
+        ]
       },
       {
         "name": "Pusher",
-        "nodes": ["pusher-send"]
+        "nodes": [
+          "pusher-send"
+        ]
       },
       {
         "name": "WebSocket",
-        "nodes": ["websocket-send"]
+        "nodes": [
+          "websocket-send"
+        ]
       },
       {
         "name": "Whatsapp",
-        "nodes": ["whatsapp"]
+        "nodes": [
+          "whatsapp"
+        ]
       },
       {
         "name": "XMPP",
-        "nodes": ["xmpp"]
+        "nodes": [
+          "xmpp"
+        ]
       },
       {
         "name": "Zoom",
-        "nodes": ["zoom"]
+        "nodes": [
+          "zoom"
+        ]
       },
       {
         "name": "Slack",
-        "nodes": ["slack-action", "slack-trigger"]
+        "nodes": [
+          "slack-action",
+          "slack-trigger"
+        ]
       },
       {
         "name": "Telegram",
-        "nodes": ["telegram-bot"]
+        "nodes": [
+          "telegram-bot"
+        ]
       },
       {
         "name": "Agora WebRTC",
-        "nodes": ["agora-token"]
+        "nodes": [
+          "agora-token"
+        ]
       },
       {
         "name": "STOMP",
-        "nodes": ["stomp-publish", "stomp-subscribe"]
+        "nodes": [
+          "stomp-publish",
+          "stomp-subscribe"
+        ]
       }
     ]
   },
@@ -1543,11 +1927,15 @@
     "subgroups": [
       {
         "name": "Dropbox",
-        "nodes": ["dropbox"]
+        "nodes": [
+          "dropbox"
+        ]
       },
       {
         "name": "Files.com",
-        "nodes": ["files-com"]
+        "nodes": [
+          "files-com"
+        ]
       },
       {
         "name": "GoFile",
@@ -1587,11 +1975,17 @@
     "name": "E-commerce",
     "icon": "icons/e-commerce-icon",
     "color": "#20B2AA",
-    "nodes": ["ebay-search", "walmart-search", "amazon-product-search"],
+    "nodes": [
+      "ebay-search",
+      "walmart-search",
+      "amazon-product-search"
+    ],
     "subgroups": [
       {
         "name": "Magento",
-        "nodes": ["magento"]
+        "nodes": [
+          "magento"
+        ]
       }
     ]
   },
@@ -1603,11 +1997,15 @@
     "subgroups": [
       {
         "name": "IMF API",
-        "nodes": ["fmi"]
+        "nodes": [
+          "fmi"
+        ]
       },
       {
         "name": "World Bank API",
-        "nodes": ["world-bank-api"]
+        "nodes": [
+          "world-bank-api"
+        ]
       }
     ]
   },
@@ -1615,7 +2013,10 @@
     "name": "Functions",
     "icon": "icons/functions-icon",
     "color": "#FF33F5",
-    "nodes": ["function", "set-variable"],
+    "nodes": [
+      "function",
+      "set-variable"
+    ],
     "subgroups": []
   },
   {
@@ -1626,11 +2027,15 @@
     "subgroups": [
       {
         "name": "github",
-        "nodes": ["github"]
+        "nodes": [
+          "github"
+        ]
       },
       {
         "name": "gitlab",
-        "nodes": ["gitlab"]
+        "nodes": [
+          "gitlab"
+        ]
       }
     ]
   },
@@ -1638,28 +2043,39 @@
     "name": "API",
     "icon": "icons/api-icon",
     "color": "#FF33F5",
-    "nodes": ["graphql", "jwt"],
+    "nodes": [
+      "graphql",
+      "jwt"
+    ],
     "subgroups": []
   },
   {
     "name": "gRPC",
     "icon": "icons/grpc-icon",
     "color": "#20B2AA",
-    "nodes": ["grpc-client"],
+    "nodes": [
+      "grpc-client"
+    ],
     "subgroups": []
   },
   {
     "name": "HTTP",
     "icon": "icons/http-icon",
     "color": "#FFD700",
-    "nodes": ["http-request", "mcp-client", "respond-to-webhook"],
+    "nodes": [
+      "http-request",
+      "mcp-client",
+      "respond-to-webhook"
+    ],
     "subgroups": []
   },
   {
     "name": "Control Flow",
     "icon": "icons/control-flow-icon",
     "color": "#33FF57",
-    "nodes": ["if-else"],
+    "nodes": [
+      "if-else"
+    ],
     "subgroups": []
   },
   {
@@ -1678,7 +2094,10 @@
       },
       {
         "name": "Triggers",
-        "nodes": ["iot-hub.deviceStatusTrigger", "iot-hub.deviceToCloudTrigger"]
+        "nodes": [
+          "iot-hub.deviceStatusTrigger",
+          "iot-hub.deviceToCloudTrigger"
+        ]
       }
     ]
   },
@@ -1690,15 +2109,21 @@
     "subgroups": [
       {
         "name": "Linear",
-        "nodes": ["linear"]
+        "nodes": [
+          "linear"
+        ]
       },
       {
         "name": "Monday.com",
-        "nodes": ["mondaycom"]
+        "nodes": [
+          "mondaycom"
+        ]
       },
       {
         "name": "Trello",
-        "nodes": ["trello"]
+        "nodes": [
+          "trello"
+        ]
       }
     ]
   },
@@ -1706,14 +2131,18 @@
     "name": "Utilities",
     "icon": "icons/utilities-icon",
     "color": "#FF33F5",
-    "nodes": ["log"],
+    "nodes": [
+      "log"
+    ],
     "subgroups": []
   },
   {
     "name": "Microsoft",
     "icon": "icons/microsoft-icon",
     "color": "#FF5733",
-    "nodes": ["microsoft-excel-webhook"],
+    "nodes": [
+      "microsoft-excel-webhook"
+    ],
     "subgroups": [
       {
         "name": "Table",
@@ -1726,19 +2155,29 @@
       },
       {
         "name": "Workbook",
-        "nodes": ["excel-add-worksheet", "excel-list-workbooks"]
+        "nodes": [
+          "excel-add-worksheet",
+          "excel-list-workbooks"
+        ]
       },
       {
         "name": "Worksheet",
-        "nodes": ["excel-get-all-worksheets", "excel-get-worksheet-content"]
+        "nodes": [
+          "excel-get-all-worksheets",
+          "excel-get-worksheet-content"
+        ]
       },
       {
         "name": "Microsoft Excel",
-        "nodes": ["microsoft-excel"]
+        "nodes": [
+          "microsoft-excel"
+        ]
       },
       {
         "name": "OneDrive",
-        "nodes": ["onedrive"]
+        "nodes": [
+          "onedrive"
+        ]
       }
     ]
   },
@@ -1749,12 +2188,89 @@
     "nodes": [],
     "subgroups": [
       {
+        "name": "DynamoDB",
+        "nodes": [
+          "aws-dynamo-db",
+          "aws-dynamo-db-trigger"
+        ]
+      },
+      {
+        "name": "S3 Bucket",
+        "nodes": [
+          "aws-s3-bucket",
+          "aws-s3-create-bucket",
+          "aws-s3-list-buckets",
+          "aws-s3-search-buckets",
+          "aws-s3-delete-bucket"
+        ]
+      },
+      {
+        "name": "S3 File",
+        "nodes": [
+          "aws-s3-file",
+          "aws-s3-upload-file",
+          "aws-s3-download-file",
+          "aws-s3-list-objects",
+          "aws-s3-delete-objects",
+          "aws-s3-copy-object"
+        ]
+      },
+      {
+        "name": "S3 Folder",
+        "nodes": [
+          "aws-s3-folder",
+          "aws-s3-create-folder",
+          "aws-s3-get-folder",
+          "aws-s3-delete-folder"
+        ]
+      },
+      {
+        "name": "S3 Trigger",
+        "nodes": [
+          "aws-s3-trigger"
+        ]
+      },
+      {
         "name": "Emailing",
-        "nodes": ["aws-ses"]
+        "nodes": [
+          "aws-ses"
+        ]
+      },
+      {
+        "name": "S3 Compatible Bucket",
+        "nodes": [
+          "s3-bucket",
+          "s3-create-bucket",
+          "s3-list-buckets",
+          "s3-search-buckets",
+          "s3-delete-bucket"
+        ]
+      },
+      {
+        "name": "S3 Compatible File",
+        "nodes": [
+          "s3-file",
+          "s3-upload-file",
+          "s3-download-file",
+          "s3-list-files",
+          "s3-delete-file",
+          "s3-copy-file"
+        ]
+      },
+      {
+        "name": "S3 Compatible Folder",
+        "nodes": [
+          "s3-folder",
+          "s3-create-folder",
+          "s3-get-all-folders",
+          "s3-delete-folder"
+        ]
       },
       {
         "name": "AI",
-        "nodes": ["ai-chat-amazon-bedrock"]
+        "nodes": [
+          "ai-chat-amazon-bedrock"
+        ]
       }
     ]
   },
@@ -1766,7 +2282,9 @@
     "subgroups": [
       {
         "name": "WordPress",
-        "nodes": ["wordpress"]
+        "nodes": [
+          "wordpress"
+        ]
       }
     ]
   },
@@ -1788,7 +2306,9 @@
       },
       {
         "name": "Gmail",
-        "nodes": ["gmail-trigger"]
+        "nodes": [
+          "gmail-trigger"
+        ]
       },
       {
         "name": "Google Chat",
@@ -1806,7 +2326,9 @@
       },
       {
         "name": "AI",
-        "nodes": ["ai-chat-google"]
+        "nodes": [
+          "ai-chat-google"
+        ]
       },
       {
         "name": "Advertising",
@@ -1819,15 +2341,22 @@
       },
       {
         "name": "Analytics",
-        "nodes": ["google-analytics", "google-tagmanager"]
+        "nodes": [
+          "google-analytics",
+          "google-tagmanager"
+        ]
       },
       {
         "name": "Big Data",
-        "nodes": ["google-bigquery"]
+        "nodes": [
+          "google-bigquery"
+        ]
       },
       {
         "name": "Search",
-        "nodes": ["google-books-search"]
+        "nodes": [
+          "google-books-search"
+        ]
       },
       {
         "name": "Productivity",
@@ -1843,35 +2372,52 @@
       },
       {
         "name": "Data",
-        "nodes": ["google-cloud-storage"]
+        "nodes": [
+          "google-cloud-storage"
+        ]
       },
       {
         "name": "Communication",
-        "nodes": ["google-fcm"]
+        "nodes": [
+          "google-fcm"
+        ]
       },
       {
         "name": "Health",
-        "nodes": ["google-fitness"]
+        "nodes": [
+          "google-fitness"
+        ]
       },
       {
         "name": "Science",
-        "nodes": ["google-genomics"]
+        "nodes": [
+          "google-genomics"
+        ]
       },
       {
         "name": "Security",
-        "nodes": ["google-kms-inventory", "google-sts"]
+        "nodes": [
+          "google-kms-inventory",
+          "google-sts"
+        ]
       },
       {
         "name": "Location",
-        "nodes": ["google-places"]
+        "nodes": [
+          "google-places"
+        ]
       },
       {
         "name": "Media",
-        "nodes": ["google-youtube-data"]
+        "nodes": [
+          "google-youtube-data"
+        ]
       },
       {
         "name": "contacts",
-        "nodes": ["google-contacts"]
+        "nodes": [
+          "google-contacts"
+        ]
       }
     ]
   },
@@ -1883,19 +2429,27 @@
     "subgroups": [
       {
         "name": "Mail",
-        "nodes": ["outlook.mail"]
+        "nodes": [
+          "outlook.mail"
+        ]
       },
       {
         "name": "Calendar",
-        "nodes": ["outlook.calendar"]
+        "nodes": [
+          "outlook.calendar"
+        ]
       },
       {
         "name": "Mail Triggers",
-        "nodes": ["outlook.mail.trigger"]
+        "nodes": [
+          "outlook.mail.trigger"
+        ]
       },
       {
         "name": "Calendar Triggers",
-        "nodes": ["outlook.calendar.trigger"]
+        "nodes": [
+          "outlook.calendar.trigger"
+        ]
       }
     ]
   },
@@ -1903,59 +2457,10 @@
     "name": "Test",
     "icon": "icons/test-icon",
     "color": "#33FFF5",
-    "nodes": ["test-node"],
+    "nodes": [
+      "test-node"
+    ],
     "subgroups": []
-  },
-  {
-    "name": "S3-Compatible",
-    "icon": "icons/s3-compatible-icon",
-    "color": "#FFD700",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "Bucket",
-        "nodes": [
-          "s3-create-bucket",
-          "s3-list-buckets",
-          "s3-search-buckets",
-          "s3-delete-bucket"
-        ]
-      },
-      {
-        "name": "File",
-        "nodes": [
-          "s3-upload-file",
-          "s3-download-file",
-          "s3-list-files",
-          "s3-delete-files",
-          "s3-copy-file"
-        ]
-      },
-      {
-        "name": "Folder",
-        "nodes": ["s3-create-folder", "s3-get-folders", "s3-delete-folder"]
-      }
-    ]
-  },
-  {
-    "name": "S3 Compatible",
-    "icon": "icons/s3-compatible-icon",
-    "color": "#33FF57",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "File",
-        "nodes": ["s3.file"]
-      },
-      {
-        "name": "Folder",
-        "nodes": ["s3.folder"]
-      },
-      {
-        "name": "Bucket",
-        "nodes": ["s3.bucket"]
-      }
-    ]
   },
   {
     "name": "Microsoft Teams",
@@ -1997,7 +2502,9 @@
     "subgroups": [
       {
         "name": "Actions",
-        "nodes": ["jenkins"]
+        "nodes": [
+          "jenkins"
+        ]
       }
     ]
   },
@@ -2005,7 +2512,9 @@
     "name": "postgres",
     "icon": "icons/postgres-icon",
     "color": "#33FF57",
-    "nodes": ["postgres action"],
+    "nodes": [
+      "postgres action"
+    ],
     "subgroups": []
   },
   {
@@ -2016,7 +2525,9 @@
     "subgroups": [
       {
         "name": "Actions",
-        "nodes": ["crypto"]
+        "nodes": [
+          "crypto"
+        ]
       }
     ]
   },
@@ -2028,7 +2539,9 @@
     "subgroups": [
       {
         "name": "Actions",
-        "nodes": ["baserow"]
+        "nodes": [
+          "baserow"
+        ]
       }
     ]
   },
@@ -2040,7 +2553,9 @@
     "subgroups": [
       {
         "name": "Actions",
-        "nodes": ["jira"]
+        "nodes": [
+          "jira"
+        ]
       }
     ]
   },
@@ -2052,11 +2567,15 @@
     "subgroups": [
       {
         "name": "Actions",
-        "nodes": ["airtable action"]
+        "nodes": [
+          "airtable action"
+        ]
       },
       {
         "name": "Triggers",
-        "nodes": ["airtable trigger"]
+        "nodes": [
+          "airtable trigger"
+        ]
       }
     ]
   },
@@ -2068,7 +2587,9 @@
     "subgroups": [
       {
         "name": "Actions",
-        "nodes": ["mysql action"]
+        "nodes": [
+          "mysql action"
+        ]
       }
     ]
   },
@@ -2080,7 +2601,10 @@
     "subgroups": [
       {
         "name": "clickup",
-        "nodes": ["clickup", "clickup.trigger"]
+        "nodes": [
+          "clickup",
+          "clickup.trigger"
+        ]
       }
     ]
   },
@@ -2092,7 +2616,9 @@
     "subgroups": [
       {
         "name": "Actions",
-        "nodes": ["mongodb action"]
+        "nodes": [
+          "mongodb action"
+        ]
       }
     ]
   },
@@ -2100,14 +2626,20 @@
     "name": "kafka",
     "icon": "icons/kafka-icon",
     "color": "#FF8C00",
-    "nodes": ["kafka publish", "kafka trigger"],
+    "nodes": [
+      "kafka publish",
+      "kafka trigger"
+    ],
     "subgroups": []
   },
   {
     "name": "mqtt",
     "icon": "icons/mqtt-icon",
     "color": "#33FFF5",
-    "nodes": ["mqtt publish", "mqtt trigger"],
+    "nodes": [
+      "mqtt publish",
+      "mqtt trigger"
+    ],
     "subgroups": []
   },
   {
@@ -2127,7 +2659,9 @@
       },
       {
         "name": "Triggers",
-        "nodes": ["cosmos.changefeed"]
+        "nodes": [
+          "cosmos.changefeed"
+        ]
       }
     ]
   },
@@ -2139,15 +2673,21 @@
     "subgroups": [
       {
         "name": "admin",
-        "nodes": ["event-hub-admin"]
+        "nodes": [
+          "event-hub-admin"
+        ]
       },
       {
         "name": "receive",
-        "nodes": ["event-hub-receive"]
+        "nodes": [
+          "event-hub-receive"
+        ]
       },
       {
         "name": "send",
-        "nodes": ["event-hub-send"]
+        "nodes": [
+          "event-hub-send"
+        ]
       }
     ]
   },
@@ -2168,7 +2708,9 @@
       },
       {
         "name": "Triggers",
-        "nodes": ["servicebus.receive"]
+        "nodes": [
+          "servicebus.receive"
+        ]
       }
     ]
   },
@@ -2180,7 +2722,10 @@
     "subgroups": [
       {
         "name": "signalr",
-        "nodes": ["signalr", "signalr-receive"]
+        "nodes": [
+          "signalr",
+          "signalr-receive"
+        ]
       }
     ]
   },
@@ -2192,11 +2737,15 @@
     "subgroups": [
       {
         "name": "Actions",
-        "nodes": ["gmail"]
+        "nodes": [
+          "gmail"
+        ]
       },
       {
         "name": "Triggers",
-        "nodes": ["gmail.trigger"]
+        "nodes": [
+          "gmail.trigger"
+        ]
       }
     ]
   },
@@ -2217,7 +2766,9 @@
       },
       {
         "name": "Triggers",
-        "nodes": ["google-drive.trigger"]
+        "nodes": [
+          "google-drive.trigger"
+        ]
       }
     ]
   },
@@ -2237,7 +2788,9 @@
       },
       {
         "name": "Triggers",
-        "nodes": ["google-sheets.trigger"]
+        "nodes": [
+          "google-sheets.trigger"
+        ]
       }
     ]
   },
@@ -2249,7 +2802,10 @@
     "subgroups": [
       {
         "name": "redis",
-        "nodes": ["redis", "redis-subscribe"]
+        "nodes": [
+          "redis",
+          "redis-subscribe"
+        ]
       }
     ]
   },
@@ -2257,14 +2813,20 @@
     "name": "discord",
     "icon": "icons/discord-icon",
     "color": "#FF6347",
-    "nodes": ["discord action", "discord trigger"],
+    "nodes": [
+      "discord action",
+      "discord trigger"
+    ],
     "subgroups": []
   },
   {
     "name": "rabbitmq",
     "icon": "icons/rabbitmq-icon",
     "color": "#FF8C00",
-    "nodes": ["rabbitmq action", "rabbitmq trigger"],
+    "nodes": [
+      "rabbitmq action",
+      "rabbitmq trigger"
+    ],
     "subgroups": []
   },
   {
@@ -2275,47 +2837,9 @@
     "subgroups": [
       {
         "name": "medical",
-        "nodes": ["medifus"]
-      }
-    ]
-  },
-  {
-    "name": "AWS DynamoDB",
-    "icon": "icons/aws-dynamodb-icon",
-    "color": "#20B2AA",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "Actions",
-        "nodes": ["aws-dynamodb"]
-      },
-      {
-        "name": "Trigger",
-        "nodes": ["aws-dynamodb.trigger"]
-      }
-    ]
-  },
-  {
-    "name": "AWS S3",
-    "icon": "icons/aws-s3-icon",
-    "color": "#FF6347",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "Bucket",
-        "nodes": ["aws-s3.bucket"]
-      },
-      {
-        "name": "File",
-        "nodes": ["aws-s3.file"]
-      },
-      {
-        "name": "Folder",
-        "nodes": ["aws-s3.folder"]
-      },
-      {
-        "name": "Trigger",
-        "nodes": ["aws-s3.trigger"]
+        "nodes": [
+          "medifus"
+        ]
       }
     ]
   },
@@ -2336,7 +2860,9 @@
       },
       {
         "name": "Triggers",
-        "nodes": ["azure-communication-chat-message-trigger"]
+        "nodes": [
+          "azure-communication-chat-message-trigger"
+        ]
       }
     ]
   },
@@ -2348,7 +2874,9 @@
     "subgroups": [
       {
         "name": "Actions",
-        "nodes": ["azure-communication-send-email"]
+        "nodes": [
+          "azure-communication-send-email"
+        ]
       }
     ]
   },
@@ -2374,7 +2902,9 @@
     "subgroups": [
       {
         "name": "project management",
-        "nodes": ["asana"]
+        "nodes": [
+          "asana"
+        ]
       }
     ]
   },
@@ -2400,7 +2930,10 @@
     "subgroups": [
       {
         "name": "Email Marketing",
-        "nodes": ["activecampaign", "emelia"]
+        "nodes": [
+          "activecampaign",
+          "emelia"
+        ]
       }
     ]
   },
@@ -2408,7 +2941,9 @@
     "name": "Odoo",
     "icon": "icons/odoo-icon",
     "color": "#3357FF",
-    "nodes": ["odoo-action"],
+    "nodes": [
+      "odoo-action"
+    ],
     "subgroups": []
   },
   {
@@ -2436,11 +2971,16 @@
     "subgroups": [
       {
         "name": "E-Commerce",
-        "nodes": ["shopify", "woocommerce"]
+        "nodes": [
+          "shopify",
+          "woocommerce"
+        ]
       },
       {
         "name": "HR",
-        "nodes": ["bamboohr"]
+        "nodes": [
+          "bamboohr"
+        ]
       }
     ]
   },
@@ -2448,14 +2988,18 @@
     "name": "Grafana",
     "icon": "icons/grafana-icon",
     "color": "#FF8C00",
-    "nodes": ["grafana"],
+    "nodes": [
+      "grafana"
+    ],
     "subgroups": []
   },
   {
     "name": "questdb",
     "icon": "icons/questdb-icon",
     "color": "#3357FF",
-    "nodes": ["QuestDB"],
+    "nodes": [
+      "QuestDB"
+    ],
     "subgroups": []
   },
   {
@@ -2466,7 +3010,9 @@
     "subgroups": [
       {
         "name": "Strapi",
-        "nodes": ["strapi-action"]
+        "nodes": [
+          "strapi-action"
+        ]
       }
     ]
   },
@@ -2474,14 +3020,18 @@
     "name": "high-level",
     "icon": "icons/high-level-icon",
     "color": "#FF5733",
-    "nodes": ["high-level-action"],
+    "nodes": [
+      "high-level-action"
+    ],
     "subgroups": []
   },
   {
     "name": "FileMaker",
     "icon": "icons/filemaker-icon",
     "color": "#FF5733",
-    "nodes": ["filemaker-action"],
+    "nodes": [
+      "filemaker-action"
+    ],
     "subgroups": []
   },
   {
@@ -2492,7 +3042,9 @@
     "subgroups": [
       {
         "name": "Database",
-        "nodes": ["oracle-database"]
+        "nodes": [
+          "oracle-database"
+        ]
       }
     ]
   },
@@ -2504,7 +3056,9 @@
     "subgroups": [
       {
         "name": "Actions",
-        "nodes": ["action-network"]
+        "nodes": [
+          "action-network"
+        ]
       }
     ]
   },
@@ -2512,7 +3066,9 @@
     "name": "TAIGA",
     "icon": "icons/taiga-icon",
     "color": "#3357FF",
-    "nodes": ["taiga"],
+    "nodes": [
+      "taiga"
+    ],
     "subgroups": []
   },
   {
@@ -2523,7 +3079,9 @@
     "subgroups": [
       {
         "name": "Graph Api",
-        "nodes": ["facebook-graph-api"]
+        "nodes": [
+          "facebook-graph-api"
+        ]
       }
     ]
   }
