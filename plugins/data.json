@@ -2,7 +2,7 @@
   {
     "id": "langfuse",
     "name": "langfuse",
-    "type": "tool",
+    "type": "action",
     "description": "langfuse nodes",
     "slogan": "langfuse",
     "icon": "icons/langfuse.svg",
