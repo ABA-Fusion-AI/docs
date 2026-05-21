@@ -61,7 +61,7 @@
     "integrations": {
       "automation": [
         "gmail",
-        "gmail.trigger"
+        "gmail-trigger"
       ]
     }
   },
@@ -71,7 +71,7 @@
     "type": "tool",
     "description": "Gmail Trigger service - trigger emails with labels and filters",
     "slogan": "gmail-trigger",
-    "icon": "icons/gmail-trigger.svg",
+    "icon": "icons/gmail.svg",
     "integrations": {
       "automation": [
         "gmail-trigger"
@@ -87,11 +87,11 @@
     "icon": "icons/google-drive.svg",
     "integrations": {
       "automation": [
-        "google-drive.file",
-        "google-drive.folder",
-        "google-drive.search",
-        "google-drive.sharedDrive",
-        "google-drive.trigger"
+        "google-drive-file",
+        "google-drive-folder",
+        "google-drive-search",
+        "google-drive-shared-drive",
+        "google-drive-trigger"
       ]
     }
   },
@@ -104,10 +104,10 @@
     "icon": "icons/google-sheets.svg",
     "integrations": {
       "automation": [
-        "google-sheets.auth",
-        "google-sheets.spreadsheet",
-        "google-sheets.values",
-        "google-sheets.trigger"
+        "google-sheets-auth",
+        "google-sheets-spreadsheet",
+        "google-sheets-values",
+        "google-sheets-trigger"
       ]
     }
   },
@@ -155,8 +155,8 @@
     "id": "discord",
     "name": "Discord",
     "type": "tool",
-    "description": "Discord messaging platform - send messages, manage channels, and handle bot events",
-    "slogan": "discord",
+    "description": "Discord - manage servers, channels, messages, and bot interactions programmatically",
+    "slogan": "discord-api",
     "icon": "icons/discord.svg",
     "integrations": {
       "automation": [
@@ -540,7 +540,11 @@
         "google-chat-create-message",
         "google-chat-delete-message",
         "google-chat-update-message",
-        "google-chat-send-and-wait"
+        "google-chat-send-and-wait",
+        "google-chat-member",
+        "google-chat-message",
+        "google-chat-message-trigger",
+        "google-chat-space"
       ]
     }
   },
@@ -717,15 +721,15 @@
     }
   },
   {
-    "id": "google-admob",
+    "id": "google-ad-mob",
     "name": "Google AdMob",
     "type": "tool",
     "description": "Google AdMob - mobile app monetization with ads, reporting, and analytics",
-    "slogan": "google-admob",
+    "slogan": "google-ad-mob",
     "icon": "icons/Google.svg",
     "integrations": {
       "automation": [
-        "google-admob"
+        "google-ad-mob"
       ]
     }
   },
@@ -743,15 +747,15 @@
     }
   },
   {
-    "id": "google-adsense",
+    "id": "google-ad-sense",
     "name": "Google AdSense",
     "type": "tool",
     "description": "Google AdSense - website monetization with display ads and revenue reporting",
-    "slogan": "google-adsense",
+    "slogan": "google-ad-sense",
     "icon": "icons/Google.svg",
     "integrations": {
       "automation": [
-        "google-adsense"
+        "google-ad-sense"
       ]
     }
   },
@@ -769,15 +773,15 @@
     }
   },
   {
-    "id": "google-bigquery",
+    "id": "google-big-query",
     "name": "Google BigQuery",
     "type": "tool",
     "description": "Google BigQuery - serverless data warehouse for large-scale SQL analytics",
-    "slogan": "google-bigquery",
+    "slogan": "google-big-query",
     "icon": "icons/googleBigQuery.svg",
     "integrations": {
       "automation": [
-        "google-bigquery"
+        "google-big-query"
       ]
     }
   },
@@ -878,7 +882,7 @@
     "type": "tool",
     "description": "Google Firebase Cloud Messaging - send push notifications to mobile and web apps",
     "slogan": "google-fcm",
-    "icon": "icons/firebase.svg",
+    "icon": "icons/Google.svg",
     "integrations": {
       "automation": [
         "google-fcm"
@@ -1150,11 +1154,11 @@
     "name": "Google Tag Manager",
     "type": "tool",
     "description": "Google Tag Manager - manage tracking tags and analytics scripts on websites",
-    "slogan": "google-tagmanager",
+    "slogan": "google-tag-manager",
     "icon": "icons/Google.svg",
     "integrations": {
       "automation": [
-        "google-tagmanager"
+        "google-tag-manager"
       ]
     }
   },
@@ -1198,15 +1202,15 @@
     }
   },
   {
-    "id": "google-youtube-data",
+    "id": "google-you-tube-data",
     "name": "Google YouTube Data",
     "type": "tool",
     "description": "Google YouTube Data API - manage channels, playlists, videos, and analytics",
-    "slogan": "google-youtube-data",
+    "slogan": "google-you-tube-data",
     "icon": "icons/youtube.svg",
     "integrations": {
       "automation": [
-        "google-youtube-data"
+        "google-you-tube-data"
       ]
     }
   },
@@ -1762,15 +1766,15 @@
     }
   },
   {
-    "id": "amazon-products-search",
-    "name": "Amazon Products Search",
+    "id": "amazon-product-search",
+    "name": "Amazon Product Search",
     "type": "tool",
-    "description": "Amazon product search - find products, prices, and reviews from Amazon marketplace",
-    "slogan": "amazon-products-search",
+    "description": "Amazon product search - find products, prices, and reviews from Amazon marketplace.",
+    "slogan": "amazon-product-search",
     "icon": "icons/amazon.svg",
     "integrations": {
       "automation": [
-        "amazon-products-search"
+        "amazon-product-search"
       ]
     }
   },
@@ -2575,13 +2579,14 @@
     "id": "paypal",
     "name": "PayPal",
     "type": "tool",
-    "description": "PayPal payment processing - create orders and capture payments",
-    "slogan": "PayPal Payments",
+    "description": "Manage PayPal orders, invoices, payouts, and transactions via REST API",
+    "slogan": "paypal",
     "icon": "icons/paypal.svg",
     "integrations": {
       "automation": [
         "paypal-capture-payment",
-        "paypal-create-order"
+        "paypal-create-order",
+        "paypal"
       ]
     }
   },
@@ -2700,13 +2705,14 @@
     "id": "stripe",
     "name": "Stripe",
     "type": "tool",
-    "description": "Stripe payment platform - process charges and create payment links",
-    "slogan": "Stripe Payments",
+    "description": "Manage Stripe charges, customers, subscriptions, payment intents, and more",
+    "slogan": "stripe",
     "icon": "icons/stripe.svg",
     "integrations": {
       "automation": [
         "stripe-charges",
-        "stripe-create-payment-link"
+        "stripe-create-payment-link",
+        "stripe"
       ]
     }
   },
@@ -3608,20 +3614,6 @@
     }
   },
   {
-    "id": "discord",
-    "name": "Discord",
-    "type": "tool",
-    "description": "Discord - manage servers, channels, messages, and bot interactions programmatically",
-    "slogan": "discord-api",
-    "icon": "icons/discord.svg",
-    "integrations": {
-      "automation": [
-        "discord action",
-        "discord trigger"
-      ]
-    }
-  },
-  {
     "id": "dnd5e",
     "name": "Dnd5e",
     "type": "tool",
@@ -4233,15 +4225,15 @@
     }
   },
   {
-    "id": "gemini-file-search",
+    "id": "gemini-medical",
     "name": "Gemini File Search",
     "type": "tool",
     "description": "Google Gemini file search - search and analyze files using Gemini AI",
-    "slogan": "gemini-file-search",
+    "slogan": "gemini-medical",
     "icon": "icons/gemini.svg",
     "integrations": {
       "automation": [
-        "gemini-file-search"
+        "gemini-medical"
       ]
     }
   },
@@ -8986,15 +8978,15 @@
     }
   },
   {
-    "id": "google-contacts",
+    "id": "google-contacts-action",
     "name": "Google Contacts",
     "type": "tool",
     "description": "Contact management with Google Contacts",
-    "slogan": "google-contacts",
-    "icon": "icons/google-contacts.svg",
+    "slogan": "google-contacts-action",
+    "icon": "icons/Google.svg",
     "integrations": {
       "automation": [
-        "google-contacts"
+        "google-contacts-action"
       ]
     }
   },
@@ -10715,32 +10707,6 @@
     }
   },
   {
-    "id": "paypal",
-    "name": "PayPal",
-    "type": "tool",
-    "description": "Manage PayPal orders, invoices, payouts, and transactions via REST API",
-    "slogan": "paypal",
-    "icon": "icons/paypal.svg",
-    "integrations": {
-      "automation": [
-        "paypal"
-      ]
-    }
-  },
-  {
-    "id": "stripe",
-    "name": "Stripe",
-    "type": "tool",
-    "description": "Manage Stripe charges, customers, subscriptions, payment intents, and more",
-    "slogan": "stripe",
-    "icon": "icons/stripe.svg",
-    "integrations": {
-      "automation": [
-        "stripe"
-      ]
-    }
-  },
-  {
     "id": "acuity-scheduling",
     "name": "Acuity Scheduling",
     "type": "tool",
@@ -10871,15 +10837,15 @@
     }
   },
   {
-    "id": "google-translate",
+    "id": "google-translate-action",
     "name": "Google Translate",
     "type": "tool",
     "description": "Translate text and detect languages using Google Cloud Translation API",
-    "slogan": "google-translate",
-    "icon": "icons/google-translate.svg",
+    "slogan": "google-translate-action",
+    "icon": "icons/Google.svg",
     "integrations": {
       "automation": [
-        "google-translate"
+        "google-translate-action"
       ]
     }
   },
@@ -11360,8 +11326,15 @@
     "icon": "icons/aws.svg",
     "integrations": {
       "automation": [
+        "aws-acm",
+        "aws-cognito",
+        "aws-comprehend",
         "aws-dynamo-db",
         "aws-dynamo-db-trigger",
+        "aws-elb",
+        "aws-iam",
+        "aws-lambda",
+        "aws-rekognition",
         "aws-s3-bucket",
         "aws-s3-copy-object",
         "aws-s3-create-bucket",
@@ -11379,6 +11352,10 @@
         "aws-s3-trigger",
         "aws-s3-upload-file",
         "aws-ses",
+        "aws-sns",
+        "aws-sqs",
+        "aws-textract",
+        "aws-transcribe",
         "s3-bucket",
         "s3-copy-file",
         "s3-create-bucket",
@@ -11398,16 +11375,210 @@
     }
   },
   {
-    "id": "aws-dynamo-db",
-    "name": "AWS DynamoDB",
+    "id": "google-books-action",
+    "name": "Google Books",
     "type": "tool",
-    "description": "AWS DynamoDB - serverless NoSQL database operations and polling trigger.",
-    "slogan": "aws-dynamo-db",
-    "icon": "icons/dynamodb.svg",
+    "description": "Google Books node",
+    "slogan": "google-books-action",
+    "icon": "icons/googlebooks.svg",
     "integrations": {
       "automation": [
-        "aws-dynamo-db",
-        "aws-dynamo-db-trigger"
+        "google-books-action"
+      ]
+    }
+  },
+  {
+    "id": "google-chat-member",
+    "name": "Google Chat Member",
+    "type": "tool",
+    "description": "Google Chat Member node",
+    "slogan": "google-chat-member",
+    "icon": "icons/googleChat.svg",
+    "integrations": {
+      "automation": [
+        "google-chat-member"
+      ]
+    }
+  },
+  {
+    "id": "google-chat-message",
+    "name": "Google Chat Message",
+    "type": "tool",
+    "description": "Google Chat Message node",
+    "slogan": "google-chat-message",
+    "icon": "icons/googleChat.svg",
+    "integrations": {
+      "automation": [
+        "google-chat-message"
+      ]
+    }
+  },
+  {
+    "id": "google-chat-message-trigger",
+    "name": "Google Chat Message Trigger",
+    "type": "tool",
+    "description": "Google Chat Message Trigger node",
+    "slogan": "google-chat-message-trigger",
+    "icon": "icons/googleChat.svg",
+    "integrations": {
+      "automation": [
+        "google-chat-message-trigger"
+      ]
+    }
+  },
+  {
+    "id": "google-chat-space",
+    "name": "Google Chat Space",
+    "type": "tool",
+    "description": "Google Chat Space node",
+    "slogan": "google-chat-space",
+    "icon": "icons/googleChat.svg",
+    "integrations": {
+      "automation": [
+        "google-chat-space"
+      ]
+    }
+  },
+  {
+    "id": "aws-acm",
+    "name": "AWS Certificate Manager",
+    "type": "tool",
+    "description": "Manage SSL/TLS certificates with AWS Certificate Manager.",
+    "slogan": "aws-acm",
+    "icon": "icons/aws-acm.svg",
+    "integrations": {
+      "automation": [
+        "aws-acm"
+      ]
+    }
+  },
+  {
+    "id": "aws-cognito",
+    "name": "AWS Cognito",
+    "type": "tool",
+    "description": "Manage users in AWS Cognito user pools.",
+    "slogan": "aws-cognito",
+    "icon": "icons/cognito.svg",
+    "integrations": {
+      "automation": [
+        "aws-cognito"
+      ]
+    }
+  },
+  {
+    "id": "aws-comprehend",
+    "name": "AWS Comprehend",
+    "type": "tool",
+    "description": "Analyze text with AWS Comprehend NLP.",
+    "slogan": "aws-comprehend",
+    "icon": "icons/comprehend.svg",
+    "integrations": {
+      "automation": [
+        "aws-comprehend"
+      ]
+    }
+  },
+  {
+    "id": "aws-elb",
+    "name": "AWS ELB",
+    "type": "tool",
+    "description": "Inspect AWS Elastic Load Balancers.",
+    "slogan": "aws-elb",
+    "icon": "icons/aws-elb.svg",
+    "integrations": {
+      "automation": [
+        "aws-elb"
+      ]
+    }
+  },
+  {
+    "id": "aws-iam",
+    "name": "AWS IAM",
+    "type": "tool",
+    "description": "Manage AWS IAM users, groups, and policies.",
+    "slogan": "aws-iam",
+    "icon": "icons/aws-iam.svg",
+    "integrations": {
+      "automation": [
+        "aws-iam"
+      ]
+    }
+  },
+  {
+    "id": "aws-lambda",
+    "name": "AWS Lambda",
+    "type": "tool",
+    "description": "Manage and invoke AWS Lambda functions.",
+    "slogan": "aws-lambda",
+    "icon": "icons/aws-lambda.svg",
+    "integrations": {
+      "automation": [
+        "aws-lambda"
+      ]
+    }
+  },
+  {
+    "id": "aws-rekognition",
+    "name": "AWS Rekognition",
+    "type": "tool",
+    "description": "Analyze images with AWS Rekognition.",
+    "slogan": "aws-rekognition",
+    "icon": "icons/rekognition.svg",
+    "integrations": {
+      "automation": [
+        "aws-rekognition"
+      ]
+    }
+  },
+  {
+    "id": "aws-sns",
+    "name": "AWS SNS",
+    "type": "tool",
+    "description": "Send notifications via AWS Simple Notification Service.",
+    "slogan": "aws-sns",
+    "icon": "icons/aws-sns.svg",
+    "integrations": {
+      "automation": [
+        "aws-sns"
+      ]
+    }
+  },
+  {
+    "id": "aws-sqs",
+    "name": "AWS SQS",
+    "type": "tool",
+    "description": "Queue messages via AWS Simple Queue Service.",
+    "slogan": "aws-sqs",
+    "icon": "icons/aws-sqs.svg",
+    "integrations": {
+      "automation": [
+        "aws-sqs"
+      ]
+    }
+  },
+  {
+    "id": "aws-textract",
+    "name": "AWS Textract",
+    "type": "tool",
+    "description": "Extract text, forms, and tables from documents using AWS Textract.",
+    "slogan": "aws-textract",
+    "icon": "icons/textract.svg",
+    "integrations": {
+      "automation": [
+        "aws-textract"
+      ]
+    }
+  },
+  {
+    "id": "aws-transcribe",
+    "name": "AWS Transcribe",
+    "type": "tool",
+    "description": "Speech-to-text with AWS Transcribe.",
+    "slogan": "aws-transcribe",
+    "icon": "icons/transcribe.svg",
+    "integrations": {
+      "automation": [
+        "aws-transcribe"
       ]
     }
   }
