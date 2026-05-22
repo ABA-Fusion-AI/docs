@@ -133,8 +133,9 @@
     "icon": "icons/redis.svg",
     "integrations": {
       "automation": [
-        "redis",
-        "redis-subscribe"
+        "redis-publish",
+        "redis-subscribe",
+        "redis-action"
       ]
     }
   },
