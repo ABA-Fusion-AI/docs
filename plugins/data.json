@@ -21,7 +21,25 @@
     "icon": "icons/ai-agent.svg",
     "integrations": {
       "automation": [
-        "agent"
+        "agent",
+        "amazon-bedrock-llm",
+        "anthropic-llm",
+        "cohere-llm",
+        "deepseek-llm",
+        "github-llm",
+        "google-llm",
+        "groq-llm",
+        "huggingface-llm",
+        "hyperbolic-llm",
+        "lmstudio-llm",
+        "mistral-llm",
+        "ollama-llm",
+        "openai-llm",
+        "openai-like-llm",
+        "openrouter-llm",
+        "perplexity-llm",
+        "together-llm",
+        "xai-llm"
       ]
     }
   },
@@ -161,8 +179,8 @@
     "icon": "icons/discord.svg",
     "integrations": {
       "automation": [
-        "discord action",
-        "discord trigger"
+        "discord-action",
+        "discord-trigger"
       ]
     }
   },
@@ -677,7 +695,7 @@
     "icon": "icons/postgresql.svg",
     "integrations": {
       "automation": [
-        "postgres action"
+        "postgres-action"
       ]
     }
   },
@@ -1303,7 +1321,7 @@
     "icon": "icons/mysql.svg",
     "integrations": {
       "automation": [
-        "mysql action"
+        "mysql-action"
       ]
     }
   },
@@ -1330,7 +1348,7 @@
     "icon": "icons/mongodb.svg",
     "integrations": {
       "automation": [
-        "mongodb action"
+        "mongodb-action"
       ]
     }
   },
@@ -1343,8 +1361,8 @@
     "icon": "icons/kafka.svg",
     "integrations": {
       "automation": [
-        "kafka publish",
-        "kafka trigger"
+        "kafka-publish",
+        "kafka-trigger"
       ]
     }
   },
@@ -1357,8 +1375,8 @@
     "icon": "icons/mqtt.svg",
     "integrations": {
       "automation": [
-        "mqtt publish",
-        "mqtt trigger"
+        "mqtt-publish",
+        "mqtt-trigger"
       ]
     }
   },
