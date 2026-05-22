@@ -14,10 +14,24 @@
     "color": "#FF33F5",
     "nodes": [
       "agent",
-      "google-llm",
-      "openai-llm",
+      "amazon-bedrock-llm",
       "anthropic-llm",
-      "ollama-llm"
+      "cohere-llm",
+      "deepseek-llm",
+      "github-llm",
+      "google-llm",
+      "groq-llm",
+      "huggingface-llm",
+      "hyperbolic-llm",
+      "lmstudio-llm",
+      "mistral-llm",
+      "ollama-llm",
+      "openai-llm",
+      "openai-like-llm",
+      "openrouter-llm",
+      "perplexity-llm",
+      "together-llm",
+      "xai-llm"
     ],
     "subgroups": []
   },
@@ -2844,7 +2858,7 @@
     "icon": "icons/postgres-icon",
     "color": "#33FF57",
     "nodes": [
-      "postgres action"
+      "postgres-action"
     ],
     "subgroups": []
   },
@@ -2924,7 +2938,7 @@
       {
         "name": "Actions",
         "nodes": [
-          "mysql action"
+          "mysql-action"
         ],
         "subgroups": []
       }
@@ -2955,7 +2969,7 @@
       {
         "name": "Actions",
         "nodes": [
-          "mongodb action"
+          "mongodb-action"
         ],
         "subgroups": []
       }
@@ -2966,8 +2980,8 @@
     "icon": "icons/kafka-icon",
     "color": "#FF8C00",
     "nodes": [
-      "kafka publish",
-      "kafka trigger"
+      "kafka-publish",
+      "kafka-trigger"
     ],
     "subgroups": []
   },
@@ -2976,8 +2990,8 @@
     "icon": "icons/mqtt-icon",
     "color": "#33FFF5",
     "nodes": [
-      "mqtt publish",
-      "mqtt trigger"
+      "mqtt-publish",
+      "mqtt-trigger"
     ],
     "subgroups": []
   },
@@ -3169,8 +3183,8 @@
     "icon": "icons/discord-icon",
     "color": "#FF6347",
     "nodes": [
-      "discord action",
-      "discord trigger"
+      "discord-action",
+      "discord-trigger"
     ],
     "subgroups": []
   },
