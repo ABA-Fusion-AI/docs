@@ -1289,8 +1289,8 @@
     "icon": "icons/airtable.svg",
     "integrations": {
       "automation": [
-        "airtable action",
-        "airtable trigger"
+        "airtable-action",
+        "airtable-trigger"
       ]
     }
   },
