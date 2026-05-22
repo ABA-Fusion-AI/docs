@@ -1,4 +1,13 @@
 [
+   {
+    "name": "Langfuse Prompt",
+    "icon": "icons/langfuse-icon",
+    "color": "#FF33F5",
+    "nodes": [
+      "langfuse-prompt"
+    ],
+    "subgroups": []
+  },
   {
     "name": "AI Agents",
     "icon": "icons/ai-agents-icon",
