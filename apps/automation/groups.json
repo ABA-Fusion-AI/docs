@@ -2902,14 +2902,14 @@
       {
         "name": "Actions",
         "nodes": [
-          "airtable action"
+          "airtable-action"
         ],
         "subgroups": []
       },
       {
         "name": "Triggers",
         "nodes": [
-          "airtable trigger"
+          "airtable-trigger"
         ],
         "subgroups": []
       }
