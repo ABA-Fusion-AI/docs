@@ -3147,8 +3147,9 @@
       {
         "name": "redis",
         "nodes": [
-          "redis",
-          "redis-subscribe"
+          "redis-publish",
+          "redis-subscribe",
+          "redis-action"
         ],
         "subgroups": []
       }
