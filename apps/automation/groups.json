@@ -961,7 +961,7 @@
       {
         "name": "amqp",
         "nodes": [
-          "aamqp-consume",
+          "amqp-consume",
           "amqp-publish"
         ],
         "subgroups": []
