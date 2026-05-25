@@ -768,7 +768,7 @@
       },
       {
         "name": "Stripe",
-        "nodes": ["stripe-create-payment-link"],
+        "nodes": ["stripe-create-payment-link", "stripe-webhook-trigger"],
         "subgroups": [
           {
             "name": "Triggers",
