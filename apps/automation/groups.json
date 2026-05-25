@@ -860,17 +860,17 @@
       {
         "name": "Salesforce",
         "nodes": [
-          "salesforce.account",
-          "salesforce.attachment",
-          "salesforce.case",
-          "salesforce.contact",
-          "salesforce.document",
-          "salesforce.flow",
-          "salesforce.lead",
-          "salesforce.opportunity",
-          "salesforce.search",
-          "salesforce.task",
-          "salesforce.user"
+          "salesforce-account",
+          "salesforce-attachment",
+          "salesforce-case",
+          "salesforce-contact",
+          "salesforce-document",
+          "salesforce-flow",
+          "salesforce-lead",
+          "salesforce-opportunity",
+          "salesforce-search",
+          "salesforce-task",
+          "salesforce-user"
         ],
         "subgroups": []
       },

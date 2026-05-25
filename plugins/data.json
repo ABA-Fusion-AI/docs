@@ -7161,7 +7161,17 @@
     "icon": "icons/salesforce.svg",
     "integrations": {
       "automation": [
-        "salesforce"
+        "salesforce-account",
+        "salesforce-attachment",
+        "salesforce-case",
+        "salesforce-contact",
+        "salesforce-document",
+        "salesforce-flow",
+        "salesforce-lead",
+        "salesforce-opportunity",
+        "salesforce-search",
+        "salesforce-task",
+        "salesforce-user"
       ]
     }
   },
