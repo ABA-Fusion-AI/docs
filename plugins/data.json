@@ -65,10 +65,12 @@
     "icon": "icons/github.svg",
     "integrations": {
       "automation": [
-        "github"
+        "github",
+        "git"
       ]
     }
   },
+
   {
     "id": "gmail",
     "name": "Gmail",
