@@ -2244,7 +2244,9 @@
     "name": "version-control",
     "icon": "icons/version-control-icon",
     "color": "#20B2AA",
-    "nodes": [],
+    "nodes": [
+      "git"
+    ],
     "subgroups": [
       {
         "name": "github",
