@@ -7,9 +7,7 @@
     "slogan": "langfuse",
     "icon": "icons/langfuse.svg",
     "integrations": {
-      "automation": [
-        "langfuse-prompt"
-      ]
+      "automation": ["langfuse-prompt"]
     }
   },
   {
@@ -51,9 +49,7 @@
     "slogan": "http",
     "icon": "icons/httprequest.svg",
     "integrations": {
-      "automation": [
-        "http-request"
-      ]
+      "automation": ["http-request"]
     }
   },
   {
@@ -64,10 +60,7 @@
     "slogan": "github",
     "icon": "icons/github.svg",
     "integrations": {
-      "automation": [
-        "github",
-        "git"
-      ]
+      "automation": ["github", "git"]
     }
   },
 
@@ -79,10 +72,7 @@
     "slogan": "gmail",
     "icon": "icons/gmail.svg",
     "integrations": {
-      "automation": [
-        "gmail",
-        "gmail-trigger"
-      ]
+      "automation": ["gmail", "gmail-trigger"]
     }
   },
   {
@@ -93,9 +83,7 @@
     "slogan": "gmail-trigger",
     "icon": "icons/gmail.svg",
     "integrations": {
-      "automation": [
-        "gmail-trigger"
-      ]
+      "automation": ["gmail-trigger"]
     }
   },
   {
@@ -139,9 +127,7 @@
     "slogan": "gitlab",
     "icon": "icons/gitlab.svg",
     "integrations": {
-      "automation": [
-        "gitlab"
-      ]
+      "automation": ["gitlab"]
     }
   },
   {
@@ -152,11 +138,7 @@
     "slogan": "redis",
     "icon": "icons/redis.svg",
     "integrations": {
-      "automation": [
-        "redis-publish",
-        "redis-subscribe",
-        "redis-action"
-      ]
+      "automation": ["redis-publish", "redis-subscribe", "redis-action"]
     }
   },
   {
@@ -167,9 +149,7 @@
     "slogan": "medifus",
     "icon": "icons/medical.svg",
     "integrations": {
-      "automation": [
-        "medifus"
-      ]
+      "automation": ["medifus"]
     }
   },
   {
@@ -180,10 +160,7 @@
     "slogan": "discord-api",
     "icon": "icons/discord.svg",
     "integrations": {
-      "automation": [
-        "discord-action",
-        "discord-trigger"
-      ]
+      "automation": ["discord-action", "discord-trigger"]
     }
   },
   {
@@ -194,11 +171,7 @@
     "slogan": "rabbitmq",
     "icon": "icons/rabbitmq.svg",
     "integrations": {
-      "automation": [
-        "rabbitmq",
-        "rabbitmq trigger",
-        "rabbitmq action"
-      ]
+      "automation": ["rabbitmq", "rabbitmq trigger", "rabbitmq action"]
     }
   },
   {
@@ -278,10 +251,7 @@
     "slogan": "azure-signalr",
     "icon": "icons/signalr.svg",
     "integrations": {
-      "automation": [
-        "signalr",
-        "signalr-receive"
-      ]
+      "automation": ["signalr", "signalr-receive"]
     }
   },
   {
@@ -310,9 +280,7 @@
     "slogan": "azure-activedirectory",
     "icon": "icons/microsoftEntra.svg",
     "integrations": {
-      "automation": [
-        "azure-activedirectory"
-      ]
+      "automation": ["azure-activedirectory"]
     }
   },
   {
@@ -323,9 +291,7 @@
     "slogan": "azure-blockchain",
     "icon": "icons/Azure.svg",
     "integrations": {
-      "automation": [
-        "azure-blockchain"
-      ]
+      "automation": ["azure-blockchain"]
     }
   },
   {
@@ -354,9 +320,7 @@
     "slogan": "azure-databricks",
     "icon": "icons/databricks.svg",
     "integrations": {
-      "automation": [
-        "azure-databricks"
-      ]
+      "automation": ["azure-databricks"]
     }
   },
   {
@@ -367,9 +331,7 @@
     "slogan": "azure-devops",
     "icon": "icons/Azure.svg",
     "integrations": {
-      "automation": [
-        "azure-devops"
-      ]
+      "automation": ["azure-devops"]
     }
   },
   {
@@ -380,9 +342,7 @@
     "slogan": "azure-iothub",
     "icon": "icons/iot.svg",
     "integrations": {
-      "automation": [
-        "azure-iothub"
-      ]
+      "automation": ["azure-iothub"]
     }
   },
   {
@@ -393,9 +353,7 @@
     "slogan": "azure-mariadb",
     "icon": "icons/Azure.svg",
     "integrations": {
-      "automation": [
-        "azure-mariadb"
-      ]
+      "automation": ["azure-mariadb"]
     }
   },
   {
@@ -406,9 +364,7 @@
     "slogan": "azure-sql-admin",
     "icon": "icons/azuresql.svg",
     "integrations": {
-      "automation": [
-        "azure-sql-admin"
-      ]
+      "automation": ["azure-sql-admin"]
     }
   },
   {
@@ -419,9 +375,7 @@
     "slogan": "azure-sql-backup-restore",
     "icon": "icons/azuresql.svg",
     "integrations": {
-      "automation": [
-        "azure-sql-backup-restore"
-      ]
+      "automation": ["azure-sql-backup-restore"]
     }
   },
   {
@@ -432,9 +386,7 @@
     "slogan": "azure-sql-bulk-insert",
     "icon": "icons/azuresql.svg",
     "integrations": {
-      "automation": [
-        "azure-sql-bulk-insert"
-      ]
+      "automation": ["azure-sql-bulk-insert"]
     }
   },
   {
@@ -445,9 +397,7 @@
     "slogan": "azure-sql-database-admin",
     "icon": "icons/azuresql.svg",
     "integrations": {
-      "automation": [
-        "azure-sql-database-admin"
-      ]
+      "automation": ["azure-sql-database-admin"]
     }
   },
   {
@@ -458,9 +408,7 @@
     "slogan": "azure-sql-query",
     "icon": "icons/azuresql.svg",
     "integrations": {
-      "automation": [
-        "azure-sql-query"
-      ]
+      "automation": ["azure-sql-query"]
     }
   },
   {
@@ -471,9 +419,7 @@
     "slogan": "azure-sql-schema-manage",
     "icon": "icons/azuresql.svg",
     "integrations": {
-      "automation": [
-        "azure-sql-schema-manage"
-      ]
+      "automation": ["azure-sql-schema-manage"]
     }
   },
   {
@@ -484,9 +430,7 @@
     "slogan": "azure-sql-stored-procedure",
     "icon": "icons/azuresql.svg",
     "integrations": {
-      "automation": [
-        "azure-sql-stored-procedure"
-      ]
+      "automation": ["azure-sql-stored-procedure"]
     }
   },
   {
@@ -497,9 +441,7 @@
     "slogan": "azure-stack",
     "icon": "icons/Azure.svg",
     "integrations": {
-      "automation": [
-        "azure-stack"
-      ]
+      "automation": ["azure-stack"]
     }
   },
   {
@@ -510,10 +452,7 @@
     "slogan": "aws-dynamo-db",
     "icon": "icons/dynamodb.svg",
     "integrations": {
-      "automation": [
-        "aws-dynamo-db",
-        "aws-dynamo-db-trigger"
-      ]
+      "automation": ["aws-dynamo-db", "aws-dynamo-db-trigger"]
     }
   },
   {
@@ -593,11 +532,7 @@
     "slogan": "azure-event-hub",
     "icon": "icons/eventhub.svg",
     "integrations": {
-      "automation": [
-        "event-hub-admin",
-        "event-hub-receive",
-        "event-hub-send"
-      ]
+      "automation": ["event-hub-admin", "event-hub-receive", "event-hub-send"]
     }
   },
   {
@@ -608,9 +543,7 @@
     "slogan": "test-node",
     "icon": "icons/code.svg",
     "integrations": {
-      "automation": [
-        "test-node"
-      ]
+      "automation": ["test-node"]
     }
   },
   {
@@ -669,9 +602,7 @@
     "slogan": "jenkins",
     "icon": "icons/jenkins.svg",
     "integrations": {
-      "automation": [
-        "jenkins"
-      ]
+      "automation": ["jenkins"]
     }
   },
   {
@@ -682,10 +613,7 @@
     "slogan": "slack",
     "icon": "icons/slack.svg",
     "integrations": {
-      "automation": [
-        "slack-action",
-        "slack-trigger"
-      ]
+      "automation": ["slack-action", "slack-trigger"]
     }
   },
   {
@@ -696,9 +624,7 @@
     "slogan": "postgresql",
     "icon": "icons/postgresql.svg",
     "integrations": {
-      "automation": [
-        "postgres-action"
-      ]
+      "automation": ["postgres-action"]
     }
   },
   {
@@ -709,9 +635,7 @@
     "slogan": "crypto",
     "icon": "icons/hash.svg",
     "integrations": {
-      "automation": [
-        "crypto"
-      ]
+      "automation": ["crypto"]
     }
   },
   {
@@ -722,10 +646,7 @@
     "slogan": "telegram",
     "icon": "icons/telegram.svg",
     "integrations": {
-      "automation": [
-        "telegram-bot",
-        "telegram-webhook"
-      ]
+      "automation": ["telegram-bot", "telegram-webhook"]
     }
   },
   {
@@ -736,9 +657,7 @@
     "slogan": "google-llm",
     "icon": "icons/gemini.svg",
     "integrations": {
-      "automation": [
-        "google-llm"
-      ]
+      "automation": ["google-llm"]
     }
   },
   {
@@ -749,9 +668,7 @@
     "slogan": "google-ad-mob",
     "icon": "icons/Google.svg",
     "integrations": {
-      "automation": [
-        "google-ad-mob"
-      ]
+      "automation": ["google-ad-mob"]
     }
   },
   {
@@ -762,9 +679,7 @@
     "slogan": "google-ads",
     "icon": "icons/googleAds.svg",
     "integrations": {
-      "automation": [
-        "google-ads"
-      ]
+      "automation": ["google-ads"]
     }
   },
   {
@@ -775,9 +690,7 @@
     "slogan": "google-ad-sense",
     "icon": "icons/Google.svg",
     "integrations": {
-      "automation": [
-        "google-ad-sense"
-      ]
+      "automation": ["google-ad-sense"]
     }
   },
   {
@@ -788,9 +701,7 @@
     "slogan": "google-analytics",
     "icon": "icons/analytics.svg",
     "integrations": {
-      "automation": [
-        "google-analytics"
-      ]
+      "automation": ["google-analytics"]
     }
   },
   {
@@ -801,9 +712,7 @@
     "slogan": "google-big-query",
     "icon": "icons/googleBigQuery.svg",
     "integrations": {
-      "automation": [
-        "google-big-query"
-      ]
+      "automation": ["google-big-query"]
     }
   },
   {
@@ -814,9 +723,7 @@
     "slogan": "google-books-search",
     "icon": "icons/googlebooks.svg",
     "integrations": {
-      "automation": [
-        "google-books-search"
-      ]
+      "automation": ["google-books-search"]
     }
   },
   {
@@ -827,9 +734,7 @@
     "slogan": "google-business-profile",
     "icon": "icons/googleBusinessProfile.svg",
     "integrations": {
-      "automation": [
-        "google-business-profile"
-      ]
+      "automation": ["google-business-profile"]
     }
   },
   {
@@ -840,9 +745,7 @@
     "slogan": "google-calendar",
     "icon": "icons/googleCalendar.svg",
     "integrations": {
-      "automation": [
-        "google-calendar"
-      ]
+      "automation": ["google-calendar"]
     }
   },
   {
@@ -853,9 +756,7 @@
     "slogan": "google-classroom",
     "icon": "icons/Google.svg",
     "integrations": {
-      "automation": [
-        "google-classroom"
-      ]
+      "automation": ["google-classroom"]
     }
   },
   {
@@ -866,9 +767,7 @@
     "slogan": "google-cloud-storage",
     "icon": "icons/googleCloudStorage.svg",
     "integrations": {
-      "automation": [
-        "google-cloud-storage"
-      ]
+      "automation": ["google-cloud-storage"]
     }
   },
   {
@@ -879,9 +778,7 @@
     "slogan": "google-docs",
     "icon": "icons/googleDocs.svg",
     "integrations": {
-      "automation": [
-        "google-docs"
-      ]
+      "automation": ["google-docs"]
     }
   },
   {
@@ -892,9 +789,7 @@
     "slogan": "google-dork",
     "icon": "icons/google-dork.svg",
     "integrations": {
-      "automation": [
-        "google-dork"
-      ]
+      "automation": ["google-dork"]
     }
   },
   {
@@ -905,9 +800,7 @@
     "slogan": "google-fcm",
     "icon": "icons/Google.svg",
     "integrations": {
-      "automation": [
-        "google-fcm"
-      ]
+      "automation": ["google-fcm"]
     }
   },
   {
@@ -918,9 +811,7 @@
     "slogan": "google-finance-search",
     "icon": "icons/google-finance.svg",
     "integrations": {
-      "automation": [
-        "google-finance-search"
-      ]
+      "automation": ["google-finance-search"]
     }
   },
   {
@@ -931,9 +822,7 @@
     "slogan": "google-fitness",
     "icon": "icons/Google.svg",
     "integrations": {
-      "automation": [
-        "google-fitness"
-      ]
+      "automation": ["google-fitness"]
     }
   },
   {
@@ -944,9 +833,7 @@
     "slogan": "google-flights-search",
     "icon": "icons/google-flights.svg",
     "integrations": {
-      "automation": [
-        "google-flights-search"
-      ]
+      "automation": ["google-flights-search"]
     }
   },
   {
@@ -957,9 +844,7 @@
     "slogan": "google-forms",
     "icon": "icons/Google.svg",
     "integrations": {
-      "automation": [
-        "google-forms"
-      ]
+      "automation": ["google-forms"]
     }
   },
   {
@@ -970,9 +855,7 @@
     "slogan": "google-gemini-image",
     "icon": "icons/gemini.svg",
     "integrations": {
-      "automation": [
-        "google-gemini-image"
-      ]
+      "automation": ["google-gemini-image"]
     }
   },
   {
@@ -983,9 +866,7 @@
     "slogan": "google-genomics",
     "icon": "icons/Google.svg",
     "integrations": {
-      "automation": [
-        "google-genomics"
-      ]
+      "automation": ["google-genomics"]
     }
   },
   {
@@ -996,9 +877,7 @@
     "slogan": "google-hotels-search",
     "icon": "icons/google-hotels.svg",
     "integrations": {
-      "automation": [
-        "google-hotels-search"
-      ]
+      "automation": ["google-hotels-search"]
     }
   },
   {
@@ -1009,9 +888,7 @@
     "slogan": "google-images-search",
     "icon": "icons/google-images.svg",
     "integrations": {
-      "automation": [
-        "google-images-search"
-      ]
+      "automation": ["google-images-search"]
     }
   },
   {
@@ -1022,9 +899,7 @@
     "slogan": "google-kms-inventory",
     "icon": "icons/Google.svg",
     "integrations": {
-      "automation": [
-        "google-kms-inventory"
-      ]
+      "automation": ["google-kms-inventory"]
     }
   },
   {
@@ -1035,9 +910,7 @@
     "slogan": "google-maps-search",
     "icon": "icons/google-maps.svg",
     "integrations": {
-      "automation": [
-        "google-maps-search"
-      ]
+      "automation": ["google-maps-search"]
     }
   },
   {
@@ -1048,9 +921,7 @@
     "slogan": "google-news-search",
     "icon": "icons/google-news.svg",
     "integrations": {
-      "automation": [
-        "google-news-search"
-      ]
+      "automation": ["google-news-search"]
     }
   },
   {
@@ -1061,9 +932,7 @@
     "slogan": "google-patents-search",
     "icon": "icons/google-patents.svg",
     "integrations": {
-      "automation": [
-        "google-patents-search"
-      ]
+      "automation": ["google-patents-search"]
     }
   },
   {
@@ -1074,9 +943,7 @@
     "slogan": "google-places",
     "icon": "icons/Google.svg",
     "integrations": {
-      "automation": [
-        "google-places"
-      ]
+      "automation": ["google-places"]
     }
   },
   {
@@ -1087,9 +954,7 @@
     "slogan": "google-play-store-search",
     "icon": "icons/google-play-store.svg",
     "integrations": {
-      "automation": [
-        "google-play-store-search"
-      ]
+      "automation": ["google-play-store-search"]
     }
   },
   {
@@ -1100,9 +965,7 @@
     "slogan": "google-scholar",
     "icon": "icons/Google_Scholar_logo.svg",
     "integrations": {
-      "automation": [
-        "google-scholar"
-      ]
+      "automation": ["google-scholar"]
     }
   },
   {
@@ -1113,9 +976,7 @@
     "slogan": "google-search",
     "icon": "icons/google-search.svg",
     "integrations": {
-      "automation": [
-        "google-search"
-      ]
+      "automation": ["google-search"]
     }
   },
   {
@@ -1126,9 +987,7 @@
     "slogan": "google-shopping-search",
     "icon": "icons/google-shopping.svg",
     "integrations": {
-      "automation": [
-        "google-shopping-search"
-      ]
+      "automation": ["google-shopping-search"]
     }
   },
   {
@@ -1139,9 +998,7 @@
     "slogan": "google-slides",
     "icon": "icons/googleslides.svg",
     "integrations": {
-      "automation": [
-        "google-slides"
-      ]
+      "automation": ["google-slides"]
     }
   },
   {
@@ -1152,9 +1009,7 @@
     "slogan": "google-speech",
     "icon": "icons/Google.svg",
     "integrations": {
-      "automation": [
-        "google-speech"
-      ]
+      "automation": ["google-speech"]
     }
   },
   {
@@ -1165,9 +1020,7 @@
     "slogan": "google-sts",
     "icon": "icons/Google.svg",
     "integrations": {
-      "automation": [
-        "google-sts"
-      ]
+      "automation": ["google-sts"]
     }
   },
   {
@@ -1178,9 +1031,7 @@
     "slogan": "google-tag-manager",
     "icon": "icons/Google.svg",
     "integrations": {
-      "automation": [
-        "google-tag-manager"
-      ]
+      "automation": ["google-tag-manager"]
     }
   },
   {
@@ -1191,9 +1042,7 @@
     "slogan": "google-tasks",
     "icon": "icons/googleTasks.svg",
     "integrations": {
-      "automation": [
-        "google-tasks"
-      ]
+      "automation": ["google-tasks"]
     }
   },
   {
@@ -1204,9 +1053,7 @@
     "slogan": "google-trends-search",
     "icon": "icons/google-trends.svg",
     "integrations": {
-      "automation": [
-        "google-trends-search"
-      ]
+      "automation": ["google-trends-search"]
     }
   },
   {
@@ -1217,9 +1064,7 @@
     "slogan": "google-videos-search",
     "icon": "icons/google-videos.svg",
     "integrations": {
-      "automation": [
-        "google-videos-search"
-      ]
+      "automation": ["google-videos-search"]
     }
   },
   {
@@ -1230,9 +1075,7 @@
     "slogan": "google-you-tube-data",
     "icon": "icons/youtube.svg",
     "integrations": {
-      "automation": [
-        "google-you-tube-data"
-      ]
+      "automation": ["google-you-tube-data"]
     }
   },
   {
@@ -1243,9 +1086,7 @@
     "slogan": "openai-llm",
     "icon": "icons/openAi.svg",
     "integrations": {
-      "automation": [
-        "openai-llm"
-      ]
+      "automation": ["openai-llm"]
     }
   },
   {
@@ -1256,9 +1097,7 @@
     "slogan": "anthropic-llm",
     "icon": "icons/claude.svg",
     "integrations": {
-      "automation": [
-        "anthropic-llm"
-      ]
+      "automation": ["anthropic-llm"]
     }
   },
   {
@@ -1269,9 +1108,7 @@
     "slogan": "ollama-llm",
     "icon": "icons/ollama.svg",
     "integrations": {
-      "automation": [
-        "ollama-llm"
-      ]
+      "automation": ["ollama-llm"]
     }
   },
   {
@@ -1282,9 +1119,7 @@
     "slogan": "baserow",
     "icon": "icons/baserow.svg",
     "integrations": {
-      "automation": [
-        "baserow"
-      ]
+      "automation": ["baserow"]
     }
   },
   {
@@ -1295,9 +1130,7 @@
     "slogan": "jira",
     "icon": "icons/Jira.svg",
     "integrations": {
-      "automation": [
-        "jira"
-      ]
+      "automation": ["jira"]
     }
   },
   {
@@ -1308,10 +1141,7 @@
     "slogan": "airtable",
     "icon": "icons/airtable.svg",
     "integrations": {
-      "automation": [
-        "airtable-action",
-        "airtable-trigger"
-      ]
+      "automation": ["airtable-action", "airtable-trigger"]
     }
   },
   {
@@ -1322,9 +1152,7 @@
     "slogan": "mysql",
     "icon": "icons/mysql.svg",
     "integrations": {
-      "automation": [
-        "mysql-action"
-      ]
+      "automation": ["mysql-action"]
     }
   },
   {
@@ -1335,10 +1163,7 @@
     "slogan": "clickup",
     "icon": "icons/clickup.svg",
     "integrations": {
-      "automation": [
-        "clickup",
-        "clickup.trigger"
-      ]
+      "automation": ["clickup", "clickup.trigger"]
     }
   },
   {
@@ -1349,9 +1174,7 @@
     "slogan": "mongodb",
     "icon": "icons/mongodb.svg",
     "integrations": {
-      "automation": [
-        "mongodb-action"
-      ]
+      "automation": ["mongodb-action"]
     }
   },
   {
@@ -1362,10 +1185,7 @@
     "slogan": "kafka",
     "icon": "icons/kafka.svg",
     "integrations": {
-      "automation": [
-        "kafka-publish",
-        "kafka-trigger"
-      ]
+      "automation": ["kafka-publish", "kafka-trigger"]
     }
   },
   {
@@ -1376,10 +1196,7 @@
     "slogan": "mqtt",
     "icon": "icons/mqtt.svg",
     "integrations": {
-      "automation": [
-        "mqtt-publish",
-        "mqtt-trigger"
-      ]
+      "automation": ["mqtt-publish", "mqtt-trigger"]
     }
   },
   {
@@ -1390,9 +1207,7 @@
     "slogan": "abuseipdb",
     "icon": "icons/abuseipdb.svg",
     "integrations": {
-      "automation": [
-        "abuseipdb"
-      ]
+      "automation": ["abuseipdb"]
     }
   },
   {
@@ -1403,9 +1218,7 @@
     "slogan": "address-validator",
     "icon": "icons/google-maps.svg",
     "integrations": {
-      "automation": [
-        "address-validator"
-      ]
+      "automation": ["address-validator"]
     }
   },
   {
@@ -1416,9 +1229,7 @@
     "slogan": "advice-slip",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "advice-slip"
-      ]
+      "automation": ["advice-slip"]
     }
   },
   {
@@ -1429,9 +1240,7 @@
     "slogan": "adyen",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "adyen"
-      ]
+      "automation": ["adyen"]
     }
   },
   {
@@ -1442,9 +1251,7 @@
     "slogan": "agadir24",
     "icon": "icons/news.svg",
     "integrations": {
-      "automation": [
-        "agadir24"
-      ]
+      "automation": ["agadir24"]
     }
   },
   {
@@ -1455,9 +1262,7 @@
     "slogan": "agify",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "agify"
-      ]
+      "automation": ["agify"]
     }
   },
   {
@@ -1468,10 +1273,7 @@
     "slogan": "agora-webrtc",
     "icon": "icons/agorawebrtc.svg",
     "integrations": {
-      "automation": [
-        "agora-token",
-        "agora-event-trigger"
-      ]
+      "automation": ["agora-token", "agora-event-trigger"]
     }
   },
   {
@@ -1482,9 +1284,7 @@
     "slogan": "ai-chat-amazon-bedrock",
     "icon": "icons/amazon.svg",
     "integrations": {
-      "automation": [
-        "ai-chat-amazon-bedrock"
-      ]
+      "automation": ["ai-chat-amazon-bedrock"]
     }
   },
   {
@@ -1495,9 +1295,7 @@
     "slogan": "ai-chat-anthropic",
     "icon": "icons/claude.svg",
     "integrations": {
-      "automation": [
-        "ai-chat-anthropic"
-      ]
+      "automation": ["ai-chat-anthropic"]
     }
   },
   {
@@ -1508,9 +1306,7 @@
     "slogan": "ai-chat-cohere",
     "icon": "icons/aichat.svg",
     "integrations": {
-      "automation": [
-        "ai-chat-cohere"
-      ]
+      "automation": ["ai-chat-cohere"]
     }
   },
   {
@@ -1521,9 +1317,7 @@
     "slogan": "ai-chat-deepseek",
     "icon": "icons/aichat.svg",
     "integrations": {
-      "automation": [
-        "ai-chat-deepseek"
-      ]
+      "automation": ["ai-chat-deepseek"]
     }
   },
   {
@@ -1534,9 +1328,7 @@
     "slogan": "ai-chat-github",
     "icon": "icons/github.svg",
     "integrations": {
-      "automation": [
-        "ai-chat-github"
-      ]
+      "automation": ["ai-chat-github"]
     }
   },
   {
@@ -1547,9 +1339,7 @@
     "slogan": "ai-chat-google",
     "icon": "icons/gemini.svg",
     "integrations": {
-      "automation": [
-        "ai-chat-google"
-      ]
+      "automation": ["ai-chat-google"]
     }
   },
   {
@@ -1560,9 +1350,7 @@
     "slogan": "ai-chat-groq",
     "icon": "icons/aichat.svg",
     "integrations": {
-      "automation": [
-        "ai-chat-groq"
-      ]
+      "automation": ["ai-chat-groq"]
     }
   },
   {
@@ -1573,9 +1361,7 @@
     "slogan": "ai-chat-huggingface",
     "icon": "icons/huggingface.svg",
     "integrations": {
-      "automation": [
-        "ai-chat-huggingface"
-      ]
+      "automation": ["ai-chat-huggingface"]
     }
   },
   {
@@ -1586,9 +1372,7 @@
     "slogan": "ai-chat-hyperbolic",
     "icon": "icons/aichat.svg",
     "integrations": {
-      "automation": [
-        "ai-chat-hyperbolic"
-      ]
+      "automation": ["ai-chat-hyperbolic"]
     }
   },
   {
@@ -1599,9 +1383,7 @@
     "slogan": "ai-chat-lmstudio",
     "icon": "icons/aichat.svg",
     "integrations": {
-      "automation": [
-        "ai-chat-lmstudio"
-      ]
+      "automation": ["ai-chat-lmstudio"]
     }
   },
   {
@@ -1612,9 +1394,7 @@
     "slogan": "ai-chat-mistral",
     "icon": "icons/mistralAi.svg",
     "integrations": {
-      "automation": [
-        "ai-chat-mistral"
-      ]
+      "automation": ["ai-chat-mistral"]
     }
   },
   {
@@ -1625,9 +1405,7 @@
     "slogan": "ai-chat-ollama",
     "icon": "icons/ollama.svg",
     "integrations": {
-      "automation": [
-        "ai-chat-ollama"
-      ]
+      "automation": ["ai-chat-ollama"]
     }
   },
   {
@@ -1638,9 +1416,7 @@
     "slogan": "ai-chat-openai-like",
     "icon": "icons/openAi.svg",
     "integrations": {
-      "automation": [
-        "ai-chat-openai-like"
-      ]
+      "automation": ["ai-chat-openai-like"]
     }
   },
   {
@@ -1651,9 +1427,7 @@
     "slogan": "ai-chat-openai",
     "icon": "icons/openAi.svg",
     "integrations": {
-      "automation": [
-        "ai-chat-openai"
-      ]
+      "automation": ["ai-chat-openai"]
     }
   },
   {
@@ -1664,9 +1438,7 @@
     "slogan": "ai-chat-openrouter",
     "icon": "icons/aichat.svg",
     "integrations": {
-      "automation": [
-        "ai-chat-openrouter"
-      ]
+      "automation": ["ai-chat-openrouter"]
     }
   },
   {
@@ -1677,9 +1449,7 @@
     "slogan": "ai-chat-perplexity",
     "icon": "icons/perplexity.svg",
     "integrations": {
-      "automation": [
-        "ai-chat-perplexity"
-      ]
+      "automation": ["ai-chat-perplexity"]
     }
   },
   {
@@ -1690,9 +1460,7 @@
     "slogan": "ai-chat-together",
     "icon": "icons/aichat.svg",
     "integrations": {
-      "automation": [
-        "ai-chat-together"
-      ]
+      "automation": ["ai-chat-together"]
     }
   },
   {
@@ -1703,9 +1471,7 @@
     "slogan": "ai-chat-xai",
     "icon": "icons/x.svg",
     "integrations": {
-      "automation": [
-        "ai-chat-xai"
-      ]
+      "automation": ["ai-chat-xai"]
     }
   },
   {
@@ -1716,9 +1482,7 @@
     "slogan": "ai-chat",
     "icon": "icons/aichat.svg",
     "integrations": {
-      "automation": [
-        "ai-chat"
-      ]
+      "automation": ["ai-chat"]
     }
   },
   {
@@ -1729,9 +1493,7 @@
     "slogan": "akhbarona",
     "icon": "icons/news.svg",
     "integrations": {
-      "automation": [
-        "akhbarona"
-      ]
+      "automation": ["akhbarona"]
     }
   },
   {
@@ -1742,9 +1504,7 @@
     "slogan": "al-bayane",
     "icon": "icons/news.svg",
     "integrations": {
-      "automation": [
-        "al-bayane"
-      ]
+      "automation": ["al-bayane"]
     }
   },
   {
@@ -1755,9 +1515,7 @@
     "slogan": "al-sabah",
     "icon": "icons/news.svg",
     "integrations": {
-      "automation": [
-        "al-sabah"
-      ]
+      "automation": ["al-sabah"]
     }
   },
   {
@@ -1768,9 +1526,7 @@
     "slogan": "alpha-vantage",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "alpha-vantage"
-      ]
+      "automation": ["alpha-vantage"]
     }
   },
   {
@@ -1781,9 +1537,7 @@
     "slogan": "amadeus",
     "icon": "icons/amadeus.svg",
     "integrations": {
-      "automation": [
-        "amadeus"
-      ]
+      "automation": ["amadeus"]
     }
   },
   {
@@ -1794,9 +1548,7 @@
     "slogan": "amazon-product-search",
     "icon": "icons/amazon.svg",
     "integrations": {
-      "automation": [
-        "amazon-product-search"
-      ]
+      "automation": ["amazon-product-search"]
     }
   },
   {
@@ -1807,10 +1559,7 @@
     "slogan": "amqp",
     "icon": "icons/amqp.svg",
     "integrations": {
-      "automation": [
-        "amqp-consume",
-        "amqp-publish"
-      ]
+      "automation": ["amqp-consume", "amqp-publish"]
     }
   },
   {
@@ -1821,9 +1570,7 @@
     "slogan": "amtraker",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "amtraker"
-      ]
+      "automation": ["amtraker"]
     }
   },
   {
@@ -1834,11 +1581,7 @@
     "slogan": "astm",
     "icon": "icons/astm.svg",
     "integrations": {
-      "automation": [
-        "astm-builder",
-        "astm-mapper",
-        "astm-to-json"
-      ]
+      "automation": ["astm-builder", "astm-mapper", "astm-to-json"]
     }
   },
   {
@@ -1849,9 +1592,7 @@
     "slogan": "awesome-currency",
     "icon": "icons/awesome-api.svg",
     "integrations": {
-      "automation": [
-        "awesome-currency"
-      ]
+      "automation": ["awesome-currency"]
     }
   },
   {
@@ -1862,11 +1603,7 @@
     "slogan": "bacnet",
     "icon": "icons/bacnet.svg",
     "integrations": {
-      "automation": [
-        "bacnet-read",
-        "bacnet-write",
-        "bacnet-trigger"
-      ]
+      "automation": ["bacnet-read", "bacnet-write", "bacnet-trigger"]
     }
   },
   {
@@ -1877,9 +1614,7 @@
     "slogan": "baidu-search",
     "icon": "icons/baidu.svg",
     "integrations": {
-      "automation": [
-        "baidu-search"
-      ]
+      "automation": ["baidu-search"]
     }
   },
   {
@@ -1890,9 +1625,7 @@
     "slogan": "banana-dev",
     "icon": "icons/bannanadev.svg",
     "integrations": {
-      "automation": [
-        "banana-dev"
-      ]
+      "automation": ["banana-dev"]
     }
   },
   {
@@ -1903,9 +1636,7 @@
     "slogan": "banking-validator",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "banking-validator"
-      ]
+      "automation": ["banking-validator"]
     }
   },
   {
@@ -1916,9 +1647,7 @@
     "slogan": "bar",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "bar"
-      ]
+      "automation": ["bar"]
     }
   },
   {
@@ -1929,9 +1658,7 @@
     "slogan": "barcode-generator",
     "icon": "icons/barcode.svg",
     "integrations": {
-      "automation": [
-        "barcode-generator"
-      ]
+      "automation": ["barcode-generator"]
     }
   },
   {
@@ -1942,9 +1669,7 @@
     "slogan": "base-converter",
     "icon": "icons/binary-to-text.svg",
     "integrations": {
-      "automation": [
-        "base-converter"
-      ]
+      "automation": ["base-converter"]
     }
   },
   {
@@ -1955,9 +1680,7 @@
     "slogan": "bbc-co-uk",
     "icon": "icons/news.svg",
     "integrations": {
-      "automation": [
-        "bbc-co-uk"
-      ]
+      "automation": ["bbc-co-uk"]
     }
   },
   {
@@ -1968,9 +1691,7 @@
     "slogan": "bbc-com",
     "icon": "icons/news.svg",
     "integrations": {
-      "automation": [
-        "bbc-com"
-      ]
+      "automation": ["bbc-com"]
     }
   },
   {
@@ -1981,9 +1702,7 @@
     "slogan": "bbci-co-uk",
     "icon": "icons/news.svg",
     "integrations": {
-      "automation": [
-        "bbci-co-uk"
-      ]
+      "automation": ["bbci-co-uk"]
     }
   },
   {
@@ -1994,9 +1713,7 @@
     "slogan": "beeceptor",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "beeceptor"
-      ]
+      "automation": ["beeceptor"]
     }
   },
   {
@@ -2007,9 +1724,7 @@
     "slogan": "binance-price",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "binance-price"
-      ]
+      "automation": ["binance-price"]
     }
   },
   {
@@ -2020,9 +1735,7 @@
     "slogan": "binary-to-text",
     "icon": "icons/binary-to-text.svg",
     "integrations": {
-      "automation": [
-        "binary-to-text"
-      ]
+      "automation": ["binary-to-text"]
     }
   },
   {
@@ -2033,9 +1746,7 @@
     "slogan": "binaryedge",
     "icon": "icons/binaryedge.svg",
     "integrations": {
-      "automation": [
-        "binaryedge"
-      ]
+      "automation": ["binaryedge"]
     }
   },
   {
@@ -2046,9 +1757,7 @@
     "slogan": "bing-copilot-search",
     "icon": "icons/bing-copilot.svg",
     "integrations": {
-      "automation": [
-        "bing-copilot-search"
-      ]
+      "automation": ["bing-copilot-search"]
     }
   },
   {
@@ -2059,9 +1768,7 @@
     "slogan": "bing-images-search",
     "icon": "icons/bing-images.svg",
     "integrations": {
-      "automation": [
-        "bing-images-search"
-      ]
+      "automation": ["bing-images-search"]
     }
   },
   {
@@ -2072,9 +1779,7 @@
     "slogan": "bing-search",
     "icon": "icons/bing.svg",
     "integrations": {
-      "automation": [
-        "bing-search"
-      ]
+      "automation": ["bing-search"]
     }
   },
   {
@@ -2085,9 +1790,7 @@
     "slogan": "binga-create-payment-request",
     "icon": "icons/binga.svg",
     "integrations": {
-      "automation": [
-        "binga-create-payment-request"
-      ]
+      "automation": ["binga-create-payment-request"]
     }
   },
   {
@@ -2098,9 +1801,7 @@
     "slogan": "bioapi",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "bioapi"
-      ]
+      "automation": ["bioapi"]
     }
   },
   {
@@ -2111,9 +1812,7 @@
     "slogan": "bionemo-alphafold2-multimer",
     "icon": "icons/nvidia.svg",
     "integrations": {
-      "automation": [
-        "bionemo-alphafold2-multimer"
-      ]
+      "automation": ["bionemo-alphafold2-multimer"]
     }
   },
   {
@@ -2124,9 +1823,7 @@
     "slogan": "bionemo-alphafold2-predict",
     "icon": "icons/nvidia.svg",
     "integrations": {
-      "automation": [
-        "bionemo-alphafold2-predict"
-      ]
+      "automation": ["bionemo-alphafold2-predict"]
     }
   },
   {
@@ -2137,9 +1834,7 @@
     "slogan": "bionemo-boltz2-predict",
     "icon": "icons/nvidia.svg",
     "integrations": {
-      "automation": [
-        "bionemo-boltz2-predict"
-      ]
+      "automation": ["bionemo-boltz2-predict"]
     }
   },
   {
@@ -2150,9 +1845,7 @@
     "slogan": "bionemo-diffdock-dock",
     "icon": "icons/nvidia.svg",
     "integrations": {
-      "automation": [
-        "bionemo-diffdock-dock"
-      ]
+      "automation": ["bionemo-diffdock-dock"]
     }
   },
   {
@@ -2163,9 +1856,7 @@
     "slogan": "bionemo-esm2-embed",
     "icon": "icons/nvidia.svg",
     "integrations": {
-      "automation": [
-        "bionemo-esm2-embed"
-      ]
+      "automation": ["bionemo-esm2-embed"]
     }
   },
   {
@@ -2176,9 +1867,7 @@
     "slogan": "bionemo-esmfold-predict",
     "icon": "icons/nvidia.svg",
     "integrations": {
-      "automation": [
-        "bionemo-esmfold-predict"
-      ]
+      "automation": ["bionemo-esmfold-predict"]
     }
   },
   {
@@ -2189,9 +1878,7 @@
     "slogan": "bionemo-evo2-generate",
     "icon": "icons/nvidia.svg",
     "integrations": {
-      "automation": [
-        "bionemo-evo2-generate"
-      ]
+      "automation": ["bionemo-evo2-generate"]
     }
   },
   {
@@ -2202,9 +1889,7 @@
     "slogan": "bionemo-filter-molecules",
     "icon": "icons/nvidia.svg",
     "integrations": {
-      "automation": [
-        "bionemo-filter-molecules"
-      ]
+      "automation": ["bionemo-filter-molecules"]
     }
   },
   {
@@ -2215,9 +1900,7 @@
     "slogan": "bionemo-genmol-generate",
     "icon": "icons/nvidia.svg",
     "integrations": {
-      "automation": [
-        "bionemo-genmol-generate"
-      ]
+      "automation": ["bionemo-genmol-generate"]
     }
   },
   {
@@ -2228,9 +1911,7 @@
     "slogan": "bionemo-molmim-generate",
     "icon": "icons/nvidia.svg",
     "integrations": {
-      "automation": [
-        "bionemo-molmim-generate"
-      ]
+      "automation": ["bionemo-molmim-generate"]
     }
   },
   {
@@ -2241,9 +1922,7 @@
     "slogan": "bionemo-msa-search",
     "icon": "icons/nvidia.svg",
     "integrations": {
-      "automation": [
-        "bionemo-msa-search"
-      ]
+      "automation": ["bionemo-msa-search"]
     }
   },
   {
@@ -2254,9 +1933,7 @@
     "slogan": "bionemo-openfold2-predict",
     "icon": "icons/nvidia.svg",
     "integrations": {
-      "automation": [
-        "bionemo-openfold2-predict"
-      ]
+      "automation": ["bionemo-openfold2-predict"]
     }
   },
   {
@@ -2267,9 +1944,7 @@
     "slogan": "bionemo-openfold3-predict",
     "icon": "icons/nvidia.svg",
     "integrations": {
-      "automation": [
-        "bionemo-openfold3-predict"
-      ]
+      "automation": ["bionemo-openfold3-predict"]
     }
   },
   {
@@ -2296,10 +1971,7 @@
     "slogan": "Cosmos DB Cassandra",
     "icon": "icons/cosmosdb.svg",
     "integrations": {
-      "automation": [
-        "cosmos-cassandra-manage",
-        "cosmos-cassandra-query"
-      ]
+      "automation": ["cosmos-cassandra-manage", "cosmos-cassandra-query"]
     }
   },
   {
@@ -2310,10 +1982,7 @@
     "slogan": "Cosmos DB Graph",
     "icon": "icons/cosmosdb.svg",
     "integrations": {
-      "automation": [
-        "cosmos-gremlin-manage",
-        "cosmos-gremlin-query"
-      ]
+      "automation": ["cosmos-gremlin-manage", "cosmos-gremlin-query"]
     }
   },
   {
@@ -2324,9 +1993,7 @@
     "slogan": "Cosmos DB Mongo",
     "icon": "icons/cosmosdb.svg",
     "integrations": {
-      "automation": [
-        "cosmos-mongo-manage"
-      ]
+      "automation": ["cosmos-mongo-manage"]
     }
   },
   {
@@ -2337,10 +2004,7 @@
     "slogan": "Cosmos DB MongoDB",
     "icon": "icons/cosmosdb.svg",
     "integrations": {
-      "automation": [
-        "cosmos-mongodb-manage",
-        "cosmos-mongodb-query"
-      ]
+      "automation": ["cosmos-mongodb-manage", "cosmos-mongodb-query"]
     }
   },
   {
@@ -2351,10 +2015,7 @@
     "slogan": "Cosmos DB Table",
     "icon": "icons/cosmosdb.svg",
     "integrations": {
-      "automation": [
-        "cosmos-table-manage",
-        "cosmos-table-query"
-      ]
+      "automation": ["cosmos-table-manage", "cosmos-table-query"]
     }
   },
   {
@@ -2422,10 +2083,7 @@
     "slogan": "FTP/SFTP Transfer",
     "icon": "icons/ftp.svg",
     "integrations": {
-      "automation": [
-        "ftp-sftp-watch-folder",
-        "ftp-sftp-write-file"
-      ]
+      "automation": ["ftp-sftp-watch-folder", "ftp-sftp-write-file"]
     }
   },
   {
@@ -2499,10 +2157,7 @@
     "slogan": "Microsoft Excel",
     "icon": "icons/excel.svg",
     "integrations": {
-      "automation": [
-        "microsoft-excel-webhook",
-        "microsoft-excel"
-      ]
+      "automation": ["microsoft-excel-webhook", "microsoft-excel"]
     }
   },
   {
@@ -2513,10 +2168,7 @@
     "slogan": "mqtt",
     "icon": "icons/mqtt.svg",
     "integrations": {
-      "automation": [
-        "mqtt-publisher",
-        "mqtt-subscriber"
-      ]
+      "automation": ["mqtt-publisher", "mqtt-subscriber"]
     }
   },
   {
@@ -2527,10 +2179,7 @@
     "slogan": "NATS Messaging",
     "icon": "icons/nats.svg",
     "integrations": {
-      "automation": [
-        "nats-publish",
-        "nats-subscribe"
-      ]
+      "automation": ["nats-publish", "nats-subscribe"]
     }
   },
   {
@@ -2604,11 +2253,7 @@
     "slogan": "paypal",
     "icon": "icons/paypal.svg",
     "integrations": {
-      "automation": [
-        "paypal-capture-payment",
-        "paypal-create-order",
-        "paypal"
-      ]
+      "automation": ["paypal-capture-payment", "paypal-create-order", "paypal"]
     }
   },
   {
@@ -2635,10 +2280,7 @@
     "slogan": "Pusher Realtime",
     "icon": "icons/pusher.svg",
     "integrations": {
-      "automation": [
-        "pusher-send",
-        "pusher-trigger"
-      ]
+      "automation": ["pusher-send", "pusher-trigger"]
     }
   },
   {
@@ -2716,10 +2358,7 @@
     "slogan": "STOMP Messaging",
     "icon": "icons/stomp.svg",
     "integrations": {
-      "automation": [
-        "stomp-publish",
-        "stomp-subscribe"
-      ]
+      "automation": ["stomp-publish", "stomp-subscribe"]
     }
   },
   {
@@ -2733,7 +2372,8 @@
       "automation": [
         "stripe-charges",
         "stripe-create-payment-link",
-        "stripe"
+        "stripe",
+        "stripe-webhook-trigger"
       ]
     }
   },
@@ -2802,9 +2442,7 @@
     "slogan": "biorxiv",
     "icon": "icons/Biorxiv.svg",
     "integrations": {
-      "automation": [
-        "biorxiv"
-      ]
+      "automation": ["biorxiv"]
     }
   },
   {
@@ -2815,9 +2453,7 @@
     "slogan": "bitbucket",
     "icon": "icons/bitbucket.svg",
     "integrations": {
-      "automation": [
-        "bitbucket"
-      ]
+      "automation": ["bitbucket"]
     }
   },
   {
@@ -2828,9 +2464,7 @@
     "slogan": "blob-storage",
     "icon": "icons/azure-blob.svg",
     "integrations": {
-      "automation": [
-        "blob-storage"
-      ]
+      "automation": ["blob-storage"]
     }
   },
   {
@@ -2841,9 +2475,7 @@
     "slogan": "blockchain-info",
     "icon": "icons/data.svg",
     "integrations": {
-      "automation": [
-        "blockchain-info"
-      ]
+      "automation": ["blockchain-info"]
     }
   },
   {
@@ -2854,9 +2486,7 @@
     "slogan": "bom-utils",
     "icon": "icons/factory.svg",
     "integrations": {
-      "automation": [
-        "bom-utils"
-      ]
+      "automation": ["bom-utils"]
     }
   },
   {
@@ -2867,9 +2497,7 @@
     "slogan": "bond-pricing",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "bond-pricing"
-      ]
+      "automation": ["bond-pricing"]
     }
   },
   {
@@ -2880,10 +2508,7 @@
     "slogan": "bonfhir",
     "icon": "icons/bonfhir.svg",
     "integrations": {
-      "automation": [
-        "bonfhir-client",
-        "bonfhir-subscription-trigger"
-      ]
+      "automation": ["bonfhir-client", "bonfhir-subscription-trigger"]
     }
   },
   {
@@ -2894,9 +2519,7 @@
     "slogan": "break-even-calculator",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "break-even-calculator"
-      ]
+      "automation": ["break-even-calculator"]
     }
   },
   {
@@ -2907,9 +2530,7 @@
     "slogan": "budget-variance",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "budget-variance"
-      ]
+      "automation": ["budget-variance"]
     }
   },
   {
@@ -2920,9 +2541,7 @@
     "slogan": "builtwith",
     "icon": "icons/builtwith.svg",
     "integrations": {
-      "automation": [
-        "builtwith"
-      ]
+      "automation": ["builtwith"]
     }
   },
   {
@@ -2933,9 +2552,7 @@
     "slogan": "cactus",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "cactus"
-      ]
+      "automation": ["cactus"]
     }
   },
   {
@@ -2946,9 +2563,7 @@
     "slogan": "case-convert",
     "icon": "icons/case-convert.svg",
     "integrations": {
-      "automation": [
-        "case-convert"
-      ]
+      "automation": ["case-convert"]
     }
   },
   {
@@ -2959,9 +2574,7 @@
     "slogan": "cassandra-query",
     "icon": "icons/cosmosdb.svg",
     "integrations": {
-      "automation": [
-        "cassandra-query"
-      ]
+      "automation": ["cassandra-query"]
     }
   },
   {
@@ -2972,9 +2585,7 @@
     "slogan": "cdnjs",
     "icon": "icons/code.svg",
     "integrations": {
-      "automation": [
-        "cdnjs"
-      ]
+      "automation": ["cdnjs"]
     }
   },
   {
@@ -2985,9 +2596,7 @@
     "slogan": "census-gov",
     "icon": "icons/data.svg",
     "integrations": {
-      "automation": [
-        "census-gov"
-      ]
+      "automation": ["census-gov"]
     }
   },
   {
@@ -2998,9 +2607,7 @@
     "slogan": "censys",
     "icon": "icons/censys.svg",
     "integrations": {
-      "automation": [
-        "censys"
-      ]
+      "automation": ["censys"]
     }
   },
   {
@@ -3011,9 +2618,7 @@
     "slogan": "cern-opendata",
     "icon": "icons/data.svg",
     "integrations": {
-      "automation": [
-        "cern-opendata"
-      ]
+      "automation": ["cern-opendata"]
     }
   },
   {
@@ -3024,9 +2629,7 @@
     "slogan": "chebi",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "chebi"
-      ]
+      "automation": ["chebi"]
     }
   },
   {
@@ -3037,9 +2640,7 @@
     "slogan": "checksum-calculator",
     "icon": "icons/utils.svg",
     "integrations": {
-      "automation": [
-        "checksum-calculator"
-      ]
+      "automation": ["checksum-calculator"]
     }
   },
   {
@@ -3050,9 +2651,7 @@
     "slogan": "chembl",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "chembl"
-      ]
+      "automation": ["chembl"]
     }
   },
   {
@@ -3063,9 +2662,7 @@
     "slogan": "chroma-db",
     "icon": "icons/chroma-db.svg",
     "integrations": {
-      "automation": [
-        "chroma-db"
-      ]
+      "automation": ["chroma-db"]
     }
   },
   {
@@ -3076,9 +2673,7 @@
     "slogan": "circleci",
     "icon": "icons/circleCi.svg",
     "integrations": {
-      "automation": [
-        "circleci"
-      ]
+      "automation": ["circleci"]
     }
   },
   {
@@ -3089,9 +2684,7 @@
     "slogan": "cisco",
     "icon": "icons/Cisco.svg",
     "integrations": {
-      "automation": [
-        "cisco"
-      ]
+      "automation": ["cisco"]
     }
   },
   {
@@ -3102,9 +2695,7 @@
     "slogan": "clamp",
     "icon": "icons/clamp.svg",
     "integrations": {
-      "automation": [
-        "clamp"
-      ]
+      "automation": ["clamp"]
     }
   },
   {
@@ -3115,9 +2706,7 @@
     "slogan": "clinical-tables-search",
     "icon": "icons/nih.svg",
     "integrations": {
-      "automation": [
-        "clinical-tables-search"
-      ]
+      "automation": ["clinical-tables-search"]
     }
   },
   {
@@ -3128,9 +2717,7 @@
     "slogan": "clinical-trials-search",
     "icon": "icons/nih.svg",
     "integrations": {
-      "automation": [
-        "clinical-trials-search"
-      ]
+      "automation": ["clinical-trials-search"]
     }
   },
   {
@@ -3141,9 +2728,7 @@
     "slogan": "cmi-generate-payment-form",
     "icon": "icons/cmi.svg",
     "integrations": {
-      "automation": [
-        "cmi-generate-payment-form"
-      ]
+      "automation": ["cmi-generate-payment-form"]
     }
   },
   {
@@ -3154,9 +2739,7 @@
     "slogan": "coap-client",
     "icon": "icons/coap.svg",
     "integrations": {
-      "automation": [
-        "coap-client"
-      ]
+      "automation": ["coap-client"]
     }
   },
   {
@@ -3167,9 +2750,7 @@
     "slogan": "coap-server",
     "icon": "icons/coap.svg",
     "integrations": {
-      "automation": [
-        "coap-server"
-      ]
+      "automation": ["coap-server"]
     }
   },
   {
@@ -3180,9 +2761,7 @@
     "slogan": "coindesk-price",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "coindesk-price"
-      ]
+      "automation": ["coindesk-price"]
     }
   },
   {
@@ -3193,9 +2772,7 @@
     "slogan": "coingecko-price",
     "icon": "icons/coinGecko.svg",
     "integrations": {
-      "automation": [
-        "coingecko-price"
-      ]
+      "automation": ["coingecko-price"]
     }
   },
   {
@@ -3206,9 +2783,7 @@
     "slogan": "company-search",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "company-search"
-      ]
+      "automation": ["company-search"]
     }
   },
   {
@@ -3219,9 +2794,7 @@
     "slogan": "convert-timezone",
     "icon": "icons/convert-timezone.svg",
     "integrations": {
-      "automation": [
-        "convert-timezone"
-      ]
+      "automation": ["convert-timezone"]
     }
   },
   {
@@ -3232,9 +2805,7 @@
     "slogan": "convert-to-file",
     "icon": "icons/convertToFile.svg",
     "integrations": {
-      "automation": [
-        "convert-to-file"
-      ]
+      "automation": ["convert-to-file"]
     }
   },
   {
@@ -3245,9 +2816,7 @@
     "slogan": "copernicus-ems",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "copernicus-ems"
-      ]
+      "automation": ["copernicus-ems"]
     }
   },
   {
@@ -3275,9 +2844,7 @@
     "slogan": "cosmos-delete",
     "icon": "icons/cosmosdb.svg",
     "integrations": {
-      "automation": [
-        "cosmos-delete"
-      ]
+      "automation": ["cosmos-delete"]
     }
   },
   {
@@ -3288,9 +2855,7 @@
     "slogan": "credit-card-validator",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "credit-card-validator"
-      ]
+      "automation": ["credit-card-validator"]
     }
   },
   {
@@ -3301,9 +2866,7 @@
     "slogan": "credit-score-estimator",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "credit-score-estimator"
-      ]
+      "automation": ["credit-score-estimator"]
     }
   },
   {
@@ -3314,9 +2877,7 @@
     "slogan": "cron",
     "icon": "icons/cron.svg",
     "integrations": {
-      "automation": [
-        "cron"
-      ]
+      "automation": ["cron"]
     }
   },
   {
@@ -3327,9 +2888,7 @@
     "slogan": "crossref-search",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "crossref-search"
-      ]
+      "automation": ["crossref-search"]
     }
   },
   {
@@ -3340,9 +2899,7 @@
     "slogan": "currency-converter",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "currency-converter"
-      ]
+      "automation": ["currency-converter"]
     }
   },
   {
@@ -3353,9 +2910,7 @@
     "slogan": "d-id",
     "icon": "icons/d-id.svg",
     "integrations": {
-      "automation": [
-        "d-id"
-      ]
+      "automation": ["d-id"]
     }
   },
   {
@@ -3366,9 +2921,7 @@
     "slogan": "dad-jokes",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "dad-jokes"
-      ]
+      "automation": ["dad-jokes"]
     }
   },
   {
@@ -3408,9 +2961,7 @@
     "slogan": "data-gouv-fr",
     "icon": "icons/datagovema.svg",
     "integrations": {
-      "automation": [
-        "data-gouv-fr"
-      ]
+      "automation": ["data-gouv-fr"]
     }
   },
   {
@@ -3421,9 +2972,7 @@
     "slogan": "datamuse",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "datamuse"
-      ]
+      "automation": ["datamuse"]
     }
   },
   {
@@ -3434,9 +2983,7 @@
     "slogan": "date-add",
     "icon": "icons/date-add.svg",
     "integrations": {
-      "automation": [
-        "date-add"
-      ]
+      "automation": ["date-add"]
     }
   },
   {
@@ -3447,9 +2994,7 @@
     "slogan": "date-calculator",
     "icon": "icons/utils.svg",
     "integrations": {
-      "automation": [
-        "date-calculator"
-      ]
+      "automation": ["date-calculator"]
     }
   },
   {
@@ -3460,9 +3005,7 @@
     "slogan": "date-compare",
     "icon": "icons/date-compare.svg",
     "integrations": {
-      "automation": [
-        "date-compare"
-      ]
+      "automation": ["date-compare"]
     }
   },
   {
@@ -3473,9 +3016,7 @@
     "slogan": "date-end-of",
     "icon": "icons/date-end-of.svg",
     "integrations": {
-      "automation": [
-        "date-end-of"
-      ]
+      "automation": ["date-end-of"]
     }
   },
   {
@@ -3486,9 +3027,7 @@
     "slogan": "date-start-of",
     "icon": "icons/date-start-of.svg",
     "integrations": {
-      "automation": [
-        "date-start-of"
-      ]
+      "automation": ["date-start-of"]
     }
   },
   {
@@ -3499,9 +3038,7 @@
     "slogan": "debt-consolidation",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "debt-consolidation"
-      ]
+      "automation": ["debt-consolidation"]
     }
   },
   {
@@ -3512,9 +3049,7 @@
     "slogan": "deck-of-cards",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "deck-of-cards"
-      ]
+      "automation": ["deck-of-cards"]
     }
   },
   {
@@ -3525,9 +3060,7 @@
     "slogan": "decode-base64",
     "icon": "icons/decode-base64.svg",
     "integrations": {
-      "automation": [
-        "decode-base64"
-      ]
+      "automation": ["decode-base64"]
     }
   },
   {
@@ -3538,9 +3071,7 @@
     "slogan": "deduplicate",
     "icon": "icons/deduplicate.svg",
     "integrations": {
-      "automation": [
-        "deduplicate"
-      ]
+      "automation": ["deduplicate"]
     }
   },
   {
@@ -3551,9 +3082,7 @@
     "slogan": "deepgram",
     "icon": "icons/deepgram.svg",
     "integrations": {
-      "automation": [
-        "deepgram"
-      ]
+      "automation": ["deepgram"]
     }
   },
   {
@@ -3564,9 +3093,7 @@
     "slogan": "default-fill",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "default-fill"
-      ]
+      "automation": ["default-fill"]
     }
   },
   {
@@ -3577,9 +3104,7 @@
     "slogan": "depreciation-calculator",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "depreciation-calculator"
-      ]
+      "automation": ["depreciation-calculator"]
     }
   },
   {
@@ -3590,9 +3115,7 @@
     "slogan": "dhl",
     "icon": "icons/dhl.svg",
     "integrations": {
-      "automation": [
-        "dhl"
-      ]
+      "automation": ["dhl"]
     }
   },
   {
@@ -3603,9 +3126,7 @@
     "slogan": "dhl-tms",
     "icon": "icons/dhl.svg",
     "integrations": {
-      "automation": [
-        "dhl-tms"
-      ]
+      "automation": ["dhl-tms"]
     }
   },
   {
@@ -3616,9 +3137,7 @@
     "slogan": "dialy-sms",
     "icon": "icons/chronodiali.svg",
     "integrations": {
-      "automation": [
-        "dialy-sms"
-      ]
+      "automation": ["dialy-sms"]
     }
   },
   {
@@ -3629,9 +3148,7 @@
     "slogan": "discord-api",
     "icon": "icons/discord.svg",
     "integrations": {
-      "automation": [
-        "discord-api"
-      ]
+      "automation": ["discord-api"]
     }
   },
   {
@@ -3642,9 +3159,7 @@
     "slogan": "dnd5e",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "dnd5e"
-      ]
+      "automation": ["dnd5e"]
     }
   },
   {
@@ -3655,9 +3170,7 @@
     "slogan": "dnp3-master",
     "icon": "icons/dnp.svg",
     "integrations": {
-      "automation": [
-        "dnp3-master"
-      ]
+      "automation": ["dnp3-master"]
     }
   },
   {
@@ -3668,9 +3181,7 @@
     "slogan": "dnp3-outstation",
     "icon": "icons/dnp.svg",
     "integrations": {
-      "automation": [
-        "dnp3-outstation"
-      ]
+      "automation": ["dnp3-outstation"]
     }
   },
   {
@@ -3681,9 +3192,7 @@
     "slogan": "dns-lookup",
     "icon": "icons/dns-lookup.svg",
     "integrations": {
-      "automation": [
-        "dns-lookup"
-      ]
+      "automation": ["dns-lookup"]
     }
   },
   {
@@ -3694,9 +3203,7 @@
     "slogan": "dns-to-ip",
     "icon": "icons/dns-to-ip.svg",
     "integrations": {
-      "automation": [
-        "dns-to-ip"
-      ]
+      "automation": ["dns-to-ip"]
     }
   },
   {
@@ -3707,9 +3214,7 @@
     "slogan": "doaj",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "doaj"
-      ]
+      "automation": ["doaj"]
     }
   },
   {
@@ -3720,9 +3225,7 @@
     "slogan": "docker",
     "icon": "icons/code.svg",
     "integrations": {
-      "automation": [
-        "docker"
-      ]
+      "automation": ["docker"]
     }
   },
   {
@@ -3733,9 +3236,7 @@
     "slogan": "docker-hub",
     "icon": "icons/code.svg",
     "integrations": {
-      "automation": [
-        "docker-hub"
-      ]
+      "automation": ["docker-hub"]
     }
   },
   {
@@ -3746,9 +3247,7 @@
     "slogan": "docusign",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "docusign"
-      ]
+      "automation": ["docusign"]
     }
   },
   {
@@ -3759,9 +3258,7 @@
     "slogan": "dropbox",
     "icon": "icons/dropbox.svg",
     "integrations": {
-      "automation": [
-        "dropbox"
-      ]
+      "automation": ["dropbox"]
     }
   },
   {
@@ -3772,9 +3269,7 @@
     "slogan": "duckduckgo-search",
     "icon": "icons/duckduckgo.svg",
     "integrations": {
-      "automation": [
-        "duckduckgo-search"
-      ]
+      "automation": ["duckduckgo-search"]
     }
   },
   {
@@ -3785,9 +3280,7 @@
     "slogan": "ebay-search",
     "icon": "icons/ebay.svg",
     "integrations": {
-      "automation": [
-        "ebay-search"
-      ]
+      "automation": ["ebay-search"]
     }
   },
   {
@@ -3798,9 +3291,7 @@
     "slogan": "ebsco",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "ebsco"
-      ]
+      "automation": ["ebsco"]
     }
   },
   {
@@ -3811,9 +3302,7 @@
     "slogan": "elasticsearch",
     "icon": "icons/elasticsearch.svg",
     "integrations": {
-      "automation": [
-        "elasticsearch"
-      ]
+      "automation": ["elasticsearch"]
     }
   },
   {
@@ -3824,9 +3313,7 @@
     "slogan": "electricity-maps",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "electricity-maps"
-      ]
+      "automation": ["electricity-maps"]
     }
   },
   {
@@ -3837,9 +3324,7 @@
     "slogan": "emsc-seismic",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "emsc-seismic"
-      ]
+      "automation": ["emsc-seismic"]
     }
   },
   {
@@ -3850,9 +3335,7 @@
     "slogan": "encode-base64",
     "icon": "icons/encode-base64.svg",
     "integrations": {
-      "automation": [
-        "encode-base64"
-      ]
+      "automation": ["encode-base64"]
     }
   },
   {
@@ -3863,9 +3346,7 @@
     "slogan": "ensembl",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "ensembl"
-      ]
+      "automation": ["ensembl"]
     }
   },
   {
@@ -3876,9 +3357,7 @@
     "slogan": "escrow-calculator",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "escrow-calculator"
-      ]
+      "automation": ["escrow-calculator"]
     }
   },
   {
@@ -3889,9 +3368,7 @@
     "slogan": "ethernet-ip-read",
     "icon": "icons/ethernetip.svg",
     "integrations": {
-      "automation": [
-        "ethernet-ip-read"
-      ]
+      "automation": ["ethernet-ip-read"]
     }
   },
   {
@@ -3902,9 +3379,7 @@
     "slogan": "ethernet-ip-trigger",
     "icon": "icons/ethernetip.svg",
     "integrations": {
-      "automation": [
-        "ethernet-ip-trigger"
-      ]
+      "automation": ["ethernet-ip-trigger"]
     }
   },
   {
@@ -3915,9 +3390,7 @@
     "slogan": "ethernet-ip-write",
     "icon": "icons/ethernetip.svg",
     "integrations": {
-      "automation": [
-        "ethernet-ip-write"
-      ]
+      "automation": ["ethernet-ip-write"]
     }
   },
   {
@@ -3928,9 +3401,7 @@
     "slogan": "exchangerate-api",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "exchangerate-api"
-      ]
+      "automation": ["exchangerate-api"]
     }
   },
   {
@@ -3941,9 +3412,7 @@
     "slogan": "extract",
     "icon": "icons/extract.svg",
     "integrations": {
-      "automation": [
-        "extract"
-      ]
+      "automation": ["extract"]
     }
   },
   {
@@ -3954,9 +3423,7 @@
     "slogan": "facecheck",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "facecheck"
-      ]
+      "automation": ["facecheck"]
     }
   },
   {
@@ -3967,9 +3434,7 @@
     "slogan": "fal-ai",
     "icon": "icons/falai.svg",
     "integrations": {
-      "automation": [
-        "fal-ai"
-      ]
+      "automation": ["fal-ai"]
     }
   },
   {
@@ -3980,9 +3445,7 @@
     "slogan": "fastex",
     "icon": "icons/fastex.svg",
     "integrations": {
-      "automation": [
-        "fastex"
-      ]
+      "automation": ["fastex"]
     }
   },
   {
@@ -3993,9 +3456,7 @@
     "slogan": "federal-register",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "federal-register"
-      ]
+      "automation": ["federal-register"]
     }
   },
   {
@@ -4006,9 +3467,7 @@
     "slogan": "ffxiv",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "ffxiv"
-      ]
+      "automation": ["ffxiv"]
     }
   },
   {
@@ -4019,9 +3478,7 @@
     "slogan": "file-size-converter",
     "icon": "icons/utils.svg",
     "integrations": {
-      "automation": [
-        "file-size-converter"
-      ]
+      "automation": ["file-size-converter"]
     }
   },
   {
@@ -4032,9 +3489,7 @@
     "slogan": "files-com",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "files-com"
-      ]
+      "automation": ["files-com"]
     }
   },
   {
@@ -4045,9 +3500,7 @@
     "slogan": "filter-array",
     "icon": "icons/filter-array.svg",
     "integrations": {
-      "automation": [
-        "filter-array"
-      ]
+      "automation": ["filter-array"]
     }
   },
   {
@@ -4058,9 +3511,7 @@
     "slogan": "financial-modeling-prep",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "financial-modeling-prep"
-      ]
+      "automation": ["financial-modeling-prep"]
     }
   },
   {
@@ -4071,9 +3522,7 @@
     "slogan": "financial-ratio-analyzer",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "financial-ratio-analyzer"
-      ]
+      "automation": ["financial-ratio-analyzer"]
     }
   },
   {
@@ -4084,9 +3533,7 @@
     "slogan": "firestore",
     "icon": "icons/firestore.svg",
     "integrations": {
-      "automation": [
-        "firestore"
-      ]
+      "automation": ["firestore"]
     }
   },
   {
@@ -4097,9 +3544,7 @@
     "slogan": "flatten",
     "icon": "icons/flatten.svg",
     "integrations": {
-      "automation": [
-        "flatten"
-      ]
+      "automation": ["flatten"]
     }
   },
   {
@@ -4110,9 +3555,7 @@
     "slogan": "flickr-oembed",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "flickr-oembed"
-      ]
+      "automation": ["flickr-oembed"]
     }
   },
   {
@@ -4123,9 +3566,7 @@
     "slogan": "fmi",
     "icon": "icons/imf.svg",
     "integrations": {
-      "automation": [
-        "fmi"
-      ]
+      "automation": ["fmi"]
     }
   },
   {
@@ -4136,9 +3577,7 @@
     "slogan": "format-date",
     "icon": "icons/format-date.svg",
     "integrations": {
-      "automation": [
-        "format-date"
-      ]
+      "automation": ["format-date"]
     }
   },
   {
@@ -4149,9 +3588,7 @@
     "slogan": "frankfurter-exchange",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "frankfurter-exchange"
-      ]
+      "automation": ["frankfurter-exchange"]
     }
   },
   {
@@ -4162,9 +3599,7 @@
     "slogan": "free-dictionary",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "free-dictionary"
-      ]
+      "automation": ["free-dictionary"]
     }
   },
   {
@@ -4175,9 +3610,7 @@
     "slogan": "freepik",
     "icon": "icons/FREEPIK.svg",
     "integrations": {
-      "automation": [
-        "freepik"
-      ]
+      "automation": ["freepik"]
     }
   },
   {
@@ -4188,9 +3621,7 @@
     "slogan": "fx-hedging",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "fx-hedging"
-      ]
+      "automation": ["fx-hedging"]
     }
   },
   {
@@ -4201,9 +3632,7 @@
     "slogan": "g2p",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "g2p"
-      ]
+      "automation": ["g2p"]
     }
   },
   {
@@ -4214,9 +3643,7 @@
     "slogan": "gbif",
     "icon": "icons/gbif.svg",
     "integrations": {
-      "automation": [
-        "gbif"
-      ]
+      "automation": ["gbif"]
     }
   },
   {
@@ -4227,9 +3654,7 @@
     "slogan": "gbif-occurrence",
     "icon": "icons/gbif.svg",
     "integrations": {
-      "automation": [
-        "gbif-occurrence"
-      ]
+      "automation": ["gbif-occurrence"]
     }
   },
   {
@@ -4240,9 +3665,7 @@
     "slogan": "gdacs",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "gdacs"
-      ]
+      "automation": ["gdacs"]
     }
   },
   {
@@ -4253,9 +3676,7 @@
     "slogan": "gemini-medical",
     "icon": "icons/gemini.svg",
     "integrations": {
-      "automation": [
-        "gemini-medical"
-      ]
+      "automation": ["gemini-medical"]
     }
   },
   {
@@ -4266,9 +3687,7 @@
     "slogan": "genderize",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "genderize"
-      ]
+      "automation": ["genderize"]
     }
   },
   {
@@ -4279,9 +3698,7 @@
     "slogan": "generate-uuid",
     "icon": "icons/code.svg",
     "integrations": {
-      "automation": [
-        "generate-uuid"
-      ]
+      "automation": ["generate-uuid"]
     }
   },
   {
@@ -4292,9 +3709,7 @@
     "slogan": "geojson",
     "icon": "icons/geojson.svg",
     "integrations": {
-      "automation": [
-        "geojson"
-      ]
+      "automation": ["geojson"]
     }
   },
   {
@@ -4305,9 +3720,7 @@
     "slogan": "geonames",
     "icon": "icons/google-maps.svg",
     "integrations": {
-      "automation": [
-        "geonames"
-      ]
+      "automation": ["geonames"]
     }
   },
   {
@@ -4318,9 +3731,7 @@
     "slogan": "geospatial-utils",
     "icon": "icons/geospacial.svg",
     "integrations": {
-      "automation": [
-        "geospatial-utils"
-      ]
+      "automation": ["geospatial-utils"]
     }
   },
   {
@@ -4331,9 +3742,7 @@
     "slogan": "getimg-ai",
     "icon": "icons/getimgai.svg",
     "integrations": {
-      "automation": [
-        "getimg-ai"
-      ]
+      "automation": ["getimg-ai"]
     }
   },
   {
@@ -4344,9 +3753,7 @@
     "slogan": "gettyimages",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "gettyimages"
-      ]
+      "automation": ["gettyimages"]
     }
   },
   {
@@ -4357,9 +3764,7 @@
     "slogan": "giphy-gif-search",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "giphy-gif-search"
-      ]
+      "automation": ["giphy-gif-search"]
     }
   },
   {
@@ -4370,9 +3775,7 @@
     "slogan": "gleif",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "gleif"
-      ]
+      "automation": ["gleif"]
     }
   },
   {
@@ -4383,9 +3786,7 @@
     "slogan": "global-solar-atlas",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "global-solar-atlas"
-      ]
+      "automation": ["global-solar-atlas"]
     }
   },
   {
@@ -4396,9 +3797,7 @@
     "slogan": "graphhopper-route",
     "icon": "icons/google-maps.svg",
     "integrations": {
-      "automation": [
-        "graphhopper-route"
-      ]
+      "automation": ["graphhopper-route"]
     }
   },
   {
@@ -4409,9 +3808,7 @@
     "slogan": "graphql",
     "icon": "icons/graphql.svg",
     "integrations": {
-      "automation": [
-        "graphql"
-      ]
+      "automation": ["graphql"]
     }
   },
   {
@@ -4422,9 +3819,7 @@
     "slogan": "gremlin-query",
     "icon": "icons/cosmosdb.svg",
     "integrations": {
-      "automation": [
-        "gremlin-query"
-      ]
+      "automation": ["gremlin-query"]
     }
   },
   {
@@ -4435,9 +3830,7 @@
     "slogan": "greynoise",
     "icon": "icons/greynoise.svg",
     "integrations": {
-      "automation": [
-        "greynoise"
-      ]
+      "automation": ["greynoise"]
     }
   },
   {
@@ -4448,9 +3841,7 @@
     "slogan": "group-by",
     "icon": "icons/group-by.svg",
     "integrations": {
-      "automation": [
-        "group-by"
-      ]
+      "automation": ["group-by"]
     }
   },
   {
@@ -4461,9 +3852,7 @@
     "slogan": "hailuo-ai",
     "icon": "icons/hailuo.svg",
     "integrations": {
-      "automation": [
-        "hailuo-ai"
-      ]
+      "automation": ["hailuo-ai"]
     }
   },
   {
@@ -4474,9 +3863,7 @@
     "slogan": "hash",
     "icon": "icons/hash.svg",
     "integrations": {
-      "automation": [
-        "hash"
-      ]
+      "automation": ["hash"]
     }
   },
   {
@@ -4487,9 +3874,7 @@
     "slogan": "haveibeenpwned",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "haveibeenpwned"
-      ]
+      "automation": ["haveibeenpwned"]
     }
   },
   {
@@ -4500,9 +3885,7 @@
     "slogan": "header-validation",
     "icon": "icons/header-validation.svg",
     "integrations": {
-      "automation": [
-        "header-validation"
-      ]
+      "automation": ["header-validation"]
     }
   },
   {
@@ -4513,9 +3896,7 @@
     "slogan": "health-topics-search",
     "icon": "icons/oash.svg",
     "integrations": {
-      "automation": [
-        "health-topics-search"
-      ]
+      "automation": ["health-topics-search"]
     }
   },
   {
@@ -4526,9 +3907,7 @@
     "slogan": "hespress",
     "icon": "icons/news.svg",
     "integrations": {
-      "automation": [
-        "hespress"
-      ]
+      "automation": ["hespress"]
     }
   },
   {
@@ -4539,9 +3918,7 @@
     "slogan": "hespress-english",
     "icon": "icons/news.svg",
     "integrations": {
-      "automation": [
-        "hespress-english"
-      ]
+      "automation": ["hespress-english"]
     }
   },
   {
@@ -4552,9 +3929,7 @@
     "slogan": "heygen",
     "icon": "icons/heygen.svg",
     "integrations": {
-      "automation": [
-        "heygen"
-      ]
+      "automation": ["heygen"]
     }
   },
   {
@@ -4565,9 +3940,7 @@
     "slogan": "hl7",
     "icon": "icons/hl7.svg",
     "integrations": {
-      "automation": [
-        "hl7-client"
-      ]
+      "automation": ["hl7-client"]
     }
   },
   {
@@ -4578,9 +3951,7 @@
     "slogan": "hl7",
     "icon": "icons/hl7.svg",
     "integrations": {
-      "automation": [
-        "hl7-webhook-trigger"
-      ]
+      "automation": ["hl7-webhook-trigger"]
     }
   },
   {
@@ -4591,9 +3962,7 @@
     "slogan": "hmac",
     "icon": "icons/hmac.svg",
     "integrations": {
-      "automation": [
-        "hmac"
-      ]
+      "automation": ["hmac"]
     }
   },
   {
@@ -4604,9 +3973,7 @@
     "slogan": "html-escape",
     "icon": "icons/html-escape.svg",
     "integrations": {
-      "automation": [
-        "html-escape"
-      ]
+      "automation": ["html-escape"]
     }
   },
   {
@@ -4617,9 +3984,7 @@
     "slogan": "html-pdf",
     "icon": "icons/pdf.svg",
     "integrations": {
-      "automation": [
-        "html-pdf"
-      ]
+      "automation": ["html-pdf"]
     }
   },
   {
@@ -4630,9 +3995,7 @@
     "slogan": "html-sanitize",
     "icon": "icons/html-sanitize.svg",
     "integrations": {
-      "automation": [
-        "html-sanitize"
-      ]
+      "automation": ["html-sanitize"]
     }
   },
   {
@@ -4643,9 +4006,7 @@
     "slogan": "html-to-text",
     "icon": "icons/html-to-text.svg",
     "integrations": {
-      "automation": [
-        "html-to-text"
-      ]
+      "automation": ["html-to-text"]
     }
   },
   {
@@ -4656,9 +4017,7 @@
     "slogan": "http-fingerprint",
     "icon": "icons/http-fingerprint.svg",
     "integrations": {
-      "automation": [
-        "http-fingerprint"
-      ]
+      "automation": ["http-fingerprint"]
     }
   },
   {
@@ -4669,9 +4028,7 @@
     "slogan": "httpbin",
     "icon": "icons/httprequest.svg",
     "integrations": {
-      "automation": [
-        "httpbin"
-      ]
+      "automation": ["httpbin"]
     }
   },
   {
@@ -4682,9 +4039,7 @@
     "slogan": "httpstat",
     "icon": "icons/httprequest.svg",
     "integrations": {
-      "automation": [
-        "httpstat"
-      ]
+      "automation": ["httpstat"]
     }
   },
   {
@@ -4695,9 +4050,7 @@
     "slogan": "hubspot",
     "icon": "icons/hubspot.svg",
     "integrations": {
-      "automation": [
-        "hubspot"
-      ]
+      "automation": ["hubspot"]
     }
   },
   {
@@ -4708,9 +4061,7 @@
     "slogan": "hugging-face-inference",
     "icon": "icons/huggingface.svg",
     "integrations": {
-      "automation": [
-        "hugging-face-inference"
-      ]
+      "automation": ["hugging-face-inference"]
     }
   },
   {
@@ -4721,9 +4072,7 @@
     "slogan": "icd11-search",
     "icon": "icons/medical.svg",
     "integrations": {
-      "automation": [
-        "icd11-search"
-      ]
+      "automation": ["icd11-search"]
     }
   },
   {
@@ -4734,9 +4083,7 @@
     "slogan": "iconhorse",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "iconhorse"
-      ]
+      "automation": ["iconhorse"]
     }
   },
   {
@@ -4747,9 +4094,7 @@
     "slogan": "ideogram",
     "icon": "icons/ideogram.svg",
     "integrations": {
-      "automation": [
-        "ideogram"
-      ]
+      "automation": ["ideogram"]
     }
   },
   {
@@ -4760,9 +4105,7 @@
     "slogan": "if-else",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "if-else"
-      ]
+      "automation": ["if-else"]
     }
   },
   {
@@ -4773,9 +4116,7 @@
     "slogan": "ilovepdf",
     "icon": "icons/ilovepdf.svg",
     "integrations": {
-      "automation": [
-        "ilovepdf"
-      ]
+      "automation": ["ilovepdf"]
     }
   },
   {
@@ -4786,10 +4127,7 @@
     "slogan": "imap",
     "icon": "icons/email-send.svg",
     "integrations": {
-      "automation": [
-        "imap-trigger",
-        "imap-fetch"
-      ]
+      "automation": ["imap-trigger", "imap-fetch"]
     }
   },
   {
@@ -4800,9 +4138,7 @@
     "slogan": "imgflip",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "imgflip"
-      ]
+      "automation": ["imgflip"]
     }
   },
   {
@@ -4813,9 +4149,7 @@
     "slogan": "import-export-cost",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "import-export-cost"
-      ]
+      "automation": ["import-export-cost"]
     }
   },
   {
@@ -4826,9 +4160,7 @@
     "slogan": "influxdb",
     "icon": "icons/data.svg",
     "integrations": {
-      "automation": [
-        "influxdb"
-      ]
+      "automation": ["influxdb"]
     }
   },
   {
@@ -4839,9 +4171,7 @@
     "slogan": "infobip-sms",
     "icon": "icons/infobip.svg",
     "integrations": {
-      "automation": [
-        "infobip-sms"
-      ]
+      "automation": ["infobip-sms"]
     }
   },
   {
@@ -4852,9 +4182,7 @@
     "slogan": "ingv-seismic",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "ingv-seismic"
-      ]
+      "automation": ["ingv-seismic"]
     }
   },
   {
@@ -4865,9 +4193,7 @@
     "slogan": "inventory-logistics",
     "icon": "icons/inventory.svg",
     "integrations": {
-      "automation": [
-        "inventory-logistics"
-      ]
+      "automation": ["inventory-logistics"]
     }
   },
   {
@@ -4895,9 +4221,7 @@
     "slogan": "ip-api",
     "icon": "icons/ip-address.svg",
     "integrations": {
-      "automation": [
-        "ip-api"
-      ]
+      "automation": ["ip-api"]
     }
   },
   {
@@ -4908,9 +4232,7 @@
     "slogan": "ip-geolocation",
     "icon": "icons/ip-geolocation.svg",
     "integrations": {
-      "automation": [
-        "ip-geolocation"
-      ]
+      "automation": ["ip-geolocation"]
     }
   },
   {
@@ -4921,9 +4243,7 @@
     "slogan": "ip2location",
     "icon": "icons/ip-address.svg",
     "integrations": {
-      "automation": [
-        "ip2location"
-      ]
+      "automation": ["ip2location"]
     }
   },
   {
@@ -4934,9 +4254,7 @@
     "slogan": "ipify",
     "icon": "icons/ip-address.svg",
     "integrations": {
-      "automation": [
-        "ipify"
-      ]
+      "automation": ["ipify"]
     }
   },
   {
@@ -4947,9 +4265,7 @@
     "slogan": "ipinfo",
     "icon": "icons/ip-address.svg",
     "integrations": {
-      "automation": [
-        "ipinfo"
-      ]
+      "automation": ["ipinfo"]
     }
   },
   {
@@ -4960,9 +4276,7 @@
     "slogan": "jikan",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "jikan"
-      ]
+      "automation": ["jikan"]
     }
   },
   {
@@ -4993,9 +4307,7 @@
     "slogan": "join-text",
     "icon": "icons/join-text.svg",
     "integrations": {
-      "automation": [
-        "join-text"
-      ]
+      "automation": ["join-text"]
     }
   },
   {
@@ -5006,9 +4318,7 @@
     "slogan": "js-escape",
     "icon": "icons/js-escape.svg",
     "integrations": {
-      "automation": [
-        "js-escape"
-      ]
+      "automation": ["js-escape"]
     }
   },
   {
@@ -5019,9 +4329,7 @@
     "slogan": "json-to-astm",
     "icon": "icons/astm.svg",
     "integrations": {
-      "automation": [
-        "json-to-astm"
-      ]
+      "automation": ["json-to-astm"]
     }
   },
   {
@@ -5032,9 +4340,7 @@
     "slogan": "jsonplaceholder",
     "icon": "icons/parse-json.svg",
     "integrations": {
-      "automation": [
-        "jsonplaceholder"
-      ]
+      "automation": ["jsonplaceholder"]
     }
   },
   {
@@ -5045,9 +4351,7 @@
     "slogan": "jwt",
     "icon": "icons/jwt.svg",
     "integrations": {
-      "automation": [
-        "jwt"
-      ]
+      "automation": ["jwt"]
     }
   },
   {
@@ -5058,9 +4362,7 @@
     "slogan": "kanye-rest",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "kanye-rest"
-      ]
+      "automation": ["kanye-rest"]
     }
   },
   {
@@ -5071,9 +4373,7 @@
     "slogan": "keycloak",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "keycloak"
-      ]
+      "automation": ["keycloak"]
     }
   },
   {
@@ -5084,9 +4384,7 @@
     "slogan": "la-vie-eco",
     "icon": "icons/news.svg",
     "integrations": {
-      "automation": [
-        "la-vie-eco"
-      ]
+      "automation": ["la-vie-eco"]
     }
   },
   {
@@ -5097,9 +4395,7 @@
     "slogan": "lang-connect",
     "icon": "icons/langconnect.svg",
     "integrations": {
-      "automation": [
-        "lang-connect"
-      ]
+      "automation": ["lang-connect"]
     }
   },
   {
@@ -5110,9 +4406,7 @@
     "slogan": "languagetool",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "languagetool"
-      ]
+      "automation": ["languagetool"]
     }
   },
   {
@@ -5123,9 +4417,7 @@
     "slogan": "launch-library-2",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "launch-library-2"
-      ]
+      "automation": ["launch-library-2"]
     }
   },
   {
@@ -5136,9 +4428,7 @@
     "slogan": "le-matin",
     "icon": "icons/news.svg",
     "integrations": {
-      "automation": [
-        "le-matin"
-      ]
+      "automation": ["le-matin"]
     }
   },
   {
@@ -5149,9 +4439,7 @@
     "slogan": "le360",
     "icon": "icons/news.svg",
     "integrations": {
-      "automation": [
-        "le360"
-      ]
+      "automation": ["le360"]
     }
   },
   {
@@ -5162,9 +4450,7 @@
     "slogan": "lease-vs-buy",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "lease-vs-buy"
-      ]
+      "automation": ["lease-vs-buy"]
     }
   },
   {
@@ -5175,9 +4461,7 @@
     "slogan": "legal-search",
     "icon": "icons/adala.svg",
     "integrations": {
-      "automation": [
-        "legal-search"
-      ]
+      "automation": ["legal-search"]
     }
   },
   {
@@ -5188,9 +4472,7 @@
     "slogan": "leonardo-ai",
     "icon": "icons/leonardo.svg",
     "integrations": {
-      "automation": [
-        "leonardo-ai"
-      ]
+      "automation": ["leonardo-ai"]
     }
   },
   {
@@ -5201,9 +4483,7 @@
     "slogan": "liberation",
     "icon": "icons/news.svg",
     "integrations": {
-      "automation": [
-        "liberation"
-      ]
+      "automation": ["liberation"]
     }
   },
   {
@@ -5214,9 +4494,7 @@
     "slogan": "libretranslate",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "libretranslate"
-      ]
+      "automation": ["libretranslate"]
     }
   },
   {
@@ -5227,9 +4505,7 @@
     "slogan": "limit",
     "icon": "icons/limit.svg",
     "integrations": {
-      "automation": [
-        "limit"
-      ]
+      "automation": ["limit"]
     }
   },
   {
@@ -5240,9 +4516,7 @@
     "slogan": "line-of-credit",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "line-of-credit"
-      ]
+      "automation": ["line-of-credit"]
     }
   },
   {
@@ -5253,9 +4527,7 @@
     "slogan": "linear",
     "icon": "icons/linear.svg",
     "integrations": {
-      "automation": [
-        "linear"
-      ]
+      "automation": ["linear"]
     }
   },
   {
@@ -5266,9 +4538,7 @@
     "slogan": "listennotes",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "listennotes"
-      ]
+      "automation": ["listennotes"]
     }
   },
   {
@@ -5279,9 +4549,7 @@
     "slogan": "loan-calculator",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "loan-calculator"
-      ]
+      "automation": ["loan-calculator"]
     }
   },
   {
@@ -5292,9 +4560,7 @@
     "slogan": "lopinion",
     "icon": "icons/news.svg",
     "integrations": {
-      "automation": [
-        "lopinion"
-      ]
+      "automation": ["lopinion"]
     }
   },
   {
@@ -5305,9 +4571,7 @@
     "slogan": "lorem-generator",
     "icon": "icons/utils.svg",
     "integrations": {
-      "automation": [
-        "lorem-generator"
-      ]
+      "automation": ["lorem-generator"]
     }
   },
   {
@@ -5318,9 +4582,7 @@
     "slogan": "lorem-picsum",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "lorem-picsum"
-      ]
+      "automation": ["lorem-picsum"]
     }
   },
   {
@@ -5331,9 +4593,7 @@
     "slogan": "loripsum-api",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "loripsum-api"
-      ]
+      "automation": ["loripsum-api"]
     }
   },
   {
@@ -5344,9 +4604,7 @@
     "slogan": "luma-dream-machine",
     "icon": "icons/lumadreammachine.svg",
     "integrations": {
-      "automation": [
-        "luma-dream-machine"
-      ]
+      "automation": ["luma-dream-machine"]
     }
   },
   {
@@ -5357,9 +4615,7 @@
     "slogan": "magento",
     "icon": "icons/magento.svg",
     "integrations": {
-      "automation": [
-        "magento"
-      ]
+      "automation": ["magento"]
     }
   },
   {
@@ -5370,9 +4626,7 @@
     "slogan": "mahakim-dossier",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "mahakim-dossier"
-      ]
+      "automation": ["mahakim-dossier"]
     }
   },
   {
@@ -5383,9 +4637,7 @@
     "slogan": "mailchimp",
     "icon": "icons/mailchimp.svg",
     "integrations": {
-      "automation": [
-        "mailchimp-marketing"
-      ]
+      "automation": ["mailchimp-marketing"]
     }
   },
   {
@@ -5396,9 +4648,7 @@
     "slogan": "mandrill",
     "icon": "icons/mandrill.svg",
     "integrations": {
-      "automation": [
-        "mandrill-transactional"
-      ]
+      "automation": ["mandrill-transactional"]
     }
   },
   {
@@ -5409,9 +4659,7 @@
     "slogan": "map-news",
     "icon": "icons/news.svg",
     "integrations": {
-      "automation": [
-        "map-news"
-      ]
+      "automation": ["map-news"]
     }
   },
   {
@@ -5422,9 +4670,7 @@
     "slogan": "mapbox",
     "icon": "icons/google-maps.svg",
     "integrations": {
-      "automation": [
-        "mapbox"
-      ]
+      "automation": ["mapbox"]
     }
   },
   {
@@ -5435,9 +4681,7 @@
     "slogan": "marches-publics",
     "icon": "icons/marches-publics.svg",
     "integrations": {
-      "automation": [
-        "marches-publics"
-      ]
+      "automation": ["marches-publics"]
     }
   },
   {
@@ -5448,9 +4692,7 @@
     "slogan": "markdown-to-html",
     "icon": "icons/utils.svg",
     "integrations": {
-      "automation": [
-        "markdown-to-html"
-      ]
+      "automation": ["markdown-to-html"]
     }
   },
   {
@@ -5461,9 +4703,7 @@
     "slogan": "maroc-meteo-vigilance",
     "icon": "icons/maroc-meteo-vigilance.svg",
     "integrations": {
-      "automation": [
-        "maroc-meteo-vigilance"
-      ]
+      "automation": ["maroc-meteo-vigilance"]
     }
   },
   {
@@ -5474,9 +4714,7 @@
     "slogan": "mattermost-webhook",
     "icon": "icons/mattermost.svg",
     "integrations": {
-      "automation": [
-        "mattermost-webhook"
-      ]
+      "automation": ["mattermost-webhook"]
     }
   },
   {
@@ -5487,9 +4725,7 @@
     "slogan": "mcp-client",
     "icon": "icons/mcp.svg",
     "integrations": {
-      "automation": [
-        "mcp-client"
-      ]
+      "automation": ["mcp-client"]
     }
   },
   {
@@ -5500,9 +4736,7 @@
     "slogan": "media-log",
     "icon": "icons/logs.svg",
     "integrations": {
-      "automation": [
-        "media-log"
-      ]
+      "automation": ["media-log"]
     }
   },
   {
@@ -5513,9 +4747,7 @@
     "slogan": "medicaments-api",
     "icon": "icons/fra.svg",
     "integrations": {
-      "automation": [
-        "medicaments-api"
-      ]
+      "automation": ["medicaments-api"]
     }
   },
   {
@@ -5526,9 +4758,7 @@
     "slogan": "medium",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "medium"
-      ]
+      "automation": ["medium"]
     }
   },
   {
@@ -5539,9 +4769,7 @@
     "slogan": "medrxiv-search",
     "icon": "icons/Biorxiv.svg",
     "integrations": {
-      "automation": [
-        "medrxiv-search"
-      ]
+      "automation": ["medrxiv-search"]
     }
   },
   {
@@ -5552,9 +4780,7 @@
     "slogan": "mendeley",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "mendeley"
-      ]
+      "automation": ["mendeley"]
     }
   },
   {
@@ -5565,9 +4791,7 @@
     "slogan": "meshy",
     "icon": "icons/meshy.svg",
     "integrations": {
-      "automation": [
-        "meshy"
-      ]
+      "automation": ["meshy"]
     }
   },
   {
@@ -5598,9 +4822,7 @@
     "slogan": "midjourney-goapi",
     "icon": "icons/midjourney.svg",
     "integrations": {
-      "automation": [
-        "midjourney-goapi"
-      ]
+      "automation": ["midjourney-goapi"]
     }
   },
   {
@@ -5611,9 +4833,7 @@
     "slogan": "milvus",
     "icon": "icons/milvus.svg",
     "integrations": {
-      "automation": [
-        "milvus"
-      ]
+      "automation": ["milvus"]
     }
   },
   {
@@ -5624,9 +4844,7 @@
     "slogan": "mistral-doc",
     "icon": "icons/mistralAi.svg",
     "integrations": {
-      "automation": [
-        "mistral-doc"
-      ]
+      "automation": ["mistral-doc"]
     }
   },
   {
@@ -5637,9 +4855,7 @@
     "slogan": "modbus-read",
     "icon": "icons/modbus.svg",
     "integrations": {
-      "automation": [
-        "modbus-read"
-      ]
+      "automation": ["modbus-read"]
     }
   },
   {
@@ -5650,9 +4866,7 @@
     "slogan": "modbus-trigger",
     "icon": "icons/modbus.svg",
     "integrations": {
-      "automation": [
-        "modbus-trigger"
-      ]
+      "automation": ["modbus-trigger"]
     }
   },
   {
@@ -5663,9 +4877,7 @@
     "slogan": "modbus-write",
     "icon": "icons/modbus.svg",
     "integrations": {
-      "automation": [
-        "modbus-write"
-      ]
+      "automation": ["modbus-write"]
     }
   },
   {
@@ -5676,9 +4888,7 @@
     "slogan": "mondaycom",
     "icon": "icons/mondayCom.svg",
     "integrations": {
-      "automation": [
-        "mondaycom"
-      ]
+      "automation": ["mondaycom"]
     }
   },
   {
@@ -5689,9 +4899,7 @@
     "slogan": "mongo-query",
     "icon": "icons/cosmosdb.svg",
     "integrations": {
-      "automation": [
-        "mongo-query"
-      ]
+      "automation": ["mongo-query"]
     }
   },
   {
@@ -5702,9 +4910,7 @@
     "slogan": "moroccan-rib-validator",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "moroccan-rib-validator"
-      ]
+      "automation": ["moroccan-rib-validator"]
     }
   },
   {
@@ -5715,9 +4921,7 @@
     "slogan": "morocco-world-news",
     "icon": "icons/news.svg",
     "integrations": {
-      "automation": [
-        "morocco-world-news"
-      ]
+      "automation": ["morocco-world-news"]
     }
   },
   {
@@ -5728,9 +4932,7 @@
     "slogan": "mortgage-calculator",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "mortgage-calculator"
-      ]
+      "automation": ["mortgage-calculator"]
     }
   },
   {
@@ -5741,9 +4943,7 @@
     "slogan": "mrds",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "mrds"
-      ]
+      "automation": ["mrds"]
     }
   },
   {
@@ -5754,9 +4954,7 @@
     "slogan": "mrp-engine",
     "icon": "icons/factory.svg",
     "integrations": {
-      "automation": [
-        "mrp-engine"
-      ]
+      "automation": ["mrp-engine"]
     }
   },
   {
@@ -5767,9 +4965,7 @@
     "slogan": "mygene",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "mygene"
-      ]
+      "automation": ["mygene"]
     }
   },
   {
@@ -5780,9 +4976,7 @@
     "slogan": "myvariant",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "myvariant"
-      ]
+      "automation": ["myvariant"]
     }
   },
   {
@@ -5793,9 +4987,7 @@
     "slogan": "nasa",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "nasa"
-      ]
+      "automation": ["nasa"]
     }
   },
   {
@@ -5806,9 +4998,7 @@
     "slogan": "nasa-apod",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "nasa-apod"
-      ]
+      "automation": ["nasa-apod"]
     }
   },
   {
@@ -5819,9 +5009,7 @@
     "slogan": "nasa-media-search",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "nasa-media-search"
-      ]
+      "automation": ["nasa-media-search"]
     }
   },
   {
@@ -5832,9 +5020,7 @@
     "slogan": "nationalize",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "nationalize"
-      ]
+      "automation": ["nationalize"]
     }
   },
   {
@@ -5845,9 +5031,7 @@
     "slogan": "naver-search",
     "icon": "icons/naver.svg",
     "integrations": {
-      "automation": [
-        "naver-search"
-      ]
+      "automation": ["naver-search"]
     }
   },
   {
@@ -5858,9 +5042,7 @@
     "slogan": "network-calc-security",
     "icon": "icons/networkcalc.svg",
     "integrations": {
-      "automation": [
-        "network-calc-security"
-      ]
+      "automation": ["network-calc-security"]
     }
   },
   {
@@ -5871,9 +5053,7 @@
     "slogan": "networkcalc",
     "icon": "icons/networkcalc.svg",
     "integrations": {
-      "automation": [
-        "networkcalc"
-      ]
+      "automation": ["networkcalc"]
     }
   },
   {
@@ -5884,9 +5064,7 @@
     "slogan": "news-article",
     "icon": "icons/news.svg",
     "integrations": {
-      "automation": [
-        "news-article"
-      ]
+      "automation": ["news-article"]
     }
   },
   {
@@ -5897,9 +5075,7 @@
     "slogan": "newsapi",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "newsapi"
-      ]
+      "automation": ["newsapi"]
     }
   },
   {
@@ -5939,9 +5115,7 @@
     "slogan": "nhtsa",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "nhtsa"
-      ]
+      "automation": ["nhtsa"]
     }
   },
   {
@@ -5952,9 +5126,7 @@
     "slogan": "nobel-prize",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "nobel-prize"
-      ]
+      "automation": ["nobel-prize"]
     }
   },
   {
@@ -5965,9 +5137,7 @@
     "slogan": "normalize-whitespace",
     "icon": "icons/normalize-whitespace.svg",
     "integrations": {
-      "automation": [
-        "normalize-whitespace"
-      ]
+      "automation": ["normalize-whitespace"]
     }
   },
   {
@@ -5978,9 +5148,7 @@
     "slogan": "notion",
     "icon": "icons/notion.svg",
     "integrations": {
-      "automation": [
-        "notion"
-      ]
+      "automation": ["notion"]
     }
   },
   {
@@ -5991,9 +5159,7 @@
     "slogan": "now",
     "icon": "icons/now.svg",
     "integrations": {
-      "automation": [
-        "now"
-      ]
+      "automation": ["now"]
     }
   },
   {
@@ -6004,9 +5170,7 @@
     "slogan": "nowpayments",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "nowpayments"
-      ]
+      "automation": ["nowpayments"]
     }
   },
   {
@@ -6017,9 +5181,7 @@
     "slogan": "npm",
     "icon": "icons/npm.svg",
     "integrations": {
-      "automation": [
-        "npm"
-      ]
+      "automation": ["npm"]
     }
   },
   {
@@ -6030,9 +5192,7 @@
     "slogan": "npv-irr-calculator",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "npv-irr-calculator"
-      ]
+      "automation": ["npv-irr-calculator"]
     }
   },
   {
@@ -6043,9 +5203,7 @@
     "slogan": "omdb",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "omdb"
-      ]
+      "automation": ["omdb"]
     }
   },
   {
@@ -6056,9 +5214,7 @@
     "slogan": "once",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "once"
-      ]
+      "automation": ["once"]
     }
   },
   {
@@ -6069,9 +5225,7 @@
     "slogan": "onedrive",
     "icon": "icons/onedrive.svg",
     "integrations": {
-      "automation": [
-        "onedrive"
-      ]
+      "automation": ["onedrive"]
     }
   },
   {
@@ -6082,9 +5236,7 @@
     "slogan": "opc",
     "icon": "icons/opc.svg",
     "integrations": {
-      "automation": [
-        "opc"
-      ]
+      "automation": ["opc"]
     }
   },
   {
@@ -6095,9 +5247,7 @@
     "slogan": "opc-trigger",
     "icon": "icons/opc.svg",
     "integrations": {
-      "automation": [
-        "opc-trigger"
-      ]
+      "automation": ["opc-trigger"]
     }
   },
   {
@@ -6108,9 +5258,7 @@
     "slogan": "open-data-search",
     "icon": "icons/datagovema.svg",
     "integrations": {
-      "automation": [
-        "open-data-search"
-      ]
+      "automation": ["open-data-search"]
     }
   },
   {
@@ -6121,9 +5269,7 @@
     "slogan": "open-library-search",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "open-library-search"
-      ]
+      "automation": ["open-library-search"]
     }
   },
   {
@@ -6134,9 +5280,7 @@
     "slogan": "open-meteo-climate",
     "icon": "icons/openWeatherMap.svg",
     "integrations": {
-      "automation": [
-        "open-meteo-climate"
-      ]
+      "automation": ["open-meteo-climate"]
     }
   },
   {
@@ -6147,9 +5291,7 @@
     "slogan": "open-trivia",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "open-trivia"
-      ]
+      "automation": ["open-trivia"]
     }
   },
   {
@@ -6160,9 +5302,7 @@
     "slogan": "openai-dalle",
     "icon": "icons/dalle-text.svg",
     "integrations": {
-      "automation": [
-        "openai-dalle"
-      ]
+      "automation": ["openai-dalle"]
     }
   },
   {
@@ -6173,9 +5313,7 @@
     "slogan": "openalex",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "openalex"
-      ]
+      "automation": ["openalex"]
     }
   },
   {
@@ -6186,9 +5324,7 @@
     "slogan": "openaq",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "openaq"
-      ]
+      "automation": ["openaq"]
     }
   },
   {
@@ -6199,9 +5335,7 @@
     "slogan": "opencorporates",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "opencorporates"
-      ]
+      "automation": ["opencorporates"]
     }
   },
   {
@@ -6212,9 +5346,7 @@
     "slogan": "openfoodfacts",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "openfoodfacts"
-      ]
+      "automation": ["openfoodfacts"]
     }
   },
   {
@@ -6225,9 +5357,7 @@
     "slogan": "opensky",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "opensky"
-      ]
+      "automation": ["opensky"]
     }
   },
   {
@@ -6238,9 +5368,7 @@
     "slogan": "openstreetmap",
     "icon": "icons/google-maps.svg",
     "integrations": {
-      "automation": [
-        "openstreetmap"
-      ]
+      "automation": ["openstreetmap"]
     }
   },
   {
@@ -6251,9 +5379,7 @@
     "slogan": "opentable-reviews-search",
     "icon": "icons/opentable.svg",
     "integrations": {
-      "automation": [
-        "opentable-reviews-search"
-      ]
+      "automation": ["opentable-reviews-search"]
     }
   },
   {
@@ -6264,9 +5390,7 @@
     "slogan": "opentopodata",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "opentopodata"
-      ]
+      "automation": ["opentopodata"]
     }
   },
   {
@@ -6277,9 +5401,7 @@
     "slogan": "options-pricing",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "options-pricing"
-      ]
+      "automation": ["options-pricing"]
     }
   },
   {
@@ -6290,9 +5412,7 @@
     "slogan": "orcid-search",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "orcid-search"
-      ]
+      "automation": ["orcid-search"]
     }
   },
   {
@@ -6303,9 +5423,7 @@
     "slogan": "orthanc",
     "icon": "icons/orthanc.svg",
     "integrations": {
-      "automation": [
-        "orthanc"
-      ]
+      "automation": ["orthanc"]
     }
   },
   {
@@ -6316,9 +5434,7 @@
     "slogan": "osf-nodes",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "osf-nodes"
-      ]
+      "automation": ["osf-nodes"]
     }
   },
   {
@@ -6329,9 +5445,7 @@
     "slogan": "osisoft",
     "icon": "icons/osisoft.svg",
     "integrations": {
-      "automation": [
-        "osisoft"
-      ]
+      "automation": ["osisoft"]
     }
   },
   {
@@ -6342,9 +5456,7 @@
     "slogan": "osisoft-trigger",
     "icon": "icons/osisoft.svg",
     "integrations": {
-      "automation": [
-        "osisoft-trigger"
-      ]
+      "automation": ["osisoft-trigger"]
     }
   },
   {
@@ -6355,9 +5467,7 @@
     "slogan": "oujdacity",
     "icon": "icons/news.svg",
     "integrations": {
-      "automation": [
-        "oujdacity"
-      ]
+      "automation": ["oujdacity"]
     }
   },
   {
@@ -6368,9 +5478,7 @@
     "slogan": "oxforddictionaries",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "oxforddictionaries"
-      ]
+      "automation": ["oxforddictionaries"]
     }
   },
   {
@@ -6381,9 +5489,7 @@
     "slogan": "parlement-maroc",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "parlement-maroc"
-      ]
+      "automation": ["parlement-maroc"]
     }
   },
   {
@@ -6394,9 +5500,7 @@
     "slogan": "parse-csv",
     "icon": "icons/parse-csv.svg",
     "integrations": {
-      "automation": [
-        "parse-csv"
-      ]
+      "automation": ["parse-csv"]
     }
   },
   {
@@ -6407,9 +5511,7 @@
     "slogan": "parse-date",
     "icon": "icons/parse-date.svg",
     "integrations": {
-      "automation": [
-        "parse-date"
-      ]
+      "automation": ["parse-date"]
     }
   },
   {
@@ -6420,9 +5522,7 @@
     "slogan": "parse-json",
     "icon": "icons/parse-json.svg",
     "integrations": {
-      "automation": [
-        "parse-json"
-      ]
+      "automation": ["parse-json"]
     }
   },
   {
@@ -6433,9 +5533,7 @@
     "slogan": "parse-xml",
     "icon": "icons/parse-xml.svg",
     "integrations": {
-      "automation": [
-        "parse-xml"
-      ]
+      "automation": ["parse-xml"]
     }
   },
   {
@@ -6446,9 +5544,7 @@
     "slogan": "patientview",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "patientview"
-      ]
+      "automation": ["patientview"]
     }
   },
   {
@@ -6459,9 +5555,7 @@
     "slogan": "payment-gateway-comparison",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "payment-gateway-comparison"
-      ]
+      "automation": ["payment-gateway-comparison"]
     }
   },
   {
@@ -6472,9 +5566,7 @@
     "slogan": "pender-sms",
     "icon": "icons/pender.svg",
     "integrations": {
-      "automation": [
-        "pender-sms"
-      ]
+      "automation": ["pender-sms"]
     }
   },
   {
@@ -6485,9 +5577,7 @@
     "slogan": "perenual",
     "icon": "icons/perenual.svg",
     "integrations": {
-      "automation": [
-        "perenual"
-      ]
+      "automation": ["perenual"]
     }
   },
   {
@@ -6498,9 +5588,7 @@
     "slogan": "pexels-image-search",
     "icon": "icons/pexels.svg",
     "integrations": {
-      "automation": [
-        "pexels-image-search"
-      ]
+      "automation": ["pexels-image-search"]
     }
   },
   {
@@ -6511,9 +5599,7 @@
     "slogan": "pharmacy-scraper",
     "icon": "icons/pharmacy.svg",
     "integrations": {
-      "automation": [
-        "pharmacy-scraper"
-      ]
+      "automation": ["pharmacy-scraper"]
     }
   },
   {
@@ -6524,9 +5610,7 @@
     "slogan": "pharmamaroc",
     "icon": "icons/pharmamaroc.svg",
     "integrations": {
-      "automation": [
-        "pharmamaroc"
-      ]
+      "automation": ["pharmamaroc"]
     }
   },
   {
@@ -6537,9 +5621,7 @@
     "slogan": "pinecone-vector-store",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "pinecone-vector-store"
-      ]
+      "automation": ["pinecone-vector-store"]
     }
   },
   {
@@ -6550,9 +5632,7 @@
     "slogan": "pixabay-image-search",
     "icon": "icons/pixabay.svg",
     "integrations": {
-      "automation": [
-        "pixabay-image-search"
-      ]
+      "automation": ["pixabay-image-search"]
     }
   },
   {
@@ -6563,9 +5643,7 @@
     "slogan": "plantnet",
     "icon": "icons/plantnet.svg",
     "integrations": {
-      "automation": [
-        "plantnet"
-      ]
+      "automation": ["plantnet"]
     }
   },
   {
@@ -6576,9 +5654,7 @@
     "slogan": "play-ht",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "play-ht"
-      ]
+      "automation": ["play-ht"]
     }
   },
   {
@@ -6589,9 +5665,7 @@
     "slogan": "pmc",
     "icon": "icons/pmc.svg",
     "integrations": {
-      "automation": [
-        "pmc"
-      ]
+      "automation": ["pmc"]
     }
   },
   {
@@ -6602,9 +5676,7 @@
     "slogan": "pokeapi",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "pokeapi"
-      ]
+      "automation": ["pokeapi"]
     }
   },
   {
@@ -6615,9 +5687,7 @@
     "slogan": "port-scanner",
     "icon": "icons/port-scanner.svg",
     "integrations": {
-      "automation": [
-        "port-scanner"
-      ]
+      "automation": ["port-scanner"]
     }
   },
   {
@@ -6628,9 +5698,7 @@
     "slogan": "portfolio-tracker",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "portfolio-tracker"
-      ]
+      "automation": ["portfolio-tracker"]
     }
   },
   {
@@ -6641,9 +5709,7 @@
     "slogan": "postcode-io",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "postcode-io"
-      ]
+      "automation": ["postcode-io"]
     }
   },
   {
@@ -6654,9 +5720,7 @@
     "slogan": "poste-ma",
     "icon": "icons/amana.svg",
     "integrations": {
-      "automation": [
-        "poste-ma"
-      ]
+      "automation": ["poste-ma"]
     }
   },
   {
@@ -6667,9 +5731,7 @@
     "slogan": "prefix-suffix",
     "icon": "icons/replace.svg",
     "integrations": {
-      "automation": [
-        "prefix-suffix"
-      ]
+      "automation": ["prefix-suffix"]
     }
   },
   {
@@ -6680,10 +5742,7 @@
     "slogan": "printing",
     "icon": "icons/zebra.svg",
     "integrations": {
-      "automation": [
-        "zpl-builder",
-        "escpos-builder"
-      ]
+      "automation": ["zpl-builder", "escpos-builder"]
     }
   },
   {
@@ -6694,9 +5753,7 @@
     "slogan": "prodia",
     "icon": "icons/prodia.svg",
     "integrations": {
-      "automation": [
-        "prodia"
-      ]
+      "automation": ["prodia"]
     }
   },
   {
@@ -6707,9 +5764,7 @@
     "slogan": "product-lookup",
     "icon": "icons/productlookup.svg",
     "integrations": {
-      "automation": [
-        "product-lookup"
-      ]
+      "automation": ["product-lookup"]
     }
   },
   {
@@ -6720,9 +5775,7 @@
     "slogan": "production-metrics",
     "icon": "icons/factory.svg",
     "integrations": {
-      "automation": [
-        "production-metrics"
-      ]
+      "automation": ["production-metrics"]
     }
   },
   {
@@ -6733,9 +5786,7 @@
     "slogan": "profinet-read",
     "icon": "icons/profinet.svg",
     "integrations": {
-      "automation": [
-        "profinet-read"
-      ]
+      "automation": ["profinet-read"]
     }
   },
   {
@@ -6746,9 +5797,7 @@
     "slogan": "profinet-trigger",
     "icon": "icons/profinet.svg",
     "integrations": {
-      "automation": [
-        "profinet-trigger"
-      ]
+      "automation": ["profinet-trigger"]
     }
   },
   {
@@ -6759,9 +5808,7 @@
     "slogan": "profinet-write",
     "icon": "icons/profinet.svg",
     "integrations": {
-      "automation": [
-        "profinet-write"
-      ]
+      "automation": ["profinet-write"]
     }
   },
   {
@@ -6772,9 +5819,7 @@
     "slogan": "profit-margin-calculator",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "profit-margin-calculator"
-      ]
+      "automation": ["profit-margin-calculator"]
     }
   },
   {
@@ -6785,9 +5830,7 @@
     "slogan": "project-gutenberg-search",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "project-gutenberg-search"
-      ]
+      "automation": ["project-gutenberg-search"]
     }
   },
   {
@@ -6798,9 +5841,7 @@
     "slogan": "purpleair",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "purpleair"
-      ]
+      "automation": ["purpleair"]
     }
   },
   {
@@ -6811,9 +5852,7 @@
     "slogan": "qdrant",
     "icon": "icons/qdrant.svg",
     "integrations": {
-      "automation": [
-        "qdrant"
-      ]
+      "automation": ["qdrant"]
     }
   },
   {
@@ -6824,9 +5863,7 @@
     "slogan": "qr-server",
     "icon": "icons/barcode.svg",
     "integrations": {
-      "automation": [
-        "qr-server"
-      ]
+      "automation": ["qr-server"]
     }
   },
   {
@@ -6837,9 +5874,7 @@
     "slogan": "quality-maintenance",
     "icon": "icons/factory.svg",
     "integrations": {
-      "automation": [
-        "quality-maintenance"
-      ]
+      "automation": ["quality-maintenance"]
     }
   },
   {
@@ -6850,9 +5885,7 @@
     "slogan": "quickchart",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "quickchart"
-      ]
+      "automation": ["quickchart"]
     }
   },
   {
@@ -6863,9 +5896,7 @@
     "slogan": "quotable",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "quotable"
-      ]
+      "automation": ["quotable"]
     }
   },
   {
@@ -6876,9 +5907,7 @@
     "slogan": "quran",
     "icon": "icons/quran.svg",
     "integrations": {
-      "automation": [
-        "quran"
-      ]
+      "automation": ["quran"]
     }
   },
   {
@@ -6889,9 +5918,7 @@
     "slogan": "randomuser",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "randomuser"
-      ]
+      "automation": ["randomuser"]
     }
   },
   {
@@ -6902,9 +5929,7 @@
     "slogan": "rcsb-pdb",
     "icon": "icons/rcsb.svg",
     "integrations": {
-      "automation": [
-        "rcsb-pdb"
-      ]
+      "automation": ["rcsb-pdb"]
     }
   },
   {
@@ -6915,9 +5940,7 @@
     "slogan": "recraft-ai",
     "icon": "icons/recraftai.svg",
     "integrations": {
-      "automation": [
-        "recraft-ai"
-      ]
+      "automation": ["recraft-ai"]
     }
   },
   {
@@ -6928,9 +5951,7 @@
     "slogan": "reddit-api",
     "icon": "icons/reddit.svg",
     "integrations": {
-      "automation": [
-        "reddit-api"
-      ]
+      "automation": ["reddit-api"]
     }
   },
   {
@@ -6941,9 +5962,7 @@
     "slogan": "reduce",
     "icon": "icons/reduce.svg",
     "integrations": {
-      "automation": [
-        "reduce"
-      ]
+      "automation": ["reduce"]
     }
   },
   {
@@ -6954,9 +5973,7 @@
     "slogan": "regex-match",
     "icon": "icons/regex-match.svg",
     "integrations": {
-      "automation": [
-        "regex-match"
-      ]
+      "automation": ["regex-match"]
     }
   },
   {
@@ -6967,9 +5984,7 @@
     "slogan": "regex-replace",
     "icon": "icons/regex-replace.svg",
     "integrations": {
-      "automation": [
-        "regex-replace"
-      ]
+      "automation": ["regex-replace"]
     }
   },
   {
@@ -6980,9 +5995,7 @@
     "slogan": "rekrutema-detail",
     "icon": "icons/rekrute.svg",
     "integrations": {
-      "automation": [
-        "rekrutema-detail"
-      ]
+      "automation": ["rekrutema-detail"]
     }
   },
   {
@@ -6993,9 +6006,7 @@
     "slogan": "remove-bg",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "remove-bg"
-      ]
+      "automation": ["remove-bg"]
     }
   },
   {
@@ -7006,9 +6017,7 @@
     "slogan": "replace",
     "icon": "icons/replace.svg",
     "integrations": {
-      "automation": [
-        "replace"
-      ]
+      "automation": ["replace"]
     }
   },
   {
@@ -7019,9 +6028,7 @@
     "slogan": "replicate",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "replicate"
-      ]
+      "automation": ["replicate"]
     }
   },
   {
@@ -7032,9 +6039,7 @@
     "slogan": "reqres",
     "icon": "icons/httprequest.svg",
     "integrations": {
-      "automation": [
-        "reqres"
-      ]
+      "automation": ["reqres"]
     }
   },
   {
@@ -7045,9 +6050,7 @@
     "slogan": "rest-countries",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "rest-countries"
-      ]
+      "automation": ["rest-countries"]
     }
   },
   {
@@ -7058,9 +6061,7 @@
     "slogan": "restructure",
     "icon": "icons/restructure.svg",
     "integrations": {
-      "automation": [
-        "restructure"
-      ]
+      "automation": ["restructure"]
     }
   },
   {
@@ -7071,9 +6072,7 @@
     "slogan": "retirement-calculator",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "retirement-calculator"
-      ]
+      "automation": ["retirement-calculator"]
     }
   },
   {
@@ -7084,9 +6083,7 @@
     "slogan": "rick-and-morty",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "rick-and-morty"
-      ]
+      "automation": ["rick-and-morty"]
     }
   },
   {
@@ -7097,9 +6094,7 @@
     "slogan": "roman-numeral-converter",
     "icon": "icons/utils.svg",
     "integrations": {
-      "automation": [
-        "roman-numeral-converter"
-      ]
+      "automation": ["roman-numeral-converter"]
     }
   },
   {
@@ -7110,9 +6105,7 @@
     "slogan": "rsc",
     "icon": "icons/news.svg",
     "integrations": {
-      "automation": [
-        "rsc"
-      ]
+      "automation": ["rsc"]
     }
   },
   {
@@ -7123,9 +6116,7 @@
     "slogan": "rss-feed",
     "icon": "icons/rss.svg",
     "integrations": {
-      "automation": [
-        "rss-feed"
-      ]
+      "automation": ["rss-feed"]
     }
   },
   {
@@ -7136,9 +6127,7 @@
     "slogan": "runwayml",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "runwayml"
-      ]
+      "automation": ["runwayml"]
     }
   },
   {
@@ -7149,9 +6138,7 @@
     "slogan": "salary-converter",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "salary-converter"
-      ]
+      "automation": ["salary-converter"]
     }
   },
   {
@@ -7185,9 +6172,7 @@
     "slogan": "scada-read",
     "icon": "icons/scada.svg",
     "integrations": {
-      "automation": [
-        "scada-read"
-      ]
+      "automation": ["scada-read"]
     }
   },
   {
@@ -7198,9 +6183,7 @@
     "slogan": "scada-trigger",
     "icon": "icons/scada.svg",
     "integrations": {
-      "automation": [
-        "scada-trigger"
-      ]
+      "automation": ["scada-trigger"]
     }
   },
   {
@@ -7211,9 +6194,7 @@
     "slogan": "scada-write",
     "icon": "icons/scada.svg",
     "integrations": {
-      "automation": [
-        "scada-write"
-      ]
+      "automation": ["scada-write"]
     }
   },
   {
@@ -7224,9 +6205,7 @@
     "slogan": "schema-validate",
     "icon": "icons/schema-validate.svg",
     "integrations": {
-      "automation": [
-        "schema-validate"
-      ]
+      "automation": ["schema-validate"]
     }
   },
   {
@@ -7237,9 +6216,7 @@
     "slogan": "seatable",
     "icon": "icons/seatable.svg",
     "integrations": {
-      "automation": [
-        "seatable"
-      ]
+      "automation": ["seatable"]
     }
   },
   {
@@ -7250,9 +6227,7 @@
     "slogan": "sec-edgar",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "sec-edgar"
-      ]
+      "automation": ["sec-edgar"]
     }
   },
   {
@@ -7263,9 +6238,7 @@
     "slogan": "select-fields",
     "icon": "icons/select-fields.svg",
     "integrations": {
-      "automation": [
-        "select-fields"
-      ]
+      "automation": ["select-fields"]
     }
   },
   {
@@ -7276,9 +6249,7 @@
     "slogan": "select-key",
     "icon": "icons/select-key.svg",
     "integrations": {
-      "automation": [
-        "select-key"
-      ]
+      "automation": ["select-key"]
     }
   },
   {
@@ -7289,9 +6260,7 @@
     "slogan": "semantic-scholar",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "semantic-scholar"
-      ]
+      "automation": ["semantic-scholar"]
     }
   },
   {
@@ -7302,9 +6271,7 @@
     "slogan": "sendgrid",
     "icon": "icons/email-send.svg",
     "integrations": {
-      "automation": [
-        "sendgrid"
-      ]
+      "automation": ["sendgrid"]
     }
   },
   {
@@ -7315,9 +6282,7 @@
     "slogan": "serialize-canonical-json",
     "icon": "icons/serialize-canonical-json.svg",
     "integrations": {
-      "automation": [
-        "serialize-canonical-json"
-      ]
+      "automation": ["serialize-canonical-json"]
     }
   },
   {
@@ -7328,9 +6293,7 @@
     "slogan": "serpapi",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "serpapi"
-      ]
+      "automation": ["serpapi"]
     }
   },
   {
@@ -7341,9 +6304,7 @@
     "slogan": "set-field",
     "icon": "icons/set-field.svg",
     "integrations": {
-      "automation": [
-        "set-field"
-      ]
+      "automation": ["set-field"]
     }
   },
   {
@@ -7354,9 +6315,7 @@
     "slogan": "set-variable",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "set-variable"
-      ]
+      "automation": ["set-variable"]
     }
   },
   {
@@ -7367,9 +6326,7 @@
     "slogan": "sftp",
     "icon": "icons/ftp.svg",
     "integrations": {
-      "automation": [
-        "sftp"
-      ]
+      "automation": ["sftp"]
     }
   },
   {
@@ -7380,9 +6337,7 @@
     "slogan": "shields-io",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "shields-io"
-      ]
+      "automation": ["shields-io"]
     }
   },
   {
@@ -7393,9 +6348,7 @@
     "slogan": "shipsy",
     "icon": "icons/shipsy.svg",
     "integrations": {
-      "automation": [
-        "shipsy"
-      ]
+      "automation": ["shipsy"]
     }
   },
   {
@@ -7406,9 +6359,7 @@
     "slogan": "shodan-lookup",
     "icon": "icons/shodan.svg",
     "integrations": {
-      "automation": [
-        "shodan-lookup"
-      ]
+      "automation": ["shodan-lookup"]
     }
   },
   {
@@ -7419,9 +6370,7 @@
     "slogan": "shotstack",
     "icon": "icons/shotstack.svg",
     "integrations": {
-      "automation": [
-        "shotstack"
-      ]
+      "automation": ["shotstack"]
     }
   },
   {
@@ -7432,9 +6381,7 @@
     "slogan": "shutterstock",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "shutterstock"
-      ]
+      "automation": ["shutterstock"]
     }
   },
   {
@@ -7445,9 +6392,7 @@
     "slogan": "smtp",
     "icon": "icons/email-send.svg",
     "integrations": {
-      "automation": [
-        "smtp"
-      ]
+      "automation": ["smtp"]
     }
   },
   {
@@ -7458,9 +6403,7 @@
     "slogan": "snyk",
     "icon": "icons/snyk.svg",
     "integrations": {
-      "automation": [
-        "snyk"
-      ]
+      "automation": ["snyk"]
     }
   },
   {
@@ -7471,9 +6414,7 @@
     "slogan": "solar-calculator",
     "icon": "icons/utils.svg",
     "integrations": {
-      "automation": [
-        "solar-calculator"
-      ]
+      "automation": ["solar-calculator"]
     }
   },
   {
@@ -7484,9 +6425,7 @@
     "slogan": "sort",
     "icon": "icons/sort.svg",
     "integrations": {
-      "automation": [
-        "sort"
-      ]
+      "automation": ["sort"]
     }
   },
   {
@@ -7497,9 +6436,7 @@
     "slogan": "soundcloud",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "soundcloud"
-      ]
+      "automation": ["soundcloud"]
     }
   },
   {
@@ -7510,9 +6447,7 @@
     "slogan": "spacex-launches",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "spacex-launches"
-      ]
+      "automation": ["spacex-launches"]
     }
   },
   {
@@ -7523,9 +6458,7 @@
     "slogan": "split",
     "icon": "icons/split.svg",
     "integrations": {
-      "automation": [
-        "split"
-      ]
+      "automation": ["split"]
     }
   },
   {
@@ -7536,9 +6469,7 @@
     "slogan": "sql-parameterize",
     "icon": "icons/sql-parameterize.svg",
     "integrations": {
-      "automation": [
-        "sql-parameterize"
-      ]
+      "automation": ["sql-parameterize"]
     }
   },
   {
@@ -7549,9 +6480,7 @@
     "slogan": "square",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "square"
-      ]
+      "automation": ["square"]
     }
   },
   {
@@ -7562,9 +6491,7 @@
     "slogan": "ssh",
     "icon": "icons/ssh.svg",
     "integrations": {
-      "automation": [
-        "ssh"
-      ]
+      "automation": ["ssh"]
     }
   },
   {
@@ -7575,9 +6502,7 @@
     "slogan": "ssl-checker",
     "icon": "icons/security.svg",
     "integrations": {
-      "automation": [
-        "ssl-checker"
-      ]
+      "automation": ["ssl-checker"]
     }
   },
   {
@@ -7588,9 +6513,7 @@
     "slogan": "ssl-labs",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "ssl-labs"
-      ]
+      "automation": ["ssl-labs"]
     }
   },
   {
@@ -7601,9 +6524,7 @@
     "slogan": "stability-ai",
     "icon": "icons/stability-ai.svg",
     "integrations": {
-      "automation": [
-        "stability-ai"
-      ]
+      "automation": ["stability-ai"]
     }
   },
   {
@@ -7614,9 +6535,7 @@
     "slogan": "stackexchange",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "stackexchange"
-      ]
+      "automation": ["stackexchange"]
     }
   },
   {
@@ -7627,9 +6546,7 @@
     "slogan": "statdns",
     "icon": "icons/dns-lookup.svg",
     "integrations": {
-      "automation": [
-        "statdns"
-      ]
+      "automation": ["statdns"]
     }
   },
   {
@@ -7640,9 +6557,7 @@
     "slogan": "stock-automation",
     "icon": "icons/inventory.svg",
     "integrations": {
-      "automation": [
-        "stock-automation"
-      ]
+      "automation": ["stock-automation"]
     }
   },
   {
@@ -7653,9 +6568,7 @@
     "slogan": "stringify-json",
     "icon": "icons/stringify-json.svg",
     "integrations": {
-      "automation": [
-        "stringify-json"
-      ]
+      "automation": ["stringify-json"]
     }
   },
   {
@@ -7666,9 +6579,7 @@
     "slogan": "subdomain-discovery",
     "icon": "icons/subdomain-discovery.svg",
     "integrations": {
-      "automation": [
-        "subdomain-discovery"
-      ]
+      "automation": ["subdomain-discovery"]
     }
   },
   {
@@ -7679,9 +6590,7 @@
     "slogan": "suno-ai",
     "icon": "icons/suno.svg",
     "integrations": {
-      "automation": [
-        "suno-ai"
-      ]
+      "automation": ["suno-ai"]
     }
   },
   {
@@ -7692,9 +6601,7 @@
     "slogan": "sunrise-sunset",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "sunrise-sunset"
-      ]
+      "automation": ["sunrise-sunset"]
     }
   },
   {
@@ -7705,9 +6612,7 @@
     "slogan": "symptomator",
     "icon": "icons/medical.svg",
     "integrations": {
-      "automation": [
-        "symptomator"
-      ]
+      "automation": ["symptomator"]
     }
   },
   {
@@ -7718,9 +6623,7 @@
     "slogan": "synthesia",
     "icon": "icons/synthesia.svg",
     "integrations": {
-      "automation": [
-        "synthesia"
-      ]
+      "automation": ["synthesia"]
     }
   },
   {
@@ -7731,9 +6634,7 @@
     "slogan": "table-query",
     "icon": "icons/cosmosdb.svg",
     "integrations": {
-      "automation": [
-        "table-query"
-      ]
+      "automation": ["table-query"]
     }
   },
   {
@@ -7744,9 +6645,7 @@
     "slogan": "tanja-news",
     "icon": "icons/news.svg",
     "integrations": {
-      "automation": [
-        "tanja-news"
-      ]
+      "automation": ["tanja-news"]
     }
   },
   {
@@ -7757,9 +6656,7 @@
     "slogan": "tavily",
     "icon": "icons/tavily.svg",
     "integrations": {
-      "automation": [
-        "tavily"
-      ]
+      "automation": ["tavily"]
     }
   },
   {
@@ -7770,9 +6667,7 @@
     "slogan": "telquel",
     "icon": "icons/news.svg",
     "integrations": {
-      "automation": [
-        "telquel"
-      ]
+      "automation": ["telquel"]
     }
   },
   {
@@ -7783,9 +6678,7 @@
     "slogan": "template-safe-render",
     "icon": "icons/template-safe-render.svg",
     "integrations": {
-      "automation": [
-        "template-safe-render"
-      ]
+      "automation": ["template-safe-render"]
     }
   },
   {
@@ -7796,9 +6689,7 @@
     "slogan": "text-analyzer",
     "icon": "icons/utils.svg",
     "integrations": {
-      "automation": [
-        "text-analyzer"
-      ]
+      "automation": ["text-analyzer"]
     }
   },
   {
@@ -7809,9 +6700,7 @@
     "slogan": "text-to-binary",
     "icon": "icons/text-to-binary.svg",
     "integrations": {
-      "automation": [
-        "text-to-binary"
-      ]
+      "automation": ["text-to-binary"]
     }
   },
   {
@@ -7822,9 +6711,7 @@
     "slogan": "themealdb",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "themealdb"
-      ]
+      "automation": ["themealdb"]
     }
   },
   {
@@ -7835,9 +6722,7 @@
     "slogan": "throttle-time",
     "icon": "icons/throttle.svg",
     "integrations": {
-      "automation": [
-        "throttle-time"
-      ]
+      "automation": ["throttle-time"]
     }
   },
   {
@@ -7848,9 +6733,7 @@
     "slogan": "tip-calculator",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "tip-calculator"
-      ]
+      "automation": ["tip-calculator"]
     }
   },
   {
@@ -7861,9 +6744,7 @@
     "slogan": "tlog-store",
     "icon": "icons/tlog.svg",
     "integrations": {
-      "automation": [
-        "tlog-store"
-      ]
+      "automation": ["tlog-store"]
     }
   },
   {
@@ -7874,9 +6755,7 @@
     "slogan": "to-boolean",
     "icon": "icons/to-boolean.svg",
     "integrations": {
-      "automation": [
-        "to-boolean"
-      ]
+      "automation": ["to-boolean"]
     }
   },
   {
@@ -7887,9 +6766,7 @@
     "slogan": "to-csv",
     "icon": "icons/to-csv.svg",
     "integrations": {
-      "automation": [
-        "to-csv"
-      ]
+      "automation": ["to-csv"]
     }
   },
   {
@@ -7900,9 +6777,7 @@
     "slogan": "to-number",
     "icon": "icons/to-number.svg",
     "integrations": {
-      "automation": [
-        "to-number"
-      ]
+      "automation": ["to-number"]
     }
   },
   {
@@ -7913,9 +6788,7 @@
     "slogan": "to-string",
     "icon": "icons/to-string.svg",
     "integrations": {
-      "automation": [
-        "to-string"
-      ]
+      "automation": ["to-string"]
     }
   },
   {
@@ -7926,9 +6799,7 @@
     "slogan": "to-xml",
     "icon": "icons/to-xml.svg",
     "integrations": {
-      "automation": [
-        "to-xml"
-      ]
+      "automation": ["to-xml"]
     }
   },
   {
@@ -7939,9 +6810,7 @@
     "slogan": "tomtom",
     "icon": "icons/google-maps.svg",
     "integrations": {
-      "automation": [
-        "tomtom"
-      ]
+      "automation": ["tomtom"]
     }
   },
   {
@@ -7952,9 +6821,7 @@
     "slogan": "totp",
     "icon": "icons/totp.svg",
     "integrations": {
-      "automation": [
-        "totp"
-      ]
+      "automation": ["totp"]
     }
   },
   {
@@ -7965,9 +6832,7 @@
     "slogan": "track123",
     "icon": "icons/track123.svg",
     "integrations": {
-      "automation": [
-        "track123"
-      ]
+      "automation": ["track123"]
     }
   },
   {
@@ -7978,9 +6843,7 @@
     "slogan": "tracktry",
     "icon": "icons/tracktry.svg",
     "integrations": {
-      "automation": [
-        "tracktry"
-      ]
+      "automation": ["tracktry"]
     }
   },
   {
@@ -7991,9 +6854,7 @@
     "slogan": "transfer-pricing",
     "icon": "icons/finance.svg",
     "integrations": {
-      "automation": [
-        "transfer-pricing"
-      ]
+      "automation": ["transfer-pricing"]
     }
   },
   {
@@ -8004,9 +6865,7 @@
     "slogan": "trello",
     "icon": "icons/trello.svg",
     "integrations": {
-      "automation": [
-        "trello"
-      ]
+      "automation": ["trello"]
     }
   },
   {
@@ -8017,9 +6876,7 @@
     "slogan": "trim",
     "icon": "icons/trim.svg",
     "integrations": {
-      "automation": [
-        "trim"
-      ]
+      "automation": ["trim"]
     }
   },
   {
@@ -8030,9 +6887,7 @@
     "slogan": "tripadvisor-search",
     "icon": "icons/tripadvisor.svg",
     "integrations": {
-      "automation": [
-        "tripadvisor-search"
-      ]
+      "automation": ["tripadvisor-search"]
     }
   },
   {
@@ -8043,9 +6898,7 @@
     "slogan": "tripo-ai",
     "icon": "icons/tripo.svg",
     "integrations": {
-      "automation": [
-        "tripo-ai"
-      ]
+      "automation": ["tripo-ai"]
     }
   },
   {
@@ -8056,9 +6909,7 @@
     "slogan": "tvmaze",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "tvmaze"
-      ]
+      "automation": ["tvmaze"]
     }
   },
   {
@@ -8069,9 +6920,7 @@
     "slogan": "twilio",
     "icon": "icons/twilio.svg",
     "integrations": {
-      "automation": [
-        "twilio"
-      ]
+      "automation": ["twilio"]
     }
   },
   {
@@ -8082,9 +6931,7 @@
     "slogan": "unflatten",
     "icon": "icons/unflatten.svg",
     "integrations": {
-      "automation": [
-        "unflatten"
-      ]
+      "automation": ["unflatten"]
     }
   },
   {
@@ -8095,9 +6942,7 @@
     "slogan": "uniprotkb",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "uniprotkb"
-      ]
+      "automation": ["uniprotkb"]
     }
   },
   {
@@ -8108,9 +6953,7 @@
     "slogan": "unit-converter",
     "icon": "icons/unitconverter.svg",
     "integrations": {
-      "automation": [
-        "unit-converter"
-      ]
+      "automation": ["unit-converter"]
     }
   },
   {
@@ -8121,9 +6964,7 @@
     "slogan": "unsplash-image-search",
     "icon": "icons/unsplash.svg",
     "integrations": {
-      "automation": [
-        "unsplash-image-search"
-      ]
+      "automation": ["unsplash-image-search"]
     }
   },
   {
@@ -8134,9 +6975,7 @@
     "slogan": "ups",
     "icon": "icons/ups.svg",
     "integrations": {
-      "automation": [
-        "ups"
-      ]
+      "automation": ["ups"]
     }
   },
   {
@@ -8147,9 +6986,7 @@
     "slogan": "urban-dictionary",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "urban-dictionary"
-      ]
+      "automation": ["urban-dictionary"]
     }
   },
   {
@@ -8160,9 +6997,7 @@
     "slogan": "url-encode",
     "icon": "icons/url-encode.svg",
     "integrations": {
-      "automation": [
-        "url-encode"
-      ]
+      "automation": ["url-encode"]
     }
   },
   {
@@ -8173,9 +7008,7 @@
     "slogan": "usa-patents",
     "icon": "icons/usa-patents.svg",
     "integrations": {
-      "automation": [
-        "usa-patents"
-      ]
+      "automation": ["usa-patents"]
     }
   },
   {
@@ -8186,9 +7019,7 @@
     "slogan": "user-agent-string",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "user-agent-string"
-      ]
+      "automation": ["user-agent-string"]
     }
   },
   {
@@ -8199,9 +7030,7 @@
     "slogan": "usgs-earthquakes",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "usgs-earthquakes"
-      ]
+      "automation": ["usgs-earthquakes"]
     }
   },
   {
@@ -8212,9 +7041,7 @@
     "slogan": "usgs-realtime",
     "icon": "icons/default-fill.svg",
     "integrations": {
-      "automation": [
-        "usgs-realtime"
-      ]
+      "automation": ["usgs-realtime"]
     }
   },
   {
@@ -8225,9 +7052,7 @@
     "slogan": "vatcomply",
     "icon": "icons/vatcomply.svg",
     "integrations": {
-      "automation": [
-        "vatcomply"
-      ]
+      "automation": ["vatcomply"]
     }
   },
   {
@@ -8301,9 +7126,7 @@
     "slogan": "velo-payments",
     "icon": "icons/velo-payments.svg",
     "integrations": {
-      "automation": [
-        "velopayments"
-      ]
+      "automation": ["velopayments"]
     }
   },
   {
@@ -8314,9 +7137,7 @@
     "slogan": "vessel-finder",
     "icon": "icons/vessel-finder.svg",
     "integrations": {
-      "automation": [
-        "vesselfinder"
-      ]
+      "automation": ["vesselfinder"]
     }
   },
   {
@@ -8327,9 +7148,7 @@
     "slogan": "vimeo-thumbnails",
     "icon": "icons/vimeo-thumbnails.svg",
     "integrations": {
-      "automation": [
-        "vimeo-get-thumbnails"
-      ]
+      "automation": ["vimeo-get-thumbnails"]
     }
   },
   {
@@ -8340,9 +7159,7 @@
     "slogan": "vimeo-transcript",
     "icon": "icons/vimeo-transcript.svg",
     "integrations": {
-      "automation": [
-        "vimeo-get-transcript"
-      ]
+      "automation": ["vimeo-get-transcript"]
     }
   },
   {
@@ -8353,9 +7170,7 @@
     "slogan": "vimeo-video",
     "icon": "icons/vimeo-video.svg",
     "integrations": {
-      "automation": [
-        "vimeo-get-video"
-      ]
+      "automation": ["vimeo-get-video"]
     }
   },
   {
@@ -8366,9 +7181,7 @@
     "slogan": "virus-total",
     "icon": "icons/virus-total.svg",
     "integrations": {
-      "automation": [
-        "virustotal"
-      ]
+      "automation": ["virustotal"]
     }
   },
   {
@@ -8379,9 +7192,7 @@
     "slogan": "vulnerability-scanner",
     "icon": "icons/vulnerability-scanner.svg",
     "integrations": {
-      "automation": [
-        "vulnerability-scanner"
-      ]
+      "automation": ["vulnerability-scanner"]
     }
   },
   {
@@ -8392,9 +7203,7 @@
     "slogan": "validate-email",
     "icon": "icons/validate-email.svg",
     "integrations": {
-      "automation": [
-        "validate-email"
-      ]
+      "automation": ["validate-email"]
     }
   },
   {
@@ -8405,9 +7214,7 @@
     "slogan": "validate-phone",
     "icon": "icons/validate-phone.svg",
     "integrations": {
-      "automation": [
-        "validate-phone"
-      ]
+      "automation": ["validate-phone"]
     }
   },
   {
@@ -8418,9 +7225,7 @@
     "slogan": "validate-url",
     "icon": "icons/validate-url.svg",
     "integrations": {
-      "automation": [
-        "validate-url"
-      ]
+      "automation": ["validate-url"]
     }
   },
   {
@@ -8431,9 +7236,7 @@
     "slogan": "wallstreetbet-reddit",
     "icon": "icons/wallstreetbet-reddit.svg",
     "integrations": {
-      "automation": [
-        "wallstreetbets-reddit"
-      ]
+      "automation": ["wallstreetbets-reddit"]
     }
   },
   {
@@ -8444,9 +7247,7 @@
     "slogan": "walmart-search",
     "icon": "icons/walmart-search.svg",
     "integrations": {
-      "automation": [
-        "walmart-search"
-      ]
+      "automation": ["walmart-search"]
     }
   },
   {
@@ -8457,9 +7258,7 @@
     "slogan": "wayback-machine",
     "icon": "icons/wayback-machine.svg",
     "integrations": {
-      "automation": [
-        "wayback-machine"
-      ]
+      "automation": ["wayback-machine"]
     }
   },
   {
@@ -8470,9 +7269,7 @@
     "slogan": "weather-search",
     "icon": "icons/weather-search.svg",
     "integrations": {
-      "automation": [
-        "weather-search"
-      ]
+      "automation": ["weather-search"]
     }
   },
   {
@@ -8483,9 +7280,7 @@
     "slogan": "weaviate",
     "icon": "icons/weaviate.svg",
     "integrations": {
-      "automation": [
-        "weaviate"
-      ]
+      "automation": ["weaviate"]
     }
   },
   {
@@ -8496,9 +7291,7 @@
     "slogan": "websocket-send",
     "icon": "icons/websocket-send.svg",
     "integrations": {
-      "automation": [
-        "websocket-send"
-      ]
+      "automation": ["websocket-send"]
     }
   },
   {
@@ -8509,9 +7302,7 @@
     "slogan": "websocket-trigger",
     "icon": "icons/websocket-trigger.svg",
     "integrations": {
-      "automation": [
-        "websocket-trigger"
-      ]
+      "automation": ["websocket-trigger"]
     }
   },
   {
@@ -8522,9 +7313,7 @@
     "slogan": "whatcms",
     "icon": "icons/whatcms.svg",
     "integrations": {
-      "automation": [
-        "whatcms"
-      ]
+      "automation": ["whatcms"]
     }
   },
   {
@@ -8535,9 +7324,7 @@
     "slogan": "whatsapp",
     "icon": "icons/whatsapp.svg",
     "integrations": {
-      "automation": [
-        "whatsapp"
-      ]
+      "automation": ["whatsapp"]
     }
   },
   {
@@ -8548,9 +7335,7 @@
     "slogan": "whogho-odata",
     "icon": "icons/whogho-odata.svg",
     "integrations": {
-      "automation": [
-        "who-gho-odata"
-      ]
+      "automation": ["who-gho-odata"]
     }
   },
   {
@@ -8561,9 +7346,7 @@
     "slogan": "whois",
     "icon": "icons/whois.svg",
     "integrations": {
-      "automation": [
-        "whois"
-      ]
+      "automation": ["whois"]
     }
   },
   {
@@ -8574,9 +7357,7 @@
     "slogan": "wikidata",
     "icon": "icons/wikidata.svg",
     "integrations": {
-      "automation": [
-        "wikidata"
-      ]
+      "automation": ["wikidata"]
     }
   },
   {
@@ -8587,9 +7368,7 @@
     "slogan": "wikimedia-commons",
     "icon": "icons/wikimedia-commons.svg",
     "integrations": {
-      "automation": [
-        "wikimedia-commons"
-      ]
+      "automation": ["wikimedia-commons"]
     }
   },
   {
@@ -8600,9 +7379,7 @@
     "slogan": "wikipedia",
     "icon": "icons/wikipedia.svg",
     "integrations": {
-      "automation": [
-        "wikipedia"
-      ]
+      "automation": ["wikipedia"]
     }
   },
   {
@@ -8613,9 +7390,7 @@
     "slogan": "wordpress",
     "icon": "icons/wordpress.svg",
     "integrations": {
-      "automation": [
-        "wordpress"
-      ]
+      "automation": ["wordpress"]
     }
   },
   {
@@ -8626,9 +7401,7 @@
     "slogan": "working-capital-calculator",
     "icon": "icons/working-capital-calculator.svg",
     "integrations": {
-      "automation": [
-        "working-capital-calculator"
-      ]
+      "automation": ["working-capital-calculator"]
     }
   },
   {
@@ -8639,9 +7412,7 @@
     "slogan": "world-bank-api",
     "icon": "icons/world-bank-api.svg",
     "integrations": {
-      "automation": [
-        "world-bank-api"
-      ]
+      "automation": ["world-bank-api"]
     }
   },
   {
@@ -8652,9 +7423,7 @@
     "slogan": "wttr",
     "icon": "icons/wttr.svg",
     "integrations": {
-      "automation": [
-        "wttr"
-      ]
+      "automation": ["wttr"]
     }
   },
   {
@@ -8665,9 +7434,7 @@
     "slogan": "xero",
     "icon": "icons/xero.svg",
     "integrations": {
-      "automation": [
-        "xero"
-      ]
+      "automation": ["xero"]
     }
   },
   {
@@ -8678,9 +7445,7 @@
     "slogan": "xmpp",
     "icon": "icons/xmpp.svg",
     "integrations": {
-      "automation": [
-        "xmpp"
-      ]
+      "automation": ["xmpp"]
     }
   },
   {
@@ -8691,9 +7456,7 @@
     "slogan": "yabiladi",
     "icon": "icons/yabiladi.svg",
     "integrations": {
-      "automation": [
-        "yabiladi"
-      ]
+      "automation": ["yabiladi"]
     }
   },
   {
@@ -8704,9 +7467,7 @@
     "slogan": "yahoo-search",
     "icon": "icons/yahoo-search.svg",
     "integrations": {
-      "automation": [
-        "yahoo-search"
-      ]
+      "automation": ["yahoo-search"]
     }
   },
   {
@@ -8717,9 +7478,7 @@
     "slogan": "yandex-search",
     "icon": "icons/yandex-search.svg",
     "integrations": {
-      "automation": [
-        "yandex-search"
-      ]
+      "automation": ["yandex-search"]
     }
   },
   {
@@ -8730,9 +7489,7 @@
     "slogan": "yodlee",
     "icon": "icons/yodlee.svg",
     "integrations": {
-      "automation": [
-        "yodlee"
-      ]
+      "automation": ["yodlee"]
     }
   },
   {
@@ -8743,9 +7500,7 @@
     "slogan": "youtube-thumbnails",
     "icon": "icons/youtube-thumbnails.svg",
     "integrations": {
-      "automation": [
-        "youtube-api-thumbnails"
-      ]
+      "automation": ["youtube-api-thumbnails"]
     }
   },
   {
@@ -8756,9 +7511,7 @@
     "slogan": "youtube-transcription",
     "icon": "icons/youtube-transcription.svg",
     "integrations": {
-      "automation": [
-        "youtube-api-transcriptions"
-      ]
+      "automation": ["youtube-api-transcriptions"]
     }
   },
   {
@@ -8769,9 +7522,7 @@
     "slogan": "youtube-channel",
     "icon": "icons/youtube-channel.svg",
     "integrations": {
-      "automation": [
-        "youtube-get-channel"
-      ]
+      "automation": ["youtube-get-channel"]
     }
   },
   {
@@ -8782,9 +7533,7 @@
     "slogan": "youtube-video",
     "icon": "icons/youtube-video.svg",
     "integrations": {
-      "automation": [
-        "youtube-get-video"
-      ]
+      "automation": ["youtube-get-video"]
     }
   },
   {
@@ -8795,9 +7544,7 @@
     "slogan": "youtube-search",
     "icon": "icons/youtube-search.svg",
     "integrations": {
-      "automation": [
-        "youtube-search"
-      ]
+      "automation": ["youtube-search"]
     }
   },
   {
@@ -8808,9 +7555,7 @@
     "slogan": "zippopotam",
     "icon": "icons/zippopotam.svg",
     "integrations": {
-      "automation": [
-        "zippopotam"
-      ]
+      "automation": ["zippopotam"]
     }
   },
   {
@@ -8821,9 +7566,7 @@
     "slogan": "zoom",
     "icon": "icons/zoom.svg",
     "integrations": {
-      "automation": [
-        "zoom"
-      ]
+      "automation": ["zoom"]
     }
   },
   {
@@ -8834,9 +7577,7 @@
     "slogan": "zoomeye",
     "icon": "icons/zoomeye.svg",
     "integrations": {
-      "automation": [
-        "zoomeye"
-      ]
+      "automation": ["zoomeye"]
     }
   },
   {
@@ -8847,9 +7588,7 @@
     "slogan": "zotero",
     "icon": "icons/zotero.svg",
     "integrations": {
-      "automation": [
-        "zotero"
-      ]
+      "automation": ["zotero"]
     }
   },
   {
@@ -8860,9 +7599,7 @@
     "slogan": "delay",
     "icon": "icons/delay.svg",
     "integrations": {
-      "automation": [
-        "delay"
-      ]
+      "automation": ["delay"]
     }
   },
   {
@@ -8873,9 +7610,7 @@
     "slogan": "activecampaign",
     "icon": "icons/activecampaign.svg",
     "integrations": {
-      "automation": [
-        "activecampaign"
-      ]
+      "automation": ["activecampaign"]
     }
   },
   {
@@ -8886,9 +7621,7 @@
     "slogan": "aws-ses",
     "icon": "icons/ses.svg",
     "integrations": {
-      "automation": [
-        "aws-ses"
-      ]
+      "automation": ["aws-ses"]
     }
   },
   {
@@ -8899,9 +7632,7 @@
     "slogan": "brevo",
     "icon": "icons/brevo.svg",
     "integrations": {
-      "automation": [
-        "brevo"
-      ]
+      "automation": ["brevo"]
     }
   },
   {
@@ -8912,9 +7643,7 @@
     "slogan": "customerio",
     "icon": "icons/customerio.svg",
     "integrations": {
-      "automation": [
-        "customerio"
-      ]
+      "automation": ["customerio"]
     }
   },
   {
@@ -8925,9 +7654,7 @@
     "slogan": "demio",
     "icon": "icons/demio.svg",
     "integrations": {
-      "automation": [
-        "demio"
-      ]
+      "automation": ["demio"]
     }
   },
   {
@@ -8938,9 +7665,7 @@
     "slogan": "discourse",
     "icon": "icons/discourse.svg",
     "integrations": {
-      "automation": [
-        "discourse"
-      ]
+      "automation": ["discourse"]
     }
   },
   {
@@ -8951,9 +7676,7 @@
     "slogan": "disqus",
     "icon": "icons/disqus.svg",
     "integrations": {
-      "automation": [
-        "disqus"
-      ]
+      "automation": ["disqus"]
     }
   },
   {
@@ -8964,9 +7687,7 @@
     "slogan": "drift",
     "icon": "icons/drift.svg",
     "integrations": {
-      "automation": [
-        "drift"
-      ]
+      "automation": ["drift"]
     }
   },
   {
@@ -8977,9 +7698,7 @@
     "slogan": "egoi",
     "icon": "icons/egoi.svg",
     "integrations": {
-      "automation": [
-        "egoi"
-      ]
+      "automation": ["egoi"]
     }
   },
   {
@@ -8990,9 +7709,7 @@
     "slogan": "emelia",
     "icon": "icons/emelia.svg",
     "integrations": {
-      "automation": [
-        "emelia"
-      ]
+      "automation": ["emelia"]
     }
   },
   {
@@ -9003,9 +7720,7 @@
     "slogan": "getresponse",
     "icon": "icons/getresponse.svg",
     "integrations": {
-      "automation": [
-        "getresponse"
-      ]
+      "automation": ["getresponse"]
     }
   },
   {
@@ -9016,9 +7731,7 @@
     "slogan": "google-contacts-action",
     "icon": "icons/Google.svg",
     "integrations": {
-      "automation": [
-        "google-contacts-action"
-      ]
+      "automation": ["google-contacts-action"]
     }
   },
   {
@@ -9029,9 +7742,7 @@
     "slogan": "gotify",
     "icon": "icons/gotify.svg",
     "integrations": {
-      "automation": [
-        "gotify"
-      ]
+      "automation": ["gotify"]
     }
   },
   {
@@ -9042,9 +7753,7 @@
     "slogan": "gotowebinar",
     "icon": "icons/gotowebinar.svg",
     "integrations": {
-      "automation": [
-        "gotowebinar"
-      ]
+      "automation": ["gotowebinar"]
     }
   },
   {
@@ -9055,9 +7764,7 @@
     "slogan": "iterable",
     "icon": "icons/iterable.svg",
     "integrations": {
-      "automation": [
-        "iterable"
-      ]
+      "automation": ["iterable"]
     }
   },
   {
@@ -9068,9 +7775,7 @@
     "slogan": "lemlist",
     "icon": "icons/lemlist.svg",
     "integrations": {
-      "automation": [
-        "lemlist"
-      ]
+      "automation": ["lemlist"]
     }
   },
   {
@@ -9081,9 +7786,7 @@
     "slogan": "line-messaging",
     "icon": "icons/line.svg",
     "integrations": {
-      "automation": [
-        "line-messaging"
-      ]
+      "automation": ["line-messaging"]
     }
   },
   {
@@ -9094,9 +7797,7 @@
     "slogan": "mailcheck",
     "icon": "icons/mailcheck.svg",
     "integrations": {
-      "automation": [
-        "mailcheck"
-      ]
+      "automation": ["mailcheck"]
     }
   },
   {
@@ -9107,9 +7808,7 @@
     "slogan": "mailerlite",
     "icon": "icons/mailerlite.svg",
     "integrations": {
-      "automation": [
-        "mailerlite"
-      ]
+      "automation": ["mailerlite"]
     }
   },
   {
@@ -9120,9 +7819,7 @@
     "slogan": "mailgun",
     "icon": "icons/mailgun.svg",
     "integrations": {
-      "automation": [
-        "mailgun"
-      ]
+      "automation": ["mailgun"]
     }
   },
   {
@@ -9133,9 +7830,7 @@
     "slogan": "mailjet",
     "icon": "icons/mailjet.svg",
     "integrations": {
-      "automation": [
-        "mailjet"
-      ]
+      "automation": ["mailjet"]
     }
   },
   {
@@ -9146,9 +7841,7 @@
     "slogan": "matrix",
     "icon": "icons/matrix.svg",
     "integrations": {
-      "automation": [
-        "matrix"
-      ]
+      "automation": ["matrix"]
     }
   },
   {
@@ -9159,9 +7852,7 @@
     "slogan": "messagebird",
     "icon": "icons/messagebird.svg",
     "integrations": {
-      "automation": [
-        "messagebird"
-      ]
+      "automation": ["messagebird"]
     }
   },
   {
@@ -9172,9 +7863,7 @@
     "slogan": "mocean",
     "icon": "icons/mocean.svg",
     "integrations": {
-      "automation": [
-        "mocean"
-      ]
+      "automation": ["mocean"]
     }
   },
   {
@@ -9185,9 +7874,7 @@
     "slogan": "msg91",
     "icon": "icons/msg91.svg",
     "integrations": {
-      "automation": [
-        "msg91"
-      ]
+      "automation": ["msg91"]
     }
   },
   {
@@ -9198,9 +7885,7 @@
     "slogan": "plivo",
     "icon": "icons/plivo.svg",
     "integrations": {
-      "automation": [
-        "plivo"
-      ]
+      "automation": ["plivo"]
     }
   },
   {
@@ -9211,9 +7896,7 @@
     "slogan": "postmark",
     "icon": "icons/postmark.svg",
     "integrations": {
-      "automation": [
-        "postmark"
-      ]
+      "automation": ["postmark"]
     }
   },
   {
@@ -9224,9 +7907,7 @@
     "slogan": "pushbullet",
     "icon": "icons/pushbullet.svg",
     "integrations": {
-      "automation": [
-        "pushbullet"
-      ]
+      "automation": ["pushbullet"]
     }
   },
   {
@@ -9237,9 +7918,7 @@
     "slogan": "pushcut",
     "icon": "icons/pushcut.svg",
     "integrations": {
-      "automation": [
-        "pushcut"
-      ]
+      "automation": ["pushcut"]
     }
   },
   {
@@ -9250,9 +7929,7 @@
     "slogan": "pushover",
     "icon": "icons/pushover.svg",
     "integrations": {
-      "automation": [
-        "pushover"
-      ]
+      "automation": ["pushover"]
     }
   },
   {
@@ -9263,9 +7940,7 @@
     "slogan": "rocketchat",
     "icon": "icons/rocketchat.svg",
     "integrations": {
-      "automation": [
-        "rocketchat"
-      ]
+      "automation": ["rocketchat"]
     }
   },
   {
@@ -9276,9 +7951,7 @@
     "slogan": "sendy",
     "icon": "icons/sendy.svg",
     "integrations": {
-      "automation": [
-        "sendy"
-      ]
+      "automation": ["sendy"]
     }
   },
   {
@@ -9289,9 +7962,7 @@
     "slogan": "seven-io",
     "icon": "icons/seven-io.svg",
     "integrations": {
-      "automation": [
-        "seven-io"
-      ]
+      "automation": ["seven-io"]
     }
   },
   {
@@ -9302,9 +7973,7 @@
     "slogan": "seven",
     "icon": "icons/seven.svg",
     "integrations": {
-      "automation": [
-        "seven"
-      ]
+      "automation": ["seven"]
     }
   },
   {
@@ -9315,9 +7984,7 @@
     "slogan": "signl4",
     "icon": "icons/signl4.svg",
     "integrations": {
-      "automation": [
-        "signl4"
-      ]
+      "automation": ["signl4"]
     }
   },
   {
@@ -9328,9 +7995,7 @@
     "slogan": "twake",
     "icon": "icons/twake.svg",
     "integrations": {
-      "automation": [
-        "twake"
-      ]
+      "automation": ["twake"]
     }
   },
   {
@@ -9341,9 +8006,7 @@
     "slogan": "twist",
     "icon": "icons/twist.svg",
     "integrations": {
-      "automation": [
-        "twist"
-      ]
+      "automation": ["twist"]
     }
   },
   {
@@ -9354,9 +8017,7 @@
     "slogan": "vero",
     "icon": "icons/vero.svg",
     "integrations": {
-      "automation": [
-        "vero"
-      ]
+      "automation": ["vero"]
     }
   },
   {
@@ -9367,9 +8028,7 @@
     "slogan": "vonage",
     "icon": "icons/vonage.svg",
     "integrations": {
-      "automation": [
-        "vonage"
-      ]
+      "automation": ["vonage"]
     }
   },
   {
@@ -9380,9 +8039,7 @@
     "slogan": "x-twitter",
     "icon": "icons/x-twitter.svg",
     "integrations": {
-      "automation": [
-        "x-twitter"
-      ]
+      "automation": ["x-twitter"]
     }
   },
   {
@@ -9393,9 +8050,7 @@
     "slogan": "zulip",
     "icon": "icons/zulip.svg",
     "integrations": {
-      "automation": [
-        "zulip"
-      ]
+      "automation": ["zulip"]
     }
   },
   {
@@ -9406,9 +8061,7 @@
     "slogan": "adalo",
     "icon": "icons/adalo.svg",
     "integrations": {
-      "automation": [
-        "adalo"
-      ]
+      "automation": ["adalo"]
     }
   },
   {
@@ -9419,9 +8072,7 @@
     "slogan": "affinity",
     "icon": "icons/affinity.svg",
     "integrations": {
-      "automation": [
-        "affinity"
-      ]
+      "automation": ["affinity"]
     }
   },
   {
@@ -9432,9 +8083,7 @@
     "slogan": "agile-crm",
     "icon": "icons/agile-crm.svg",
     "integrations": {
-      "automation": [
-        "agile-crm"
-      ]
+      "automation": ["agile-crm"]
     }
   },
   {
@@ -9445,9 +8094,7 @@
     "slogan": "bubble",
     "icon": "icons/bubble.svg",
     "integrations": {
-      "automation": [
-        "bubble"
-      ]
+      "automation": ["bubble"]
     }
   },
   {
@@ -9458,9 +8105,7 @@
     "slogan": "chargebee",
     "icon": "icons/chargebee.svg",
     "integrations": {
-      "automation": [
-        "chargebee"
-      ]
+      "automation": ["chargebee"]
     }
   },
   {
@@ -9471,9 +8116,7 @@
     "slogan": "clearbit",
     "icon": "icons/clearbit.svg",
     "integrations": {
-      "automation": [
-        "clearbit"
-      ]
+      "automation": ["clearbit"]
     }
   },
   {
@@ -9484,9 +8127,7 @@
     "slogan": "clockify",
     "icon": "icons/clockify.svg",
     "integrations": {
-      "automation": [
-        "clockify"
-      ]
+      "automation": ["clockify"]
     }
   },
   {
@@ -9497,9 +8138,7 @@
     "slogan": "cockpit",
     "icon": "icons/cockpit.svg",
     "integrations": {
-      "automation": [
-        "cockpit"
-      ]
+      "automation": ["cockpit"]
     }
   },
   {
@@ -9510,9 +8149,7 @@
     "slogan": "coda",
     "icon": "icons/coda.svg",
     "integrations": {
-      "automation": [
-        "coda"
-      ]
+      "automation": ["coda"]
     }
   },
   {
@@ -9523,9 +8160,7 @@
     "slogan": "crowddev",
     "icon": "icons/crowddev.svg",
     "integrations": {
-      "automation": [
-        "crowddev"
-      ]
+      "automation": ["crowddev"]
     }
   },
   {
@@ -9536,9 +8171,7 @@
     "slogan": "dropcontact",
     "icon": "icons/dropcontact.svg",
     "integrations": {
-      "automation": [
-        "dropcontact"
-      ]
+      "automation": ["dropcontact"]
     }
   },
   {
@@ -9549,9 +8182,7 @@
     "slogan": "erpnext",
     "icon": "icons/erpnext.svg",
     "integrations": {
-      "automation": [
-        "erpnext"
-      ]
+      "automation": ["erpnext"]
     }
   },
   {
@@ -9562,9 +8193,7 @@
     "slogan": "figma",
     "icon": "icons/figma.svg",
     "integrations": {
-      "automation": [
-        "figma"
-      ]
+      "automation": ["figma"]
     }
   },
   {
@@ -9575,9 +8204,7 @@
     "slogan": "filemaker",
     "icon": "icons/filemaker.svg",
     "integrations": {
-      "automation": [
-        "filemaker"
-      ]
+      "automation": ["filemaker"]
     }
   },
   {
@@ -9588,9 +8215,7 @@
     "slogan": "flow-crm",
     "icon": "icons/flow-crm.svg",
     "integrations": {
-      "automation": [
-        "flow-crm"
-      ]
+      "automation": ["flow-crm"]
     }
   },
   {
@@ -9601,9 +8226,7 @@
     "slogan": "freshservice",
     "icon": "icons/freshservice.svg",
     "integrations": {
-      "automation": [
-        "freshservice"
-      ]
+      "automation": ["freshservice"]
     }
   },
   {
@@ -9614,9 +8237,7 @@
     "slogan": "freshworks-crm",
     "icon": "icons/freshworks-crm.svg",
     "integrations": {
-      "automation": [
-        "freshworks-crm"
-      ]
+      "automation": ["freshworks-crm"]
     }
   },
   {
@@ -9627,9 +8248,7 @@
     "slogan": "ghost",
     "icon": "icons/ghost.svg",
     "integrations": {
-      "automation": [
-        "ghost"
-      ]
+      "automation": ["ghost"]
     }
   },
   {
@@ -9640,9 +8259,7 @@
     "slogan": "gong",
     "icon": "icons/gong.svg",
     "integrations": {
-      "automation": [
-        "gong"
-      ]
+      "automation": ["gong"]
     }
   },
   {
@@ -9653,9 +8270,7 @@
     "slogan": "google-workspace-admin",
     "icon": "icons/google-workspace-admin.svg",
     "integrations": {
-      "automation": [
-        "google-workspace-admin"
-      ]
+      "automation": ["google-workspace-admin"]
     }
   },
   {
@@ -9666,9 +8281,7 @@
     "slogan": "halopsa",
     "icon": "icons/halopsa.svg",
     "integrations": {
-      "automation": [
-        "halopsa"
-      ]
+      "automation": ["halopsa"]
     }
   },
   {
@@ -9679,9 +8292,7 @@
     "slogan": "helpscout",
     "icon": "icons/helpscout.svg",
     "integrations": {
-      "automation": [
-        "helpscout"
-      ]
+      "automation": ["helpscout"]
     }
   },
   {
@@ -9692,9 +8303,7 @@
     "slogan": "kitemaker",
     "icon": "icons/kitemaker.svg",
     "integrations": {
-      "automation": [
-        "kitemaker"
-      ]
+      "automation": ["kitemaker"]
     }
   },
   {
@@ -9705,9 +8314,7 @@
     "slogan": "lonescale",
     "icon": "icons/lonescale.svg",
     "integrations": {
-      "automation": [
-        "lonescale"
-      ]
+      "automation": ["lonescale"]
     }
   },
   {
@@ -9718,9 +8325,7 @@
     "slogan": "marketstack",
     "icon": "icons/marketstack.svg",
     "integrations": {
-      "automation": [
-        "marketstack"
-      ]
+      "automation": ["marketstack"]
     }
   },
   {
@@ -9731,9 +8336,7 @@
     "slogan": "monica-crm",
     "icon": "icons/monica-crm.svg",
     "integrations": {
-      "automation": [
-        "monica-crm"
-      ]
+      "automation": ["monica-crm"]
     }
   },
   {
@@ -9744,9 +8347,7 @@
     "slogan": "ms-dynamics-crm",
     "icon": "icons/ms-dynamics-crm.svg",
     "integrations": {
-      "automation": [
-        "ms-dynamics-crm"
-      ]
+      "automation": ["ms-dynamics-crm"]
     }
   },
   {
@@ -9757,9 +8358,7 @@
     "slogan": "odoo",
     "icon": "icons/odoo.svg",
     "integrations": {
-      "automation": [
-        "odoo"
-      ]
+      "automation": ["odoo"]
     }
   },
   {
@@ -9770,9 +8369,7 @@
     "slogan": "onfleet",
     "icon": "icons/onfleet.svg",
     "integrations": {
-      "automation": [
-        "onfleet"
-      ]
+      "automation": ["onfleet"]
     }
   },
   {
@@ -9783,9 +8380,7 @@
     "slogan": "pipedrive",
     "icon": "icons/pipedrive.svg",
     "integrations": {
-      "automation": [
-        "pipedrive"
-      ]
+      "automation": ["pipedrive"]
     }
   },
   {
@@ -9796,9 +8391,7 @@
     "slogan": "posthog",
     "icon": "icons/posthog.svg",
     "integrations": {
-      "automation": [
-        "posthog"
-      ]
+      "automation": ["posthog"]
     }
   },
   {
@@ -9809,9 +8402,7 @@
     "slogan": "profitwell",
     "icon": "icons/profitwell.svg",
     "integrations": {
-      "automation": [
-        "profitwell"
-      ]
+      "automation": ["profitwell"]
     }
   },
   {
@@ -9822,9 +8413,7 @@
     "slogan": "quickbase",
     "icon": "icons/quickbase.svg",
     "integrations": {
-      "automation": [
-        "quickbase"
-      ]
+      "automation": ["quickbase"]
     }
   },
   {
@@ -9835,9 +8424,7 @@
     "slogan": "quickbooks",
     "icon": "icons/quickbooks.svg",
     "integrations": {
-      "automation": [
-        "quickbooks"
-      ]
+      "automation": ["quickbooks"]
     }
   },
   {
@@ -9848,9 +8435,7 @@
     "slogan": "salesmate",
     "icon": "icons/salesmate.svg",
     "integrations": {
-      "automation": [
-        "salesmate"
-      ]
+      "automation": ["salesmate"]
     }
   },
   {
@@ -9861,9 +8446,7 @@
     "slogan": "segment",
     "icon": "icons/segment.svg",
     "integrations": {
-      "automation": [
-        "segment"
-      ]
+      "automation": ["segment"]
     }
   },
   {
@@ -9874,9 +8457,7 @@
     "slogan": "servicenow",
     "icon": "icons/servicenow.svg",
     "integrations": {
-      "automation": [
-        "servicenow"
-      ]
+      "automation": ["servicenow"]
     }
   },
   {
@@ -9887,9 +8468,7 @@
     "slogan": "shopify",
     "icon": "icons/shopify.svg",
     "integrations": {
-      "automation": [
-        "shopify"
-      ]
+      "automation": ["shopify"]
     }
   },
   {
@@ -9900,9 +8479,7 @@
     "slogan": "storyblok",
     "icon": "icons/storyblok.svg",
     "integrations": {
-      "automation": [
-        "storyblok"
-      ]
+      "automation": ["storyblok"]
     }
   },
   {
@@ -9913,9 +8490,7 @@
     "slogan": "strapi",
     "icon": "icons/strapi.svg",
     "integrations": {
-      "automation": [
-        "strapi"
-      ]
+      "automation": ["strapi"]
     }
   },
   {
@@ -9926,9 +8501,7 @@
     "slogan": "syncromsp",
     "icon": "icons/syncromsp.svg",
     "integrations": {
-      "automation": [
-        "syncromsp"
-      ]
+      "automation": ["syncromsp"]
     }
   },
   {
@@ -9939,9 +8512,7 @@
     "slogan": "taiga",
     "icon": "icons/taiga.svg",
     "integrations": {
-      "automation": [
-        "taiga"
-      ]
+      "automation": ["taiga"]
     }
   },
   {
@@ -9952,9 +8523,7 @@
     "slogan": "tapfiliate",
     "icon": "icons/tapfiliate.svg",
     "integrations": {
-      "automation": [
-        "tapfiliate"
-      ]
+      "automation": ["tapfiliate"]
     }
   },
   {
@@ -9965,9 +8534,7 @@
     "slogan": "todoist",
     "icon": "icons/todoist.svg",
     "integrations": {
-      "automation": [
-        "todoist"
-      ]
+      "automation": ["todoist"]
     }
   },
   {
@@ -9978,9 +8545,7 @@
     "slogan": "unleashed",
     "icon": "icons/unleashed.svg",
     "integrations": {
-      "automation": [
-        "unleashed"
-      ]
+      "automation": ["unleashed"]
     }
   },
   {
@@ -9991,9 +8556,7 @@
     "slogan": "uplead",
     "icon": "icons/uplead.svg",
     "integrations": {
-      "automation": [
-        "uplead"
-      ]
+      "automation": ["uplead"]
     }
   },
   {
@@ -10004,9 +8567,7 @@
     "slogan": "webflow",
     "icon": "icons/webflow.svg",
     "integrations": {
-      "automation": [
-        "webflow"
-      ]
+      "automation": ["webflow"]
     }
   },
   {
@@ -10017,9 +8578,7 @@
     "slogan": "wise",
     "icon": "icons/wise.svg",
     "integrations": {
-      "automation": [
-        "wise"
-      ]
+      "automation": ["wise"]
     }
   },
   {
@@ -10030,9 +8589,7 @@
     "slogan": "woocommerce",
     "icon": "icons/woocommerce.svg",
     "integrations": {
-      "automation": [
-        "woocommerce"
-      ]
+      "automation": ["woocommerce"]
     }
   },
   {
@@ -10043,9 +8600,7 @@
     "slogan": "zammad",
     "icon": "icons/zammad.svg",
     "integrations": {
-      "automation": [
-        "zammad"
-      ]
+      "automation": ["zammad"]
     }
   },
   {
@@ -10056,9 +8611,7 @@
     "slogan": "zoho-crm",
     "icon": "icons/zoho-crm.svg",
     "integrations": {
-      "automation": [
-        "zoho-crm"
-      ]
+      "automation": ["zoho-crm"]
     }
   },
   {
@@ -10069,9 +8622,7 @@
     "slogan": "action-network",
     "icon": "icons/action-network.svg",
     "integrations": {
-      "automation": [
-        "action-network"
-      ]
+      "automation": ["action-network"]
     }
   },
   {
@@ -10082,9 +8633,7 @@
     "slogan": "autopilot",
     "icon": "icons/autopilot.svg",
     "integrations": {
-      "automation": [
-        "autopilot"
-      ]
+      "automation": ["autopilot"]
     }
   },
   {
@@ -10095,9 +8644,7 @@
     "slogan": "convertkit",
     "icon": "icons/convertkit.svg",
     "integrations": {
-      "automation": [
-        "convertkit"
-      ]
+      "automation": ["convertkit"]
     }
   },
   {
@@ -10108,9 +8655,7 @@
     "slogan": "copper",
     "icon": "icons/copper.svg",
     "integrations": {
-      "automation": [
-        "copper"
-      ]
+      "automation": ["copper"]
     }
   },
   {
@@ -10121,9 +8666,7 @@
     "slogan": "eventbrite",
     "icon": "icons/eventbrite.svg",
     "integrations": {
-      "automation": [
-        "eventbrite"
-      ]
+      "automation": ["eventbrite"]
     }
   },
   {
@@ -10134,9 +8677,7 @@
     "slogan": "facebook-graph",
     "icon": "icons/facebook-graph.svg",
     "integrations": {
-      "automation": [
-        "facebook-graph"
-      ]
+      "automation": ["facebook-graph"]
     }
   },
   {
@@ -10147,9 +8688,7 @@
     "slogan": "formio",
     "icon": "icons/formio.svg",
     "integrations": {
-      "automation": [
-        "formio"
-      ]
+      "automation": ["formio"]
     }
   },
   {
@@ -10160,9 +8699,7 @@
     "slogan": "formstack",
     "icon": "icons/formstack.svg",
     "integrations": {
-      "automation": [
-        "formstack"
-      ]
+      "automation": ["formstack"]
     }
   },
   {
@@ -10173,9 +8710,7 @@
     "slogan": "freshdesk",
     "icon": "icons/freshdesk.svg",
     "integrations": {
-      "automation": [
-        "freshdesk"
-      ]
+      "automation": ["freshdesk"]
     }
   },
   {
@@ -10186,9 +8721,7 @@
     "slogan": "highlevel",
     "icon": "icons/highlevel.svg",
     "integrations": {
-      "automation": [
-        "highlevel"
-      ]
+      "automation": ["highlevel"]
     }
   },
   {
@@ -10199,9 +8732,7 @@
     "slogan": "hunter",
     "icon": "icons/hunter.svg",
     "integrations": {
-      "automation": [
-        "hunter"
-      ]
+      "automation": ["hunter"]
     }
   },
   {
@@ -10212,9 +8743,7 @@
     "slogan": "intercom",
     "icon": "icons/intercom.svg",
     "integrations": {
-      "automation": [
-        "intercom"
-      ]
+      "automation": ["intercom"]
     }
   },
   {
@@ -10225,9 +8754,7 @@
     "slogan": "jotform",
     "icon": "icons/jotform.svg",
     "integrations": {
-      "automation": [
-        "jotform"
-      ]
+      "automation": ["jotform"]
     }
   },
   {
@@ -10238,9 +8765,7 @@
     "slogan": "keap",
     "icon": "icons/keap.svg",
     "integrations": {
-      "automation": [
-        "keap"
-      ]
+      "automation": ["keap"]
     }
   },
   {
@@ -10251,9 +8776,7 @@
     "slogan": "mautic",
     "icon": "icons/mautic.svg",
     "integrations": {
-      "automation": [
-        "mautic"
-      ]
+      "automation": ["mautic"]
     }
   },
   {
@@ -10264,9 +8787,7 @@
     "slogan": "phantombuster",
     "icon": "icons/phantombuster.svg",
     "integrations": {
-      "automation": [
-        "phantombuster"
-      ]
+      "automation": ["phantombuster"]
     }
   },
   {
@@ -10277,9 +8798,7 @@
     "slogan": "surveymonkey",
     "icon": "icons/surveymonkey.svg",
     "integrations": {
-      "automation": [
-        "surveymonkey"
-      ]
+      "automation": ["surveymonkey"]
     }
   },
   {
@@ -10290,9 +8809,7 @@
     "slogan": "typeform",
     "icon": "icons/typeform.svg",
     "integrations": {
-      "automation": [
-        "typeform"
-      ]
+      "automation": ["typeform"]
     }
   },
   {
@@ -10303,9 +8820,7 @@
     "slogan": "uproc",
     "icon": "icons/uproc.svg",
     "integrations": {
-      "automation": [
-        "uproc"
-      ]
+      "automation": ["uproc"]
     }
   },
   {
@@ -10316,9 +8831,7 @@
     "slogan": "wufoo",
     "icon": "icons/wufoo.svg",
     "integrations": {
-      "automation": [
-        "wufoo"
-      ]
+      "automation": ["wufoo"]
     }
   },
   {
@@ -10329,9 +8842,7 @@
     "slogan": "bitwarden",
     "icon": "icons/bitwarden.svg",
     "integrations": {
-      "automation": [
-        "bitwarden"
-      ]
+      "automation": ["bitwarden"]
     }
   },
   {
@@ -10342,9 +8853,7 @@
     "slogan": "cortex",
     "icon": "icons/cortex.svg",
     "integrations": {
-      "automation": [
-        "cortex"
-      ]
+      "automation": ["cortex"]
     }
   },
   {
@@ -10355,9 +8864,7 @@
     "slogan": "elastic-security",
     "icon": "icons/elastic-security.svg",
     "integrations": {
-      "automation": [
-        "elastic-security"
-      ]
+      "automation": ["elastic-security"]
     }
   },
   {
@@ -10368,9 +8875,7 @@
     "slogan": "ldap",
     "icon": "icons/ldap.svg",
     "integrations": {
-      "automation": [
-        "ldap"
-      ]
+      "automation": ["ldap"]
     }
   },
   {
@@ -10381,9 +8886,7 @@
     "slogan": "misp",
     "icon": "icons/misp.svg",
     "integrations": {
-      "automation": [
-        "misp"
-      ]
+      "automation": ["misp"]
     }
   },
   {
@@ -10394,9 +8897,7 @@
     "slogan": "ms-entra-id",
     "icon": "icons/ms-entra-id.svg",
     "integrations": {
-      "automation": [
-        "ms-entra-id"
-      ]
+      "automation": ["ms-entra-id"]
     }
   },
   {
@@ -10407,9 +8908,7 @@
     "slogan": "ms-graph-security",
     "icon": "icons/ms-graph-security.svg",
     "integrations": {
-      "automation": [
-        "ms-graph-security"
-      ]
+      "automation": ["ms-graph-security"]
     }
   },
   {
@@ -10420,9 +8919,7 @@
     "slogan": "okta",
     "icon": "icons/okta.svg",
     "integrations": {
-      "automation": [
-        "okta"
-      ]
+      "automation": ["okta"]
     }
   },
   {
@@ -10433,9 +8930,7 @@
     "slogan": "securityscorecard",
     "icon": "icons/securityscorecard.svg",
     "integrations": {
-      "automation": [
-        "securityscorecard"
-      ]
+      "automation": ["securityscorecard"]
     }
   },
   {
@@ -10446,9 +8941,7 @@
     "slogan": "thehive",
     "icon": "icons/thehive.svg",
     "integrations": {
-      "automation": [
-        "thehive"
-      ]
+      "automation": ["thehive"]
     }
   },
   {
@@ -10459,9 +8952,7 @@
     "slogan": "thehive5",
     "icon": "icons/thehive5.svg",
     "integrations": {
-      "automation": [
-        "thehive5"
-      ]
+      "automation": ["thehive5"]
     }
   },
   {
@@ -10472,9 +8963,7 @@
     "slogan": "venafi-tls-cloud",
     "icon": "icons/venafi-tls-cloud.svg",
     "integrations": {
-      "automation": [
-        "venafi-tls-cloud"
-      ]
+      "automation": ["venafi-tls-cloud"]
     }
   },
   {
@@ -10485,9 +8974,7 @@
     "slogan": "venafi-tls-dc",
     "icon": "icons/venafi-tls-dc.svg",
     "integrations": {
-      "automation": [
-        "venafi-tls-dc"
-      ]
+      "automation": ["venafi-tls-dc"]
     }
   },
   {
@@ -10498,9 +8985,7 @@
     "slogan": "cloudflare-pages",
     "icon": "icons/cloudflare-pages.svg",
     "integrations": {
-      "automation": [
-        "cloudflare-pages"
-      ]
+      "automation": ["cloudflare-pages"]
     }
   },
   {
@@ -10511,9 +8996,7 @@
     "slogan": "git",
     "icon": "icons/git.svg",
     "integrations": {
-      "automation": [
-        "git"
-      ]
+      "automation": ["git"]
     }
   },
   {
@@ -10524,9 +9007,7 @@
     "slogan": "grafana",
     "icon": "icons/grafana.svg",
     "integrations": {
-      "automation": [
-        "grafana"
-      ]
+      "automation": ["grafana"]
     }
   },
   {
@@ -10537,9 +9018,7 @@
     "slogan": "netscaler-adc",
     "icon": "icons/netscaler-adc.svg",
     "integrations": {
-      "automation": [
-        "netscaler-adc"
-      ]
+      "automation": ["netscaler-adc"]
     }
   },
   {
@@ -10550,9 +9029,7 @@
     "slogan": "netscaler",
     "icon": "icons/netscaler.svg",
     "integrations": {
-      "automation": [
-        "netscaler"
-      ]
+      "automation": ["netscaler"]
     }
   },
   {
@@ -10563,9 +9040,7 @@
     "slogan": "pagerduty",
     "icon": "icons/pagerduty.svg",
     "integrations": {
-      "automation": [
-        "pagerduty"
-      ]
+      "automation": ["pagerduty"]
     }
   },
   {
@@ -10576,9 +9051,7 @@
     "slogan": "postbin",
     "icon": "icons/postbin.svg",
     "integrations": {
-      "automation": [
-        "postbin"
-      ]
+      "automation": ["postbin"]
     }
   },
   {
@@ -10589,9 +9062,7 @@
     "slogan": "rundeck",
     "icon": "icons/rundeck.svg",
     "integrations": {
-      "automation": [
-        "rundeck"
-      ]
+      "automation": ["rundeck"]
     }
   },
   {
@@ -10602,9 +9073,7 @@
     "slogan": "sentryio",
     "icon": "icons/sentryio.svg",
     "integrations": {
-      "automation": [
-        "sentryio"
-      ]
+      "automation": ["sentryio"]
     }
   },
   {
@@ -10615,9 +9084,7 @@
     "slogan": "travisci",
     "icon": "icons/travisci.svg",
     "integrations": {
-      "automation": [
-        "travisci"
-      ]
+      "automation": ["travisci"]
     }
   },
   {
@@ -10628,9 +9095,7 @@
     "slogan": "deepl",
     "icon": "icons/deepl.svg",
     "integrations": {
-      "automation": [
-        "deepl"
-      ]
+      "automation": ["deepl"]
     }
   },
   {
@@ -10641,9 +9106,7 @@
     "slogan": "google-cloud-nlp",
     "icon": "icons/google-cloud-nlp.svg",
     "integrations": {
-      "automation": [
-        "google-cloud-nlp"
-      ]
+      "automation": ["google-cloud-nlp"]
     }
   },
   {
@@ -10654,9 +9117,7 @@
     "slogan": "google-perspective",
     "icon": "icons/google-perspective.svg",
     "integrations": {
-      "automation": [
-        "google-perspective"
-      ]
+      "automation": ["google-perspective"]
     }
   },
   {
@@ -10667,9 +9128,7 @@
     "slogan": "humantic-ai",
     "icon": "icons/humantic-ai.svg",
     "integrations": {
-      "automation": [
-        "humantic-ai"
-      ]
+      "automation": ["humantic-ai"]
     }
   },
   {
@@ -10680,9 +9139,7 @@
     "slogan": "lingvanex",
     "icon": "icons/lingvanex.svg",
     "integrations": {
-      "automation": [
-        "lingvanex"
-      ]
+      "automation": ["lingvanex"]
     }
   },
   {
@@ -10693,9 +9150,7 @@
     "slogan": "gumroad",
     "icon": "icons/gumroad.svg",
     "integrations": {
-      "automation": [
-        "gumroad"
-      ]
+      "automation": ["gumroad"]
     }
   },
   {
@@ -10706,9 +9161,7 @@
     "slogan": "harvest",
     "icon": "icons/harvest.svg",
     "integrations": {
-      "automation": [
-        "harvest"
-      ]
+      "automation": ["harvest"]
     }
   },
   {
@@ -10719,9 +9172,7 @@
     "slogan": "invoice-ninja",
     "icon": "icons/invoice-ninja.svg",
     "integrations": {
-      "automation": [
-        "invoice-ninja"
-      ]
+      "automation": ["invoice-ninja"]
     }
   },
   {
@@ -10732,9 +9183,7 @@
     "slogan": "paddle",
     "icon": "icons/paddle.svg",
     "integrations": {
-      "automation": [
-        "paddle"
-      ]
+      "automation": ["paddle"]
     }
   },
   {
@@ -10745,9 +9194,7 @@
     "slogan": "acuity-scheduling",
     "icon": "icons/acuity-scheduling.svg",
     "integrations": {
-      "automation": [
-        "acuity-scheduling"
-      ]
+      "automation": ["acuity-scheduling"]
     }
   },
   {
@@ -10758,9 +9205,7 @@
     "slogan": "asana",
     "icon": "icons/asana.svg",
     "integrations": {
-      "automation": [
-        "asana"
-      ]
+      "automation": ["asana"]
     }
   },
   {
@@ -10771,9 +9216,7 @@
     "slogan": "calendly",
     "icon": "icons/calendly.svg",
     "integrations": {
-      "automation": [
-        "calendly"
-      ]
+      "automation": ["calendly"]
     }
   },
   {
@@ -10784,9 +9227,7 @@
     "slogan": "microsoft-todo",
     "icon": "icons/microsoft-todo.svg",
     "integrations": {
-      "automation": [
-        "microsoft-todo"
-      ]
+      "automation": ["microsoft-todo"]
     }
   },
   {
@@ -10797,9 +9238,7 @@
     "slogan": "toggl",
     "icon": "icons/toggl.svg",
     "integrations": {
-      "automation": [
-        "toggl"
-      ]
+      "automation": ["toggl"]
     }
   },
   {
@@ -10810,9 +9249,7 @@
     "slogan": "wekan",
     "icon": "icons/wekan.svg",
     "integrations": {
-      "automation": [
-        "wekan"
-      ]
+      "automation": ["wekan"]
     }
   },
   {
@@ -10823,9 +9260,7 @@
     "slogan": "airtop",
     "icon": "icons/airtop.svg",
     "integrations": {
-      "automation": [
-        "airtop"
-      ]
+      "automation": ["airtop"]
     }
   },
   {
@@ -10836,9 +9271,7 @@
     "slogan": "apitemplate",
     "icon": "icons/apitemplate.svg",
     "integrations": {
-      "automation": [
-        "apitemplate"
-      ]
+      "automation": ["apitemplate"]
     }
   },
   {
@@ -10849,9 +9282,7 @@
     "slogan": "bannerbear",
     "icon": "icons/bannerbear.svg",
     "integrations": {
-      "automation": [
-        "bannerbear"
-      ]
+      "automation": ["bannerbear"]
     }
   },
   {
@@ -10862,9 +9293,7 @@
     "slogan": "beeminder",
     "icon": "icons/beeminder.svg",
     "integrations": {
-      "automation": [
-        "beeminder"
-      ]
+      "automation": ["beeminder"]
     }
   },
   {
@@ -10875,9 +9304,7 @@
     "slogan": "google-translate-action",
     "icon": "icons/Google.svg",
     "integrations": {
-      "automation": [
-        "google-translate-action"
-      ]
+      "automation": ["google-translate-action"]
     }
   },
   {
@@ -10888,9 +9315,7 @@
     "slogan": "home-assistant",
     "icon": "icons/home-assistant.svg",
     "integrations": {
-      "automation": [
-        "home-assistant"
-      ]
+      "automation": ["home-assistant"]
     }
   },
   {
@@ -10901,9 +9326,7 @@
     "slogan": "icalendar",
     "icon": "icons/icalendar.svg",
     "integrations": {
-      "automation": [
-        "icalendar"
-      ]
+      "automation": ["icalendar"]
     }
   },
   {
@@ -10914,9 +9337,7 @@
     "slogan": "mindee",
     "icon": "icons/mindee.svg",
     "integrations": {
-      "automation": [
-        "mindee"
-      ]
+      "automation": ["mindee"]
     }
   },
   {
@@ -10927,9 +9348,7 @@
     "slogan": "openweathermap",
     "icon": "icons/openweathermap.svg",
     "integrations": {
-      "automation": [
-        "openweathermap"
-      ]
+      "automation": ["openweathermap"]
     }
   },
   {
@@ -10940,9 +9359,7 @@
     "slogan": "oura",
     "icon": "icons/oura.svg",
     "integrations": {
-      "automation": [
-        "oura"
-      ]
+      "automation": ["oura"]
     }
   },
   {
@@ -10953,9 +9370,7 @@
     "slogan": "pdf-extractor",
     "icon": "icons/pdf-extractor.svg",
     "integrations": {
-      "automation": [
-        "pdf-extractor"
-      ]
+      "automation": ["pdf-extractor"]
     }
   },
   {
@@ -10966,9 +9381,7 @@
     "slogan": "philips-hue",
     "icon": "icons/philips-hue.svg",
     "integrations": {
-      "automation": [
-        "philips-hue"
-      ]
+      "automation": ["philips-hue"]
     }
   },
   {
@@ -10979,9 +9392,7 @@
     "slogan": "spotify",
     "icon": "icons/spotify.svg",
     "integrations": {
-      "automation": [
-        "spotify"
-      ]
+      "automation": ["spotify"]
     }
   },
   {
@@ -10992,9 +9403,7 @@
     "slogan": "strava",
     "icon": "icons/strava.svg",
     "integrations": {
-      "automation": [
-        "strava"
-      ]
+      "automation": ["strava"]
     }
   },
   {
@@ -11005,9 +9414,7 @@
     "slogan": "cratedb",
     "icon": "icons/cratedb.svg",
     "integrations": {
-      "automation": [
-        "cratedb"
-      ]
+      "automation": ["cratedb"]
     }
   },
   {
@@ -11018,9 +9425,7 @@
     "slogan": "google-firebase-rtdb",
     "icon": "icons/google-firebase-rtdb.svg",
     "integrations": {
-      "automation": [
-        "google-firebase-rtdb"
-      ]
+      "automation": ["google-firebase-rtdb"]
     }
   },
   {
@@ -11031,9 +9436,7 @@
     "slogan": "grist",
     "icon": "icons/grist.svg",
     "integrations": {
-      "automation": [
-        "grist"
-      ]
+      "automation": ["grist"]
     }
   },
   {
@@ -11044,9 +9447,7 @@
     "slogan": "kobotoolbox",
     "icon": "icons/kobotoolbox.svg",
     "integrations": {
-      "automation": [
-        "kobotoolbox"
-      ]
+      "automation": ["kobotoolbox"]
     }
   },
   {
@@ -11057,9 +9458,7 @@
     "slogan": "metabase",
     "icon": "icons/metabase.svg",
     "integrations": {
-      "automation": [
-        "metabase"
-      ]
+      "automation": ["metabase"]
     }
   },
   {
@@ -11070,9 +9469,7 @@
     "slogan": "oracle-db",
     "icon": "icons/oracle-db.svg",
     "integrations": {
-      "automation": [
-        "oracle-db"
-      ]
+      "automation": ["oracle-db"]
     }
   },
   {
@@ -11083,9 +9480,7 @@
     "slogan": "questdb",
     "icon": "icons/questdb.svg",
     "integrations": {
-      "automation": [
-        "questdb"
-      ]
+      "automation": ["questdb"]
     }
   },
   {
@@ -11096,9 +9491,7 @@
     "slogan": "snowflake",
     "icon": "icons/snowflake.svg",
     "integrations": {
-      "automation": [
-        "snowflake"
-      ]
+      "automation": ["snowflake"]
     }
   },
   {
@@ -11109,9 +9502,7 @@
     "slogan": "stackby",
     "icon": "icons/stackby.svg",
     "integrations": {
-      "automation": [
-        "stackby"
-      ]
+      "automation": ["stackby"]
     }
   },
   {
@@ -11122,9 +9513,7 @@
     "slogan": "timescaledb",
     "icon": "icons/timescaledb.svg",
     "integrations": {
-      "automation": [
-        "timescaledb"
-      ]
+      "automation": ["timescaledb"]
     }
   },
   {
@@ -11135,9 +9524,7 @@
     "slogan": "currents",
     "icon": "icons/currents.svg",
     "integrations": {
-      "automation": [
-        "currents"
-      ]
+      "automation": ["currents"]
     }
   },
   {
@@ -11148,9 +9535,7 @@
     "slogan": "splunk",
     "icon": "icons/splunk.svg",
     "integrations": {
-      "automation": [
-        "splunk"
-      ]
+      "automation": ["splunk"]
     }
   },
   {
@@ -11161,9 +9546,7 @@
     "slogan": "uptimerobot",
     "icon": "icons/uptimerobot.svg",
     "integrations": {
-      "automation": [
-        "uptimerobot"
-      ]
+      "automation": ["uptimerobot"]
     }
   },
   {
@@ -11174,9 +9557,7 @@
     "slogan": "box",
     "icon": "icons/box.svg",
     "integrations": {
-      "automation": [
-        "box"
-      ]
+      "automation": ["box"]
     }
   },
   {
@@ -11187,9 +9568,7 @@
     "slogan": "ms-sharepoint",
     "icon": "icons/ms-sharepoint.svg",
     "integrations": {
-      "automation": [
-        "ms-sharepoint"
-      ]
+      "automation": ["ms-sharepoint"]
     }
   },
   {
@@ -11200,9 +9579,7 @@
     "slogan": "raindrop",
     "icon": "icons/raindrop.svg",
     "integrations": {
-      "automation": [
-        "raindrop"
-      ]
+      "automation": ["raindrop"]
     }
   },
   {
@@ -11213,9 +9590,7 @@
     "slogan": "sharepoint",
     "icon": "icons/sharepoint.svg",
     "integrations": {
-      "automation": [
-        "sharepoint"
-      ]
+      "automation": ["sharepoint"]
     }
   },
   {
@@ -11226,9 +9601,7 @@
     "slogan": "bitly",
     "icon": "icons/bitly.svg",
     "integrations": {
-      "automation": [
-        "bitly"
-      ]
+      "automation": ["bitly"]
     }
   },
   {
@@ -11239,9 +9612,7 @@
     "slogan": "brandfetch",
     "icon": "icons/brandfetch.svg",
     "integrations": {
-      "automation": [
-        "brandfetch"
-      ]
+      "automation": ["brandfetch"]
     }
   },
   {
@@ -11252,9 +9623,7 @@
     "slogan": "contentful",
     "icon": "icons/contentful.svg",
     "integrations": {
-      "automation": [
-        "contentful"
-      ]
+      "automation": ["contentful"]
     }
   },
   {
@@ -11265,9 +9634,7 @@
     "slogan": "hacker-news",
     "icon": "icons/hacker-news.svg",
     "integrations": {
-      "automation": [
-        "hacker-news"
-      ]
+      "automation": ["hacker-news"]
     }
   },
   {
@@ -11278,9 +9645,7 @@
     "slogan": "one-simple-api",
     "icon": "icons/one-simple-api.svg",
     "integrations": {
-      "automation": [
-        "one-simple-api"
-      ]
+      "automation": ["one-simple-api"]
     }
   },
   {
@@ -11291,9 +9656,7 @@
     "slogan": "openthesaurus",
     "icon": "icons/openthesaurus.svg",
     "integrations": {
-      "automation": [
-        "openthesaurus"
-      ]
+      "automation": ["openthesaurus"]
     }
   },
   {
@@ -11304,9 +9667,7 @@
     "slogan": "peekalink",
     "icon": "icons/peekalink.svg",
     "integrations": {
-      "automation": [
-        "peekalink"
-      ]
+      "automation": ["peekalink"]
     }
   },
   {
@@ -11317,9 +9678,7 @@
     "slogan": "yourls",
     "icon": "icons/yourls.svg",
     "integrations": {
-      "automation": [
-        "yourls"
-      ]
+      "automation": ["yourls"]
     }
   },
   {
@@ -11330,9 +9689,7 @@
     "slogan": "bamboohr",
     "icon": "icons/bamboohr.svg",
     "integrations": {
-      "automation": [
-        "bamboohr"
-      ]
+      "automation": ["bamboohr"]
     }
   },
   {
@@ -11343,9 +9700,7 @@
     "slogan": "workable",
     "icon": "icons/workable.svg",
     "integrations": {
-      "automation": [
-        "workable"
-      ]
+      "automation": ["workable"]
     }
   },
   {
@@ -11413,9 +9768,7 @@
     "slogan": "google-books-action",
     "icon": "icons/googlebooks.svg",
     "integrations": {
-      "automation": [
-        "google-books-action"
-      ]
+      "automation": ["google-books-action"]
     }
   },
   {
@@ -11426,9 +9779,7 @@
     "slogan": "google-chat-member",
     "icon": "icons/googleChat.svg",
     "integrations": {
-      "automation": [
-        "google-chat-member"
-      ]
+      "automation": ["google-chat-member"]
     }
   },
   {
@@ -11439,9 +9790,7 @@
     "slogan": "google-chat-message",
     "icon": "icons/googleChat.svg",
     "integrations": {
-      "automation": [
-        "google-chat-message"
-      ]
+      "automation": ["google-chat-message"]
     }
   },
   {
@@ -11452,9 +9801,7 @@
     "slogan": "google-chat-message-trigger",
     "icon": "icons/googleChat.svg",
     "integrations": {
-      "automation": [
-        "google-chat-message-trigger"
-      ]
+      "automation": ["google-chat-message-trigger"]
     }
   },
   {
@@ -11465,9 +9812,7 @@
     "slogan": "google-chat-space",
     "icon": "icons/googleChat.svg",
     "integrations": {
-      "automation": [
-        "google-chat-space"
-      ]
+      "automation": ["google-chat-space"]
     }
   },
   {
@@ -11478,9 +9823,7 @@
     "slogan": "aws-acm",
     "icon": "icons/aws-acm.svg",
     "integrations": {
-      "automation": [
-        "aws-acm"
-      ]
+      "automation": ["aws-acm"]
     }
   },
   {
@@ -11491,9 +9834,7 @@
     "slogan": "aws-cognito",
     "icon": "icons/cognito.svg",
     "integrations": {
-      "automation": [
-        "aws-cognito"
-      ]
+      "automation": ["aws-cognito"]
     }
   },
   {
@@ -11504,9 +9845,7 @@
     "slogan": "aws-comprehend",
     "icon": "icons/comprehend.svg",
     "integrations": {
-      "automation": [
-        "aws-comprehend"
-      ]
+      "automation": ["aws-comprehend"]
     }
   },
   {
@@ -11517,9 +9856,7 @@
     "slogan": "aws-elb",
     "icon": "icons/aws-elb.svg",
     "integrations": {
-      "automation": [
-        "aws-elb"
-      ]
+      "automation": ["aws-elb"]
     }
   },
   {
@@ -11530,9 +9867,7 @@
     "slogan": "aws-iam",
     "icon": "icons/aws-iam.svg",
     "integrations": {
-      "automation": [
-        "aws-iam"
-      ]
+      "automation": ["aws-iam"]
     }
   },
   {
@@ -11543,9 +9878,7 @@
     "slogan": "aws-lambda",
     "icon": "icons/aws-lambda.svg",
     "integrations": {
-      "automation": [
-        "aws-lambda"
-      ]
+      "automation": ["aws-lambda"]
     }
   },
   {
@@ -11556,9 +9889,7 @@
     "slogan": "aws-rekognition",
     "icon": "icons/rekognition.svg",
     "integrations": {
-      "automation": [
-        "aws-rekognition"
-      ]
+      "automation": ["aws-rekognition"]
     }
   },
   {
@@ -11569,9 +9900,7 @@
     "slogan": "aws-sns",
     "icon": "icons/aws-sns.svg",
     "integrations": {
-      "automation": [
-        "aws-sns"
-      ]
+      "automation": ["aws-sns"]
     }
   },
   {
@@ -11582,9 +9911,7 @@
     "slogan": "aws-sqs",
     "icon": "icons/aws-sqs.svg",
     "integrations": {
-      "automation": [
-        "aws-sqs"
-      ]
+      "automation": ["aws-sqs"]
     }
   },
   {
@@ -11595,9 +9922,7 @@
     "slogan": "aws-textract",
     "icon": "icons/textract.svg",
     "integrations": {
-      "automation": [
-        "aws-textract"
-      ]
+      "automation": ["aws-textract"]
     }
   },
   {
@@ -11608,9 +9933,7 @@
     "slogan": "aws-transcribe",
     "icon": "icons/transcribe.svg",
     "integrations": {
-      "automation": [
-        "aws-transcribe"
-      ]
+      "automation": ["aws-transcribe"]
     }
   }
 ]
