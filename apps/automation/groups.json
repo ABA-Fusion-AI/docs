@@ -2644,7 +2644,7 @@
     "name": "rabbitmq",
     "icon": "icons/rabbitmq-icon",
     "color": "#FF8C00",
-    "nodes": ["rabbit-mq-action" ,"rabbit-mq-trigger"],
+    "nodes": ["rabbit-mq-action" ,"rabbit-mq-trigger","rabbit-mq-publish"],
     "subgroups": []
   },
   {
