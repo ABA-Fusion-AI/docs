@@ -171,7 +171,7 @@
     "slogan": "rabbitmq",
     "icon": "icons/rabbitmq.svg",
     "integrations": {
-      "automation": ["rabbitmq", "rabbitmq trigger", "rabbitmq action"]
+      "automation": ["rabbit-mq-action" ,"rabbit-mq-trigger"]
     }
   },
   {
@@ -1559,7 +1559,7 @@
     "slogan": "amqp",
     "icon": "icons/amqp.svg",
     "integrations": {
-      "automation": ["amqp-consume", "amqp-publish"]
+      "automation": ["amqp-consume", "amqp-publish", "amqp-trigger", "amqp-sender"]
     }
   },
   {

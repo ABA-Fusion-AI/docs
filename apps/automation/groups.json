@@ -835,7 +835,7 @@
     "subgroups": [
       {
         "name": "amqp",
-        "nodes": ["amqp-consume", "amqp-publish"],
+        "nodes": ["amqp-consume", "amqp-publish", "amqp-trigger", "amqp-sender"],
         "subgroups": []
       },
       {
@@ -2644,7 +2644,7 @@
     "name": "rabbitmq",
     "icon": "icons/rabbitmq-icon",
     "color": "#FF8C00",
-    "nodes": ["rabbitmq action", "rabbitmq trigger"],
+    "nodes": ["rabbit-mq-action" ,"rabbit-mq-trigger"],
     "subgroups": []
   },
   {
