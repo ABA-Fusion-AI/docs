@@ -9469,7 +9469,7 @@
     "slogan": "oracle-db",
     "icon": "icons/oracle-db.svg",
     "integrations": {
-      "automation": ["oracle-db"]
+      "automation": ["oracle-db","oracle-database","oracle-sql"]
     }
   },
   {
