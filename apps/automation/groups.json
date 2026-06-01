@@ -2721,12 +2721,12 @@
     "icon": "icons/todoist-icon",
     "color": "#33FFF5",
     "nodes": [
-      "todoist.project",
-      "todoist.task",
-      "todoist.section",
-      "todoist.comment",
-      "todoist.label",
-      "todoist.reminder"
+      "todoist-project-action",
+      "todoist-task-action",
+      "todoist-section-action",
+      "todoist-comment-action",
+      "todoist-label-action",
+      "todoist-reminder-action"
     ],
     "subgroups": []
   },
