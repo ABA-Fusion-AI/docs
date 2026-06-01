@@ -2831,7 +2831,7 @@
     "name": "Oracle",
     "icon": "icons/oracle-icon",
     "color": "#33FF57",
-    "nodes": [],
+    "nodes": ["oracle-db", "oracle-sql", "oracle-database"],
     "subgroups": [
       {
         "name": "Database",
