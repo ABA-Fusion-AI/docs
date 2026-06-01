@@ -2349,14 +2349,7 @@
     "name": "Jenkins",
     "icon": "icons/jenkins-icon",
     "color": "#FF8C00",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "Actions",
-        "nodes": ["jenkins"],
-        "subgroups": []
-      }
-    ]
+    "nodes": ["jenkins"]
   },
   {
     "name": "postgres",
