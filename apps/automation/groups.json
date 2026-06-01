@@ -2841,6 +2841,13 @@
     ]
   },
   {
+    "name": "mssql",
+    "icon": "icons/mssql-icon",
+    "color": "#FF8C00",
+    "nodes": ["mssql"],
+    "subgroups": []
+  },
+  {
     "name": "ACTION_NETWORK",
     "icon": "icons/action_network-icon",
     "color": "#FF33F5",

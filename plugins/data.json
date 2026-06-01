@@ -9473,6 +9473,17 @@
     }
   },
   {
+    "id": "mssql",
+    "name": "Microsoft SQL Server",
+    "type": "tool",
+    "description": "Execute queries and manage data in Microsoft SQL Server",
+    "slogan": "mssql",
+    "icon": "icons/mssql.svg",
+    "integrations": {
+      "automation": ["mssql","sql-server"]
+    }
+  },
+  {
     "id": "questdb",
     "name": "QuestDB",
     "type": "tool",
