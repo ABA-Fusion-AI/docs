@@ -1,6 +1,6 @@
 [
   {
-    "name": "Langfuse Prompt",
+    "name": "Performance Prompt",
     "icon": "icons/langfuse-icon",
     "color": "#FF33F5",
     "nodes": ["langfuse-prompt"],
