@@ -149,7 +149,7 @@
     "slogan": "medifus",
     "icon": "icons/medical.svg",
     "integrations": {
-      "automation": ["medifus"]
+      "automation": ["visiostation"]
     }
   },
   {
