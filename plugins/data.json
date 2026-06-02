@@ -8537,6 +8537,7 @@
       "automation": [
         "todoist-project-action",
         "todoist-task-action",
+        "todoist-quick-add-action",
         "todoist-section-action",
         "todoist-comment-action",
         "todoist-label-action",
