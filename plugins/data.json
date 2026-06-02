@@ -1,13 +1,13 @@
 [
   {
-    "id": "langfuse",
-    "name": "langfuse",
+    "id": "performance",
+    "name": "performance",
     "type": "action",
-    "description": "langfuse nodes",
-    "slogan": "langfuse",
+    "description": "performance nodes",
+    "slogan": "performance",
     "icon": "icons/langfuse.svg",
     "integrations": {
-      "automation": ["langfuse-prompt"]
+      "automation": ["performance-prompt"]
     }
   },
   {
