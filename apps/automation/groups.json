@@ -2441,7 +2441,7 @@
     "subgroups": [
       {
         "name": "clickup",
-        "nodes": ["clickup", "clickup.trigger"],
+        "nodes": ["clickup", "clickup-trigger"],
         "subgroups": []
       }
     ]

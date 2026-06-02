@@ -171,7 +171,11 @@
     "slogan": "rabbitmq",
     "icon": "icons/rabbitmq.svg",
     "integrations": {
-      "automation": ["rabbit-mq-action" ,"rabbit-mq-trigger","rabbit-mq-publish"]
+      "automation": [
+        "rabbit-mq-action",
+        "rabbit-mq-trigger",
+        "rabbit-mq-publish"
+      ]
     }
   },
   {
@@ -1163,7 +1167,7 @@
     "slogan": "clickup",
     "icon": "icons/clickup.svg",
     "integrations": {
-      "automation": ["clickup", "clickup.trigger"]
+      "automation": ["clickup", "clickup-trigger"]
     }
   },
   {
@@ -1559,7 +1563,12 @@
     "slogan": "amqp",
     "icon": "icons/amqp.svg",
     "integrations": {
-      "automation": ["amqp-consume", "amqp-publish", "amqp-trigger", "amqp-sender"]
+      "automation": [
+        "amqp-consume",
+        "amqp-publish",
+        "amqp-trigger",
+        "amqp-sender"
+      ]
     }
   },
   {
@@ -9477,7 +9486,7 @@
     "slogan": "oracle-db",
     "icon": "icons/oracle-db.svg",
     "integrations": {
-      "automation": ["oracle-db","oracle-database","oracle-sql"]
+      "automation": ["oracle-db", "oracle-database", "oracle-sql"]
     }
   },
   {
@@ -9488,7 +9497,7 @@
     "slogan": "mssql",
     "icon": "icons/mssql.svg",
     "integrations": {
-      "automation": ["mssql","sql-server"]
+      "automation": ["mssql", "sql-server"]
     }
   },
   {
