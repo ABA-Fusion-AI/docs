@@ -2388,7 +2388,7 @@
     "name": "Jira",
     "icon": "icons/jira-icon",
     "color": "#FF33F5",
-    "nodes": [],
+    "nodes": ["jira"],
     "subgroups": [
       {
         "name": "Actions",
