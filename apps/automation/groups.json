@@ -835,7 +835,12 @@
     "subgroups": [
       {
         "name": "amqp",
-        "nodes": ["amqp-consume", "amqp-publish", "amqp-trigger", "amqp-sender"],
+        "nodes": [
+          "amqp-consume",
+          "amqp-publish",
+          "amqp-trigger",
+          "amqp-sender"
+        ],
         "subgroups": []
       },
       {
@@ -2637,7 +2642,7 @@
     "name": "rabbitmq",
     "icon": "icons/rabbitmq-icon",
     "color": "#FF8C00",
-    "nodes": ["rabbit-mq-action" ,"rabbit-mq-trigger","rabbit-mq-publish"],
+    "nodes": ["rabbit-mq-action", "rabbit-mq-trigger", "rabbit-mq-publish"],
     "subgroups": []
   },
   {
@@ -2876,7 +2881,7 @@
     "subgroups": [
       {
         "name": "Graph Api",
-        "nodes": ["facebook-graph-api"],
+        "nodes": ["facebook-graph"],
         "subgroups": []
       }
     ]
