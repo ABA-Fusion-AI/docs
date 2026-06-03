@@ -6004,7 +6004,7 @@
     "slogan": "rekrutema-detail",
     "icon": "icons/rekrute.svg",
     "integrations": {
-      "automation": ["rekrutema-detail"]
+      "automation": ["rekrute-job-parser", "rekrute-scraper"]
     }
   },
   {
