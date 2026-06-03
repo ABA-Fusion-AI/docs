@@ -6724,17 +6724,6 @@
     }
   },
   {
-    "id": "throttle-time",
-    "name": "Throttle Time",
-    "type": "tool",
-    "description": "Throttle timer - limit execution rate to one event per specified time window",
-    "slogan": "throttle-time",
-    "icon": "icons/throttle.svg",
-    "integrations": {
-      "automation": ["throttle-time"]
-    }
-  },
-  {
     "id": "tip-calculator",
     "name": "Tip Calculator",
     "type": "tool",
