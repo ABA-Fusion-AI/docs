@@ -9273,7 +9273,7 @@
     "slogan": "asana",
     "icon": "icons/asana.svg",
     "integrations": {
-      "automation": ["asana"]
+      "automation": ["asana", "asana-trigger"]
     }
   },
   {
