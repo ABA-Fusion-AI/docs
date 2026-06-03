@@ -2753,7 +2753,7 @@
     "name": "Odoo",
     "icon": "icons/odoo-icon",
     "color": "#3357FF",
-    "nodes": ["odoo-action"],
+    "nodes": ["odoo"],
     "subgroups": []
   },
   {
