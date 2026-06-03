@@ -101,6 +101,16 @@
     ]
   },
   {
+    "name": "LinkedIn",
+    "nodes": [
+      "linkedin-company",
+      "linkedin-job-scraper",
+      "linkedin-job-tools",
+      "linkedin-profile"
+    ],
+    "subgroups": []
+  },
+  {
     "name": "Data",
     "icon": "icons/data-icon",
     "color": "#3357FF",
