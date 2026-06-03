@@ -2395,7 +2395,7 @@
     "name": "CRYPTO",
     "icon": "icons/crypto-icon",
     "color": "#FF5733",
-    "nodes": [],
+    "nodes": ["crypto"],
     "subgroups": [
       {
         "name": "Actions",
@@ -2740,7 +2740,7 @@
     "name": "ASANA",
     "icon": "icons/asana-icon",
     "color": "#FFD700",
-    "nodes": [],
+    "nodes": ["asana", "asana-trigger"],
     "subgroups": [
       {
         "name": "project management",
