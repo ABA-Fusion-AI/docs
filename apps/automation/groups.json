@@ -1363,7 +1363,25 @@
       "whois",
       "zoomeye",
       "abuseipdb",
-      "google-dork"
+      "google-dork",
+      "abuse-ipdb",
+      "binary-edge",
+      "built-with",
+      "censys",
+      "dns-lookup",
+      "dns-to-ip",
+      "grey-noise",
+      "http-fingerprint",
+      "ip-geolocation",
+      "port-scanner",
+      "shodan-lookup",
+      "snyk",
+      "subdomain-discovery",
+      "virus-total",
+      "vulnerability-scanner",
+      "what-cms",
+      "whois",
+      "zoom-eye"
     ],
     "subgroups": [
       {
