@@ -4551,6 +4551,22 @@
     }
   },
   {
+    "id": "linkedin",
+    "name": "LinkedIn",
+    "type": "tool",
+    "description": "LinkedIn integration for company profiles, job postings, and professional networking",
+    "slogan": "linkedin",
+    "icon": "icons/linkedin.svg",
+    "integrations": {
+      "automation": [
+        "linkedin-company",
+        "linkedin-job-scraper",
+        "linkedin-job-tools",
+        "linkedin-profile"
+      ]
+    }
+  },
+  {
     "id": "loan-calculator",
     "name": "Loan Calculator",
     "type": "tool",
