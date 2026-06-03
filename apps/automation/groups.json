@@ -159,7 +159,7 @@
           "header-validation",
           "hmac",
           "html-escape",
-          "html-pdf",
+          "html-to-pdf",
           "html-sanitize",
           "html-to-text",
           "ilovepdf",
