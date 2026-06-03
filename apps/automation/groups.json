@@ -564,7 +564,7 @@
       },
       {
         "name": "Rekrute",
-        "nodes": ["rekrutema-detail"],
+        "nodes": ["rekrute-job-parser", "rekrute-scraper"],
         "subgroups": []
       },
       {
