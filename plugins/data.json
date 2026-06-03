@@ -4356,7 +4356,7 @@
     "id": "jwt",
     "name": "Jwt",
     "type": "tool",
-    "description": "JWT token handler - encode, decode, sign, and verify JSON Web Tokens",
+    "description": "Jwt token handler - encode, decode, sign, and verify JSON Web Tokens",
     "slogan": "jwt",
     "icon": "icons/jwt.svg",
     "integrations": {
