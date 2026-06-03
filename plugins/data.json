@@ -3986,14 +3986,14 @@
     }
   },
   {
-    "id": "html-pdf",
-    "name": "Html Pdf",
+    "id": "html-to-pdf",
+    "name": "Html To Pdf",
     "type": "tool",
     "description": "HTML to PDF converter - generate PDF documents from HTML content",
-    "slogan": "html-pdf",
+    "slogan": "html-to-pdf",
     "icon": "icons/pdf.svg",
     "integrations": {
-      "automation": ["html-pdf"]
+      "automation": ["html-to-pdf"]
     }
   },
   {
