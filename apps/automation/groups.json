@@ -690,7 +690,7 @@
       },
       {
         "name": "Binga",
-        "nodes": ["binga-create-payment-request"],
+        "nodes": ["binga-create-payment-request", "binga-webhook-trigger"],
         "subgroups": []
       },
       {
