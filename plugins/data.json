@@ -1799,7 +1799,7 @@
     "slogan": "binga-create-payment-request",
     "icon": "icons/binga.svg",
     "integrations": {
-      "automation": ["binga-create-payment-request"]
+      "automation": ["binga-create-payment-request","binga-webhook-trigger"]
     }
   },
   {
