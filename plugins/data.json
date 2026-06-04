@@ -8218,7 +8218,7 @@
     "slogan": "filemaker",
     "icon": "icons/filemaker.svg",
     "integrations": {
-      "automation": ["filemaker"]
+      "automation": ["filemaker-action"]
     }
   },
   {
