@@ -695,7 +695,7 @@
       },
       {
         "name": "CMI",
-        "nodes": ["cmi-generate-payment-form"],
+        "nodes": ["cmi-generate-payment-form", "cmi-webhook-trigger"],
         "subgroups": []
       },
       {

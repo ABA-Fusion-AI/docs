@@ -2737,7 +2737,7 @@
     "slogan": "cmi-generate-payment-form",
     "icon": "icons/cmi.svg",
     "integrations": {
-      "automation": ["cmi-generate-payment-form"]
+      "automation": ["cmi-generate-payment-form", "cmi-webhook-trigger"]
     }
   },
   {
