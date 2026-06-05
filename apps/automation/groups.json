@@ -2842,7 +2842,7 @@
     "subgroups": [
       {
         "name": "Strapi",
-        "nodes": ["strapi-action"],
+        "nodes": ["strapi"],
         "subgroups": []
       }
     ]
