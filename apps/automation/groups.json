@@ -1751,7 +1751,7 @@
       },
       {
         "name": "Whatsapp",
-        "nodes": ["whatsapp"],
+        "nodes": ["whatsapp-trigger", "whatsapp-webhook"],
         "subgroups": []
       },
       {
