@@ -7338,7 +7338,7 @@
     "slogan": "whatsapp",
     "icon": "icons/whatsapp.svg",
     "integrations": {
-      "automation": ["whatsapp"]
+      "automation": ["whatsapp-trigger", "whatsapp-webhook"]
     }
   },
   {
