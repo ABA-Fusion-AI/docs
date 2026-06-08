@@ -1,236 +1,336 @@
 [
   {
-    "name": "Performance Prompt",
-    "icon": "icons/langfuse-icon",
-    "color": "#FF33F5",
-    "nodes": ["performance-prompt"],
-    "subgroups": []
-  },
-  {
-    "name": "AI Agents",
-    "icon": "icons/ai-agents-icon",
-    "color": "#FF33F5",
-    "nodes": [
-      "agent",
-      "amazon-bedrock-llm",
-      "anthropic-llm",
-      "cohere-llm",
-      "deepseek-llm",
-      "github-llm",
-      "google-llm",
-      "groq-llm",
-      "huggingface-llm",
-      "hyperbolic-llm",
-      "lmstudio-llm",
-      "mistral-llm",
-      "ollama-llm",
-      "openai-llm",
-      "openai-like-llm",
-      "openrouter-llm",
-      "perplexity-llm",
-      "together-llm",
-      "xai-llm"
-    ],
-    "subgroups": []
-  },
-  {
-    "name": "Triggers",
-    "icon": "icons/triggers-icon",
-    "color": "#FF33F5",
-    "nodes": [
-      "bacnet-trigger",
-      "fhir-subscription-trigger",
-      "coap-server",
-      "cron",
-      "dnp3-outstation",
-      "ethernet-ip-trigger",
-      "ftp-sftp-watch-folder",
-      "hl7-webhook-trigger",
-      "imap-trigger",
-      "interval",
-      "manual-trigger",
-      "modbus-trigger",
-      "mqtt-subscriber",
-      "opc-trigger",
-      "pusher-trigger",
-      "webhook",
-      "websocket-trigger",
-      "telegram-webhook",
-      "agora-event-trigger",
-      "osisoft-trigger",
-      "profinet-trigger",
-      "scada-trigger"
-    ],
-    "subgroups": [
-      {
-        "name": "Inter-Workflow",
-        "nodes": ["sub"],
-        "subgroups": []
-      },
-      {
-        "name": "Debugging",
-        "nodes": ["once"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "Core",
-    "icon": "icons/core-icon",
-    "color": "#9370DB",
-    "nodes": ["take", "throttle"],
-    "subgroups": [
-      {
-        "name": "Inter-Workflow",
-        "nodes": ["pub"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "Utility",
-    "icon": "icons/utility-icon",
-    "color": "#33FF57",
-    "nodes": ["map-keys", "select-key"],
-    "subgroups": [
-      {
-        "name": "Iterate",
-        "nodes": ["iterate"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "LinkedIn",
-    "nodes": [
-      "linkedin-company",
-      "linkedin-job-scraper",
-      "linkedin-job-tools",
-      "linkedin-profile"
-    ],
-    "subgroups": []
-  },
-  {
-    "name": "Data",
-    "icon": "icons/data-icon",
-    "color": "#3357FF",
+    "name": "Triggers & Ingress",
+    "icon": "trigger",
+    "color": "#22c55e",
     "nodes": [],
     "subgroups": [
       {
-        "name": "Logic",
-        "nodes": ["delay", "debounce-time", "merge", "switch", "throttle-time"],
+        "name": "IoT & Industrial Ingress",
+        "nodes": [
+          "bacnet-trigger",
+          "coap-server",
+          "ethernet-ip-trigger",
+          "modbus-trigger",
+          "opc-trigger",
+          "osisoft-trigger",
+          "profinet-trigger",
+          "scada-trigger",
+          "iot-hub.deviceStatusTrigger",
+          "iot-hub.deviceToCloudTrigger",
+          "dnp3-outstation"
+        ],
         "subgroups": []
       },
       {
-        "name": "EDI",
+        "name": "Healthcare Ingress",
+        "nodes": [
+          "fhir-subscription-trigger",
+          "hl7-webhook-trigger"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "Manual & Scheduled",
+        "nodes": [
+          "cron",
+          "interval",
+          "manual-trigger"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "File & Storage Watchers",
+        "nodes": [
+          "ftp-sftp-watch-folder",
+          "aws-s3-trigger",
+          "google-drive-trigger"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "App & SaaS Webhooks",
+        "nodes": [
+          "imap-trigger",
+          "telegram-webhook",
+          "binga-webhook-trigger",
+          "cmi-webhook-trigger",
+          "stripe-webhook-trigger",
+          "whatsapp-trigger",
+          "whatsapp-webhook",
+          "slack-trigger",
+          "gmail-trigger",
+          "outlook.mail.trigger",
+          "outlook.calendar.trigger",
+          "teams.chat.trigger.new-chat",
+          "teams.chat.trigger.new-chat-message",
+          "teams.channel.trigger.new-channel",
+          "teams.channel.trigger.new-team-member",
+          "teams.planner.trigger.new-task",
+          "teams.planner.trigger.task-updated",
+          "airtable-trigger",
+          "discord-trigger",
+          "azure-communication-chat-message-trigger",
+          "asana-trigger"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "Messaging & Event Ingress",
+        "nodes": [
+          "mqtt-subscriber",
+          "pusher-trigger",
+          "websocket-trigger",
+          "amqp-consume",
+          "amqp-trigger",
+          "service-bus-receive",
+          "nats-subscribe",
+          "stomp-subscribe",
+          "kafka-trigger",
+          "mqtt-trigger",
+          "event-hub-receive",
+          "servicebus.receive",
+          "rabbit-mq-trigger"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "Webhooks & API Ingress",
+        "nodes": [
+          "webhook",
+          "agora-event-trigger",
+          "qr-server",
+          "mattermost-webhook",
+          "respond-to-webhook",
+          "microsoft-excel-webhook",
+          "aws-dynamo-db-trigger",
+          "google-chat-message-trigger",
+          "google-sheets-trigger",
+          "clickup-trigger",
+          "signalr-receive",
+          "redis-subscribe"
+        ],
+        "subgroups": []
+      }
+    ]
+  },
+  {
+    "name": "Orchestration",
+    "icon": "function",
+    "color": "#3b82f6",
+    "nodes": [],
+    "subgroups": [
+      {
+        "name": "Inter-Workflow",
+        "nodes": [
+          "sub",
+          "pub"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "Flow Control",
+        "nodes": [
+          "once",
+          "take",
+          "merge",
+          "switch",
+          "if-else"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "Timing & Rate Control",
+        "nodes": [
+          "throttle",
+          "delay",
+          "debounce-time",
+          "throttle-time"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "Iteration",
+        "nodes": [
+          "iterate"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "Functions & Variables",
+        "nodes": [
+          "function",
+          "set-variable"
+        ],
+        "subgroups": []
+      }
+    ]
+  },
+  {
+    "name": "Data Transformation (ETL)",
+    "icon": "data",
+    "color": "#6366f1",
+    "nodes": [],
+    "subgroups": [
+      {
+        "name": "Data Shaping",
+        "nodes": [
+          "map-keys",
+          "select-key",
+          "base-converter",
+          "clamp",
+          "deduplicate",
+          "default-fill",
+          "extract",
+          "filter-array",
+          "filter",
+          "flatten",
+          "generate-uuid",
+          "group-by",
+          "header-validation",
+          "limit",
+          "lorem-generator",
+          "normalize-whitespace",
+          "reduce",
+          "restructure",
+          "roman-numeral-converter",
+          "select-fields",
+          "set-field",
+          "sort",
+          "to-boolean",
+          "to-number",
+          "to-string",
+          "unflatten",
+          "lang-connect",
+          "notion"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "EDI & Structured Messages",
         "nodes": [
           "astm-builder",
           "astm-mapper",
           "astm-to-json",
           "json-to-astm",
           "edi-generate-edifact",
-          "edi-generate-hl7",
           "edi-generate-x12",
           "edi-idoc-to-json",
           "edi-json-to-idoc",
           "edi-parse-edifact",
-          "edi-parse-hl7",
-          "edi-parse-x12"
+          "edi-parse-x12",
+          "media-log"
         ],
         "subgroups": []
       },
       {
-        "name": "Data Transformation",
+        "name": "Encoding & Hashing",
         "nodes": [
-          "base-converter",
           "binary-to-text",
-          "case-convert",
-          "checksum-calculator",
-          "clamp",
-          "convert-timezone",
-          "date-add",
-          "date-calculator",
-          "date-compare",
-          "date-end-of",
-          "date-start-of",
           "decode-base64",
-          "deduplicate",
-          "default-fill",
           "encode-base64",
-          "extract",
-          "file-size-converter",
-          "filter-array",
-          "filter",
-          "flatten",
-          "format-date",
-          "generate-uuid",
-          "group-by",
           "hash",
-          "header-validation",
           "hmac",
           "html-escape",
-          "html-to-pdf",
-          "html-sanitize",
-          "html-to-text",
-          "ilovepdf",
-          "join-text",
           "js-escape",
-          "limit",
-          "lorem-generator",
-          "media-log",
+          "text-to-binary",
+          "url-encode"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "Text & Document Transform",
+        "nodes": [
+          "case-convert",
+          "html-to-text",
+          "join-text",
           "markdown-to-html",
-          "normalize-whitespace",
-          "now",
           "prefix-suffix",
-          "reduce",
           "regex-match",
           "regex-replace",
           "replace",
-          "restructure",
-          "roman-numeral-converter",
-          "schema-validate",
-          "select-fields",
-          "serialize-canonical-json",
-          "set-field",
-          "sort",
           "split",
-          "sql-parameterize",
-          "stringify-json",
-          "template-safe-render",
-          "text-analyzer",
-          "text-to-binary",
-          "to-boolean",
-          "to-csv",
-          "to-number",
-          "to-string",
-          "to-xml",
-          "trim",
-          "unflatten",
-          "url-encode",
-          "parse-csv",
-          "parse-date",
-          "parse-xml",
-          "validate-email",
+          "trim"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "Date & Time",
+        "nodes": [
+          "convert-timezone",
+          "date-add",
+          "date-compare",
+          "date-end-of",
+          "date-start-of",
+          "format-date",
+          "now",
+          "schema-validate",
           "validate-phone",
           "validate-url"
         ],
         "subgroups": []
       },
       {
-        "name": "RAG/AI",
+        "name": "Validation & Cleaning",
         "nodes": [
-          "chroma-db",
-          "lang-connect",
-          "milvus",
-          "pinecone-vector-store",
-          "qdrant",
-          "weaviate"
+          "html-sanitize"
         ],
         "subgroups": []
       },
       {
-        "name": "Data Analysis",
+        "name": "Parsing & Serialization",
         "nodes": [
+          "serialize-canonical-json",
+          "stringify-json",
+          "to-csv",
+          "to-xml",
+          "parse-csv",
+          "parse-date",
+          "parse-xml",
+          "parse-base64",
+          "parse-json"
+        ],
+        "subgroups": []
+      }
+    ]
+  },
+  {
+    "name": "Mathematical & Statistical Analysis",
+    "icon": "statistics",
+    "color": "#8b5cf6",
+    "nodes": [],
+    "subgroups": [
+      {
+        "name": "Calculators & Models",
+        "nodes": [
+          "checksum-calculator",
+          "date-calculator",
+          "liberation",
+          "solar-calculator",
+          "bond-pricing",
+          "break-even-calculator",
+          "budget-variance",
+          "depreciation-calculator",
+          "escrow-calculator",
+          "financial-ratio-analyzer",
+          "loan-calculator",
+          "mortgage-calculator",
+          "npv-irr-calculator",
+          "options-pricing",
+          "profit-margin-calculator",
+          "retirement-calculator",
+          "tip-calculator",
+          "transfer-pricing",
+          "working-capital-calculator",
+          "searates-load-calculator",
+          "kling-ai-image-generation"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "Statistics & Experiments",
+        "nodes": [
+          "text-analyzer",
           "ab-test",
           "sample-size",
           "correlation",
@@ -247,59 +347,199 @@
           "bootstrap",
           "normality",
           "ks-test",
-          "correlation-matrix"
+          "correlation-matrix",
+          "production-metrics"
+        ],
+        "subgroups": []
+      }
+    ]
+  },
+  {
+    "name": "Generative AI & LLMs",
+    "icon": "ai",
+    "color": "#ec4899",
+    "nodes": [],
+    "subgroups": [
+      {
+        "name": "Agents & Chat",
+        "nodes": [
+          "agent",
+          "ai-chat-anthropic",
+          "ai-chat-cohere",
+          "ai-chat-deepseek",
+          "ai-chat-github",
+          "ai-chat-groq",
+          "ai-chat-huggingface",
+          "ai-chat-hyperbolic",
+          "ai-chat-lmstudio",
+          "ai-chat-mistral",
+          "ai-chat-ollama",
+          "ai-chat-openai-like",
+          "ai-chat-openai",
+          "ai-chat-openrouter",
+          "ai-chat-perplexity",
+          "ai-chat-together",
+          "ai-chat-xai",
+          "ai-chat",
+          "ai-chat-amazon-bedrock",
+          "ai-chat-google"
         ],
         "subgroups": []
       },
       {
-        "name": "Elasticsearch",
-        "nodes": ["elasticsearch"],
-        "subgroups": []
-      },
-      {
-        "name": "Firebase",
-        "nodes": ["firestore"],
-        "subgroups": []
-      },
-      {
-        "name": "FTP/SFTP",
-        "nodes": ["ftp-sftp-write-file", "sftp"],
-        "subgroups": []
-      },
-      {
-        "name": "InfluxDB",
-        "nodes": ["influxdb"],
-        "subgroups": []
-      },
-      {
-        "name": "Notion",
-        "nodes": ["notion"],
-        "subgroups": []
-      },
-      {
-        "name": "Seatable",
-        "nodes": ["seatable"],
-        "subgroups": []
-      },
-      {
-        "name": "Rymo",
+        "name": "LLM Providers",
         "nodes": [
+          "amazon-bedrock-llm",
+          "anthropic-llm",
+          "cohere-llm",
+          "deepseek-llm",
+          "github-llm",
+          "google-llm",
+          "groq-llm",
+          "huggingface-llm",
+          "hyperbolic-llm",
+          "lmstudio-llm",
+          "mistral-llm",
+          "ollama-llm",
+          "openai-llm",
+          "openai-like-llm",
+          "openrouter-llm",
+          "perplexity-llm",
+          "together-llm",
+          "xai-llm",
+          "banana-dev",
+          "hugging-face-inference",
+          "shotstack",
+          "d-id",
+          "heygen",
+          "synthesia",
+          "deepgram",
+          "play-ht",
+          "suno-ai",
+          "facecheck",
+          "fal-ai",
+          "freepik",
+          "getimg-ai",
+          "ideogram",
+          "leonardo-ai",
+          "midjourney-goapi",
+          "openai-dalle",
+          "prodia",
+          "replicate",
+          "stability-ai",
+          "hailuo-ai",
+          "luma-dream-machine",
+          "runwayml",
+          "jina-embeddings",
+          "jina-reranker",
+          "jina-reader",
+          "jina-search",
+          "jina-vlm",
+          "jina-deepsearch",
+          "jina-segmenter",
+          "jina-classifier",
+          "meshy",
+          "tripo-ai",
+          "mistral-doc",
+          "remove-bg",
+          "salesforce.einstein",
+          "eleven-labs-list-voices",
+          "eleven-labs-music-compose-detailed",
+          "eleven-labs-music-compose",
+          "eleven-labs-text-to-dialogue-timestamps",
+          "eleven-labs-text-to-dialogue",
+          "eleven-labs",
+          "aws-comprehend",
+          "airtable-action"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "Multimodal AI",
+        "nodes": [
+          "recraft-ai",
+          "google-gemini-image",
+          "eleven-labs-speech-to-speech",
+          "eleven-labs-speech-to-text",
+          "eleven-labs-text-to-speech-timestamps",
+          "eleven-labs-text-to-speech",
+          "kling-ai-avatar",
+          "kling-ai-functionality-try",
+          "kling-ai-image-recognize",
+          "kling-ai-image-to-video",
+          "kling-ai-multi-image-to-image",
+          "kling-ai-multi-image-to-video",
+          "kling-ai-text-to-video",
+          "kling-ai-video-effects",
+          "kling-ai-video-to-audio",
+          "kling-ai-video-tolip",
+          "kling-ai",
+          "google-speech",
+          "aws-rekognition",
+          "aws-textract",
+          "aws-transcribe"
+        ],
+        "subgroups": []
+      }
+    ]
+  },
+  {
+    "name": "Databases & Memory",
+    "icon": "data",
+    "color": "#0ea5e9",
+    "nodes": [],
+    "subgroups": [
+      {
+        "name": "SQL Databases",
+        "nodes": [
+          "sql-parameterize",
+          "azure-sql-admin",
+          "azure-sql-backup-restore",
+          "azure-sql-bulk-insert",
+          "azure-sql-database-admin",
+          "azure-sql-query",
+          "azure-sql-schema-manage",
+          "azure-sql-stored-procedure",
+          "postgres-action",
+          "mysql-action",
+          "azuresql.query",
+          "azuresql.databaseAdmin",
+          "azuresql.bulkInsert",
+          "azuresql.backupRestore",
+          "azuresql.schemaManage",
+          "azuresql.storedProcedure",
+          "oracle-db",
+          "oracle-sql",
+          "oracle-database",
+          "mssql"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "Vector Stores & RAG",
+        "nodes": [
+          "chroma-db",
+          "pinecone-vector-store",
+          "qdrant",
+          "weaviate"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "Data Platforms",
+        "nodes": [
+          "elasticsearch",
+          "influxdb",
+          "seatable",
           "rymo-aggregate",
           "rymo-auth",
-          "rymo-cache",
           "rymo-count",
           "rymo-create",
           "rymo-delete",
           "rymo-query",
           "rymo-transaction",
           "rymo-update",
-          "rymo-upsert"
-        ],
-        "subgroups": []
-      },
-      {
-        "name": "Supabase",
-        "nodes": [
+          "rymo-upsert",
           "supabase-auth",
           "supabase-call-function",
           "supabase-create",
@@ -307,42 +547,401 @@
           "supabase-get-all",
           "supabase-read",
           "supabase-update",
-          "supabase-upsert"
+          "supabase-upsert",
+          "themealdb",
+          "modbus-read",
+          "modbus-write",
+          "abuseipdb",
+          "abuse-ipdb",
+          "azure-mariadb",
+          "omdb",
+          "baserow",
+          "QuestDB"
         ],
         "subgroups": []
       },
       {
-        "name": "Supabase Storage",
+        "name": "NoSQL Databases",
         "nodes": [
+          "firestore",
+          "cassandra-query",
+          "gremlin-query",
+          "mongo-query",
+          "table-query",
+          "cosmos-cassandra-manage",
+          "cosmos-cassandra-query",
+          "cosmos-delete",
+          "cosmos-gremlin-manage",
+          "cosmos-gremlin-query",
+          "cosmos-mongo-manage",
+          "cosmos-mongodb-manage",
+          "cosmos-mongodb-query",
+          "cosmos-table-manage",
+          "cosmos-table-query",
+          "aws-dynamo-db",
+          "mongodb-action",
+          "cosmos.query",
+          "cosmos.container-data",
+          "cosmos.upsert",
+          "cosmos.database",
+          "cosmos.changefeed"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "Cache & Memory",
+        "nodes": [
+          "rymo-cache",
+          "redis-publish",
+          "redis-action"
+        ],
+        "subgroups": []
+      }
+    ]
+  },
+  {
+    "name": "Communication & Messaging",
+    "icon": "webhook",
+    "color": "#FFD60A",
+    "nodes": [],
+    "subgroups": [
+      {
+        "name": "Email",
+        "nodes": [
+          "validate-email",
+          "imap-fetch",
+          "mailchimp-marketing",
+          "mandrill-transactional",
+          "sendgrid",
+          "smtp",
+          "aws-ses",
+          "gmail",
+          "outlook.mail",
+          "outlook.calendar",
+          "azure-communication-send-email",
+          "activecampaign",
+          "emelia",
+          "brevo.contact",
+          "brevo.contactAttribute",
+          "brevo.email",
+          "brevo.sender"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "Queues & Event Streams",
+        "nodes": [
+          "amqp-publish",
+          "amqp-sender",
+          "mqtt-publisher",
+          "service-bus-queue",
+          "service-bus-send",
+          "service-bus-subscription",
+          "service-bus-topic",
+          "nats-publish",
+          "stomp-publish",
+          "aws-sns",
+          "aws-sqs",
+          "kafka-publish",
+          "mqtt-publish",
+          "event-hub-admin",
+          "event-hub-send",
+          "servicebus.topic",
+          "servicebus.queue",
+          "servicebus.send",
+          "servicebus.subscription",
+          "rabbit-mq-action",
+          "rabbit-mq-publish"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "Chat & Collaboration",
+        "nodes": [
+          "zoomeye",
+          "zoom-eye",
+          "discord-api",
+          "pusher-send",
+          "websocket-send",
+          "xmpp",
+          "zoom",
+          "slack-action",
+          "telegram-bot",
+          "agora-token",
+          "google-chat-get-member",
+          "google-chat-get-members",
+          "google-chat-get-space",
+          "google-chat-list-spaces",
+          "google-chat-get-message",
+          "google-chat-create-message",
+          "google-chat-delete-message",
+          "google-chat-update-message",
+          "google-chat-send-and-wait",
+          "google-chat-member",
+          "google-chat-message",
+          "google-chat-space",
+          "teams.chat",
+          "teams.channel",
+          "teams.planner",
+          "signalr",
+          "discord-action"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "SMS",
+        "nodes": [
+          "dialy-sms",
+          "infobip-sms",
+          "pender-sms",
+          "twilio",
+          "azure-communication-auth",
+          "azure-communication-send-sms",
+          "azure-communication-create-thread",
+          "azure-communication-send-chat-message"
+        ],
+        "subgroups": []
+      }
+    ]
+  },
+  {
+    "name": "Storage & Files",
+    "icon": "cloudstorage",
+    "color": "#8b5cf6",
+    "nodes": [],
+    "subgroups": [
+      {
+        "name": "Files & Documents",
+        "nodes": [
+          "linkedin-profile",
+          "file-size-converter",
+          "html-to-pdf",
+          "ilovepdf",
           "supabase-storage-delete",
           "supabase-storage-download",
           "supabase-storage-get-url",
           "supabase-storage-info",
           "supabase-storage-list",
           "supabase-storage-move",
-          "supabase-storage-upload"
+          "supabase-storage-upload",
+          "convert-to-file",
+          "blob-storage",
+          "google-business-profile",
+          "google-cloud-storage",
+          "filemaker-action"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "FTP/SFTP",
+        "nodes": [
+          "ftp-sftp-write-file",
+          "sftp"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "Cloud Drives",
+        "nodes": [
+          "dropbox",
+          "files-com",
+          "gofile-create-account",
+          "gofile-delete-content",
+          "gofile-get-content",
+          "gofile-upload-file",
+          "nextcloud-copy-file",
+          "nextcloud-copy-folder",
+          "nextcloud-create-folder",
+          "nextcloud-create-user",
+          "nextcloud-delete-file",
+          "nextcloud-delete-folder",
+          "nextcloud-delete-user",
+          "nextcloud-download-file",
+          "nextcloud-get-user",
+          "nextcloud-list-folders",
+          "nextcloud-list-users",
+          "nextcloud-move-file",
+          "nextcloud-move-folder",
+          "nextcloud-share-file",
+          "nextcloud-share-folder",
+          "nextcloud-update-user",
+          "nextcloud-upload-file",
+          "onedrive",
+          "google-drive-file",
+          "google-drive-folder",
+          "google-drive-search",
+          "google-drive-shared-drive",
+          "gofile-get-best-server"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "S3 & Object Storage",
+        "nodes": [
+          "aws-s3-bucket",
+          "aws-s3-create-bucket",
+          "aws-s3-list-buckets",
+          "aws-s3-search-buckets",
+          "aws-s3-delete-bucket",
+          "aws-s3-file",
+          "aws-s3-upload-file",
+          "aws-s3-download-file",
+          "aws-s3-list-objects",
+          "aws-s3-delete-objects",
+          "aws-s3-copy-object",
+          "aws-s3-folder",
+          "aws-s3-create-folder",
+          "aws-s3-get-folder",
+          "aws-s3-delete-folder",
+          "s3-bucket",
+          "s3-create-bucket",
+          "s3-list-buckets",
+          "s3-search-buckets",
+          "s3-delete-bucket",
+          "s3-file",
+          "s3-upload-file",
+          "s3-download-file",
+          "s3-list-files",
+          "s3-delete-file",
+          "s3-copy-file",
+          "s3-folder",
+          "s3-create-folder",
+          "s3-get-all-folders",
+          "s3-delete-folder"
         ],
         "subgroups": []
       }
     ]
   },
   {
-    "name": "data transformation",
-    "icon": "icons/data-transformation-icon",
-    "color": "#20B2AA",
+    "name": "DevOps & Cloud Management",
+    "icon": "azure",
+    "color": "#0078d4",
     "nodes": [],
     "subgroups": [
       {
-        "name": "type conversion",
-        "nodes": ["parse-base64", "parse-json"],
+        "name": "Cloud & Hosting",
+        "nodes": [
+          "template-safe-render",
+          "azure-activedirectory",
+          "azure-blockchain",
+          "azure-databricks",
+          "azure-iothub",
+          "azure-stack",
+          "firebase-hosting",
+          "heroku",
+          "netlify",
+          "render",
+          "vercel",
+          "vast-ai-attach-ssh-key",
+          "vast-ai-cancel-copy",
+          "vast-ai-cancel-maintenance",
+          "vast-ai-cancel-sync",
+          "vast-ai-change-bid-price",
+          "vast-ai-cleanup-machine",
+          "vast-ai-cloud-copy",
+          "vast-ai-copy",
+          "vast-ai-create-endpoint-job",
+          "vast-ai-create-env-var",
+          "vast-ai-create-instance",
+          "vast-ai-create-template",
+          "vast-ai-delete-endpoint-job",
+          "vast-ai-delete-env-var",
+          "vast-ai-destroy-instance",
+          "vast-ai-detach-ssh-key",
+          "vast-ai-execute-command",
+          "vast-ai-list-instances",
+          "vast-ai-list-machine",
+          "vast-ai-prepay-instance",
+          "vast-ai-reboot-instance",
+          "vast-ai-recycle-instance",
+          "vast-ai-remove-defjob",
+          "vast-ai-request-logs",
+          "vast-ai-schedule-maintenance",
+          "vast-ai-set-defjob",
+          "vast-ai-set-min-bid",
+          "vast-ai-show-connections",
+          "vast-ai-show-deposit",
+          "vast-ai-show-earnings",
+          "vast-ai-show-endpoint-job",
+          "vast-ai-show-endpoint-jobs",
+          "vast-ai-show-env-vars",
+          "vast-ai-show-instance",
+          "vast-ai-show-invoices",
+          "vast-ai-show-machines",
+          "vast-ai-show-reports",
+          "vast-ai-show-ssh-keys",
+          "vast-ai-show-user",
+          "vast-ai-transfer-credit",
+          "vast-ai-unlist-machine",
+          "vast-ai-update-endpoint-job",
+          "vast-ai-update-env-var",
+          "iot-hub.deviceManager",
+          "iot-hub.cloudToDevice",
+          "iot-hub.deviceInvoke",
+          "aws-lambda",
+          "aws-elb"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "Developer Tools",
+        "nodes": [
+          "bitbucket",
+          "barcode-generator",
+          "jsonplaceholder",
+          "lorem-picsum",
+          "quickchart",
+          "randomuser",
+          "reqres",
+          "rest-countries",
+          "shields-io",
+          "stackexchange",
+          "user-agent-string",
+          "beeceptor",
+          "cdnjs",
+          "circleci",
+          "docker-hub",
+          "docker",
+          "npm",
+          "ssh",
+          "bunny",
+          "caprover",
+          "dokku"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "CI/CD",
+        "nodes": [
+          "azure-devops",
+          "jenkins"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "Version Control",
+        "nodes": [
+          "digitalocean-app",
+          "git",
+          "github",
+          "gitlab"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "Monitoring",
+        "nodes": [
+          "grafana"
+        ],
         "subgroups": []
       }
     ]
   },
   {
-    "name": "Web Search",
-    "icon": "icons/web-search-icon",
-    "color": "#FF33F5",
+    "name": "Web Search & Information",
+    "icon": "websearch",
+    "color": "#10b981",
     "nodes": [],
     "subgroups": [
       {
@@ -356,7 +955,6 @@
           "la-vie-eco",
           "le-matin",
           "le360",
-          "liberation",
           "lopinion",
           "map-news",
           "morocco-world-news",
@@ -365,7 +963,8 @@
           "tanja-news",
           "telquel",
           "yabiladi",
-          "agadir24"
+          "agadir24",
+          "google-news-search"
         ],
         "subgroups": []
       },
@@ -381,18 +980,20 @@
         "subgroups": []
       },
       {
-        "name": "Bioinformatics",
-        "nodes": ["bar"],
-        "subgroups": []
-      },
-      {
         "name": "BBC",
-        "nodes": ["bbc-co-uk", "bbc-com", "bbci-co-uk"],
+        "nodes": [
+          "bbc-co-uk",
+          "bbc-com",
+          "bbci-co-uk"
+        ],
         "subgroups": []
       },
       {
         "name": "Bing",
-        "nodes": ["bing-copilot-search", "bing-search"],
+        "nodes": [
+          "bing-copilot-search",
+          "bing-search"
+        ],
         "subgroups": []
       },
       {
@@ -412,12 +1013,19 @@
       },
       {
         "name": "Government",
-        "nodes": ["census-gov", "federal-register", "nhtsa", "parlement-maroc"],
+        "nodes": [
+          "census-gov",
+          "federal-register",
+          "nhtsa",
+          "parlement-maroc"
+        ],
         "subgroups": []
       },
       {
         "name": "Scientific Search",
-        "nodes": ["cern-opendata"],
+        "nodes": [
+          "cern-opendata"
+        ],
         "subgroups": []
       },
       {
@@ -432,7 +1040,9 @@
       },
       {
         "name": "Emergency Management",
-        "nodes": ["copernicus-ems"],
+        "nodes": [
+          "copernicus-ems"
+        ],
         "subgroups": []
       },
       {
@@ -483,7 +1093,6 @@
           "open-meteo-climate",
           "openaq",
           "purpleair",
-          "solar-calculator",
           "sunrise-sunset",
           "usgs-earthquakes",
           "usgs-realtime",
@@ -494,426 +1103,279 @@
       },
       {
         "name": "Reference",
-        "nodes": ["free-dictionary", "quotable"],
+        "nodes": [
+          "free-dictionary",
+          "quotable"
+        ],
         "subgroups": []
       },
       {
         "name": "Utilities",
-        "nodes": ["genderize", "nationalize"],
+        "nodes": [
+          "genderize",
+          "nationalize"
+        ],
         "subgroups": []
       },
       {
         "name": "Icons",
-        "nodes": ["iconhorse"],
+        "nodes": [
+          "iconhorse"
+        ],
         "subgroups": []
       },
       {
         "name": "Space",
-        "nodes": ["launch-library-2", "spacex-launches"],
+        "nodes": [
+          "launch-library-2",
+          "spacex-launches"
+        ],
         "subgroups": []
       },
       {
         "name": "Media",
-        "nodes": ["listennotes"],
+        "nodes": [
+          "listennotes"
+        ],
         "subgroups": []
       },
       {
         "name": "Marches Publics",
-        "nodes": ["marches-publics"],
+        "nodes": [
+          "marches-publics"
+        ],
         "subgroups": []
       },
       {
         "name": "Blogging",
-        "nodes": ["medium"],
+        "nodes": [
+          "medium"
+        ],
         "subgroups": []
       },
       {
         "name": "Environement",
-        "nodes": ["mrds"],
+        "nodes": [
+          "mrds"
+        ],
         "subgroups": []
       },
       {
         "name": "Nasa",
-        "nodes": ["nasa-apod", "nasa-media-search", "nasa"],
+        "nodes": [
+          "nasa-apod",
+          "nasa-media-search",
+          "nasa"
+        ],
         "subgroups": []
       },
       {
         "name": "Content & Feeds",
-        "nodes": ["news-article", "rss-feed", "wikipedia"],
+        "nodes": [
+          "news-article",
+          "rss-feed",
+          "wikipedia"
+        ],
         "subgroups": []
       },
       {
         "name": "Nobel Prize",
-        "nodes": ["nobel-prize"],
+        "nodes": [
+          "nobel-prize"
+        ],
         "subgroups": []
       },
       {
         "name": "Book Search",
-        "nodes": ["open-library-search", "project-gutenberg-search"],
+        "nodes": [
+          "open-library-search",
+          "project-gutenberg-search"
+        ],
         "subgroups": []
       },
       {
         "name": "Travel",
-        "nodes": ["opentable-reviews-search", "tripadvisor-search"],
-        "subgroups": []
-      },
-      {
-        "name": "Pharmacy on duty",
-        "nodes": ["pharmacy-scraper"],
+        "nodes": [
+          "opentable-reviews-search",
+          "tripadvisor-search",
+          "google-flights-search",
+          "google-hotels-search"
+        ],
         "subgroups": []
       },
       {
         "name": "Quran",
-        "nodes": ["quran"],
+        "nodes": [
+          "quran"
+        ],
         "subgroups": []
       },
       {
         "name": "Social Media",
-        "nodes": ["reddit-api"],
+        "nodes": [
+          "reddit-api"
+        ],
         "subgroups": []
       },
       {
         "name": "Rekrute",
-        "nodes": ["rekrute-job-parser", "rekrute-scraper"],
+        "nodes": [
+          "rekrute-job-parser",
+          "rekrute-scraper"
+        ],
         "subgroups": []
       },
       {
         "name": "General",
-        "nodes": ["serpapi", "tavily"],
+        "nodes": [
+          "serpapi",
+          "tavily"
+        ],
         "subgroups": []
       },
       {
         "name": "Stock Media",
-        "nodes": ["shutterstock"],
+        "nodes": [
+          "shutterstock"
+        ],
         "subgroups": []
       },
       {
         "name": "Music",
-        "nodes": ["soundcloud"],
-        "subgroups": []
-      },
-      {
-        "name": "Recipes",
-        "nodes": ["themealdb"],
+        "nodes": [
+          "soundcloud"
+        ],
         "subgroups": []
       },
       {
         "name": "USA Patents",
-        "nodes": ["usa-patents"],
+        "nodes": [
+          "usa-patents",
+          "google-patents-search"
+        ],
         "subgroups": []
       },
       {
         "name": "Knowledge Base",
-        "nodes": ["wikidata"],
+        "nodes": [
+          "wikidata"
+        ],
         "subgroups": []
       },
       {
         "name": "Name Analysis",
-        "nodes": ["agify"],
+        "nodes": [
+          "agify"
+        ],
         "subgroups": []
       },
       {
-        "name": "Google",
+        "name": "Search & Reference",
         "nodes": [
-          "google-finance-search",
-          "google-flights-search",
-          "google-hotels-search",
-          "google-maps-search",
-          "google-news-search",
-          "google-patents-search",
+          "binga-create-payment-request",
+          "salesforce-search",
+          "google-dork",
+          "url-scan-search",
+          "vast-ai-search-invoices",
+          "vast-ai-search-offers",
+          "vast-ai-search-templates",
+          "ebay-search",
+          "walmart-search",
+          "amazon-product-search",
+          "youtube-api-thumbnails",
+          "youtube-api-transcription",
+          "youtube-get-channel",
+          "youtube-get-video",
+          "youtube-search",
+          "google-ad-mob",
+          "google-ads",
+          "google-ad-sense",
+          "google-analytics",
+          "google-tag-manager",
+          "google-big-query",
+          "google-books-search",
+          "google-calendar",
+          "google-classroom",
+          "google-docs",
+          "google-forms",
+          "google-slides",
+          "google-tasks",
+          "google-books-action",
+          "google-sheets-auth",
+          "google-sheets-spreadsheet",
+          "google-sheets-values",
+          "google-fcm",
+          "google-genomics",
+          "google-kms-inventory",
+          "google-sts",
+          "google-places",
+          "google-you-tube-data",
+          "google-contacts-action",
+          "google-translate-action",
           "google-play-store-search",
           "google-search",
-          "google-shopping-search",
           "google-trends-search",
           "google-videos-search"
         ],
         "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "Finance",
-    "icon": "icons/finance-icon",
-    "color": "#FF5733",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "Stocks",
-        "nodes": ["alpha-vantage", "financial-modeling-prep"],
-        "subgroups": []
       },
       {
-        "name": "Utilities",
+        "name": "Maps & Geospatial",
         "nodes": [
-          "awesome-currency",
-          "banking-validator",
-          "bond-pricing",
-          "break-even-calculator",
-          "budget-variance",
-          "credit-card-validator",
-          "credit-score-estimator",
-          "currency-converter",
-          "debt-consolidation",
-          "depreciation-calculator",
-          "escrow-calculator",
-          "financial-ratio-analyzer",
-          "fx-hedging",
-          "gleif",
-          "import-export-cost",
-          "lease-vs-buy",
-          "line-of-credit",
-          "loan-calculator",
-          "moroccan-rib-validator",
-          "mortgage-calculator",
-          "npv-irr-calculator",
-          "options-pricing",
-          "payment-gateway-comparison",
-          "portfolio-tracker",
-          "profit-margin-calculator",
-          "retirement-calculator",
-          "salary-converter",
-          "tip-calculator",
-          "transfer-pricing",
-          "working-capital-calculator"
+          "data-gouv-fr",
+          "geojson",
+          "address-validator",
+          "geonames",
+          "graphhopper-route",
+          "mapbox",
+          "openstreetmap",
+          "ip-api",
+          "ip2location",
+          "opentopodata",
+          "postcode-io",
+          "zippopotam",
+          "tomtom",
+          "google-maps-search"
         ],
         "subgroups": []
       },
       {
-        "name": "Crypto",
+        "name": "Economic & Public Data",
         "nodes": [
-          "binance-price",
-          "blockchain-info",
-          "coindesk-price",
-          "coingecko-price"
+          "fmi",
+          "world-bank-api"
         ],
-        "subgroups": []
-      },
-      {
-        "name": "Binga",
-        "nodes": ["binga-create-payment-request", "binga-webhook-trigger"],
-        "subgroups": []
-      },
-      {
-        "name": "CMI",
-        "nodes": ["cmi-generate-payment-form", "cmi-webhook-trigger"],
-        "subgroups": []
-      },
-      {
-        "name": "Document Management",
-        "nodes": ["docusign"],
-        "subgroups": []
-      },
-      {
-        "name": "Currency",
-        "nodes": ["exchangerate-api", "frankfurter-exchange"],
-        "subgroups": []
-      },
-      {
-        "name": "CRM",
-        "nodes": ["hubspot"],
-        "subgroups": []
-      },
-      {
-        "name": "Payments",
-        "nodes": [
-          "nowpayments",
-          "square",
-          "velopayments",
-          "adyen",
-          "stripe-charges"
-        ],
-        "subgroups": []
-      },
-      {
-        "name": "Companies",
-        "nodes": ["opencorporates"],
-        "subgroups": []
-      },
-      {
-        "name": "PayPal",
-        "nodes": ["paypal-capture-payment", "paypal-create-order"],
-        "subgroups": []
-      },
-      {
-        "name": "Salesforce",
-        "nodes": [
-          "salesforce-account",
-          "salesforce-attachment",
-          "salesforce-case",
-          "salesforce-contact",
-          "salesforce-document",
-          "salesforce-flow",
-          "salesforce-lead",
-          "salesforce-opportunity",
-          "salesforce-search",
-          "salesforce-task",
-          "salesforce-user"
-        ],
-        "subgroups": []
-      },
-      {
-        "name": "Stocks & Analysis",
-        "nodes": ["sec-edgar"],
-        "subgroups": []
-      },
-      {
-        "name": "Tax & Invoicing",
-        "nodes": ["vatcomply"],
-        "subgroups": []
-      },
-      {
-        "name": "Social",
-        "nodes": ["wallstreetbets-reddit"],
-        "subgroups": []
-      },
-      {
-        "name": "Accounting",
-        "nodes": ["xero"],
-        "subgroups": []
-      },
-      {
-        "name": "Banking",
-        "nodes": ["yodlee"],
-        "subgroups": []
-      },
-      {
-        "name": "Stripe",
-        "nodes": ["stripe-create-payment-link", "stripe-webhook-trigger"],
-        "subgroups": [
-          {
-            "name": "Triggers",
-            "nodes": ["stripe-webhook-trigger"],
-            "subgroups": []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Shipping & Logistics",
-    "icon": "icons/shipping-&-logistics-icon",
-    "color": "#33FF57",
-    "nodes": [
-      "amadeus",
-      "amtraker",
-      "bom-utils",
-      "dhl-tms",
-      "dhl",
-      "fastex",
-      "geospatial-utils",
-      "inventory-logistics",
-      "mrp-engine",
-      "opensky",
-      "poste-ma",
-      "zpl-builder",
-      "escpos-builder",
-      "product-lookup",
-      "production-metrics",
-      "quality-maintenance",
-      "shipsy",
-      "stock-automation",
-      "tlog-store",
-      "track123",
-      "tracktry",
-      "unit-converter",
-      "ups",
-      "vesselfinder",
-      "searates-ai",
-      "searates-air-tracking",
-      "searates-booking",
-      "searates-distance",
-      "searates-freight-index",
-      "searates-geocoding",
-      "searates-load-calculator",
-      "searates-parcel-tracking",
-      "searates-rail-tracking",
-      "searates-road-tracking",
-      "searates-route-planner",
-      "searates-schedules",
-      "searates-terminal-tracking",
-      "searates-tracking",
-      "searates-vessel-tracking",
-      "searates-world-sea-ports"
-    ],
-    "subgroups": []
-  },
-  {
-    "name": "OT/IOT",
-    "icon": "icons/ot/iot-icon",
-    "color": "#33FF57",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "amqp",
-        "nodes": [
-          "amqp-consume",
-          "amqp-publish",
-          "amqp-trigger",
-          "amqp-sender"
-        ],
-        "subgroups": []
-      },
-      {
-        "name": "BACnet",
-        "nodes": ["bacnet-read", "bacnet-write"],
-        "subgroups": []
-      },
-      {
-        "name": "CoAP",
-        "nodes": ["coap-client"],
-        "subgroups": []
-      },
-      {
-        "name": "DNP3",
-        "nodes": ["dnp3-master"],
-        "subgroups": []
-      },
-      {
-        "name": "EtherNet/IP",
-        "nodes": ["ethernet-ip-read", "ethernet-ip-write"],
-        "subgroups": []
-      },
-      {
-        "name": "Modbus",
-        "nodes": ["modbus-read", "modbus-write"],
-        "subgroups": []
-      },
-      {
-        "name": "MQTT",
-        "nodes": ["mqtt-publisher"],
-        "subgroups": []
-      },
-      {
-        "name": "OPC UA",
-        "nodes": ["opc"],
-        "subgroups": []
-      },
-      {
-        "name": "OSIsoft PI",
-        "nodes": ["osisoft"],
-        "subgroups": []
-      },
-      {
-        "name": "PROFINET",
-        "nodes": ["profinet-read", "profinet-write"],
-        "subgroups": []
-      },
-      {
-        "name": "SCADA",
-        "nodes": ["scada-read", "scada-write"],
         "subgroups": []
       }
     ]
   },
   {
-    "name": "Medical Data",
-    "icon": "icons/medical-data-icon",
-    "color": "#FF6347",
+    "name": "Healthcare & Life Sciences",
+    "icon": "medical",
+    "color": "#ef4444",
     "nodes": [],
     "subgroups": [
+      {
+        "name": "General Healthcare",
+        "nodes": [
+          "edi-generate-hl7",
+          "edi-parse-hl7",
+          "milvus",
+          "bar",
+          "pharmacy-scraper",
+          "gemini-medical",
+          "google-fitness",
+          "visiostation"
+        ],
+        "subgroups": []
+      },
       {
         "name": "Other Medical Sources",
-        "nodes": ["biorxiv", "pmc", "google-scholar"],
+        "nodes": [
+          "biorxiv",
+          "pmc",
+          "google-scholar"
+        ],
         "subgroups": []
       },
       {
@@ -931,82 +1393,118 @@
       },
       {
         "name": "FHIR",
-        "nodes": ["bonfhir-client"],
+        "nodes": [
+          "bonfhir-client"
+        ],
         "subgroups": []
       },
       {
         "name": "Chemistry & Life Sciences",
-        "nodes": ["cactus", "rsc"],
+        "nodes": [
+          "cactus",
+          "rsc"
+        ],
         "subgroups": []
       },
       {
         "name": "Chemistry",
-        "nodes": ["chembl"],
+        "nodes": [
+          "chembl"
+        ],
         "subgroups": []
       },
       {
         "name": "Clinical Databases",
-        "nodes": ["clinical-tables-search"],
+        "nodes": [
+          "clinical-tables-search"
+        ],
         "subgroups": []
       },
       {
         "name": "Clinical Trials",
-        "nodes": ["clinical-trials-search"],
+        "nodes": [
+          "clinical-trials-search"
+        ],
         "subgroups": []
       },
       {
         "name": "Biodiversity",
-        "nodes": ["gbif-occurrence", "gbif", "perenual", "plantnet"],
+        "nodes": [
+          "gbif-occurrence",
+          "gbif",
+          "perenual",
+          "plantnet"
+        ],
         "subgroups": []
       },
       {
         "name": "Health Topics",
-        "nodes": ["health-topics-search"],
+        "nodes": [
+          "health-topics-search"
+        ],
         "subgroups": []
       },
       {
         "name": "Healthcare Integration",
-        "nodes": ["hl7-client"],
+        "nodes": [
+          "hl7-client"
+        ],
         "subgroups": []
       },
       {
         "name": "ICD",
-        "nodes": ["icd11-search"],
+        "nodes": [
+          "icd11-search"
+        ],
         "subgroups": []
       },
       {
         "name": "Médicaments API FR",
-        "nodes": ["medicaments-api"],
+        "nodes": [
+          "medicaments-api"
+        ],
         "subgroups": []
       },
       {
         "name": "Pre-print Articles",
-        "nodes": ["medrxiv-search"],
+        "nodes": [
+          "medrxiv-search"
+        ],
         "subgroups": []
       },
       {
         "name": "Mendeley",
-        "nodes": ["mendeley"],
+        "nodes": [
+          "mendeley"
+        ],
         "subgroups": []
       },
       {
         "name": "OpenFoodFacts",
-        "nodes": ["openfoodfacts"],
+        "nodes": [
+          "openfoodfacts"
+        ],
         "subgroups": []
       },
       {
         "name": "Imaging / PACS",
-        "nodes": ["orthanc"],
+        "nodes": [
+          "orthanc"
+        ],
         "subgroups": []
       },
       {
         "name": "Patient Data",
-        "nodes": ["patientview"],
+        "nodes": [
+          "patientview"
+        ],
         "subgroups": []
       },
       {
         "name": "Medicaments",
-        "nodes": ["pharmamaroc"],
+        "nodes": [
+          "pharmamaroc"
+        ],
         "subgroups": []
       },
       {
@@ -1021,22 +1519,30 @@
       },
       {
         "name": "RCSB",
-        "nodes": ["rcsb-pdb"],
+        "nodes": [
+          "rcsb-pdb"
+        ],
         "subgroups": []
       },
       {
         "name": "Diagnosis",
-        "nodes": ["symptomator"],
+        "nodes": [
+          "symptomator"
+        ],
         "subgroups": []
       },
       {
         "name": "WHO GHO",
-        "nodes": ["who-gho-odata"],
+        "nodes": [
+          "who-gho-odata"
+        ],
         "subgroups": []
       },
       {
         "name": "Zotero",
-        "nodes": ["zotero"],
+        "nodes": [
+          "zotero"
+        ],
         "subgroups": []
       },
       {
@@ -1125,1791 +1631,357 @@
     ]
   },
   {
-    "name": "Development & Tools",
-    "icon": "icons/development-&-tools-icon",
-    "color": "#33FF57",
+    "name": "Business & Commerce",
+    "icon": "ecommerce",
+    "color": "#f97316",
     "nodes": [],
     "subgroups": [
       {
-        "name": "Version Control",
-        "nodes": ["bitbucket"],
-        "subgroups": []
-      },
-      {
-        "name": "Utilities",
+        "name": "Business Apps",
         "nodes": [
-          "barcode-generator",
-          "convert-to-file",
-          "jsonplaceholder",
-          "lorem-picsum",
-          "loripsum-api",
-          "qr-server",
-          "quickchart",
-          "randomuser",
-          "reqres",
-          "rest-countries",
-          "shields-io",
-          "stackexchange",
-          "user-agent-string"
+          "linkedin-company",
+          "linkedin-job-scraper",
+          "linkedin-job-tools"
         ],
         "subgroups": []
       },
       {
-        "name": "Testing",
-        "nodes": ["beeceptor", "httpbin", "httpstat"],
-        "subgroups": []
-      },
-      {
-        "name": "Libraries",
-        "nodes": ["cdnjs"],
-        "subgroups": []
-      },
-      {
-        "name": "CI/CD",
-        "nodes": ["circleci"],
-        "subgroups": []
-      },
-      {
-        "name": "Containers",
-        "nodes": ["docker-hub", "docker"],
-        "subgroups": []
-      },
-      {
-        "name": "Network",
-        "nodes": ["ipify", "ipinfo"],
-        "subgroups": []
-      },
-      {
-        "name": "Authentication",
-        "nodes": ["keycloak"],
-        "subgroups": []
-      },
-      {
-        "name": "Package Managers",
-        "nodes": ["npm"],
-        "subgroups": []
-      },
-      {
-        "name": "SSH",
-        "nodes": ["ssh"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "AI",
-    "icon": "icons/ai-icon",
-    "color": "#FFD700",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "Utility",
-        "nodes": ["banana-dev", "hugging-face-inference", "shotstack"],
-        "subgroups": []
-      },
-      {
-        "name": "Avatar Video",
-        "nodes": ["d-id", "heygen", "synthesia"],
-        "subgroups": []
-      },
-      {
-        "name": "Audio",
-        "nodes": ["deepgram", "play-ht", "suno-ai"],
-        "subgroups": []
-      },
-      {
-        "name": "Image Recognition",
-        "nodes": ["facecheck"],
-        "subgroups": []
-      },
-      {
-        "name": "Image Generation",
+        "name": "Finance & Accounting",
         "nodes": [
-          "fal-ai",
-          "freepik",
-          "getimg-ai",
-          "ideogram",
-          "leonardo-ai",
-          "midjourney-goapi",
-          "openai-dalle",
-          "prodia",
-          "recraft-ai",
-          "replicate",
-          "stability-ai",
-          "google-gemini-image"
+          "alpha-vantage",
+          "financial-modeling-prep",
+          "awesome-currency",
+          "banking-validator",
+          "credit-card-validator",
+          "credit-score-estimator",
+          "currency-converter",
+          "debt-consolidation",
+          "fx-hedging",
+          "gleif",
+          "import-export-cost",
+          "lease-vs-buy",
+          "line-of-credit",
+          "moroccan-rib-validator",
+          "salary-converter",
+          "binance-price",
+          "blockchain-info",
+          "coindesk-price",
+          "coingecko-price",
+          "docusign",
+          "frankfurter-exchange",
+          "opencorporates",
+          "sec-edgar",
+          "vatcomply",
+          "wallstreetbets-reddit",
+          "xero",
+          "yodlee",
+          "crypto",
+          "google-finance-search"
         ],
         "subgroups": []
       },
       {
-        "name": "Gemini File Search",
-        "nodes": ["gemini-medical"],
-        "subgroups": []
-      },
-      {
-        "name": "Video Generation",
-        "nodes": ["hailuo-ai", "luma-dream-machine", "runwayml"],
-        "subgroups": []
-      },
-      {
-        "name": "Jina",
+        "name": "Payments",
         "nodes": [
-          "jina-embeddings",
-          "jina-reranker",
-          "jina-reader",
-          "jina-search",
-          "jina-vlm",
-          "jina-deepsearch",
-          "jina-segmenter",
-          "jina-classifier"
+          "payment-gateway-comparison",
+          "cmi-generate-payment-form",
+          "nowpayments",
+          "square",
+          "velopayments",
+          "adyen",
+          "stripe-charges",
+          "paypal-capture-payment",
+          "paypal-create-order",
+          "stripe-create-payment-link"
         ],
         "subgroups": []
       },
       {
-        "name": "3D Models",
-        "nodes": ["meshy", "tripo-ai"],
-        "subgroups": []
-      },
-      {
-        "name": "Mistral",
-        "nodes": ["mistral-doc"],
-        "subgroups": []
-      },
-      {
-        "name": "Image Processing",
-        "nodes": ["remove-bg"],
-        "subgroups": []
-      },
-      {
-        "name": "Salesforce Einstein",
-        "nodes": ["salesforce.einstein"],
-        "subgroups": []
-      },
-      {
-        "name": "Eleven Labs",
+        "name": "Logistics & Supply Chain",
         "nodes": [
-          "eleven-labs-list-voices",
-          "eleven-labs-music-compose-detailed",
-          "eleven-labs-music-compose",
-          "eleven-labs-speech-to-speech",
-          "eleven-labs-speech-to-text",
-          "eleven-labs-text-to-dialogue-timestamps",
-          "eleven-labs-text-to-dialogue",
-          "eleven-labs-text-to-speech-timestamps",
-          "eleven-labs-text-to-speech",
-          "eleven-labs"
+          "portfolio-tracker",
+          "amadeus",
+          "amtraker",
+          "bom-utils",
+          "dhl-tms",
+          "dhl",
+          "fastex",
+          "geospatial-utils",
+          "inventory-logistics",
+          "mrp-engine",
+          "opensky",
+          "poste-ma",
+          "zpl-builder",
+          "escpos-builder",
+          "product-lookup",
+          "quality-maintenance",
+          "shipsy",
+          "stock-automation",
+          "tlog-store",
+          "track123",
+          "tracktry",
+          "unit-converter",
+          "ups",
+          "vesselfinder",
+          "searates-ai",
+          "searates-air-tracking",
+          "searates-booking",
+          "searates-distance",
+          "searates-freight-index",
+          "searates-geocoding",
+          "searates-parcel-tracking",
+          "searates-rail-tracking",
+          "searates-road-tracking",
+          "searates-route-planner",
+          "searates-schedules",
+          "searates-terminal-tracking",
+          "searates-tracking",
+          "searates-vessel-tracking",
+          "searates-world-sea-ports"
         ],
         "subgroups": []
       },
       {
-        "name": "Kling AI",
+        "name": "CRM & Marketing",
         "nodes": [
-          "kling-ai-avatar",
-          "kling-ai-functionality-try",
-          "kling-ai-image-generation",
-          "kling-ai-image-recognize",
-          "kling-ai-image-to-video",
-          "kling-ai-multi-image-to-image",
-          "kling-ai-multi-image-to-video",
-          "kling-ai-text-to-video",
-          "kling-ai-video-effects",
-          "kling-ai-video-to-audio",
-          "kling-ai-video-tolip",
-          "kling-ai"
+          "hubspot",
+          "salesforce-account",
+          "salesforce-attachment",
+          "salesforce-case",
+          "salesforce-contact",
+          "salesforce-document",
+          "salesforce-flow",
+          "salesforce-lead",
+          "salesforce-opportunity",
+          "salesforce-task",
+          "salesforce-user",
+          "odoo",
+          "high-level-action"
         ],
         "subgroups": []
       },
       {
-        "name": "Agents",
+        "name": "E-Commerce",
         "nodes": [
-          "ai-chat-anthropic",
-          "ai-chat-cohere",
-          "ai-chat-deepseek",
-          "ai-chat-github",
-          "ai-chat-groq",
-          "ai-chat-huggingface",
-          "ai-chat-hyperbolic",
-          "ai-chat-lmstudio",
-          "ai-chat-mistral",
-          "ai-chat-ollama",
-          "ai-chat-openai-like",
-          "ai-chat-openai",
-          "ai-chat-openrouter",
-          "ai-chat-perplexity",
-          "ai-chat-together",
-          "ai-chat-xai",
-          "ai-chat"
+          "magento",
+          "shopify",
+          "woocommerce",
+          "bamboohr",
+          "google-shopping-search"
         ],
         "subgroups": []
       },
       {
-        "name": "Google Speech",
-        "nodes": ["google-speech"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "Security",
-    "icon": "icons/security-icon",
-    "color": "#33FF57",
-    "nodes": [
-      "binaryedge",
-      "builtwith",
-      "censys",
-      "dns-lookup",
-      "dns-to-ip",
-      "greynoise",
-      "haveibeenpwned",
-      "http-fingerprint",
-      "ip-geolocation",
-      "port-scanner",
-      "shodan-lookup",
-      "ssl-checker",
-      "statdns",
-      "subdomain-discovery",
-      "virustotal",
-      "vulnerability-scanner",
-      "whatcms",
-      "whois",
-      "zoomeye",
-      "abuseipdb",
-      "google-dork",
-      "abuse-ipdb",
-      "binary-edge",
-      "built-with",
-      "censys",
-      "dns-lookup",
-      "dns-to-ip",
-      "grey-noise",
-      "http-fingerprint",
-      "ip-geolocation",
-      "port-scanner",
-      "shodan-lookup",
-      "snyk",
-      "subdomain-discovery",
-      "virus-total",
-      "vulnerability-scanner",
-      "what-cms",
-      "whois",
-      "zoom-eye"
-    ],
-    "subgroups": [
-      {
-        "name": "Network Calc",
-        "nodes": ["network-calc-security", "networkcalc"],
-        "subgroups": []
-      },
-      {
-        "name": "Vulnerability Scanning",
-        "nodes": ["snyk"],
-        "subgroups": []
-      },
-      {
-        "name": "SSL/TLS",
-        "nodes": ["ssl-labs"],
-        "subgroups": []
-      },
-      {
-        "name": "TOTP",
-        "nodes": ["totp"],
-        "subgroups": []
-      },
-      {
-        "name": "Web Archive",
-        "nodes": ["wayback-machine"],
-        "subgroups": []
-      },
-      {
-        "name": "URL Scan",
-        "nodes": ["url-scan-get-result", "url-scan-search", "url-scan-submit"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "Azure",
-    "icon": "icons/azure-icon",
-    "color": "#9370DB",
-    "nodes": [
-      "azure-activedirectory",
-      "azure-blockchain",
-      "azure-databricks",
-      "azure-devops",
-      "azure-iothub",
-      "azure-mariadb",
-      "azure-stack"
-    ],
-    "subgroups": [
-      {
-        "name": "Blob Storage",
-        "nodes": ["blob-storage"],
-        "subgroups": []
-      },
-      {
-        "name": "Azure Cosmos DB",
+        "name": "Project Management",
         "nodes": [
-          "cassandra-query",
-          "gremlin-query",
-          "mongo-query",
-          "table-query",
-          "cosmos-cassandra-manage",
-          "cosmos-cassandra-query",
-          "cosmos-delete",
-          "cosmos-gremlin-manage",
-          "cosmos-gremlin-query",
-          "cosmos-mongo-manage",
-          "cosmos-mongodb-manage",
-          "cosmos-mongodb-query",
-          "cosmos-table-manage",
-          "cosmos-table-query"
+          "linear",
+          "mondaycom",
+          "trello",
+          "jira",
+          "clickup",
+          "asana",
+          "todoist-project-action",
+          "todoist-task-action",
+          "todoist-quick-add-action",
+          "todoist-section-action",
+          "todoist-comment-action",
+          "todoist-label-action",
+          "todoist-reminder-action",
+          "taiga"
         ],
         "subgroups": []
       },
       {
-        "name": "Service Bus",
-        "nodes": [
-          "service-bus-queue",
-          "service-bus-receive",
-          "service-bus-send",
-          "service-bus-subscription",
-          "service-bus-topic"
-        ],
-        "subgroups": []
-      },
-      {
-        "name": "Azure SQL",
-        "nodes": [
-          "azure-sql-admin",
-          "azure-sql-backup-restore",
-          "azure-sql-bulk-insert",
-          "azure-sql-database-admin",
-          "azure-sql-query",
-          "azure-sql-schema-manage",
-          "azure-sql-stored-procedure"
-        ],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "Infrastructure",
-    "icon": "icons/infrastructure-icon",
-    "color": "#9370DB",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "Networking",
-        "nodes": ["cisco"],
-        "subgroups": []
-      },
-      {
-        "name": "Bunny",
-        "nodes": ["bunny"],
-        "subgroups": []
-      },
-      {
-        "name": "CapRover",
-        "nodes": ["caprover"],
-        "subgroups": []
-      },
-      {
-        "name": "Cloudflare",
-        "nodes": ["cloudflare-pages"],
-        "subgroups": []
-      },
-      {
-        "name": "DigitalOcean",
-        "nodes": ["digitalocean-app"],
-        "subgroups": []
-      },
-      {
-        "name": "Dokku",
-        "nodes": ["dokku"],
-        "subgroups": []
-      },
-      {
-        "name": "Firebase",
-        "nodes": ["firebase-hosting"],
-        "subgroups": []
-      },
-      {
-        "name": "Heroku",
-        "nodes": ["heroku"],
-        "subgroups": []
-      },
-      {
-        "name": "Netlify",
-        "nodes": ["netlify"],
-        "subgroups": []
-      },
-      {
-        "name": "Render",
-        "nodes": ["render"],
-        "subgroups": []
-      },
-      {
-        "name": "Vercel",
-        "nodes": ["vercel"],
-        "subgroups": []
-      },
-      {
-        "name": "VastAi",
-        "nodes": [
-          "vast-ai-add-network-disk",
-          "vast-ai-attach-ssh-key",
-          "vast-ai-cancel-copy",
-          "vast-ai-cancel-maintenance",
-          "vast-ai-cancel-sync",
-          "vast-ai-change-bid-price",
-          "vast-ai-cleanup-machine",
-          "vast-ai-cloud-copy",
-          "vast-ai-copy",
-          "vast-ai-create-endpoint-job",
-          "vast-ai-create-env-var",
-          "vast-ai-create-instance",
-          "vast-ai-create-template",
-          "vast-ai-delete-api-key",
-          "vast-ai-delete-endpoint-job",
-          "vast-ai-delete-env-var",
-          "vast-ai-destroy-instance",
-          "vast-ai-detach-ssh-key",
-          "vast-ai-execute-command",
-          "vast-ai-list-instances",
-          "vast-ai-list-machine",
-          "vast-ai-prepay-instance",
-          "vast-ai-reboot-instance",
-          "vast-ai-recycle-instance",
-          "vast-ai-remove-defjob",
-          "vast-ai-request-logs",
-          "vast-ai-reset-apikey",
-          "vast-ai-schedule-maintenance",
-          "vast-ai-search-invoices",
-          "vast-ai-search-offers",
-          "vast-ai-search-templates",
-          "vast-ai-set-defjob",
-          "vast-ai-set-min-bid",
-          "vast-ai-show-api-key",
-          "vast-ai-show-api-keys",
-          "vast-ai-show-connections",
-          "vast-ai-show-deposit",
-          "vast-ai-show-earnings",
-          "vast-ai-show-endpoint-job",
-          "vast-ai-show-endpoint-jobs",
-          "vast-ai-show-env-vars",
-          "vast-ai-show-instance",
-          "vast-ai-show-invoices",
-          "vast-ai-show-machines",
-          "vast-ai-show-reports",
-          "vast-ai-show-ssh-keys",
-          "vast-ai-show-user",
-          "vast-ai-transfer-credit",
-          "vast-ai-unlist-machine",
-          "vast-ai-update-endpoint-job",
-          "vast-ai-update-env-var"
-        ],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "Entertainment",
-    "icon": "icons/entertainment-icon",
-    "color": "#33FFF5",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "Jokes",
-        "nodes": ["dad-jokes"],
-        "subgroups": []
-      },
-      {
-        "name": "Games",
-        "nodes": ["deck-of-cards", "dnd5e", "ffxiv", "open-trivia", "pokeapi"],
-        "subgroups": []
-      },
-      {
-        "name": "Memes",
-        "nodes": ["imgflip"],
-        "subgroups": []
-      },
-      {
-        "name": "Anime",
-        "nodes": ["jikan"],
-        "subgroups": []
-      },
-      {
-        "name": "Quotes",
-        "nodes": ["kanye-rest", "advice-slip"],
-        "subgroups": []
-      },
-      {
-        "name": "Movies",
-        "nodes": ["omdb"],
-        "subgroups": []
-      },
-      {
-        "name": "TV Shows",
-        "nodes": ["rick-and-morty", "tvmaze"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "SIG",
-    "icon": "icons/sig-icon",
-    "color": "#20B2AA",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "Address Validation",
-        "nodes": ["data-gouv-fr"],
-        "subgroups": []
-      },
-      {
-        "name": "Data Transformation",
-        "nodes": ["geojson", "address-validator"],
-        "subgroups": []
-      },
-      {
-        "name": "Geography",
-        "nodes": ["geonames"],
-        "subgroups": []
-      },
-      {
-        "name": "Mapping",
-        "nodes": ["graphhopper-route", "mapbox", "openstreetmap"],
-        "subgroups": []
-      },
-      {
-        "name": "IP Geolocation",
-        "nodes": ["ip-api", "ip2location"],
-        "subgroups": []
-      },
-      {
-        "name": "Topography",
-        "nodes": ["opentopodata"],
-        "subgroups": []
-      },
-      {
-        "name": "Postal Codes",
-        "nodes": ["postcode-io", "zippopotam"],
-        "subgroups": []
-      },
-      {
-        "name": "Maps & Navigation",
-        "nodes": ["tomtom"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "Communication",
-    "icon": "icons/communication-icon",
-    "color": "#FFD700",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "Discord",
-        "nodes": ["discord-api"],
-        "subgroups": []
-      },
-      {
-        "name": "SMS",
-        "nodes": ["dialy-sms", "infobip-sms", "pender-sms", "twilio"],
-        "subgroups": []
-      },
-      {
-        "name": "Emailing",
-        "nodes": [
-          "imap-fetch",
-          "mailchimp-marketing",
-          "mandrill-transactional",
-          "sendgrid",
-          "smtp"
-        ],
-        "subgroups": []
-      },
-      {
-        "name": "Mattermost",
-        "nodes": ["mattermost-webhook"],
-        "subgroups": []
-      },
-      {
-        "name": "NATS",
-        "nodes": ["nats-publish", "nats-subscribe"],
-        "subgroups": []
-      },
-      {
-        "name": "Pusher",
-        "nodes": ["pusher-send"],
-        "subgroups": []
-      },
-      {
-        "name": "WebSocket",
-        "nodes": ["websocket-send"],
-        "subgroups": []
-      },
-      {
-        "name": "Whatsapp",
-        "nodes": ["whatsapp-trigger", "whatsapp-webhook"],
-        "subgroups": []
-      },
-      {
-        "name": "XMPP",
-        "nodes": ["xmpp"],
-        "subgroups": []
-      },
-      {
-        "name": "Zoom",
-        "nodes": ["zoom"],
-        "subgroups": []
-      },
-      {
-        "name": "Slack",
-        "nodes": ["slack-action", "slack-trigger"],
-        "subgroups": []
-      },
-      {
-        "name": "Telegram",
-        "nodes": ["telegram-bot"],
-        "subgroups": []
-      },
-      {
-        "name": "Agora WebRTC",
-        "nodes": ["agora-token"],
-        "subgroups": []
-      },
-      {
-        "name": "STOMP",
-        "nodes": ["stomp-publish", "stomp-subscribe"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "Cloud Storage",
-    "icon": "icons/cloud-storage-icon",
-    "color": "#FFD700",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "Dropbox",
-        "nodes": ["dropbox"],
-        "subgroups": []
-      },
-      {
-        "name": "Files.com",
-        "nodes": ["files-com"],
-        "subgroups": []
-      },
-      {
-        "name": "GoFile",
-        "nodes": [
-          "gofile-create-account",
-          "gofile-delete-content",
-          "gofile-get-best-server",
-          "gofile-get-content",
-          "gofile-upload-file"
-        ],
-        "subgroups": []
-      },
-      {
-        "name": "Nextcloud",
-        "nodes": [
-          "nextcloud-copy-file",
-          "nextcloud-copy-folder",
-          "nextcloud-create-folder",
-          "nextcloud-create-user",
-          "nextcloud-delete-file",
-          "nextcloud-delete-folder",
-          "nextcloud-delete-user",
-          "nextcloud-download-file",
-          "nextcloud-get-user",
-          "nextcloud-list-folders",
-          "nextcloud-list-users",
-          "nextcloud-move-file",
-          "nextcloud-move-folder",
-          "nextcloud-share-file",
-          "nextcloud-share-folder",
-          "nextcloud-update-user",
-          "nextcloud-upload-file"
-        ],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "E-commerce",
-    "icon": "icons/e-commerce-icon",
-    "color": "#20B2AA",
-    "nodes": ["ebay-search", "walmart-search", "amazon-product-search"],
-    "subgroups": [
-      {
-        "name": "Magento",
-        "nodes": ["magento"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "Economic Data",
-    "icon": "icons/economic-data-icon",
-    "color": "#33FF57",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "IMF API",
-        "nodes": ["fmi"],
-        "subgroups": []
-      },
-      {
-        "name": "World Bank API",
-        "nodes": ["world-bank-api"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "Functions",
-    "icon": "icons/functions-icon",
-    "color": "#FF33F5",
-    "nodes": ["function", "set-variable"],
-    "subgroups": []
-  },
-  {
-    "name": "version-control",
-    "icon": "icons/version-control-icon",
-    "color": "#20B2AA",
-    "nodes": ["git"],
-    "subgroups": [
-      {
-        "name": "github",
-        "nodes": ["github"],
-        "subgroups": []
-      },
-      {
-        "name": "gitlab",
-        "nodes": ["gitlab"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "API",
-    "icon": "icons/api-icon",
-    "color": "#FF33F5",
-    "nodes": ["graphql", "jwt"],
-    "subgroups": []
-  },
-  {
-    "name": "gRPC",
-    "icon": "icons/grpc-icon",
-    "color": "#20B2AA",
-    "nodes": ["grpc-client"],
-    "subgroups": []
-  },
-  {
-    "name": "HTTP",
-    "icon": "icons/http-icon",
-    "color": "#FFD700",
-    "nodes": ["http-request", "mcp-client", "respond-to-webhook"],
-    "subgroups": []
-  },
-  {
-    "name": "Control Flow",
-    "icon": "icons/control-flow-icon",
-    "color": "#33FF57",
-    "nodes": ["if-else"],
-    "subgroups": []
-  },
-  {
-    "name": "Azure Iot Hub",
-    "icon": "icons/azure-iot-hub-icon",
-    "color": "#FFD700",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "Actions",
-        "nodes": [
-          "iot-hub.deviceManager",
-          "iot-hub.cloudToDevice",
-          "iot-hub.deviceInvoke"
-        ],
-        "subgroups": []
-      },
-      {
-        "name": "Triggers",
-        "nodes": [
-          "iot-hub.deviceStatusTrigger",
-          "iot-hub.deviceToCloudTrigger"
-        ],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "Project Management",
-    "icon": "icons/project-management-icon",
-    "color": "#FF33F5",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "Linear",
-        "nodes": ["linear"],
-        "subgroups": []
-      },
-      {
-        "name": "Monday.com",
-        "nodes": ["mondaycom"],
-        "subgroups": []
-      },
-      {
-        "name": "Trello",
-        "nodes": ["trello"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "Utilities",
-    "icon": "icons/utilities-icon",
-    "color": "#FF33F5",
-    "nodes": ["log"],
-    "subgroups": []
-  },
-  {
-    "name": "Microsoft",
-    "icon": "icons/microsoft-icon",
-    "color": "#FF5733",
-    "nodes": ["microsoft-excel-webhook"],
-    "subgroups": [
-      {
-        "name": "Table",
+        "name": "Productivity & Office",
         "nodes": [
           "excel-table-add-rows",
           "excel-table-list-columns",
           "excel-table-list-rows",
-          "excel-table-find-row"
+          "excel-table-find-row",
+          "excel-add-worksheet",
+          "excel-list-workbooks",
+          "excel-get-all-worksheets",
+          "excel-get-worksheet-content",
+          "microsoft-excel"
         ],
         "subgroups": []
       },
       {
-        "name": "Workbook",
-        "nodes": ["excel-add-worksheet", "excel-list-workbooks"],
-        "subgroups": []
-      },
-      {
-        "name": "Worksheet",
-        "nodes": ["excel-get-all-worksheets", "excel-get-worksheet-content"],
-        "subgroups": []
-      },
-      {
-        "name": "Microsoft Excel",
-        "nodes": ["microsoft-excel"],
-        "subgroups": []
-      },
-      {
-        "name": "OneDrive",
-        "nodes": ["onedrive"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "AWS",
-    "icon": "icons/aws-icon",
-    "color": "#FF8C00",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "DynamoDB",
-        "nodes": ["aws-dynamo-db", "aws-dynamo-db-trigger"],
-        "subgroups": []
-      },
-      {
-        "name": "S3 Bucket",
+        "name": "CMS & Publishing",
         "nodes": [
-          "aws-s3-bucket",
-          "aws-s3-create-bucket",
-          "aws-s3-list-buckets",
-          "aws-s3-search-buckets",
-          "aws-s3-delete-bucket"
-        ],
-        "subgroups": []
-      },
-      {
-        "name": "S3 File",
-        "nodes": [
-          "aws-s3-file",
-          "aws-s3-upload-file",
-          "aws-s3-download-file",
-          "aws-s3-list-objects",
-          "aws-s3-delete-objects",
-          "aws-s3-copy-object"
-        ],
-        "subgroups": []
-      },
-      {
-        "name": "S3 Folder",
-        "nodes": [
-          "aws-s3-folder",
-          "aws-s3-create-folder",
-          "aws-s3-get-folder",
-          "aws-s3-delete-folder"
-        ],
-        "subgroups": []
-      },
-      {
-        "name": "S3 Trigger",
-        "nodes": ["aws-s3-trigger"],
-        "subgroups": []
-      },
-      {
-        "name": "Emailing",
-        "nodes": ["aws-ses"],
-        "subgroups": []
-      },
-      {
-        "name": "S3 Compatible Bucket",
-        "nodes": [
-          "s3-bucket",
-          "s3-create-bucket",
-          "s3-list-buckets",
-          "s3-search-buckets",
-          "s3-delete-bucket"
-        ],
-        "subgroups": []
-      },
-      {
-        "name": "S3 Compatible File",
-        "nodes": [
-          "s3-file",
-          "s3-upload-file",
-          "s3-download-file",
-          "s3-list-files",
-          "s3-delete-file",
-          "s3-copy-file"
-        ],
-        "subgroups": []
-      },
-      {
-        "name": "S3 Compatible Folder",
-        "nodes": [
-          "s3-folder",
-          "s3-create-folder",
-          "s3-get-all-folders",
-          "s3-delete-folder"
-        ],
-        "subgroups": []
-      },
-      {
-        "name": "AI",
-        "nodes": ["ai-chat-amazon-bedrock"],
-        "subgroups": []
-      },
-      {
-        "name": "Security",
-        "nodes": ["aws-acm", "aws-iam", "aws-cognito"]
-      },
-      {
-        "name": "Compute",
-        "nodes": ["aws-lambda", "aws-elb"]
-      },
-      {
-        "name": "Messaging",
-        "nodes": ["aws-sns", "aws-sqs"]
-      },
-      {
-        "name": "AI Services",
-        "nodes": [
-          "aws-comprehend",
-          "aws-rekognition",
-          "aws-textract",
-          "aws-transcribe"
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Content Management",
-    "icon": "icons/content-management-icon",
-    "color": "#33FFF5",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "WordPress",
-        "nodes": ["wordpress"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "Google",
-    "icon": "icons/google-icon",
-    "color": "#FF6347",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "YouTube",
-        "nodes": [
-          "youtube-api-thumbnails",
-          "youtube-api-transcription",
-          "youtube-get-channel",
-          "youtube-get-video",
-          "youtube-search"
-        ],
-        "subgroups": []
-      },
-      {
-        "name": "Gmail",
-        "nodes": ["gmail-trigger", "gmail"],
-        "subgroups": []
-      },
-      {
-        "name": "Google Chat",
-        "nodes": [
-          "google-chat-get-member",
-          "google-chat-get-members",
-          "google-chat-get-space",
-          "google-chat-list-spaces",
-          "google-chat-get-message",
-          "google-chat-create-message",
-          "google-chat-delete-message",
-          "google-chat-update-message",
-          "google-chat-send-and-wait",
-          "google-chat-member",
-          "google-chat-message",
-          "google-chat-message-trigger",
-          "google-chat-space"
-        ],
-        "subgroups": []
-      },
-      {
-        "name": "AI",
-        "nodes": [
-          "ai-chat-google",
-          "google-llm",
-          "google-gemini-image",
-          "gemini-medical"
-        ],
-        "subgroups": []
-      },
-      {
-        "name": "Advertising",
-        "nodes": [
-          "google-ad-mob",
-          "google-ads",
-          "google-ad-sense",
-          "google-business-profile"
-        ],
-        "subgroups": []
-      },
-      {
-        "name": "Analytics",
-        "nodes": ["google-analytics", "google-tag-manager"],
-        "subgroups": []
-      },
-      {
-        "name": "Big Data",
-        "nodes": ["google-big-query"],
-        "subgroups": []
-      },
-      {
-        "name": "Search",
-        "nodes": [
-          "google-books-search",
-          "google-finance-search",
-          "google-flights-search",
-          "google-hotels-search",
-          "google-images-search",
-          "google-maps-search",
-          "google-news-search",
-          "google-patents-search",
-          "google-play-store-search",
-          "google-search",
-          "google-shopping-search",
-          "google-trends-search",
-          "google-videos-search",
-          "google-scholar"
-        ],
-        "subgroups": []
-      },
-      {
-        "name": "Productivity",
-        "nodes": [
-          "google-calendar",
-          "google-classroom",
-          "google-docs",
-          "google-forms",
-          "google-slides",
-          "google-tasks",
-          "google-books-action",
-          "google-drive-file",
-          "google-drive-folder",
-          "google-drive-search",
-          "google-drive-shared-drive",
-          "google-drive-trigger",
-          "google-sheets-auth",
-          "google-sheets-spreadsheet",
-          "google-sheets-values",
-          "google-sheets-trigger"
-        ],
-        "subgroups": []
-      },
-      {
-        "name": "Data",
-        "nodes": ["google-cloud-storage"],
-        "subgroups": []
-      },
-      {
-        "name": "Communication",
-        "nodes": ["google-fcm"],
-        "subgroups": []
-      },
-      {
-        "name": "Health",
-        "nodes": ["google-fitness"],
-        "subgroups": []
-      },
-      {
-        "name": "Science",
-        "nodes": ["google-genomics"],
-        "subgroups": []
-      },
-      {
-        "name": "Security",
-        "nodes": ["google-kms-inventory", "google-sts"],
-        "subgroups": []
-      },
-      {
-        "name": "Location",
-        "nodes": ["google-places"],
-        "subgroups": []
-      },
-      {
-        "name": "Media",
-        "nodes": ["google-you-tube-data", "google-speech"],
-        "subgroups": []
-      },
-      {
-        "name": "contacts",
-        "nodes": ["google-contacts-action"],
-        "subgroups": []
-      },
-      {
-        "name": "Contacts",
-        "nodes": ["google-contacts-action"],
-        "subgroups": []
-      },
-      {
-        "name": "Translation",
-        "nodes": ["google-translate-action"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "Outlook",
-    "icon": "icons/outlook-icon",
-    "color": "#33FFF5",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "Mail",
-        "nodes": ["outlook.mail"],
-        "subgroups": []
-      },
-      {
-        "name": "Calendar",
-        "nodes": ["outlook.calendar"],
-        "subgroups": []
-      },
-      {
-        "name": "Mail Triggers",
-        "nodes": ["outlook.mail.trigger"],
-        "subgroups": []
-      },
-      {
-        "name": "Calendar Triggers",
-        "nodes": ["outlook.calendar.trigger"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "Test",
-    "icon": "icons/test-icon",
-    "color": "#33FFF5",
-    "nodes": ["test-node"],
-    "subgroups": []
-  },
-  {
-    "name": "Microsoft Teams",
-    "icon": "icons/microsoft-teams-icon",
-    "color": "#9370DB",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "Chat",
-        "nodes": [
-          "teams.chat",
-          "teams.chat.trigger.new-chat",
-          "teams.chat.trigger.new-chat-message"
-        ],
-        "subgroups": []
-      },
-      {
-        "name": "Channel",
-        "nodes": [
-          "teams.channel",
-          "teams.channel.trigger.new-channel",
-          "teams.channel.trigger.new-team-member"
-        ],
-        "subgroups": []
-      },
-      {
-        "name": "Planner",
-        "nodes": [
-          "teams.planner",
-          "teams.planner.trigger.new-task",
-          "teams.planner.trigger.task-updated"
+          "wordpress"
         ],
         "subgroups": []
       }
     ]
   },
   {
-    "name": "Jenkins",
-    "icon": "icons/jenkins-icon",
-    "color": "#FF8C00",
-    "nodes": ["jenkins"]
-  },
-  {
-    "name": "postgres",
-    "icon": "icons/postgres-icon",
-    "color": "#33FF57",
-    "nodes": ["postgres-action"],
-    "subgroups": []
-  },
-  {
-    "name": "CRYPTO",
-    "icon": "icons/crypto-icon",
-    "color": "#FF5733",
-    "nodes": ["crypto"],
-    "subgroups": [
-      {
-        "name": "Actions",
-        "nodes": ["crypto"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "BASEROW",
-    "icon": "icons/baserow-icon",
-    "color": "#FFD700",
+    "name": "Security & Networking",
+    "icon": "security",
+    "color": "#dc2626",
     "nodes": [],
     "subgroups": [
       {
-        "name": "Actions",
-        "nodes": ["baserow"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "Jira",
-    "icon": "icons/jira-icon",
-    "color": "#FF33F5",
-    "nodes": ["jira"],
-    "subgroups": [
-      {
-        "name": "Actions",
-        "nodes": ["jira"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "AIRTABLE",
-    "icon": "icons/airtable-icon",
-    "color": "#FF6347",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "Actions",
-        "nodes": ["airtable-action"],
-        "subgroups": []
-      },
-      {
-        "name": "Triggers",
-        "nodes": ["airtable-trigger"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "MYSQL",
-    "icon": "icons/mysql-icon",
-    "color": "#9370DB",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "Actions",
-        "nodes": ["mysql-action"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "project-management",
-    "icon": "icons/project-management-icon",
-    "color": "#FF33F5",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "clickup",
-        "nodes": ["clickup", "clickup-trigger"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "MONGODB",
-    "icon": "icons/mongodb-icon",
-    "color": "#33FFF5",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "Actions",
-        "nodes": ["mongodb-action"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "kafka",
-    "icon": "icons/kafka-icon",
-    "color": "#FF8C00",
-    "nodes": ["kafka-publish", "kafka-trigger"],
-    "subgroups": []
-  },
-  {
-    "name": "mqtt",
-    "icon": "icons/mqtt-icon",
-    "color": "#33FFF5",
-    "nodes": ["mqtt-publish", "mqtt-trigger"],
-    "subgroups": []
-  },
-  {
-    "name": "COSMOS",
-    "icon": "icons/cosmos-icon",
-    "color": "#33FF57",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "Actions",
+        "name": "APIs & Protocols",
         "nodes": [
-          "cosmos.query",
-          "cosmos.container-data",
-          "cosmos.upsert",
-          "cosmos.database"
+          "exchangerate-api",
+          "loripsum-api",
+          "httpbin",
+          "httpstat",
+          "http-fingerprint",
+          "vast-ai-delete-api-key",
+          "vast-ai-reset-apikey",
+          "vast-ai-show-api-key",
+          "vast-ai-show-api-keys",
+          "pokeapi",
+          "graphql",
+          "jwt",
+          "grpc-client",
+          "http-request",
+          "mcp-client",
+          "strapi",
+          "facebook-graph"
         ],
         "subgroups": []
       },
       {
-        "name": "Triggers",
-        "nodes": ["cosmos.changefeed"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "event-hub",
-    "icon": "icons/event-hub-icon",
-    "color": "#FF8C00",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "admin",
-        "nodes": ["event-hub-admin"],
-        "subgroups": []
-      },
-      {
-        "name": "receive",
-        "nodes": ["event-hub-receive"],
-        "subgroups": []
-      },
-      {
-        "name": "send",
-        "nodes": ["event-hub-send"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "SERVICEBUS",
-    "icon": "icons/servicebus-icon",
-    "color": "#FF6347",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "Actions",
+        "name": "Network Tools",
         "nodes": [
-          "servicebus.topic",
-          "servicebus.queue",
-          "servicebus.send",
-          "servicebus.subscription"
+          "ipify",
+          "ipinfo",
+          "dns-lookup",
+          "dns-to-ip",
+          "ip-geolocation",
+          "port-scanner",
+          "ssl-checker",
+          "statdns",
+          "whois",
+          "network-calc-security",
+          "networkcalc",
+          "ssl-labs",
+          "cisco",
+          "vast-ai-add-network-disk",
+          "action-network"
         ],
         "subgroups": []
       },
       {
-        "name": "Triggers",
-        "nodes": ["servicebus.receive"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "communication",
-    "icon": "icons/communication-icon",
-    "color": "#FFD700",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "signalr",
-        "nodes": ["signalr", "signalr-receive"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "GMAIL",
-    "icon": "icons/gmail-icon",
-    "color": "#33FF57",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "Actions",
-        "nodes": ["gmail"],
-        "subgroups": []
-      },
-      {
-        "name": "Triggers",
-        "nodes": ["gmail-trigger"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "GOOGLE DRIVE",
-    "icon": "icons/google-drive-icon",
-    "color": "#FF8C00",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "Actions",
+        "name": "Identity & Access",
         "nodes": [
-          "google-drive-file",
-          "google-drive-folder",
-          "google-drive-search",
-          "google-drive-shared-drive"
+          "keycloak",
+          "totp",
+          "aws-iam",
+          "aws-cognito"
         ],
         "subgroups": []
       },
       {
-        "name": "Triggers",
-        "nodes": ["google-drive-trigger"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "GOOGLE SHEETS",
-    "icon": "icons/google-sheets-icon",
-    "color": "#FFD700",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "Actions",
+        "name": "Security Intelligence",
         "nodes": [
-          "google-sheets-auth",
-          "google-sheets-spreadsheet",
-          "google-sheets-values"
+          "binaryedge",
+          "builtwith",
+          "censys",
+          "greynoise",
+          "haveibeenpwned",
+          "shodan-lookup",
+          "subdomain-discovery",
+          "virustotal",
+          "vulnerability-scanner",
+          "whatcms",
+          "binary-edge",
+          "built-with",
+          "grey-noise",
+          "snyk",
+          "virus-total",
+          "what-cms",
+          "wayback-machine",
+          "url-scan-get-result",
+          "url-scan-submit",
+          "cloudflare-pages",
+          "aws-acm"
         ],
         "subgroups": []
       },
       {
-        "name": "Triggers",
-        "nodes": ["google-sheets-trigger"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "database",
-    "icon": "icons/database-icon",
-    "color": "#3357FF",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "redis",
-        "nodes": ["redis-publish", "redis-subscribe", "redis-action"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "discord",
-    "icon": "icons/discord-icon",
-    "color": "#FF6347",
-    "nodes": ["discord-action", "discord-trigger"],
-    "subgroups": []
-  },
-  {
-    "name": "rabbitmq",
-    "icon": "icons/rabbitmq-icon",
-    "color": "#FF8C00",
-    "nodes": ["rabbit-mq-action", "rabbit-mq-trigger", "rabbit-mq-publish"],
-    "subgroups": []
-  },
-  {
-    "name": "mediot",
-    "icon": "icons/mediot-icon",
-    "color": "#33FF57",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "medical",
-        "nodes": ["visiostation"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "Azure SMS Communication Services",
-    "icon": "icons/azure-sms-communication-services-icon",
-    "color": "#FFD700",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "Actions",
+        "name": "Industrial & IoT Protocols",
         "nodes": [
-          "azure-communication-auth",
-          "azure-communication-send-sms",
-          "azure-communication-create-thread",
-          "azure-communication-send-chat-message"
-        ],
-        "subgroups": []
-      },
-      {
-        "name": "Triggers",
-        "nodes": ["azure-communication-chat-message-trigger"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "Azure Email Communication Services",
-    "icon": "icons/azure-email-communication-services-icon",
-    "color": "#FFD700",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "Actions",
-        "nodes": ["azure-communication-send-email"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "AZURE SQL",
-    "icon": "icons/azure-sql-icon",
-    "color": "#FF8C00",
-    "nodes": [
-      "azuresql.query",
-      "azuresql.databaseAdmin",
-      "azuresql.bulkInsert",
-      "azuresql.backupRestore",
-      "azuresql.schemaManage",
-      "azuresql.storedProcedure"
-    ],
-    "subgroups": []
-  },
-  {
-    "name": "ASANA",
-    "icon": "icons/asana-icon",
-    "color": "#FFD700",
-    "nodes": ["asana", "asana-trigger"],
-    "subgroups": [
-      {
-        "name": "project management",
-        "nodes": ["asana"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "Todoist",
-    "icon": "icons/todoist-icon",
-    "color": "#33FFF5",
-    "nodes": [
-      "todoist-project-action",
-      "todoist-task-action",
-      "todoist-quick-add-action",
-      "todoist-section-action",
-      "todoist-comment-action",
-      "todoist-label-action",
-      "todoist-reminder-action"
-    ],
-    "subgroups": []
-  },
-  {
-    "name": "Communication & Messaging",
-    "icon": "icons/communication-&-messaging-icon",
-    "color": "#33FFF5",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "Email Marketing",
-        "nodes": ["activecampaign", "emelia"],
-        "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "Odoo",
-    "icon": "icons/odoo-icon",
-    "color": "#3357FF",
-    "nodes": ["odoo"],
-    "subgroups": []
-  },
-  {
-    "name": "Brevo",
-    "icon": "icons/brevo-icon",
-    "color": "#20B2AA",
-    "nodes": [],
-    "subgroups": [
-      {
-        "name": "Ressource",
-        "nodes": [
-          "brevo.contact",
-          "brevo.contactAttribute",
-          "brevo.email",
-          "brevo.sender"
+          "bacnet-read",
+          "bacnet-write",
+          "coap-client",
+          "dnp3-master",
+          "ethernet-ip-read",
+          "ethernet-ip-write",
+          "opc",
+          "osisoft",
+          "profinet-read",
+          "profinet-write",
+          "scada-read",
+          "scada-write"
         ],
         "subgroups": []
       }
     ]
   },
   {
-    "name": "Business & Commerce",
-    "icon": "icons/business-&-commerce-icon",
-    "color": "#3357FF",
+    "name": "Utilities & Misc",
+    "icon": "utils",
+    "color": "#64748b",
     "nodes": [],
     "subgroups": [
       {
-        "name": "E-Commerce",
-        "nodes": ["shopify", "woocommerce"],
+        "name": "General Utilities",
+        "nodes": [
+          "performance-prompt",
+          "log",
+          "test-node"
+        ],
         "subgroups": []
       },
       {
-        "name": "HR",
-        "nodes": ["bamboohr"],
+        "name": "Jokes",
+        "nodes": [
+          "dad-jokes"
+        ],
         "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "Grafana",
-    "icon": "icons/grafana-icon",
-    "color": "#FF8C00",
-    "nodes": ["grafana"],
-    "subgroups": []
-  },
-  {
-    "name": "questdb",
-    "icon": "icons/questdb-icon",
-    "color": "#3357FF",
-    "nodes": ["QuestDB"],
-    "subgroups": []
-  },
-  {
-    "name": "CMS",
-    "icon": "icons/cms-icon",
-    "color": "#33FFF5",
-    "nodes": [],
-    "subgroups": [
+      },
       {
-        "name": "Strapi",
-        "nodes": ["strapi"],
+        "name": "Games",
+        "nodes": [
+          "deck-of-cards",
+          "dnd5e",
+          "ffxiv",
+          "open-trivia"
+        ],
         "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "high-level",
-    "icon": "icons/high-level-icon",
-    "color": "#FF5733",
-    "nodes": ["high-level-action"],
-    "subgroups": []
-  },
-  {
-    "name": "FileMaker",
-    "icon": "icons/filemaker-icon",
-    "color": "#FF5733",
-    "nodes": ["filemaker-action"],
-    "subgroups": []
-  },
-  {
-    "name": "Oracle",
-    "icon": "icons/oracle-icon",
-    "color": "#33FF57",
-    "nodes": ["oracle-db", "oracle-sql", "oracle-database"],
-    "subgroups": [
+      },
       {
-        "name": "Database",
-        "nodes": ["oracle-database"],
+        "name": "Memes",
+        "nodes": [
+          "imgflip"
+        ],
         "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "mssql",
-    "icon": "icons/mssql-icon",
-    "color": "#FF8C00",
-    "nodes": ["mssql"],
-    "subgroups": []
-  },
-  {
-    "name": "ACTION_NETWORK",
-    "icon": "icons/action_network-icon",
-    "color": "#FF33F5",
-    "nodes": [],
-    "subgroups": [
+      },
       {
-        "name": "Actions",
-        "nodes": ["action-network"],
+        "name": "Anime",
+        "nodes": [
+          "jikan"
+        ],
         "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "TAIGA",
-    "icon": "icons/taiga-icon",
-    "color": "#3357FF",
-    "nodes": ["taiga"],
-    "subgroups": []
-  },
-  {
-    "name": "Facebook",
-    "icon": "icons/facebook-icon",
-    "color": "#20B2AA",
-    "nodes": [],
-    "subgroups": [
+      },
       {
-        "name": "Graph Api",
-        "nodes": ["facebook-graph"],
+        "name": "Quotes",
+        "nodes": [
+          "kanye-rest",
+          "advice-slip"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "TV Shows",
+        "nodes": [
+          "rick-and-morty",
+          "tvmaze"
+        ],
         "subgroups": []
       }
     ]
