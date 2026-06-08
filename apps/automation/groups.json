@@ -363,6 +363,7 @@
       {
         "name": "Agents & Chat",
         "nodes": [
+          "agentic-flow",
           "agent",
           "ai-chat-anthropic",
           "ai-chat-cohere",
