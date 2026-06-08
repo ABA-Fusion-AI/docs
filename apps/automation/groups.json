@@ -1,8 +1,8 @@
 [
   {
     "name": "Triggers & Ingress",
-    "icon": "trigger",
-    "color": "#22c55e",
+    "icon": "groupsicons/trigger",
+    "color": "#047857",
     "nodes": [],
     "subgroups": [
       {
@@ -116,8 +116,8 @@
   },
   {
     "name": "Orchestration",
-    "icon": "function",
-    "color": "#3b82f6",
+    "icon": "groupsicons/function",
+    "color": "#1d4ed8",
     "nodes": [],
     "subgroups": [
       {
@@ -168,8 +168,8 @@
   },
   {
     "name": "Data Transformation (ETL)",
-    "icon": "data",
-    "color": "#6366f1",
+    "icon": "groupsicons/data",
+    "color": "#4338ca",
     "nodes": [],
     "subgroups": [
       {
@@ -296,8 +296,8 @@
   },
   {
     "name": "Mathematical & Statistical Analysis",
-    "icon": "statistics",
-    "color": "#8b5cf6",
+    "icon": "groupsicons/statistics",
+    "color": "#6d28d9",
     "nodes": [],
     "subgroups": [
       {
@@ -356,8 +356,8 @@
   },
   {
     "name": "Generative AI & LLMs",
-    "icon": "ai",
-    "color": "#ec4899",
+    "icon": "groupsicons/ai",
+    "color": "#be185d",
     "nodes": [],
     "subgroups": [
       {
@@ -485,8 +485,8 @@
   },
   {
     "name": "Databases & Memory",
-    "icon": "data",
-    "color": "#0ea5e9",
+    "icon": "groupsicons/data",
+    "color": "#0369a1",
     "nodes": [],
     "subgroups": [
       {
@@ -601,8 +601,8 @@
   },
   {
     "name": "Communication & Messaging",
-    "icon": "webhook",
-    "color": "#FFD60A",
+    "icon": "groupsicons/webhook",
+    "color": "#a16207",
     "nodes": [],
     "subgroups": [
       {
@@ -706,8 +706,8 @@
   },
   {
     "name": "Storage & Files",
-    "icon": "cloudstorage",
-    "color": "#8b5cf6",
+    "icon": "groupsicons/cloudstorage",
+    "color": "#0f766e",
     "nodes": [],
     "subgroups": [
       {
@@ -815,8 +815,8 @@
   },
   {
     "name": "DevOps & Cloud Management",
-    "icon": "azure",
-    "color": "#0078d4",
+    "icon": "groupsicons/azure",
+    "color": "#1e40af",
     "nodes": [],
     "subgroups": [
       {
@@ -940,8 +940,8 @@
   },
   {
     "name": "Web Search & Information",
-    "icon": "websearch",
-    "color": "#10b981",
+    "icon": "groupsicons/websearch",
+    "color": "#15803d",
     "nodes": [],
     "subgroups": [
       {
@@ -1351,8 +1351,8 @@
   },
   {
     "name": "Healthcare & Life Sciences",
-    "icon": "medical",
-    "color": "#ef4444",
+    "icon": "groupsicons/medical",
+    "color": "#b91c1c",
     "nodes": [],
     "subgroups": [
       {
@@ -1632,8 +1632,8 @@
   },
   {
     "name": "Business & Commerce",
-    "icon": "ecommerce",
-    "color": "#f97316",
+    "icon": "groupsicons/ecommerce",
+    "color": "#c2410c",
     "nodes": [],
     "subgroups": [
       {
@@ -1817,8 +1817,8 @@
   },
   {
     "name": "Security & Networking",
-    "icon": "security",
-    "color": "#dc2626",
+    "icon": "groupsicons/security",
+    "color": "#991b1b",
     "nodes": [],
     "subgroups": [
       {
@@ -1924,8 +1924,8 @@
   },
   {
     "name": "Utilities & Misc",
-    "icon": "utils",
-    "color": "#64748b",
+    "icon": "groupsicons/utils",
+    "color": "#475569",
     "nodes": [],
     "subgroups": [
       {
