@@ -152,7 +152,7 @@
       {
         "name": "Iteration",
         "nodes": [
-          "iterate"
+          "loop"
         ],
         "subgroups": []
       },
