@@ -6289,6 +6289,22 @@
     }
   },
   {
+    "id": "scientific-articles",
+    "name": "Scientific Articles",
+    "type": "tool",
+    "description": "Scientific article search - query Scopus, ScienceDirect, Web of Science, and generate Google Scholar search URLs with normalized metadata",
+    "slogan": "scientific-articles",
+    "icon": "icons/scientific-articles.svg",
+    "integrations": {
+      "automation": [
+        "scopus-search",
+        "science-direct-search",
+        "web-of-science-search",
+        "google-scholar-search-url"
+      ]
+    }
+  },
+  {
     "id": "sendgrid",
     "name": "Sendgrid",
     "type": "tool",
