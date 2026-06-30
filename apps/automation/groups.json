@@ -328,6 +328,14 @@
         "subgroups": []
       },
       {
+        "name": "NVIDIA Upcoming",
+        "nodes": [
+          "nvidia-cuopt-solve",
+          "nvidia-cuopt-status"
+        ],
+        "subgroups": []
+      },
+      {
         "name": "Statistics & Experiments",
         "nodes": [
           "text-analyzer",
@@ -481,6 +489,32 @@
           "aws-transcribe"
         ],
         "subgroups": []
+      },
+      {
+        "name": "NVIDIA Upcoming",
+        "nodes": [
+          "nvidia-nim-chat-completion",
+          "nvidia-nim-text-generation",
+          "nvidia-nim-code-generation",
+          "nvidia-riva-translate",
+          "nvidia-vila",
+          "nvidia-nv-dinov2",
+          "nvidia-grounding-dino",
+          "nvidia-retail-object-detection",
+          "nvidia-visual-changenet",
+          "nvidia-ai-image-detect",
+          "nvidia-deepfake-image-detect",
+          "nvidia-flux-generate",
+          "nvidia-flux-kontext-edit",
+          "nvidia-stable-diffusion-generate",
+          "nvidia-stable-video-diffusion",
+          "nvidia-cosmos-text2world",
+          "nvidia-trellis-3d-generate",
+          "nvidia-bevformer",
+          "nvidia-sparsedrive",
+          "nvidia-streampetr"
+        ],
+        "subgroups": []
       }
     ]
   },
@@ -522,7 +556,14 @@
           "chroma-db",
           "pinecone-vector-store",
           "qdrant",
-          "weaviate"
+          "weaviate",
+          "nvidia-text-embed",
+          "nvidia-code-embed",
+          "nvidia-vl-embed",
+          "nvidia-rerank",
+          "nvidia-vl-rerank",
+          "nvidia-nemoretriever-parse",
+          "nvidia-nemotron-parse"
         ],
         "subgroups": []
       },
@@ -881,7 +922,10 @@
           "iot-hub.cloudToDevice",
           "iot-hub.deviceInvoke",
           "aws-lambda",
-          "aws-elb"
+          "aws-elb",
+          "nvidia-ngc-catalog-search",
+          "nvidia-ngc-asset-metadata",
+          "nvidia-cloud-function-invoke"
         ],
         "subgroups": []
       },
@@ -1102,7 +1146,9 @@
           "usgs-earthquakes",
           "usgs-realtime",
           "weather-search",
-          "wttr"
+          "wttr",
+          "nvidia-corrdiff-infer",
+          "nvidia-fourcastnet-infer"
         ],
         "subgroups": []
       },
@@ -1903,7 +1949,12 @@
           "url-scan-get-result",
           "url-scan-submit",
           "cloudflare-pages",
-          "aws-acm"
+          "aws-acm",
+          "nvidia-gliner-pii",
+          "nvidia-jailbreak-detect",
+          "nvidia-content-safety",
+          "nvidia-topic-control",
+          "nvidia-safety-guard"
         ],
         "subgroups": []
       },

@@ -1957,6 +1957,435 @@
     }
   },
   {
+    "id": "nvidia-nim-chat-completion",
+    "name": "NVIDIA NIM Chat Completion",
+    "type": "tool",
+    "description": "TO BE added - Run chat-style language model prompts through NVIDIA NIM.",
+    "slogan": "nvidia-nim-chat-completion",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-nim-chat-completion"]
+    }
+  },
+  {
+    "id": "nvidia-nim-text-generation",
+    "name": "NVIDIA NIM Text Generation",
+    "type": "tool",
+    "description": "TO BE added - Generate text with NVIDIA hosted language models.",
+    "slogan": "nvidia-nim-text-generation",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-nim-text-generation"]
+    }
+  },
+  {
+    "id": "nvidia-nim-code-generation",
+    "name": "NVIDIA NIM Code Generation",
+    "type": "tool",
+    "description": "TO BE added - Generate or transform code using NVIDIA NIM models.",
+    "slogan": "nvidia-nim-code-generation",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-nim-code-generation"]
+    }
+  },
+  {
+    "id": "nvidia-riva-translate",
+    "name": "NVIDIA Riva Translate",
+    "type": "tool",
+    "description": "TO BE added - Translate text or speech-oriented content with NVIDIA Riva.",
+    "slogan": "nvidia-riva-translate",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-riva-translate"]
+    }
+  },
+  {
+    "id": "nvidia-text-embed",
+    "name": "NVIDIA Text Embed",
+    "type": "tool",
+    "description": "TO BE added - Create vector embeddings for text search and retrieval.",
+    "slogan": "nvidia-text-embed",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-text-embed"]
+    }
+  },
+  {
+    "id": "nvidia-code-embed",
+    "name": "NVIDIA Code Embed",
+    "type": "tool",
+    "description": "TO BE added - Create vector embeddings for source code search and retrieval.",
+    "slogan": "nvidia-code-embed",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-code-embed"]
+    }
+  },
+  {
+    "id": "nvidia-vl-embed",
+    "name": "NVIDIA Vision-Language Embed",
+    "type": "tool",
+    "description": "TO BE added - Create multimodal embeddings for image and text retrieval.",
+    "slogan": "nvidia-vl-embed",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-vl-embed"]
+    }
+  },
+  {
+    "id": "nvidia-rerank",
+    "name": "NVIDIA Rerank",
+    "type": "tool",
+    "description": "TO BE added - Rerank retrieved text passages for better relevance.",
+    "slogan": "nvidia-rerank",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-rerank"]
+    }
+  },
+  {
+    "id": "nvidia-vl-rerank",
+    "name": "NVIDIA Vision-Language Rerank",
+    "type": "tool",
+    "description": "TO BE added - Rerank multimodal search results using image and text context.",
+    "slogan": "nvidia-vl-rerank",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-vl-rerank"]
+    }
+  },
+  {
+    "id": "nvidia-nemoretriever-parse",
+    "name": "NVIDIA NeMo Retriever Parse",
+    "type": "tool",
+    "description": "TO BE added - Parse documents for retrieval and RAG pipelines.",
+    "slogan": "nvidia-nemoretriever-parse",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-nemoretriever-parse"]
+    }
+  },
+  {
+    "id": "nvidia-nemotron-parse",
+    "name": "NVIDIA Nemotron Parse",
+    "type": "tool",
+    "description": "TO BE added - Extract structured information from documents or text.",
+    "slogan": "nvidia-nemotron-parse",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-nemotron-parse"]
+    }
+  },
+  {
+    "id": "nvidia-gliner-pii",
+    "name": "NVIDIA GLiNER PII Detection",
+    "type": "tool",
+    "description": "TO BE added - Detect personally identifiable information in text.",
+    "slogan": "nvidia-gliner-pii",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-gliner-pii"]
+    }
+  },
+  {
+    "id": "nvidia-jailbreak-detect",
+    "name": "NVIDIA Jailbreak Detection",
+    "type": "tool",
+    "description": "TO BE added - Detect prompt attacks or jailbreak attempts.",
+    "slogan": "nvidia-jailbreak-detect",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-jailbreak-detect"]
+    }
+  },
+  {
+    "id": "nvidia-content-safety",
+    "name": "NVIDIA Content Safety",
+    "type": "tool",
+    "description": "TO BE added - Classify text for safety and policy risk.",
+    "slogan": "nvidia-content-safety",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-content-safety"]
+    }
+  },
+  {
+    "id": "nvidia-topic-control",
+    "name": "NVIDIA Topic Control",
+    "type": "tool",
+    "description": "TO BE added - Check whether generated or user text stays within allowed topics.",
+    "slogan": "nvidia-topic-control",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-topic-control"]
+    }
+  },
+  {
+    "id": "nvidia-safety-guard",
+    "name": "NVIDIA Safety Guard",
+    "type": "tool",
+    "description": "TO BE added - Apply safety guardrails around model inputs and outputs.",
+    "slogan": "nvidia-safety-guard",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-safety-guard"]
+    }
+  },
+  {
+    "id": "nvidia-vila",
+    "name": "NVIDIA VILA",
+    "type": "tool",
+    "description": "TO BE added - Analyze images with a vision-language model.",
+    "slogan": "nvidia-vila",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-vila"]
+    }
+  },
+  {
+    "id": "nvidia-nv-dinov2",
+    "name": "NVIDIA NV-DINOv2",
+    "type": "tool",
+    "description": "TO BE added - Extract image features for vision understanding workflows.",
+    "slogan": "nvidia-nv-dinov2",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-nv-dinov2"]
+    }
+  },
+  {
+    "id": "nvidia-grounding-dino",
+    "name": "NVIDIA Grounding DINO",
+    "type": "tool",
+    "description": "TO BE added - Detect objects in images using text prompts.",
+    "slogan": "nvidia-grounding-dino",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-grounding-dino"]
+    }
+  },
+  {
+    "id": "nvidia-retail-object-detection",
+    "name": "NVIDIA Retail Object Detection",
+    "type": "tool",
+    "description": "TO BE added - Detect retail products or shelf objects in images.",
+    "slogan": "nvidia-retail-object-detection",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-retail-object-detection"]
+    }
+  },
+  {
+    "id": "nvidia-visual-changenet",
+    "name": "NVIDIA Visual ChangeNet",
+    "type": "tool",
+    "description": "TO BE added - Detect visual changes between image pairs.",
+    "slogan": "nvidia-visual-changenet",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-visual-changenet"]
+    }
+  },
+  {
+    "id": "nvidia-ai-image-detect",
+    "name": "NVIDIA AI Image Detection",
+    "type": "tool",
+    "description": "TO BE added - Detect whether an image may have been generated by AI.",
+    "slogan": "nvidia-ai-image-detect",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-ai-image-detect"]
+    }
+  },
+  {
+    "id": "nvidia-deepfake-image-detect",
+    "name": "NVIDIA Deepfake Image Detection",
+    "type": "tool",
+    "description": "TO BE added - Detect manipulated or synthetic face imagery.",
+    "slogan": "nvidia-deepfake-image-detect",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-deepfake-image-detect"]
+    }
+  },
+  {
+    "id": "nvidia-flux-generate",
+    "name": "NVIDIA FLUX Generate",
+    "type": "tool",
+    "description": "TO BE added - Generate images from text prompts.",
+    "slogan": "nvidia-flux-generate",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-flux-generate"]
+    }
+  },
+  {
+    "id": "nvidia-flux-kontext-edit",
+    "name": "NVIDIA FLUX Kontext Edit",
+    "type": "tool",
+    "description": "TO BE added - Edit images using text-guided instructions.",
+    "slogan": "nvidia-flux-kontext-edit",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-flux-kontext-edit"]
+    }
+  },
+  {
+    "id": "nvidia-stable-diffusion-generate",
+    "name": "NVIDIA Stable Diffusion Generate",
+    "type": "tool",
+    "description": "TO BE added - Generate images with Stable Diffusion models.",
+    "slogan": "nvidia-stable-diffusion-generate",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-stable-diffusion-generate"]
+    }
+  },
+  {
+    "id": "nvidia-stable-video-diffusion",
+    "name": "NVIDIA Stable Video Diffusion",
+    "type": "tool",
+    "description": "TO BE added - Generate short video outputs from image or prompt inputs.",
+    "slogan": "nvidia-stable-video-diffusion",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-stable-video-diffusion"]
+    }
+  },
+  {
+    "id": "nvidia-cosmos-text2world",
+    "name": "NVIDIA Cosmos Text2World",
+    "type": "tool",
+    "description": "TO BE added - Generate world simulation video from text prompts.",
+    "slogan": "nvidia-cosmos-text2world",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-cosmos-text2world"]
+    }
+  },
+  {
+    "id": "nvidia-trellis-3d-generate",
+    "name": "NVIDIA TRELLIS 3D Generate",
+    "type": "tool",
+    "description": "TO BE added - Generate 3D assets from image or text inputs.",
+    "slogan": "nvidia-trellis-3d-generate",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-trellis-3d-generate"]
+    }
+  },
+  {
+    "id": "nvidia-cuopt-solve",
+    "name": "NVIDIA cuOpt Solve",
+    "type": "tool",
+    "description": "TO BE added - Solve routing and optimization problems.",
+    "slogan": "nvidia-cuopt-solve",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-cuopt-solve"]
+    }
+  },
+  {
+    "id": "nvidia-cuopt-status",
+    "name": "NVIDIA cuOpt Status",
+    "type": "tool",
+    "description": "TO BE added - Check the status of long-running cuOpt solve jobs.",
+    "slogan": "nvidia-cuopt-status",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-cuopt-status"]
+    }
+  },
+  {
+    "id": "nvidia-corrdiff-infer",
+    "name": "NVIDIA CorrDiff Infer",
+    "type": "tool",
+    "description": "TO BE added - Run weather and climate downscaling inference.",
+    "slogan": "nvidia-corrdiff-infer",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-corrdiff-infer"]
+    }
+  },
+  {
+    "id": "nvidia-fourcastnet-infer",
+    "name": "NVIDIA FourCastNet Infer",
+    "type": "tool",
+    "description": "TO BE added - Run AI weather forecasting inference.",
+    "slogan": "nvidia-fourcastnet-infer",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-fourcastnet-infer"]
+    }
+  },
+  {
+    "id": "nvidia-bevformer",
+    "name": "NVIDIA BEVFormer",
+    "type": "tool",
+    "description": "TO BE added - Run camera-based 3D perception for autonomous driving workflows.",
+    "slogan": "nvidia-bevformer",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-bevformer"]
+    }
+  },
+  {
+    "id": "nvidia-sparsedrive",
+    "name": "NVIDIA SparseDrive",
+    "type": "tool",
+    "description": "TO BE added - Run sparse autonomous-driving perception and planning inference.",
+    "slogan": "nvidia-sparsedrive",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-sparsedrive"]
+    }
+  },
+  {
+    "id": "nvidia-streampetr",
+    "name": "NVIDIA StreamPETR",
+    "type": "tool",
+    "description": "TO BE added - Run streaming 3D object detection for driving scenes.",
+    "slogan": "nvidia-streampetr",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-streampetr"]
+    }
+  },
+  {
+    "id": "nvidia-ngc-catalog-search",
+    "name": "NVIDIA NGC Catalog Search",
+    "type": "tool",
+    "description": "TO BE added - Search NVIDIA NGC catalog assets.",
+    "slogan": "nvidia-ngc-catalog-search",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-ngc-catalog-search"]
+    }
+  },
+  {
+    "id": "nvidia-ngc-asset-metadata",
+    "name": "NVIDIA NGC Asset Metadata",
+    "type": "tool",
+    "description": "TO BE added - Fetch metadata for NVIDIA NGC catalog assets.",
+    "slogan": "nvidia-ngc-asset-metadata",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-ngc-asset-metadata"]
+    }
+  },
+  {
+    "id": "nvidia-cloud-function-invoke",
+    "name": "NVIDIA Cloud Function Invoke",
+    "type": "tool",
+    "description": "TO BE added - Invoke a deployed NVIDIA cloud function.",
+    "slogan": "nvidia-cloud-function-invoke",
+    "icon": "icons/nvidia.svg",
+    "integrations": {
+      "automation": ["nvidia-cloud-function-invoke"]
+    }
+  },
+  {
     "id": "bionemo",
     "name": "BioNemo",
     "type": "tool",
