@@ -1814,146 +1814,146 @@
     }
   },
   {
-    "id": "bionemo-alphafold2-multimer",
+    "id": "nvidia-bionemo-alphafold2-multimer",
     "name": "BioNemo AlphaFold2 Multimer",
     "type": "tool",
     "description": "AlphaFold2 Multimer - predict 3D structures of protein complexes using NVIDIA BioNeMo",
-    "slogan": "bionemo-alphafold2-multimer",
+    "slogan": "nvidia-bionemo-alphafold2-multimer",
     "icon": "icons/nvidia.svg",
     "integrations": {
-      "automation": ["bionemo-alphafold2-multimer"]
+      "automation": ["nvidia-bionemo-alphafold2-multimer"]
     }
   },
   {
-    "id": "bionemo-alphafold2-predict",
+    "id": "nvidia-bionemo-alphafold2-predict",
     "name": "BioNemo AlphaFold2 Predict",
     "type": "tool",
     "description": "AlphaFold2 Predict - predict single protein 3D structures using NVIDIA BioNeMo",
-    "slogan": "bionemo-alphafold2-predict",
+    "slogan": "nvidia-bionemo-alphafold2-predict",
     "icon": "icons/nvidia.svg",
     "integrations": {
-      "automation": ["bionemo-alphafold2-predict"]
+      "automation": ["nvidia-bionemo-alphafold2-predict"]
     }
   },
   {
-    "id": "bionemo-boltz2-predict",
+    "id": "nvidia-bionemo-boltz2-predict",
     "name": "BioNemo Boltz2 Predict",
     "type": "tool",
     "description": "Boltz2 Predict - biomolecular structure prediction using NVIDIA BioNeMo",
-    "slogan": "bionemo-boltz2-predict",
+    "slogan": "nvidia-bionemo-boltz2-predict",
     "icon": "icons/nvidia.svg",
     "integrations": {
-      "automation": ["bionemo-boltz2-predict"]
+      "automation": ["nvidia-bionemo-boltz2-predict"]
     }
   },
   {
-    "id": "bionemo-diffdock-dock",
+    "id": "nvidia-bionemo-diffdock-dock",
     "name": "BioNemo DiffDock Dock",
     "type": "tool",
     "description": "DiffDock molecular docking - predict protein-ligand binding poses using NVIDIA BioNeMo",
-    "slogan": "bionemo-diffdock-dock",
+    "slogan": "nvidia-bionemo-diffdock-dock",
     "icon": "icons/nvidia.svg",
     "integrations": {
-      "automation": ["bionemo-diffdock-dock"]
+      "automation": ["nvidia-bionemo-diffdock-dock"]
     }
   },
   {
-    "id": "bionemo-esm2-embed",
+    "id": "nvidia-bionemo-esm2-embed",
     "name": "BioNemo ESM2 Embed",
     "type": "tool",
     "description": "ESM-2 protein embeddings - generate protein sequence representations using NVIDIA BioNeMo",
-    "slogan": "bionemo-esm2-embed",
+    "slogan": "nvidia-bionemo-esm2-embed",
     "icon": "icons/nvidia.svg",
     "integrations": {
-      "automation": ["bionemo-esm2-embed"]
+      "automation": ["nvidia-bionemo-esm2-embed"]
     }
   },
   {
-    "id": "bionemo-esmfold-predict",
+    "id": "nvidia-bionemo-esmfold-predict",
     "name": "BioNemo ESMFold Predict",
     "type": "tool",
     "description": "ESMFold protein structure prediction - fast single-sequence folding using NVIDIA BioNeMo",
-    "slogan": "bionemo-esmfold-predict",
+    "slogan": "nvidia-bionemo-esmfold-predict",
     "icon": "icons/nvidia.svg",
     "integrations": {
-      "automation": ["bionemo-esmfold-predict"]
+      "automation": ["nvidia-bionemo-esmfold-predict"]
     }
   },
   {
-    "id": "bionemo-evo2-generate",
+    "id": "nvidia-bionemo-evo2-generate",
     "name": "BioNemo Evo2 Generate",
     "type": "tool",
     "description": "Evo2 sequence generation - generate biological sequences using NVIDIA BioNeMo",
-    "slogan": "bionemo-evo2-generate",
+    "slogan": "nvidia-bionemo-evo2-generate",
     "icon": "icons/nvidia.svg",
     "integrations": {
-      "automation": ["bionemo-evo2-generate"]
+      "automation": ["nvidia-bionemo-evo2-generate"]
     }
   },
   {
-    "id": "bionemo-filter-molecules",
+    "id": "nvidia-bionemo-filter-molecules",
     "name": "BioNemo Filter Molecules",
     "type": "tool",
     "description": "Molecule filter - screen and filter chemical compounds using NVIDIA BioNeMo",
-    "slogan": "bionemo-filter-molecules",
+    "slogan": "nvidia-bionemo-filter-molecules",
     "icon": "icons/nvidia.svg",
     "integrations": {
-      "automation": ["bionemo-filter-molecules"]
+      "automation": ["nvidia-bionemo-filter-molecules"]
     }
   },
   {
-    "id": "bionemo-genmol-generate",
+    "id": "nvidia-bionemo-genmol-generate",
     "name": "BioNemo GenMol Generate",
     "type": "tool",
     "description": "GenMol molecule generation - design novel molecules using NVIDIA BioNeMo AI",
-    "slogan": "bionemo-genmol-generate",
+    "slogan": "nvidia-bionemo-genmol-generate",
     "icon": "icons/nvidia.svg",
     "integrations": {
-      "automation": ["bionemo-genmol-generate"]
+      "automation": ["nvidia-bionemo-genmol-generate"]
     }
   },
   {
-    "id": "bionemo-molmim-generate",
+    "id": "nvidia-bionemo-molmim-generate",
     "name": "BioNemo MolMIM Generate",
     "type": "tool",
     "description": "MolMIM molecular generation - create optimized molecules using NVIDIA BioNeMo",
-    "slogan": "bionemo-molmim-generate",
+    "slogan": "nvidia-bionemo-molmim-generate",
     "icon": "icons/nvidia.svg",
     "integrations": {
-      "automation": ["bionemo-molmim-generate"]
+      "automation": ["nvidia-bionemo-molmim-generate"]
     }
   },
   {
-    "id": "bionemo-msa-search",
+    "id": "nvidia-bionemo-msa-search",
     "name": "BioNemo MSA Search",
     "type": "tool",
     "description": "MSA sequence alignment - multiple sequence alignment search using NVIDIA BioNeMo",
-    "slogan": "bionemo-msa-search",
+    "slogan": "nvidia-bionemo-msa-search",
     "icon": "icons/nvidia.svg",
     "integrations": {
-      "automation": ["bionemo-msa-search"]
+      "automation": ["nvidia-bionemo-msa-search"]
     }
   },
   {
-    "id": "bionemo-openfold2-predict",
+    "id": "nvidia-bionemo-openfold2-predict",
     "name": "BioNemo OpenFold2 Predict",
     "type": "tool",
     "description": "OpenFold2 structure prediction - predict protein structures using NVIDIA BioNeMo",
-    "slogan": "bionemo-openfold2-predict",
+    "slogan": "nvidia-bionemo-openfold2-predict",
     "icon": "icons/nvidia.svg",
     "integrations": {
-      "automation": ["bionemo-openfold2-predict"]
+      "automation": ["nvidia-bionemo-openfold2-predict"]
     }
   },
   {
-    "id": "bionemo-openfold3-predict",
+    "id": "nvidia-bionemo-openfold3-predict",
     "name": "BioNemo OpenFold3 Predict",
     "type": "tool",
     "description": "OpenFold3 structure prediction - next-gen protein folding using NVIDIA BioNeMo",
-    "slogan": "bionemo-openfold3-predict",
+    "slogan": "nvidia-bionemo-openfold3-predict",
     "icon": "icons/nvidia.svg",
     "integrations": {
-      "automation": ["bionemo-openfold3-predict"]
+      "automation": ["nvidia-bionemo-openfold3-predict"]
     }
   },
   {
@@ -1965,10 +1965,10 @@
     "icon": "icons/nvidia.svg",
     "integrations": {
       "automation": [
-        "bionemo-proteinmpnn-design",
-        "bionemo-rfdiffusion-generate",
-        "bionemo-smiles-to-sdf",
-        "bionemo-vista3d-segment"
+        "nvidia-bionemo-proteinmpnn-design",
+        "nvidia-bionemo-rfdiffusion-generate",
+        "nvidia-bionemo-smiles-to-sdf",
+        "nvidia-bionemo-vista3d-segment"
       ]
     }
   },
