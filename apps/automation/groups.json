@@ -486,7 +486,9 @@
           "google-speech",
           "aws-rekognition",
           "aws-textract",
-          "aws-transcribe"
+          "aws-transcribe",
+          "azure-document-intelligence",
+          "google-document-ai"
         ],
         "subgroups": []
       },
