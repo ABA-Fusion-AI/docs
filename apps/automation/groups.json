@@ -944,11 +944,6 @@
     "nodes": [],
     "subgroups": [
       {
-        "name": "Scraping",
-        "nodes": ["playwright-browser"],
-        "subgroups": []
-      },
-      {
         "name": "News",
         "nodes": [
           "akhbarona",
@@ -1182,7 +1177,7 @@
       },
       {
         "name": "General",
-        "nodes": ["serpapi", "tavily"],
+        "nodes": ["serpapi", "tavily", "playwright-browser"],
         "subgroups": []
       },
       {
