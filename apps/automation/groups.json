@@ -6,6 +6,11 @@
     "nodes": [],
     "subgroups": [
       {
+        "name": "Scraping",
+        "nodes": ["playwright-browser"],
+        "subgroups": []
+      },
+      {
         "name": "IoT & Industrial Ingress",
         "nodes": [
           "bacnet-trigger",
@@ -24,19 +29,12 @@
       },
       {
         "name": "Healthcare Ingress",
-        "nodes": [
-          "fhir-subscription-trigger",
-          "hl7-webhook-trigger"
-        ],
+        "nodes": ["fhir-subscription-trigger", "hl7-webhook-trigger"],
         "subgroups": []
       },
       {
         "name": "Manual & Scheduled",
-        "nodes": [
-          "cron",
-          "interval",
-          "manual-trigger"
-        ],
+        "nodes": ["cron", "interval", "manual-trigger"],
         "subgroups": []
       },
       {
@@ -122,46 +120,27 @@
     "subgroups": [
       {
         "name": "Inter-Workflow",
-        "nodes": [
-          "sub",
-          "pub"
-        ],
+        "nodes": ["sub", "pub"],
         "subgroups": []
       },
       {
         "name": "Flow Control",
-        "nodes": [
-          "once",
-          "take",
-          "merge",
-          "switch",
-          "if-else"
-        ],
+        "nodes": ["once", "take", "merge", "switch", "if-else"],
         "subgroups": []
       },
       {
         "name": "Timing & Rate Control",
-        "nodes": [
-          "throttle",
-          "delay",
-          "debounce-time",
-          "throttle-time"
-        ],
+        "nodes": ["throttle", "delay", "debounce-time", "throttle-time"],
         "subgroups": []
       },
       {
         "name": "Iteration",
-        "nodes": [
-          "loop"
-        ],
+        "nodes": ["loop"],
         "subgroups": []
       },
       {
         "name": "Functions & Variables",
-        "nodes": [
-          "function",
-          "set-variable"
-        ],
+        "nodes": ["function", "set-variable"],
         "subgroups": []
       }
     ]
@@ -272,9 +251,7 @@
       },
       {
         "name": "Validation & Cleaning",
-        "nodes": [
-          "html-sanitize"
-        ],
+        "nodes": ["html-sanitize"],
         "subgroups": []
       },
       {
@@ -329,10 +306,7 @@
       },
       {
         "name": "NVIDIA Upcoming",
-        "nodes": [
-          "nvidia-cuopt-solve",
-          "nvidia-cuopt-status"
-        ],
+        "nodes": ["nvidia-cuopt-solve", "nvidia-cuopt-status"],
         "subgroups": []
       },
       {
@@ -634,11 +608,7 @@
       },
       {
         "name": "Cache & Memory",
-        "nodes": [
-          "rymo-cache",
-          "redis-publish",
-          "redis-action"
-        ],
+        "nodes": ["rymo-cache", "redis-publish", "redis-action"],
         "subgroups": []
       }
     ]
@@ -778,10 +748,7 @@
       },
       {
         "name": "FTP/SFTP",
-        "nodes": [
-          "ftp-sftp-write-file",
-          "sftp"
-        ],
+        "nodes": ["ftp-sftp-write-file", "sftp"],
         "subgroups": []
       },
       {
@@ -960,27 +927,17 @@
       },
       {
         "name": "CI/CD",
-        "nodes": [
-          "azure-devops",
-          "jenkins"
-        ],
+        "nodes": ["azure-devops", "jenkins"],
         "subgroups": []
       },
       {
         "name": "Version Control",
-        "nodes": [
-          "digitalocean-app",
-          "git",
-          "github",
-          "gitlab"
-        ],
+        "nodes": ["digitalocean-app", "git", "github", "gitlab"],
         "subgroups": []
       },
       {
         "name": "Monitoring",
-        "nodes": [
-          "grafana"
-        ],
+        "nodes": ["grafana"],
         "subgroups": []
       }
     ]
@@ -1028,19 +985,12 @@
       },
       {
         "name": "BBC",
-        "nodes": [
-          "bbc-co-uk",
-          "bbc-com",
-          "bbci-co-uk"
-        ],
+        "nodes": ["bbc-co-uk", "bbc-com", "bbci-co-uk"],
         "subgroups": []
       },
       {
         "name": "Bing",
-        "nodes": [
-          "bing-copilot-search",
-          "bing-search"
-        ],
+        "nodes": ["bing-copilot-search", "bing-search"],
         "subgroups": []
       },
       {
@@ -1060,19 +1010,12 @@
       },
       {
         "name": "Government",
-        "nodes": [
-          "census-gov",
-          "federal-register",
-          "nhtsa",
-          "parlement-maroc"
-        ],
+        "nodes": ["census-gov", "federal-register", "nhtsa", "parlement-maroc"],
         "subgroups": []
       },
       {
         "name": "Scientific Search",
-        "nodes": [
-          "cern-opendata"
-        ],
+        "nodes": ["cern-opendata"],
         "subgroups": []
       },
       {
@@ -1087,9 +1030,7 @@
       },
       {
         "name": "Emergency Management",
-        "nodes": [
-          "copernicus-ems"
-        ],
+        "nodes": ["copernicus-ems"],
         "subgroups": []
       },
       {
@@ -1156,94 +1097,62 @@
       },
       {
         "name": "Reference",
-        "nodes": [
-          "free-dictionary",
-          "quotable"
-        ],
+        "nodes": ["free-dictionary", "quotable"],
         "subgroups": []
       },
       {
         "name": "Utilities",
-        "nodes": [
-          "genderize",
-          "nationalize"
-        ],
+        "nodes": ["genderize", "nationalize"],
         "subgroups": []
       },
       {
         "name": "Icons",
-        "nodes": [
-          "iconhorse"
-        ],
+        "nodes": ["iconhorse"],
         "subgroups": []
       },
       {
         "name": "Space",
-        "nodes": [
-          "launch-library-2",
-          "spacex-launches"
-        ],
+        "nodes": ["launch-library-2", "spacex-launches"],
         "subgroups": []
       },
       {
         "name": "Media",
-        "nodes": [
-          "listennotes"
-        ],
+        "nodes": ["listennotes"],
         "subgroups": []
       },
       {
         "name": "Marches Publics",
-        "nodes": [
-          "marches-publics"
-        ],
+        "nodes": ["marches-publics"],
         "subgroups": []
       },
       {
         "name": "Blogging",
-        "nodes": [
-          "medium"
-        ],
+        "nodes": ["medium"],
         "subgroups": []
       },
       {
         "name": "Environement",
-        "nodes": [
-          "mrds"
-        ],
+        "nodes": ["mrds"],
         "subgroups": []
       },
       {
         "name": "Nasa",
-        "nodes": [
-          "nasa-apod",
-          "nasa-media-search",
-          "nasa"
-        ],
+        "nodes": ["nasa-apod", "nasa-media-search", "nasa"],
         "subgroups": []
       },
       {
         "name": "Content & Feeds",
-        "nodes": [
-          "news-article",
-          "rss-feed",
-          "wikipedia"
-        ],
+        "nodes": ["news-article", "rss-feed", "wikipedia"],
         "subgroups": []
       },
       {
         "name": "Nobel Prize",
-        "nodes": [
-          "nobel-prize"
-        ],
+        "nodes": ["nobel-prize"],
         "subgroups": []
       },
       {
         "name": "Book Search",
-        "nodes": [
-          "open-library-search",
-          "project-gutenberg-search"
-        ],
+        "nodes": ["open-library-search", "project-gutenberg-search"],
         "subgroups": []
       },
       {
@@ -1258,68 +1167,47 @@
       },
       {
         "name": "Quran",
-        "nodes": [
-          "quran"
-        ],
+        "nodes": ["quran"],
         "subgroups": []
       },
       {
         "name": "Social Media",
-        "nodes": [
-          "reddit-api"
-        ],
+        "nodes": ["reddit-api"],
         "subgroups": []
       },
       {
         "name": "Rekrute",
-        "nodes": [
-          "rekrute-job-parser",
-          "rekrute-scraper"
-        ],
+        "nodes": ["rekrute-job-parser", "rekrute-scraper"],
         "subgroups": []
       },
       {
         "name": "General",
-        "nodes": [
-          "serpapi",
-          "tavily"
-        ],
+        "nodes": ["serpapi", "tavily"],
         "subgroups": []
       },
       {
         "name": "Stock Media",
-        "nodes": [
-          "shutterstock"
-        ],
+        "nodes": ["shutterstock"],
         "subgroups": []
       },
       {
         "name": "Music",
-        "nodes": [
-          "soundcloud"
-        ],
+        "nodes": ["soundcloud"],
         "subgroups": []
       },
       {
         "name": "USA Patents",
-        "nodes": [
-          "usa-patents",
-          "google-patents-search"
-        ],
+        "nodes": ["usa-patents", "google-patents-search"],
         "subgroups": []
       },
       {
         "name": "Knowledge Base",
-        "nodes": [
-          "wikidata"
-        ],
+        "nodes": ["wikidata"],
         "subgroups": []
       },
       {
         "name": "Name Analysis",
-        "nodes": [
-          "agify"
-        ],
+        "nodes": ["agify"],
         "subgroups": []
       },
       {
@@ -1394,10 +1282,7 @@
       },
       {
         "name": "Economic & Public Data",
-        "nodes": [
-          "fmi",
-          "world-bank-api"
-        ],
+        "nodes": ["fmi", "world-bank-api"],
         "subgroups": []
       }
     ]
@@ -1424,11 +1309,7 @@
       },
       {
         "name": "Other Medical Sources",
-        "nodes": [
-          "biorxiv",
-          "pmc",
-          "google-scholar"
-        ],
+        "nodes": ["biorxiv", "pmc", "google-scholar"],
         "subgroups": []
       },
       {
@@ -1446,118 +1327,82 @@
       },
       {
         "name": "FHIR",
-        "nodes": [
-          "bonfhir-client"
-        ],
+        "nodes": ["bonfhir-client"],
         "subgroups": []
       },
       {
         "name": "Chemistry & Life Sciences",
-        "nodes": [
-          "cactus",
-          "rsc"
-        ],
+        "nodes": ["cactus", "rsc"],
         "subgroups": []
       },
       {
         "name": "Chemistry",
-        "nodes": [
-          "chembl"
-        ],
+        "nodes": ["chembl"],
         "subgroups": []
       },
       {
         "name": "Clinical Databases",
-        "nodes": [
-          "clinical-tables-search"
-        ],
+        "nodes": ["clinical-tables-search"],
         "subgroups": []
       },
       {
         "name": "Clinical Trials",
-        "nodes": [
-          "clinical-trials-search"
-        ],
+        "nodes": ["clinical-trials-search"],
         "subgroups": []
       },
       {
         "name": "Biodiversity",
-        "nodes": [
-          "gbif-occurrence",
-          "gbif",
-          "perenual",
-          "plantnet"
-        ],
+        "nodes": ["gbif-occurrence", "gbif", "perenual", "plantnet"],
         "subgroups": []
       },
       {
         "name": "Health Topics",
-        "nodes": [
-          "health-topics-search"
-        ],
+        "nodes": ["health-topics-search"],
         "subgroups": []
       },
       {
         "name": "Healthcare Integration",
-        "nodes": [
-          "hl7-client"
-        ],
+        "nodes": ["hl7-client"],
         "subgroups": []
       },
       {
         "name": "ICD",
-        "nodes": [
-          "icd11-search"
-        ],
+        "nodes": ["icd11-search"],
         "subgroups": []
       },
       {
         "name": "Médicaments API FR",
-        "nodes": [
-          "medicaments-api"
-        ],
+        "nodes": ["medicaments-api"],
         "subgroups": []
       },
       {
         "name": "Pre-print Articles",
-        "nodes": [
-          "medrxiv-search"
-        ],
+        "nodes": ["medrxiv-search"],
         "subgroups": []
       },
       {
         "name": "Mendeley",
-        "nodes": [
-          "mendeley"
-        ],
+        "nodes": ["mendeley"],
         "subgroups": []
       },
       {
         "name": "OpenFoodFacts",
-        "nodes": [
-          "openfoodfacts"
-        ],
+        "nodes": ["openfoodfacts"],
         "subgroups": []
       },
       {
         "name": "Imaging / PACS",
-        "nodes": [
-          "orthanc"
-        ],
+        "nodes": ["orthanc"],
         "subgroups": []
       },
       {
         "name": "Patient Data",
-        "nodes": [
-          "patientview"
-        ],
+        "nodes": ["patientview"],
         "subgroups": []
       },
       {
         "name": "Medicaments",
-        "nodes": [
-          "pharmamaroc"
-        ],
+        "nodes": ["pharmamaroc"],
         "subgroups": []
       },
       {
@@ -1572,30 +1417,22 @@
       },
       {
         "name": "RCSB",
-        "nodes": [
-          "rcsb-pdb"
-        ],
+        "nodes": ["rcsb-pdb"],
         "subgroups": []
       },
       {
         "name": "Diagnosis",
-        "nodes": [
-          "symptomator"
-        ],
+        "nodes": ["symptomator"],
         "subgroups": []
       },
       {
         "name": "WHO GHO",
-        "nodes": [
-          "who-gho-odata"
-        ],
+        "nodes": ["who-gho-odata"],
         "subgroups": []
       },
       {
         "name": "Zotero",
-        "nodes": [
-          "zotero"
-        ],
+        "nodes": ["zotero"],
         "subgroups": []
       },
       {
@@ -1861,9 +1698,7 @@
       },
       {
         "name": "CMS & Publishing",
-        "nodes": [
-          "wordpress"
-        ],
+        "nodes": ["wordpress"],
         "subgroups": []
       }
     ]
@@ -1920,12 +1755,7 @@
       },
       {
         "name": "Identity & Access",
-        "nodes": [
-          "keycloak",
-          "totp",
-          "aws-iam",
-          "aws-cognito"
-        ],
+        "nodes": ["keycloak", "totp", "aws-iam", "aws-cognito"],
         "subgroups": []
       },
       {
@@ -1988,58 +1818,37 @@
     "subgroups": [
       {
         "name": "General Utilities",
-        "nodes": [
-          "performance-prompt",
-          "log",
-          "test-node"
-        ],
+        "nodes": ["performance-prompt", "log", "test-node"],
         "subgroups": []
       },
       {
         "name": "Jokes",
-        "nodes": [
-          "dad-jokes"
-        ],
+        "nodes": ["dad-jokes"],
         "subgroups": []
       },
       {
         "name": "Games",
-        "nodes": [
-          "deck-of-cards",
-          "dnd5e",
-          "ffxiv",
-          "open-trivia"
-        ],
+        "nodes": ["deck-of-cards", "dnd5e", "ffxiv", "open-trivia"],
         "subgroups": []
       },
       {
         "name": "Memes",
-        "nodes": [
-          "imgflip"
-        ],
+        "nodes": ["imgflip"],
         "subgroups": []
       },
       {
         "name": "Anime",
-        "nodes": [
-          "jikan"
-        ],
+        "nodes": ["jikan"],
         "subgroups": []
       },
       {
         "name": "Quotes",
-        "nodes": [
-          "kanye-rest",
-          "advice-slip"
-        ],
+        "nodes": ["kanye-rest", "advice-slip"],
         "subgroups": []
       },
       {
         "name": "TV Shows",
-        "nodes": [
-          "rick-and-morty",
-          "tvmaze"
-        ],
+        "nodes": ["rick-and-morty", "tvmaze"],
         "subgroups": []
       }
     ]
