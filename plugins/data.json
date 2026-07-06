@@ -1,5 +1,16 @@
 [
   {
+    "id": "scraping",
+    "name": "scraping",
+    "type": "action",
+    "description": "Run a Playwright/Chromium script and capture the result plus a screenshot",
+    "slogan": "Playwright Browser",
+    "icon": "icons/playwright.svg",
+    "integrations": {
+      "automation": ["playwright-browser"]
+    }
+  },
+  {
     "id": "performance",
     "name": "performance",
     "type": "action",
