@@ -938,24 +938,16 @@
     ]
   },
   {
-    "name": "Web",
+    "name": "Web Search & Information",
     "icon": "groupsicons/websearch",
-    "color": "#0891b2",
+    "color": "#15803d",
     "nodes": [],
     "subgroups": [
       {
         "name": "Scraping",
         "nodes": ["playwright-browser"],
         "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "Web Search & Information",
-    "icon": "groupsicons/websearch",
-    "color": "#15803d",
-    "nodes": [],
-    "subgroups": [
+      },
       {
         "name": "News",
         "nodes": [
