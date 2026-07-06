@@ -6,11 +6,6 @@
     "nodes": [],
     "subgroups": [
       {
-        "name": "Scraping",
-        "nodes": ["playwright-browser"],
-        "subgroups": []
-      },
-      {
         "name": "IoT & Industrial Ingress",
         "nodes": [
           "bacnet-trigger",
@@ -938,6 +933,19 @@
       {
         "name": "Monitoring",
         "nodes": ["grafana"],
+        "subgroups": []
+      }
+    ]
+  },
+  {
+    "name": "Web",
+    "icon": "groupsicons/websearch",
+    "color": "#0891b2",
+    "nodes": [],
+    "subgroups": [
+      {
+        "name": "Scraping",
+        "nodes": ["playwright-browser"],
         "subgroups": []
       }
     ]
