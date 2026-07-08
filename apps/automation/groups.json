@@ -1806,6 +1806,40 @@
     ]
   },
   {
+    "name": "Ungrouped",
+    "icon": "groupsicons/ungrouped",
+    "color": "#64748b",
+    "nodes": [],
+    "subgroups": [
+      {
+        "name": "STG",
+        "nodes": ["stg-once"],
+        "subgroups": [
+          {
+            "name": "stg-aya",
+            "nodes": [],
+            "subgroups": []
+          },
+          {
+            "name": "stg-builtin",
+            "nodes": ["stg-once"],
+            "subgroups": []
+          },
+          {
+            "name": "stg-fatimaZahra",
+            "nodes": [],
+            "subgroups": []
+          },
+          {
+            "name": "stg-imane",
+            "nodes": [],
+            "subgroups": []
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "Utilities & Misc",
     "icon": "groupsicons/utils",
     "color": "#475569",
