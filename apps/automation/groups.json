@@ -1786,6 +1786,14 @@
         "subgroups": []
       },
       {
+        "name": "line-messaging",
+        "icon": "groupsicons/line-messaging",
+        "color": "#00c300",
+        "nodes": [
+          "line-messaging"
+        ]
+      },
+      {
         "name": "Project Management",
         "nodes": [
           "linear",
