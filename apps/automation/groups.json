@@ -108,6 +108,12 @@
     ]
   },
   {
+    "name": "unleashed",
+    "icon": "groupsicons/unleashed",
+    "color": "#f97316",
+    "nodes": ["unleashed", "unleashed-action"]
+  },
+  {
     "name": "Orchestration",
     "icon": "groupsicons/function",
     "color": "#1d4ed8",
