@@ -7646,7 +7646,7 @@
     "slogan": "brevo",
     "icon": "icons/brevo.svg",
     "integrations": {
-      "automation": ["brevo"]
+      "automation": ["brevo-contact-action","brevo-contact-attribute-action","brevo-email-action", "brevo-sender-action"]
     }
   },
   {
