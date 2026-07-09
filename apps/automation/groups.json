@@ -614,6 +614,12 @@
     ]
   },
   {
+    "name": "brevo",
+    "icon": "groupsicons/brevo",
+    "color": "#f97316",
+    "nodes": ["brevo-contact-action","brevo-contact-attribute-action","brevo-email-action", "brevo-sender-action"]
+  },
+  {
     "name": "Communication & Messaging",
     "icon": "groupsicons/webhook",
     "color": "#a16207",
