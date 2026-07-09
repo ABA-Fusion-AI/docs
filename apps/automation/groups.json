@@ -284,6 +284,14 @@
         "subgroups": []
       },
       {
+        "name": "zulip",
+        "icon": "groupsicons/zulip",
+        "color": "#1d4ed8",
+        "nodes": [
+          "zulip"
+        ]
+      },
+      {
         "name": "Parsing & Serialization",
         "nodes": [
           "serialize-canonical-json",
