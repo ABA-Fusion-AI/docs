@@ -8567,7 +8567,7 @@
     "slogan": "unleashed",
     "icon": "icons/unleashed.svg",
     "integrations": {
-      "automation": ["unleashed"]
+      "automation": ["unleashed", "unleashed-action"]
     }
   },
   {
