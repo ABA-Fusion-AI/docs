@@ -1839,7 +1839,7 @@
     "subgroups": [
       {
         "name": "STG",
-        "nodes": ["stg-once"],
+        "nodes": ["stg-once", "stg-http"],
         "subgroups": [
           {
             "name": "stg-aya",
