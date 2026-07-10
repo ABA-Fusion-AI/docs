@@ -4722,7 +4722,6 @@
   },
   {
     "name": "zendesk",
-    "id": "zendesk",
     "type": "tool",
     "description": "Zendesk customer support - manage tickets, users, and support workflows",
     "slogan": "zendesk",
