@@ -281,6 +281,12 @@
     ]
   },
   {
+    "name": "zendesk",
+    "icon": "groupsicons/zendesk",
+    "color": "#1d4ed8",
+    "nodes": ["zendesk"]
+  },
+  {
     "name": "Mathematical & Statistical Analysis",
     "icon": "groupsicons/statistics",
     "color": "#6d28d9",
