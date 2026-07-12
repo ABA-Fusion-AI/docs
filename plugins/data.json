@@ -6756,6 +6756,282 @@
     }
   },
   {
+    "id": "scientific-research",
+    "name": "Scientific Research",
+    "type": "tool",
+    "description": "Scientific research toolkit - search public scholarly APIs, patent databases, materials databases, and connect to final-user-provided private research APIs.",
+    "slogan": "scientific-research",
+    "icon": "icons/scientific-articles.svg",
+    "integrations": {
+      "automation": [
+        "scientific-openalex",
+        "scientific-crossref",
+        "scientific-semantic-scholar",
+        "scientific-europe-pmc",
+        "scientific-arxiv",
+        "scientific-pubmed",
+        "scientific-elsevier",
+        "scientific-web-of-science",
+        "scientific-lens",
+        "scientific-espacenet",
+        "scientific-optimade",
+        "scientific-google-scholar-access",
+        "scientific-google-patents-access",
+        "scientific-patsnap-access",
+        "scientific-crayon-access",
+        "scientific-alpha-sense-access",
+        "scientific-klue-access",
+        "scientific-kompyte-access",
+        "scientific-contify-access",
+        "scientific-seismic-access",
+        "scientific-onemine-access",
+        "scientific-geoscienceworld-access"
+      ]
+    }
+  },
+  {
+    "id": "scientific-openalex",
+    "name": "Scientific OpenAlex",
+    "type": "tool",
+    "description": "OpenAlex research search - find scholarly works with reconstructed abstracts, authors, year, DOI, venue, citations, and concepts",
+    "slogan": "scientific-openalex",
+    "icon": "icons/default-fill.svg",
+    "integrations": {
+      "automation": ["scientific-openalex"]
+    }
+  },
+  {
+    "id": "scientific-crossref",
+    "name": "Scientific Crossref",
+    "type": "tool",
+    "description": "Crossref research metadata - search DOI records with titles, authors, abstracts when deposited, dates, venues, and citations",
+    "slogan": "scientific-crossref",
+    "icon": "icons/default-fill.svg",
+    "integrations": {
+      "automation": ["scientific-crossref"]
+    }
+  },
+  {
+    "id": "scientific-semantic-scholar",
+    "name": "Scientific Semantic Scholar",
+    "type": "tool",
+    "description": "Semantic Scholar research search - find papers with abstracts, authors, year, DOI, venue, citations, fields of study, and open-access links",
+    "slogan": "scientific-semantic-scholar",
+    "icon": "icons/default-fill.svg",
+    "integrations": {
+      "automation": ["scientific-semantic-scholar"]
+    }
+  },
+  {
+    "id": "scientific-europe-pmc",
+    "name": "Scientific Europe PMC",
+    "type": "tool",
+    "description": "Europe PMC biomedical search - find literature with abstracts, authors, journal, DOI, PMID, PMCID, citations, and full-text links",
+    "slogan": "scientific-europe-pmc",
+    "icon": "icons/default-fill.svg",
+    "integrations": {
+      "automation": ["scientific-europe-pmc"]
+    }
+  },
+  {
+    "id": "scientific-arxiv",
+    "name": "Scientific arXiv",
+    "type": "tool",
+    "description": "arXiv research search - find preprints with abstracts, authors, categories, dates, and PDF links",
+    "slogan": "scientific-arxiv",
+    "icon": "icons/default-fill.svg",
+    "integrations": {
+      "automation": ["scientific-arxiv"]
+    }
+  },
+  {
+    "id": "scientific-pubmed",
+    "name": "Scientific PubMed",
+    "type": "tool",
+    "description": "PubMed research search - find biomedical articles and fetch abstracts, authors, journal, DOI, PMID, MeSH terms, and dates",
+    "slogan": "scientific-pubmed",
+    "icon": "icons/default-fill.svg",
+    "integrations": {
+      "automation": ["scientific-pubmed"]
+    }
+  },
+  {
+    "id": "scientific-elsevier",
+    "name": "Scientific Elsevier",
+    "type": "tool",
+    "description": "Elsevier Scopus and ScienceDirect search - query official Elsevier APIs with normalized scholarly metadata",
+    "slogan": "scientific-elsevier",
+    "icon": "icons/default-fill.svg",
+    "integrations": {
+      "automation": ["scientific-elsevier"]
+    }
+  },
+  {
+    "id": "scientific-web-of-science",
+    "name": "Scientific Web of Science",
+    "type": "tool",
+    "description": "Web of Science search - query Clarivate Web of Science API with normalized academic metadata",
+    "slogan": "scientific-web-of-science",
+    "icon": "icons/default-fill.svg",
+    "integrations": {
+      "automation": ["scientific-web-of-science"]
+    }
+  },
+  {
+    "id": "scientific-lens",
+    "name": "Scientific Lens",
+    "type": "tool",
+    "description": "Lens scholarly and patent search - query Lens APIs for papers or patents with normalized metadata",
+    "slogan": "scientific-lens",
+    "icon": "icons/default-fill.svg",
+    "integrations": {
+      "automation": ["scientific-lens"]
+    }
+  },
+  {
+    "id": "scientific-espacenet",
+    "name": "Scientific Espacenet",
+    "type": "tool",
+    "description": "Espacenet OPS patent search - search EPO patent publications with titles, abstracts, inventors, applicants, classifications, and dates",
+    "slogan": "scientific-espacenet",
+    "icon": "icons/default-fill.svg",
+    "integrations": {
+      "automation": ["scientific-espacenet"]
+    }
+  },
+  {
+    "id": "scientific-optimade",
+    "name": "Scientific OPTIMADE",
+    "type": "tool",
+    "description": "OPTIMADE materials database search - query compatible materials databases for structures or references",
+    "slogan": "scientific-optimade",
+    "icon": "icons/default-fill.svg",
+    "integrations": {
+      "automation": ["scientific-optimade"]
+    }
+  },
+  {
+    "id": "scientific-google-scholar-access",
+    "name": "Google Scholar Access",
+    "type": "tool",
+    "description": "Google Scholar access connector - final user must provide an authorized Google Scholar-compatible API endpoint and credentials; this node does not scrape Google Scholar",
+    "slogan": "Requires final user authorized API access",
+    "icon": "icons/default-fill.svg",
+    "integrations": {
+      "automation": ["scientific-google-scholar-access"]
+    }
+  },
+  {
+    "id": "scientific-google-patents-access",
+    "name": "Google Patents Access",
+    "type": "tool",
+    "description": "Google Patents access connector - final user must provide an authorized Google Patents-compatible API endpoint and credentials; this node does not scrape Google Patents",
+    "slogan": "Requires final user authorized API access",
+    "icon": "icons/default-fill.svg",
+    "integrations": {
+      "automation": ["scientific-google-patents-access"]
+    }
+  },
+  {
+    "id": "scientific-patsnap-access",
+    "name": "Patsnap Access",
+    "type": "tool",
+    "description": "Patsnap access connector - final user must provide their own Patsnap Open Platform/API base URL and key or token",
+    "slogan": "Requires final user's Patsnap API access",
+    "icon": "icons/default-fill.svg",
+    "integrations": {
+      "automation": ["scientific-patsnap-access"]
+    }
+  },
+  {
+    "id": "scientific-crayon-access",
+    "name": "Crayon Access",
+    "type": "tool",
+    "description": "Crayon access connector - final user must provide their own Crayon API or partner endpoint and key or token",
+    "slogan": "Requires final user's Crayon API access",
+    "icon": "icons/default-fill.svg",
+    "integrations": {
+      "automation": ["scientific-crayon-access"]
+    }
+  },
+  {
+    "id": "scientific-alpha-sense-access",
+    "name": "AlphaSense Access",
+    "type": "tool",
+    "description": "AlphaSense access connector - final user must provide their own AlphaSense enterprise API endpoint and key or token",
+    "slogan": "Requires final user's AlphaSense API access",
+    "icon": "icons/default-fill.svg",
+    "integrations": {
+      "automation": ["scientific-alpha-sense-access"]
+    }
+  },
+  {
+    "id": "scientific-klue-access",
+    "name": "Klue Access",
+    "type": "tool",
+    "description": "Klue access connector - final user must provide their own Klue API or integration endpoint and key or token",
+    "slogan": "Requires final user's Klue API access",
+    "icon": "icons/default-fill.svg",
+    "integrations": {
+      "automation": ["scientific-klue-access"]
+    }
+  },
+  {
+    "id": "scientific-kompyte-access",
+    "name": "Kompyte Access",
+    "type": "tool",
+    "description": "Kompyte access connector - final user must provide their own Kompyte/Semrush API or integration endpoint and key or token",
+    "slogan": "Requires final user's Kompyte API access",
+    "icon": "icons/default-fill.svg",
+    "integrations": {
+      "automation": ["scientific-kompyte-access"]
+    }
+  },
+  {
+    "id": "scientific-contify-access",
+    "name": "Contify Access",
+    "type": "tool",
+    "description": "Contify access connector - final user must provide their own Contify API endpoint and key or token",
+    "slogan": "Requires final user's Contify API access",
+    "icon": "icons/default-fill.svg",
+    "integrations": {
+      "automation": ["scientific-contify-access"]
+    }
+  },
+  {
+    "id": "scientific-seismic-access",
+    "name": "Seismic Access",
+    "type": "tool",
+    "description": "Seismic access connector - final user must provide their own Seismic tenant API endpoint and key or token",
+    "slogan": "Requires final user's Seismic API access",
+    "icon": "icons/default-fill.svg",
+    "integrations": {
+      "automation": ["scientific-seismic-access"]
+    }
+  },
+  {
+    "id": "scientific-onemine-access",
+    "name": "OneMine Access",
+    "type": "tool",
+    "description": "OneMine access connector - final user must provide their own OneMine or subscription API endpoint and credentials",
+    "slogan": "Requires final user OneMine API access",
+    "icon": "icons/default-fill.svg",
+    "integrations": {
+      "automation": ["scientific-onemine-access"]
+    }
+  },
+  {
+    "id": "scientific-geoscienceworld-access",
+    "name": "GeoScienceWorld Access",
+    "type": "tool",
+    "description": "GeoScienceWorld access connector - final user must provide their own GeoScienceWorld or subscription API endpoint and credentials",
+    "slogan": "Requires final user GeoScienceWorld API access",
+    "icon": "icons/default-fill.svg",
+    "integrations": {
+      "automation": ["scientific-geoscienceworld-access"]
+    }
+  },
+  {
     "id": "sendgrid",
     "name": "Sendgrid",
     "type": "tool",
