@@ -1877,7 +1877,7 @@
         "subgroups": [
           {
             "name": "stg-aya",
-            "nodes": [],
+            "nodes": ["stg-telegram-send-message"],
             "subgroups": []
           },
           {
