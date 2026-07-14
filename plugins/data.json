@@ -7,7 +7,7 @@
     "slogan": "Playwright Browser",
     "icon": "icons/playwright.svg",
     "integrations": {
-      "automation": ["playwright-browser"]
+      "automation": ["playwright-browser, generate-base64-file"]
     }
   },
   {
@@ -1810,7 +1810,7 @@
     "slogan": "binga-create-payment-request",
     "icon": "icons/binga.svg",
     "integrations": {
-      "automation": ["binga-create-payment-request","binga-webhook-trigger"]
+      "automation": ["binga-create-payment-request", "binga-webhook-trigger"]
     }
   },
   {
@@ -8389,7 +8389,12 @@
     "slogan": "brevo",
     "icon": "icons/brevo.svg",
     "integrations": {
-      "automation": ["brevo-contact-action","brevo-contact-attribute-action","brevo-email-action", "brevo-sender-action"]
+      "automation": [
+        "brevo-contact-action",
+        "brevo-contact-attribute-action",
+        "brevo-email-action",
+        "brevo-sender-action"
+      ]
     }
   },
   {
@@ -9746,7 +9751,7 @@
         "what-cms",
         "whois",
         "zoom-eye"
-    ]
+      ]
     }
   },
   {
