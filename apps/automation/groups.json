@@ -259,9 +259,7 @@
         "name": "zulip",
         "icon": "groupsicons/zulip",
         "color": "#1d4ed8",
-        "nodes": [
-          "zulip"
-        ]
+        "nodes": ["zulip"]
       },
       {
         "name": "Parsing & Serialization",
@@ -638,7 +636,12 @@
     "name": "brevo",
     "icon": "groupsicons/brevo",
     "color": "#f97316",
-    "nodes": ["brevo-contact-action","brevo-contact-attribute-action","brevo-email-action", "brevo-sender-action"]
+    "nodes": [
+      "brevo-contact-action",
+      "brevo-contact-attribute-action",
+      "brevo-email-action",
+      "brevo-sender-action"
+    ]
   },
   {
     "name": "Communication & Messaging",
@@ -766,6 +769,7 @@
           "supabase-storage-move",
           "supabase-storage-upload",
           "convert-to-file",
+          "generate-base64-file",
           "blob-storage",
           "google-business-profile",
           "google-cloud-storage",
@@ -1753,10 +1757,10 @@
     ]
   },
   {
-    "name":"line-messaging",
-    "icon":"groupsicons/line-messaging",
-    "color":"#00c300",
-    "nodes":["line-messaging"]
+    "name": "line-messaging",
+    "icon": "groupsicons/line-messaging",
+    "color": "#00c300",
+    "nodes": ["line-messaging"]
   },
   {
     "name": "Security & Networking",
