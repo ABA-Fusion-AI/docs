@@ -52,6 +52,36 @@ The **Gmail** node authenticates with OAuth2 refresh token credentials and execu
 
 ## Configuration
 
+> ### ⚠️ Breaking changes in 2.0.0
+>
+> Existing `send` configurations need updating, and one operation changed meaning.
+>
+> | Before | Now |
+> |---|---|
+> | `to: "a@x.com, b@y.com"` (one comma-separated string) | `to: ["a@x.com", "b@y.com"]` (one entry per address, each validated) |
+> | `cc: "a@x.com, b@y.com"` | `cc: ["a@x.com", "b@y.com"]` |
+> | `attachments[].filename` | `attachments[].fileName` |
+> | `attachments[].content` | `attachments[].contentBase64` |
+> | `attachments[].path` | **removed** — see [Attachments](#attachments-send) |
+> | `html` and `text` both set, `html` silently won | `bodyType` chooses explicitly |
+> | `mimeType` free text | a dropdown, plus `custom` for anything unlisted |
+>
+> **`markUnread` did the opposite of its name, and is now fixed.** It sent
+> `removeLabelIds: ["UNREAD"]`, which marks a message **read**. If a workflow
+> relied on that to mark messages read, point it at the new `markRead`
+> operation — otherwise it will now do what its name says and mark them unread.
+>
+> **Attachments were corrupted before 2.0.0.** Content was taken as a string and
+> decoded as UTF-8, which destroys any byte that isn't valid UTF-8 — i.e. most of
+> a PDF, PNG, or zip. The file arrived with the right name and roughly the right
+> size, so it looked fine and wasn't. Re-send anything that mattered.
+>
+> `path` could never have worked outside a single-replica dev box: engine workers
+> are stateless, have no shared filesystem, and which one runs your graph isn't
+> predictable. File contents now travel in the workflow payload as base64.
+>
+> New and safe to ignore: `bcc`, `trash`, `markRead`, `listLabels`.
+
 ### Parameters
 
 | Parameter          | Type       | Required | Default                     | Description                                                          |
@@ -395,4 +425,37 @@ into the field.
 Supported — the `data:<mime>;base64,` prefix is stripped automatically. Whitespace
 and line-wrapped base64 are also accepted.
 
+#### My messages are being marked unread instead of read
+
+`markUnread` used to mark messages **read** — the opposite of its name. That is
+fixed in 2.0.0, so a workflow that relied on the old behaviour now does the
+reverse. Switch it to `markRead`.
+
+#### My `send` config stopped validating after upgrading
+
+`to`/`cc` are arrays now, and attachment fields were renamed. See the
+breaking-change table under Configuration.
+
 <!-- /SECTION: troubleshooting -->
+
+---
+
+<!-- SECTION: related -->
+## Related
+
+- [Gmail - New Message Trigger](../gmail-trigger/en.md) – Start a workflow when mail arrives
+- [HTTP Request](../http-request/en.md) – Download a file with `responseType: binary` and attach it
+
+<!-- /SECTION: related -->
+
+---
+
+<!-- SECTION: changelog -->
+## Changelog
+
+| Version | Date | Changes |
+|---------|------|---------|
+| 2.0.0 | 2026-07-16 | **Breaking:** attachments take `contentBase64`/`fileName` (was `content`/`filename`); `attachments[].path` removed; `to`/`cc` are arrays; `bodyType` selects the body; `mimeType` is a dropdown with a `custom` option. **Fixes:** binary attachments were corrupted by a UTF-8 decode; `markUnread` marked messages read. **Adds:** `bcc`, `trash`, `markRead`, `listLabels`, per-field labels, placeholders, and required-field validation. |
+| 1.0.0 | 2026-03-11 | Initial release |
+
+<!-- /SECTION: changelog -->

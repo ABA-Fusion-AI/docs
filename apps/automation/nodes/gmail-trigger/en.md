@@ -211,4 +211,32 @@ OAuth scopes do not allow Gmail query filtering in metadata mode. Use broader sc
 
 Expected behavior: initial poll is warmup and does not emit existing emails.
 
+#### My downstream node can't find `id` or `snippet` on the message
+
+The trigger emits the **parsed** message shape, the same one the Gmail node's
+`get` returns — the Gmail message ID is at `gmail.messageId`, and the preview is
+at `message.preview`. Earlier versions of this page documented a flat
+`{ id, threadId, snippet, body }` shape, which the node never actually emitted.
+
 <!-- /SECTION: troubleshooting -->
+
+---
+
+<!-- SECTION: related -->
+## Related
+
+- [Gmail](../gmail/en.md) – Act on the messages this trigger emits
+
+<!-- /SECTION: related -->
+
+---
+
+<!-- SECTION: changelog -->
+## Changelog
+
+| Version | Date | Changes |
+|---------|------|---------|
+| 1.1.0 | 2026-07-16 | Adds `redirectUri`, which the trigger accepted but never exposed — an OAuth client requiring a specific redirect URI could not be used. Every field now has a label, description, and placeholder. **Docs fix:** the documented output shape was wrong; the trigger emits the parsed message, not `{ id, threadId, snippet, body }`, and the output is `success`, not `output`. No config changes are required. |
+| 1.0.0 | 2026-03-11 | Initial release |
+
+<!-- /SECTION: changelog -->
