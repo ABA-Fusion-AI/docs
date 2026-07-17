@@ -4,9 +4,9 @@ title: "Gmail - New Message Trigger"
 description: "Poll Gmail and emit newly detected messages"
 category: "triggers"
 subcategory: "google"
-version: "1.0.0"
+version: "1.1.0"
 language: "en"
-last_updated: "2026-03-11"
+last_updated: "2026-07-16"
 author: "Fusion Team"
 tags:
   - trigger
@@ -54,15 +54,38 @@ The **Gmail - New Message Trigger** node uses OAuth2 credentials to periodically
 
 ### Parameters
 
-| Parameter      | Type       | Required | Default | Description                   |
-| -------------- | ---------- | -------- | ------- | ----------------------------- |
-| `clientId`     | `string`   | ✅ Yes   | —       | Google OAuth client ID        |
-| `clientSecret` | `string`   | ✅ Yes   | —       | Google OAuth client secret    |
-| `refreshToken` | `string`   | ✅ Yes   | —       | OAuth refresh token           |
-| `userId`       | `string`   | ❌ No    | `me`    | Gmail user ID                 |
-| `labelIds`     | `string[]` | ❌ No    | —       | Label filters for list API    |
-| `q`            | `string`   | ❌ No    | —       | Gmail search query            |
-| `intervalMs`   | `number`   | ❌ No    | `15000` | Poll interval in milliseconds |
+| Parameter      | Type       | Required | Default                     | Description                                                        |
+| -------------- | ---------- | -------- | --------------------------- | ------------------------------------------------------------------ |
+| `clientId`     | `string`   | ✅ Yes   | —                           | Google OAuth client ID. Required — see *Why the credentials*        |
+| `clientSecret` | `string`   | ✅ Yes   | —                           | Google OAuth client secret. Required                                |
+| `redirectUri`  | `url`      | ❌ No    | `urn:ietf:wg:oauth:2.0:oob` | OAuth redirect URI. Leave empty for the out-of-band default         |
+| `refreshToken` | `string`   | ✅ Yes   | —                           | OAuth refresh token identifying the mailbox to poll                 |
+| `userId`       | `string`   | ❌ No    | `me`                        | Mailbox to poll. `me` is the mailbox the refresh token belongs to   |
+| `labelIds`     | `string[]` | ❌ No    | —                           | Only emit messages carrying these label **IDs**, e.g. `INBOX`       |
+| `q`            | `string`   | ❌ No    | —                           | Gmail search query. Not supported under metadata-only scopes        |
+| `intervalMs`   | `number`   | ❌ No    | `15000`                     | Poll interval in milliseconds                                       |
+
+### Why the credentials are required
+
+A refresh token alone cannot authenticate. On every **poll** the node exchanges the
+refresh token for a short-lived access token, and Google's token endpoint requires
+`client_id` and `client_secret` in that exchange — so all three are mandatory.
+
+`redirectUri` is only needed if your OAuth client requires a specific one. Left
+empty, the trigger uses the out-of-band default (`urn:ietf:wg:oauth:2.0:oob`),
+which is not itself a URL and so cannot be typed into the field.
+
+### Finding label IDs
+
+`labelIds` filters on label **IDs** (e.g. `Label_123`), not names. Run the
+[Gmail](../gmail/en.md) node's `listLabels` operation to get every label's `id` and
+`name`. System labels use fixed IDs such as `INBOX`, `UNREAD`, and `STARRED`.
+
+### Choosing a poll interval
+
+Each poll costs one API call, plus one more per new message discovered, against the
+mailbox's quota. `intervalMs` is not lower-bounded, so a small value will burn quota
+quickly — the 15s default is a reasonable floor for most mailboxes.
 
 ### Trigger Behavior
 
@@ -86,20 +109,50 @@ This is a trigger node and does not accept upstream input.
 
 ### Outputs
 
-| Output   | Type     | Description                        |
-| -------- | -------- | ---------------------------------- |
-| `output` | `array`  | Array of new Gmail message objects |
-| `error`  | `object` | Error payload: `{ error, reason }` |
+| Output    | Type     | Description                                    |
+| --------- | -------- | ---------------------------------------------- |
+| `success` | `array`  | Array of newly discovered, parsed Gmail messages |
+| `error`   | `object` | Error payload: `{ error, reason }`             |
 
 ### Output Example
 
-```json
+Each message is parsed into the **same shape the [Gmail](../gmail/en.md) node's
+`get` operation returns** — the trigger runs the same parser — so a downstream
+node can treat both sources identically. Attachment bodies are fetched and filled
+into `contentBase64` automatically; under the metadata-scope fallback
+`gmail.reducedFormat` is `true` and attachment content is not fetched.
+
+```jsonc
 [
   {
-    "id": "18f3f3abc123",
-    "threadId": "18f3f3abc000",
-    "snippet": "Hello from Fusion...",
-    "body": "Hello from Fusion..."
+    "subject": "…",
+    "from": { "name": "…", "email": "…", "raw": "…" },
+    "recipients": {
+      "to": [{ "name": "…", "email": "…", "raw": "…" }],
+      "cc": [],
+      "bcc": [],
+      "replyTo": []
+    },
+    "message": { "text": "…", "html": "…", "preview": "…" },
+    "attachments": [
+      {
+        "fileName": "invoice.pdf",
+        "mimeType": "application/pdf",
+        "sizeBytes": 12345,
+        "encoding": "base64",
+        "contentBase64": "JVBERi0xLjQK…",
+        "isInline": false
+      }
+    ],
+    "gmail": {
+      "messageId": "18f3f3abc123",
+      "threadId": "18f3f3abc000",
+      "labels": ["INBOX"],
+      "date": "…",
+      "internalDate": "…",
+      "rfc822MessageId": "…",
+      "reducedFormat": false
+    }
   }
 ]
 ```
@@ -158,4 +211,32 @@ OAuth scopes do not allow Gmail query filtering in metadata mode. Use broader sc
 
 Expected behavior: initial poll is warmup and does not emit existing emails.
 
+#### My downstream node can't find `id` or `snippet` on the message
+
+The trigger emits the **parsed** message shape, the same one the Gmail node's
+`get` returns — the Gmail message ID is at `gmail.messageId`, and the preview is
+at `message.preview`. Earlier versions of this page documented a flat
+`{ id, threadId, snippet, body }` shape, which the node never actually emitted.
+
 <!-- /SECTION: troubleshooting -->
+
+---
+
+<!-- SECTION: related -->
+## Related
+
+- [Gmail](../gmail/en.md) – Act on the messages this trigger emits
+
+<!-- /SECTION: related -->
+
+---
+
+<!-- SECTION: changelog -->
+## Changelog
+
+| Version | Date | Changes |
+|---------|------|---------|
+| 1.1.0 | 2026-07-16 | Adds `redirectUri`, which the trigger accepted but never exposed — an OAuth client requiring a specific redirect URI could not be used. Every field now has a label, description, and placeholder. **Docs fix:** the documented output shape was wrong; the trigger emits the parsed message, not `{ id, threadId, snippet, body }`, and the output is `success`, not `output`. No config changes are required. |
+| 1.0.0 | 2026-03-11 | Initial release |
+
+<!-- /SECTION: changelog -->
