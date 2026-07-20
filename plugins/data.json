@@ -5620,11 +5620,20 @@
     "id": "notion",
     "name": "Notion",
     "type": "tool",
-    "description": "Notion workspace - manage pages, databases, and content blocks",
+    "description": "Notion workspace - manage blocks, pages, databases, data sources, comments, file uploads, search, and users",
     "slogan": "notion",
     "icon": "icons/notion.svg",
     "integrations": {
-      "automation": ["notion"]
+      "automation": [
+        "notion-blocks",
+        "notion-pages",
+        "notion-databases",
+        "notion-data-sources",
+        "notion-comments",
+        "notion-file-uploads",
+        "notion-search",
+        "notion-users"
+      ]
     }
   },
   {
