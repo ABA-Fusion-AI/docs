@@ -21,6 +21,7 @@
     - set-variable
 ---
 
+<!-- SECTION: overview -->
   # Merge
 
   > **Category:** Utilities&nbsp;&nbsp;|&nbsp;&nbsp;**Type:** Action Node
@@ -292,12 +293,19 @@ Using the same inputs as above, the output becomes:
 ]
 ```
 
-<!-- /SECTION: examples -->
+<!-- /SECTION: inputs-outputs -->
 
 ---
 
 <!-- SECTION: workflow-example -->
 ## Workflow Integration
+
+### Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Combine two branches
+```
 
 ### Sample Workflow: Enrich Webhook Data with Database Records
 

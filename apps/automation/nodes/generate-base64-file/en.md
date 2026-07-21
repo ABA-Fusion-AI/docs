@@ -256,6 +256,13 @@ With `dataSource: "content"` the string is written byte-for-byte — no escaping
 <!-- SECTION: workflow-example -->
 ## Workflow Integration
 
+### Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Generate a CSV and inspect it
+```
+
 ### Sample Workflow: Email a daily report
 
 ```json

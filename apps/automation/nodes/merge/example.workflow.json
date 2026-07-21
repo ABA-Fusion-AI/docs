@@ -1,0 +1,178 @@
+{
+  "name": "Combine two branches",
+  "nodes": [
+    {
+      "id": "trigger",
+      "type": "trigger",
+      "position": {
+        "x": 80,
+        "y": 200
+      },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        }
+      }
+    },
+    {
+      "id": "left",
+      "type": "action",
+      "position": {
+        "x": 260,
+        "y": 120
+      },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "function",
+        "label": "Orders",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        }
+      }
+    },
+    {
+      "id": "right",
+      "type": "action",
+      "position": {
+        "x": 260,
+        "y": 280
+      },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "function",
+        "label": "Customers",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        }
+      }
+    },
+    {
+      "id": "join",
+      "type": "utility",
+      "position": {
+        "x": 440,
+        "y": 200
+      },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "merge",
+        "label": "Merge",
+        "inputs": {
+          "input1": {
+            "label": "Input1"
+          },
+          "input2": {
+            "label": "Input2"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        }
+      }
+    },
+    {
+      "id": "out",
+      "type": "display",
+      "position": {
+        "x": 620,
+        "y": 180
+      },
+      "width": 256,
+      "height": 100,
+      "data": {
+        "name": "log",
+        "label": "Merged",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          }
+        }
+      }
+    }
+  ],
+  "connections": [
+    {
+      "id": "xy-edge__triggersuccess-leftinput",
+      "type": "directed",
+      "source": "trigger",
+      "target": "left",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    },
+    {
+      "id": "xy-edge__triggersuccess-rightinput",
+      "type": "directed",
+      "source": "trigger",
+      "target": "right",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    },
+    {
+      "id": "xy-edge__leftsuccess-joininput1",
+      "type": "directed",
+      "source": "left",
+      "target": "join",
+      "sourceHandle": "success",
+      "targetHandle": "input1"
+    },
+    {
+      "id": "xy-edge__rightsuccess-joininput2",
+      "type": "directed",
+      "source": "right",
+      "target": "join",
+      "sourceHandle": "success",
+      "targetHandle": "input2"
+    },
+    {
+      "id": "xy-edge__joinsuccess-outinput",
+      "type": "directed",
+      "source": "join",
+      "target": "out",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    }
+  ]
+}

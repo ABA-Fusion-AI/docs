@@ -139,6 +139,13 @@ The `value` field is an expression that resolves at run time, capturing the cust
 <!-- SECTION: workflow-example -->
 ## Workflow Integration
 
+### Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Store a value for later steps
+```
+
 ### Sample Workflow: Capture an ID, Use It Later
 
 ```json

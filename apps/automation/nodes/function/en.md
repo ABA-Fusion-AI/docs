@@ -280,6 +280,13 @@ return {
 <!-- SECTION: workflow-example -->
 ## Workflow Integration
 
+### Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Transform incoming data
+```
+
 ### Sample Workflow: API Response Transformation
 
 ```json

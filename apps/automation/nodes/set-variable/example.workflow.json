@@ -1,0 +1,132 @@
+{
+  "name": "Store a value for later steps",
+  "nodes": [
+    {
+      "id": "trigger",
+      "type": "trigger",
+      "position": {
+        "x": 80,
+        "y": 160
+      },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        }
+      }
+    },
+    {
+      "id": "store",
+      "type": "action",
+      "position": {
+        "x": 260,
+        "y": 160
+      },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "set-variable",
+        "label": "Set Variable",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        }
+      }
+    },
+    {
+      "id": "use",
+      "type": "action",
+      "position": {
+        "x": 440,
+        "y": 160
+      },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "function",
+        "label": "Read it back",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        }
+      }
+    },
+    {
+      "id": "out",
+      "type": "display",
+      "position": {
+        "x": 620,
+        "y": 140
+      },
+      "width": 256,
+      "height": 100,
+      "data": {
+        "name": "log",
+        "label": "Value",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          }
+        }
+      }
+    }
+  ],
+  "connections": [
+    {
+      "id": "xy-edge__triggersuccess-storeinput",
+      "type": "directed",
+      "source": "trigger",
+      "target": "store",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    },
+    {
+      "id": "xy-edge__storesuccess-useinput",
+      "type": "directed",
+      "source": "store",
+      "target": "use",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    },
+    {
+      "id": "xy-edge__usesuccess-outinput",
+      "type": "directed",
+      "source": "use",
+      "target": "out",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    }
+  ]
+}

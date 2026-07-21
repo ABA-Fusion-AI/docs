@@ -22,6 +22,7 @@
     - filter
 ---
 
+<!-- SECTION: overview -->
   # Loop
 
   > **Category:** Utilities&nbsp;&nbsp;|&nbsp;&nbsp;**Type:** Utility Node
@@ -134,6 +135,13 @@ loop.done → store
 
 <!-- SECTION: workflow-example -->
 ## Workflow Integration
+
+### Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Iterate over a list
+```
 
 ```json
 {

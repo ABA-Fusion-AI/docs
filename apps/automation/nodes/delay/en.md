@@ -105,6 +105,13 @@ With `duration: 0` the node forwards items as soon as possible — useful for te
 <!-- SECTION: workflow-example -->
 ## Workflow Integration
 
+### Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Wait before continuing
+```
+
 ### Sample Workflow: Throttle Follow-Up Calls
 
 ```json

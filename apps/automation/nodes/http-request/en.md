@@ -286,6 +286,20 @@ Follow it with an If/Else on `{{ $node.HTTP.status }}`.
 
 ---
 
+<!-- SECTION: workflow-example -->
+## Workflow Integration
+
+### Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Call an API and log the response
+```
+
+<!-- /SECTION: workflow-example -->
+
+---
+
 <!-- SECTION: troubleshooting -->
 
 ## Troubleshooting

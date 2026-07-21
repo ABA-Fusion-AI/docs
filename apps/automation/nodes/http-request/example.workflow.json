@@ -1,0 +1,97 @@
+{
+  "name": "Call an API and log the response",
+  "nodes": [
+    {
+      "id": "trigger",
+      "type": "trigger",
+      "position": {
+        "x": 80,
+        "y": 160
+      },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        }
+      }
+    },
+    {
+      "id": "call",
+      "type": "action",
+      "position": {
+        "x": 260,
+        "y": 160
+      },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "http-request",
+        "label": "HTTP Request",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        }
+      }
+    },
+    {
+      "id": "out",
+      "type": "display",
+      "position": {
+        "x": 440,
+        "y": 140
+      },
+      "width": 256,
+      "height": 100,
+      "data": {
+        "name": "log",
+        "label": "Response",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          }
+        }
+      }
+    }
+  ],
+  "connections": [
+    {
+      "id": "xy-edge__triggersuccess-callinput",
+      "type": "directed",
+      "source": "trigger",
+      "target": "call",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    },
+    {
+      "id": "xy-edge__callsuccess-outinput",
+      "type": "directed",
+      "source": "call",
+      "target": "out",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    }
+  ]
+}

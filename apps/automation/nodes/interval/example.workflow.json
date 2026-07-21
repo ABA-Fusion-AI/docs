@@ -1,0 +1,62 @@
+{
+  "name": "Tick every minute",
+  "nodes": [
+    {
+      "id": "tick",
+      "type": "trigger",
+      "position": {
+        "x": 80,
+        "y": 160
+      },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "interval",
+        "label": "Interval",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        }
+      }
+    },
+    {
+      "id": "out",
+      "type": "display",
+      "position": {
+        "x": 260,
+        "y": 140
+      },
+      "width": 256,
+      "height": 100,
+      "data": {
+        "name": "log",
+        "label": "Tick",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          }
+        }
+      }
+    }
+  ],
+  "connections": [
+    {
+      "id": "xy-edge__ticksuccess-outinput",
+      "type": "directed",
+      "source": "tick",
+      "target": "out",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    }
+  ]
+}

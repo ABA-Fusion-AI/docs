@@ -175,6 +175,13 @@ Update every 500ms for near real-time data.
 <!-- SECTION: workflow-example -->
 ## Workflow Integration
 
+### Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Tick every minute
+```
+
 ### Sample Workflow: API Polling
 
 ```json
