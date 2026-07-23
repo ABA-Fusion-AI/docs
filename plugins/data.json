@@ -11457,7 +11457,7 @@
     "type": "tool",
     "description": "Manage Cloudflare Pages projects and deployments",
     "slogan": "cloudflare-pages",
-    "icon": "icons/cloudflare-pages.svg",
+    "icon": "icons/cloudflarepages.svg",
     "integrations": {
       "automation": [
         "cloudflare-pages"
