@@ -194,7 +194,9 @@
     "integrations": {
       "automation": [
         "discord-action",
-        "discord-trigger"
+        "discord-trigger",
+        "discord-bot-send",
+        "discord-webhook-send"
       ]
     }
   },

@@ -728,7 +728,9 @@
           "teams.channel",
           "teams.planner",
           "signalr",
-          "discord-action"
+          "discord-action",
+          "discord-bot-send",
+          "discord-webhook-send"
         ],
         "subgroups": []
       },
