@@ -7549,6 +7549,19 @@
     }
   },
   {
+    "id": "emploima",
+    "name": "Emploi.ma Scraper",
+    "type": "tool",
+    "description": "Emploi.ma job scraper - collect and normalize Moroccan job listings",
+    "slogan": "emploima",
+    "icon": "icons/rekrute.svg",
+    "integrations": {
+      "automation": [
+        "emploima"
+      ]
+    }
+  },
+  {
     "id": "remove-bg",
     "name": "Remove Bg",
     "type": "tool",

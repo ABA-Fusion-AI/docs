@@ -1231,8 +1231,8 @@
         "subgroups": []
       },
       {
-        "name": "Rekrute",
-        "nodes": ["rekrute-job-parser", "rekrute-scraper"],
+        "name": "Moroccan Jobs",
+        "nodes": ["rekrute-job-parser", "rekrute-scraper", "emploima"],
         "subgroups": []
       },
       {
