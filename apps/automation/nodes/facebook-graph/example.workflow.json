@@ -1,0 +1,42 @@
+{
+  "name": "Fetch a Facebook profile",
+  "nodes": [
+    {
+      "id": "trigger",
+      "type": "trigger",
+      "position": { "x": 80, "y": 160 },
+      "data": {
+        "name": "manual-trigger",
+        "label": "Run",
+        "inputs": {},
+        "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } }
+      }
+    },
+    {
+      "id": "facebook",
+      "type": "action",
+      "position": { "x": 300, "y": 160 },
+      "data": {
+        "name": "facebook-graph",
+        "label": "Get My Profile",
+        "inputs": { "input": { "label": "Input" } },
+        "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } }
+      }
+    },
+    {
+      "id": "output",
+      "type": "display",
+      "position": { "x": 520, "y": 160 },
+      "data": {
+        "name": "log",
+        "label": "Profile",
+        "inputs": { "input": { "label": "Input" } },
+        "outputs": { "success": { "label": "Success" } }
+      }
+    }
+  ],
+  "connections": [
+    { "id": "trigger-facebook", "type": "directed", "source": "trigger", "target": "facebook", "sourceHandle": "success", "targetHandle": "input" },
+    { "id": "facebook-output", "type": "directed", "source": "facebook", "target": "output", "sourceHandle": "success", "targetHandle": "input" }
+  ]
+}

@@ -1305,6 +1305,8 @@
           "google-kms-inventory",
           "google-sts",
           "google-places",
+          "google-perspective",
+          "google-workspace-admin",
           "google-you-tube-data",
           "google-contacts-action",
           "google-translate-action",

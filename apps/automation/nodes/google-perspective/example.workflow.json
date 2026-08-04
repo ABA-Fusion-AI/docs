@@ -1,0 +1,27 @@
+{
+  "name": "Analyze comment toxicity",
+  "nodes": [
+    {
+      "id": "trigger",
+      "type": "trigger",
+      "position": { "x": 80, "y": 160 },
+      "data": { "name": "manual-trigger", "label": "Run", "inputs": {}, "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } } }
+    },
+    {
+      "id": "perspective",
+      "type": "action",
+      "position": { "x": 300, "y": 160 },
+      "data": { "name": "google-perspective", "label": "Analyze Comment", "inputs": { "input": { "label": "Input" } }, "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } } }
+    },
+    {
+      "id": "output",
+      "type": "display",
+      "position": { "x": 520, "y": 160 },
+      "data": { "name": "log", "label": "Moderation Scores", "inputs": { "input": { "label": "Input" } }, "outputs": { "success": { "label": "Success" } } }
+    }
+  ],
+  "connections": [
+    { "id": "trigger-perspective", "type": "directed", "source": "trigger", "target": "perspective", "sourceHandle": "success", "targetHandle": "input" },
+    { "id": "perspective-output", "type": "directed", "source": "perspective", "target": "output", "sourceHandle": "success", "targetHandle": "input" }
+  ]
+}

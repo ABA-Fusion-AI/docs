@@ -1,0 +1,27 @@
+{
+  "name": "Ask Gemini",
+  "nodes": [
+    {
+      "id": "trigger",
+      "type": "trigger",
+      "position": { "x": 80, "y": 160 },
+      "data": { "name": "manual-trigger", "label": "Prompt", "inputs": {}, "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } } }
+    },
+    {
+      "id": "gemini",
+      "type": "agent-llm",
+      "position": { "x": 300, "y": 160 },
+      "data": { "name": "ai-chat-google", "label": "Gemini", "inputs": { "input": { "label": "Input" } }, "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } } }
+    },
+    {
+      "id": "output",
+      "type": "display",
+      "position": { "x": 520, "y": 160 },
+      "data": { "name": "log", "label": "Response", "inputs": { "input": { "label": "Input" } }, "outputs": { "success": { "label": "Success" } } }
+    }
+  ],
+  "connections": [
+    { "id": "trigger-gemini", "type": "directed", "source": "trigger", "target": "gemini", "sourceHandle": "success", "targetHandle": "input" },
+    { "id": "gemini-output", "type": "directed", "source": "gemini", "target": "output", "sourceHandle": "success", "targetHandle": "input" }
+  ]
+}
