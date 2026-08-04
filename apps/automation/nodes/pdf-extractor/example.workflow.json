@@ -1,0 +1,12 @@
+{
+  "name": "Extract text from a PDF",
+  "nodes": [
+    { "id": "trigger", "type": "trigger", "position": { "x": 80, "y": 160 }, "data": { "name": "manual-trigger", "label": "Run", "inputs": {}, "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } } } },
+    { "id": "pdf", "type": "action", "position": { "x": 300, "y": 160 }, "data": { "name": "pdf-extractor", "label": "Extract Text", "inputs": { "input": { "label": "Input" } }, "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } } } },
+    { "id": "output", "type": "display", "position": { "x": 520, "y": 160 }, "data": { "name": "log", "label": "PDF Text", "inputs": { "input": { "label": "Input" } }, "outputs": { "success": { "label": "Success" } } } }
+  ],
+  "connections": [
+    { "id": "trigger-pdf", "type": "directed", "source": "trigger", "target": "pdf", "sourceHandle": "success", "targetHandle": "input" },
+    { "id": "pdf-output", "type": "directed", "source": "pdf", "target": "output", "sourceHandle": "success", "targetHandle": "input" }
+  ]
+}

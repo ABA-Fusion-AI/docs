@@ -243,6 +243,7 @@
           "date-end-of",
           "date-start-of",
           "format-date",
+          "icalendar",
           "now",
           "schema-validate",
           "validate-phone",
@@ -763,6 +764,7 @@
           "file-size-converter",
           "html-to-pdf",
           "ilovepdf",
+          "pdf-extractor",
           "supabase-storage-delete",
           "supabase-storage-download",
           "supabase-storage-get-url",
@@ -1818,7 +1820,7 @@
       },
       {
         "name": "Identity & Access",
-        "nodes": ["keycloak", "totp", "aws-iam", "aws-cognito"],
+        "nodes": ["keycloak", "totp", "aws-iam", "aws-cognito", "ldap"],
         "subgroups": []
       },
       {

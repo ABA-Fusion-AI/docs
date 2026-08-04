@@ -1,0 +1,12 @@
+{
+  "name": "Search for public PDF documents",
+  "nodes": [
+    { "id": "trigger", "type": "trigger", "position": { "x": 80, "y": 160 }, "data": { "name": "manual-trigger", "label": "Run", "inputs": {}, "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } } } },
+    { "id": "search", "type": "action", "position": { "x": 300, "y": 160 }, "data": { "name": "google-dork", "label": "Google Dork", "inputs": { "input": { "label": "Input" } }, "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } } } },
+    { "id": "output", "type": "display", "position": { "x": 520, "y": 160 }, "data": { "name": "log", "label": "Search Results", "inputs": { "input": { "label": "Input" } }, "outputs": { "success": { "label": "Success" } } } }
+  ],
+  "connections": [
+    { "id": "trigger-search", "type": "directed", "source": "trigger", "target": "search", "sourceHandle": "success", "targetHandle": "input" },
+    { "id": "search-output", "type": "directed", "source": "search", "target": "output", "sourceHandle": "success", "targetHandle": "input" }
+  ]
+}
