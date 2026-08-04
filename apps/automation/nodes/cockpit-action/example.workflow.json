@@ -1,0 +1,91 @@
+{
+  "name": "Use Cockpit CMS",
+  "nodes": [
+    {
+      "id": "trigger",
+      "type": "trigger",
+      "position": {
+        "x": 80,
+        "y": 160
+      },
+      "data": {
+        "name": "manual-trigger",
+        "label": "Run",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        }
+      }
+    },
+    {
+      "id": "integration",
+      "type": "action",
+      "position": {
+        "x": 300,
+        "y": 160
+      },
+      "data": {
+        "name": "cockpit-action",
+        "label": "Cockpit CMS",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        }
+      }
+    },
+    {
+      "id": "output",
+      "type": "display",
+      "position": {
+        "x": 520,
+        "y": 160
+      },
+      "data": {
+        "name": "log",
+        "label": "Result",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          }
+        }
+      }
+    }
+  ],
+  "connections": [
+    {
+      "id": "trigger-integration",
+      "type": "directed",
+      "source": "trigger",
+      "target": "integration",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    },
+    {
+      "id": "integration-output",
+      "type": "directed",
+      "source": "integration",
+      "target": "output",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    }
+  ]
+}
