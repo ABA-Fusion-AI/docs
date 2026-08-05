@@ -1,9 +1,9 @@
 ---
-node_id: "address-validator-action"
-title: "Address Validator Action"
+node_id: "address-validator"
+title: "Address Validator"
 description: "Parse, validate, format, and verify postal addresses with optional Google Maps Geocoding API integration."
-category: "utilities"
-subcategory: "validation"
+category: "peer-only"
+subcategory: "business-utils-nodes"
 version: "1.0.0"
 language: "en"
 last_updated: "2026-08-05"
@@ -28,7 +28,7 @@ related_nodes:
 <!-- SECTION: header -->
 # Address Validator Action
 
-> **Category:** Utilities | **Type:** Action Node
+> **Category:** Peer-only | **Type:** Action Node
 
 Parse, validate, format, and optionally verify postal addresses using the Google Maps Geocoding API. This node helps normalize address data, verify required fields, and retrieve standardized address information.
 
