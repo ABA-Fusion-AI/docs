@@ -1,0 +1,133 @@
+[
+  {
+    "name": "ss",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "ht8xu774ql6gwrkd15l8g5m9",
+        "position": {
+          "x": 430.3946309431228,
+          "y": 120.52843872479045
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "medium",
+          "label": "Medium",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Medium API - Extract data from Medium's website. Get articles, users, publications, and more.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getArticle",
+            "apiKey": "",
+            "articleId": "034685e17707"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "etgbuqsnrshxu5wq9ifltm0t",
+        "position": {
+          "x": 202.95886706371198,
+          "y": 239.35347148157223
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        }
+      },
+      {
+        "id": "rncslbp5pz2y1y0c8pip379y",
+        "position": {
+          "x": 677.6716801604797,
+          "y": 200.60027827805337
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "etgbuqsnrshxu5wq9ifltm0t",
+        "sourceHandle": "success",
+        "target": "ht8xu774ql6gwrkd15l8g5m9",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__etgbuqsnrshxu5wq9ifltm0tsuccess-ht8xu774ql6gwrkd15l8g5m9input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ht8xu774ql6gwrkd15l8g5m9",
+        "sourceHandle": "success",
+        "target": "rncslbp5pz2y1y0c8pip379y",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ht8xu774ql6gwrkd15l8g5m9success-rncslbp5pz2y1y0c8pip379yinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "error",
+    "tracingEnabled": true,
+    "userId": "8da742e6-3e39-4e2c-8bf9-40e1117bcaa2",
+    "version": 1,
+    "createdAt": 1785877743818,
+    "updatedAt": 1785877815144,
+    "publishedNames": []
+  }
+]
