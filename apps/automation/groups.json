@@ -1879,7 +1879,7 @@
     "name": "Ungrouped",
     "icon": "groupsicons/ungrouped",
     "color": "#64748b",
-    "nodes": [],
+    "nodes": ["get-response"],
     "subgroups": [
       {
         "name": "STG",
