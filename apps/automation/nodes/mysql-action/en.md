@@ -4,9 +4,9 @@ title: "MySQL Action"
 description: "Execute MySQL operations — select, insert, update, upsert, delete, and raw SQL queries"
 category: "data"
 subcategory: "databases"
-version: "1.0.0"
+version: "1.1.0"
 language: "en"
-last_updated: "2026-03-10"
+last_updated: "2026-08-05"
 author: "Fusion Team"
 tags:
   - mysql
@@ -21,6 +21,7 @@ related_nodes:
 ---
 
 <!-- SECTION: header -->
+
 # MySQL Action
 
 > **Category:** Data | **Type:** Action Node
@@ -32,6 +33,7 @@ Connect to a MySQL database and execute structured operations — query rows, in
 ---
 
 <!-- SECTION: overview -->
+
 ## Overview
 
 The **MySQL Action** node establishes a connection to a MySQL server and executes one of six available operations against a target table. It supports parameterized queries to prevent SQL injection and provides structured, predictable output for each operation type.
@@ -59,107 +61,125 @@ The **MySQL Action** node establishes a connection to a MySQL server and execute
 ---
 
 <!-- SECTION: configuration -->
+
 ## Configuration
 
 ### Connection Parameters
 
-| Parameter | Type | Required | Default | Description |
-|-----------|------|----------|---------|-------------|
-| `host` | `string` | ✅ Yes | `localhost` | MySQL server hostname or IP address |
-| `port` | `number` | ✅ Yes | `3306` | MySQL server port |
-| `user` | `string` | ✅ Yes | — | MySQL username |
-| `password` | `string` | ✅ Yes | — | MySQL password |
-| `database` | `string` | ✅ Yes | — | Database name to connect to |
-| `connectionTimeout` | `number` | ❌ No | `10000` | Connection timeout in milliseconds |
+| Parameter           | Type     | Required | Default     | Description                         |
+| ------------------- | -------- | -------- | ----------- | ----------------------------------- |
+| `host`              | `string` | ✅ Yes   | `localhost` | MySQL server hostname or IP address |
+| `port`              | `number` | ✅ Yes   | `3306`      | MySQL server port                   |
+| `user`              | `string` | ✅ Yes   | —           | MySQL username                      |
+| `password`          | `string` | ✅ Yes   | —           | MySQL password                      |
+| `database`          | `string` | ✅ Yes   | —           | Database name to connect to         |
+| `connectionTimeout` | `number` | ❌ No    | `10000`     | Connection timeout in milliseconds  |
 
 ### Common Parameters
 
-| Parameter | Type | Required | Default | Description |
-|-----------|------|----------|---------|-------------|
-| `tableName` | `string` | ✅ Yes | — | Target table name |
-| `operation` | `enum` | ✅ Yes | — | Operation to perform (see below) |
-| `replaceEmptyStringWithNull` | `boolean` | ❌ No | `false` | Replace `""` values with `NULL` on Insert / Update / Upsert |
+| Parameter                    | Type      | Required | Default | Description                                                 |
+| ---------------------------- | --------- | -------- | ------- | ----------------------------------------------------------- |
+| `tableName`                  | `string`  | ✅ Yes   | —       | Target table name                                           |
+| `operation`                  | `enum`    | ✅ Yes   | —       | Operation to perform (see below)                            |
+| `replaceEmptyStringWithNull` | `boolean` | ❌ No    | `false` | Replace `""` values with `NULL` on Insert / Update / Upsert |
 
 ### Available Operations
 
-| Operation | Description |
-|-----------|-------------|
-| `Select` | Query rows from a table |
-| `Insert` | Insert a new row |
-| `Update` | Update existing rows matching a WHERE condition |
-| `Insert or Update` | Insert a row or update it on duplicate key conflict |
-| `Delete` | Delete rows, truncate, or drop a table |
-| `Execute SQL query` | Run a raw SQL statement |
+| Operation           | Description                                         |
+| ------------------- | --------------------------------------------------- |
+| `Select`            | Query rows from a table                             |
+| `Insert`            | Insert a new row                                    |
+| `Update`            | Update existing rows matching a WHERE condition     |
+| `Insert or Update`  | Insert a row or update it on duplicate key conflict |
+| `Delete`            | Delete rows, truncate, or drop a table              |
+| `Execute SQL query` | Run a raw SQL statement                             |
 
 ---
 
 ### Operation: Select
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `selectParams.returnAll` | `boolean` | ❌ No | Return all rows (ignores `limit`) |
-| `selectParams.limit` | `number` | ❌ No | Maximum number of rows to return |
-| `selectParams.where` | `string` | ❌ No | SQL WHERE clause (e.g. `status = 'active'`) |
-| `selectParams.columns` | `string[]` | ❌ No | Columns to return — defaults to `*` |
-| `selectParams.sort` | `array` | ❌ No | Sort rules: `[{ column, order: "asc" \| "desc" }]` |
+| Parameter                | Type       | Required | Description                                           |
+| ------------------------ | ---------- | -------- | ----------------------------------------------------- |
+| `selectParams.returnAll` | `boolean`  | ❌ No    | Return all rows (ignores `limit`)                     |
+| `selectParams.limit`     | `number`   | ❌ No    | Maximum number of rows to return                      |
+| `selectParams.where`     | `array`    | ❌ No    | Structured conditions: `[{ field, operator, value }]` |
+| `selectParams.columns`   | `string[]` | ❌ No    | Columns to return — defaults to `*`                   |
+| `selectParams.sort`      | `array`    | ❌ No    | Sort rules: `[{ column, order: "asc" \| "desc" }]`    |
 
 ### Operation: Insert
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `insertParams.rows` | `array` | ✅ Yes | Fields to insert: `[{ rowName, rowValue }]` |
-| `insertParams.skipOnConflict` | `boolean` | ❌ No | Use `INSERT IGNORE` to skip duplicate key errors |
+| Parameter                     | Type      | Required | Description                                      |
+| ----------------------------- | --------- | -------- | ------------------------------------------------ |
+| `insertParams.rows`           | `array`   | ✅ Yes   | Fields to insert: `[{ rowName, rowValue }]`      |
+| `insertParams.skipOnConflict` | `boolean` | ❌ No    | Use `INSERT IGNORE` to skip duplicate key errors |
 
 ### Operation: Update
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `updateParams.where` | `string` | ✅ Yes | SQL WHERE clause to identify rows to update |
-| `updateParams.rows` | `array` | ✅ Yes | Fields to update: `[{ rowName, rowValue }]` |
+| Parameter            | Type    | Required | Description                                      |
+| -------------------- | ------- | -------- | ------------------------------------------------ |
+| `updateParams.where` | `array` | ✅ Yes   | Structured conditions identifying rows to update |
+| `updateParams.rows`  | `array` | ✅ Yes   | Fields to update: `[{ rowName, rowValue }]`      |
 
 ### Operation: Insert or Update
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `insertOrUpdateParams.rows` | `array` | ✅ Yes | Fields: `[{ rowName, rowValue }]` |
-| `insertOrUpdateParams.conflictColumns` | `string[]` | ✅ Yes | Columns that define a duplicate (e.g. `["email"]`) |
+| Parameter                              | Type       | Required | Description                                        |
+| -------------------------------------- | ---------- | -------- | -------------------------------------------------- |
+| `insertOrUpdateParams.rows`            | `array`    | ✅ Yes   | Fields: `[{ rowName, rowValue }]`                  |
+| `insertOrUpdateParams.conflictColumns` | `string[]` | ✅ Yes   | Columns that define a duplicate (e.g. `["email"]`) |
 
 ### Operation: Delete
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `deleteParams.operation` | `enum` | ✅ Yes | `Delete`, `Truncate`, or `Drop` |
-| `deleteParams.where` | `string` | Conditional | SQL WHERE clause — required for `Delete` |
+| Parameter                | Type    | Required    | Description                                             |
+| ------------------------ | ------- | ----------- | ------------------------------------------------------- |
+| `deleteParams.operation` | `enum`  | ✅ Yes      | `Delete`, `Truncate`, or `Drop`                         |
+| `deleteParams.where`     | `array` | Conditional | Non-empty structured conditions — required for `Delete` |
 
 ### Operation: Execute SQL query
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `executeQueryParams.query` | `string` | ✅ Yes | Raw SQL statement to execute |
+| Parameter                            | Type      | Required | Description                                   |
+| ------------------------------------ | --------- | -------- | --------------------------------------------- |
+| `executeQueryParams.query`           | `string`  | ✅ Yes   | Raw SQL statement to execute                  |
+| `executeQueryParams.values`          | `array`   | ❌ No    | Values bound to `?` placeholders in the query |
+| `executeQueryParams.acknowledgeRisk` | `boolean` | ✅ Yes   | Must be `true` to enable raw SQL execution    |
+
+### Safe WHERE conditions
+
+Free-form WHERE strings are not accepted. Each condition contains a quoted field name, an allowed operator, and a separately bound value:
+
+```json
+[
+  { "field": "status", "operator": "eq", "value": "active" },
+  { "field": "id", "operator": "in", "value": [10, 20] }
+]
+```
+
+Supported operators are `eq`, `ne`, `gt`, `gte`, `lt`, `lte`, `like`, `notLike`, `in`, `notIn`, `isNull`, and `isNotNull`. Use a least-privilege database account. Raw SQL remains an advanced operation: never interpolate workflow input into `query`; use `?` placeholders with `values`.
 
 <!-- /SECTION: configuration -->
 
 ---
 
 <!-- SECTION: inputs-outputs -->
+
 ## Inputs & Outputs
 
 ### Inputs
 
-| Input | Type | Description |
-|-------|------|-------------|
+| Input   | Type  | Description                                                     |
+| ------- | ----- | --------------------------------------------------------------- |
 | `input` | `any` | Incoming workflow data (usable via expressions in field values) |
 
 ### Outputs
 
-| Output | Type | Description |
-|--------|------|-------------|
-| `output` | `object` | Result of the executed operation |
-| `error` | `Error` | Emitted if the operation or connection fails |
+| Output   | Type     | Description                                  |
+| -------- | -------- | -------------------------------------------- |
+| `output` | `object` | Result of the executed operation             |
+| `error`  | `Error`  | Emitted if the operation or connection fails |
 
 ### Output Schemas by Operation
 
 **`Select`**
+
 ```json
 {
   "count": 2,
@@ -171,6 +191,7 @@ The **MySQL Action** node establishes a connection to a MySQL server and execute
 ```
 
 **`Insert`**
+
 ```json
 {
   "operation": "inserted",
@@ -180,6 +201,7 @@ The **MySQL Action** node establishes a connection to a MySQL server and execute
 ```
 
 **`Update`**
+
 ```json
 {
   "operation": "updated",
@@ -188,6 +210,7 @@ The **MySQL Action** node establishes a connection to a MySQL server and execute
 ```
 
 **`Insert or Update`**
+
 ```json
 {
   "operation": "inserted or updated",
@@ -197,6 +220,7 @@ The **MySQL Action** node establishes a connection to a MySQL server and execute
 ```
 
 **`Delete`**
+
 ```json
 {
   "operation": "delete",
@@ -205,6 +229,7 @@ The **MySQL Action** node establishes a connection to a MySQL server and execute
 ```
 
 **`Execute SQL query` (SELECT)**
+
 ```json
 {
   "rows": [{ "total": "1280" }],
@@ -213,6 +238,7 @@ The **MySQL Action** node establishes a connection to a MySQL server and execute
 ```
 
 **`Execute SQL query` (DML)**
+
 ```json
 {
   "affectedRows": 3,
@@ -226,6 +252,7 @@ The **MySQL Action** node establishes a connection to a MySQL server and execute
 ---
 
 <!-- SECTION: examples -->
+
 ## Examples
 
 ### Example: Select Active Users
@@ -233,6 +260,7 @@ The **MySQL Action** node establishes a connection to a MySQL server and execute
 Query up to 100 active users, sorted by creation date.
 
 **Configuration:**
+
 ```json
 {
   "host": "db.example.com",
@@ -245,7 +273,7 @@ Query up to 100 active users, sorted by creation date.
   "selectParams": {
     "returnAll": false,
     "limit": 100,
-    "where": "status = 'active'",
+    "where": [{ "field": "status", "operator": "eq", "value": "active" }],
     "columns": ["id", "name", "email", "created_at"],
     "sort": [{ "column": "created_at", "order": "desc" }]
   }
@@ -253,12 +281,23 @@ Query up to 100 active users, sorted by creation date.
 ```
 
 **Output:**
+
 ```json
 {
   "count": 2,
   "rows": [
-    { "id": 5, "name": "Carol", "email": "carol@example.com", "created_at": "2026-02-01" },
-    { "id": 3, "name": "Alice", "email": "alice@example.com", "created_at": "2026-01-15" }
+    {
+      "id": 5,
+      "name": "Carol",
+      "email": "carol@example.com",
+      "created_at": "2026-02-01"
+    },
+    {
+      "id": 3,
+      "name": "Alice",
+      "email": "alice@example.com",
+      "created_at": "2026-01-15"
+    }
   ]
 }
 ```
@@ -270,6 +309,7 @@ Query up to 100 active users, sorted by creation date.
 Insert a new order into the `orders` table.
 
 **Configuration:**
+
 ```json
 {
   "tableName": "orders",
@@ -287,6 +327,7 @@ Insert a new order into the `orders` table.
 ```
 
 **Output:**
+
 ```json
 {
   "operation": "inserted",
@@ -302,12 +343,13 @@ Insert a new order into the `orders` table.
 Update the status of a specific user.
 
 **Configuration:**
+
 ```json
 {
   "tableName": "users",
   "operation": "Update",
   "updateParams": {
-    "where": "id = 42",
+    "where": [{ "field": "id", "operator": "eq", "value": 42 }],
     "rows": [
       { "rowName": "status", "rowValue": "inactive" },
       { "rowName": "updated_at", "rowValue": "2026-03-10" }
@@ -317,6 +359,7 @@ Update the status of a specific user.
 ```
 
 **Output:**
+
 ```json
 {
   "operation": "updated",
@@ -331,6 +374,7 @@ Update the status of a specific user.
 Insert a product by SKU, or update its price if it already exists.
 
 **Configuration:**
+
 ```json
 {
   "tableName": "products",
@@ -353,13 +397,20 @@ Insert a product by SKU, or update its price if it already exists.
 Delete orders older than 90 days.
 
 **Configuration:**
+
 ```json
 {
   "tableName": "orders",
   "operation": "Delete",
   "deleteParams": {
     "operation": "Delete",
-    "where": "created_at < DATE_SUB(NOW(), INTERVAL 90 DAY)"
+    "where": [
+      {
+        "field": "created_at",
+        "operator": "lt",
+        "value": "{{input.cutoffDate}}"
+      }
+    ]
   }
 }
 ```
@@ -371,17 +422,21 @@ Delete orders older than 90 days.
 Run a custom aggregation query.
 
 **Configuration:**
+
 ```json
 {
   "tableName": "orders",
   "operation": "Execute SQL query",
   "executeQueryParams": {
-    "query": "SELECT status, COUNT(*) as total FROM orders GROUP BY status"
+    "query": "SELECT status, COUNT(*) as total FROM orders WHERE created_at >= ? GROUP BY status",
+    "values": ["{{input.startDate}}"],
+    "acknowledgeRisk": true
   }
 }
 ```
 
 **Output:**
+
 ```json
 {
   "rows": [
@@ -398,6 +453,7 @@ Run a custom aggregation query.
 ---
 
 <!-- SECTION: workflow-example -->
+
 ## Workflow Integration
 
 ### Sample Workflow: Webhook to Database
@@ -457,6 +513,7 @@ Receive an incoming webhook, validate the payload, and insert it into MySQL.
 ---
 
 <!-- SECTION: troubleshooting -->
+
 ## Troubleshooting
 
 ### Common Issues
@@ -481,9 +538,9 @@ Receive an incoming webhook, validate the payload, and insert it into MySQL.
 
 #### `where` clause missing for Delete operation
 
-**Cause:** `deleteParams.operation` is set to `Delete` but no `where` condition was provided.
+**Cause:** `deleteParams.operation` is set to `Delete` but no non-empty `where` condition array was provided.
 
-**Solution:** Always provide a WHERE clause for row-level deletion. Use `Truncate` to clear all rows, or `Drop` to remove the table entirely.
+**Solution:** Always provide structured conditions for row-level deletion. Use `Truncate` to clear all rows, or `Drop` to remove the table entirely.
 
 #### Empty string values stored instead of NULL
 
@@ -493,19 +550,20 @@ Receive an incoming webhook, validate the payload, and insert it into MySQL.
 
 ### Error Codes
 
-| Code | Message | Solution |
-|------|---------|----------|
-| `ECONNREFUSED` | Connection refused | Check host, port, and firewall |
-| `ER_ACCESS_DENIED_ERROR` | Access denied | Verify MySQL credentials |
-| `ER_NO_SUCH_TABLE` | Table doesn't exist | Check `tableName` spelling |
-| `ER_DUP_ENTRY` | Duplicate entry | Use `Insert or Update` or enable `skipOnConflict` |
-| `ER_PARSE_ERROR` | SQL syntax error | Check the raw SQL in `executeQueryParams.query` |
+| Code                     | Message             | Solution                                          |
+| ------------------------ | ------------------- | ------------------------------------------------- |
+| `ECONNREFUSED`           | Connection refused  | Check host, port, and firewall                    |
+| `ER_ACCESS_DENIED_ERROR` | Access denied       | Verify MySQL credentials                          |
+| `ER_NO_SUCH_TABLE`       | Table doesn't exist | Check `tableName` spelling                        |
+| `ER_DUP_ENTRY`           | Duplicate entry     | Use `Insert or Update` or enable `skipOnConflict` |
+| `ER_PARSE_ERROR`         | SQL syntax error    | Check the raw SQL in `executeQueryParams.query`   |
 
 <!-- /SECTION: troubleshooting -->
 
 ---
 
 <!-- SECTION: related -->
+
 ## Related
 
 - [MongoDB Action](./mongodb.md) - Document-based NoSQL operations
@@ -517,10 +575,12 @@ Receive an incoming webhook, validate the payload, and insert it into MySQL.
 ---
 
 <!-- SECTION: changelog -->
+
 ## Changelog
 
-| Version | Date | Changes |
-|---------|------|---------|
-| 1.0.0 | 2026-03-10 | Initial release |
+| Version | Date       | Changes                                                                               |
+| ------- | ---------- | ------------------------------------------------------------------------------------- |
+| 1.1.0   | 2026-08-05 | Replaced free-form WHERE clauses with bound structured conditions and guarded raw SQL |
+| 1.0.0   | 2026-03-10 | Initial release                                                                       |
 
 <!-- /SECTION: changelog -->

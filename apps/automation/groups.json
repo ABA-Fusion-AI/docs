@@ -533,6 +533,7 @@
           "azure-sql-stored-procedure",
           "postgres-action",
           "mysql-action",
+          "questdb",
           "azuresql.query",
           "azuresql.databaseAdmin",
           "azuresql.bulkInsert",

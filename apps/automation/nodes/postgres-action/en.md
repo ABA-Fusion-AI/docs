@@ -4,9 +4,9 @@ title: "PostgreSQL Action"
 description: "Execute PostgreSQL operations — select, insert, update, upsert, delete, and raw SQL queries with schema support"
 category: "data"
 subcategory: "databases"
-version: "1.0.0"
+version: "1.1.0"
 language: "en"
-last_updated: "2026-03-10"
+last_updated: "2026-08-05"
 author: "Fusion Team"
 tags:
   - postgres
@@ -22,6 +22,7 @@ related_nodes:
 ---
 
 <!-- SECTION: header -->
+
 # PostgreSQL Action
 
 > **Category:** Data | **Type:** Action Node
@@ -33,6 +34,7 @@ Connect to a PostgreSQL database and execute structured operations — query row
 ---
 
 <!-- SECTION: overview -->
+
 ## Overview
 
 The **PostgreSQL Action** node connects to a PostgreSQL server using a connection pool and executes one of six available operations. It uses parameterized queries (`$1`, `$2`, ...) to prevent SQL injection and fully supports PostgreSQL-specific features such as named schemas, `ON CONFLICT ... DO UPDATE`, and `CASCADE` on destructive operations.
@@ -41,7 +43,7 @@ The **PostgreSQL Action** node connects to a PostgreSQL server using a connectio
 
 - **Six Operations:** Select, Insert, Update, Insert or Update (upsert), Delete, Execute SQL query
 - **Schema Support:** Target any schema with `schemaName` (defaults to `public`)
-- **Parameterized Queries:** All values are passed as bound parameters — no SQL injection risk
+- **Parameterized Queries:** Structured-operation values are passed as bound parameters
 - **Upsert via `ON CONFLICT`:** Uses `EXCLUDED` pseudo-table for conflict resolution
 - **Cascade Option:** `TRUNCATE` and `DROP` support the `CASCADE` flag
 - **Null Handling:** Optionally replace empty strings with `NULL` on write operations
@@ -61,111 +63,129 @@ The **PostgreSQL Action** node connects to a PostgreSQL server using a connectio
 ---
 
 <!-- SECTION: configuration -->
+
 ## Configuration
 
 ### Connection Parameters
 
-| Parameter | Type | Required | Default | Description |
-|-----------|------|----------|---------|-------------|
-| `host` | `string` | ✅ Yes | — | PostgreSQL server hostname or IP |
-| `port` | `number` | ✅ Yes | `5432` | PostgreSQL server port |
-| `user` | `string` | ✅ Yes | — | PostgreSQL username |
-| `password` | `string` | ✅ Yes | — | PostgreSQL password |
-| `database` | `string` | ✅ Yes | — | Target database name |
-| `schemaName` | `string` | ❌ No | `public` | Schema containing the target table |
-| `connectionTimeoutMillis` | `number` | ❌ No | `5000` | Connection timeout in milliseconds |
+| Parameter                 | Type     | Required | Default  | Description                        |
+| ------------------------- | -------- | -------- | -------- | ---------------------------------- |
+| `host`                    | `string` | ✅ Yes   | —        | PostgreSQL server hostname or IP   |
+| `port`                    | `number` | ✅ Yes   | `5432`   | PostgreSQL server port             |
+| `user`                    | `string` | ✅ Yes   | —        | PostgreSQL username                |
+| `password`                | `string` | ✅ Yes   | —        | PostgreSQL password                |
+| `database`                | `string` | ✅ Yes   | —        | Target database name               |
+| `schemaName`              | `string` | ❌ No    | `public` | Schema containing the target table |
+| `connectionTimeoutMillis` | `number` | ❌ No    | `5000`   | Connection timeout in milliseconds |
 
 ### Common Parameters
 
-| Parameter | Type | Required | Default | Description |
-|-----------|------|----------|---------|-------------|
-| `tableName` | `string` | ✅ Yes | — | Target table name |
-| `operation` | `enum` | ✅ Yes | — | Operation to perform (see below) |
-| `replaceEmptyStringWithNull` | `boolean` | ❌ No | `false` | Convert empty string values to `NULL` on Insert / Update / Upsert |
+| Parameter                    | Type      | Required | Default | Description                                                       |
+| ---------------------------- | --------- | -------- | ------- | ----------------------------------------------------------------- |
+| `tableName`                  | `string`  | ✅ Yes   | —       | Target table name                                                 |
+| `operation`                  | `enum`    | ✅ Yes   | —       | Operation to perform (see below)                                  |
+| `replaceEmptyStringWithNull` | `boolean` | ❌ No    | `false` | Convert empty string values to `NULL` on Insert / Update / Upsert |
 
 ### Available Operations
 
-| Operation | Description |
-|-----------|-------------|
-| `Select` | Query rows from a table |
-| `Insert` | Insert a new row |
-| `Update` | Update rows matching a WHERE condition |
-| `Insert or Update` | Upsert using `ON CONFLICT (...) DO UPDATE SET` |
-| `Delete` | Delete rows, truncate, or drop a table |
-| `Execute SQL query` | Run a raw SQL statement |
+| Operation           | Description                                    |
+| ------------------- | ---------------------------------------------- |
+| `Select`            | Query rows from a table                        |
+| `Insert`            | Insert a new row                               |
+| `Update`            | Update rows matching a WHERE condition         |
+| `Insert or Update`  | Upsert using `ON CONFLICT (...) DO UPDATE SET` |
+| `Delete`            | Delete rows, truncate, or drop a table         |
+| `Execute SQL query` | Run a raw SQL statement                        |
 
 ---
 
 ### Operation: Select
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `selectParams.returnAll` | `boolean` | ❌ No | Return all rows (ignores `limit`) |
-| `selectParams.limit` | `number` | ❌ No | Maximum rows to return |
-| `selectParams.where` | `string` | ❌ No | SQL WHERE clause (e.g. `status = 'active'`) |
-| `selectParams.columns` | `string[]` | ❌ No | Columns to return — defaults to `*` |
-| `selectParams.sort` | `array` | ❌ No | Sort rules: `[{ column, order: "asc" \| "desc" }]` |
+| Parameter                | Type       | Required | Description                                           |
+| ------------------------ | ---------- | -------- | ----------------------------------------------------- |
+| `selectParams.returnAll` | `boolean`  | ❌ No    | Return all rows (ignores `limit`)                     |
+| `selectParams.limit`     | `number`   | ❌ No    | Maximum rows to return                                |
+| `selectParams.where`     | `array`    | ❌ No    | Structured conditions: `[{ field, operator, value }]` |
+| `selectParams.columns`   | `string[]` | ❌ No    | Columns to return — defaults to `*`                   |
+| `selectParams.sort`      | `array`    | ❌ No    | Sort rules: `[{ column, order: "asc" \| "desc" }]`    |
 
 ### Operation: Insert
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `insertParams.rows` | `array` | ✅ Yes | Fields: `[{ rowName, rowValue }]` |
-| `insertParams.skipOnConflict` | `boolean` | ❌ No | Use `ON CONFLICT DO NOTHING` to skip duplicates |
+| Parameter                     | Type      | Required | Description                                     |
+| ----------------------------- | --------- | -------- | ----------------------------------------------- |
+| `insertParams.rows`           | `array`   | ✅ Yes   | Fields: `[{ rowName, rowValue }]`               |
+| `insertParams.skipOnConflict` | `boolean` | ❌ No    | Use `ON CONFLICT DO NOTHING` to skip duplicates |
 
 ### Operation: Update
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `updateParams.where` | `string` | ✅ Yes | SQL WHERE clause to identify rows |
-| `updateParams.rows` | `array` | ✅ Yes | Fields to update: `[{ rowName, rowValue }]` |
+| Parameter            | Type    | Required | Description                                      |
+| -------------------- | ------- | -------- | ------------------------------------------------ |
+| `updateParams.where` | `array` | ✅ Yes   | Structured conditions identifying rows to update |
+| `updateParams.rows`  | `array` | ✅ Yes   | Fields to update: `[{ rowName, rowValue }]`      |
 
 ### Operation: Insert or Update
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `insertOrUpdateParams.rows` | `array` | ✅ Yes | Fields: `[{ rowName, rowValue }]` |
-| `insertOrUpdateParams.conflictColumns` | `string[]` | ✅ Yes | Columns defining the conflict constraint (e.g. `["email"]`) |
+| Parameter                              | Type       | Required | Description                                                 |
+| -------------------------------------- | ---------- | -------- | ----------------------------------------------------------- |
+| `insertOrUpdateParams.rows`            | `array`    | ✅ Yes   | Fields: `[{ rowName, rowValue }]`                           |
+| `insertOrUpdateParams.conflictColumns` | `string[]` | ✅ Yes   | Columns defining the conflict constraint (e.g. `["email"]`) |
 
 > On conflict, all non-conflict columns are updated using `EXCLUDED.<column>` values.
 
 ### Operation: Delete
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `deleteParams.operation` | `enum` | ✅ Yes | `Delete`, `Truncate`, or `Drop` |
-| `deleteParams.where` | `string` | Conditional | SQL WHERE clause — required for `Delete` |
-| `deleteParams.cascade` | `boolean` | ❌ No | Apply `CASCADE` for `Truncate` or `Drop` |
+| Parameter                | Type      | Required    | Description                                             |
+| ------------------------ | --------- | ----------- | ------------------------------------------------------- |
+| `deleteParams.operation` | `enum`    | ✅ Yes      | `Delete`, `Truncate`, or `Drop`                         |
+| `deleteParams.where`     | `array`   | Conditional | Non-empty structured conditions — required for `Delete` |
+| `deleteParams.cascade`   | `boolean` | ❌ No       | Apply `CASCADE` for `Truncate` or `Drop`                |
 
 ### Operation: Execute SQL query
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `executeQueryParams.query` | `string` | ✅ Yes | Raw SQL statement to execute |
+| Parameter                            | Type      | Required | Description                                |
+| ------------------------------------ | --------- | -------- | ------------------------------------------ |
+| `executeQueryParams.query`           | `string`  | ✅ Yes   | Raw SQL statement to execute               |
+| `executeQueryParams.values`          | `array`   | ❌ No    | Values bound to `$1`, `$2`, … placeholders |
+| `executeQueryParams.acknowledgeRisk` | `boolean` | ✅ Yes   | Must be `true` to enable raw SQL execution |
+
+### Safe WHERE conditions
+
+Free-form WHERE strings are not accepted. Each condition contains a quoted field name, an allowed operator, and a separately bound value:
+
+```json
+[
+  { "field": "status", "operator": "eq", "value": "active" },
+  { "field": "id", "operator": "in", "value": [10, 20] }
+]
+```
+
+Supported operators are `eq`, `ne`, `gt`, `gte`, `lt`, `lte`, `like`, `notLike`, `in`, `notIn`, `isNull`, and `isNotNull`. Use a least-privilege database role. Raw SQL remains an advanced operation: never interpolate workflow input into `query`; use PostgreSQL placeholders with `values`.
 
 <!-- /SECTION: configuration -->
 
 ---
 
 <!-- SECTION: inputs-outputs -->
+
 ## Inputs & Outputs
 
 ### Inputs
 
-| Input | Type | Description |
-|-------|------|-------------|
+| Input   | Type  | Description                                                     |
+| ------- | ----- | --------------------------------------------------------------- |
 | `input` | `any` | Incoming workflow data (usable via expressions in field values) |
 
 ### Outputs
 
-| Output | Type | Description |
-|--------|------|-------------|
-| `output` | `object` | Result of the executed operation |
-| `error` | `Error` | Emitted if the operation or connection fails |
+| Output   | Type     | Description                                  |
+| -------- | -------- | -------------------------------------------- |
+| `output` | `object` | Result of the executed operation             |
+| `error`  | `Error`  | Emitted if the operation or connection fails |
 
 ### Output Schemas by Operation
 
 **`Select`**
+
 ```json
 {
   "count": 2,
@@ -177,6 +197,7 @@ The **PostgreSQL Action** node connects to a PostgreSQL server using a connectio
 ```
 
 **`Insert`**
+
 ```json
 {
   "operation": "inserted",
@@ -185,6 +206,7 @@ The **PostgreSQL Action** node connects to a PostgreSQL server using a connectio
 ```
 
 **`Update`**
+
 ```json
 {
   "operation": "updated",
@@ -193,6 +215,7 @@ The **PostgreSQL Action** node connects to a PostgreSQL server using a connectio
 ```
 
 **`Insert or Update`**
+
 ```json
 {
   "operation": "inserted or updated",
@@ -201,6 +224,7 @@ The **PostgreSQL Action** node connects to a PostgreSQL server using a connectio
 ```
 
 **`Delete` (row-level)**
+
 ```json
 {
   "operation": "delete",
@@ -209,6 +233,7 @@ The **PostgreSQL Action** node connects to a PostgreSQL server using a connectio
 ```
 
 **`Delete` (truncate)**
+
 ```json
 {
   "operation": "truncate",
@@ -217,6 +242,7 @@ The **PostgreSQL Action** node connects to a PostgreSQL server using a connectio
 ```
 
 **`Execute SQL query` (SELECT)**
+
 ```json
 {
   "rows": [{ "total": 1280 }],
@@ -226,6 +252,7 @@ The **PostgreSQL Action** node connects to a PostgreSQL server using a connectio
 ```
 
 **`Execute SQL query` (DML)**
+
 ```json
 {
   "rows": [],
@@ -239,6 +266,7 @@ The **PostgreSQL Action** node connects to a PostgreSQL server using a connectio
 ---
 
 <!-- SECTION: examples -->
+
 ## Examples
 
 ### Example: Select with Filter and Sort
@@ -246,6 +274,7 @@ The **PostgreSQL Action** node connects to a PostgreSQL server using a connectio
 Query up to 50 active users from the `analytics` schema, sorted by creation date.
 
 **Configuration:**
+
 ```json
 {
   "host": "db.example.com",
@@ -259,7 +288,7 @@ Query up to 50 active users from the `analytics` schema, sorted by creation date
   "selectParams": {
     "returnAll": false,
     "limit": 50,
-    "where": "status = 'active'",
+    "where": [{ "field": "status", "operator": "eq", "value": "active" }],
     "columns": ["id", "name", "email", "created_at"],
     "sort": [{ "column": "created_at", "order": "desc" }]
   }
@@ -267,10 +296,11 @@ Query up to 50 active users from the `analytics` schema, sorted by creation date
 ```
 
 **Generated SQL:**
+
 ```sql
 SELECT "id", "name", "email", "created_at"
 FROM "analytics"."users"
-WHERE status = 'active'
+WHERE "status" = $1
 ORDER BY "created_at" DESC
 LIMIT 50;
 ```
@@ -282,6 +312,7 @@ LIMIT 50;
 Insert a new lead into the `public.leads` table.
 
 **Configuration:**
+
 ```json
 {
   "tableName": "leads",
@@ -299,6 +330,7 @@ Insert a new lead into the `public.leads` table.
 ```
 
 **Generated SQL:**
+
 ```sql
 INSERT INTO "public"."leads" ("email", "name", "source")
 VALUES ($1, $2, $3);
@@ -311,12 +343,13 @@ VALUES ($1, $2, $3);
 Update the status of a specific user.
 
 **Configuration:**
+
 ```json
 {
   "tableName": "users",
   "operation": "Update",
   "updateParams": {
-    "where": "id = 42",
+    "where": [{ "field": "id", "operator": "eq", "value": 42 }],
     "rows": [
       { "rowName": "status", "rowValue": "inactive" },
       { "rowName": "updated_at", "rowValue": "2026-03-10" }
@@ -326,10 +359,11 @@ Update the status of a specific user.
 ```
 
 **Generated SQL:**
+
 ```sql
 UPDATE "public"."users"
 SET "status" = $1, "updated_at" = $2
-WHERE id = 42;
+WHERE "id" = $3;
 ```
 
 ---
@@ -339,6 +373,7 @@ WHERE id = 42;
 Insert or update a product record based on its SKU.
 
 **Configuration:**
+
 ```json
 {
   "tableName": "products",
@@ -355,6 +390,7 @@ Insert or update a product record based on its SKU.
 ```
 
 **Generated SQL:**
+
 ```sql
 INSERT INTO "public"."products" ("sku", "name", "price")
 VALUES ($1, $2, $3)
@@ -369,6 +405,7 @@ DO UPDATE SET "sku" = EXCLUDED."sku", "name" = EXCLUDED."name", "price" = EXCLUD
 Clear a staging table and all dependent rows.
 
 **Configuration:**
+
 ```json
 {
   "tableName": "staging_events",
@@ -381,6 +418,7 @@ Clear a staging table and all dependent rows.
 ```
 
 **Generated SQL:**
+
 ```sql
 TRUNCATE TABLE "public"."staging_events" CASCADE;
 ```
@@ -392,17 +430,21 @@ TRUNCATE TABLE "public"."staging_events" CASCADE;
 Run a custom aggregation.
 
 **Configuration:**
+
 ```json
 {
   "tableName": "orders",
   "operation": "Execute SQL query",
   "executeQueryParams": {
-    "query": "SELECT date_trunc('month', created_at) AS month, COUNT(*) AS total FROM public.orders GROUP BY 1 ORDER BY 1 DESC"
+    "query": "SELECT date_trunc('month', created_at) AS month, COUNT(*) AS total FROM public.orders WHERE created_at >= $1 GROUP BY 1 ORDER BY 1 DESC",
+    "values": ["{{input.startDate}}"],
+    "acknowledgeRisk": true
   }
 }
 ```
 
 **Output:**
+
 ```json
 {
   "rows": [
@@ -419,6 +461,7 @@ Run a custom aggregation.
 ---
 
 <!-- SECTION: workflow-example -->
+
 ## Workflow Integration
 
 ### Sample Workflow: Daily Cleanup Job
@@ -451,7 +494,13 @@ Run every night to delete expired sessions from the database.
         "operation": "Delete",
         "deleteParams": {
           "operation": "Delete",
-          "where": "expires_at < NOW()"
+          "where": [
+            {
+              "field": "expires_at",
+              "operator": "lt",
+              "value": "{{input.cutoffDate}}"
+            }
+          ]
         }
       }
     },
@@ -480,6 +529,7 @@ Run every night to delete expired sessions from the database.
 ---
 
 <!-- SECTION: troubleshooting -->
+
 ## Troubleshooting
 
 ### Common Issues
@@ -504,9 +554,9 @@ Run every night to delete expired sessions from the database.
 
 #### `where required` on Delete
 
-**Cause:** `deleteParams.operation` is `Delete` but no `where` clause was provided.
+**Cause:** `deleteParams.operation` is `Delete` but no non-empty `where` condition array was provided.
 
-**Solution:** Provide a WHERE condition. Use `Truncate` to clear all rows, or `Drop` to remove the entire table.
+**Solution:** Provide structured conditions. Use `Truncate` to clear all rows, or `Drop` to remove the entire table.
 
 #### `conflictColumns is required` on Upsert
 
@@ -516,19 +566,20 @@ Run every night to delete expired sessions from the database.
 
 ### Error Codes
 
-| Code | Message | Solution |
-|------|---------|----------|
-| `ECONNREFUSED` | Connection refused | Check host, port, and firewall |
-| `28P01` | Password authentication failed | Verify credentials |
-| `42P01` | Relation does not exist | Check `schemaName` and `tableName` |
-| `23505` | Unique violation | Use `Insert or Update` or enable `skipOnConflict` |
-| `42601` | SQL syntax error | Check the raw SQL in `executeQueryParams.query` |
+| Code           | Message                        | Solution                                          |
+| -------------- | ------------------------------ | ------------------------------------------------- |
+| `ECONNREFUSED` | Connection refused             | Check host, port, and firewall                    |
+| `28P01`        | Password authentication failed | Verify credentials                                |
+| `42P01`        | Relation does not exist        | Check `schemaName` and `tableName`                |
+| `23505`        | Unique violation               | Use `Insert or Update` or enable `skipOnConflict` |
+| `42601`        | SQL syntax error               | Check the raw SQL in `executeQueryParams.query`   |
 
 <!-- /SECTION: troubleshooting -->
 
 ---
 
 <!-- SECTION: related -->
+
 ## Related
 
 - [MySQL Action](./mysql.md) - MySQL relational database operations
@@ -540,10 +591,12 @@ Run every night to delete expired sessions from the database.
 ---
 
 <!-- SECTION: changelog -->
+
 ## Changelog
 
-| Version | Date | Changes |
-|---------|------|---------|
-| 1.0.0 | 2026-03-10 | Initial release |
+| Version | Date       | Changes                                                                               |
+| ------- | ---------- | ------------------------------------------------------------------------------------- |
+| 1.1.0   | 2026-08-05 | Replaced free-form WHERE clauses with bound structured conditions and guarded raw SQL |
+| 1.0.0   | 2026-03-10 | Initial release                                                                       |
 
 <!-- /SECTION: changelog -->

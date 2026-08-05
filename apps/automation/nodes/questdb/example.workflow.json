@@ -1,0 +1,42 @@
+{
+  "name": "Safely insert a QuestDB row",
+  "nodes": [
+    {
+      "id": "trigger",
+      "type": "trigger",
+      "position": { "x": 80, "y": 160 },
+      "data": {
+        "name": "manual-trigger",
+        "label": "Run",
+        "inputs": {},
+        "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } }
+      }
+    },
+    {
+      "id": "questdb",
+      "type": "action",
+      "position": { "x": 300, "y": 160 },
+      "data": {
+        "name": "questdb",
+        "label": "Insert QuestDB Row",
+        "inputs": { "input": { "label": "Input" } },
+        "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } }
+      }
+    },
+    {
+      "id": "output",
+      "type": "display",
+      "position": { "x": 520, "y": 160 },
+      "data": {
+        "name": "log",
+        "label": "Insert Result",
+        "inputs": { "input": { "label": "Input" } },
+        "outputs": { "success": { "label": "Success" } }
+      }
+    }
+  ],
+  "connections": [
+    { "id": "trigger-questdb", "type": "directed", "source": "trigger", "target": "questdb", "sourceHandle": "success", "targetHandle": "input" },
+    { "id": "questdb-output", "type": "directed", "source": "questdb", "target": "output", "sourceHandle": "success", "targetHandle": "input" }
+  ]
+}

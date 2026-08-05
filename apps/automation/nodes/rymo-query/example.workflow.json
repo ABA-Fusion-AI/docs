@@ -1,0 +1,42 @@
+{
+  "name": "Safely query active records with Rymo",
+  "nodes": [
+    {
+      "id": "trigger",
+      "type": "trigger",
+      "position": { "x": 80, "y": 160 },
+      "data": {
+        "name": "manual-trigger",
+        "label": "Run",
+        "inputs": {},
+        "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } }
+      }
+    },
+    {
+      "id": "query",
+      "type": "action",
+      "position": { "x": 300, "y": 160 },
+      "data": {
+        "name": "rymo-query",
+        "label": "Safe Rymo Query",
+        "inputs": { "input": { "label": "Input" } },
+        "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } }
+      }
+    },
+    {
+      "id": "output",
+      "type": "display",
+      "position": { "x": 520, "y": 160 },
+      "data": {
+        "name": "log",
+        "label": "Query Results",
+        "inputs": { "input": { "label": "Input" } },
+        "outputs": { "success": { "label": "Success" } }
+      }
+    }
+  ],
+  "connections": [
+    { "id": "trigger-query", "type": "directed", "source": "trigger", "target": "query", "sourceHandle": "success", "targetHandle": "input" },
+    { "id": "query-output", "type": "directed", "source": "query", "target": "output", "sourceHandle": "success", "targetHandle": "input" }
+  ]
+}

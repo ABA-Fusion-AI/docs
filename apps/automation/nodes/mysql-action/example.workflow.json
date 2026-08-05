@@ -1,0 +1,42 @@
+{
+  "name": "Safely select active MySQL records",
+  "nodes": [
+    {
+      "id": "trigger",
+      "type": "trigger",
+      "position": { "x": 80, "y": 160 },
+      "data": {
+        "name": "manual-trigger",
+        "label": "Run",
+        "inputs": {},
+        "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } }
+      }
+    },
+    {
+      "id": "mysql",
+      "type": "action",
+      "position": { "x": 300, "y": 160 },
+      "data": {
+        "name": "mysql-action",
+        "label": "Safe MySQL Select",
+        "inputs": { "input": { "label": "Input" } },
+        "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } }
+      }
+    },
+    {
+      "id": "output",
+      "type": "display",
+      "position": { "x": 520, "y": 160 },
+      "data": {
+        "name": "log",
+        "label": "Selected Rows",
+        "inputs": { "input": { "label": "Input" } },
+        "outputs": { "success": { "label": "Success" } }
+      }
+    }
+  ],
+  "connections": [
+    { "id": "trigger-mysql", "type": "directed", "source": "trigger", "target": "mysql", "sourceHandle": "success", "targetHandle": "input" },
+    { "id": "mysql-output", "type": "directed", "source": "mysql", "target": "output", "sourceHandle": "success", "targetHandle": "input" }
+  ]
+}

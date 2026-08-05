@@ -1,0 +1,42 @@
+{
+  "name": "Safely select active PostgreSQL records",
+  "nodes": [
+    {
+      "id": "trigger",
+      "type": "trigger",
+      "position": { "x": 80, "y": 160 },
+      "data": {
+        "name": "manual-trigger",
+        "label": "Run",
+        "inputs": {},
+        "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } }
+      }
+    },
+    {
+      "id": "postgres",
+      "type": "action",
+      "position": { "x": 300, "y": 160 },
+      "data": {
+        "name": "postgres-action",
+        "label": "Safe PostgreSQL Select",
+        "inputs": { "input": { "label": "Input" } },
+        "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } }
+      }
+    },
+    {
+      "id": "output",
+      "type": "display",
+      "position": { "x": 520, "y": 160 },
+      "data": {
+        "name": "log",
+        "label": "Selected Rows",
+        "inputs": { "input": { "label": "Input" } },
+        "outputs": { "success": { "label": "Success" } }
+      }
+    }
+  ],
+  "connections": [
+    { "id": "trigger-postgres", "type": "directed", "source": "trigger", "target": "postgres", "sourceHandle": "success", "targetHandle": "input" },
+    { "id": "postgres-output", "type": "directed", "source": "postgres", "target": "output", "sourceHandle": "success", "targetHandle": "input" }
+  ]
+}

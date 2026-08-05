@@ -1,0 +1,42 @@
+{
+  "name": "Run a parameterized Rymo transaction",
+  "nodes": [
+    {
+      "id": "trigger",
+      "type": "trigger",
+      "position": { "x": 80, "y": 160 },
+      "data": {
+        "name": "manual-trigger",
+        "label": "Run",
+        "inputs": {},
+        "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } }
+      }
+    },
+    {
+      "id": "transaction",
+      "type": "action",
+      "position": { "x": 300, "y": 160 },
+      "data": {
+        "name": "rymo-transaction",
+        "label": "Safe Transaction",
+        "inputs": { "input": { "label": "Input" } },
+        "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } }
+      }
+    },
+    {
+      "id": "output",
+      "type": "display",
+      "position": { "x": 520, "y": 160 },
+      "data": {
+        "name": "log",
+        "label": "Transaction Result",
+        "inputs": { "input": { "label": "Input" } },
+        "outputs": { "success": { "label": "Success" } }
+      }
+    }
+  ],
+  "connections": [
+    { "id": "trigger-transaction", "type": "directed", "source": "trigger", "target": "transaction", "sourceHandle": "success", "targetHandle": "input" },
+    { "id": "transaction-output", "type": "directed", "source": "transaction", "target": "output", "sourceHandle": "success", "targetHandle": "input" }
+  ]
+}
