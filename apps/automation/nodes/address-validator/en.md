@@ -17,7 +17,7 @@ tags:
   - google
   - maps
   - postal
-  - utility
+  - Peer-only 
   - action
 related_nodes:
   - function
@@ -25,48 +25,23 @@ related_nodes:
   - http-request
 ---
 
-<!-- SECTION: header -->
-# Address Validator Action
-
-> **Category:** Peer-only | **Type:** Action Node
-
-Parse, validate, format, and optionally verify postal addresses using the Google Maps Geocoding API. This node helps normalize address data, verify required fields, and retrieve standardized address information.
-
-<!-- /SECTION: header -->
-
----
-
 <!-- SECTION: overview -->
-## Overview
+# Address Validator
 
-The **Address Validator Action** provides a simple toolkit for working with postal addresses inside Fusion workflows.
+> **Category:** Peer-only  | **Type:** Action Node
 
-It supports four operations:
+Parse, validate, format, and optionally verify postal addresses using the Google Maps Geocoding API.
 
-- Parse a raw address into structured fields
-- Validate that an address contains required information
-- Format address components into a printable address
-- Validate and normalize an address using the Google Maps Geocoding API
-
-The first three operations run locally and require no external services. Google validation requires a valid Google Maps API key.
-
-### Key Features
-
-- **4 Operations:** Parse, Validate, Format, and Google Validation
-- **Local Processing:** No API required for parsing, formatting, or basic validation
-- **Google Maps Integration:** Standardize and validate addresses
-- **Geolocation Support:** Returns latitude and longitude
-- **Workflow Friendly:** Simple JSON outputs
-- **Supports Multi-line Addresses**
+The Address Validator node helps normalize address data inside Fusion workflows. It supports simple local parsing and formatting, basic address validation, and full address verification using Google's Geocoding API.
 
 ### Use Cases
 
-- Validate customer shipping addresses
-- Format addresses before generating invoices
-- Normalize addresses before saving them to a database
-- Retrieve coordinates from an address
-- Check incoming webhook address data
-- Verify user-entered addresses before processing
+- Parse customer-entered addresses into structured data
+- Verify that an address contains required fields
+- Format addresses for printing or storage
+- Validate shipping addresses before processing orders
+- Standardize addresses using Google Maps
+- Retrieve latitude and longitude from an address
 
 <!-- /SECTION: overview -->
 
@@ -77,30 +52,39 @@ The first three operations run locally and require no external services. Google 
 
 ### Parameters
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `operation` | `enum` | ✅ Yes | Operation to execute |
-| `address` | `string` | Conditional | Raw address string |
-| `street` | `string` | Conditional | Street address |
-| `city` | `string` | Conditional | City |
-| `state` | `string` | Conditional | State or province |
-| `zipCode` | `string` | Conditional | ZIP or postal code |
-| `country` | `string` | Conditional | Country |
-| `apiKey` | `string` | Conditional | Google Maps API key |
+| Parameter | Type | Required | Default | Description |
+|-----------|------|----------|---------|-------------|
+| `operation` | `enum` | ✅ Yes | `parseAddress` | Operation to execute |
+| `address` | `string` | ❌ No | `""` | Raw address string |
+| `street` | `string` | ❌ No | `""` | Street address |
+| `city` | `string` | ❌ No | `""` | City |
+| `state` | `string` | ❌ No | `""` | State or province |
+| `zipCode` | `string` | ❌ No | `""` | ZIP or postal code |
+| `country` | `string` | ❌ No | `""` | Country |
+| `apiKey` | `string` | ✅ Yes | `""` | Google Maps API key |
 
-Each conditional field is only required for the selected operation.
+### Supported Operations
+
+| Operation | Description |
+|-----------|-------------|
+| `parseAddress` | Parse a raw address into structured fields |
+| `validateAddressFormat` | Validate that required address fields exist |
+| `formatAddress` | Format address components into a printable address |
+| `validateWithGoogle` | Validate and normalize an address using Google Maps |
 
 ---
 
 ### Operation: Parse Address
 
-Parses a raw address into a simple structured object.
+Parses a multi-line address into a structured object.
 
-| Field | Type | Required | Description |
-|-------|------|----------|-------------|
-| `address` | `string` | ✅ Yes | Address to parse |
+#### Parameters
 
-**Output**
+| Field | Required | Description |
+|-------|----------|-------------|
+| `address` | ✅ Yes | Address to parse |
+
+#### Output
 
 ```json
 {
@@ -116,16 +100,18 @@ Parses a raw address into a simple structured object.
 
 > **Note**
 >
-> The parser currently extracts:
+> The parser extracts:
 >
 > - Street (first line)
-> - ZIP code using a regular expression
+> - ZIP code (US ZIP format)
+>
+> City, state, and country are not automatically detected.
 
 ---
 
 ### Operation: Validate Address Format
 
-Checks whether an address contains the required fields.
+Checks whether the address contains the required fields.
 
 Required fields:
 
@@ -133,11 +119,13 @@ Required fields:
 - City
 - ZIP Code
 
-| Field | Type | Required | Description |
-|-------|------|----------|-------------|
-| `address` | `string` | ✅ Yes | Address to validate |
+#### Parameters
 
-**Output**
+| Field | Required |
+|-------|----------|
+| `address` | ✅ Yes |
+
+#### Output
 
 ```json
 {
@@ -154,17 +142,19 @@ Required fields:
 
 ### Operation: Format Address
 
-Formats address components into a printable multi-line address.
+Formats address components into a multi-line postal address.
 
-| Field | Type | Required |
-|-------|------|----------|
-| `street` | `string` | No |
-| `city` | `string` | No |
-| `state` | `string` | No |
-| `zipCode` | `string` | No |
-| `country` | `string` | No |
+#### Parameters
 
-**Output**
+| Field | Required |
+|-------|----------|
+| `street` | No |
+| `city` | No |
+| `state` | No |
+| `zipCode` | No |
+| `country` | No |
+
+#### Output
 
 ```text
 1600 Amphitheatre Parkway
@@ -177,14 +167,16 @@ USA
 
 ### Operation: Validate With Google
 
-Validates and normalizes an address using the Google Maps Geocoding API.
+Validates and standardizes an address using the Google Maps Geocoding API.
 
-| Field | Type | Required | Description |
-|-------|------|----------|-------------|
-| `address` | `string` | ✅ Yes | Address to validate |
-| `apiKey` | `string` | ✅ Yes | Google Maps API key |
+#### Parameters
 
-**Output**
+| Field | Required |
+|-------|----------|
+| `address` | ✅ Yes |
+| `apiKey` | ✅ Yes |
+
+#### Output
 
 ```json
 {
@@ -199,6 +191,15 @@ Validates and normalizes an address using the Google Maps Geocoding API.
 }
 ```
 
+If validation fails:
+
+```json
+{
+  "success": false,
+  "error": "Address not found"
+}
+```
+
 <!-- /SECTION: configuration -->
 
 ---
@@ -210,32 +211,27 @@ Validates and normalizes an address using the Google Maps Geocoding API.
 
 | Input | Type | Description |
 |-------|------|-------------|
-| `input` | `any` | Upstream workflow data used to populate address fields |
+| `input` | `any` | Workflow data used to populate address fields via expressions |
 
 ### Outputs
 
 | Output | Type | Description |
 |--------|------|-------------|
-| `output` | `object` | Operation result |
-| `error` | `Error` | Returned if the operation fails |
+| `success` | `object` | Operation result |
+| `error` | `Error` | Emitted if the operation fails |
 
 ### Output Summary
 
 | Operation | Output |
 |-----------|--------|
-| Parse Address | Parsed address object |
-| Validate Address Format | Validation result |
-| Format Address | Formatted address |
-| Validate With Google | Google validation result |
-
-<!-- /SECTION: inputs-outputs -->
-
----
-
-<!-- SECTION: examples -->
-## Examples
+| `parseAddress` | Parsed address object |
+| `validateAddressFormat` | Validation result |
+| `formatAddress` | Formatted address string |
+| `validateWithGoogle` | Google validation result |
 
 ### Example: Parse Address
+
+**Configuration**
 
 ```json
 {
@@ -244,7 +240,7 @@ Validates and normalizes an address using the Google Maps Geocoding API.
 }
 ```
 
-**Returns**
+**Output**
 
 ```json
 {
@@ -256,30 +252,9 @@ Validates and normalizes an address using the Google Maps Geocoding API.
 
 ---
 
-### Example: Validate Address
-
-```json
-{
-  "operation": "validateAddressFormat",
-  "address": "1600 Amphitheatre Parkway\nMountain View, CA 94043"
-}
-```
-
-**Returns**
-
-```json
-{
-  "success": true,
-  "valid": false,
-  "missing": [
-    "city"
-  ]
-}
-```
-
----
-
 ### Example: Format Address
+
+**Configuration**
 
 ```json
 {
@@ -291,7 +266,7 @@ Validates and normalizes an address using the Google Maps Geocoding API.
 }
 ```
 
-**Returns**
+**Output**
 
 ```text
 221B Baker Street
@@ -304,6 +279,8 @@ United Kingdom
 
 ### Example: Validate With Google
 
+**Configuration**
+
 ```json
 {
   "operation": "validateWithGoogle",
@@ -312,7 +289,7 @@ United Kingdom
 }
 ```
 
-**Returns**
+**Output**
 
 ```json
 {
@@ -325,39 +302,46 @@ United Kingdom
 }
 ```
 
-<!-- /SECTION: examples -->
+<!-- /SECTION: inputs-outputs -->
 
 ---
 
 <!-- SECTION: workflow-example -->
 ## Workflow Integration
 
-### Sample Workflow
+### Sample Workflow: Validate Shipping Address
 
-Validate a shipping address before creating an order.
-
-```text
-Webhook Trigger
-       │
-       ▼
-Address Validator
-(validateWithGoogle)
-       │
-       ▼
-Function
-(Check success)
-       │
-       ▼
-Database Insert
+```json
+{
+  "nodes": [
+    {
+      "id": "webhook",
+      "type": "webhook-trigger"
+    },
+    {
+      "id": "validate-address",
+      "type": "address-validator",
+      "config": {
+        "operation": "validateWithGoogle",
+        "address": "{{input.shippingAddress}}",
+        "apiKey": "{{secrets.googleApiKey}}"
+      }
+    },
+    {
+      "id": "create-order",
+      "type": "order-action"
+    }
+  ]
+}
 ```
 
 ### Common Patterns
 
 - Customer Registration → Validate Address → Save Customer
-- Order Checkout → Validate Address → Create Shipment
-- CSV Import → Parse Address → Normalize → Store
-- Invoice Generator → Format Address → Generate PDF
-- Webhook → Google Validation → Continue Workflow
+- Checkout → Validate Shipping Address → Create Shipment
+- CSV Import → Parse Address → Store
+- Invoice Generation → Format Address → PDF Generator
+- Webhook → Validate With Google → Continue Workflow
 
 <!-- /SECTION: workflow-example -->
 
@@ -370,7 +354,7 @@ Database Insert
 
 **Cause**
 
-The selected operation requires an address but none was supplied.
+The selected operation requires an address, but none was supplied.
 
 **Solution**
 
@@ -382,7 +366,7 @@ Provide a non-empty `address` value.
 
 **Cause**
 
-`validateWithGoogle` was selected without an API key.
+The Google validation operation was selected without providing an API key.
 
 **Solution**
 
@@ -398,9 +382,9 @@ Google could not locate the supplied address.
 
 **Solution**
 
-- Verify spelling.
+- Verify the spelling.
 - Include city and country.
-- Provide a complete postal address.
+- Use a complete postal address.
 
 ---
 
@@ -408,38 +392,32 @@ Google could not locate the supplied address.
 
 **Cause**
 
-The supplied Google API key is invalid or the Geocoding API is not enabled.
+The provided Google API key is invalid or the Geocoding API is not enabled.
 
 **Solution**
 
 - Verify the API key.
-- Enable the Geocoding API.
-- Ensure billing is enabled for your Google Cloud project.
-
----
-
-### Network Error
-
-**Cause**
-
-The request to Google Maps failed.
-
-**Solution**
-
-Retry the request or verify internet connectivity.
+- Enable the Google Geocoding API.
+- Ensure billing is enabled in Google Cloud.
 
 ---
 
 ### Parser Limitations
 
-The built-in parser currently extracts:
+The built-in parser is intentionally lightweight.
+
+It currently extracts:
 
 - Street (first line)
 - ZIP code
 
-City, state, and country are **not** automatically detected.
+It does not automatically detect:
 
-For full normalization, use **Validate With Google**.
+- City
+- State
+- Country
+
+Use **validateWithGoogle** for complete address normalization.
 
 <!-- /SECTION: troubleshooting -->
 
@@ -449,7 +427,7 @@ For full normalization, use **Validate With Google**.
 ## Related
 
 - [Function](./function.md) – Execute custom JavaScript
-- [Webhook Trigger](./webhook-trigger.md) – Receive incoming address data
+- [Webhook Trigger](./webhook-trigger.md) – Receive incoming requests
 - [HTTP Request](./http-request.md) – Call external APIs
 
 <!-- /SECTION: related -->
