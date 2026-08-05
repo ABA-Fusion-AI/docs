@@ -1,15 +1,36 @@
 {
-  "name": "graphql_demo",
-  "variables": {},
-  "secrets": {},
+  "name": "Execute a GraphQL request",
   "nodes": [
     {
-      "id": "th83iv03ghx1ka9hsmlmm9j4",
+      "id": "trigger",
+      "type": "trigger",
       "position": {
-        "x": 969,
-        "y": 88
+        "x": 80,
+        "y": 160
       },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        }
+      }
+    },
+    {
+      "id": "graphql",
       "type": "action",
+      "position": {
+        "x": 260,
+        "y": 160
+      },
       "width": 64,
       "height": 64,
       "data": {
@@ -27,60 +48,21 @@
           "error": {
             "label": "Error"
           }
-        },
-        "description": "Execute GraphQL queries and mutations. Supports both JSON and GraphQL request formats.",
-        "showRunningStatus": true,
-        "parameters": {
-          "httpMethod": "POST",
-          "requestFormat": "json",
-          "responseFormat": "json",
-          "endpointUrl": "https://countries.trevorblades.com/",
-          "query": "query {   country(code: \"MA\") {     name     capital     currency     emoji   } }"
-        },
-        "_morphing": false
-      },
-      "selected": false
-    },
-    {
-      "id": "sgkqpn620x1hu4psevkrtp2h",
-      "position": {
-        "x": 783,
-        "y": 83.5
-      },
-      "type": "trigger",
-      "width": 64,
-      "height": 64,
-      "data": {
-        "name": "manual-trigger",
-        "label": "Manual Trigger",
-        "inputs": {},
-        "outputs": {
-          "success": {
-            "label": "Success"
-          },
-          "error": {
-            "label": "Error"
-          }
-        },
-        "description": "Triggers the workflow manually.",
-        "showRunningStatus": false,
-        "parameters": {},
-        "_morphing": false
+        }
       }
     },
     {
-      "id": "avlae7kp0ymcl4jk5svcl4tz",
-      "position": {
-        "x": 1102,
-        "y": 87.5
-      },
+      "id": "out",
       "type": "display",
+      "position": {
+        "x": 440,
+        "y": 140
+      },
       "width": 256,
       "height": 100,
-      "dragHandle": ".drag-handle__custom",
       "data": {
         "name": "log",
-        "label": "Log",
+        "label": "Result",
         "inputs": {
           "input": {
             "label": "Input"
@@ -88,47 +70,28 @@
         },
         "outputs": {
           "success": {
-            "label": "Success",
-            "isConnectable": false
+            "label": "Success"
           }
-        },
-        "description": "Logs the input data to the console.",
-        "showRunningStatus": false,
-        "parameters": {},
-        "_morphing": false
-      },
-      "selected": true
+        }
+      }
     }
   ],
   "connections": [
     {
-      "source": "sgkqpn620x1hu4psevkrtp2h",
-      "sourceHandle": "success",
-      "target": "th83iv03ghx1ka9hsmlmm9j4",
-      "targetHandle": "input",
+      "id": "xy-edge__triggersuccess-graphqlinput",
       "type": "directed",
-      "id": "xy-edge__sgkqpn620x1hu4psevkrtp2hsuccess-th83iv03ghx1ka9hsmlmm9j4input",
-      "data": {
-        "isAnimated": false
-      }
+      "source": "trigger",
+      "target": "graphql",
+      "sourceHandle": "success",
+      "targetHandle": "input"
     },
     {
-      "source": "th83iv03ghx1ka9hsmlmm9j4",
-      "sourceHandle": "success",
-      "target": "avlae7kp0ymcl4jk5svcl4tz",
-      "targetHandle": "input",
+      "id": "xy-edge__graphqlsuccess-outinput",
       "type": "directed",
-      "id": "xy-edge__th83iv03ghx1ka9hsmlmm9j4success-avlae7kp0ymcl4jk5svcl4tzinput",
-      "data": {
-        "isAnimated": false
-      }
+      "source": "graphql",
+      "target": "out",
+      "sourceHandle": "success",
+      "targetHandle": "input"
     }
-  ],
-  "status": "error",
-  "tracingEnabled": true,
-  "userId": "777264a3-11ea-4f91-ae4b-a53de8e99858",
-  "version": 1,
-  "createdAt": 1785860762745,
-  "updatedAt": 1785923575224,
-  "publishedNames": []
+  ]
 }
