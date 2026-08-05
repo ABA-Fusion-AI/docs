@@ -1,0 +1,286 @@
+[
+  {
+    "name": "stg",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "tmmz94rvsahrv7kr3g8khny8",
+        "position": {
+          "x": 412.4171204330107,
+          "y": 584.9968529680142
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "function",
+          "label": "Function",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Executes custom JavaScript code on the input data.",
+          "showRunningStatus": true,
+          "parameters": {
+            "code": "// Write your code here\nconst data = input.body.data;\nreturn data;"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "torvfitfzmu1w84984pf3tsv",
+        "position": {
+          "x": 678.5903344434752,
+          "y": 743.7327316059431
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "s1c8p83mjbqltx5a5d0nuz5z",
+        "position": {
+          "x": 724.9309147122652,
+          "y": 547.8204908232701
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "binary-to-text",
+          "label": "Binary to Text",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert binary data to text using specified encoding.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": {
+              "$expr": "output",
+              "node": "Function",
+              "outputId": "success"
+            },
+            "encoding": "utf8"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "vicnzdilo9ny4t94ehcmaqf0",
+        "position": {
+          "x": 971.8567583615664,
+          "y": 426.46799697620094
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "s8iajhulbyt8aqoklknvv311",
+        "position": {
+          "x": 160.26930671261772,
+          "y": 633.5101698674515
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "webhook",
+          "label": "Webhook Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers workflow on incoming HTTP requests",
+          "showRunningStatus": false,
+          "parameters": {
+            "method": "post",
+            "auth": {
+              "type": "none"
+            },
+            "respondType": "immediate",
+            "path": "/test"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "t944vp3f0cclpuob82esi87x",
+        "position": {
+          "x": 300.68724436233947,
+          "y": 779.1911141991986
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "tmmz94rvsahrv7kr3g8khny8",
+        "sourceHandle": "success",
+        "target": "k170p00cudd8lywjv7o5n14q",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__tmmz94rvsahrv7kr3g8khny8success-k170p00cudd8lywjv7o5n14qinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "tmmz94rvsahrv7kr3g8khny8",
+        "sourceHandle": "success",
+        "target": "torvfitfzmu1w84984pf3tsv",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__tmmz94rvsahrv7kr3g8khny8success-torvfitfzmu1w84984pf3tsvinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "tmmz94rvsahrv7kr3g8khny8",
+        "sourceHandle": "success",
+        "target": "s1c8p83mjbqltx5a5d0nuz5z",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__tmmz94rvsahrv7kr3g8khny8success-s1c8p83mjbqltx5a5d0nuz5zinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "s1c8p83mjbqltx5a5d0nuz5z",
+        "sourceHandle": "success",
+        "target": "vicnzdilo9ny4t94ehcmaqf0",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__s1c8p83mjbqltx5a5d0nuz5zsuccess-vicnzdilo9ny4t94ehcmaqf0input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "s8iajhulbyt8aqoklknvv311",
+        "sourceHandle": "success",
+        "target": "tmmz94rvsahrv7kr3g8khny8",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__s8iajhulbyt8aqoklknvv311success-tmmz94rvsahrv7kr3g8khny8input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "s8iajhulbyt8aqoklknvv311",
+        "sourceHandle": "success",
+        "target": "t944vp3f0cclpuob82esi87x",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__s8iajhulbyt8aqoklknvv311success-t944vp3f0cclpuob82esi87xinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1785765335085,
+    "updatedAt": 1785850361394,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
