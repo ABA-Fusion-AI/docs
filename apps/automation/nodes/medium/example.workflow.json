@@ -33,7 +33,7 @@
           "showRunningStatus": true,
           "parameters": {
             "operation": "getArticle",
-            "apiKey": "a366db5ac3msh01bb3f52d543e20p119ab2jsn854fffc47110",
+            "apiKey": "",
             "articleId": "034685e17707"
           },
           "_morphing": false
