@@ -1,0 +1,122 @@
+{
+  "name": "DNS to IP Example",
+  "nodes": [
+    {
+      "id": "143aa9d8-4187-4641-b60f-df6a0ef70c7e",
+      "position": {
+        "x": 783,
+        "y": 83.5
+      },
+      "type": "trigger",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Triggers the workflow manually.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      }
+    },
+    {
+      "id": "bztqzmowpbzrc58q0rly0f92",
+      "position": {
+        "x": 930,
+        "y": 70.5
+      },
+      "type": "action",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "dns-to-ip",
+        "label": "DNS to IP",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Resolves a hostname to IP address(es). Supports IPv4, IPv6, or both.",
+        "showRunningStatus": true,
+        "parameters": {
+          "hostname": "google.com",
+          "ipVersion": "ipv4"
+        },
+        "_morphing": false
+      }
+    },
+    {
+      "id": "f5f3b4c3-09ff-4c92-8b6e-ba3f501de164",
+      "position": {
+        "x": 1102,
+        "y": 83.5
+      },
+      "type": "display",
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "data": {
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      }
+    }
+  ],
+  "connections": [
+    {
+      "source": "143aa9d8-4187-4641-b60f-df6a0ef70c7e",
+      "sourceHandle": "success",
+      "target": "bztqzmowpbzrc58q0rly0f92",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__143aa9d8-4187-4641-b60f-df6a0ef70c7esuccess-bztqzmowpbzrc58q0rly0f92input",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "source": "bztqzmowpbzrc58q0rly0f92",
+      "sourceHandle": "success",
+      "target": "f5f3b4c3-09ff-4c92-8b6e-ba3f501de164",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__bztqzmowpbzrc58q0rly0f92success-f5f3b4c3-09ff-4c92-8b6e-ba3f501de164input",
+      "data": {
+        "isAnimated": false
+      }
+    }
+  ],
+  "version": 1,
+  "secrets": {}
+}

@@ -1,0 +1,4 @@
+{
+  "label": "DNS to IP",
+  "description": "Resolves a hostname to IP address(es). Supports IPv4, IPv6, or both."
+}
