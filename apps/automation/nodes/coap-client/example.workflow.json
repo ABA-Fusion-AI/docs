@@ -1,0 +1,127 @@
+{
+  "name": "CoAP Client Example",
+  "nodes": [
+    {
+      "id": "f00b789d-690b-4ae9-b00c-e0da19642179",
+      "position": {
+        "x": 783,
+        "y": 83.5
+      },
+      "type": "trigger",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Triggers the workflow manually.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      }
+    },
+    {
+      "id": "aa6jq28n9zelq8nv1orc0lnw",
+      "position": {
+        "x": 920,
+        "y": 179.875
+      },
+      "type": "action",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "coap-client",
+        "label": "CoAP Client",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Sends CoAP requests to CoAP servers. Supports GET, POST, PUT, and DELETE methods over UDP.",
+        "showRunningStatus": true,
+        "parameters": {
+          "url": "coap://coap.me/test",
+          "method": "GET",
+          "contentType": "application/json",
+          "observe": false,
+          "confirmable": true,
+          "timeout": 5000,
+          "retries": 2
+        },
+        "_morphing": false
+      }
+    },
+    {
+      "id": "87d0be07-907d-4b19-85cd-f9f5d2f72bb5",
+      "position": {
+        "x": 1102,
+        "y": 83.5
+      },
+      "type": "display",
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "data": {
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      }
+    }
+  ],
+  "connections": [
+    {
+      "source": "f00b789d-690b-4ae9-b00c-e0da19642179",
+      "sourceHandle": "success",
+      "target": "aa6jq28n9zelq8nv1orc0lnw",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__f00b789d-690b-4ae9-b00c-e0da19642179success-aa6jq28n9zelq8nv1orc0lnwinput",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "source": "aa6jq28n9zelq8nv1orc0lnw",
+      "sourceHandle": "success",
+      "target": "87d0be07-907d-4b19-85cd-f9f5d2f72bb5",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__aa6jq28n9zelq8nv1orc0lnwsuccess-87d0be07-907d-4b19-85cd-f9f5d2f72bb5input",
+      "data": {
+        "isAnimated": false
+      }
+    }
+  ],
+  "version": 1,
+  "secrets": {}
+}

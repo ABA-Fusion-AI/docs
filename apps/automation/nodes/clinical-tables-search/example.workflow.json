@@ -1,0 +1,122 @@
+{
+  "name": "Clinical Tables NLM Search Example",
+  "nodes": [
+    {
+      "id": "f4eb360e-bbf6-4878-af90-3213e6440e2e",
+      "position": {
+        "x": 783,
+        "y": 83.5
+      },
+      "type": "trigger",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Triggers the workflow manually.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      }
+    },
+    {
+      "id": "we04quhbo4mql12zt2kup564",
+      "position": {
+        "x": 918,
+        "y": 77
+      },
+      "type": "action",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "clinical-tables-search",
+        "label": "Clinical Tables NLM Search",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Search NLM Clinical Tables databases (ICD-10, drugs, genes, conditions, and more)",
+        "showRunningStatus": true,
+        "parameters": {
+          "database": "conditions",
+          "terms": "diabetes"
+        },
+        "_morphing": false
+      }
+    },
+    {
+      "id": "95b77a55-d4b9-488e-9fba-c1ec2c1ec4de",
+      "position": {
+        "x": 1102,
+        "y": 83.5
+      },
+      "type": "display",
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "data": {
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      }
+    }
+  ],
+  "connections": [
+    {
+      "source": "f4eb360e-bbf6-4878-af90-3213e6440e2e",
+      "sourceHandle": "success",
+      "target": "we04quhbo4mql12zt2kup564",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__f4eb360e-bbf6-4878-af90-3213e6440e2esuccess-we04quhbo4mql12zt2kup564input",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "source": "we04quhbo4mql12zt2kup564",
+      "sourceHandle": "success",
+      "target": "95b77a55-d4b9-488e-9fba-c1ec2c1ec4de",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__we04quhbo4mql12zt2kup564success-95b77a55-d4b9-488e-9fba-c1ec2c1ec4deinput",
+      "data": {
+        "isAnimated": false
+      }
+    }
+  ],
+  "version": 1,
+  "secrets": {}
+}

@@ -1,0 +1,123 @@
+{
+  "name": "Clinical Trials Search Example",
+  "nodes": [
+    {
+      "id": "6ab5e46c-32d8-4026-a5c4-56755f467317",
+      "position": {
+        "x": 783,
+        "y": 83.5
+      },
+      "type": "trigger",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Triggers the workflow manually.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      }
+    },
+    {
+      "id": "ubclbbjlrf8dr7xruefdmiwl",
+      "position": {
+        "x": 930,
+        "y": 78.25
+      },
+      "type": "action",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "clinical-trials-search",
+        "label": "Clinical Trials Search",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Search for clinical trials from ClinicalTrials.gov by condition and status",
+        "showRunningStatus": true,
+        "parameters": {
+          "condition": "diabetes",
+          "status": "recruiting",
+          "maxResults": 10
+        },
+        "_morphing": false
+      }
+    },
+    {
+      "id": "6776d83c-2aa6-46c9-9641-f69c10af53df",
+      "position": {
+        "x": 1102,
+        "y": 83.5
+      },
+      "type": "display",
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "data": {
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      }
+    }
+  ],
+  "connections": [
+    {
+      "source": "6ab5e46c-32d8-4026-a5c4-56755f467317",
+      "sourceHandle": "success",
+      "target": "ubclbbjlrf8dr7xruefdmiwl",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__6ab5e46c-32d8-4026-a5c4-56755f467317success-ubclbbjlrf8dr7xruefdmiwlinput",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "source": "ubclbbjlrf8dr7xruefdmiwl",
+      "sourceHandle": "success",
+      "target": "6776d83c-2aa6-46c9-9641-f69c10af53df",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__ubclbbjlrf8dr7xruefdmiwlsuccess-6776d83c-2aa6-46c9-9641-f69c10af53dfinput",
+      "data": {
+        "isAnimated": false
+      }
+    }
+  ],
+  "version": 1,
+  "secrets": {}
+}

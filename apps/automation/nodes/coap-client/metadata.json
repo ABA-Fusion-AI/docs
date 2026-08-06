@@ -1,0 +1,4 @@
+{
+  "label": "CoAP Client",
+  "description": "Sends CoAP requests to CoAP servers. Supports GET, POST, PUT, and DELETE methods over UDP."
+}
