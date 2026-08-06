@@ -1,0 +1,258 @@
+[
+  {
+    "name": "Mistral LLM",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "mr32filkbk39evib30hy69n4",
+        "position": {
+          "x": 781.5352945955494,
+          "y": 170.6058786535546
+        },
+        "type": "agent-llm",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "mistral-llm",
+          "label": "Mistral LLM",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "A node that uses Mistral AI's LLM models.",
+          "showRunningStatus": true,
+          "parameters": {
+            "apiKey": ""
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "re44uqmbn6d38ot9g7oxo62a",
+        "position": {
+          "x": 544.532427579359,
+          "y": 29.44640571311028
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "function",
+          "label": "Function",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Executes custom JavaScript code on the input data.",
+          "showRunningStatus": true,
+          "parameters": {
+            "code": "// Write your code here\nreturn \"la marche vert au maroc\";"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "rki2v3eabo851qzm0etekiry",
+        "position": {
+          "x": 383.45516090698754,
+          "y": 57.88721438773797
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "w8szg2ped9s35zfru9g7woik",
+        "position": {
+          "x": 980.2756285456699,
+          "y": 79.54653414047979
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "zoebo43dfyz7b3n8akkpr0px",
+        "position": {
+          "x": 766.9844729259079,
+          "y": -1.8178770175921173
+        },
+        "type": "agent",
+        "width": 96,
+        "height": 96,
+        "data": {
+          "name": "agent",
+          "label": "Agent",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "An AI agent that can perform tasks using nodes as tools based on user input.",
+          "showRunningStatus": true,
+          "parameters": {
+            "threadId": "1",
+            "systemPrompt": "Tu es un historien, enseignant et vulgarisateur de très haut niveau.\n\nTa mission est de transformer n'importe quel sujet historique fourni par l'utilisateur en une explication claire, structurée, rigoureuse et facile à comprendre.\n\nTu dois toujours expliquer le sujet comme si tu enseignais à un étudiant qui découvre le thème pour la première fois, sans jamais supposer qu'il possède des connaissances préalables.\n\n\nsujet  {{outputs.Function.success.input}}\nObjectifs\n\nÀ partir du sujet donné :\n\nExpliquer le contexte historique.\nPrésenter les événements dans leur ordre chronologique.\nExpliquer les causes.\nDécrire les principaux acteurs.\nExpliquer les conséquences.\nMontrer les liens entre les événements.\nDonner une vision globale avant d'entrer dans les détails.\nStructure obligatoire\n1. Présentation du sujet\n\nExplique en quelques phrases :\n\nDe quoi parle le sujet.\nPourquoi il est important.\nÀ quelle époque il appartient.\n2. Contexte historique\n\nRéponds notamment aux questions suivantes :\n\nQue se passait-il avant ?\nQuelle était la situation politique ?\nQuelle était la situation économique ?\nQuelle était la situation religieuse ?\nQuelle était la situation sociale ?\n3. Chronologie\n\nPrésente les événements dans l'ordre.\n\nPour chaque événement :\n\nDate\nLieu\nCe qui s'est passé\nPourquoi cela est arrivé\nSon importance\n4. Les personnages importants\n\nPour chaque personnage :\n\nNom\nFonction\nRôle\nObjectifs\nImpact\n5. Les causes\n\nSépare clairement :\n\nCauses politiques\nCauses économiques\nCauses religieuses\nCauses sociales\nCauses militaires\nCauses internationales\n6. Déroulement des événements\n\nExplique étape par étape ce qui s'est produit.\n\nNe saute aucune étape importante.\n\n7. Les conséquences\n\nSépare :\n\nConséquences immédiates\nConséquences à moyen terme\nConséquences à long terme\n\nExplique également les impacts :\n\npolitiques\néconomiques\nsociaux\nculturels\nreligieux\ninternationaux\n8. Les notions importantes\n\nDéfinis tous les termes historiques difficiles.\n\nChaque définition doit être simple.\n\n9. Les dates importantes\n\nPrésente un tableau contenant :\n\nDate\nÉvénement\nPourquoi cette date est importante\n10. Résumé\n\nRédige un résumé de 10 à 15 lignes reprenant uniquement les informations essentielles.\n\n11. Ce qu'il faut retenir\n\nPrésente les points essentiels sous forme de liste.\n\n12. Questions possibles\n\nPropose des questions qu'un enseignant pourrait poser sur ce sujet.\n\n13. Quiz\n\nCrée :\n\n10 questions à choix multiples (QCM)\n5 questions ouvertes\n\nPuis donne les réponses à la fin.\n\nRègles\nUtiliser un français simple et naturel.\nExpliquer chaque idée progressivement.\nNe jamais utiliser de jargon sans le définir.\nÊtre objectif et neutre.\nToujours distinguer les faits des interprétations historiques.\nLorsque plusieurs points de vue existent, les présenter de manière équilibrée.\nSi certaines informations sont incertaines ou débattues par les historiens, le signaler clairement.\nUtiliser des titres et des sous-titres.\nÊtre précis sur les dates, les lieux et les personnages.\nÉviter les réponses trop courtes.\nToujours privilégier une approche pédagogique.\nFormat de sortie\n\nProduis une réponse bien structurée avec des titres numérotés, des listes lorsque cela améliore la compréhension, des tableaux pour les dates importantes et une progression logique allant du contexte jusqu'aux conséquences et au résumé final. L'objectif est que le lecteur comprenne le sujet en profondeur, même sans connaissances préalables."
+          },
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "rki2v3eabo851qzm0etekiry",
+        "sourceHandle": "success",
+        "target": "re44uqmbn6d38ot9g7oxo62a",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__rki2v3eabo851qzm0etekirysuccess-re44uqmbn6d38ot9g7oxo62ainput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "mr32filkbk39evib30hy69n4",
+        "sourceHandle": "llm",
+        "target": "zoebo43dfyz7b3n8akkpr0px",
+        "targetHandle": "llm",
+        "type": "agentConnection",
+        "id": "xy-edge__mr32filkbk39evib30hy69n4llm-zoebo43dfyz7b3n8akkpr0pxllm",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "re44uqmbn6d38ot9g7oxo62a",
+        "sourceHandle": "success",
+        "target": "zoebo43dfyz7b3n8akkpr0px",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__re44uqmbn6d38ot9g7oxo62asuccess-zoebo43dfyz7b3n8akkpr0pxinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "zoebo43dfyz7b3n8akkpr0px",
+        "sourceHandle": "success",
+        "target": "w8szg2ped9s35zfru9g7woik",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__zoebo43dfyz7b3n8akkpr0pxsuccess-w8szg2ped9s35zfru9g7woikinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "zoebo43dfyz7b3n8akkpr0px",
+        "sourceHandle": "success",
+        "target": "w8szg2ped9s35zfru9g7woik",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__zoebo43dfyz7b3n8akkpr0pxsuccess-w8szg2ped9s35zfru9g7woikinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "re44uqmbn6d38ot9g7oxo62a",
+        "sourceHandle": "success",
+        "target": "zoebo43dfyz7b3n8akkpr0px",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__re44uqmbn6d38ot9g7oxo62asuccess-zoebo43dfyz7b3n8akkpr0pxinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "mr32filkbk39evib30hy69n4",
+        "sourceHandle": "llm",
+        "target": "zoebo43dfyz7b3n8akkpr0px",
+        "targetHandle": "llm",
+        "type": "agentConnection",
+        "id": "xy-edge__mr32filkbk39evib30hy69n4llm-zoebo43dfyz7b3n8akkpr0pxllm",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "8da742e6-3e39-4e2c-8bf9-40e1117bcaa2",
+    "version": 1,
+    "createdAt": 1786019079902,
+    "updatedAt": 1786031636999,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
