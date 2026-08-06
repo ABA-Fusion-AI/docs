@@ -4,9 +4,9 @@ title: "Azure SQL Bulk Insert"
 description: "Perform bulk insert operations into Azure SQL tables"
 category: "integrations"
 subcategory: "azure"
-version: "1.0.0"
+version: "1.1.0"
 language: "en"
-last_updated: "2026-03-11"
+last_updated: "2026-08-05"
 author: "Fusion Team"
 tags:
   - integration
@@ -35,3 +35,5 @@ Performs high-throughput insert using `mssql` bulk API.
 
 Output:
 `{ rowsAffected }`
+
+Table and column names are validated as SQL Server identifiers. Row values are transmitted through the `mssql` bulk protocol and are never concatenated into SQL text.

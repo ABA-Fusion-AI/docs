@@ -4,9 +4,9 @@ title: "MongoDB Action"
 description: "Execute MongoDB operations — find, insert, update, delete, aggregate, and count documents"
 category: "data"
 subcategory: "databases"
-version: "1.0.0"
+version: "1.1.0"
 language: "en"
-last_updated: "2026-03-10"
+last_updated: "2026-08-05"
 author: "Fusion Team"
 tags:
   - mongodb
@@ -74,6 +74,7 @@ The **MongoDB Action** node connects to a MongoDB instance using a connection UR
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
 | `operation` | `enum` | ✅ Yes | Operation to execute (see below) |
+| `acknowledgeRisk` | `boolean` | ❌ No | Required when filters, projections, updates, or pipelines contain MongoDB `$` operators |
 
 ### Available Operations
 
@@ -376,6 +377,7 @@ Delete all expired sessions.
   "database": "myapp",
   "collection": "sessions",
   "operation": "Delete Many",
+  "acknowledgeRisk": true,
   "deleteManyParams": {
     "filter": { "expiresAt": { "$lt": "{{new Date().toISOString()}}" } }
   }
@@ -395,6 +397,7 @@ Group orders by status and compute the total amount per status.
   "database": "myapp",
   "collection": "orders",
   "operation": "Aggregate",
+  "acknowledgeRisk": true,
   "aggregateParams": {
     "pipeline": [
       { "$match": { "createdAt": { "$gte": "2026-01-01" } } },
@@ -502,6 +505,19 @@ Fetch data from an external API and store each item as a MongoDB document.
 
 ---
 
+<!-- SECTION: security -->
+## Security
+
+Simple equality filters work with `acknowledgeRisk: false`. Advanced MongoDB operators such as `$and`, `$in`, `$gt`, and aggregation stages require `acknowledgeRisk: true` and must come only from trusted workflow configuration.
+
+Server-side JavaScript operators `$where`, `$function`, and `$accumulator` are always rejected, including when nested in filters or aggregation pipelines. Do not pass complete filter or pipeline objects directly from webhook input.
+
+See [example.workflow.json](./example.workflow.json) for a minimal workflow.
+
+<!-- /SECTION: security -->
+
+---
+
 <!-- SECTION: troubleshooting -->
 ## Troubleshooting
 
@@ -566,6 +582,7 @@ Fetch data from an external API and store each item as a MongoDB document.
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 1.1.0 | 2026-08-05 | Added operator acknowledgment and blocked server-side JavaScript injection operators |
 | 1.0.0 | 2026-03-10 | Initial release |
 
 <!-- /SECTION: changelog -->

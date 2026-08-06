@@ -1,0 +1,12 @@
+{
+  "name": "Safely read Cosmos container data",
+  "nodes": [
+    { "id": "trigger", "type": "trigger", "position": { "x": 80, "y": 160 }, "data": { "name": "manual-trigger", "label": "Run", "inputs": {}, "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } } } },
+    { "id": "cosmos", "type": "action", "position": { "x": 300, "y": 160 }, "data": { "name": "cosmos-container-data", "label": "Cosmos Container Data", "inputs": { "input": { "label": "Input" } }, "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } } } },
+    { "id": "output", "type": "display", "position": { "x": 520, "y": 160 }, "data": { "name": "log", "label": "Cosmos Result", "inputs": { "input": { "label": "Input" } }, "outputs": { "success": { "label": "Success" } } } }
+  ],
+  "connections": [
+    { "id": "trigger-cosmos", "type": "directed", "source": "trigger", "target": "cosmos", "sourceHandle": "success", "targetHandle": "input" },
+    { "id": "cosmos-output", "type": "directed", "source": "cosmos", "target": "output", "sourceHandle": "success", "targetHandle": "input" }
+  ]
+}

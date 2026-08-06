@@ -4,9 +4,9 @@ title: "Azure SQL Stored Procedure"
 description: "Execute stored procedures with input/output parameters"
 category: "integrations"
 subcategory: "azure"
-version: "1.0.0"
+version: "1.1.0"
 language: "en"
-last_updated: "2026-03-11"
+last_updated: "2026-08-05"
 author: "Fusion Team"
 tags:
   - integration
@@ -41,3 +41,5 @@ Supported `type` values include:
 
 Output:
 `{ recordsets, recordset, rowsAffected, output, returnValue }`
+
+Procedure names are restricted to valid qualified SQL Server object names. Input and output parameter names are validated, and values are transmitted as RPC parameters rather than SQL text.

@@ -4,9 +4,9 @@ title: "CrateDB"
 description: "Distributed SQL database queries with CrateDB"
 category: "peer-only"
 subcategory: "integrations"
-version: "1.0.0"
+version: "1.1.0"
 language: "en"
-last_updated: "2026-08-04"
+last_updated: "2026-08-05"
 author: "Fusion Team"
 tags: [integration, peer-only]
 related_nodes: []
@@ -40,5 +40,7 @@ title: Use CrateDB in a workflow
 <!-- SECTION: security -->
 ## Security
 
-Store credentials in Fusion's credential system. Do not place secrets directly in workflow parameters or exported examples.
+CrateDB SQL is a raw-query interface and requires `acknowledgeRisk: true`. The node accepts exactly one statement and verifies that its type matches the selected operation: read-only query statements for `query`, and `INSERT` for `insert`.
+
+Use `?` placeholders and provide values through the `args` array. Never interpolate webhook or other untrusted values into `sql`. Store credentials in Fusion's credential system.
 <!-- /SECTION: security -->
