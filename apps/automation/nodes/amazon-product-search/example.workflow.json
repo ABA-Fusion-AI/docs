@@ -1,0 +1,122 @@
+{
+  "name": "Amazon Product Search Example",
+  "nodes": [
+    {
+      "id": "6bc1dc5a-83c3-4d42-b3b1-70a37e10212b",
+      "position": {
+        "x": 783,
+        "y": 83.5
+      },
+      "type": "trigger",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Triggers the workflow manually.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      }
+    },
+    {
+      "id": "qbbyvhmgwhihaoaza11uogxj",
+      "position": {
+        "x": 925.5,
+        "y": 88
+      },
+      "type": "action",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "amazon-product-search",
+        "label": "Amazon Product Search",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Search Amazon products without API key using direct scraping. Supports 11+ domains with filters for product type, brand, and price range.",
+        "showRunningStatus": true,
+        "parameters": {
+          "query": "samsung s25",
+          "domain": "com",
+          "limit": 5,
+          "timeout": 15000
+        },
+        "_morphing": false
+      }
+    },
+    {
+      "id": "e72bf012-b119-4a63-9161-4f38437908d8",
+      "position": {
+        "x": 1102,
+        "y": 83.5
+      },
+      "type": "display",
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "data": {
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      }
+    }
+  ],
+  "connections": [
+    {
+      "source": "6bc1dc5a-83c3-4d42-b3b1-70a37e10212b",
+      "sourceHandle": "success",
+      "target": "qbbyvhmgwhihaoaza11uogxj",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__6bc1dc5a-83c3-4d42-b3b1-70a37e10212bsuccess-qbbyvhmgwhihaoaza11uogxjinput",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "source": "qbbyvhmgwhihaoaza11uogxj",
+      "sourceHandle": "success",
+      "target": "e72bf012-b119-4a63-9161-4f38437908d8",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__qbbyvhmgwhihaoaza11uogxjsuccess-e72bf012-b119-4a63-9161-4f38437908d8input",
+      "data": {
+        "isAnimated": false
+      }
+    }
+  ]
+}
