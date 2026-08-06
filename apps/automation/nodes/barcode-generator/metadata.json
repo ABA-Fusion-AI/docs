@@ -1,0 +1,4 @@
+{
+  "label": "Barcode/QR Generator",
+  "description": "Generate barcode or QR code as base64 string."
+}

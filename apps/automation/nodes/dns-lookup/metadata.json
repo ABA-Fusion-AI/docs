@@ -1,0 +1,4 @@
+{
+  "label": "DNS Lookup",
+  "description": "Performs DNS lookup for various record types (A, AAAA, CNAME, MX, NS, TXT, SOA, SRV, PTR)."
+}

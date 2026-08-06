@@ -1,0 +1,122 @@
+{
+  "name": "DNS Lookup Example",
+  "nodes": [
+    {
+      "id": "730f6a10-333c-42a4-9788-0ccb3fc4cedb",
+      "position": {
+        "x": 783,
+        "y": 83.5
+      },
+      "type": "trigger",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Triggers the workflow manually.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      }
+    },
+    {
+      "id": "g2k6g5919i2g3cpsjfzqa7fo",
+      "position": {
+        "x": 921,
+        "y": 73.5
+      },
+      "type": "action",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "dns-lookup",
+        "label": "DNS Lookup",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Performs DNS lookup for various record types (A, AAAA, CNAME, MX, NS, TXT, SOA, SRV, PTR).",
+        "showRunningStatus": true,
+        "parameters": {
+          "hostname": "google.com",
+          "recordType": "A"
+        },
+        "_morphing": false
+      }
+    },
+    {
+      "id": "c318f2eb-1120-4843-919c-4431a75bf19b",
+      "position": {
+        "x": 1102,
+        "y": 83.5
+      },
+      "type": "display",
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "data": {
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      }
+    }
+  ],
+  "connections": [
+    {
+      "source": "730f6a10-333c-42a4-9788-0ccb3fc4cedb",
+      "sourceHandle": "success",
+      "target": "g2k6g5919i2g3cpsjfzqa7fo",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__730f6a10-333c-42a4-9788-0ccb3fc4cedbsuccess-g2k6g5919i2g3cpsjfzqa7foinput",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "source": "g2k6g5919i2g3cpsjfzqa7fo",
+      "sourceHandle": "success",
+      "target": "c318f2eb-1120-4843-919c-4431a75bf19b",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__g2k6g5919i2g3cpsjfzqa7fosuccess-c318f2eb-1120-4843-919c-4431a75bf19binput",
+      "data": {
+        "isAnimated": false
+      }
+    }
+  ],
+  "version": 1,
+  "secrets": {}
+}

@@ -1,0 +1,4 @@
+{
+  "label": "Amazon Product Search",
+  "description": "Search Amazon products without API key using direct scraping. Supports 11+ domains with filters for product type, brand, and price range."
+}
