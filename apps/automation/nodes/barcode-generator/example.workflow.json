@@ -1,0 +1,121 @@
+{
+  "name": "Barcode Generator Example",
+  "nodes": [
+    {
+      "id": "89d8c4f9-8236-493b-b9ba-86431abbc208",
+      "position": {
+        "x": 783,
+        "y": 83.5
+      },
+      "type": "trigger",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Triggers the workflow manually.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      }
+    },
+    {
+      "id": "typ8fvsiqc574bws8p2zp72u",
+      "position": {
+        "x": 929.7797420877192,
+        "y": 89.02079456405824
+      },
+      "type": "action",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "barcode-generator",
+        "label": "Barcode/QR Generator",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Generate barcode or QR code as base64 string.",
+        "showRunningStatus": false,
+        "parameters": {
+          "data": "Hello Fusion AI",
+          "type": "code128",
+          "textxalign": "center"
+        },
+        "_morphing": false
+      }
+    },
+    {
+      "id": "a5281d43-3b4b-4ade-b5a0-1fcf14761247",
+      "position": {
+        "x": 1102,
+        "y": 83.5
+      },
+      "type": "display",
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "data": {
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      }
+    }
+  ],
+  "connections": [
+    {
+      "source": "89d8c4f9-8236-493b-b9ba-86431abbc208",
+      "sourceHandle": "success",
+      "target": "typ8fvsiqc574bws8p2zp72u",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__89d8c4f9-8236-493b-b9ba-86431abbc208success-typ8fvsiqc574bws8p2zp72uinput",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "source": "typ8fvsiqc574bws8p2zp72u",
+      "sourceHandle": "success",
+      "target": "a5281d43-3b4b-4ade-b5a0-1fcf14761247",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__typ8fvsiqc574bws8p2zp72usuccess-a5281d43-3b4b-4ade-b5a0-1fcf14761247input",
+      "data": {
+        "isAnimated": false
+      }
+    }
+  ]
+}
