@@ -1,0 +1,183 @@
+[
+  {
+    "name": "health-topics-search",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "kjdqzhwsk2k9soswq768ahpp",
+        "position": {
+          "x": 1293.3383962008045,
+          "y": 51.93727088190144
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "health-topics-search",
+          "label": "Health Topics Search",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get evidence-based health information from Health.gov MyHealthfinder API",
+          "showRunningStatus": true,
+          "parameters": {
+            "language": "en",
+            "topic": {
+              "$expr": "output",
+              "node": "Function",
+              "outputId": "success"
+            }
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "rpk9581s0mww4hkszodh418s",
+        "position": {
+          "x": 957.8266994902767,
+          "y": -133.44273274804
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        }
+      },
+      {
+        "id": "l6xxvvvvzjlh87cbr57ujl8t",
+        "position": {
+          "x": 1164.0945908531694,
+          "y": -147.8031555644439
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "function",
+          "label": "Function",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Executes custom JavaScript code on the input data.",
+          "showRunningStatus": true,
+          "parameters": {
+            "code": "// Write your code here\nreturn \"diabetes\";"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "fa3pj3pf5xdi2b165dt8cj5j",
+        "position": {
+          "x": 1478.320522096187,
+          "y": 80.05517491541862
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "rpk9581s0mww4hkszodh418s",
+        "sourceHandle": "success",
+        "target": "l6xxvvvvzjlh87cbr57ujl8t",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__rpk9581s0mww4hkszodh418ssuccess-l6xxvvvvzjlh87cbr57ujl8tinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "l6xxvvvvzjlh87cbr57ujl8t",
+        "sourceHandle": "success",
+        "target": "kjdqzhwsk2k9soswq768ahpp",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__l6xxvvvvzjlh87cbr57ujl8tsuccess-kjdqzhwsk2k9soswq768ahppinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "kjdqzhwsk2k9soswq768ahpp",
+        "sourceHandle": "success",
+        "target": "fa3pj3pf5xdi2b165dt8cj5j",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__kjdqzhwsk2k9soswq768ahppsuccess-fa3pj3pf5xdi2b165dt8cj5jinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1786050498103,
+    "updatedAt": 1786053127426,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]

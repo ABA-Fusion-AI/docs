@@ -1,53 +1,39 @@
 ---
 node_id: "cron"
 title: "Cron"
-description: "Triggers workflow execution based on a cron schedule"
+description: "Triggers workflow execution on a cron schedule."
 category: "triggers"
-subcategory: "scheduling"
-version: "1.0.0"
+subcategory: "Scheduling"
+version: "1.1.0"
 language: "en"
-last_updated: "2026-01-31"
+last_updated: "2026-08-06"
 author: "Fusion Team"
 tags:
   - trigger
-  - schedule
   - cron
+  - schedule
   - automation
   - timing
 related_nodes:
   - interval
-  - socket-manual-trigger
----
-
-<!-- SECTION: header -->
-# Cron
-
-> **Category:** Triggers | **Type:** Trigger Node
-
-Schedule workflow execution using standard cron expressions. Perfect for recurring tasks like daily reports, weekly backups, or monthly data processing.
-
-<!-- /SECTION: header -->
-
+  - manual-trigger
+  - delay
 ---
 
 <!-- SECTION: overview -->
-## Overview
+# Cron
 
-The **Cron** node triggers your workflow at specific times based on a cron schedule expression. This is ideal for time-based automation that needs to run at precise intervals—daily at midnight, every Monday at 9 AM, or on the first day of each month.
+> **Category:** Triggers &nbsp;&nbsp;|&nbsp;&nbsp;**Type:** Trigger Node
 
-### Key Features
-
-- **Standard Cron Syntax:** Uses the familiar 5-field cron expression format
-- **Precise Scheduling:** Execute at exact times, not just intervals
-- **Timezone Support:** Respects server timezone configuration
-- **Pause/Resume:** Can be paused without losing schedule configuration
+Trigger a workflow automatically based on a cron schedule expression. The **Cron** node fires at precise points in time — every few seconds, hourly, daily, weekly, or on any custom schedule you define.
 
 ### Use Cases
 
-- Daily data synchronization at 2 AM
-- Weekly report generation every Monday morning
-- Monthly invoice processing on the 1st of each month
-- Hourly health checks for external services
+- **Scheduled Reports:** Generate and send daily or weekly reports at a fixed time.
+- **Data Sync:** Pull data from external APIs every hour and update internal databases.
+- **Periodic Health Checks:** Ping external services every few minutes and alert on failure.
+- **Monthly Processing:** Run invoice generation or billing jobs on the 1st of each month.
+- **Business Hours Automation:** Trigger workflows only on weekdays during office hours.
 
 <!-- /SECTION: overview -->
 
@@ -60,32 +46,56 @@ The **Cron** node triggers your workflow at specific times based on a cron sched
 
 | Parameter | Type | Required | Default | Description |
 |-----------|------|----------|---------|-------------|
-| `schedule` | `string` | ✅ Yes | — | Cron expression defining the execution schedule |
+| `schedule` | `string` | Yes | — | A cron expression that defines when the workflow fires. Supports both 5-field (minute-level) and 6-field (second-level) formats. |
 
 ### Cron Expression Format
 
+The node supports two formats:
+
+**5-field (standard) — minute precision:**
 ```
-┌───────────── minute (0-59)
-│ ┌───────────── hour (0-23)
-│ │ ┌───────────── day of month (1-31)
-│ │ │ ┌───────────── month (1-12)
-│ │ │ │ ┌───────────── day of week (0-7, 0 and 7 are Sunday)
-│ │ │ │ │
-* * * * *
+*  *  *  *  *
+│  │  │  │  └── Day of week  (0–7, 0 and 7 = Sunday)
+│  │  │  └───── Month        (1–12)
+│  │  └──────── Day of month (1–31)
+│  └─────────── Hour         (0–23)
+└────────────── Minute       (0–59)
 ```
 
-### Common Schedule Examples
+**6-field — second precision:**
+```
+*  *  *  *  *  *
+│  │  │  │  │  └── Day of week  (0–7)
+│  │  │  │  └───── Month        (1–12)
+│  │  │  └──────── Day of month (1–31)
+│  │  └─────────── Hour         (0–23)
+│  └──────────────  Minute      (0–59)
+└─────────────────  Second      (0–59)
+```
 
-| Schedule | Cron Expression | Description |
-|----------|-----------------|-------------|
-| Every minute | `* * * * *` | Runs every minute |
-| Every hour | `0 * * * *` | Runs at the start of every hour |
-| Daily at midnight | `0 0 * * *` | Runs at 00:00 every day |
-| Daily at 9 AM | `0 9 * * *` | Runs at 09:00 every day |
-| Every Monday at 9 AM | `0 9 * * 1` | Runs at 09:00 every Monday |
-| First of month at midnight | `0 0 1 * *` | Runs at 00:00 on the 1st of each month |
-| Every 15 minutes | `*/15 * * * *` | Runs every 15 minutes |
-| Weekdays at 8 AM | `0 8 * * 1-5` | Runs at 08:00 Monday through Friday |
+### Schedule Reference
+
+| Type | Cron Expression | Description |
+|------|-----------------|-------------|
+| Every X Seconds | `*/10 * * * * *` | Every 10 seconds. |
+| Every X Minutes | `*/5 * * * *` | Every 5 minutes. |
+| Hourly | `0 * * * *` | Every hour on the hour. |
+| Daily | `0 6 * * *` | At 6:00 AM every day. |
+| Weekly | `0 12 * * 1` | At noon every Monday. |
+| Monthly | `0 0 1 * *` | At midnight on the 1st of every month. |
+| Every X Days | `0 0 */3 * *` | At midnight every 3rd day. |
+| Only Weekdays | `0 9 * * 1-5` | At 9:00 AM Monday through Friday. |
+| Custom Hourly Range | `0 9-17 * * *` | Every hour from 9:00 AM to 5:00 PM. |
+| Quarterly | `0 0 1 1,4,7,10 *` | At midnight on the 1st of Jan, Apr, Jul, and Oct. |
+
+### Special Characters
+
+| Character | Meaning | Example |
+|-----------|---------|---------|
+| `*` | Every unit | `* * * * *` = every minute |
+| `*/n` | Every n units | `*/5 * * * *` = every 5 minutes |
+| `n-m` | Range | `1-5` = values 1 through 5 |
+| `n,m` | List | `1,4,7` = values 1, 4, and 7 |
 
 <!-- /SECTION: configuration -->
 
@@ -96,124 +106,63 @@ The **Cron** node triggers your workflow at specific times based on a cron sched
 
 ### Inputs
 
-This is a trigger node and does not accept inputs from other nodes.
+This is a trigger node — it has no data inputs. It fires autonomously based on the configured schedule.
 
 ### Outputs
 
 | Output | Type | Description |
 |--------|------|-------------|
-| `output` | `object` | Emitted each time the cron schedule fires |
+| `success` | `object` | Emitted each time the cron schedule fires. |
+| `error` | `Error` | Emitted if the schedule expression is invalid. |
 
 ### Output Schema
 
 ```json
 {
-  "timestamp": "2026-01-31T09:00:00.000Z",
+  "timestamp": "2026-08-06T09:00:00.000Z",
   "schedule": "0 9 * * *"
 }
 ```
 
 | Field | Type | Description |
 |-------|------|-------------|
-| `timestamp` | `string` | ISO 8601 timestamp of when the trigger fired |
-| `schedule` | `string` | The cron expression that triggered this execution |
+| `timestamp` | `string` | ISO 8601 timestamp of when the trigger fired. |
+| `schedule` | `string` | The cron expression that triggered this execution. |
 
 <!-- /SECTION: inputs-outputs -->
-
----
-
-<!-- SECTION: examples -->
-## Examples
-
-### Basic Example: Daily Morning Trigger
-
-Run a workflow every day at 9:00 AM.
-
-**Configuration:**
-```json
-{
-  "schedule": "0 9 * * *"
-}
-```
-
-**Output:**
-```json
-{
-  "timestamp": "2026-01-31T09:00:00.000Z",
-  "schedule": "0 9 * * *"
-}
-```
-
-### Advanced Example: Business Hours Check
-
-Run every 30 minutes during business hours (9 AM - 5 PM) on weekdays.
-
-**Configuration:**
-```json
-{
-  "schedule": "0,30 9-17 * * 1-5"
-}
-```
-
-### Advanced Example: End of Month Processing
-
-Run at 11:59 PM on the last day of each month (using day 28-31 with conditions).
-
-**Configuration:**
-```json
-{
-  "schedule": "59 23 28-31 * *"
-}
-```
-
-> **Note:** For true "last day of month" scheduling, combine with a Filter node to check the date.
-
-<!-- /SECTION: examples -->
 
 ---
 
 <!-- SECTION: workflow-example -->
 ## Workflow Integration
 
-### Sample Workflow: Daily Data Sync
+### Example Workflow
 
-```json
-{
-  "nodes": [
-    {
-      "id": "cron-trigger",
-      "type": "cron",
-      "position": { "x": 100, "y": 100 },
-      "config": {
-        "schedule": "0 2 * * *"
-      }
-    },
-    {
-      "id": "fetch-data",
-      "type": "http-request",
-      "position": { "x": 300, "y": 100 },
-      "config": {
-        "url": "https://api.example.com/data",
-        "method": "GET"
-      }
-    }
-  ],
-  "connections": [
-    {
-      "source": "cron-trigger",
-      "sourceOutput": "output",
-      "target": "fetch-data",
-      "targetInput": "input"
-    }
-  ]
-}
+```fusion-workflow
+src: example.workflow.json
+title: Cron Trigger Every 3 Seconds
+```
+
+### How it flows
+
+1. **Cron Node:** Fires every 3 seconds using the 6-field expression `*/3 * * * * *`.
+2. **Function Node:** Runs custom JavaScript that returns a message and the current timestamp.
+3. **Log Node:** Displays the result on every execution.
+
+**Function code used in the example:**
+```js
+return {
+  message: "Cron Trigger Works!",
+  executedAt: new Date().toISOString()
+};
 ```
 
 ### Common Patterns
 
-- **Daily Report:** Cron (0 9 * * *) → Query Data → Format → Send Email
-- **Hourly Monitoring:** Cron (0 * * * *) → Check Service → Alert on Failure
-- **Weekly Cleanup:** Cron (0 0 * * 0) → Find Old Records → Delete → Log
+- **Daily Report:** `Cron (0 9 * * *)` → Query Database → Format → Send Email
+- **Hourly Monitor:** `Cron (0 * * * *)` → HTTP Request → Check Status → Alert on Failure
+- **Weekly Cleanup:** `Cron (0 0 * * 1)` → Find Old Records → Delete → Log
+- **Rate-Paced Batch:** `Cron (*/30 * * * *)` → Fetch Batch → Process → Store
 
 <!-- /SECTION: workflow-example -->
 
@@ -224,30 +173,28 @@ Run at 11:59 PM on the last day of each month (using day 28-31 with conditions).
 
 ### Common Issues
 
-#### Trigger doesn't fire at expected time
+#### Trigger does not fire at the expected time
+- **Cause:** Timezone mismatch — all times are relative to the server's configured timezone.
+- **Solution:** Adjust the cron expression to account for the timezone offset, or verify the server timezone.
 
-**Cause:** Timezone mismatch between server and expected schedule.
+#### `Invalid cron expression` error
+- **Cause:** The `schedule` value has incorrect syntax, wrong number of fields, or invalid characters.
+- **Solution:** Use the schedule reference table above. Validate your expression at [crontab.guru](https://crontab.guru) before saving.
 
-**Solution:** Verify the server timezone and adjust your cron expression accordingly. All times are relative to the server's configured timezone.
+#### Missed executions after a pause
+- **Cause:** Cron does not backfill missed runs after the workflow is paused or stopped.
+- **Solution:** If you need to handle missed intervals, use the `timestamp` output field to detect and process them in a downstream Function node.
 
-#### Invalid cron expression error
-
-**Cause:** The cron expression contains invalid syntax.
-
-**Solution:** Verify your expression follows the 5-field format. Use an online cron expression validator to test.
-
-#### Missed executions after pause/resume
-
-**Cause:** Cron schedules don't "catch up" on missed executions.
-
-**Solution:** If you need to process missed intervals, use the timestamp output to determine if catch-up processing is needed.
+#### Workflow fires too frequently / unexpectedly
+- **Cause:** A 6-field expression is being interpreted as second-level when a minute-level trigger was intended.
+- **Solution:** Use 5-field expressions for minute-level schedules. Only add the 6th (seconds) field when sub-minute precision is actually required.
 
 ### Error Codes
 
 | Code | Message | Solution |
 |------|---------|----------|
-| `INVALID_CRON` | Invalid cron schedule | Check cron expression syntax |
-| `SCHEDULE_REQUIRED` | Cron schedule is required | Provide a non-empty schedule value |
+| `INVALID_CRON` | Invalid cron schedule | Fix the expression syntax |
+| `SCHEDULE_REQUIRED` | Cron schedule is required | Provide a non-empty `schedule` value |
 
 <!-- /SECTION: troubleshooting -->
 
@@ -256,13 +203,9 @@ Run at 11:59 PM on the last day of each month (using day 28-31 with conditions).
 <!-- SECTION: related -->
 ## Related
 
-- [Interval](./interval.md) - Trigger at fixed time intervals
-- [Socket Manual Trigger](./socket-manual-trigger.md) - Manual workflow execution
-
-### See Also
-
-- [Triggers Category Overview](../index.en.md#triggers)
-- [Scheduling Best Practices](../../guides/scheduling.md)
+- [Interval](./interval.md) – Trigger at fixed time intervals without cron syntax
+- [Manual Trigger](./manual-trigger.md) – Start a workflow on demand
+- [Delay](./delay.md) – Add a timed pause between nodes inside a workflow
 
 <!-- /SECTION: related -->
 
@@ -273,6 +216,7 @@ Run at 11:59 PM on the last day of each month (using day 28-31 with conditions).
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 1.1.0 | 2026-08-06 | Full rewrite — added schedule reference table, 6-field format, workflow example, and expanded troubleshooting |
 | 1.0.0 | 2026-01-31 | Initial release |
 
 <!-- /SECTION: changelog -->

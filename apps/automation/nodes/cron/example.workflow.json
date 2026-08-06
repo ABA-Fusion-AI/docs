@@ -1,0 +1,136 @@
+[
+    {
+        "name": "cron",
+        "variables": {},
+        "secrets": {},
+        "nodes": [
+            {
+                "id": "lkgbkxomiv91am16vubzt9bc",
+                "position": {
+                    "x": 407.4107952375816,
+                    "y": 157.312252294914
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "cron",
+                    "label": "Cron",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers workflow on a cron schedule.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "schedule": "*/3 * * * * * "
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "ly4i7r9t4y5h3be7eocjfio2",
+                "position": {
+                    "x": 717.4107952375816,
+                    "y": 191.312252294914
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "function",
+                    "label": "Function",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Executes custom JavaScript code on the input data.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "code": "return {\n  message: \"Cron Trigger Works!\",\n  executedAt: new Date().toISOString()\n};"
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "jrl6g8wgf9b7ru3cbu3yokdx",
+                "position": {
+                    "x": 966.4107952375816,
+                    "y": 233.312252294914
+                },
+                "type": "display",
+                "width": 256,
+                "height": 100,
+                "dragHandle": ".drag-handle__custom",
+                "data": {
+                    "name": "log",
+                    "label": "Log",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": false
+                        }
+                    },
+                    "description": "Logs the input data to the console.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            }
+        ],
+        "connections": [
+            {
+                "source": "lkgbkxomiv91am16vubzt9bc",
+                "sourceHandle": "success",
+                "target": "ly4i7r9t4y5h3be7eocjfio2",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__lkgbkxomiv91am16vubzt9bcsuccess-ly4i7r9t4y5h3be7eocjfio2input",
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "ly4i7r9t4y5h3be7eocjfio2",
+                "sourceHandle": "success",
+                "target": "jrl6g8wgf9b7ru3cbu3yokdx",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__ly4i7r9t4y5h3be7eocjfio2success-jrl6g8wgf9b7ru3cbu3yokdxinput",
+                "data": {
+                    "isAnimated": false
+                }
+            }
+        ],
+        "status": "stopped",
+        "tracingEnabled": true,
+        "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+        "version": 1,
+        "createdAt": 1786041808571,
+        "updatedAt": 1786042627434,
+        "publishedNames": [],
+        "previousStatus": "running"
+    }
+]

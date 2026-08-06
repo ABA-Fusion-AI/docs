@@ -1,0 +1,184 @@
+[
+    {
+        "name": "Parse Base64",
+        "variables": {},
+        "secrets": {},
+        "nodes": [
+            {
+                "id": "w9mm9p4hdbbr58exr2y33bg3",
+                "position": {
+                    "x": -462.97259705389064,
+                    "y": 193.7497830883155
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "parse-base64",
+                    "label": "Parse Base64",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Decode Base64 and parse to TXT, JSON, CSV, or XLSX.",
+                    "showRunningStatus": false,
+                    "parameters": {
+                        "format": "txt",
+                        "encoding": "utf8",
+                        "data": {
+                            "$expr": "output",
+                            "node": "Function",
+                            "outputId": "success"
+                        }
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "kt014cualnd2edhx4pkz4gvc",
+                "position": {
+                    "x": -804.1467916969702,
+                    "y": 149.4692355272066
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                }
+            },
+            {
+                "id": "hecsvedu6nymmc2cbvoassuk",
+                "position": {
+                    "x": -649.5977975424128,
+                    "y": 164.04932931537238
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "function",
+                    "label": "Function",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Executes custom JavaScript code on the input data.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "code": "// Write your code here\nreturn \"SGVsbG8gRnVzaW9uIQ==\";"
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "p4y4lpoakdeklolo0zc9qpmf",
+                "position": {
+                    "x": -321.31706830678837,
+                    "y": 243.73595769608315
+                },
+                "type": "display",
+                "width": 256,
+                "height": 100,
+                "dragHandle": ".drag-handle__custom",
+                "data": {
+                    "name": "log",
+                    "label": "Log",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": false
+                        }
+                    },
+                    "description": "Logs the input data to the console.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            }
+        ],
+        "connections": [
+            {
+                "source": "kt014cualnd2edhx4pkz4gvc",
+                "sourceHandle": "success",
+                "target": "hecsvedu6nymmc2cbvoassuk",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__kt014cualnd2edhx4pkz4gvcsuccess-hecsvedu6nymmc2cbvoassukinput",
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "hecsvedu6nymmc2cbvoassuk",
+                "sourceHandle": "success",
+                "target": "w9mm9p4hdbbr58exr2y33bg3",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__hecsvedu6nymmc2cbvoassuksuccess-w9mm9p4hdbbr58exr2y33bg3input",
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "w9mm9p4hdbbr58exr2y33bg3",
+                "sourceHandle": "success",
+                "target": "p4y4lpoakdeklolo0zc9qpmf",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__w9mm9p4hdbbr58exr2y33bg3success-p4y4lpoakdeklolo0zc9qpmfinput",
+                "data": {
+                    "isAnimated": false
+                }
+            }
+        ],
+        "status": "stopped",
+        "tracingEnabled": true,
+        "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+        "version": 1,
+        "createdAt": 1786033479293,
+        "updatedAt": 1786041285274,
+        "publishedNames": [],
+        "previousStatus": "error"
+    }
+]
