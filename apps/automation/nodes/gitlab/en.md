@@ -1,5 +1,5 @@
 ---
-node_id: "gitlab-action"
+node_id: "gitlab"
 title: "GitLab Action"
 description: "Manage GitLab issues, merge requests, branches, pipelines, and projects via the GitLab REST API v4"
 category: "integrations"
@@ -19,8 +19,8 @@ tags:
   - action
 related_nodes:
   - github-action
-  - jenkins-action
-  - jira-action
+  - jenkins
+  - jira
   - discord-action
   - slack-action
 ---
@@ -421,7 +421,7 @@ When a Jira issue moves to "In Review", create a GitLab branch, open an MR, and 
     },
     {
       "id": "create-branch",
-      "type": "gitlab-action",
+      "type": "gitlab",
       "config": {
         "token": "glpat-your-token",
         "operation": "createBranch",
@@ -433,7 +433,7 @@ When a Jira issue moves to "In Review", create a GitLab branch, open an MR, and 
     },
     {
       "id": "create-mr",
-      "type": "gitlab-action",
+      "type": "gitlab",
       "config": {
         "token": "glpat-your-token",
         "operation": "createMergeRequest",

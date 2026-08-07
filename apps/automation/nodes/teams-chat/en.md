@@ -14,8 +14,8 @@ tags:
   - chat
   - microsoft-graph
 related_nodes:
-  - teams-new-chat-trigger
-  - teams-new-chat-message-trigger
+  - teams-on-new-chat-trigger
+  - teams-on-new-chat-message-trigger
 ---
 
 # Microsoft Teams - Chat

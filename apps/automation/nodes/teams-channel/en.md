@@ -14,8 +14,8 @@ tags:
   - channel
   - microsoft-graph
 related_nodes:
-  - teams-new-channel-trigger
-  - teams-new-team-member-trigger
+  - teams-on-new-channel-trigger
+  - teams-on-new-team-member-trigger
 ---
 
 # Microsoft Teams - Channel

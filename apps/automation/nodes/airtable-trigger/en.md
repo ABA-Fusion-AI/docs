@@ -17,7 +17,7 @@ tags:
   - spreadsheet
 related_nodes:
   - airtable-action
-  - baserow-action
+  - baserow
   - interval
   - cron
 ---

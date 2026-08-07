@@ -16,7 +16,7 @@ tags:
   - research
 related_nodes:
   - scopus-search
-  - web-of-science-search
+  - scientific-web-of-science
   - google-scholar-search-url
 ---
 

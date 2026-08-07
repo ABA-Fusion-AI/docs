@@ -311,7 +311,7 @@ A team lead reacts with ✅ to approve a deployment request posted by a bot.
     },
     {
       "id": "trigger-build",
-      "type": "jenkins-action",
+      "type": "jenkins",
       "position": { "x": 500, "y": 100 },
       "config": {
         "operation": "triggerBuild",

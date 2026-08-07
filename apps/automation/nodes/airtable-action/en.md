@@ -17,7 +17,7 @@ tags:
   - action
 related_nodes:
   - airtable-trigger
-  - baserow-action
+  - baserow
   - function
 ---
 

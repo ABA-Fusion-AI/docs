@@ -1,91 +1,136 @@
-{
-  "name": "Use GetResponse",
-  "nodes": [
-    {
-      "id": "trigger",
-      "type": "trigger",
-      "position": {
-        "x": 80,
-        "y": 160
-      },
-      "data": {
-        "name": "manual-trigger",
-        "label": "Run",
-        "inputs": {},
-        "outputs": {
-          "success": {
-            "label": "Success"
-          },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "integration",
-      "type": "action",
-      "position": {
-        "x": 300,
-        "y": 160
-      },
-      "data": {
-        "name": "getresponse",
-        "label": "GetResponse",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+[
+  {
+    "name": "testGetResponse",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "a417ems09j9zerb8xfkrqnsi",
+        "position": {
+          "x": 0,
+          "y": 18
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
           },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "output",
-      "type": "display",
-      "position": {
-        "x": 520,
-        "y": 160
-      },
-      "data": {
-        "name": "log",
-        "label": "Result",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
-          }
+        "draggable": true
+      },
+      {
+        "id": "o0qrc3q2x1y3pb73xtjcx208",
+        "position": {
+          "x": 568,
+          "y": 0
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "aeunz4oxkamrrudg64aesct3",
+        "position": {
+          "x": 286.4561247067899,
+          "y": 36.32850188219543
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "getresponse",
+          "label": "GetResponse",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage contacts, campaigns and newsletters in GetResponse",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getContacts",
+            "apiKey": "2y2n25xmbusfzxk9aiqzs98aarsuli8q"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "a417ems09j9zerb8xfkrqnsi",
+        "sourceHandle": "success",
+        "target": "aeunz4oxkamrrudg64aesct3",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__a417ems09j9zerb8xfkrqnsisuccess-aeunz4oxkamrrudg64aesct3input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "aeunz4oxkamrrudg64aesct3",
+        "sourceHandle": "success",
+        "target": "o0qrc3q2x1y3pb73xtjcx208",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__aeunz4oxkamrrudg64aesct3success-o0qrc3q2x1y3pb73xtjcx208input",
+        "data": {
+          "isAnimated": false
         }
       }
-    }
-  ],
-  "connections": [
-    {
-      "id": "trigger-integration",
-      "type": "directed",
-      "source": "trigger",
-      "target": "integration",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    },
-    {
-      "id": "integration-output",
-      "type": "directed",
-      "source": "integration",
-      "target": "output",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    }
-  ]
-}
+    ],
+    "status": "error",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1785851083745,
+    "updatedAt": 1785936125886,
+    "publishedNames": [],
+    "previousStatus": "stopped"
+  }
+]

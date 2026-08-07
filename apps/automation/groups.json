@@ -16,20 +16,27 @@
           "osisoft-trigger",
           "profinet-trigger",
           "scada-trigger",
-          "iot-hub.deviceStatusTrigger",
-          "iot-hub.deviceToCloudTrigger",
+          "io-t-hub-device-status-trigger",
+          "io-t-hub-device-to-cloud-trigger",
           "dnp3-outstation"
         ],
         "subgroups": []
       },
       {
         "name": "Healthcare Ingress",
-        "nodes": ["fhir-subscription-trigger", "hl7-webhook-trigger"],
+        "nodes": [
+          "fhir-subscription-trigger",
+          "hl7-webhook-trigger"
+        ],
         "subgroups": []
       },
       {
         "name": "Manual & Scheduled",
-        "nodes": ["cron", "interval", "manual-trigger"],
+        "nodes": [
+          "cron",
+          "interval",
+          "manual-trigger"
+        ],
         "subgroups": []
       },
       {
@@ -53,14 +60,14 @@
           "whatsapp-webhook",
           "slack-trigger",
           "gmail-trigger",
-          "outlook.mail.trigger",
-          "outlook.calendar.trigger",
-          "teams.chat.trigger.new-chat",
-          "teams.chat.trigger.new-chat-message",
-          "teams.channel.trigger.new-channel",
-          "teams.channel.trigger.new-team-member",
-          "teams.planner.trigger.new-task",
-          "teams.planner.trigger.task-updated",
+          "outlook-mail-trigger",
+          "outlook-calendar-trigger",
+          "teams-on-new-chat-trigger",
+          "teams-on-new-chat-message-trigger",
+          "teams-on-new-channel-trigger",
+          "teams-on-new-team-member-trigger",
+          "teams-on-new-planner-task-trigger",
+          "teams-on-planner-task-updated-trigger",
           "airtable-trigger",
           "discord-trigger",
           "azure-communication-chat-message-trigger",
@@ -74,7 +81,6 @@
           "mqtt-subscriber",
           "pusher-trigger",
           "websocket-trigger",
-          "amqp-consume",
           "amqp-trigger",
           "service-bus-receive",
           "nats-subscribe",
@@ -82,7 +88,6 @@
           "kafka-trigger",
           "mqtt-trigger",
           "event-hub-receive",
-          "servicebus.receive",
           "rabbit-mq-trigger"
         ],
         "subgroups": []
@@ -100,7 +105,7 @@
           "google-chat-message-trigger",
           "google-sheets-trigger",
           "clickup-trigger",
-          "signalr-receive",
+          "signal-r-receive",
           "redis-subscribe"
         ],
         "subgroups": []
@@ -111,7 +116,10 @@
     "name": "unleashed",
     "icon": "groupsicons/unleashed",
     "color": "#f97316",
-    "nodes": ["unleashed", "unleashed-action"]
+    "nodes": [
+      "unleashed",
+      "unleashed-action"
+    ]
   },
   {
     "name": "Orchestration",
@@ -121,27 +129,46 @@
     "subgroups": [
       {
         "name": "Inter-Workflow",
-        "nodes": ["sub", "pub"],
+        "nodes": [
+          "sub",
+          "pub"
+        ],
         "subgroups": []
       },
       {
         "name": "Flow Control",
-        "nodes": ["once", "take", "merge", "switch", "if-else"],
+        "nodes": [
+          "once",
+          "take",
+          "merge",
+          "switch",
+          "if-else"
+        ],
         "subgroups": []
       },
       {
         "name": "Timing & Rate Control",
-        "nodes": ["throttle", "delay", "debounce-time", "throttle-time"],
+        "nodes": [
+          "throttle",
+          "delay",
+          "debounce-time",
+          "throttle-time"
+        ],
         "subgroups": []
       },
       {
         "name": "Iteration",
-        "nodes": ["loop"],
+        "nodes": [
+          "loop"
+        ],
         "subgroups": []
       },
       {
         "name": "Functions & Variables",
-        "nodes": ["function", "set-variable"],
+        "nodes": [
+          "function",
+          "set-variable"
+        ],
         "subgroups": []
       }
     ]
@@ -253,14 +280,18 @@
       },
       {
         "name": "Validation & Cleaning",
-        "nodes": ["html-sanitize"],
+        "nodes": [
+          "html-sanitize"
+        ],
         "subgroups": []
       },
       {
         "name": "zulip",
         "icon": "groupsicons/zulip",
         "color": "#1d4ed8",
-        "nodes": ["zulip"]
+        "nodes": [
+          "zulip"
+        ]
       },
       {
         "name": "Parsing & Serialization",
@@ -283,13 +314,17 @@
     "name": "zendesk",
     "icon": "groupsicons/zendesk",
     "color": "#1d4ed8",
-    "nodes": ["zendesk"]
+    "nodes": [
+      "zendesk"
+    ]
   },
   {
     "name": "zammad",
     "icon": "groupsicons/zammad",
     "color": "#1d4ed8",
-    "nodes": ["zammad"]
+    "nodes": [
+      "zammad"
+    ]
   },
   {
     "name": "Mathematical & Statistical Analysis",
@@ -312,7 +347,7 @@
           "financial-ratio-analyzer",
           "loan-calculator",
           "mortgage-calculator",
-          "npv-irr-calculator",
+          "npvirr-calculator",
           "options-pricing",
           "profit-margin-calculator",
           "retirement-calculator",
@@ -326,7 +361,10 @@
       },
       {
         "name": "NVIDIA Upcoming",
-        "nodes": ["nvidia-cuopt-solve", "nvidia-cuopt-status"],
+        "nodes": [
+          "nvidia-cuopt-solve",
+          "nvidia-cuopt-status"
+        ],
         "subgroups": []
       },
       {
@@ -341,7 +379,7 @@
           "regression",
           "probability",
           "outlier-detection",
-          "ttest",
+          "t-test",
           "chi-square",
           "anova",
           "confidence-interval",
@@ -413,32 +451,32 @@
           "banana-dev",
           "hugging-face-inference",
           "shotstack",
-          "d-id",
-          "heygen",
+          "did",
+          "hey-gen",
           "synthesia",
           "deepgram",
           "play-ht",
           "suno-ai",
-          "facecheck",
+          "face-check",
           "fal-ai",
           "freepik",
-          "getimg-ai",
+          "get-img-ai",
           "ideogram",
           "leonardo-ai",
-          "midjourney-goapi",
-          "openai-dalle",
+          "midjourney-go-api",
+          "open-ai-dalle",
           "prodia",
           "replicate",
           "stability-ai",
           "hailuo-ai",
           "luma-dream-machine",
-          "runwayml",
+          "runway-ml",
           "jina-embeddings",
           "jina-reranker",
           "jina-reader",
           "jina-search",
           "jina-vlm",
-          "jina-deepsearch",
+          "jina-deep-search",
           "jina-segmenter",
           "jina-classifier",
           "meshy",
@@ -449,7 +487,7 @@
           "eleven-labs-list-voices",
           "eleven-labs-music-compose-detailed",
           "eleven-labs-music-compose",
-          "eleven-labs-text-to-dialogue-timestamps",
+          "eleven-labs-text-to-dialogue-with-timestamps",
           "eleven-labs-text-to-dialogue",
           "eleven-labs",
           "aws-comprehend",
@@ -464,7 +502,7 @@
           "google-gemini-image",
           "eleven-labs-speech-to-speech",
           "eleven-labs-speech-to-text",
-          "eleven-labs-text-to-speech-timestamps",
+          "eleven-labs-text-to-speech-with-timestamps",
           "eleven-labs-text-to-speech",
           "kling-ai-avatar",
           "kling-ai-functionality-try",
@@ -524,10 +562,9 @@
         "name": "SQL Databases",
         "nodes": [
           "sql-parameterize",
-          "azure-sql-admin",
+          "azure-sql-database-admin",
           "azure-sql-backup-restore",
           "azure-sql-bulk-insert",
-          "azure-sql-database-admin",
           "azure-sql-query",
           "azure-sql-schema-manage",
           "azure-sql-stored-procedure",
@@ -535,12 +572,6 @@
           "timescaledb",
           "mysql-action",
           "questdb",
-          "azuresql.query",
-          "azuresql.databaseAdmin",
-          "azuresql.bulkInsert",
-          "azuresql.backupRestore",
-          "azuresql.schemaManage",
-          "azuresql.storedProcedure",
           "oracle-db",
           "oracle-sql",
           "oracle-database",
@@ -588,15 +619,13 @@
           "supabase-read",
           "supabase-update",
           "supabase-upsert",
-          "themealdb",
+          "the-meal-db",
           "modbus-read",
           "modbus-write",
-          "abuseipdb",
           "abuse-ipdb",
-          "azure-mariadb",
-          "omdb",
-          "baserow",
-          "QuestDB"
+          "azure-maria-db",
+          "om-db",
+          "baserow"
         ],
         "subgroups": []
       },
@@ -604,47 +633,34 @@
         "name": "NoSQL Databases",
         "nodes": [
           "firestore",
-          "cassandra-query",
-          "gremlin-query",
-          "mongo-query",
-          "table-query",
-          "cosmos-cassandra-manage",
           "cosmos-cassandra-query",
+          "cosmos-gremlin-query",
+          "cosmos-mongo-query",
+          "cosmos-table-query",
+          "cosmos-cassandra-manage",
           "cosmos-container-data",
           "cosmos-delete",
           "cosmos-gremlin-manage",
-          "cosmos-gremlin-query",
           "cosmos-mongo-manage",
-          "cosmos-mongo-query",
           "cosmos-query",
           "cosmos-table-manage",
-          "cosmos-table-query",
           "aws-dynamo-db",
           "mongodb-action",
-          "cosmos.query",
-          "cosmos.container-data",
-          "cosmos.upsert",
-          "cosmos.database",
-          "cosmos.changefeed"
+          "cosmos-upsert",
+          "cosmos-database",
+          "cosmos-change-feed"
         ],
         "subgroups": []
       },
       {
         "name": "Cache & Memory",
-        "nodes": ["rymo-cache", "redis-publish", "redis-action"],
+        "nodes": [
+          "rymo-cache",
+          "redis-publish",
+          "redis-action"
+        ],
         "subgroups": []
       }
-    ]
-  },
-  {
-    "name": "brevo",
-    "icon": "groupsicons/brevo",
-    "color": "#f97316",
-    "nodes": [
-      "brevo-contact-action",
-      "brevo-contact-attribute-action",
-      "brevo-email-action",
-      "brevo-sender-action"
     ]
   },
   {
@@ -659,27 +675,26 @@
           "validate-email",
           "imap-fetch",
           "mailchimp-marketing",
-          "mandrill-transactional",
+          "mailchimp-transactional",
           "sendgrid",
           "smtp",
           "aws-ses",
           "gmail",
-          "outlook.mail",
-          "outlook.calendar",
+          "outlook-mail",
+          "outlook-calendar",
           "azure-communication-send-email",
           "activecampaign",
-          "emelia",
-          "brevo.contact",
-          "brevo.contactAttribute",
-          "brevo.email",
-          "brevo.sender"
+          "emelia-action",
+          "brevo-contact-action",
+          "brevo-contact-attribute-action",
+          "brevo-email-action",
+          "brevo-sender-action"
         ],
         "subgroups": []
       },
       {
         "name": "Queues & Event Streams",
         "nodes": [
-          "amqp-publish",
           "amqp-sender",
           "mqtt-publisher",
           "service-bus-queue",
@@ -694,10 +709,6 @@
           "mqtt-publish",
           "event-hub-admin",
           "event-hub-send",
-          "servicebus.topic",
-          "servicebus.queue",
-          "servicebus.send",
-          "servicebus.subscription",
           "rabbit-mq-action",
           "rabbit-mq-publish"
         ],
@@ -706,10 +717,9 @@
       {
         "name": "Chat & Collaboration",
         "nodes": [
-          "zoomeye",
           "zoom-eye",
           "discord-api",
-          "pusher-send",
+          "pusher-action",
           "websocket-send",
           "xmpp",
           "zoom",
@@ -728,10 +738,10 @@
           "google-chat-member",
           "google-chat-message",
           "google-chat-space",
-          "teams.chat",
-          "teams.channel",
-          "teams.planner",
-          "signalr",
+          "teams-chat",
+          "teams-channel",
+          "teams-planner",
+          "signal-r-action",
           "discord-action",
           "discord-bot-send",
           "discord-webhook-send"
@@ -766,7 +776,7 @@
           "linkedin-profile",
           "file-size-converter",
           "html-to-pdf",
-          "ilovepdf",
+          "i-love-pdf",
           "pdf-extractor",
           "supabase-storage-delete",
           "supabase-storage-download",
@@ -786,7 +796,10 @@
       },
       {
         "name": "FTP/SFTP",
-        "nodes": ["ftp-sftp-write-file", "sftp"],
+        "nodes": [
+          "ftp-sftp-write-file",
+          "sftp"
+        ],
         "subgroups": []
       },
       {
@@ -794,10 +807,10 @@
         "nodes": [
           "dropbox",
           "files-com",
-          "gofile-create-account",
-          "gofile-delete-content",
-          "gofile-get-content",
-          "gofile-upload-file",
+          "go-file-create-account",
+          "go-file-delete-content",
+          "go-file-get-content",
+          "go-file-upload-file",
           "nextcloud-copy-file",
           "nextcloud-copy-folder",
           "nextcloud-create-folder",
@@ -820,7 +833,7 @@
           "google-drive-folder",
           "google-drive-search",
           "google-drive-shared-drive",
-          "gofile-get-best-server"
+          "go-file-get-best-server"
         ],
         "subgroups": []
       },
@@ -872,10 +885,10 @@
         "name": "Cloud & Hosting",
         "nodes": [
           "template-safe-render",
-          "azure-activedirectory",
+          "azure-active-directory",
           "azure-blockchain",
           "azure-databricks",
-          "azure-iothub",
+          "azure-io-t-hub",
           "azure-stack",
           "firebase-hosting",
           "heroku",
@@ -925,9 +938,9 @@
           "vast-ai-unlist-machine",
           "vast-ai-update-endpoint-job",
           "vast-ai-update-env-var",
-          "iot-hub.deviceManager",
-          "iot-hub.cloudToDevice",
-          "iot-hub.deviceInvoke",
+          "io-t-hub-device-manager",
+          "io-t-hub-cloud-to-device",
+          "io-t-hub-device-invoke",
           "aws-lambda",
           "aws-elb",
           "nvidia-ngc-catalog-search",
@@ -941,41 +954,51 @@
         "nodes": [
           "bitbucket",
           "barcode-generator",
-          "jsonplaceholder",
+          "json-placeholder",
           "lorem-picsum",
-          "quickchart",
-          "randomuser",
-          "reqres",
+          "quick-chart",
+          "random-user",
+          "req-res",
           "rest-countries",
           "shields-io",
-          "stackexchange",
+          "stack-exchange",
           "user-agent-string",
           "beeceptor",
           "cdnjs",
-          "circleci",
+          "circle-ci",
           "docker-hub",
           "docker",
           "npm",
           "ssh",
           "bunny",
-          "caprover",
+          "cap-rover",
           "dokku"
         ],
         "subgroups": []
       },
       {
         "name": "CI/CD",
-        "nodes": ["azure-devops", "jenkins"],
+        "nodes": [
+          "azure-dev-ops",
+          "jenkins"
+        ],
         "subgroups": []
       },
       {
         "name": "Version Control",
-        "nodes": ["digitalocean-app", "git", "github", "gitlab"],
+        "nodes": [
+          "digital-ocean-app",
+          "git",
+          "github",
+          "gitlab"
+        ],
         "subgroups": []
       },
       {
         "name": "Monitoring",
-        "nodes": ["grafana"],
+        "nodes": [
+          "grafana"
+        ],
         "subgroups": []
       }
     ]
@@ -1000,7 +1023,7 @@
           "lopinion",
           "map-news",
           "morocco-world-news",
-          "newsapi",
+          "news-api",
           "oujdacity",
           "tanja-news",
           "telquel",
@@ -1014,7 +1037,7 @@
         "name": "Regional Search Engines",
         "nodes": [
           "baidu-search",
-          "duckduckgo-search",
+          "duck-duck-go-search",
           "naver-search",
           "yahoo-search",
           "yandex-search"
@@ -1023,20 +1046,27 @@
       },
       {
         "name": "BBC",
-        "nodes": ["bbc-co-uk", "bbc-com", "bbci-co-uk"],
+        "nodes": [
+          "bbc-co-uk",
+          "bbc-com",
+          "bbci-co-uk"
+        ],
         "subgroups": []
       },
       {
         "name": "Bing",
-        "nodes": ["bing-copilot-search", "bing-search"],
+        "nodes": [
+          "bing-copilot-search",
+          "bing-search"
+        ],
         "subgroups": []
       },
       {
         "name": "Image Search",
         "nodes": [
           "bing-images-search",
-          "flickr-oembed",
-          "gettyimages",
+          "flickr-o-embed",
+          "getty-images",
           "giphy-gif-search",
           "pexels-image-search",
           "pixabay-image-search",
@@ -1048,12 +1078,19 @@
       },
       {
         "name": "Government",
-        "nodes": ["census-gov", "federal-register", "nhtsa", "parlement-maroc"],
+        "nodes": [
+          "census-gov",
+          "federal-register",
+          "nhtsa",
+          "parlement-maroc"
+        ],
         "subgroups": []
       },
       {
         "name": "Scientific Search",
-        "nodes": ["cern-opendata"],
+        "nodes": [
+          "cern-opendata"
+        ],
         "subgroups": []
       },
       {
@@ -1068,7 +1105,9 @@
       },
       {
         "name": "Emergency Management",
-        "nodes": ["copernicus-ems"],
+        "nodes": [
+          "copernicus-ems"
+        ],
         "subgroups": []
       },
       {
@@ -1101,7 +1140,6 @@
           "ebsco",
           "scopus-search",
           "science-direct-search",
-          "web-of-science-search",
           "google-scholar-search-url",
           "openalex",
           "orcid-search",
@@ -1126,9 +1164,9 @@
         "name": "Language",
         "nodes": [
           "datamuse",
-          "languagetool",
-          "libretranslate",
-          "oxforddictionaries",
+          "language-tool",
+          "libre-translate",
+          "oxford-dictionaries",
           "urban-dictionary"
         ],
         "subgroups": []
@@ -1143,8 +1181,8 @@
           "ingv-seismic",
           "maroc-meteo-vigilance",
           "open-meteo-climate",
-          "openaq",
-          "purpleair",
+          "open-aq",
+          "purple-air",
           "sunrise-sunset",
           "usgs-earthquakes",
           "usgs-realtime",
@@ -1157,62 +1195,94 @@
       },
       {
         "name": "Reference",
-        "nodes": ["free-dictionary", "quotable"],
+        "nodes": [
+          "free-dictionary",
+          "quotable"
+        ],
         "subgroups": []
       },
       {
         "name": "Utilities",
-        "nodes": ["genderize", "nationalize"],
+        "nodes": [
+          "genderize",
+          "nationalize"
+        ],
         "subgroups": []
       },
       {
         "name": "Icons",
-        "nodes": ["iconhorse"],
+        "nodes": [
+          "icon-horse"
+        ],
         "subgroups": []
       },
       {
         "name": "Space",
-        "nodes": ["launch-library-2", "spacex-launches"],
+        "nodes": [
+          "launch-library2",
+          "space-x-launches"
+        ],
         "subgroups": []
       },
       {
         "name": "Media",
-        "nodes": ["listennotes"],
+        "nodes": [
+          "listen-notes"
+        ],
         "subgroups": []
       },
       {
         "name": "Marches Publics",
-        "nodes": ["marches-publics"],
+        "nodes": [
+          "marches-publics"
+        ],
         "subgroups": []
       },
       {
         "name": "Blogging",
-        "nodes": ["medium"],
+        "nodes": [
+          "medium"
+        ],
         "subgroups": []
       },
       {
         "name": "Environement",
-        "nodes": ["mrds"],
+        "nodes": [
+          "mrds"
+        ],
         "subgroups": []
       },
       {
         "name": "Nasa",
-        "nodes": ["nasa-apod", "nasa-media-search", "nasa"],
+        "nodes": [
+          "nasa-apod",
+          "nasa-media-search",
+          "nasa"
+        ],
         "subgroups": []
       },
       {
         "name": "Content & Feeds",
-        "nodes": ["news-article", "rss-feed", "wikipedia"],
+        "nodes": [
+          "news-article",
+          "rss-feed",
+          "wikipedia"
+        ],
         "subgroups": []
       },
       {
         "name": "Nobel Prize",
-        "nodes": ["nobel-prize"],
+        "nodes": [
+          "nobel-prize"
+        ],
         "subgroups": []
       },
       {
         "name": "Book Search",
-        "nodes": ["open-library-search", "project-gutenberg-search"],
+        "nodes": [
+          "open-library-search",
+          "project-gutenberg-search"
+        ],
         "subgroups": []
       },
       {
@@ -1227,47 +1297,70 @@
       },
       {
         "name": "Quran",
-        "nodes": ["quran"],
+        "nodes": [
+          "al-quran"
+        ],
         "subgroups": []
       },
       {
         "name": "Social Media",
-        "nodes": ["reddit-api"],
+        "nodes": [
+          "reddit-api"
+        ],
         "subgroups": []
       },
       {
         "name": "Moroccan Jobs",
-        "nodes": ["rekrute-job-parser", "rekrute-scraper", "emploima"],
+        "nodes": [
+          "rekrute-job-parser",
+          "rekrute-scraper",
+          "emploima"
+        ],
         "subgroups": []
       },
       {
         "name": "General",
-        "nodes": ["serpapi", "tavily", "playwright-browser"],
+        "nodes": [
+          "serp-api",
+          "tavily",
+          "playwright-browser"
+        ],
         "subgroups": []
       },
       {
         "name": "Stock Media",
-        "nodes": ["shutterstock"],
+        "nodes": [
+          "shutterstock"
+        ],
         "subgroups": []
       },
       {
         "name": "Music",
-        "nodes": ["soundcloud"],
+        "nodes": [
+          "sound-cloud"
+        ],
         "subgroups": []
       },
       {
         "name": "USA Patents",
-        "nodes": ["usa-patents", "google-patents-search"],
+        "nodes": [
+          "patents-view",
+          "google-patents-search"
+        ],
         "subgroups": []
       },
       {
         "name": "Knowledge Base",
-        "nodes": ["wikidata"],
+        "nodes": [
+          "wikidata"
+        ],
         "subgroups": []
       },
       {
         "name": "Name Analysis",
-        "nodes": ["agify"],
+        "nodes": [
+          "agify"
+        ],
         "subgroups": []
       },
       {
@@ -1284,7 +1377,7 @@
           "walmart-search",
           "amazon-product-search",
           "youtube-api-thumbnails",
-          "youtube-api-transcription",
+          "youtube-api-transcriptions",
           "youtube-get-channel",
           "youtube-get-video",
           "youtube-search",
@@ -1328,23 +1421,26 @@
           "data-gouv-fr",
           "geojson",
           "address-validator",
-          "geonames",
-          "graphhopper-route",
+          "geo-names",
+          "graph-hopper-route",
           "mapbox",
-          "openstreetmap",
+          "open-street-map",
           "ip-api",
-          "ip2location",
-          "opentopodata",
+          "ip2-location",
+          "open-topo-data",
           "postcode-io",
           "zippopotam",
-          "tomtom",
+          "tom-tom",
           "google-maps-search"
         ],
         "subgroups": []
       },
       {
         "name": "Economic & Public Data",
-        "nodes": ["fmi", "world-bank-api"],
+        "nodes": [
+          "fmi",
+          "world-bank"
+        ],
         "subgroups": []
       }
     ]
@@ -1371,130 +1467,178 @@
       },
       {
         "name": "Other Medical Sources",
-        "nodes": ["biorxiv", "pmc", "google-scholar"],
+        "nodes": [
+          "bio-rxiv",
+          "pmc",
+          "google-scholar"
+        ],
         "subgroups": []
       },
       {
         "name": "Biology & Life Sciences",
         "nodes": [
-          "bioapi",
-          "chebi",
+          "bio-api",
+          "ch-ebi",
           "ensembl",
-          "g2p",
-          "mygene",
-          "myvariant",
-          "uniprotkb"
+          "g2-p",
+          "my-gene",
+          "my-variant",
+          "uni-prot-kb"
         ],
         "subgroups": []
       },
       {
         "name": "FHIR",
-        "nodes": ["bonfhir-client"],
+        "nodes": [
+          "bonfhir-client"
+        ],
         "subgroups": []
       },
       {
         "name": "Chemistry & Life Sciences",
-        "nodes": ["cactus", "rsc"],
+        "nodes": [
+          "cactus",
+          "rsc"
+        ],
         "subgroups": []
       },
       {
         "name": "Chemistry",
-        "nodes": ["chembl"],
+        "nodes": [
+          "ch-embl"
+        ],
         "subgroups": []
       },
       {
         "name": "Clinical Databases",
-        "nodes": ["clinical-tables-search"],
+        "nodes": [
+          "clinical-tables-search"
+        ],
         "subgroups": []
       },
       {
         "name": "Clinical Trials",
-        "nodes": ["clinical-trials-search"],
+        "nodes": [
+          "clinical-trials-search"
+        ],
         "subgroups": []
       },
       {
         "name": "Biodiversity",
-        "nodes": ["gbif-occurrence", "gbif", "perenual", "plantnet"],
+        "nodes": [
+          "gbif-occurrence",
+          "gbif",
+          "perenual",
+          "plant-net"
+        ],
         "subgroups": []
       },
       {
         "name": "Health Topics",
-        "nodes": ["health-topics-search"],
+        "nodes": [
+          "health-topics-search"
+        ],
         "subgroups": []
       },
       {
         "name": "Healthcare Integration",
-        "nodes": ["hl7-client"],
+        "nodes": [
+          "hl7-client"
+        ],
         "subgroups": []
       },
       {
         "name": "ICD",
-        "nodes": ["icd11-search"],
+        "nodes": [
+          "icd11-search"
+        ],
         "subgroups": []
       },
       {
-        "name": "Médicaments API FR",
-        "nodes": ["medicaments-api"],
+        "name": "M\u00e9dicaments API FR",
+        "nodes": [
+          "medicaments-api"
+        ],
         "subgroups": []
       },
       {
         "name": "Pre-print Articles",
-        "nodes": ["medrxiv-search"],
+        "nodes": [
+          "medrxiv-search"
+        ],
         "subgroups": []
       },
       {
         "name": "Mendeley",
-        "nodes": ["mendeley"],
+        "nodes": [
+          "mendeley"
+        ],
         "subgroups": []
       },
       {
         "name": "OpenFoodFacts",
-        "nodes": ["openfoodfacts"],
+        "nodes": [
+          "open-food-facts"
+        ],
         "subgroups": []
       },
       {
         "name": "Imaging / PACS",
-        "nodes": ["orthanc"],
+        "nodes": [
+          "orthanc"
+        ],
         "subgroups": []
       },
       {
         "name": "Patient Data",
-        "nodes": ["patientview"],
+        "nodes": [
+          "patient-view"
+        ],
         "subgroups": []
       },
       {
         "name": "Medicaments",
-        "nodes": ["pharmamaroc"],
+        "nodes": [
+          "pharma-maroc"
+        ],
         "subgroups": []
       },
       {
         "name": "PubMed",
         "nodes": [
-          "pubmed-get-summaries",
-          "pubmed-search-ids",
-          "pubmed-search",
+          "pub-med-get-summaries",
+          "pub-med-search-ids",
+          "pub-med-search",
           "pubmed"
         ],
         "subgroups": []
       },
       {
         "name": "RCSB",
-        "nodes": ["rcsb-pdb"],
+        "nodes": [
+          "rcsbpdb"
+        ],
         "subgroups": []
       },
       {
         "name": "Diagnosis",
-        "nodes": ["symptomator"],
+        "nodes": [
+          "symptomator"
+        ],
         "subgroups": []
       },
       {
         "name": "WHO GHO",
-        "nodes": ["who-gho-odata"],
+        "nodes": [
+          "who-gho-odata"
+        ],
         "subgroups": []
       },
       {
         "name": "Zotero",
-        "nodes": ["zotero"],
+        "nodes": [
+          "zotero"
+        ],
         "subgroups": []
       },
       {
@@ -1617,14 +1761,14 @@
           "salary-converter",
           "binance-price",
           "blockchain-info",
-          "coindesk-price",
-          "coingecko-price",
-          "docusign",
+          "coin-desk-price",
+          "coin-gecko-price",
+          "docu-sign",
           "frankfurter-exchange",
-          "opencorporates",
+          "open-corporates",
           "sec-edgar",
-          "vatcomply",
-          "wallstreetbets-reddit",
+          "vat-comply",
+          "wall-street-bets-reddit",
           "xero",
           "yodlee",
           "crypto",
@@ -1637,9 +1781,9 @@
         "nodes": [
           "payment-gateway-comparison",
           "cmi-generate-payment-form",
-          "nowpayments",
+          "now-payments",
           "square",
-          "velopayments",
+          "velo-payments",
           "adyen",
           "stripe-charges",
           "paypal-capture-payment",
@@ -1661,10 +1805,10 @@
           "geospatial-utils",
           "inventory-logistics",
           "mrp-engine",
-          "opensky",
+          "open-sky",
           "poste-ma",
           "zpl-builder",
-          "escpos-builder",
+          "esc-pos-builder",
           "product-lookup",
           "quality-maintenance",
           "shipsy",
@@ -1674,7 +1818,7 @@
           "tracktry",
           "unit-converter",
           "ups",
-          "vesselfinder",
+          "vessel-finder",
           "searates-ai",
           "searates-air-tracking",
           "searates-booking",
@@ -1696,7 +1840,7 @@
       {
         "name": "CRM & Marketing",
         "nodes": [
-          "hubspot",
+          "hub-spot",
           "salesforce-account",
           "salesforce-attachment",
           "salesforce-case",
@@ -1717,8 +1861,8 @@
         "nodes": [
           "magento",
           "shopify",
-          "woocommerce",
-          "bamboohr",
+          "woo-commerce-action",
+          "bamboo-hr",
           "google-shopping-search"
         ],
         "subgroups": []
@@ -1746,10 +1890,10 @@
       {
         "name": "Productivity & Office",
         "nodes": [
-          "excel-table-add-rows",
-          "excel-table-list-columns",
-          "excel-table-list-rows",
-          "excel-table-find-row",
+          "excel-add-rows",
+          "excel-list-columns",
+          "excel-list-rows",
+          "excel-find-row",
           "excel-add-worksheet",
           "excel-list-workbooks",
           "excel-get-all-worksheets",
@@ -1760,7 +1904,9 @@
       },
       {
         "name": "CMS & Publishing",
-        "nodes": ["wordpress"],
+        "nodes": [
+          "wordpress"
+        ],
         "subgroups": []
       }
     ]
@@ -1769,7 +1915,9 @@
     "name": "line-messaging",
     "icon": "groupsicons/line-messaging",
     "color": "#00c300",
-    "nodes": ["line-messaging"]
+    "nodes": [
+      "line-messaging"
+    ]
   },
   {
     "name": "Security & Networking",
@@ -1780,10 +1928,10 @@
       {
         "name": "APIs & Protocols",
         "nodes": [
-          "exchangerate-api",
+          "exchange-rate-api",
           "loripsum-api",
-          "httpbin",
-          "httpstat",
+          "http-bin",
+          "http-stat",
           "http-fingerprint",
           "vast-ai-delete-api-key",
           "vast-ai-reset-apikey",
@@ -1804,16 +1952,16 @@
         "name": "Network Tools",
         "nodes": [
           "ipify",
-          "ipinfo",
+          "ip-info",
           "dns-lookup",
           "dns-to-ip",
           "ip-geolocation",
           "port-scanner",
           "ssl-checker",
-          "statdns",
+          "stat-dns",
           "whois",
           "network-calc-security",
-          "networkcalc",
+          "network-calc",
           "ssl-labs",
           "cisco",
           "vast-ai-add-network-disk",
@@ -1823,28 +1971,29 @@
       },
       {
         "name": "Identity & Access",
-        "nodes": ["keycloak", "totp", "aws-iam", "aws-cognito", "ldap"],
+        "nodes": [
+          "keycloak",
+          "totp",
+          "aws-iam",
+          "aws-cognito",
+          "ldap"
+        ],
         "subgroups": []
       },
       {
         "name": "Security Intelligence",
         "nodes": [
-          "binaryedge",
-          "builtwith",
-          "censys",
-          "greynoise",
-          "haveibeenpwned",
-          "shodan-lookup",
-          "subdomain-discovery",
-          "virustotal",
-          "vulnerability-scanner",
-          "whatcms",
           "binary-edge",
           "built-with",
+          "censys",
           "grey-noise",
-          "snyk",
+          "have-i-been-pwned",
+          "shodan-lookup",
+          "subdomain-discovery",
           "virus-total",
+          "vulnerability-scanner",
           "what-cms",
+          "snyk",
           "wayback-machine",
           "url-scan-get-result",
           "url-scan-submit",
@@ -1882,20 +2031,26 @@
     "name": "Ungrouped",
     "icon": "groupsicons/ungrouped",
     "color": "#64748b",
-    "nodes": ["get-response"],
+    "nodes": [],
     "subgroups": [
       {
         "name": "STG",
-        "nodes": ["stg-once", "stg-http"],
+        "nodes": [
+          "stg-http"
+        ],
         "subgroups": [
           {
             "name": "stg-aya",
-            "nodes": ["stg-telegram-send-message"],
+            "nodes": [
+              "stg-telegram-send-message"
+            ],
             "subgroups": []
           },
           {
             "name": "stg-builtin",
-            "nodes": ["stg-once"],
+            "nodes": [
+              "stg-once"
+            ],
             "subgroups": []
           },
           {
@@ -2085,37 +2240,58 @@
     "subgroups": [
       {
         "name": "General Utilities",
-        "nodes": ["performance-prompt", "log", "test-node"],
+        "nodes": [
+          "performance-prompt",
+          "log",
+          "test-node"
+        ],
         "subgroups": []
       },
       {
         "name": "Jokes",
-        "nodes": ["dad-jokes"],
+        "nodes": [
+          "dad-jokes"
+        ],
         "subgroups": []
       },
       {
         "name": "Games",
-        "nodes": ["deck-of-cards", "dnd5e", "ffxiv", "open-trivia"],
+        "nodes": [
+          "deck-of-cards",
+          "dn-d5e",
+          "ffxiv",
+          "open-trivia"
+        ],
         "subgroups": []
       },
       {
         "name": "Memes",
-        "nodes": ["imgflip"],
+        "nodes": [
+          "img-flip"
+        ],
         "subgroups": []
       },
       {
         "name": "Anime",
-        "nodes": ["jikan"],
+        "nodes": [
+          "jikan"
+        ],
         "subgroups": []
       },
       {
         "name": "Quotes",
-        "nodes": ["kanye-rest", "advice-slip"],
+        "nodes": [
+          "kanye-rest",
+          "advice-slip"
+        ],
         "subgroups": []
       },
       {
         "name": "TV Shows",
-        "nodes": ["rick-and-morty", "tvmaze"],
+        "nodes": [
+          "rick-and-morty",
+          "tv-maze"
+        ],
         "subgroups": []
       }
     ]

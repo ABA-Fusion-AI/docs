@@ -386,7 +386,7 @@ Notify the team on deployment start, then update the message with the result.
     },
     {
       "id": "run-deploy",
-      "type": "jenkins-action",
+      "type": "jenkins",
       "position": { "x": 500, "y": 100 },
       "config": {
         "operation": "triggerBuild",

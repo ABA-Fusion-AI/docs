@@ -1,5 +1,5 @@
 ---
-node_id: "baserow-action"
+node_id: "baserow"
 title: "Baserow Action"
 description: "Perform Baserow database operations — list fields, list rows, get a row, create, update, and delete rows"
 category: "data"
@@ -373,7 +373,7 @@ Receive a form submission via webhook and save it directly to a Baserow table.
     },
     {
       "id": "save-to-baserow",
-      "type": "baserow-action",
+      "type": "baserow",
       "position": { "x": 300, "y": 100 },
       "config": {
         "baseUrl": "https://baserow.example.com",

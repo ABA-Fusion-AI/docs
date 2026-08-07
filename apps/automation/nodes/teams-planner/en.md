@@ -14,8 +14,8 @@ tags:
   - planner
   - microsoft-graph
 related_nodes:
-  - teams-new-planner-task-trigger
-  - teams-planner-task-updated-trigger
+  - teams-on-new-planner-task-trigger
+  - teams-on-planner-task-updated-trigger
 ---
 
 # Microsoft Teams - Planner

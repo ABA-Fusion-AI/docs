@@ -1,5 +1,5 @@
 ---
-node_id: "jenkins-action"
+node_id: "jenkins"
 title: "Jenkins Action"
 description: "Interact with Jenkins CI/CD — trigger builds, retrieve job and build information, manage job state, and inspect the build queue"
 category: "integrations"
@@ -17,7 +17,7 @@ tags:
   - action
 related_nodes:
   - slack-action
-  - jira-action
+  - jira
   - function
   - cron
 ---
@@ -372,7 +372,7 @@ When a Jira issue transitions to "Ready for Deploy", trigger a Jenkins build and
     },
     {
       "id": "trigger-jenkins",
-      "type": "jenkins-action",
+      "type": "jenkins",
       "position": { "x": 500, "y": 100 },
       "config": {
         "baseURL": "https://jenkins.example.com",

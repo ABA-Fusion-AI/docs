@@ -1,5 +1,5 @@
 ---
-node_id: "jira-action"
+node_id: "jira"
 title: "Jira Action"
 description: "Interact with Jira — manage issues, comments, transitions, sprints, boards, projects, and users via the Jira REST API"
 category: "integrations"
@@ -17,7 +17,7 @@ tags:
   - action
 related_nodes:
   - slack-action
-  - jenkins-action
+  - jenkins
   - webhook-trigger
   - function
   - cron
@@ -464,7 +464,7 @@ When a Jenkins build succeeds, transition the associated Jira issue to "In Revie
     },
     {
       "id": "transition-issue",
-      "type": "jira-action",
+      "type": "jira",
       "position": { "x": 500, "y": 100 },
       "config": {
         "host": "https://your-org.atlassian.net",
@@ -477,7 +477,7 @@ When a Jenkins build succeeds, transition the associated Jira issue to "In Revie
     },
     {
       "id": "add-comment",
-      "type": "jira-action",
+      "type": "jira",
       "position": { "x": 500, "y": 220 },
       "config": {
         "host": "https://your-org.atlassian.net",

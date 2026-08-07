@@ -247,7 +247,7 @@ When a user posts `!bug <description>` in `#bug-reports`, automatically create a
     },
     {
       "id": "create-jira-issue",
-      "type": "jira-action",
+      "type": "jira",
       "config": {
         "operation": "createIssue",
         "projectKey": "BUGS",

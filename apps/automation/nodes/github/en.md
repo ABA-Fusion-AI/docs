@@ -18,9 +18,9 @@ tags:
   - actions
   - action
 related_nodes:
-  - gitlab-action
-  - jenkins-action
-  - jira-action
+  - gitlab
+  - jenkins
+  - jira
   - discord-action
   - slack-action
 ---

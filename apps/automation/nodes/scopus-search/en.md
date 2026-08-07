@@ -16,7 +16,7 @@ tags:
   - research
 related_nodes:
   - science-direct-search
-  - web-of-science-search
+  - scientific-web-of-science
   - google-scholar-search-url
 ---
 

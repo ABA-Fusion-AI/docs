@@ -16,7 +16,7 @@ tags:
 related_nodes:
   - scopus-search
   - science-direct-search
-  - web-of-science-search
+  - scientific-web-of-science
 ---
 
 <!-- SECTION: header -->

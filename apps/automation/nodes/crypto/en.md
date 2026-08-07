@@ -1,5 +1,5 @@
 ---
-node_id: "crypto-action"
+node_id: "crypto"
 title: "Crypto Action"
 description: "Generate random tokens, hash and HMAC data, sign payloads with RSA, and encrypt/decrypt with AES or RSA — powered by Node.js native crypto"
 category: "utilities"
@@ -420,7 +420,7 @@ Verify an incoming webhook's HMAC signature, then process and store the event if
     },
     {
       "id": "compute-hmac",
-      "type": "crypto-action",
+      "type": "crypto",
       "config": {
         "operation": "Hmac",
         "hmac": {
