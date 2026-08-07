@@ -18,7 +18,8 @@
           "scada-trigger",
           "io-t-hub-device-status-trigger",
           "io-t-hub-device-to-cloud-trigger",
-          "dnp3-outstation"
+          "dnp3-outstation",
+          "io-t-hub-trigger"
         ],
         "subgroups": []
       },
@@ -71,7 +72,10 @@
           "airtable-trigger",
           "discord-trigger",
           "azure-communication-chat-message-trigger",
-          "asana-trigger"
+          "asana-trigger",
+          "linear-trigger",
+          "paypal-webhook-trigger",
+          "teams-on-new-channel-message-trigger"
         ],
         "subgroups": []
       },
@@ -131,7 +135,9 @@
         "name": "Inter-Workflow",
         "nodes": [
           "sub",
-          "pub"
+          "pub",
+          "publish",
+          "subscribe"
         ],
         "subgroups": []
       },
@@ -423,7 +429,8 @@
           "ai-chat-xai",
           "ai-chat",
           "ai-chat-amazon-bedrock",
-          "ai-chat-google"
+          "ai-chat-google",
+          "csmai"
         ],
         "subgroups": []
       },
@@ -575,7 +582,8 @@
           "oracle-db",
           "oracle-sql",
           "oracle-database",
-          "mssql"
+          "mssql",
+          "supabase"
         ],
         "subgroups": []
       },
@@ -648,7 +656,8 @@
           "mongodb-action",
           "cosmos-upsert",
           "cosmos-database",
-          "cosmos-change-feed"
+          "cosmos-change-feed",
+          "cosmos-container"
         ],
         "subgroups": []
       },
@@ -688,7 +697,8 @@
           "brevo-contact-action",
           "brevo-contact-attribute-action",
           "brevo-email-action",
-          "brevo-sender-action"
+          "brevo-sender-action",
+          "outlook"
         ],
         "subgroups": []
       },
@@ -710,7 +720,9 @@
           "event-hub-admin",
           "event-hub-send",
           "rabbit-mq-action",
-          "rabbit-mq-publish"
+          "rabbit-mq-publish",
+          "client",
+          "server"
         ],
         "subgroups": []
       },
@@ -744,7 +756,19 @@
           "signal-r-action",
           "discord-action",
           "discord-bot-send",
-          "discord-webhook-send"
+          "discord-webhook-send",
+          "slack",
+          "teams-create-channel",
+          "teams-create-channel-message",
+          "teams-create-chat-message",
+          "teams-delete-channel",
+          "teams-get-channel",
+          "teams-get-chat-message",
+          "teams-list-channel-messages",
+          "teams-list-channels",
+          "teams-list-chat-messages",
+          "teams-send-chat-message-and-wait",
+          "teams-update-channel"
         ],
         "subgroups": []
       },
@@ -758,7 +782,8 @@
           "azure-communication-auth",
           "azure-communication-send-sms",
           "azure-communication-create-thread",
-          "azure-communication-send-chat-message"
+          "azure-communication-send-chat-message",
+          "whatsapp"
         ],
         "subgroups": []
       }
@@ -997,7 +1022,8 @@
       {
         "name": "Monitoring",
         "nodes": [
-          "grafana"
+          "grafana",
+          "uptimerobot"
         ],
         "subgroups": []
       }
@@ -1072,7 +1098,8 @@
           "pixabay-image-search",
           "unsplash-image-search",
           "wikimedia-commons",
-          "google-images-search"
+          "google-images-search",
+          "image-search"
         ],
         "subgroups": []
       },
@@ -1323,7 +1350,8 @@
         "nodes": [
           "serp-api",
           "tavily",
-          "playwright-browser"
+          "playwright-browser",
+          "chamber-scraper"
         ],
         "subgroups": []
       },
@@ -1461,7 +1489,8 @@
           "pharmacy-scraper",
           "gemini-medical",
           "google-fitness",
-          "visiostation"
+          "visiostation",
+          "medifus"
         ],
         "subgroups": []
       },
@@ -1852,7 +1881,9 @@
           "salesforce-task",
           "salesforce-user",
           "odoo",
-          "high-level-action"
+          "high-level-action",
+          "google-search-ads-360",
+          "zoho-crm"
         ],
         "subgroups": []
       },
@@ -1883,7 +1914,13 @@
           "todoist-comment-action",
           "todoist-label-action",
           "todoist-reminder-action",
-          "taiga"
+          "taiga",
+          "teams-create-planner-task",
+          "teams-delete-planner-task",
+          "teams-get-planner-task",
+          "teams-list-planner-tasks",
+          "teams-update-planner-task",
+          "wekan"
         ],
         "subgroups": []
       },
@@ -1898,14 +1935,23 @@
           "excel-list-workbooks",
           "excel-get-all-worksheets",
           "excel-get-worksheet-content",
-          "microsoft-excel"
+          "microsoft-excel",
+          "notion-blocks",
+          "notion-comments",
+          "notion-data-sources",
+          "notion-databases",
+          "notion-file-uploads",
+          "notion-pages",
+          "notion-search",
+          "notion-users"
         ],
         "subgroups": []
       },
       {
         "name": "CMS & Publishing",
         "nodes": [
-          "wordpress"
+          "wordpress",
+          "webflow"
         ],
         "subgroups": []
       }
@@ -1976,7 +2022,8 @@
           "totp",
           "aws-iam",
           "aws-cognito",
-          "ldap"
+          "ldap",
+          "aws-sts"
         ],
         "subgroups": []
       },
@@ -2021,7 +2068,8 @@
           "profinet-read",
           "profinet-write",
           "scada-read",
-          "scada-write"
+          "scada-write",
+          "io-t-hub-action"
         ],
         "subgroups": []
       }
@@ -2243,7 +2291,10 @@
         "nodes": [
           "performance-prompt",
           "log",
-          "test-node"
+          "test-node",
+          "numbers-api",
+          "test",
+          "yourls"
         ],
         "subgroups": []
       },
