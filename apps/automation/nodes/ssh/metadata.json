@@ -1,0 +1,4 @@
+{
+  "label": "SSH",
+  "description": "Executes commands on a remote server via SSH."
+}
