@@ -1,0 +1,4 @@
+{
+  "label": "GreyNoise IP Lookup",
+  "description": "Checks if an IP is part of internet noise or a targeted attack."
+}
