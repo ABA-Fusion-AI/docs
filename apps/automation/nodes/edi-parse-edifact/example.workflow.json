@@ -1,0 +1,122 @@
+{
+  "name": "EDI Parse EDIFACT Example",
+  "nodes": [
+    {
+      "id": "5c15b915-b2a7-4693-b966-24ab5047e713",
+      "position": {
+        "x": 561,
+        "y": 298
+      },
+      "type": "trigger",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Triggers the workflow manually.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      }
+    },
+    {
+      "id": "nls5gc0tfk7ijme3qthj6vof",
+      "position": {
+        "x": 690.75,
+        "y": 302.5
+      },
+      "type": "action",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "edi-parse-edifact",
+        "label": "EDI Parse EDIFACT",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Parse UN/EDIFACT (ISO 9735) documents. Supports UNA service string advice and full segment parsing with validation.",
+        "showRunningStatus": true,
+        "parameters": {
+          "inputData": "UNA:+.? 'UNB+UNOC:3+FUSIONAI+CLIENT01+260807:1400+000000001'UNH+1+INVOIC:D:96A:UN'BGM+380+INV-1001+9'UNT+3+1'UNZ+1+000000001'",
+          "validate": true
+        },
+        "_morphing": false
+      }
+    },
+    {
+      "id": "30f80a97-e1af-4ef8-aab0-feeef99488ca",
+      "position": {
+        "x": 831.5,
+        "y": 287
+      },
+      "type": "display",
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "data": {
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      }
+    }
+  ],
+  "connections": [
+    {
+      "source": "5c15b915-b2a7-4693-b966-24ab5047e713",
+      "sourceHandle": "success",
+      "target": "nls5gc0tfk7ijme3qthj6vof",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__5c15b915-b2a7-4693-b966-24ab5047e713success-nls5gc0tfk7ijme3qthj6vofinput",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "source": "nls5gc0tfk7ijme3qthj6vof",
+      "sourceHandle": "success",
+      "target": "30f80a97-e1af-4ef8-aab0-feeef99488ca",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__nls5gc0tfk7ijme3qthj6vofsuccess-30f80a97-e1af-4ef8-aab0-feeef99488cainput",
+      "data": {
+        "isAnimated": false
+      }
+    }
+  ],
+  "version": 1,
+  "secrets": {}
+}
