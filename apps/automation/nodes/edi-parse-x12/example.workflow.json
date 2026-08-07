@@ -1,0 +1,122 @@
+{
+  "name": "EDI Parse X12 Example",
+  "nodes": [
+    {
+      "id": "5c15b915-b2a7-4693-b966-24ab5047e713",
+      "position": {
+        "x": 561,
+        "y": 298
+      },
+      "type": "trigger",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Triggers the workflow manually.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      }
+    },
+    {
+      "id": "v2n9r69ku71rqbdczd1i071q",
+      "position": {
+        "x": 690.75,
+        "y": 298.5
+      },
+      "type": "action",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "edi-parse-x12",
+        "label": "EDI Parse X12",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Parse ANSI ASC X12 documents. Supports ISA/GS/ST structure with proper delimiter detection.",
+        "showRunningStatus": true,
+        "parameters": {
+          "inputData": "ISA*00*          *00*          *ZZ*FUSIONAI       *ZZ*CLIENT01       *260807*1430*U*00401*000000001*0*T*:~GS*IN*FUSIONAI*CLIENT01*20260807*1430*1*X*004010~ST*810*0001~BIG*20260807*INV1001~SE*3*0001~GE*1*1~IEA*1*000000001~",
+          "validate": true
+        },
+        "_morphing": false
+      }
+    },
+    {
+      "id": "30f80a97-e1af-4ef8-aab0-feeef99488ca",
+      "position": {
+        "x": 831.5,
+        "y": 287
+      },
+      "type": "display",
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "data": {
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      }
+    }
+  ],
+  "connections": [
+    {
+      "source": "5c15b915-b2a7-4693-b966-24ab5047e713",
+      "sourceHandle": "success",
+      "target": "v2n9r69ku71rqbdczd1i071q",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__5c15b915-b2a7-4693-b966-24ab5047e713success-v2n9r69ku71rqbdczd1i071qinput",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "source": "v2n9r69ku71rqbdczd1i071q",
+      "sourceHandle": "success",
+      "target": "30f80a97-e1af-4ef8-aab0-feeef99488ca",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__v2n9r69ku71rqbdczd1i071qsuccess-30f80a97-e1af-4ef8-aab0-feeef99488cainput",
+      "data": {
+        "isAnimated": false
+      }
+    }
+  ],
+  "version": 1,
+  "secrets": {}
+}

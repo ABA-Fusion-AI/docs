@@ -1,0 +1,4 @@
+{
+  "label": "EDI Parse X12",
+  "description": "Parse ANSI ASC X12 documents. Supports ISA/GS/ST structure with proper delimiter detection."
+}
