@@ -22,7 +22,7 @@ related_nodes:
 <!-- SECTION: header -->
 # Currency Converter
 
-> **Category:** Utilities | **Type:** Action Node
+> **Category:**Business & Commerce | **Type:** Action Node
 
 Convert currencies, retrieve exchange rates, and optionally work with historical exchange data.
 
