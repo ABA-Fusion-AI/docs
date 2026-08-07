@@ -1,0 +1,633 @@
+[
+  {
+    "name": "firestore",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "ovuwybk55t9rrws3ew6g8xee",
+        "position": {
+          "x": 628.197154957022,
+          "y": 194.3787711158173
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "firestore",
+          "label": "Firestore",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Performs Firestore operations (set/get/update/delete/query)",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "get document",
+            "apiKey": "",
+            "projectId": "dailyblaguevf",
+            "appId": "1:682311948584:android:adb1f27efa12b899e1181d",
+            "collectionId": "jokes",
+            "documentId": "1cJWUw1Ux4ruqIhnXhuJ"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "jew86d7e8eki30bwpayof3fi",
+        "position": {
+          "x": 620.0226682344945,
+          "y": 345.8597091542789
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "firestore",
+          "label": "Firestore1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Performs Firestore operations (set/get/update/delete/query)",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "set document",
+            "apiKey": "",
+            "projectId": "dailyblaguevf",
+            "appId": "1:682311948584:android:adb1f27efa12b899e1181d",
+            "collectionId": "jokes",
+            "documentId": "1cJWUw1Ux4ruqIhnXhuJ",
+            "data": "{\"test\":\"test\"}"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "dlf3vgtni9apq4zd9r83ubqn",
+        "position": {
+          "x": 614.5314659617316,
+          "y": 500.023931642505
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "firestore",
+          "label": "Firestore2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Performs Firestore operations (set/get/update/delete/query)",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "update document",
+            "apiKey": "",
+            "projectId": "dailyblaguevf",
+            "appId": "1:682311948584:android:adb1f27efa12b899e1181d",
+            "collectionId": "jokes",
+            "documentId": "1cJWUw1Ux4ruqIhnXhuJ",
+            "data": "{\"test\":\"test\"}"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ikmuzc6bz9pgoln2ek6broow",
+        "position": {
+          "x": 607.6986214640864,
+          "y": 824.7444219688887
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "firestore",
+          "label": "Firestore4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Performs Firestore operations (set/get/update/delete/query)",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "delete document",
+            "apiKey": "",
+            "projectId": "dailyblaguevf",
+            "appId": "1:682311948584:android:adb1f27efa12b899e1181d",
+            "collectionId": "jokes",
+            "documentId": "1cJWUw1Ux4ruqIhnXhuJ",
+            "data": "{\"test\":\"test\"}"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "cmwsxc5vp19hvsmv578t3w9k",
+        "position": {
+          "x": 637.2147504114962,
+          "y": 663.579649704907
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "firestore",
+          "label": "Firestore3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Performs Firestore operations (set/get/update/delete/query)",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "query documents",
+            "apiKey": "",
+            "projectId": "dailyblaguevf",
+            "appId": "1:682311948584:android:adb1f27efa12b899e1181d",
+            "collectionId": "jokes",
+            "documentId": "1cJWUw1Ux4ruqIhnXhuJ",
+            "data": "{\"test\":\"test\"}"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "galjb7j5a6we5ercoskqd84n",
+        "position": {
+          "x": 402.7989597357892,
+          "y": 183.473310679639
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "b4yhffusl71dum6prnsdth14",
+        "position": {
+          "x": 394.6244730132617,
+          "y": 334.95424871810064
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "tsraqkbz621ffimj27m74qlt",
+        "position": {
+          "x": 389.13327074049874,
+          "y": 489.1184712063267
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ne9qgobs0az698qr31p7bv81",
+        "position": {
+          "x": 382.30042624285363,
+          "y": 813.8389615327103
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "nt11f3jit17v3hqxqh7mnzia",
+        "position": {
+          "x": 387.6669951423827,
+          "y": 652.6741892687286
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "xbzb9tfka396uuarx9uqp0kz",
+        "position": {
+          "x": 866.2633742706532,
+          "y": 194.58571234095547
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "hl4va9d8uy8ltsgzhsnz6w5u",
+        "position": {
+          "x": 858.0888875481257,
+          "y": 346.06665037941707
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "iel0c3ctgv0h0pkqvfccrejj",
+        "position": {
+          "x": 852.5976852753628,
+          "y": 500.23087286764314
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "bu7n9wpdwjenn5ta5bd4n5m4",
+        "position": {
+          "x": 845.7648407777176,
+          "y": 824.951363194027
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "lk8v9sg0fvzyewpkji2hmhl4",
+        "position": {
+          "x": 859.1812630265403,
+          "y": 665.1282331549273
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "galjb7j5a6we5ercoskqd84n",
+        "sourceHandle": "success",
+        "target": "ovuwybk55t9rrws3ew6g8xee",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__galjb7j5a6we5ercoskqd84nsuccess-ovuwybk55t9rrws3ew6g8xeeinput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "ovuwybk55t9rrws3ew6g8xee",
+        "sourceHandle": "success",
+        "target": "xbzb9tfka396uuarx9uqp0kz",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ovuwybk55t9rrws3ew6g8xeesuccess-xbzb9tfka396uuarx9uqp0kzinput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "b4yhffusl71dum6prnsdth14",
+        "sourceHandle": "success",
+        "target": "jew86d7e8eki30bwpayof3fi",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "y50bs8c3puaju2xf9n537wa9",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "jew86d7e8eki30bwpayof3fi",
+        "sourceHandle": "success",
+        "target": "hl4va9d8uy8ltsgzhsnz6w5u",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ofcajad8do5ol1jvmzfxmj8m",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "tsraqkbz621ffimj27m74qlt",
+        "sourceHandle": "success",
+        "target": "dlf3vgtni9apq4zd9r83ubqn",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ycpsjh8k8726nu3hyum8lreg",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "dlf3vgtni9apq4zd9r83ubqn",
+        "sourceHandle": "success",
+        "target": "iel0c3ctgv0h0pkqvfccrejj",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "l4zgtub9btu12v42qzcxyam2",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "nt11f3jit17v3hqxqh7mnzia",
+        "sourceHandle": "success",
+        "target": "cmwsxc5vp19hvsmv578t3w9k",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "wvm27u3dhzry69e5jpc0h15s",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "cmwsxc5vp19hvsmv578t3w9k",
+        "sourceHandle": "success",
+        "target": "lk8v9sg0fvzyewpkji2hmhl4",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "st3jpe9ghm12aqpp3j0uduyk",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "ne9qgobs0az698qr31p7bv81",
+        "sourceHandle": "success",
+        "target": "ikmuzc6bz9pgoln2ek6broow",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "or0w5h27wmojejqx5ugr4wyd",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "ikmuzc6bz9pgoln2ek6broow",
+        "sourceHandle": "success",
+        "target": "bu7n9wpdwjenn5ta5bd4n5m4",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "b4ovs6saqjc81r45tctzejjb",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1786026499391,
+    "updatedAt": 1786091677211,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
