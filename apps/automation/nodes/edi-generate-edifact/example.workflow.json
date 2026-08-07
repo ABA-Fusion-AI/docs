@@ -1,0 +1,163 @@
+{
+  "name": "EDI Generate EDIFACT Example",
+  "nodes": [
+    {
+      "id": "qq8zop6o8nri2e2birdz9c34",
+      "position": {
+        "x": 561,
+        "y": 298
+      },
+      "type": "trigger",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Triggers the workflow manually.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      }
+    },
+    {
+      "id": "ck4doi1v956lw5jojuwixa42",
+      "position": {
+        "x": 687.5,
+        "y": 288
+      },
+      "type": "action",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "edi-generate-edifact",
+        "label": "EDI Generate EDIFACT",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Generate UN/EDIFACT (ISO 9735) documents from structured JSON data.",
+        "showRunningStatus": true,
+        "parameters": {
+          "data": {
+            "interchange": {
+              "syntaxIdentifier": [
+                "UNOC",
+                "3"
+              ],
+              "sender": [
+                "FUSIONAI"
+              ],
+              "recipient": [
+                "CLIENT01"
+              ],
+              "dateTime": [
+                "260807",
+                "1400"
+              ],
+              "controlReference": "000000001"
+            },
+            "messages": [
+              {
+                "messageReference": "1",
+                "messageType": [
+                  "INVOIC",
+                  "D",
+                  "96A",
+                  "UN"
+                ],
+                "segmentCount": 3,
+                "segments": [
+                  {
+                    "tag": "BGM",
+                    "elements": [
+                      [
+                        "380"
+                      ],
+                      "INV-1001",
+                      "9"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "_morphing": false
+      }
+    },
+    {
+      "id": "ltbs6szksllsi0jo74zbrzhw",
+      "position": {
+        "x": 831.5,
+        "y": 287
+      },
+      "type": "display",
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "data": {
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      }
+    }
+  ],
+  "connections": [
+    {
+      "source": "qq8zop6o8nri2e2birdz9c34",
+      "sourceHandle": "success",
+      "target": "ck4doi1v956lw5jojuwixa42",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__qq8zop6o8nri2e2birdz9c34success-ck4doi1v956lw5jojuwixa42input",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "source": "ck4doi1v956lw5jojuwixa42",
+      "sourceHandle": "success",
+      "target": "ltbs6szksllsi0jo74zbrzhw",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__ck4doi1v956lw5jojuwixa42success-ltbs6szksllsi0jo74zbrzhwinput",
+      "data": {
+        "isAnimated": false
+      }
+    }
+  ],
+  "version": 1,
+  "secrets": {}
+}
