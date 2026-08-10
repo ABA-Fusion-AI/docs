@@ -1,0 +1,134 @@
+[
+  {
+    "name": "Hespress English",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "s5sevjsi7tcsl0seabwseuav",
+        "position": {
+          "x": 327.42941937220735,
+          "y": -36.75889266450359
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "nszcdfv6haero9nk9lei088k",
+        "position": {
+          "x": 890.4667455742871,
+          "y": 6.075010447180148
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ljagcnh5m2esd0w3d145gbuh",
+        "position": {
+          "x": 582.4667455742871,
+          "y": 74.07501044718015
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "hespress-english",
+          "label": "Hespress English",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Fetch news from Hespress English RSS feed.",
+          "showRunningStatus": true,
+          "parameters": {
+            "maxItems": 10
+          },
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "s5sevjsi7tcsl0seabwseuav",
+        "sourceHandle": "success",
+        "target": "ljagcnh5m2esd0w3d145gbuh",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__s5sevjsi7tcsl0seabwseuavsuccess-ljagcnh5m2esd0w3d145gbuhinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ljagcnh5m2esd0w3d145gbuh",
+        "sourceHandle": "success",
+        "target": "nszcdfv6haero9nk9lei088k",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ljagcnh5m2esd0w3d145gbuhsuccess-nszcdfv6haero9nk9lei088kinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1786099809061,
+    "updatedAt": 1786377800544,
+    "publishedNames": [],
+    "previousStatus": "error"
+  }
+]
