@@ -1,0 +1,93 @@
+[
+  {
+    "name": "medifuse",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "ye1izn07rdeg4cwcgr896gkw",
+        "position": {
+          "x": 429,
+          "y": 106
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "p3gap7kgmzjo65wmnt4ia7ay",
+        "position": {
+          "x": 803,
+          "y": 92.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "medicaments-api",
+          "label": "Médicaments API FR",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Access French medications data from BDPM (Base de Données Publique des Médicaments) via medicaments-api.giygas.dev",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "searchMedicament",
+            "element": "AMOXICILLINE"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "ye1izn07rdeg4cwcgr896gkw",
+        "sourceHandle": "success",
+        "target": "p3gap7kgmzjo65wmnt4ia7ay",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ye1izn07rdeg4cwcgr896gkwsuccess-p3gap7kgmzjo65wmnt4ia7ayinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1786367424656,
+    "updatedAt": 1786367883136,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
