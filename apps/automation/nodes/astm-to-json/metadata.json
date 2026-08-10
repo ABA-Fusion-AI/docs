@@ -1,0 +1,4 @@
+{
+  "label": "ASTM to JSON",
+  "description": "Converts ASTM E1394/E1381 messages into structured JSON suitable for downstream processing by laboratory information systems."
+}
