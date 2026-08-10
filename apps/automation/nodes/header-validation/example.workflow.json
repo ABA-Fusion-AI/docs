@@ -1,21 +1,21 @@
 [
   {
-    "name": "emploi.ma scraper",
+    "name": "Header Validation",
     "variables": {},
     "secrets": {},
     "nodes": [
       {
-        "id": "rcop9360dqgs43w3blw60fd5",
+        "id": "fcp49gjzrb3maq7wz9fgp1f5",
         "position": {
-          "x": 900.4955073620628,
-          "y": 177.39035099509192
+          "x": 914.631354133199,
+          "y": 11.582600342498058
         },
         "type": "action",
         "width": 64,
         "height": 64,
         "data": {
-          "name": "emploima",
-          "label": "Emploi.ma Scraper",
+          "name": "header-validation",
+          "label": "Header Validation",
           "inputs": {
             "input": {
               "label": "Input"
@@ -29,31 +29,26 @@
               "label": "Error"
             }
           },
-          "description": "Scrapes and normalizes job listings from Emploi.ma.",
-          "showRunningStatus": true,
+          "description": "Validate headers (no CRLF, length limits).",
+          "showRunningStatus": false,
           "parameters": {
-            "maxPages": {
+            "data": {
               "$expr": "output",
               "node": "Function",
-              "outputId": "success",
-              "path": "maxPages"
+              "outputId": "success"
             },
-            "concurrency": {
-              "$expr": "output",
-              "node": "Function",
-              "outputId": "success",
-              "path": "concurrency"
-            }
+            "maxLength": 100,
+            "disallowCRLF": false
           },
           "_morphing": false
         },
-        "selected": true
+        "selected": false
       },
       {
-        "id": "nd5vsta0pegvfb88786l66od",
+        "id": "hy2m02bem559106r6eu85qeo",
         "position": {
-          "x": 472.43300736206277,
-          "y": 131.39035099509192
+          "x": 588.1214199598107,
+          "y": 9.968610909734991
         },
         "type": "trigger",
         "width": 64,
@@ -78,10 +73,10 @@
         "selected": false
       },
       {
-        "id": "x0lkoch6ozzc1rhre7lsf9qc",
+        "id": "u2rzk3o8me1jpv1h3b1dsc6y",
         "position": {
-          "x": 653.4330073620628,
-          "y": 173.39035099509192
+          "x": 761.6113231943089,
+          "y": 18.56421849152005
         },
         "type": "action",
         "width": 64,
@@ -105,17 +100,17 @@
           "description": "Executes custom JavaScript code on the input data.",
           "showRunningStatus": true,
           "parameters": {
-            "code": "const maxPages = 5;\nconst concurrency = 5;\nreturn {maxPages,concurrency};"
+            "code": "return \"Content-Type: application/json\\r\\nAuthorization: Bearer test\";"
           },
           "_morphing": false
         },
         "selected": false
       },
       {
-        "id": "hs61z1q6n7t5t3v6786r8l8k",
+        "id": "d56bsg66ad4ng5y522sxdgl1",
         "position": {
-          "x": 844.4330073620628,
-          "y": 309.8903509950919
+          "x": 909.5860488883837,
+          "y": 181.51924256711038
         },
         "type": "display",
         "width": 256,
@@ -140,81 +135,39 @@
           "parameters": {},
           "_morphing": false
         },
-        "selected": false
-      },
-      {
-        "id": "ke75ky4h6izekb0h6mo1k1hs",
-        "position": {
-          "x": 1215.9330073620627,
-          "y": 199.89035099509192
-        },
-        "type": "display",
-        "width": 256,
-        "height": 100,
-        "dragHandle": ".drag-handle__custom",
-        "data": {
-          "name": "log",
-          "label": "Log1",
-          "inputs": {
-            "input": {
-              "label": "Input"
-            }
-          },
-          "outputs": {
-            "success": {
-              "label": "Success",
-              "isConnectable": false
-            }
-          },
-          "description": "Logs the input data to the console.",
-          "showRunningStatus": false,
-          "parameters": {},
-          "_morphing": false
-        },
-        "selected": false
+        "selected": true
       }
     ],
     "connections": [
       {
-        "source": "x0lkoch6ozzc1rhre7lsf9qc",
+        "source": "hy2m02bem559106r6eu85qeo",
         "sourceHandle": "success",
-        "target": "rcop9360dqgs43w3blw60fd5",
+        "target": "u2rzk3o8me1jpv1h3b1dsc6y",
         "targetHandle": "input",
         "type": "directed",
-        "id": "xy-edge__x0lkoch6ozzc1rhre7lsf9qcsuccess-rcop9360dqgs43w3blw60fd5input",
+        "id": "xy-edge__hy2m02bem559106r6eu85qeosuccess-u2rzk3o8me1jpv1h3b1dsc6yinput",
         "data": {
           "isAnimated": false
         }
       },
       {
-        "source": "nd5vsta0pegvfb88786l66od",
+        "source": "u2rzk3o8me1jpv1h3b1dsc6y",
         "sourceHandle": "success",
-        "target": "x0lkoch6ozzc1rhre7lsf9qc",
+        "target": "fcp49gjzrb3maq7wz9fgp1f5",
         "targetHandle": "input",
         "type": "directed",
-        "id": "xy-edge__nd5vsta0pegvfb88786l66odsuccess-x0lkoch6ozzc1rhre7lsf9qcinput",
+        "id": "xy-edge__u2rzk3o8me1jpv1h3b1dsc6ysuccess-fcp49gjzrb3maq7wz9fgp1f5input",
         "data": {
           "isAnimated": false
         }
       },
       {
-        "source": "rcop9360dqgs43w3blw60fd5",
+        "source": "fcp49gjzrb3maq7wz9fgp1f5",
         "sourceHandle": "success",
-        "target": "ke75ky4h6izekb0h6mo1k1hs",
+        "target": "d56bsg66ad4ng5y522sxdgl1",
         "targetHandle": "input",
         "type": "directed",
-        "id": "xy-edge__rcop9360dqgs43w3blw60fd5success-ke75ky4h6izekb0h6mo1k1hsinput",
-        "data": {
-          "isAnimated": false
-        }
-      },
-      {
-        "source": "x0lkoch6ozzc1rhre7lsf9qc",
-        "sourceHandle": "success",
-        "target": "hs61z1q6n7t5t3v6786r8l8k",
-        "targetHandle": "input",
-        "type": "directed",
-        "id": "xy-edge__x0lkoch6ozzc1rhre7lsf9qcsuccess-hs61z1q6n7t5t3v6786r8l8kinput",
+        "id": "xy-edge__fcp49gjzrb3maq7wz9fgp1f5success-d56bsg66ad4ng5y522sxdgl1input",
         "data": {
           "isAnimated": false
         }
@@ -222,11 +175,11 @@
     ],
     "status": "stopped",
     "tracingEnabled": true,
-    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "userId": "8da742e6-3e39-4e2c-8bf9-40e1117bcaa2",
     "version": 1,
-    "createdAt": 1786032506585,
-    "updatedAt": 1786120046675,
+    "createdAt": 1786019079902,
+    "updatedAt": 1786132016309,
     "publishedNames": [],
-    "previousStatus": "paused"
+    "previousStatus": "running"
   }
 ]

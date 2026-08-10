@@ -1,14 +1,57 @@
 [
   {
-    "name": "Jjj",
+    "name": "botstrap",
     "variables": {},
     "secrets": {},
     "nodes": [
       {
-        "id": "dofapq0ake3hmq65161349kt",
+        "id": "uy75kf4rg1kju4l3s5fyfbt5",
         "position": {
-          "x": 64,
-          "y": 212
+          "x": 463,
+          "y": 122
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bootstrap",
+          "label": "Bootstrap CI",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Calculates bootstrap confidence intervals for mean or median using resampling.",
+          "showRunningStatus": true,
+          "parameters": {
+            "stat": "mean",
+            "series": [
+              10,
+              12,
+              11,
+              14,
+              15,
+              16,
+              7
+            ]
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "odqnihh29yfpnkpqtv8wlrfw",
+        "position": {
+          "x": 92,
+          "y": 94.5078125
         },
         "type": "trigger",
         "width": 64,
@@ -29,46 +72,13 @@
           "showRunningStatus": false,
           "parameters": {},
           "_morphing": false
-        },
-        "selected": false
+        }
       },
       {
-        "id": "opzrdnub096fwwjjofwkikcu",
+        "id": "bff1hvk3jkdyxwk71kvw15j0",
         "position": {
-          "x": 227,
-          "y": 241.5
-        },
-        "type": "action",
-        "width": 64,
-        "height": 64,
-        "data": {
-          "name": "spotify",
-          "label": "Spotify",
-          "inputs": {
-            "input": {
-              "label": "Input"
-            }
-          },
-          "outputs": {
-            "success": {
-              "label": "Success"
-            },
-            "error": {
-              "label": "Error"
-            }
-          },
-          "description": "Spotify Web API: search tracks, get track/artist/album info, and user playlists.",
-          "showRunningStatus": true,
-          "parameters": {},
-          "_morphing": false
-        },
-        "selected": false
-      },
-      {
-        "id": "x32i6bd225v2hfb0fgc2f7u1",
-        "position": {
-          "x": 323.15975395538646,
-          "y": 216.5
+          "x": 697.494369170545,
+          "y": 93.07187785492872
         },
         "type": "display",
         "width": 256,
@@ -97,34 +107,34 @@
     ],
     "connections": [
       {
-        "source": "dofapq0ake3hmq65161349kt",
+        "source": "odqnihh29yfpnkpqtv8wlrfw",
         "sourceHandle": "success",
-        "target": "opzrdnub096fwwjjofwkikcu",
+        "target": "uy75kf4rg1kju4l3s5fyfbt5",
         "targetHandle": "input",
         "type": "directed",
-        "id": "xy-edge__dofapq0ake3hmq65161349ktsuccess-opzrdnub096fwwjjofwkikcuinput",
+        "id": "xy-edge__odqnihh29yfpnkpqtv8wlrfwsuccess-uy75kf4rg1kju4l3s5fyfbt5input",
         "data": {
           "isAnimated": false
         }
       },
       {
-        "source": "opzrdnub096fwwjjofwkikcu",
+        "source": "uy75kf4rg1kju4l3s5fyfbt5",
         "sourceHandle": "success",
-        "target": "x32i6bd225v2hfb0fgc2f7u1",
+        "target": "bff1hvk3jkdyxwk71kvw15j0",
         "targetHandle": "input",
         "type": "directed",
-        "id": "xy-edge__opzrdnub096fwwjjofwkikcusuccess-x32i6bd225v2hfb0fgc2f7u1input",
+        "id": "xy-edge__uy75kf4rg1kju4l3s5fyfbt5success-bff1hvk3jkdyxwk71kvw15j0input",
         "data": {
           "isAnimated": false
         }
       }
     ],
-    "status": "error",
+    "status": "stopped",
     "tracingEnabled": true,
-    "userId": "8cbba20b-1e6c-40f3-b57b-2d44f4b9fe12",
+    "userId": "8da742e6-3e39-4e2c-8bf9-40e1117bcaa2",
     "version": 1,
-    "createdAt": 1786122867846,
-    "updatedAt": 1786122912472,
+    "createdAt": 1786139253443,
+    "updatedAt": 1786139757300,
     "publishedNames": [],
     "previousStatus": "stopped"
   }
