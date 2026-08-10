@@ -1,0 +1,4 @@
+{
+  "label": "IDoc to JSON Converter",
+  "description": "Converts SAP IDoc XML format to JSON. Supports DESADV, SHPMNT, ZFREINV, ZLEITRACK, STPPOD, STATUS, and ZINVRSP message types."
+}
