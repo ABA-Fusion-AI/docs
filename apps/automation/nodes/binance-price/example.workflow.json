@@ -1,0 +1,182 @@
+[
+  {
+    "name": "binance-price",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "vo8stdt7a43nh9axq2tr3en7",
+        "position": {
+          "x": 6,
+          "y": 18
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "b1wrrj4ptrot5a03z0h78r89",
+        "position": {
+          "x": 205.01838170244622,
+          "y": -144.56356333713904
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "binance-price",
+          "label": "Binance Price",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get cryptocurrency price from Binance API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "symbol": {
+              "$expr": "output",
+              "node": "Function",
+              "outputId": "success"
+            }
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "fn9wt7uhg94081oja4vyuwys",
+        "position": {
+          "x": 129.01838170244622,
+          "y": -18.563563337139044
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "function",
+          "label": "Function",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Executes custom JavaScript code on the input data.",
+          "showRunningStatus": true,
+          "parameters": {
+            "code": "// Write your code here\nreturn \"BTCUSDT\";"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "wa88tsyv8t2vg8n2mhicm8j5",
+        "position": {
+          "x": 496.0183817024463,
+          "y": -20.563563337139044
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "vo8stdt7a43nh9axq2tr3en7",
+        "sourceHandle": "success",
+        "target": "fn9wt7uhg94081oja4vyuwys",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__vo8stdt7a43nh9axq2tr3en7success-fn9wt7uhg94081oja4vyuwysinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "fn9wt7uhg94081oja4vyuwys",
+        "sourceHandle": "success",
+        "target": "b1wrrj4ptrot5a03z0h78r89",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__fn9wt7uhg94081oja4vyuwyssuccess-b1wrrj4ptrot5a03z0h78r89input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "b1wrrj4ptrot5a03z0h78r89",
+        "sourceHandle": "success",
+        "target": "wa88tsyv8t2vg8n2mhicm8j5",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__b1wrrj4ptrot5a03z0h78r89success-wa88tsyv8t2vg8n2mhicm8j5input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1786370452663,
+    "updatedAt": 1786398482553,
+    "publishedNames": [],
+    "previousStatus": "stopped"
+  }
+]
