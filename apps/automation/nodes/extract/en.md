@@ -1,30 +1,29 @@
----
 node_id: "extract"
 title: "Extract"
-description: "Extract substring or regex groups from string"
+description: "Extract substrings or regular-expression capture groups from input strings for downstream processing."
 category: "Data Transformation (ETL)"
 subcategory: "Data Shaping"
 version: "1.0.0"
 language: "en"
-last_updated: "2026-08-06"
+last_updated: "2026-08-10"
 author: "Fusion Team"
 tags:
-  - text
   - string
-  - extract
   - regex
+  - extract
+  - text
 related_nodes:
   - function
-  - replace
   - regex-match
+  - log
 ---
 
 <!-- SECTION: header -->
 # Extract
 
-> **Category:** Utilities | **Type:** Action Node
+> **Category:** Data Transformation (ETL) | **Subcategory:** text processing | **Type:** Action Node
 
-Extract a substring or regex capture group from a string value.
+Extracts substrings or regular-expression capture groups from an input string. Useful for parsing identifiers, tokens, or structured text fields within automation flows.
 
 <!-- /SECTION: header -->
 
@@ -33,21 +32,12 @@ Extract a substring or regex capture group from a string value.
 <!-- SECTION: overview -->
 ## Overview
 
-The **Extract** node helps retrieve a portion of a string or a regex-matched group from incoming text. It is useful for parsing identifiers, codes, values, or tokens from larger messages.
+The **Extract** node supports two primary extraction modes:
 
-### Key Features
+- `substring`: extract by start index and length (or start and end)
+- `regex`: extract using a regular expression and return a specific capture group or all groups
 
-- **Substring Extraction:** Extract a portion of text using start and end positions
-- **Regex Support:** Retrieve one or more regex capture groups from input text
-- **Simple Configuration:** Use a small set of parameters for fast parsing
-- **Workflow Friendly:** Combine it with downstream formatting or validation nodes
-
-### Use Cases
-
-- Extract confirmation codes from messages
-- Get a specific segment from a longer string
-- Parse values from logs or API responses
-- Capture text matching a regex pattern
+The node accepts input as a string and returns the extracted value(s) on the `success` output. Parsing or match failures are emitted on the `error` output.
 
 <!-- /SECTION: overview -->
 
@@ -60,28 +50,19 @@ The **Extract** node helps retrieve a portion of a string or a regex-matched gro
 
 | Parameter | Type | Required | Default | Description |
 |-----------|------|----------|---------|-------------|
-| `mode` | `enum` | ✅ Yes | `substring` | Extraction mode: `substring` or `regex` |
-| `data` | `string` | ✅ Yes | — | Source string to analyze |
-| `start` | `number` | ❌ No | `0` | Start position used in substring mode |
-| `end` | `number` | ❌ No | `0` | End position used in substring mode |
+| `mode` | `enum` | ✅ Yes | `substring` | `substring` or `regex` extraction mode |
+| `value` | `string` | Conditional | — | Input string to process (if omitted, node reads `input.value`) |
+| `start` | `number` | Conditional | `0` | Start index for `substring` mode (0-based) |
+| `length` | `number` | Conditional | — | Number of characters to extract for `substring` mode; if omitted `end` is used |
+| `end` | `number` | Conditional | — | End index (exclusive) for `substring` mode |
+| `pattern` | `string` | Conditional | — | Regular expression pattern (without delimiters) for `regex` mode |
+| `flags` | `string` | No | `""` | Regex flags (e.g., `i`, `g`) |
+| `group` | `number|string` | No | `0` | Capture group index to return; use `0` to return the full match; `"all"` to return all groups as an array |
+| `default` | `string` | No | `""` | Default value when no match is found |
 
-### Substring Mode
+### Notes on Indexing
 
-In `substring` mode, the node extracts text from the input string using the configured start and end parameters.
-
-Example:
-
-```text
-data: "Le code de confirmation est 8492."
-start: 30
-end: 2
-```
-
-This extracts the targeted portion of the original string according to the configured boundaries.
-
-### Regex Mode
-
-In `regex` mode, the node extracts one or more values from the input text based on a regular expression pattern. This is useful when the target value is embedded inside a larger message and follows a predictable structure.
+- `start` and `end` use JavaScript-style 0-based indexing. Negative indices are supported (interpreted from the end) where applicable.
 
 <!-- /SECTION: configuration -->
 
@@ -94,14 +75,26 @@ In `regex` mode, the node extracts one or more values from the input text based 
 
 | Input | Type | Description |
 |-------|------|-------------|
-| `input` | `any` | Optional incoming data that can be used as the source string |
+| `input` | `any` | Node reads `input.value` when the `value` parameter is not provided |
 
 ### Outputs
 
 | Output | Type | Description |
 |--------|------|-------------|
-| `success` | `string` | The extracted text |
-| `error` | `object` | Error details if extraction fails |
+| `success` | `any` | Extracted string or array of strings (when `group: "all"`) |
+| `error` | `Error` | Emitted when extraction fails or parameters are invalid |
+
+Example success payload (substring):
+
+```json
+"ABC123"
+```
+
+Example success payload (regex with groups):
+
+```json
+{"groups": ["ABC", "123"]}
+```
 
 <!-- /SECTION: inputs-outputs -->
 
@@ -110,38 +103,61 @@ In `regex` mode, the node extracts one or more values from the input text based 
 <!-- SECTION: examples -->
 ## Examples
 
-### Example: Extract a Confirmation Code
-
-Use substring mode to pull a code from a sentence.
+### Substring Example
 
 **Configuration:**
 
 ```text
 mode: substring
-data: "Le code de confirmation est 8492."
-start: 30
-end: 2
+value: "Order-12345-USD"
+start: 6
+length: 5
 ```
 
-**Result:**
+**Output:** `"12345"`
+
+---
+
+### Regex Example: Capture ID
+
+**Configuration:**
 
 ```text
-8492
+mode: regex
+value: "Order-12345-USD"
+pattern: "Order-(\d+)-([A-Z]{3})"
+flags: ""
+group: 1
 ```
 
-### Example: Regex Capture
+**Output:** `"12345"`
 
-Use regex mode when the string contains structured content such as an ID or label.
+---
+
+### Regex Example: All Groups
+
+**Configuration:**
 
 ```text
-Input: "Order #12345 was confirmed"
-Pattern: "#(\\d+)"
+mode: regex
+value: "Order-12345-USD"
+pattern: "Order-(\d+)-([A-Z]{3})"
+flags: ""
+group: "all"
 ```
 
-**Result:**
+**Output:**
 
-```text
-12345
+```json
+{"groups": ["12345", "USD"]}
 ```
+
+---
+
+## Notes
+
+- When using `regex` mode with the global flag `g`, only use `group: "all"` or be aware that global matches return multiple full-match results.
+- For performance-sensitive flows, prefer simple substring extraction when possible.
+- Use `default` to provide fallback values for non-matching inputs.
 
 <!-- /SECTION: examples -->

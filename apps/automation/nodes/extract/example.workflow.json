@@ -1,0 +1,254 @@
+[
+  {
+    "name": "TestExtract",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "jrootfo07nvwqv512u5lyxxg",
+        "position": {
+          "x": 670,
+          "y": 140
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "extract",
+          "label": "Extract",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Extract substring or regex groups from string.",
+          "showRunningStatus": false,
+          "parameters": {
+            "mode": "substring",
+            "data": "Le code de confirmation est 8492.",
+            "start": 28,
+            "end": 32
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "tka1nx2uukfnbntmo8hliqc9",
+        "position": {
+          "x": 443,
+          "y": 171
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "efvdyaaisr1guodmhjriqnfi",
+        "position": {
+          "x": 829.9982153882751,
+          "y": 88.28699038617538
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ri43cflua8flblrdkuysztfh",
+        "position": {
+          "x": 763.3289388388218,
+          "y": 475.69821640263467
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "extract",
+          "label": "Extract1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Extract substring or regex groups from string.",
+          "showRunningStatus": false,
+          "parameters": {
+            "mode": "regex",
+            "data": "Le code de confirmation est 8492.",
+            "pattern": "\\d{4}"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "qkz2cztabyuqnh5svuu66dqj",
+        "position": {
+          "x": 548.3289388388218,
+          "y": 518.6982164026347
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "tbt8l5ar3638k4z2g0s6heho",
+        "position": {
+          "x": 947.3271542270969,
+          "y": 447.98520678881005
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "tka1nx2uukfnbntmo8hliqc9",
+        "sourceHandle": "success",
+        "target": "jrootfo07nvwqv512u5lyxxg",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__tka1nx2uukfnbntmo8hliqc9success-jrootfo07nvwqv512u5lyxxginput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "jrootfo07nvwqv512u5lyxxg",
+        "sourceHandle": "success",
+        "target": "efvdyaaisr1guodmhjriqnfi",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__jrootfo07nvwqv512u5lyxxgsuccess-efvdyaaisr1guodmhjriqnfiinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "qkz2cztabyuqnh5svuu66dqj",
+        "sourceHandle": "success",
+        "target": "ri43cflua8flblrdkuysztfh",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "kpl2od1g0k477mgi1eumi5db",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ri43cflua8flblrdkuysztfh",
+        "sourceHandle": "success",
+        "target": "tbt8l5ar3638k4z2g0s6heho",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "vvp736fq9hhvous6a7i6tiab",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1786033217092,
+    "updatedAt": 1786377979317,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]

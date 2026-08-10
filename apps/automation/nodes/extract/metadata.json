@@ -1,4 +1,4 @@
 {
   "label": "Extract",
-  "description": "Extract substring or regex groups from string."
+  "description": "Extract substrings or regular-expression capture groups from input strings for downstream processing."
 }

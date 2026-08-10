@@ -1,0 +1,134 @@
+[
+  {
+    "name": "mt",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "e11wnfr60ml4oppl6frx84jg",
+        "position": {
+          "x": 460.5,
+          "y": -384
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "yg9xtiiivgtznxl6yyru0z04",
+        "position": {
+          "x": 1026.5,
+          "y": -332
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "cv7a9iars5jnt6k81rlb3mpz",
+        "position": {
+          "x": 713.3406179945653,
+          "y": -397.0955001323194
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "base-converter",
+          "label": "Number Base Converter",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert between Binary, Octal, Decimal, Hexadecimal, and custom bases (2-36)",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "toBinary"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "e11wnfr60ml4oppl6frx84jg",
+        "sourceHandle": "success",
+        "target": "cv7a9iars5jnt6k81rlb3mpz",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__e11wnfr60ml4oppl6frx84jgsuccess-cv7a9iars5jnt6k81rlb3mpzinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "cv7a9iars5jnt6k81rlb3mpz",
+        "sourceHandle": "success",
+        "target": "yg9xtiiivgtznxl6yyru0z04",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__cv7a9iars5jnt6k81rlb3mpzsuccess-yg9xtiiivgtznxl6yyru0z04input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1786096495607,
+    "updatedAt": 1786360013423,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
