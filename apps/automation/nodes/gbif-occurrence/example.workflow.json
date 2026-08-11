@@ -1,0 +1,115 @@
+[
+  {
+    "name": "gbif",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "s8kwzx0s0y5cyrag86zujiwx",
+        "position": {
+          "x": 444,
+          "y": 82
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "pe8tf9sgeuv3iczgc1egg0rz",
+        "position": {
+          "x": 677,
+          "y": 88.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "gbif-occurrence",
+          "label": "GBIF Occurrence",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search biodiversity occurrence records from GBIF API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "scientificName": "Ursus arctos",
+            "country": "US"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "j34d8hnhz999ivhjn20d6wzv",
+        "sourceHandle": "success",
+        "target": "psva4ngb0ify2sjxbb0x3kg0",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__j34d8hnhz999ivhjn20d6wzvsuccess-psva4ngb0ify2sjxbb0x3kg0input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "lkferqmf7inu0oudhk5ecd0k",
+        "sourceHandle": "success",
+        "target": "psva4ngb0ify2sjxbb0x3kg0",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__lkferqmf7inu0oudhk5ecd0ksuccess-psva4ngb0ify2sjxbb0x3kg0input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "s8kwzx0s0y5cyrag86zujiwx",
+        "sourceHandle": "success",
+        "target": "pe8tf9sgeuv3iczgc1egg0rz",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__s8kwzx0s0y5cyrag86zujiwxsuccess-pe8tf9sgeuv3iczgc1egg0rzinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1786096303417,
+    "updatedAt": 1786443266071,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
