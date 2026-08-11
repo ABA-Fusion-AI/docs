@@ -1,0 +1,103 @@
+[
+  {
+    "name": "lematin",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "pnacpyzo741pxwlcgmc3xd08",
+        "position": {
+          "x": 780,
+          "y": 287.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "jriyx8a6445t6ktgxvh8i345",
+        "position": {
+          "x": 1077,
+          "y": 301.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "le-matin",
+          "label": "Le Matin",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Fetch news from Le Matin RSS feeds by category.",
+          "showRunningStatus": true,
+          "parameters": {
+            "category": "latest"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "pnacpyzo741pxwlcgmc3xd08",
+        "sourceHandle": "success",
+        "target": "xyf7a7faplmddpui6ony4jg8",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__pnacpyzo741pxwlcgmc3xd08success-xyf7a7faplmddpui6ony4jg8input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "pnacpyzo741pxwlcgmc3xd08",
+        "sourceHandle": "success",
+        "target": "jriyx8a6445t6ktgxvh8i345",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__pnacpyzo741pxwlcgmc3xd08success-jriyx8a6445t6ktgxvh8i345input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1786373085083,
+    "updatedAt": 1786449397782,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
