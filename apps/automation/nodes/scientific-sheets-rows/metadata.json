@@ -1,5 +1,4 @@
 {
-  "label": "Scientific Google Sheets Rows",
-  "description": "Map archived scientific articles to the standard 19-column spreadsheet format."
+  "label": "Scientific Archive Table Builder",
+  "description": "Map archived scientific articles to a standard 19-column table for any tabular storage node."
 }
-

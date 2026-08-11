@@ -1,7 +1,7 @@
 ---
 node_id: "scientific-sheets-rows"
-title: "Scientific Google Sheets Rows"
-description: "Map archived scientific articles to the standard 19-column spreadsheet format."
+title: "Scientific Archive Table Builder"
+description: "Map archived scientific articles to a standard 19-column table for any tabular storage node."
 category: "scientific-research"
 subcategory: "research-workflow"
 version: "1.0.0"
@@ -19,11 +19,11 @@ related_nodes:
 ---
 
 <!-- SECTION: header -->
-# Scientific Google Sheets Rows
+# Scientific Archive Table Builder
 
 > **Category:** Scientific Research → Research Workflow | **Type:** Workflow Node
 
-Map archived scientific articles to the standard 19-column spreadsheet format.
+Map archived scientific articles to a standard 19-column table. Connect its output to Google Sheets or another tabular storage node.
 <!-- /SECTION: header -->
 
 <!-- SECTION: configuration -->
@@ -36,7 +36,7 @@ This node has no user-configurable parameters; it applies the standard scientifi
 ## Inputs & Outputs
 
 - **Input:** An article array, including results accumulated by the PDF archive loop.
-- **Output:** header, articleRows, and count for Google Sheets Values nodes.
+- **Output:** `header`, `articleRows`, and `count` for Google Sheets or another tabular storage node.
 <!-- /SECTION: inputs-outputs -->
 
 <!-- SECTION: behavior -->
@@ -44,4 +44,3 @@ This node has no user-configurable parameters; it applies the standard scientifi
 
 The final Article Key column supports exact duplicate prevention on later research runs.
 <!-- /SECTION: behavior -->
-

@@ -8039,7 +8039,7 @@
   },
   {
     "id": "scientific-sheets-rows",
-    "name": "Scientific Google Sheets Rows",
+    "name": "Scientific Archive Table Builder",
     "type": "tool",
     "description": "Map articles to the standard scientific archive table.",
     "slogan": "scientific-sheets-rows",
