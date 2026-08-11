@@ -1,14 +1,46 @@
 [
   {
-    "name": "Jjj",
+    "name": "Moroccan Tender Scraper",
     "variables": {},
     "secrets": {},
     "nodes": [
       {
-        "id": "dofapq0ake3hmq65161349kt",
+        "id": "hstplpe49gp15rswga5pczr6",
         "position": {
-          "x": 64,
-          "y": 212
+          "x": 738,
+          "y": 124
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "marches-publics",
+          "label": "Moroccan Tender Scraper",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Scrape tender data from marchespublics.gov.ma",
+          "showRunningStatus": true,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "fbno515q8195axh73e7i72jw",
+        "position": {
+          "x": 513,
+          "y": 72
         },
         "type": "trigger",
         "width": 64,
@@ -29,46 +61,13 @@
           "showRunningStatus": false,
           "parameters": {},
           "_morphing": false
-        },
-        "selected": false
+        }
       },
       {
-        "id": "opzrdnub096fwwjjofwkikcu",
+        "id": "fl4d07jem71vsj1xr1fkpwl8",
         "position": {
-          "x": 227,
-          "y": 241.5
-        },
-        "type": "action",
-        "width": 64,
-        "height": 64,
-        "data": {
-          "name": "spotify",
-          "label": "Spotify",
-          "inputs": {
-            "input": {
-              "label": "Input"
-            }
-          },
-          "outputs": {
-            "success": {
-              "label": "Success"
-            },
-            "error": {
-              "label": "Error"
-            }
-          },
-          "description": "Spotify Web API: search tracks, get track/artist/album info, and user playlists.",
-          "showRunningStatus": true,
-          "parameters": {},
-          "_morphing": false
-        },
-        "selected": false
-      },
-      {
-        "id": "x32i6bd225v2hfb0fgc2f7u1",
-        "position": {
-          "x": 323.15975395538646,
-          "y": 216.5
+          "x": 997,
+          "y": 130
         },
         "type": "display",
         "width": 256,
@@ -97,35 +96,34 @@
     ],
     "connections": [
       {
-        "source": "dofapq0ake3hmq65161349kt",
+        "source": "fbno515q8195axh73e7i72jw",
         "sourceHandle": "success",
-        "target": "opzrdnub096fwwjjofwkikcu",
+        "target": "hstplpe49gp15rswga5pczr6",
         "targetHandle": "input",
         "type": "directed",
-        "id": "xy-edge__dofapq0ake3hmq65161349ktsuccess-opzrdnub096fwwjjofwkikcuinput",
+        "id": "xy-edge__fbno515q8195axh73e7i72jwsuccess-hstplpe49gp15rswga5pczr6input",
         "data": {
           "isAnimated": false
         }
       },
       {
-        "source": "opzrdnub096fwwjjofwkikcu",
+        "source": "hstplpe49gp15rswga5pczr6",
         "sourceHandle": "success",
-        "target": "x32i6bd225v2hfb0fgc2f7u1",
+        "target": "fl4d07jem71vsj1xr1fkpwl8",
         "targetHandle": "input",
         "type": "directed",
-        "id": "xy-edge__opzrdnub096fwwjjofwkikcusuccess-x32i6bd225v2hfb0fgc2f7u1input",
+        "id": "xy-edge__hstplpe49gp15rswga5pczr6success-fl4d07jem71vsj1xr1fkpwl8input",
         "data": {
           "isAnimated": false
         }
       }
     ],
-    "status": "error",
+    "status": "stopped",
     "tracingEnabled": true,
-    "userId": "8cbba20b-1e6c-40f3-b57b-2d44f4b9fe12",
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
     "version": 1,
-    "createdAt": 1786122867846,
-    "updatedAt": 1786122912472,
-    "publishedNames": [],
-    "previousStatus": "stopped"
+    "createdAt": 1786357700402,
+    "updatedAt": 1786357928450,
+    "publishedNames": []
   }
 ]

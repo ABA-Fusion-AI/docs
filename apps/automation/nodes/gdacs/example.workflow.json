@@ -1,0 +1,89 @@
+[
+  {
+    "name": "gdacs",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "z3639qy9d9pk5c38av145cu1",
+        "position": {
+          "x": 896,
+          "y": 97
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "gdacs",
+          "label": "GDACS",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get disaster alerts from Global Disaster Alert and Coordination System (GDACS).",
+          "showRunningStatus": true,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "o45sp7krgsgkblszwgn63pim",
+        "position": {
+          "x": 629,
+          "y": 103.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "o45sp7krgsgkblszwgn63pim",
+        "sourceHandle": "success",
+        "target": "z3639qy9d9pk5c38av145cu1",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__o45sp7krgsgkblszwgn63pimsuccess-z3639qy9d9pk5c38av145cu1input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1786096174778,
+    "updatedAt": 1786377087212,
+    "publishedNames": [],
+    "previousStatus": "stopped"
+  }
+]

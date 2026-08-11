@@ -1,0 +1,179 @@
+{
+  "name": "EDI Generate X12 Example",
+  "nodes": [
+    {
+      "id": "5c15b915-b2a7-4693-b966-24ab5047e713",
+      "position": {
+        "x": 561,
+        "y": 298
+      },
+      "type": "trigger",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Triggers the workflow manually.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      }
+    },
+    {
+      "id": "30f80a97-e1af-4ef8-aab0-feeef99488ca",
+      "position": {
+        "x": 831.5,
+        "y": 287
+      },
+      "type": "display",
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "data": {
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      }
+    },
+    {
+      "id": "t3qv6l8ef3cqu47aae4s3jhg",
+      "position": {
+        "x": 689.75,
+        "y": 170
+      },
+      "type": "action",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "edi-generate-x12",
+        "label": "EDI Generate X12",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Generate ANSI ASC X12 documents from structured JSON data.",
+        "showRunningStatus": true,
+        "parameters": {
+          "data": {
+            "delimiters": {
+              "element": "*",
+              "segment": "~",
+              "component": ":"
+            },
+            "interchange": {
+              "authorizationQualifier": "00",
+              "authorizationInformation": "",
+              "securityQualifier": "00",
+              "securityInformation": "",
+              "senderQualifier": "ZZ",
+              "senderId": "FUSIONAI",
+              "receiverQualifier": "ZZ",
+              "receiverId": "CLIENT01",
+              "date": "260807",
+              "time": "1430",
+              "standardsId": "U",
+              "versionNumber": "00401",
+              "controlNumber": "1",
+              "acknowledgmentRequested": "0",
+              "usageIndicator": "T"
+            },
+            "functionalGroups": [
+              {
+                "header": {
+                  "functionalIdentifierCode": "IN",
+                  "applicationSenderCode": "FUSIONAI",
+                  "applicationReceiverCode": "CLIENT01",
+                  "date": "20260807",
+                  "time": "1430",
+                  "groupControlNumber": "1",
+                  "responsibleAgencyCode": "X",
+                  "versionReleaseCode": "004010"
+                },
+                "transactionCount": 1,
+                "controlNumber": "1",
+                "transactions": [
+                  {
+                    "header": {
+                      "transactionSetIdentifierCode": "810",
+                      "transactionSetControlNumber": "0001"
+                    },
+                    "segmentCount": 3,
+                    "controlNumber": "0001",
+                    "segments": [
+                      {
+                        "tag": "BIG",
+                        "elements": [
+                          "20260807",
+                          "INV1001"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "_morphing": false
+      }
+    }
+  ],
+  "connections": [
+    {
+      "source": "5c15b915-b2a7-4693-b966-24ab5047e713",
+      "sourceHandle": "success",
+      "target": "t3qv6l8ef3cqu47aae4s3jhg",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__5c15b915-b2a7-4693-b966-24ab5047e713success-t3qv6l8ef3cqu47aae4s3jhginput",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "source": "t3qv6l8ef3cqu47aae4s3jhg",
+      "sourceHandle": "success",
+      "target": "30f80a97-e1af-4ef8-aab0-feeef99488ca",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__t3qv6l8ef3cqu47aae4s3jhgsuccess-30f80a97-e1af-4ef8-aab0-feeef99488cainput",
+      "data": {
+        "isAnimated": false
+      }
+    }
+  ],
+  "version": 1,
+  "secrets": {}
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "name": "genderise",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "u3qgjd6i4vms2bvqi1mpsjue",
+        "position": {
+          "x": 963,
+          "y": 88
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "genderize",
+          "label": "Genderize.io",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Predict gender based on a name using the Genderize.io API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "name": "yassine"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "xyd17vmhzfamr1v3hxylpmzu",
+        "position": {
+          "x": 696,
+          "y": 50.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "xyd17vmhzfamr1v3hxylpmzu",
+        "sourceHandle": "success",
+        "target": "u3qgjd6i4vms2bvqi1mpsjue",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__xyd17vmhzfamr1v3hxylpmzusuccess-u3qgjd6i4vms2bvqi1mpsjueinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1786095471248,
+    "updatedAt": 1786375937405,
+    "publishedNames": [],
+    "previousStatus": "stopped"
+  }
+]

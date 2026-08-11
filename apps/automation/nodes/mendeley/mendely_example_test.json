@@ -1,0 +1,95 @@
+[
+  {
+    "name": "meshy",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "xd9g1dmnawincl4o20hsa84h",
+        "position": {
+          "x": 909,
+          "y": 209.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ku5ahhxus7rpzobauj63s36n",
+        "position": {
+          "x": 1133,
+          "y": 238.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "mendeley",
+          "label": "Mendeley Catalog",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve academic papers from the Mendeley Catalog.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getById",
+            "clientSecret": "tQBfYI4aNSldvctm",
+            "clientId": "24602",
+            "documentId": "10.1007/s11469-020-00429-3"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "xd9g1dmnawincl4o20hsa84h",
+        "sourceHandle": "success",
+        "target": "ku5ahhxus7rpzobauj63s36n",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__xd9g1dmnawincl4o20hsa84hsuccess-ku5ahhxus7rpzobauj63s36ninput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1786448114911,
+    "updatedAt": 1786448785426,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]

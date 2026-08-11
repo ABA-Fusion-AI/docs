@@ -1,0 +1,4 @@
+{
+  "label": "EDI Generate EDIFACT",
+  "description": "Generate UN/EDIFACT (ISO 9735) documents from structured JSON data."
+}

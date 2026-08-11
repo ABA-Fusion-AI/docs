@@ -1,0 +1,136 @@
+[
+  {
+    "name": "Baidu Search",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "a21zk42c94qxlbmx1b7le1a3",
+        "position": {
+          "x": 439,
+          "y": 162
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "cyk5p5624zdvh2jdpe3q6b10",
+        "position": {
+          "x": 1077,
+          "y": 229
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        }
+      },
+      {
+        "id": "xvbt2oqg559dn8myl8xuz48x",
+        "position": {
+          "x": 755.5,
+          "y": 187.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "baidu-search",
+          "label": "Baidu Search",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search Baidu using SerpAPI. Returns structured web search results.",
+          "showRunningStatus": true,
+          "parameters": {
+            "apiKey": "YOUR_SERPAPI_API_KEY",
+            "query": "riad Marrakech Morocco",
+            "page": 2,
+            "maxResults": 5
+          },
+          "_morphing": false
+        },
+        "selected": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "a21zk42c94qxlbmx1b7le1a3",
+        "sourceHandle": "success",
+        "target": "xvbt2oqg559dn8myl8xuz48x",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__a21zk42c94qxlbmx1b7le1a3success-xvbt2oqg559dn8myl8xuz48xinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "xvbt2oqg559dn8myl8xuz48x",
+        "sourceHandle": "success",
+        "target": "cyk5p5624zdvh2jdpe3q6b10",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__xvbt2oqg559dn8myl8xuz48xsuccess-cyk5p5624zdvh2jdpe3q6b10input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1786398718895,
+    "updatedAt": 1786440458537,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]

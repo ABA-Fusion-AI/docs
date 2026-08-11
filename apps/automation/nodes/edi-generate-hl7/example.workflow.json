@@ -1,0 +1,183 @@
+[
+  {
+    "name": "EDI Generate HL7",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "s5sevjsi7tcsl0seabwseuav",
+        "position": {
+          "x": 327.42941937220735,
+          "y": -36.75889266450359
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "tkzalb71zu906efu1wbimuxm",
+        "position": {
+          "x": 439.6154844479805,
+          "y": 150.9089135588639
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "function",
+          "label": "Function",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Executes custom JavaScript code on the input data.",
+          "showRunningStatus": true,
+          "parameters": {
+            "code": "return {\n  standard: \"HL7\",\n  segments: [\n    {\n      field: [\n        \"^~\\\\&\",\n        \"SendingApp\",\n        \"SendingFacility\",\n        \"ReceivingApp\",\n        \"ReceivingFacility\",\n        \"20260807120000\",\n        \"\",\n        \"ADT^A01\",\n        \"MSG00001\",\n        \"P\",\n        \"2.5\"\n      ]\n    },\n    {\n      field: [\n        \"1\",\n        \"\",\n        \"12345\",\n        \"\",\n        \"Doe^John\",\n        \"\",\n        \"19900101\",\n        \"M\"\n      ]\n    }\n  ]\n};"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "vn91av1t7ii8ccw9jy63cxt6",
+        "position": {
+          "x": 687.5787241805265,
+          "y": 158.19225777600974
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "dagcm4l25i9nqkmnohv87vbu",
+        "position": {
+          "x": 560.6964072573929,
+          "y": -60.6206426706071
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "edi-generate-hl7",
+          "label": "EDI Generate HL7",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Generate HL7 v2.x healthcare messages from structured JSON data.",
+          "showRunningStatus": true,
+          "parameters": {
+            "data": {
+              "$expr": "output",
+              "node": "Function",
+              "outputId": "success"
+            }
+          },
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "s5sevjsi7tcsl0seabwseuav",
+        "sourceHandle": "success",
+        "target": "tkzalb71zu906efu1wbimuxm",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__s5sevjsi7tcsl0seabwseuavsuccess-tkzalb71zu906efu1wbimuxminput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "tkzalb71zu906efu1wbimuxm",
+        "sourceHandle": "success",
+        "target": "dagcm4l25i9nqkmnohv87vbu",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__tkzalb71zu906efu1wbimuxmsuccess-dagcm4l25i9nqkmnohv87vbuinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "dagcm4l25i9nqkmnohv87vbu",
+        "sourceHandle": "success",
+        "target": "vn91av1t7ii8ccw9jy63cxt6",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__dagcm4l25i9nqkmnohv87vbusuccess-vn91av1t7ii8ccw9jy63cxt6input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1786099809061,
+    "updatedAt": 1786372101552,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]

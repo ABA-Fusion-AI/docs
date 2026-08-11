@@ -1,0 +1,4 @@
+{
+  "label": "EDI Parse EDIFACT",
+  "description": "Parse UN/EDIFACT (ISO 9735) documents. Supports UNA service string advice and full segment parsing with validation."
+}

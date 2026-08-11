@@ -1,0 +1,122 @@
+{
+  "name": "IDoc to JSON Converter Example",
+  "nodes": [
+    {
+      "id": "2aebb2f9-6648-45d0-ae09-bf6effe41380",
+      "position": {
+        "x": 561,
+        "y": 298
+      },
+      "type": "trigger",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Triggers the workflow manually.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      }
+    },
+    {
+      "id": "o2tyjztnk5eddetuqw67qjal",
+      "position": {
+        "x": 678.75,
+        "y": 288
+      },
+      "type": "action",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "edi-idoc-to-json",
+        "label": "IDoc to JSON Converter",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Converts SAP IDoc XML format to JSON. Supports DESADV, SHPMNT, ZFREINV, ZLEITRACK, STPPOD, STATUS, and ZINVRSP message types.",
+        "showRunningStatus": true,
+        "parameters": {
+          "outputFormat": "structured",
+          "inputData": "<IDOC><EDI_DC40><TABNAM>EDI_DC40</TABNAM><DIRECT>2</DIRECT><IDOCTYP>DELVRY03</IDOCTYP><MESTYP>DESADV</MESTYP><SNDPOR>SAPFUSION</SNDPOR><SNDPRT>LS</SNDPRT><SNDPRN>FUSIONAI</SNDPRN><RCVPOR>SAPCLIENT</RCVPOR><RCVPRT>LS</RCVPRT><RCVPRN>CLIENT01</RCVPRN><CREDAT>20260810</CREDAT><CRETIM>114000</CRETIM><DOCNUM>0000000000000001</DOCNUM><SERIAL>20260810114000</SERIAL></EDI_DC40><E1EDL20><VBELN>0080001234</VBELN><VSTEL>1000</VSTEL><VKORG>1000</VKORG><ROUTE>R001</ROUTE><VSBED>01</VSBED><NTGEW>10.50</NTGEW><BTGEW>12.00</BTGEW><GEWEI>KG</GEWEI><VOLUM>0.50</VOLUM><VOLEH>M3</VOLEH><ANZPK>1</ANZPK><E1EDL21><LFART>LF</LFART></E1EDL21><E1EDL24><POSNR>000010</POSNR><MATNR>MAT-001</MATNR><ARKTX>Test Product</ARKTX><WERKS>1000</WERKS><LGORT>0001</LGORT><LFIMG>5</LFIMG><VRKME>EA</VRKME><MEINS>EA</MEINS><EAN11>1234567890123</EAN11></E1EDL24></E1EDL20></IDOC>"
+        },
+        "_morphing": false
+      }
+    },
+    {
+      "id": "f33cc1bf-53fc-451d-998c-606da9b26ca3",
+      "position": {
+        "x": 831.5,
+        "y": 287
+      },
+      "type": "display",
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "data": {
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      }
+    }
+  ],
+  "connections": [
+    {
+      "source": "2aebb2f9-6648-45d0-ae09-bf6effe41380",
+      "sourceHandle": "success",
+      "target": "o2tyjztnk5eddetuqw67qjal",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__2aebb2f9-6648-45d0-ae09-bf6effe41380success-o2tyjztnk5eddetuqw67qjalinput",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "source": "o2tyjztnk5eddetuqw67qjal",
+      "sourceHandle": "success",
+      "target": "f33cc1bf-53fc-451d-998c-606da9b26ca3",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__o2tyjztnk5eddetuqw67qjalsuccess-f33cc1bf-53fc-451d-998c-606da9b26ca3input",
+      "data": {
+        "isAnimated": false
+      }
+    }
+  ],
+  "version": 1,
+  "secrets": {}
+}

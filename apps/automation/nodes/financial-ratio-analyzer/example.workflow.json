@@ -1,0 +1,88 @@
+[
+  {
+    "name": "finacial",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "nsnnyoq1wrsd17y8xqk5i5pp",
+        "position": {
+          "x": 628,
+          "y": 192
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        }
+      },
+      {
+        "id": "ce3bnk138oqeecis4dsttsym",
+        "position": {
+          "x": 922,
+          "y": 179.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "financial-ratio-analyzer",
+          "label": "Financial Ratio Analyzer",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Analyze liquidity, profitability, leverage, and efficiency ratios",
+          "showRunningStatus": true,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "nsnnyoq1wrsd17y8xqk5i5pp",
+        "sourceHandle": "success",
+        "target": "ce3bnk138oqeecis4dsttsym",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__nsnnyoq1wrsd17y8xqk5i5ppsuccess-ce3bnk138oqeecis4dsttsyminput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1786445275158,
+    "updatedAt": 1786445489400,
+    "publishedNames": []
+  }
+]

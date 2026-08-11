@@ -1,0 +1,4 @@
+{
+  "label": "EDI Generate X12",
+  "description": "Generate ANSI ASC X12 documents from structured JSON data."
+}

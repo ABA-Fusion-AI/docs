@@ -1,0 +1,190 @@
+[
+  {
+    "name": "JSON to IDoc Converter1",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "t5bxkeibz6p9j4qodknukz4h",
+        "position": {
+          "x": 214.45020425461388,
+          "y": 298.90002901333935
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "edi-json-to-idoc",
+          "label": "JSON to IDoc Converter1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Converts JSON data to SAP IDoc XML format. Supports DESADV, SHPMNT, ZFREINV, ZLEITRACK, STPPOD, STATUS, and ZINVRSP message types.",
+          "showRunningStatus": true,
+          "parameters": {
+            "idocType": "DESADV",
+            "environment": "test",
+            "inputData": {
+              "$expr": "output",
+              "node": "Function",
+              "outputId": "success",
+              "path": "input"
+            },
+            "senderPOR": "SENDER01",
+            "receiverPOR": "RECEIVER01",
+            "senderPRN": "SENDER_PARTNER",
+            "receiverPRN": "SENDER_PARTNER"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "n8eqbi598m9d8hczxsbql2n1",
+        "position": {
+          "x": -68.4997493462179,
+          "y": 362.97486890143347
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "function",
+          "label": "Function",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Executes custom JavaScript code on the input data.",
+          "showRunningStatus": true,
+          "parameters": {
+            "code": "const input = {\n  header: {\n    do_number: \"80000123\",\n    delivery_type: \"LF\",\n    delivery_mode: \"7805\",\n    sales_organization: \"7801\",\n    shipping_conditions: \"01\",\n    route: \"ROUTE01\",\n    net_weight: \"100\",\n    gross_weight: \"110\",\n    weight_unit: \"KG\",\n    volume: \"2\",\n    volume_unit: \"M3\",\n    total_packages: \"2\"\n  }\n};\n\nreturn { input: JSON.stringify(input) };"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "cplm5cwvwholyrk4ja6lsdm8",
+        "position": {
+          "x": -181.64728614278295,
+          "y": 304.93965645953347
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ujnz1xu0gh7n1epa3e2cyfwu",
+        "position": {
+          "x": 332.61224002396375,
+          "y": 279.5064461908488
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "cplm5cwvwholyrk4ja6lsdm8",
+        "sourceHandle": "success",
+        "target": "n8eqbi598m9d8hczxsbql2n1",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__cplm5cwvwholyrk4ja6lsdm8success-n8eqbi598m9d8hczxsbql2n1input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "n8eqbi598m9d8hczxsbql2n1",
+        "sourceHandle": "success",
+        "target": "t5bxkeibz6p9j4qodknukz4h",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__n8eqbi598m9d8hczxsbql2n1success-t5bxkeibz6p9j4qodknukz4hinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "t5bxkeibz6p9j4qodknukz4h",
+        "sourceHandle": "success",
+        "target": "ujnz1xu0gh7n1epa3e2cyfwu",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__t5bxkeibz6p9j4qodknukz4hsuccess-ujnz1xu0gh7n1epa3e2cyfwuinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1786054628949,
+    "updatedAt": 1786457499497,
+    "publishedNames": [],
+    "previousStatus": "error"
+  }
+]
