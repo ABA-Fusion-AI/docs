@@ -1,0 +1,125 @@
+[
+  {
+    "name": "free dict",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "v5mi97plpyhtn3zp2vvyzxcu",
+        "position": {
+          "x": 541,
+          "y": 70.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "lo3qjtx50eakuitlqmeh2il1",
+        "position": {
+          "x": 806.5,
+          "y": 64
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "free-dictionary",
+          "label": "Free Dictionary",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get word definitions, meanings, synonyms, and more from the Free Dictionary API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "word": "hello"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "v5mi97plpyhtn3zp2vvyzxcu",
+        "sourceHandle": "success",
+        "target": "g60l5v7kcvxdnn5wxq1bn7gy",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__v5mi97plpyhtn3zp2vvyzxcusuccess-g60l5v7kcvxdnn5wxq1bn7gyinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "v5mi97plpyhtn3zp2vvyzxcu",
+        "sourceHandle": "success",
+        "target": "wvpxcpbcqqujgmzg3u71zx7c",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__v5mi97plpyhtn3zp2vvyzxcusuccess-wvpxcpbcqqujgmzg3u71zx7cinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "v5mi97plpyhtn3zp2vvyzxcu",
+        "sourceHandle": "success",
+        "target": "gzaejnccmegsywv85dpk3nbi",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__v5mi97plpyhtn3zp2vvyzxcusuccess-gzaejnccmegsywv85dpk3nbiinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "v5mi97plpyhtn3zp2vvyzxcu",
+        "sourceHandle": "success",
+        "target": "lo3qjtx50eakuitlqmeh2il1",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__v5mi97plpyhtn3zp2vvyzxcusuccess-lo3qjtx50eakuitlqmeh2il1input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1786110039959,
+    "updatedAt": 1786444462858,
+    "publishedNames": [],
+    "previousStatus": "error"
+  }
+]
