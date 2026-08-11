@@ -1,0 +1,830 @@
+[
+  {
+    "name": "banking-validator",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "v51o76w2emmdj3q11xs07rg3",
+        "position": {
+          "x": 619.0323933738015,
+          "y": 302.47247183519374
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "banking-validator",
+          "label": "Banking Validator",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Validate IBAN and SWIFT/BIC codes with format checking",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "validateIBAN",
+            "iban": "DE00370400440532013000 "
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ik01us8s0yjz1l6b6iyhgbxf",
+        "position": {
+          "x": 347.76364002390073,
+          "y": 181.035595493631
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "mub4ivmxokm3r5biy7ykog5f",
+        "position": {
+          "x": 859.9896551398053,
+          "y": 320.64404506369
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "qkjd8j9jxxqjgsyzeww1rky2",
+        "position": {
+          "x": 680.6471447764853,
+          "y": 115.26158798301606
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "banking-validator",
+          "label": "Banking Validator1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Validate IBAN and SWIFT/BIC codes with format checking",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "validateIBAN",
+            "iban": "DE89370400440532013000"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "r5ynw9eho8inuvu4rww01fpn",
+        "position": {
+          "x": 359.3783914265846,
+          "y": 11.574711641453291
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "j7wy31on3fqx6bey4b2w8zff",
+        "position": {
+          "x": 909.6044065424892,
+          "y": 169.43316121151224
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "dmmxc1imtrfpifa2kjgkw3w2",
+        "position": {
+          "x": 648.6471447764853,
+          "y": 471.26158798301606
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "banking-validator",
+          "label": "Banking Validator2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Validate IBAN and SWIFT/BIC codes with format checking",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "validateSWIFT",
+            "swift": "BMCEMAMC"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "npmsetah8nzoi7skkjpc9hap",
+        "position": {
+          "x": 375.3783914265846,
+          "y": 369.8247116414533
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "dfib1m41z4ibqtc6szhdajg9",
+        "position": {
+          "x": 963.6044065424892,
+          "y": 527.4331612115122
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "cldbtaryxb5u4l03a5tthwwg",
+        "position": {
+          "x": 628.6471447764853,
+          "y": 1090.511587983016
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "banking-validator",
+          "label": "Banking Validator3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Validate IBAN and SWIFT/BIC codes with format checking",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "validateIBAN"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "k2rwttp7riropfvfo4mz5tsb",
+        "position": {
+          "x": 339.3783914265846,
+          "y": 1056.3247116414532
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "wkli653vbil2i59a094d5i2f",
+        "position": {
+          "x": 985.6044065424892,
+          "y": 1129.9331612115122
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "tnx0kl3vjggmahwp40j8xdwr",
+        "position": {
+          "x": 630.6471447764853,
+          "y": 915.261587983016
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "banking-validator",
+          "label": "Banking Validator4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Validate IBAN and SWIFT/BIC codes with format checking",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "validateIBAN",
+            "iban": "MA43 0115 1900 0001 2050 0053 49"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "zfwx5wljxsakhrnasu8ff5vh",
+        "position": {
+          "x": 349.42549771577086,
+          "y": 876.8102295258955
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "b22ulw4071kjjevzq1gbommc",
+        "position": {
+          "x": 981.6044065424892,
+          "y": 947.4331612115122
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "qzmmb361aq8ss793nj0p7yqk",
+        "position": {
+          "x": 656.8145629829468,
+          "y": 746.2135798460761
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "banking-validator",
+          "label": "Banking Validator5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Validate IBAN and SWIFT/BIC codes with format checking",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "formatIBAN",
+            "iban": "DE89370400440532013000"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "awozgjw2y15zhqdkqg76sl57",
+        "position": {
+          "x": 362.4996051916136,
+          "y": 707.6467899598501
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "kkdigbssxai9axac2tqxmu57",
+        "position": {
+          "x": 1016.5861051354668,
+          "y": 786.5333680262577
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "c4ftu1tcqfenkolevez5dfdi",
+        "position": {
+          "x": 643.6471447764853,
+          "y": 596.0115879830159
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "banking-validator",
+          "label": "Banking Validator6",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Validate IBAN and SWIFT/BIC codes with format checking",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "validateSWIFT",
+            "swift": "INVALID123"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "czu1kvecqtlnuod56rk4y7yr",
+        "position": {
+          "x": 368.3783914265846,
+          "y": 498.57471164145323
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger6",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "uhm1fbsnh9gtbz5mfa08sazh",
+        "position": {
+          "x": 892.6044065424892,
+          "y": 650.1831612115122
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log6",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "v51o76w2emmdj3q11xs07rg3",
+        "sourceHandle": "success",
+        "target": "mub4ivmxokm3r5biy7ykog5f",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__v51o76w2emmdj3q11xs07rg3success-mub4ivmxokm3r5biy7ykog5finput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ik01us8s0yjz1l6b6iyhgbxf",
+        "sourceHandle": "success",
+        "target": "v51o76w2emmdj3q11xs07rg3",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ik01us8s0yjz1l6b6iyhgbxfsuccess-v51o76w2emmdj3q11xs07rg3input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "qkjd8j9jxxqjgsyzeww1rky2",
+        "sourceHandle": "success",
+        "target": "j7wy31on3fqx6bey4b2w8zff",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "fe3qzkbv9hxpx2hgy40hsoda",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "r5ynw9eho8inuvu4rww01fpn",
+        "sourceHandle": "success",
+        "target": "qkjd8j9jxxqjgsyzeww1rky2",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "aije2x2qyhwmnchn91c5hzkm",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "dmmxc1imtrfpifa2kjgkw3w2",
+        "sourceHandle": "success",
+        "target": "dfib1m41z4ibqtc6szhdajg9",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "tl6j5fi0mkhyx150qk5wezk0",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "npmsetah8nzoi7skkjpc9hap",
+        "sourceHandle": "success",
+        "target": "dmmxc1imtrfpifa2kjgkw3w2",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "nuuktutgj3ng4lmfuxrb0aeg",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "cldbtaryxb5u4l03a5tthwwg",
+        "sourceHandle": "success",
+        "target": "wkli653vbil2i59a094d5i2f",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "gizqq9qeht0tta5uulnwgfmb",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "k2rwttp7riropfvfo4mz5tsb",
+        "sourceHandle": "success",
+        "target": "cldbtaryxb5u4l03a5tthwwg",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "vikczyo786sh1lvn9vvtt293",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "tnx0kl3vjggmahwp40j8xdwr",
+        "sourceHandle": "success",
+        "target": "b22ulw4071kjjevzq1gbommc",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "m46rvkob8l4w18jgril9pcpt",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "zfwx5wljxsakhrnasu8ff5vh",
+        "sourceHandle": "success",
+        "target": "tnx0kl3vjggmahwp40j8xdwr",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "zbdlswdssau3d1x80wlhlul3",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "qzmmb361aq8ss793nj0p7yqk",
+        "sourceHandle": "success",
+        "target": "kkdigbssxai9axac2tqxmu57",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "fu6h9zky8krzcc047jlc7syz",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "awozgjw2y15zhqdkqg76sl57",
+        "sourceHandle": "success",
+        "target": "qzmmb361aq8ss793nj0p7yqk",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "a0kny09dbwvuus8ka0qcz8l3",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "c4ftu1tcqfenkolevez5dfdi",
+        "sourceHandle": "success",
+        "target": "uhm1fbsnh9gtbz5mfa08sazh",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "hmhp3r5t6au0ixzmt89327h7",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "czu1kvecqtlnuod56rk4y7yr",
+        "sourceHandle": "success",
+        "target": "c4ftu1tcqfenkolevez5dfdi",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "gwe7nf79h7nuop0p769a8whq",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1786441375715,
+    "updatedAt": 1786446189804,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
