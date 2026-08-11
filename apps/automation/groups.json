@@ -1472,7 +1472,6 @@
           "scientific-articles-extract",
           "scientific-pdf-fetch",
           "scientific-pdf-archive-finalize",
-          "scientific-sheets-rows",
           "scientific-pagination-checkpoint"
         ],
         "subgroups": []

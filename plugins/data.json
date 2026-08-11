@@ -7928,7 +7928,6 @@
         "scientific-articles-extract",
         "scientific-pdf-fetch",
         "scientific-pdf-archive-finalize",
-        "scientific-sheets-rows",
         "scientific-pagination-checkpoint"
       ]
     }
@@ -8034,19 +8033,6 @@
     "integrations": {
       "automation": [
         "scientific-pdf-archive-finalize"
-      ]
-    }
-  },
-  {
-    "id": "scientific-sheets-rows",
-    "name": "Scientific Archive Table Builder",
-    "type": "tool",
-    "description": "Map articles to the standard scientific archive table.",
-    "slogan": "scientific-sheets-rows",
-    "icon": "icons/scientific-articles.svg",
-    "integrations": {
-      "automation": [
-        "scientific-sheets-rows"
       ]
     }
   },

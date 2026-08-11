@@ -6,7 +6,7 @@ category: "integrations"
 subcategory: "google"
 version: "1.0.0"
 language: "en"
-last_updated: "2026-03-11"
+last_updated: "2026-08-11"
 author: "Fusion Team"
 tags:
   - integration
@@ -48,12 +48,16 @@ Value operations: `append`, `appendOrUpdate`, `update`, `get`.
 
 ### Write Parameters (`append`, `appendOrUpdate`, `update`)
 
-| Parameter          | Type   | Required | Default          | Description                                            |
-| ------------------ | ------ | -------- | ---------------- | ------------------------------------------------------ |
-| `values`           | `any`  | ✅ Yes   | —                | Input values (array, object rows, JSON string, scalar) |
-| `valueInputOption` | `enum` | ❌ No    | `USER_ENTERED`\* | Used by `appendOrUpdate` and `update`                  |
+| Parameter          | Type       | Required | Default          | Description                                                           |
+| ------------------ | ---------- | -------- | ---------------- | --------------------------------------------------------------------- |
+| `values`           | `any`      | ✅ Yes   | —                | Input values (array, object rows, JSON string, scalar)                |
+| `columns`          | `string[]` | ❌ No    | Object key order | Ordered dot-paths used when `values` contains objects                 |
+| `valueInputOption` | `enum`     | ❌ No    | `USER_ENTERED`\* | Used by `appendOrUpdate` and `update`                                 |
 
 \* `append` always uses `USER_ENTERED`.
+
+For object rows, `columns` controls both column order and nested-field
+selection. For example, `metadata.pdf.driveUrl` reads the nested Drive URL.
 
 ### Read Parameters (`get`)
 
