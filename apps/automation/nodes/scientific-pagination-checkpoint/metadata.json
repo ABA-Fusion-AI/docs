@@ -1,0 +1,5 @@
+{
+  "label": "Scientific Pagination Checkpoint",
+  "description": "Prepare persistent arXiv and Crossref offsets for the next workflow run."
+}
+

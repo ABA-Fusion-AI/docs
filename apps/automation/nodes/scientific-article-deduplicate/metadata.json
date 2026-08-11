@@ -1,0 +1,5 @@
+{
+  "label": "Scientific Article Deduplicate",
+  "description": "Generate stable article keys and exclude stored or cross-provider duplicates."
+}
+

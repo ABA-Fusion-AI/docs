@@ -1,0 +1,5 @@
+{
+  "label": "Scientific Articles Extract",
+  "description": "Extract accepted articles into a plain array for loops and downstream processing."
+}
+

@@ -816,7 +816,12 @@
     "icon": "icons/googleBigQuery.svg",
     "integrations": {
       "automation": [
-        "google-big-query"
+        "google-big-query",
+        "google-big-query-project",
+        "google-big-query-dataset",
+        "google-big-query-table",
+        "google-big-query-job",
+        "google-big-query-query"
       ]
     }
   },
@@ -5721,7 +5726,7 @@
     "id": "liberation",
     "name": "Liberation",
     "type": "tool",
-    "description": "Lib\u00e9ration news - French national daily newspaper RSS feed",
+    "description": "Libération news - French national daily newspaper RSS feed",
     "slogan": "liberation",
     "icon": "icons/news.svg",
     "integrations": {
@@ -5971,7 +5976,7 @@
     "id": "marches-publics",
     "name": "Marches Publics",
     "type": "tool",
-    "description": "March\u00e9s Publics - Moroccan government public procurement and tender data",
+    "description": "Marchés Publics - Moroccan government public procurement and tender data",
     "slogan": "marches-publics",
     "icon": "icons/marches-publics.svg",
     "integrations": {
@@ -7158,7 +7163,7 @@
     "id": "pokeapi",
     "name": "Pokeapi",
     "type": "tool",
-    "description": "Pok\u00e9API - access Pok\u00e9mon data including species, abilities, and moves",
+    "description": "PokéAPI - access Pokémon data including species, abilities, and moves",
     "slogan": "pokeapi",
     "icon": "icons/default-fill.svg",
     "integrations": {
@@ -7888,8 +7893,8 @@
     "id": "scientific-research",
     "name": "Scientific Research",
     "type": "tool",
-    "description": "Scientific research toolkit - search public scholarly APIs, patent databases, materials databases, and connect to final-user-provided private research APIs.",
-    "slogan": "scientific-research",
+    "description": "End-to-end scientific research toolkit for scholarly search, relevance filtering, deduplication, PDF archival, Google Sheets export, and resumable pagination.",
+    "slogan": "Search, filter, archive, and resume scientific research",
     "icon": "icons/scientific-articles.svg",
     "integrations": {
       "automation": [
@@ -7914,7 +7919,147 @@
         "scientific-contify-access",
         "scientific-seismic-access",
         "scientific-onemine-access",
-        "scientific-geoscienceworld-access"
+        "scientific-geoscienceworld-access",
+        "scientific-research-state-prepare",
+        "scientific-search-pages-combine",
+        "scientific-article-deduplicate",
+        "scientific-relevance-filter",
+        "scientific-articles-route",
+        "scientific-articles-extract",
+        "scientific-pdf-fetch",
+        "scientific-pdf-archive-finalize",
+        "scientific-sheets-rows",
+        "scientific-pagination-checkpoint"
+      ]
+    }
+  },
+  {
+    "id": "scientific-research-state-prepare",
+    "name": "Scientific Research State Prepare",
+    "type": "tool",
+    "description": "Prepare a research query and resume saved provider offsets.",
+    "slogan": "scientific-research-state-prepare",
+    "icon": "icons/scientific-articles.svg",
+    "integrations": {
+      "automation": [
+        "scientific-research-state-prepare"
+      ]
+    }
+  },
+  {
+    "id": "scientific-search-pages-combine",
+    "name": "Scientific Search Pages Combine",
+    "type": "tool",
+    "description": "Combine scholarly provider pages and pagination metadata.",
+    "slogan": "scientific-search-pages-combine",
+    "icon": "icons/scientific-articles.svg",
+    "integrations": {
+      "automation": [
+        "scientific-search-pages-combine"
+      ]
+    }
+  },
+  {
+    "id": "scientific-article-deduplicate",
+    "name": "Scientific Article Deduplicate",
+    "type": "tool",
+    "description": "Generate stable article keys and exclude stored duplicates.",
+    "slogan": "scientific-article-deduplicate",
+    "icon": "icons/scientific-articles.svg",
+    "integrations": {
+      "automation": [
+        "scientific-article-deduplicate"
+      ]
+    }
+  },
+  {
+    "id": "scientific-relevance-filter",
+    "name": "Scientific Relevance Filter",
+    "type": "tool",
+    "description": "Filter articles by keywords and scientific metadata constraints.",
+    "slogan": "scientific-relevance-filter",
+    "icon": "icons/scientific-articles.svg",
+    "integrations": {
+      "automation": [
+        "scientific-relevance-filter"
+      ]
+    }
+  },
+  {
+    "id": "scientific-articles-route",
+    "name": "Scientific Articles Route",
+    "type": "tool",
+    "description": "Route non-empty and empty scientific result sets.",
+    "slogan": "scientific-articles-route",
+    "icon": "icons/scientific-articles.svg",
+    "integrations": {
+      "automation": [
+        "scientific-articles-route"
+      ]
+    }
+  },
+  {
+    "id": "scientific-articles-extract",
+    "name": "Scientific Articles Extract",
+    "type": "tool",
+    "description": "Extract accepted articles for downstream processing.",
+    "slogan": "scientific-articles-extract",
+    "icon": "icons/scientific-articles.svg",
+    "integrations": {
+      "automation": [
+        "scientific-articles-extract"
+      ]
+    }
+  },
+  {
+    "id": "scientific-pdf-fetch",
+    "name": "Scientific PDF Fetch",
+    "type": "tool",
+    "description": "Resolve and download openly accessible article PDFs.",
+    "slogan": "scientific-pdf-fetch",
+    "icon": "icons/scientific-articles.svg",
+    "integrations": {
+      "automation": [
+        "scientific-pdf-fetch"
+      ]
+    }
+  },
+  {
+    "id": "scientific-pdf-archive-finalize",
+    "name": "Scientific PDF Archive Finalize",
+    "type": "tool",
+    "description": "Attach Drive metadata or preserve articles when PDF archival fails.",
+    "slogan": "scientific-pdf-archive-finalize",
+    "icon": "icons/scientific-articles.svg",
+    "integrations": {
+      "automation": [
+        "scientific-pdf-archive-finalize"
+      ]
+    }
+  },
+  {
+    "id": "scientific-sheets-rows",
+    "name": "Scientific Google Sheets Rows",
+    "type": "tool",
+    "description": "Map articles to the standard scientific archive table.",
+    "slogan": "scientific-sheets-rows",
+    "icon": "icons/scientific-articles.svg",
+    "integrations": {
+      "automation": [
+        "scientific-sheets-rows"
+      ]
+    }
+  },
+  {
+    "id": "scientific-pagination-checkpoint",
+    "name": "Scientific Pagination Checkpoint",
+    "type": "tool",
+    "description": "Prepare persistent provider offsets for the next research run.",
+    "slogan": "scientific-pagination-checkpoint",
+    "icon": "icons/scientific-articles.svg",
+    "integrations": {
+      "automation": [
+        "scientific-pagination-checkpoint"
       ]
     }
   },
@@ -9793,7 +9938,7 @@
     "id": "brevo",
     "name": "Brevo",
     "type": "tool",
-    "description": "Brevo (ex-Sendinblue) \u2014 manage contacts, send emails, and campaigns",
+    "description": "Brevo (ex-Sendinblue) — manage contacts, send emails, and campaigns",
     "slogan": "brevo",
     "icon": "icons/brevo.svg",
     "integrations": {
@@ -9861,7 +10006,7 @@
     "id": "drift",
     "name": "Drift",
     "type": "tool",
-    "description": "Drift \u2014 manage contacts, conversations, and accounts",
+    "description": "Drift — manage contacts, conversations, and accounts",
     "slogan": "drift",
     "icon": "icons/drift.svg",
     "integrations": {
@@ -9887,7 +10032,7 @@
     "id": "emelia",
     "name": "Emelia",
     "type": "tool",
-    "description": "Emelia cold email \u2014 manage campaigns, stats, and contacts via GraphQL",
+    "description": "Emelia cold email — manage campaigns, stats, and contacts via GraphQL",
     "slogan": "emelia",
     "icon": "icons/emelia.svg",
     "integrations": {
@@ -10030,7 +10175,7 @@
     "id": "mailjet",
     "name": "Mailjet",
     "type": "tool",
-    "description": "Mailjet transactional email \u2014 send emails, manage contacts, campaigns",
+    "description": "Mailjet transactional email — send emails, manage contacts, campaigns",
     "slogan": "mailjet",
     "icon": "icons/mailjet.svg",
     "integrations": {
@@ -10225,7 +10370,7 @@
     "id": "twake",
     "name": "Twake",
     "type": "tool",
-    "description": "Twake collaboration \u2014 manage workspaces, channels, and messages",
+    "description": "Twake collaboration — manage workspaces, channels, and messages",
     "slogan": "twake",
     "icon": "icons/twake.svg",
     "integrations": {
@@ -10238,7 +10383,7 @@
     "id": "twist",
     "name": "Twist",
     "type": "tool",
-    "description": "Twist team messaging \u2014 manage channels, threads, messages, and conversations",
+    "description": "Twist team messaging — manage channels, threads, messages, and conversations",
     "slogan": "twist",
     "icon": "icons/twist.svg",
     "integrations": {
@@ -10264,7 +10409,7 @@
     "id": "vonage",
     "name": "Vonage",
     "type": "tool",
-    "description": "Vonage (Nexmo) \u2014 send SMS, make calls, check balance, and verify phone numbers",
+    "description": "Vonage (Nexmo) — send SMS, make calls, check balance, and verify phone numbers",
     "slogan": "vonage",
     "icon": "icons/vonage.svg",
     "integrations": {
@@ -10277,7 +10422,7 @@
     "id": "x-twitter",
     "name": "X/Twitter",
     "type": "tool",
-    "description": "X/Twitter API v2 \u2014 post tweets, search, get user timelines, and user profiles",
+    "description": "X/Twitter API v2 — post tweets, search, get user timelines, and user profiles",
     "slogan": "x-twitter",
     "icon": "icons/x-twitter.svg",
     "integrations": {
@@ -10355,7 +10500,7 @@
     "id": "chargebee",
     "name": "Chargebee",
     "type": "tool",
-    "description": "Chargebee subscription billing \u2014 manage subscriptions, customers, invoices, and plans",
+    "description": "Chargebee subscription billing — manage subscriptions, customers, invoices, and plans",
     "slogan": "chargebee",
     "icon": "icons/chargebee.svg",
     "integrations": {
@@ -10420,7 +10565,7 @@
     "id": "crowddev",
     "name": "crowd.dev",
     "type": "tool",
-    "description": "crowd.dev \u2014 get members, activities, organizations, and conversations",
+    "description": "crowd.dev — get members, activities, organizations, and conversations",
     "slogan": "crowddev",
     "icon": "icons/crowddev.svg",
     "integrations": {
@@ -10498,7 +10643,7 @@
     "id": "freshservice",
     "name": "Freshservice",
     "type": "tool",
-    "description": "Freshservice ITSM \u2014 manage tickets, agents, and assets",
+    "description": "Freshservice ITSM — manage tickets, agents, and assets",
     "slogan": "freshservice",
     "icon": "icons/freshservice.svg",
     "integrations": {
@@ -10511,7 +10656,7 @@
     "id": "freshworks-crm",
     "name": "Freshworks CRM",
     "type": "tool",
-    "description": "Freshworks CRM \u2014 manage contacts, deals, and accounts",
+    "description": "Freshworks CRM — manage contacts, deals, and accounts",
     "slogan": "freshworks-crm",
     "icon": "icons/freshworks-crm.svg",
     "integrations": {
@@ -10628,7 +10773,7 @@
     "id": "monica-crm",
     "name": "Monica CRM",
     "type": "tool",
-    "description": "Monica personal CRM \u2014 manage contacts, activities, notes, and tasks",
+    "description": "Monica personal CRM — manage contacts, activities, notes, and tasks",
     "slogan": "monica-crm",
     "icon": "icons/monica-crm.svg",
     "integrations": {
@@ -10641,7 +10786,7 @@
     "id": "ms-dynamics-crm",
     "name": "Microsoft Dynamics CRM",
     "type": "tool",
-    "description": "Microsoft Dynamics 365 CRM \u2014 manage accounts, contacts, and opportunities",
+    "description": "Microsoft Dynamics 365 CRM — manage accounts, contacts, and opportunities",
     "slogan": "ms-dynamics-crm",
     "icon": "icons/ms-dynamics-crm.svg",
     "integrations": {
@@ -10836,7 +10981,7 @@
     "id": "taiga",
     "name": "Taiga",
     "type": "tool",
-    "description": "Taiga \u2014 manage projects, user stories, tasks, issues, and sprints",
+    "description": "Taiga — manage projects, user stories, tasks, issues, and sprints",
     "slogan": "taiga",
     "icon": "icons/taiga.svg",
     "integrations": {
@@ -10947,7 +11092,7 @@
     "id": "zammad",
     "name": "Zammad",
     "type": "tool",
-    "description": "Zammad helpdesk \u2014 manage tickets, users, and organizations",
+    "description": "Zammad helpdesk — manage tickets, users, and organizations",
     "slogan": "zammad",
     "icon": "icons/zammad.svg",
     "integrations": {
@@ -11285,7 +11430,7 @@
     "id": "misp",
     "name": "MISP",
     "type": "tool",
-    "description": "Interact with MISP threat intelligence \u2014 manage events and attributes",
+    "description": "Interact with MISP threat intelligence — manage events and attributes",
     "slogan": "misp",
     "icon": "icons/misp.svg",
     "integrations": {
@@ -11298,7 +11443,7 @@
     "id": "ms-entra-id",
     "name": "Microsoft Entra ID",
     "type": "tool",
-    "description": "Microsoft Entra ID (Azure AD) \u2014 manage users, groups, and applications via Graph",
+    "description": "Microsoft Entra ID (Azure AD) — manage users, groups, and applications via Graph",
     "slogan": "ms-entra-id",
     "icon": "icons/ms-entra-id.svg",
     "integrations": {
@@ -11384,7 +11529,7 @@
     "id": "thehive",
     "name": "TheHive",
     "type": "tool",
-    "description": "TheHive security incident response \u2014 manage cases, alerts, and observables",
+    "description": "TheHive security incident response — manage cases, alerts, and observables",
     "slogan": "thehive",
     "icon": "icons/thehive.svg",
     "integrations": {
@@ -11397,7 +11542,7 @@
     "id": "thehive5",
     "name": "TheHive 5",
     "type": "tool",
-    "description": "TheHive 5 \u2014 manage cases, alerts, observables, and tasks",
+    "description": "TheHive 5 — manage cases, alerts, observables, and tasks",
     "slogan": "thehive5",
     "icon": "icons/thehive5.svg",
     "integrations": {
@@ -11527,7 +11672,7 @@
     "id": "rundeck",
     "name": "Rundeck",
     "type": "tool",
-    "description": "Rundeck job scheduler \u2014 list and run jobs, manage executions and projects",
+    "description": "Rundeck job scheduler — list and run jobs, manage executions and projects",
     "slogan": "rundeck",
     "icon": "icons/rundeck.svg",
     "integrations": {
@@ -11762,7 +11907,7 @@
     "id": "airtop",
     "name": "Airtop",
     "type": "tool",
-    "description": "Airtop browser automation \u2014 create sessions, navigate, and extract web content",
+    "description": "Airtop browser automation — create sessions, navigate, and extract web content",
     "slogan": "airtop",
     "icon": "icons/airtop.svg",
     "integrations": {
@@ -11905,7 +12050,7 @@
     "id": "philips-hue",
     "name": "Philips Hue",
     "type": "tool",
-    "description": "Philips Hue smart lighting \u2014 control lights, groups, and scenes",
+    "description": "Philips Hue smart lighting — control lights, groups, and scenes",
     "slogan": "philips-hue",
     "icon": "icons/philips-hue.svg",
     "integrations": {
@@ -11918,7 +12063,7 @@
     "id": "spotify",
     "name": "Spotify",
     "type": "tool",
-    "description": "Spotify music \u2014 search tracks, get track/artist/album info, and user playlists",
+    "description": "Spotify music — search tracks, get track/artist/album info, and user playlists",
     "slogan": "spotify",
     "icon": "icons/spotify.svg",
     "integrations": {
@@ -11970,7 +12115,7 @@
     "id": "grist",
     "name": "Grist",
     "type": "tool",
-    "description": "Grist spreadsheet database \u2014 list documents, get, add, and update records",
+    "description": "Grist spreadsheet database — list documents, get, add, and update records",
     "slogan": "grist",
     "icon": "icons/grist.svg",
     "integrations": {
@@ -11983,7 +12128,7 @@
     "id": "kobotoolbox",
     "name": "KoboToolbox",
     "type": "tool",
-    "description": "KoboToolbox data collection \u2014 manage forms, submissions, and export data",
+    "description": "KoboToolbox data collection — manage forms, submissions, and export data",
     "slogan": "kobotoolbox",
     "icon": "icons/kobotoolbox.svg",
     "integrations": {
@@ -12233,7 +12378,7 @@
     "id": "one-simple-api",
     "name": "One Simple API",
     "type": "tool",
-    "description": "Web utility \u2014 social info, PDF generation, screenshots, and exchange rates",
+    "description": "Web utility — social info, PDF generation, screenshots, and exchange rates",
     "slogan": "one-simple-api",
     "icon": "icons/one-simple-api.svg",
     "integrations": {

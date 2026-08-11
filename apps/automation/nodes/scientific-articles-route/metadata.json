@@ -1,0 +1,5 @@
+{
+  "label": "Scientific Articles Route",
+  "description": "Route non-empty scientific result sets to processing and empty sets to checkpointing."
+}
+

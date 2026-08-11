@@ -609,6 +609,11 @@
         "nodes": [
           "elasticsearch",
           "influxdb",
+          "google-big-query-project",
+          "google-big-query-dataset",
+          "google-big-query-table",
+          "google-big-query-job",
+          "google-big-query-query",
           "seatable",
           "rymo-aggregate",
           "rymo-auth",
@@ -1140,28 +1145,6 @@
       {
         "name": "Academic Search",
         "nodes": [
-          "scientific-openalex",
-          "scientific-crossref",
-          "scientific-semantic-scholar",
-          "scientific-europe-pmc",
-          "scientific-arxiv",
-          "scientific-pubmed",
-          "scientific-elsevier",
-          "scientific-web-of-science",
-          "scientific-lens",
-          "scientific-espacenet",
-          "scientific-optimade",
-          "scientific-google-scholar-access",
-          "scientific-google-patents-access",
-          "scientific-patsnap-access",
-          "scientific-crayon-access",
-          "scientific-alpha-sense-access",
-          "scientific-klue-access",
-          "scientific-kompyte-access",
-          "scientific-contify-access",
-          "scientific-seismic-access",
-          "scientific-onemine-access",
-          "scientific-geoscienceworld-access",
           "crossref-search",
           "doaj",
           "ebsco",
@@ -1414,7 +1397,6 @@
           "google-ad-sense",
           "google-analytics",
           "google-tag-manager",
-          "google-big-query",
           "google-books-search",
           "google-calendar",
           "google-classroom",
@@ -1468,6 +1450,70 @@
         "nodes": [
           "fmi",
           "world-bank"
+        ],
+        "subgroups": []
+      }
+    ]
+  },
+  {
+    "name": "Scientific Research",
+    "icon": "groupsicons/scientific-research",
+    "color": "#0F766E",
+    "nodes": [],
+    "subgroups": [
+      {
+        "name": "Research Workflow",
+        "nodes": [
+          "scientific-research-state-prepare",
+          "scientific-search-pages-combine",
+          "scientific-article-deduplicate",
+          "scientific-relevance-filter",
+          "scientific-articles-route",
+          "scientific-articles-extract",
+          "scientific-pdf-fetch",
+          "scientific-pdf-archive-finalize",
+          "scientific-sheets-rows",
+          "scientific-pagination-checkpoint"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "Literature Search & Metadata",
+        "nodes": [
+          "scientific-openalex",
+          "scientific-crossref",
+          "scientific-semantic-scholar",
+          "scientific-europe-pmc",
+          "scientific-arxiv",
+          "scientific-pubmed",
+          "scientific-elsevier",
+          "scientific-web-of-science"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "Patents & Materials",
+        "nodes": [
+          "scientific-lens",
+          "scientific-espacenet",
+          "scientific-optimade"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "Private & Commercial Access",
+        "nodes": [
+          "scientific-google-scholar-access",
+          "scientific-google-patents-access",
+          "scientific-patsnap-access",
+          "scientific-crayon-access",
+          "scientific-alpha-sense-access",
+          "scientific-klue-access",
+          "scientific-kompyte-access",
+          "scientific-contify-access",
+          "scientific-seismic-access",
+          "scientific-onemine-access",
+          "scientific-geoscienceworld-access"
         ],
         "subgroups": []
       }
