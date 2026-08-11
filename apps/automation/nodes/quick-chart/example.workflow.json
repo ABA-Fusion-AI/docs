@@ -1,0 +1,126 @@
+{
+  "name": "QuickChart Example",
+  "nodes": [
+    {
+      "id": "nmi57q2p176cxjufcjrzv9nx",
+      "position": {
+        "x": 544,
+        "y": 189
+      },
+      "type": "trigger",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Triggers the workflow manually.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      },
+      "selected": false
+    },
+    {
+      "id": "glxfrcbvtu1ugqedd735msfd",
+      "position": {
+        "x": 682.5,
+        "y": 189
+      },
+      "type": "action",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "quick-chart",
+        "label": "QuickChart",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Generate charts using QuickChart API.",
+        "showRunningStatus": true,
+        "parameters": {
+          "chartConfig": "{ \"type\": \"bar\", \"data\": { \"labels\": [\"January\", \"February\", \"March\"], \"datasets\": [ { \"label\": \"Sales\", \"data\": [12, 19, 8] } ] } }",
+          "width": 500,
+          "height": 300,
+          "format": "png"
+        },
+        "_morphing": false
+      },
+      "selected": false
+    },
+    {
+      "id": "csxhxgsiz6k2yv63p6vk984j",
+      "position": {
+        "x": 771.5,
+        "y": 169
+      },
+      "type": "display",
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "data": {
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      }
+    }
+  ],
+  "connections": [
+    {
+      "source": "nmi57q2p176cxjufcjrzv9nx",
+      "sourceHandle": "success",
+      "target": "glxfrcbvtu1ugqedd735msfd",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__nmi57q2p176cxjufcjrzv9nxsuccess-glxfrcbvtu1ugqedd735msfdinput",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "source": "glxfrcbvtu1ugqedd735msfd",
+      "sourceHandle": "success",
+      "target": "csxhxgsiz6k2yv63p6vk984j",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__glxfrcbvtu1ugqedd735msfdsuccess-csxhxgsiz6k2yv63p6vk984jinput",
+      "data": {
+        "isAnimated": false
+      }
+    }
+  ],
+  "version": 1,
+  "secrets": {}
+}
