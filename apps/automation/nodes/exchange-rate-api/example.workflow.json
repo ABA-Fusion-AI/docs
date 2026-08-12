@@ -1,0 +1,133 @@
+[
+  {
+    "name": "testExchangeRateApi",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "bwxhufbwztgtztfr0neyszlc",
+        "position": {
+          "x": 252,
+          "y": 127
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "bpfak9sfa488bzv4l9gj901p",
+        "position": {
+          "x": 492,
+          "y": 119
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "exchange-rate-api",
+          "label": "ExchangeRate API",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get exchange rates from ExchangeRate-API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "key": "7f81300e230ece4fe7a4a81e"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "zde78kbjjqsxnjv9gmsl81hw",
+        "position": {
+          "x": 637,
+          "y": 79
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "bwxhufbwztgtztfr0neyszlc",
+        "sourceHandle": "success",
+        "target": "bpfak9sfa488bzv4l9gj901p",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__bwxhufbwztgtztfr0neyszlcsuccess-bpfak9sfa488bzv4l9gj901pinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "bpfak9sfa488bzv4l9gj901p",
+        "sourceHandle": "success",
+        "target": "zde78kbjjqsxnjv9gmsl81hw",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__bpfak9sfa488bzv4l9gj901psuccess-zde78kbjjqsxnjv9gmsl81hwinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1786535779075,
+    "updatedAt": 1786535864176,
+    "publishedNames": [],
+    "previousStatus": "stopped"
+  }
+]
