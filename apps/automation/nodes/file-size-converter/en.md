@@ -19,14 +19,14 @@ related_nodes:
   - binary-to-text
 ---
 
-<!-- SECTION: header -->
+<!-- SECTION:header -->
 # File Size Converter
 
 > **Category:** Storage & Files | **Subcategory:** Files & Documents | **Type:** Action Node
 
 Convert file size values between bytes and higher storage units using either decimal (1000-based) or binary (1024-based) unit definitions.
 
-<!-- /SECTION: header -->
+<!-- /SECTION:header -->
 
 ---
 
