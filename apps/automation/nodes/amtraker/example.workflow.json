@@ -1,0 +1,101 @@
+[
+  {
+    "name": "alpha vantage",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "gb99esi3c32frik7aveof91t",
+        "position": {
+          "x": 841,
+          "y": 4.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "gz2oz05pfbdv62os50p3o7cc",
+        "position": {
+          "x": 1116,
+          "y": 112.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "amtraker",
+          "label": "Amtraker",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get Amtrak train information from the Amtraker API.",
+          "showRunningStatus": true,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "gb99esi3c32frik7aveof91t",
+        "sourceHandle": "success",
+        "target": "wtafbgkqz5xxb0902qir78ph",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__gb99esi3c32frik7aveof91tsuccess-wtafbgkqz5xxb0902qir78phinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "gb99esi3c32frik7aveof91t",
+        "sourceHandle": "success",
+        "target": "gz2oz05pfbdv62os50p3o7cc",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__gb99esi3c32frik7aveof91tsuccess-gz2oz05pfbdv62os50p3o7ccinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1786526812359,
+    "updatedAt": 1786527715026,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
