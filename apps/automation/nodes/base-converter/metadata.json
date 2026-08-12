@@ -1,4 +1,4 @@
 {
   "label": "Number Base Converter",
-  "description": "Convert numbers between Binary, Octal, Decimal, Hexadecimal, and custom bases (2-36) in automation flows."
+  "description": "Convert numbers between Binary, Octal, Decimal, Hexadecimal, and custom bases (2-36) for use in automation flows."
 }
