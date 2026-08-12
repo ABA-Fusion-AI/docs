@@ -361,7 +361,8 @@
           "transfer-pricing",
           "working-capital-calculator",
           "searates-load-calculator",
-          "kling-ai-image-generation"
+          "kling-ai-image-generation",
+          "bourrage-raw-sample"
         ],
         "subgroups": []
       },
