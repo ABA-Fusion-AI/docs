@@ -1,0 +1,135 @@
+[
+  {
+    "name": "Mapbox Geocoding",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "w8urxcldx3vpigtl99ux273z",
+        "position": {
+          "x": 710,
+          "y": 227
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "mapbox",
+          "label": "Mapbox Geocoding",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Geocode addresses using the Mapbox Geocoding API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "q": "13 rue tantan hassan rabat",
+            "accessToken": "pk."
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "i4cx0lcrn2938o0nnrkahg9u",
+        "position": {
+          "x": 468,
+          "y": 127
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "tpbryckzs1ne3gg368fci2qs",
+        "position": {
+          "x": 926,
+          "y": 227
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "i4cx0lcrn2938o0nnrkahg9u",
+        "sourceHandle": "success",
+        "target": "w8urxcldx3vpigtl99ux273z",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__i4cx0lcrn2938o0nnrkahg9usuccess-w8urxcldx3vpigtl99ux273zinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "w8urxcldx3vpigtl99ux273z",
+        "sourceHandle": "success",
+        "target": "tpbryckzs1ne3gg368fci2qs",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__w8urxcldx3vpigtl99ux273zsuccess-tpbryckzs1ne3gg368fci2qsinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1786527042734,
+    "updatedAt": 1786529016365,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
