@@ -12702,5 +12702,18 @@
         "aws-transcribe"
       ]
     }
+  },
+  {
+    "id": "bourrage-raw-sample",
+    "name": "Bourrage Raw Sample",
+    "type": "tool",
+    "description": "Bourrage predictor - send raw SAG mill signals to the clogging risk model",
+    "slogan": "bourrage-raw-sample",
+    "icon": "icons/bourrage.svg",
+    "integrations": {
+      "automation": [
+        "bourrage-raw-sample"
+      ]
+    }
   }
 ]
