@@ -1,0 +1,97 @@
+[
+  {
+    "name": "ab test",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "ewkitvrngj3tojqpze9z7igl",
+        "position": {
+          "x": 743,
+          "y": 62
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "ab-test",
+          "label": "A/B Test Calculator",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Performs A/B tests for proportions or means, calculating p-values, significance, and confidence intervals.",
+          "showRunningStatus": true,
+          "parameters": {
+            "kind": "proportions",
+            "alternative": "two-sided",
+            "xA": 1600,
+            "nA": 80000,
+            "xB": 1696,
+            "nB": 80000
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "i45r4uu3prifhflj0526tw29",
+        "position": {
+          "x": 494,
+          "y": 47.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "i45r4uu3prifhflj0526tw29",
+        "sourceHandle": "success",
+        "target": "ewkitvrngj3tojqpze9z7igl",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__i45r4uu3prifhflj0526tw29success-ewkitvrngj3tojqpze9z7iglinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1786465362632,
+    "updatedAt": 1786465700670,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
