@@ -1,0 +1,122 @@
+{
+  "name": "Normalize Whitespace Example",
+  "nodes": [
+    {
+      "id": "z7tzdtck43h7e9euvg7fa8ae",
+      "position": {
+        "x": 475.5,
+        "y": 296
+      },
+      "type": "trigger",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Triggers the workflow manually.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      }
+    },
+    {
+      "id": "yez5h2f6ck8km4y0jay4mfat",
+      "position": {
+        "x": 637.5,
+        "y": 264
+      },
+      "type": "action",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "normalize-whitespace",
+        "label": "Normalize Whitespace",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Normalize whitespace and remove control characters.",
+        "showRunningStatus": false,
+        "parameters": {
+          "data": "Hello     world\n\nThis    is     Fusion",
+          "preserveLineBreaks": false
+        },
+        "_morphing": false
+      }
+    },
+    {
+      "id": "c7bnagc3h4prq1l0eqxtj2b5",
+      "position": {
+        "x": 856.5,
+        "y": 286
+      },
+      "type": "display",
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "data": {
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      }
+    }
+  ],
+  "connections": [
+    {
+      "source": "z7tzdtck43h7e9euvg7fa8ae",
+      "sourceHandle": "success",
+      "target": "yez5h2f6ck8km4y0jay4mfat",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__z7tzdtck43h7e9euvg7fa8aesuccess-yez5h2f6ck8km4y0jay4mfatinput",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "source": "yez5h2f6ck8km4y0jay4mfat",
+      "sourceHandle": "success",
+      "target": "c7bnagc3h4prq1l0eqxtj2b5",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__yez5h2f6ck8km4y0jay4mfatsuccess-c7bnagc3h4prq1l0eqxtj2b5input",
+      "data": {
+        "isAnimated": false
+      }
+    }
+  ],
+  "version": 1,
+  "secrets": {}
+}
