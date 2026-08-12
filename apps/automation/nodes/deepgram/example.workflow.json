@@ -1,0 +1,259 @@
+[
+  {
+    "name": "Deepgram: Text to Speech1",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "dmmgslrteqfcklfp3ax89v8s",
+        "position": {
+          "x": 432.1259684465206,
+          "y": 348.1724687549142
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "twlzuvicx5gyjamrpzqf3t1s",
+        "position": {
+          "x": 737.3611637755226,
+          "y": 362.366546886515
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "bdvgtcr6l1cojlcst7mnxjsz",
+        "position": {
+          "x": 570.4791949416128,
+          "y": 290.41671272796003
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "deepgram",
+          "label": "Deepgram: Text to Speech",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert text to speech using Deepgram API (STT/TTS).",
+          "showRunningStatus": true,
+          "parameters": {
+            "apiKey": "5c8bd8285437d22c019593cff78cdf71a1dbcdfe",
+            "text": "Hello, welcome to our hotel. How can I help you today?",
+            "encoding": "mp3"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "eoezlmrn2tr2822gpaj7sqp1",
+        "position": {
+          "x": 236.01909982892835,
+          "y": 607.8078243473944
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "q10ym9yyiehd1h7ttaem0fwo",
+        "position": {
+          "x": 553.2542951579304,
+          "y": 634.0019024789951
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "y9t71qkhzh39ymi0utkghqcl",
+        "position": {
+          "x": 398.3723263240206,
+          "y": 574.0520683204402
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "deepgram",
+          "label": "Deepgram: Text to Speech1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert text to speech using Deepgram API (STT/TTS).",
+          "showRunningStatus": true,
+          "parameters": {
+            "apiKey": "5c8bd8285437d22c019593cff78cdf71a1dbcdfe",
+            "text": "Hello, welcome to our hotel. How can I help you today?",
+            "encoding": "linear16",
+            "voice": "Welcome to our hotel. We hope you enjoy your stay.",
+            "container": "wav"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "dmmgslrteqfcklfp3ax89v8s",
+        "sourceHandle": "success",
+        "target": "bdvgtcr6l1cojlcst7mnxjsz",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__dmmgslrteqfcklfp3ax89v8ssuccess-bdvgtcr6l1cojlcst7mnxjszinput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "bdvgtcr6l1cojlcst7mnxjsz",
+        "sourceHandle": "success",
+        "target": "twlzuvicx5gyjamrpzqf3t1s",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__bdvgtcr6l1cojlcst7mnxjszsuccess-twlzuvicx5gyjamrpzqf3t1sinput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "eoezlmrn2tr2822gpaj7sqp1",
+        "sourceHandle": "success",
+        "target": "y9t71qkhzh39ymi0utkghqcl",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "vtdodu9v7ue7p9msxvyqd70a",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "y9t71qkhzh39ymi0utkghqcl",
+        "sourceHandle": "success",
+        "target": "q10ym9yyiehd1h7ttaem0fwo",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "cahsimf7kr189u700jme4y32",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1786043142053,
+    "updatedAt": 1786466229727,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
