@@ -1,0 +1,1604 @@
+[
+  {
+    "name": "alpha vantage",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "gb99esi3c32frik7aveof91t",
+        "position": {
+          "x": 957.343872192007,
+          "y": -137.4139539924481
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "la2mm84a2x0xknayo4gesc80",
+        "position": {
+          "x": 956.8878067516541,
+          "y": -17.690634970727825
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "k9y6ns340ep1g04vfy1oynz1",
+        "position": {
+          "x": 953.874733131257,
+          "y": 119.93174131130125
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "rqr3bb6q42ydqoa3h0ojxh8r",
+        "position": {
+          "x": 948.3046513308159,
+          "y": 256.27561350330825
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "csz79y7q5tblba3govse4544",
+        "position": {
+          "x": 1445.1866769090425,
+          "y": -134.1241993937714
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "q79fg8mmvqfc92y0akat1r8r",
+        "position": {
+          "x": 1927.1866769090425,
+          "y": -127.37419939377139
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger14",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ulcbvurj4ikvc784a7gd4z8h",
+        "position": {
+          "x": 1440.8950991986233,
+          "y": 3.4981768882576674
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "yf5y4x74r4anvkx9uyiar7ea",
+        "position": {
+          "x": 1922.8950991986233,
+          "y": 10.24817688825766
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger14",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "h2kfoflhggl5hngu83cprfy0",
+        "position": {
+          "x": 1442.9960419383144,
+          "y": 129.61401636008821
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger6",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "j2udwo18zxolajlymsrpqfux",
+        "position": {
+          "x": 1924.9960419383144,
+          "y": 136.36401636008821
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger14",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "kjibtn87g3rzz7fxfxq7jrym",
+        "position": {
+          "x": 1437.4259601378733,
+          "y": 260.843872192007
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger7",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "fpikavkv7lkcfu70dg9pugwk",
+        "position": {
+          "x": 1919.4259601378733,
+          "y": 267.593872192007
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger14",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "f94ft8wrxgf0fgfqgcr3rs01",
+        "position": {
+          "x": 1433.1343824274543,
+          "y": 379.28868712370524
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger8",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "a8llehzjp9v2kj5l9coelxzp",
+        "position": {
+          "x": 1915.1343824274543,
+          "y": 386.03868712370524
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger14",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "o3ts77t4r7lzef8rljv2c586",
+        "position": {
+          "x": 946.2904224562346,
+          "y": 384.70324942669174
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger9",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "xjgv3pzebisipc4odnl02rdb",
+        "position": {
+          "x": 938.9427267743342,
+          "y": 526.85629013918
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger10",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "lpkl7wymbss35thrbkwp23b7",
+        "position": {
+          "x": 1431.1462722151468,
+          "y": 521.3317741694063
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger11",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "j7crmyo25kadw05sgk815394",
+        "position": {
+          "x": 1913.1462722151468,
+          "y": 528.0817741694063
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger14",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "u0cr8e0n2qe3duqeil320bp8",
+        "position": {
+          "x": 940.6559528196738,
+          "y": 674.4238931546547
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger12",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "yt898eyjpvubhqyqr8cvqgg5",
+        "position": {
+          "x": 1427.3899591241063,
+          "y": 670.7225568970077
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger13",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "jr1kel65lrno4mdxp3dphu8i",
+        "position": {
+          "x": 1909.3899591241063,
+          "y": 677.4725568970077
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger14",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "njphveraxc0rxgbrd9tkhnpb",
+        "position": {
+          "x": 1288.5463471348885,
+          "y": -140.81819634757971
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bar",
+          "label": "BAR API",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Bio-Analytic Resource API for plant genomics data, gene expression, interactions, and more.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getLlama",
+            "llamaGeneId": "AT3G18850"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "xx837kjnkhwexe7tmcz4wc0z",
+        "position": {
+          "x": 1288.0902816945356,
+          "y": -21.094877325859425
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bar",
+          "label": "BAR API1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Bio-Analytic Resource API for plant genomics data, gene expression, interactions, and more.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getEfpImageList"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "m2s6craxttsypzimhllpvzus",
+        "position": {
+          "x": 1285.0772080741385,
+          "y": 116.52749895616965
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bar",
+          "label": "BAR API2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Bio-Analytic Resource API for plant genomics data, gene expression, interactions, and more.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getEfpDataSource",
+            "efpSpecies": "sorghum"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "pcvco5wbjpjr2cnihk3se8b0",
+        "position": {
+          "x": 1279.5071262736974,
+          "y": 252.87137114817665
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bar",
+          "label": "BAR API3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Bio-Analytic Resource API for plant genomics data, gene expression, interactions, and more.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getEfpDir",
+            "efpSpecies": "sorghum"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "hv9n14dzoga3r4bdrw0aj21f",
+        "position": {
+          "x": 1776.389151851924,
+          "y": -132.41442538881478
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bar",
+          "label": "BAR API4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Bio-Analytic Resource API for plant genomics data, gene expression, interactions, and more.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getFastPhenoBands"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "i8wopnhx7ntmj6yd07pp42zf",
+        "position": {
+          "x": 2258.389151851924,
+          "y": -125.66442538881478
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bar",
+          "label": "BAR API14",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Bio-Analytic Resource API for plant genomics data, gene expression, interactions, and more.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "postInteractions",
+            "interactionsGenes": "[\"LOC_Os01g01080\", \"LOC_Os01g73310\"]"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "m8bo6tu0qh2ucfaqitp4caru",
+        "position": {
+          "x": 1772.0975741415048,
+          "y": 0.09393453312606681
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bar",
+          "label": "BAR API5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Bio-Analytic Resource API for plant genomics data, gene expression, interactions, and more.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getFastPhenoTrees"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "zp0od9cr4ekigdn121tbnqvi",
+        "position": {
+          "x": 2254.097574141505,
+          "y": 6.84393453312606
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bar",
+          "label": "BAR API14",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Bio-Analytic Resource API for plant genomics data, gene expression, interactions, and more.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getAllTags"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "th6grkuh57wm81l5alu89ib8",
+        "position": {
+          "x": 1774.198516881196,
+          "y": 126.20977400495661
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bar",
+          "label": "BAR API6",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Bio-Analytic Resource API for plant genomics data, gene expression, interactions, and more.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getGeneAnnotation"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "sa3y7yyrhmux8rrrywk139y8",
+        "position": {
+          "x": 2256.198516881196,
+          "y": 132.9597740049566
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bar",
+          "label": "BAR API14",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Bio-Analytic Resource API for plant genomics data, gene expression, interactions, and more.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getAllGrns"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ygpzkurv7ktzvgik2fg34d4m",
+        "position": {
+          "x": 1768.6284350807548,
+          "y": 257.4396298368754
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bar",
+          "label": "BAR API7",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Bio-Analytic Resource API for plant genomics data, gene expression, interactions, and more.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "postGeneAnnotation",
+            "geneAnnotationPayload": "{   \"species\": \"rice\",   \"genes\": [     \"LOC_Os01g01010\",     \"LOC_Os01g01050\"   ] }"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "he3sl1vvd81uyxzkoq6liats",
+        "position": {
+          "x": 2250.6284350807546,
+          "y": 264.1896298368754
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bar",
+          "label": "BAR API14",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Bio-Analytic Resource API for plant genomics data, gene expression, interactions, and more.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getAllPapers"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "h92hzyrqgr4u055kzgktyyzv",
+        "position": {
+          "x": 1764.3368573703358,
+          "y": 375.88444476857364
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bar",
+          "label": "BAR API8",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Bio-Analytic Resource API for plant genomics data, gene expression, interactions, and more.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "postGeneAliases"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "jv65x7lyltqmkys01kulskxk",
+        "position": {
+          "x": 2246.3368573703356,
+          "y": 382.63444476857364
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bar",
+          "label": "BAR API14",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Bio-Analytic Resource API for plant genomics data, gene expression, interactions, and more.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getPaper"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "kmj45iq1tekrd0pzm7eyihnz",
+        "position": {
+          "x": 1277.4928973991161,
+          "y": 381.29900707156014
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bar",
+          "label": "BAR API9",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Bio-Analytic Resource API for plant genomics data, gene expression, interactions, and more.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getEfpImage"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "tx56kn663k1l3kj9b430ay7o",
+        "position": {
+          "x": 1270.1452017172157,
+          "y": 523.4520477840484
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bar",
+          "label": "BAR API10",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Bio-Analytic Resource API for plant genomics data, gene expression, interactions, and more.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getEfpImageWithGene2"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "y4dajp7kvjzbkddmkt2gsb78",
+        "position": {
+          "x": 1762.3487471580283,
+          "y": 517.9275318142747
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bar",
+          "label": "BAR API11",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Bio-Analytic Resource API for plant genomics data, gene expression, interactions, and more.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "postGeneIsoforms",
+            "geneInfoTerms": "AT1G01010"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "tp8lb8enusk4qpeo2bhp5teh",
+        "position": {
+          "x": 2244.3487471580283,
+          "y": 524.6775318142747
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bar",
+          "label": "BAR API14",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Bio-Analytic Resource API for plant genomics data, gene expression, interactions, and more.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getPaperByAgi"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "kmcfbkcvjmvkakubkqtwlzmz",
+        "position": {
+          "x": 1293.7365843080756,
+          "y": 671.0196507995231
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bar",
+          "label": "BAR API12",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Bio-Analytic Resource API for plant genomics data, gene expression, interactions, and more.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getGeneIsoforms"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ay7i0x191e9d4ebdqlqkhk0d",
+        "position": {
+          "x": 1758.5924340669878,
+          "y": 667.3183145418761
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bar",
+          "label": "BAR API13",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Bio-Analytic Resource API for plant genomics data, gene expression, interactions, and more.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getGenePublications"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "rgvpqrrpmh0xknj2c727qoum",
+        "position": {
+          "x": 2240.592434066988,
+          "y": 674.0683145418761
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bar",
+          "label": "BAR API14",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Bio-Analytic Resource API for plant genomics data, gene expression, interactions, and more.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "postMFinder",
+            "interactionsMFinderData": "{   \"data\": [     [       \"AT5G67420\",       \"AT1G12110\"     ],     [       \"AT5G67420\",       \"AT1G08090\"     ]   ] }"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "gb99esi3c32frik7aveof91t",
+        "sourceHandle": "success",
+        "target": "wtafbgkqz5xxb0902qir78ph",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__gb99esi3c32frik7aveof91tsuccess-wtafbgkqz5xxb0902qir78phinput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "gb99esi3c32frik7aveof91t",
+        "sourceHandle": "success",
+        "target": "gz2oz05pfbdv62os50p3o7cc",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__gb99esi3c32frik7aveof91tsuccess-gz2oz05pfbdv62os50p3o7ccinput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "gb99esi3c32frik7aveof91t",
+        "sourceHandle": "success",
+        "target": "njphveraxc0rxgbrd9tkhnpb",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__gb99esi3c32frik7aveof91tsuccess-njphveraxc0rxgbrd9tkhnpbinput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "la2mm84a2x0xknayo4gesc80",
+        "sourceHandle": "success",
+        "target": "xx837kjnkhwexe7tmcz4wc0z",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "qu70qaultr4sifafoxmnvpff",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "k9y6ns340ep1g04vfy1oynz1",
+        "sourceHandle": "success",
+        "target": "m2s6craxttsypzimhllpvzus",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "eja7to1ox5mm6w6joj1dk7ug",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "rqr3bb6q42ydqoa3h0ojxh8r",
+        "sourceHandle": "success",
+        "target": "pcvco5wbjpjr2cnihk3se8b0",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ow1pd3aubbqj7gog2yb558yd",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "csz79y7q5tblba3govse4544",
+        "sourceHandle": "success",
+        "target": "hv9n14dzoga3r4bdrw0aj21f",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "e9m9314vcq9kbcvailohrbf8",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "ulcbvurj4ikvc784a7gd4z8h",
+        "sourceHandle": "success",
+        "target": "m8bo6tu0qh2ucfaqitp4caru",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "qswlu96rgtg83bvpxaius6ho",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "h2kfoflhggl5hngu83cprfy0",
+        "sourceHandle": "success",
+        "target": "th6grkuh57wm81l5alu89ib8",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "c0pmbf2xs8juv4cndbpyf03w",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "kjibtn87g3rzz7fxfxq7jrym",
+        "sourceHandle": "success",
+        "target": "ygpzkurv7ktzvgik2fg34d4m",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "bv2p5qnurosunbpdgqpqcxj7",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "f94ft8wrxgf0fgfqgcr3rs01",
+        "sourceHandle": "success",
+        "target": "h92hzyrqgr4u055kzgktyyzv",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "z75bbtmcdkdhaok2drhl57fl",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "o3ts77t4r7lzef8rljv2c586",
+        "sourceHandle": "success",
+        "target": "kmj45iq1tekrd0pzm7eyihnz",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "enbldwvccna19i1wt91z6hr2",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "xjgv3pzebisipc4odnl02rdb",
+        "sourceHandle": "success",
+        "target": "tx56kn663k1l3kj9b430ay7o",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "gfbojzkjy3r15opuw4a4rg8t",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "lpkl7wymbss35thrbkwp23b7",
+        "sourceHandle": "success",
+        "target": "y4dajp7kvjzbkddmkt2gsb78",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "dxrgzbyn5cjiulsjybeeu5rt",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "u0cr8e0n2qe3duqeil320bp8",
+        "sourceHandle": "success",
+        "target": "kmcfbkcvjmvkakubkqtwlzmz",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "lc4xi6q5fbrjlv06gf1i2x53",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "yt898eyjpvubhqyqr8cvqgg5",
+        "sourceHandle": "success",
+        "target": "ay7i0x191e9d4ebdqlqkhk0d",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "mu7kmzkqsvm6kzccz6hcr69d",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "q79fg8mmvqfc92y0akat1r8r",
+        "sourceHandle": "success",
+        "target": "i8wopnhx7ntmj6yd07pp42zf",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "s8spgtideju61fryd11decuk",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "yf5y4x74r4anvkx9uyiar7ea",
+        "sourceHandle": "success",
+        "target": "zp0od9cr4ekigdn121tbnqvi",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ed5ut55miqvxt2u2jmryh87j",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "j2udwo18zxolajlymsrpqfux",
+        "sourceHandle": "success",
+        "target": "sa3y7yyrhmux8rrrywk139y8",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "np8bipv6r1pog43ssz5bnffo",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "fpikavkv7lkcfu70dg9pugwk",
+        "sourceHandle": "success",
+        "target": "he3sl1vvd81uyxzkoq6liats",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "wq06qxkbxhotl1vb7ydjcavt",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "a8llehzjp9v2kj5l9coelxzp",
+        "sourceHandle": "success",
+        "target": "jv65x7lyltqmkys01kulskxk",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "t17ni977sk8823c5dex89f8g",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "j7crmyo25kadw05sgk815394",
+        "sourceHandle": "success",
+        "target": "tp8lb8enusk4qpeo2bhp5teh",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "cssyjp1ymp2kgsltxegaci05",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "jr1kel65lrno4mdxp3dphu8i",
+        "sourceHandle": "success",
+        "target": "rgvpqrrpmh0xknj2c727qoum",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "i15gvqe0f1wttypq3tx6kfpc",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1786526812359,
+    "updatedAt": 1786533425374,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
