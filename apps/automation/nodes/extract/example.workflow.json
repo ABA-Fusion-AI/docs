@@ -103,8 +103,8 @@
       {
         "id": "ri43cflua8flblrdkuysztfh",
         "position": {
-          "x": 763.3289388388218,
-          "y": 475.69821640263467
+          "x": 662.7136874140292,
+          "y": 370.34812961667524
         },
         "type": "action",
         "width": 64,
@@ -139,8 +139,8 @@
       {
         "id": "qkz2cztabyuqnh5svuu66dqj",
         "position": {
-          "x": 548.3289388388218,
-          "y": 518.6982164026347
+          "x": 447.71368741402915,
+          "y": 413.34812961667524
         },
         "type": "trigger",
         "width": 64,
@@ -167,8 +167,8 @@
       {
         "id": "tbt8l5ar3638k4z2g0s6heho",
         "position": {
-          "x": 947.3271542270969,
-          "y": 447.98520678881005
+          "x": 846.7119028023042,
+          "y": 342.6351200028506
         },
         "type": "display",
         "width": 256,
@@ -247,7 +247,7 @@
     "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
     "version": 1,
     "createdAt": 1786033217092,
-    "updatedAt": 1786377979317,
+    "updatedAt": 1786446840175,
     "publishedNames": [],
     "previousStatus": "running"
   }

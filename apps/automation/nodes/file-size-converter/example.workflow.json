@@ -1,0 +1,607 @@
+[
+  {
+    "name": "test File Size Converter",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "chom8zc1nzsc403za2htxaxc",
+        "position": {
+          "x": 532.271868108542,
+          "y": -389.3655360716065
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "file-size-converter",
+          "label": "File Size Converter",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert between all digital storage units (B, KB, MB, GB, TB, PB) with binary and decimal options",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "convert",
+            "fromUnit": "KB",
+            "toUnit": "B",
+            "value": 2048
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "j64l20p850e356op2tc42rls",
+        "position": {
+          "x": 212.41951065819592,
+          "y": -405.82862543419304
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "okuga7rn7hztqa9tc7ba98hc",
+        "position": {
+          "x": 817.8926808775947,
+          "y": -394.2178935219525
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "clcv0jr720dtj2xtkur171fp",
+        "position": {
+          "x": 562.1658363582507,
+          "y": 412.6366948926003
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "file-size-converter",
+          "label": "File Size Converter1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert between all digital storage units (B, KB, MB, GB, TB, PB) with binary and decimal options",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "convert",
+            "fromUnit": "KB",
+            "toUnit": "B",
+            "value": 1
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "pizuh9h4ujkd3sri0cevnmb9",
+        "position": {
+          "x": 240.16583635825066,
+          "y": 404.6366948926003
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "gdjwujrqtkgaaew8qdnwqsge",
+        "position": {
+          "x": 884.1658363582507,
+          "y": 417.6366948926003
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ie1ds9d09nwil9q2ur5z2mop",
+        "position": {
+          "x": 413.1395799335335,
+          "y": 705.4404788089576
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "file-size-converter",
+          "label": "File Size Converter2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert between all digital storage units (B, KB, MB, GB, TB, PB) with binary and decimal options",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "format",
+            "fromUnit": "B",
+            "toUnit": "KB",
+            "bytes": 1048576
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "cenq0iczppcd0glg89ogzfo9",
+        "position": {
+          "x": 91.13957993353353,
+          "y": 697.4404788089576
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "mpmpj41ns8sv0zxzbp041p23",
+        "position": {
+          "x": 746.5687638809865,
+          "y": 900.926877933173
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "x825q6jrtfcdrtaglryn4olr",
+        "position": {
+          "x": 695.2217352401187,
+          "y": 1288.3596100875645
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "file-size-converter",
+          "label": "File Size Converter3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert between all digital storage units (B, KB, MB, GB, TB, PB) with binary and decimal options",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "parse",
+            "sizeString": "1.5 GB"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ang3nzjfeu15mxxuzbbdq386",
+        "position": {
+          "x": 273.3191021449859,
+          "y": 1330.3109266351307
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "wihg7cjc24nc5c38na4m45ao",
+        "position": {
+          "x": 973.2645766782605,
+          "y": 1361.2934005922546
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "m83p35wqv4be5j0k950tyn5k",
+        "position": {
+          "x": 227.49153894901164,
+          "y": 1671.58456688798
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "f0xo4dycak4mz8uiy096zey4",
+        "position": {
+          "x": 476.4287492538737,
+          "y": 1668.4921791823294
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "file-size-converter",
+          "label": "File Size Converter4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert between all digital storage units (B, KB, MB, GB, TB, PB) with binary and decimal options",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "calculateTransferTime",
+            "sizeString": "1.5 GB",
+            "bytes": 1000,
+            "speedMbps": 0
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "my1g8z91ct6gnnzzbciqdjkt",
+        "position": {
+          "x": 771.7517751434928,
+          "y": 1683.9541177105816
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "j64l20p850e356op2tc42rls",
+        "sourceHandle": "success",
+        "target": "chom8zc1nzsc403za2htxaxc",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__j64l20p850e356op2tc42rlssuccess-chom8zc1nzsc403za2htxaxcinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "chom8zc1nzsc403za2htxaxc",
+        "sourceHandle": "success",
+        "target": "okuga7rn7hztqa9tc7ba98hc",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__chom8zc1nzsc403za2htxaxcsuccess-okuga7rn7hztqa9tc7ba98hcinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "pizuh9h4ujkd3sri0cevnmb9",
+        "sourceHandle": "success",
+        "target": "clcv0jr720dtj2xtkur171fp",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "p033lw0cnjbid2kx0y7r6xhm",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "clcv0jr720dtj2xtkur171fp",
+        "sourceHandle": "success",
+        "target": "gdjwujrqtkgaaew8qdnwqsge",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "psjjcsznr2w74mquthjn5jti",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "cenq0iczppcd0glg89ogzfo9",
+        "sourceHandle": "success",
+        "target": "ie1ds9d09nwil9q2ur5z2mop",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "w6po33t5uiwl0a9xm5aado8r",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ie1ds9d09nwil9q2ur5z2mop",
+        "sourceHandle": "success",
+        "target": "mpmpj41ns8sv0zxzbp041p23",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "d70p8brx77sxaemf1kreo398",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ang3nzjfeu15mxxuzbbdq386",
+        "sourceHandle": "success",
+        "target": "x825q6jrtfcdrtaglryn4olr",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ytz5fd4awl6t4kjykeczokzl",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "x825q6jrtfcdrtaglryn4olr",
+        "sourceHandle": "success",
+        "target": "wihg7cjc24nc5c38na4m45ao",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "tar9fms3zs70zg43nbtcb7el",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "m83p35wqv4be5j0k950tyn5k",
+        "sourceHandle": "success",
+        "target": "f0xo4dycak4mz8uiy096zey4",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__m83p35wqv4be5j0k950tyn5ksuccess-f0xo4dycak4mz8uiy096zey4input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "f0xo4dycak4mz8uiy096zey4",
+        "sourceHandle": "success",
+        "target": "my1g8z91ct6gnnzzbciqdjkt",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__f0xo4dycak4mz8uiy096zey4success-my1g8z91ct6gnnzzbciqdjktinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1786458860838,
+    "updatedAt": 1786529424700,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
