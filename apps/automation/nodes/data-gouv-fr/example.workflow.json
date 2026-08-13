@@ -1,0 +1,134 @@
+[
+  {
+    "name": "testdatagovefr",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "jifqqwoxpheu0y42q33kqsq0",
+        "position": {
+          "x": 690,
+          "y": 213
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "data-gouv-fr",
+          "label": "Data.gouv.fr",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and validate French addresses using the official French address API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "address": "8 Boulevard du Palais, 75001 Paris"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "c8zjd1wt67hh7374cle2efqt",
+        "position": {
+          "x": 490,
+          "y": 195.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "jpuyw8dhmpnd2o453kj6y42y",
+        "position": {
+          "x": 903,
+          "y": 201.5
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "c8zjd1wt67hh7374cle2efqt",
+        "sourceHandle": "success",
+        "target": "jifqqwoxpheu0y42q33kqsq0",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__c8zjd1wt67hh7374cle2efqtsuccess-jifqqwoxpheu0y42q33kqsq0input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "jifqqwoxpheu0y42q33kqsq0",
+        "sourceHandle": "success",
+        "target": "jpuyw8dhmpnd2o453kj6y42y",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__jifqqwoxpheu0y42q33kqsq0success-jpuyw8dhmpnd2o453kj6y42yinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1786612679653,
+    "updatedAt": 1786616472038,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
