@@ -1,0 +1,118 @@
+{
+  "name": "JS Escape Example",
+  "nodes": [
+    {
+      "id": "manual-trigger",
+      "position": {
+        "x": 475.5,
+        "y": 296
+      },
+      "type": "trigger",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Triggers the workflow manually.",
+        "showRunningStatus": false,
+        "parameters": {}
+      }
+    },
+    {
+      "id": "log",
+      "position": {
+        "x": 856.5,
+        "y": 286
+      },
+      "type": "display",
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "data": {
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "parameters": {}
+      }
+    },
+    {
+      "id": "js-escape",
+      "position": {
+        "x": 644.5,
+        "y": 320
+      },
+      "type": "action",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "js-escape",
+        "label": "JS Escape",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "JS-string-escape for safe output in JavaScript contexts.",
+        "showRunningStatus": false,
+        "parameters": {
+          "data": "Hello Fusion\tAI"
+        }
+      }
+    }
+  ],
+  "connections": [
+    {
+      "source": "manual-trigger",
+      "sourceHandle": "success",
+      "target": "js-escape",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "manual-trigger-success-js-escape-input",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "source": "js-escape",
+      "sourceHandle": "success",
+      "target": "log",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "js-escape-success-log-input",
+      "data": {
+        "isAnimated": false
+      }
+    }
+  ],
+  "version": 1,
+  "secrets": {}
+}
