@@ -1,0 +1,836 @@
+[
+  {
+    "name": "moroccan-rib-validator",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "ae4cnxltp0mv68ej7dmchgr1",
+        "position": {
+          "x": -42,
+          "y": 120.515625
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "u467ro063ib5a4hp3g799m5d",
+        "position": {
+          "x": 366.0226024269704,
+          "y": 203.05493033290466
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "sxf2fdk1r01l1b8nip83rr1y",
+        "position": {
+          "x": 122.75386244626154,
+          "y": 149.08883397336032
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "moroccan-rib-validator",
+          "label": "Moroccan RIB Validator",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Validate Moroccan RIB (Relevé d'Identité Bancaire) with bank detection",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "validateRIB",
+            "rib": "007780123456789012345673"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ehw9mk969egmxjydg2gn08c6",
+        "position": {
+          "x": -118.23034954058325,
+          "y": 394.1301306496109
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "icv2far97evjhilnkr11vaev",
+        "position": {
+          "x": 301.79225288638713,
+          "y": 488.66943598251555
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "bhju84cb9k5e46kgfqv7asep",
+        "position": {
+          "x": 70.52351290567829,
+          "y": 446.7033396229712
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "moroccan-rib-validator",
+          "label": "Moroccan RIB Validator1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Validate Moroccan RIB (Relevé d'Identité Bancaire) with bank detection",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "validateRIB",
+            "rib": "007780123456789012345672"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "b7z82uc8wrq2ho6sxkt9sdnf",
+        "position": {
+          "x": -190.1062493022813,
+          "y": 604.4369159514702
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "fr7i6o0z8z1gwm9kocnukbkk",
+        "position": {
+          "x": 229.91635312468915,
+          "y": 698.9762212843748
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "iovr2juuz14jrstyp467ermb",
+        "position": {
+          "x": -1.35238685601972,
+          "y": 657.0101249248305
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "moroccan-rib-validator",
+          "label": "Moroccan RIB Validator2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Validate Moroccan RIB (Relevé d'Identité Bancaire) with bank detection",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getAllBanks"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "r976rexonty0v87unr47oisc",
+        "position": {
+          "x": -230.33659884286453,
+          "y": 914.0514216010811
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "p939xxlr7gg7uojyb9ym7ndi",
+        "position": {
+          "x": 201.68600358410586,
+          "y": 1020.5907269339857
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "x51qgdvgat1cdqe7v00rvusa",
+        "position": {
+          "x": -17.582736396602968,
+          "y": 990.6246305744414
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "moroccan-rib-validator",
+          "label": "Moroccan RIB Validator2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Validate Moroccan RIB (Relevé d'Identité Bancaire) with bank detection",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getBankInfo",
+            "bankCode": "007"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "xdpe8v85dc3wxwo0l9kdcldg",
+        "position": {
+          "x": -312.86728767677687,
+          "y": 1145.01344668104
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "wll32t44mok96c96gnxrl98q",
+        "position": {
+          "x": 107.15531475019355,
+          "y": 1239.5527520139447
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "jgcjtmycbfokoiipz0ubxj3g",
+        "position": {
+          "x": -124.11342523051533,
+          "y": 1197.5866556544004
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "moroccan-rib-validator",
+          "label": "Moroccan RIB Validator3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Validate Moroccan RIB (Relevé d'Identité Bancaire) with bank detection",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "formatRIB",
+            "rib": "007780123456789012345673"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "i2h7cy3018oaj4r8hlpxf88v",
+        "position": {
+          "x": -314.06207114295006,
+          "y": 1441.6538862125378
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "uvk93fz3iw0mn9khbvwm13ua",
+        "position": {
+          "x": -342.06207114295006,
+          "y": 1675.6538862125378
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "niuz3rch5ibd4zvl29gk79xq",
+        "position": {
+          "x": 117.96053128402036,
+          "y": 1548.1931915454425
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "atjshrg1a0a5tdznot26ks96",
+        "position": {
+          "x": 89.96053128402036,
+          "y": 1782.1931915454425
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "vemgmiv9gy8kuw7h3yokjam2",
+        "position": {
+          "x": -101.3082086966885,
+          "y": 1518.2270951858982
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "moroccan-rib-validator",
+          "label": "Moroccan RIB Validator4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Validate Moroccan RIB (Relevé d'Identité Bancaire) with bank detection",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "validateRIB",
+            "rib": "1234"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "fep900fcceronnrlkwwgd4zd",
+        "position": {
+          "x": -129.3082086966885,
+          "y": 1752.2270951858982
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "moroccan-rib-validator",
+          "label": "Moroccan RIB Validator5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Validate Moroccan RIB (Relevé d'Identité Bancaire) with bank detection",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getBankInfo",
+            "bankCode": "999"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "ae4cnxltp0mv68ej7dmchgr1",
+        "sourceHandle": "success",
+        "target": "sxf2fdk1r01l1b8nip83rr1y",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ae4cnxltp0mv68ej7dmchgr1success-sxf2fdk1r01l1b8nip83rr1yinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "sxf2fdk1r01l1b8nip83rr1y",
+        "sourceHandle": "success",
+        "target": "u467ro063ib5a4hp3g799m5d",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__sxf2fdk1r01l1b8nip83rr1ysuccess-u467ro063ib5a4hp3g799m5dinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ehw9mk969egmxjydg2gn08c6",
+        "sourceHandle": "success",
+        "target": "bhju84cb9k5e46kgfqv7asep",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "qw5vh3z5xwez9bdaafc7bwo0",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "bhju84cb9k5e46kgfqv7asep",
+        "sourceHandle": "success",
+        "target": "icv2far97evjhilnkr11vaev",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "lmig7dyhraiykc50yhm3vei5",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "b7z82uc8wrq2ho6sxkt9sdnf",
+        "sourceHandle": "success",
+        "target": "iovr2juuz14jrstyp467ermb",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "n7le0fm2gbcp47kqqm1yfdb2",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "iovr2juuz14jrstyp467ermb",
+        "sourceHandle": "success",
+        "target": "fr7i6o0z8z1gwm9kocnukbkk",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "khb6jox1kxwox1tnze6sbx8e",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "r976rexonty0v87unr47oisc",
+        "sourceHandle": "success",
+        "target": "x51qgdvgat1cdqe7v00rvusa",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "hvyrfwuomvz7k48dna4svqzo",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "x51qgdvgat1cdqe7v00rvusa",
+        "sourceHandle": "success",
+        "target": "p939xxlr7gg7uojyb9ym7ndi",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "am497ngp8mbs7tha3ig44ngh",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "xdpe8v85dc3wxwo0l9kdcldg",
+        "sourceHandle": "success",
+        "target": "jgcjtmycbfokoiipz0ubxj3g",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "jify1yl67utrwz1urbvyb3wo",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "jgcjtmycbfokoiipz0ubxj3g",
+        "sourceHandle": "success",
+        "target": "wll32t44mok96c96gnxrl98q",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "azt8bfdi8048tmlh7xwpxa6p",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "i2h7cy3018oaj4r8hlpxf88v",
+        "sourceHandle": "success",
+        "target": "vemgmiv9gy8kuw7h3yokjam2",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "r7xfaag6cvmnm0jh7sbk8dsr",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "vemgmiv9gy8kuw7h3yokjam2",
+        "sourceHandle": "success",
+        "target": "niuz3rch5ibd4zvl29gk79xq",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ugh0bo6hfe88t6pobd49ltbo",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "uvk93fz3iw0mn9khbvwm13ua",
+        "sourceHandle": "success",
+        "target": "fep900fcceronnrlkwwgd4zd",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "eqidquhh1ijnumo46r4808of",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "fep900fcceronnrlkwwgd4zd",
+        "sourceHandle": "success",
+        "target": "atjshrg1a0a5tdznot26ks96",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "fz6tr6os6vo4tbl9o3a2mn1o",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1786610026613,
+    "updatedAt": 1786611286142,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
