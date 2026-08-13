@@ -1,91 +1,604 @@
-{
-  "name": "Use Brandfetch",
-  "nodes": [
-    {
-      "id": "trigger",
-      "type": "trigger",
-      "position": {
-        "x": 80,
-        "y": 160
-      },
-      "data": {
-        "name": "manual-trigger",
-        "label": "Run",
-        "inputs": {},
-        "outputs": {
-          "success": {
-            "label": "Success"
-          },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "integration",
-      "type": "action",
-      "position": {
-        "x": 300,
-        "y": 160
-      },
-      "data": {
-        "name": "brandfetch",
-        "label": "Brandfetch",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+[
+  {
+    "name": "Brandfetch",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "v6dbtpolxyp4dyxod69gh6kr",
+        "position": {
+          "x": 409,
+          "y": 104.515625
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "brandfetch",
+          "label": "Brandfetch",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
           },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "output",
-      "type": "display",
-      "position": {
-        "x": 520,
-        "y": 160
-      },
-      "data": {
-        "name": "log",
-        "label": "Result",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Retrieve brand data including logos, colors, and fonts from Brandfetch.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getBrand",
+            "apiKey": "",
+            "domain": "nike.com"
+          },
+          "_morphing": false
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
-          }
+        "selected": false
+      },
+      {
+        "id": "p6zgmwa8ry1hsoy2vg4clxmm",
+        "position": {
+          "x": 139,
+          "y": 73.0234375
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "g8oe1fiqplndxtsjk5nqpktf",
+        "position": {
+          "x": 738,
+          "y": 113.0234375
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "pitp74wz6mm62nz50agogysb",
+        "position": {
+          "x": 394.83333333333326,
+          "y": 278.6927083333333
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "brandfetch",
+          "label": "Brandfetch1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Retrieve brand data including logos, colors, and fonts from Brandfetch.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "searchBrands",
+            "apiKey": "",
+            "domain": "nike.com"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "lmahcmvo624yqhl13w2sq6r8",
+        "position": {
+          "x": 136.83333333333331,
+          "y": 259.2005208333333
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "r0k3pvu81d849losx1by7ryn",
+        "position": {
+          "x": 747.8333333333333,
+          "y": 311.2005208333333
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "xzeluyb3livzoh4sqdzz8bgx",
+        "position": {
+          "x": 317.8333333333333,
+          "y": 455.1927083333333
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "brandfetch",
+          "label": "Brandfetch2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Retrieve brand data including logos, colors, and fonts from Brandfetch.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getLogos",
+            "apiKey": "",
+            "domain": "nike.com"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "o8rsnx4o0qgmtpt9f3jsc55k",
+        "position": {
+          "x": 59.833333333333314,
+          "y": 435.7005208333333
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "wwe3tbliyaptm28so16dsmrn",
+        "position": {
+          "x": 670.8333333333333,
+          "y": 487.7005208333333
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "cjxxgp99gv125xsk7sn9atn0",
+        "position": {
+          "x": 322.8333333333333,
+          "y": 644.1927083333333
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "brandfetch",
+          "label": "Brandfetch3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Retrieve brand data including logos, colors, and fonts from Brandfetch.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getColors",
+            "apiKey": "",
+            "domain": "nike.com"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "w23dgal2ochzkqnjdm0nfkls",
+        "position": {
+          "x": 64.83333333333331,
+          "y": 624.7005208333333
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ol2qbho2w52py23xrutyuum5",
+        "position": {
+          "x": 675.8333333333333,
+          "y": 676.7005208333334
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "z7tuptabxfrddye8wvq8homs",
+        "position": {
+          "x": 288.6728214393149,
+          "y": 830.0839089886708
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "brandfetch",
+          "label": "Brandfetch4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Retrieve brand data including logos, colors, and fonts from Brandfetch.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getFonts",
+            "apiKey": "",
+            "domain": "nike.com"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "i643y9u7cc68w8a5kvp8rg6f",
+        "position": {
+          "x": 42.139618867972466,
+          "y": 821.2940657554179
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ksfaiqchsjoxdbipox5zava0",
+        "position": {
+          "x": 675.3087605633771,
+          "y": 858.0050025172078
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "p6zgmwa8ry1hsoy2vg4clxmm",
+        "sourceHandle": "success",
+        "target": "v6dbtpolxyp4dyxod69gh6kr",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__p6zgmwa8ry1hsoy2vg4clxmmsuccess-v6dbtpolxyp4dyxod69gh6krinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "v6dbtpolxyp4dyxod69gh6kr",
+        "sourceHandle": "success",
+        "target": "g8oe1fiqplndxtsjk5nqpktf",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__v6dbtpolxyp4dyxod69gh6krsuccess-g8oe1fiqplndxtsjk5nqpktfinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "lmahcmvo624yqhl13w2sq6r8",
+        "sourceHandle": "success",
+        "target": "pitp74wz6mm62nz50agogysb",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "gc53kzm5ksxw9ntmqrr4klp1",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "pitp74wz6mm62nz50agogysb",
+        "sourceHandle": "success",
+        "target": "r0k3pvu81d849losx1by7ryn",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "e9z5k8iwka6v27icm0y4edzt",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "o8rsnx4o0qgmtpt9f3jsc55k",
+        "sourceHandle": "success",
+        "target": "xzeluyb3livzoh4sqdzz8bgx",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "oq5ky5y1y9tkz9oq1691c66s",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "xzeluyb3livzoh4sqdzz8bgx",
+        "sourceHandle": "success",
+        "target": "wwe3tbliyaptm28so16dsmrn",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "bx3rb7q66fm1f8xj3p1f4rax",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "w23dgal2ochzkqnjdm0nfkls",
+        "sourceHandle": "success",
+        "target": "cjxxgp99gv125xsk7sn9atn0",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "jplnw4vfp3ww9pxj2z2i8xkg",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "cjxxgp99gv125xsk7sn9atn0",
+        "sourceHandle": "success",
+        "target": "ol2qbho2w52py23xrutyuum5",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "udz0g1nwmx1gln0xeduns4fp",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "i643y9u7cc68w8a5kvp8rg6f",
+        "sourceHandle": "success",
+        "target": "z7tuptabxfrddye8wvq8homs",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xsy9orhxe3z1igk4r0oacyuq",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "z7tuptabxfrddye8wvq8homs",
+        "sourceHandle": "success",
+        "target": "ksfaiqchsjoxdbipox5zava0",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "gvn88m1k5ce89d8hug02rx5a",
+        "data": {
+          "isAnimated": false
         }
       }
-    }
-  ],
-  "connections": [
-    {
-      "id": "trigger-integration",
-      "type": "directed",
-      "source": "trigger",
-      "target": "integration",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    },
-    {
-      "id": "integration-output",
-      "type": "directed",
-      "source": "integration",
-      "target": "output",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    }
-  ]
-}
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1786572435114,
+    "updatedAt": 1786579872765,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
