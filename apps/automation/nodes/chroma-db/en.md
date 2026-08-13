@@ -1,5 +1,5 @@
 ---
-node_id: "chromadb-manager"
+node_id: "chroma-db"
 title: "ChromaDB Manager"
 description: "Manage collections, add documents, and query ChromaDB."
 category: "Vector Database"
