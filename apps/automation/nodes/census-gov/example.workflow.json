@@ -1,0 +1,253 @@
+[
+  {
+    "name": "test census-gov",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "oy2o89jux3fq6n7amo23v61c",
+        "position": {
+          "x": 679,
+          "y": 250
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "census-gov",
+          "label": "Census.gov",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get US Census data from Census.gov API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "get": "NAME,P1_001N",
+            "for": "state:06",
+            "key": "8d38e30e1feafae195d6cde54b2c963191366bce"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "kcasa1x8u41k28fcpeo0zv4f",
+        "position": {
+          "x": 432,
+          "y": 233
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "wok30w09jsnimao6l24o90nl",
+        "position": {
+          "x": 913,
+          "y": 223
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "qdbsvgefepfllrlw1njmmxbu",
+        "position": {
+          "x": 665.1974452987725,
+          "y": 805.1476768883945
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "census-gov",
+          "label": "Census.gov1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get US Census data from Census.gov API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "get": "NAME,P1_001N,P1_003N,P1_004N",
+            "for": "state:*",
+            "key": "8d38e30e1feafae195d6cde54b2c963191366bce"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "x90efr5hhl2r1pz4sdc4x2fe",
+        "position": {
+          "x": 430.19744529877255,
+          "y": 800.1476768883945
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "nevmap6eu9paiggln2jxwq01",
+        "position": {
+          "x": 923.1974452987725,
+          "y": 802.1476768883945
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "kcasa1x8u41k28fcpeo0zv4f",
+        "sourceHandle": "success",
+        "target": "oy2o89jux3fq6n7amo23v61c",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__kcasa1x8u41k28fcpeo0zv4fsuccess-oy2o89jux3fq6n7amo23v61cinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "oy2o89jux3fq6n7amo23v61c",
+        "sourceHandle": "success",
+        "target": "wok30w09jsnimao6l24o90nl",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__oy2o89jux3fq6n7amo23v61csuccess-wok30w09jsnimao6l24o90nlinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "x90efr5hhl2r1pz4sdc4x2fe",
+        "sourceHandle": "success",
+        "target": "qdbsvgefepfllrlw1njmmxbu",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "mgftnxei4rhwr0l35a7sku8m",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "qdbsvgefepfllrlw1njmmxbu",
+        "sourceHandle": "success",
+        "target": "nevmap6eu9paiggln2jxwq01",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "trpv63719s32nc7nlzfz4w8m",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1786623201021,
+    "updatedAt": 1786623666933,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
