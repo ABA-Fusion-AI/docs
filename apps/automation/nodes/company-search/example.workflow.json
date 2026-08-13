@@ -1,0 +1,367 @@
+[
+    {
+        "name": "company-search",
+        "variables": {},
+        "secrets": {},
+        "nodes": [
+            {
+                "id": "kt32jmhlnortzjo4a8ss36y3",
+                "position": {
+                    "x": 607,
+                    "y": 117.515625
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "company-search",
+                    "label": "Company Search",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Search for Moroccan company information using Maroc Facture and/or Charika.ma APIs.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "source": "maroc-facture",
+                        "companyName": "Maroc Telecom"
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "o0mlv9ytdw9g9x5zkmg5m98l",
+                "position": {
+                    "x": 361,
+                    "y": 77.515625
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "ka2w1bvkyo452nngsoje8lpy",
+                "position": {
+                    "x": 929,
+                    "y": 187.515625
+                },
+                "type": "display",
+                "width": 256,
+                "height": 100,
+                "dragHandle": ".drag-handle__custom",
+                "data": {
+                    "name": "log",
+                    "label": "Log",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": false
+                        }
+                    },
+                    "description": "Logs the input data to the console.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "gs3f24c0r6a3u93hzdsylg0x",
+                "position": {
+                    "x": 480.66666666666663,
+                    "y": 337.515625
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "company-search",
+                    "label": "Company Search1",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Search for Moroccan company information using Maroc Facture and/or Charika.ma APIs.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "source": "combined",
+                        "companyName": "Maroc Telecom"
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "j68d6f7cj4zeb8zf323c50pk",
+                "position": {
+                    "x": 246.66666666666663,
+                    "y": 309.515625
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger1",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "lmfupab6t2f0qeauhj6vtfjt",
+                "position": {
+                    "x": 826.6666666666666,
+                    "y": 431.515625
+                },
+                "type": "display",
+                "width": 256,
+                "height": 100,
+                "dragHandle": ".drag-handle__custom",
+                "data": {
+                    "name": "log",
+                    "label": "Log1",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": false
+                        }
+                    },
+                    "description": "Logs the input data to the console.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "txcz8wn8zt79309hl6j3vqlt",
+                "position": {
+                    "x": 441.66666666666663,
+                    "y": 642.515625
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "company-search",
+                    "label": "Company Search2",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Search for Moroccan company information using Maroc Facture and/or Charika.ma APIs.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "source": "charika",
+                        "companyName": "Ita telecom maroc "
+                    },
+                    "_morphing": false
+                },
+                "selected": true
+            },
+            {
+                "id": "rsgbsv4fdx05mxu1u0zzzkls",
+                "position": {
+                    "x": 207.66666666666663,
+                    "y": 614.515625
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger2",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "vo4ekm2khy0rgx94y1bkdh4b",
+                "position": {
+                    "x": 787.6666666666666,
+                    "y": 736.515625
+                },
+                "type": "display",
+                "width": 256,
+                "height": 100,
+                "dragHandle": ".drag-handle__custom",
+                "data": {
+                    "name": "log",
+                    "label": "Log2",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": false
+                        }
+                    },
+                    "description": "Logs the input data to the console.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            }
+        ],
+        "connections": [
+            {
+                "source": "kt32jmhlnortzjo4a8ss36y3",
+                "sourceHandle": "success",
+                "target": "ka2w1bvkyo452nngsoje8lpy",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__kt32jmhlnortzjo4a8ss36y3success-ka2w1bvkyo452nngsoje8lpyinput",
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "o0mlv9ytdw9g9x5zkmg5m98l",
+                "sourceHandle": "success",
+                "target": "kt32jmhlnortzjo4a8ss36y3",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__o0mlv9ytdw9g9x5zkmg5m98lsuccess-kt32jmhlnortzjo4a8ss36y3input",
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "gs3f24c0r6a3u93hzdsylg0x",
+                "sourceHandle": "success",
+                "target": "lmfupab6t2f0qeauhj6vtfjt",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "fgxum7823gbwb3yans0hi5e6",
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "j68d6f7cj4zeb8zf323c50pk",
+                "sourceHandle": "success",
+                "target": "gs3f24c0r6a3u93hzdsylg0x",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "l9fyc65tqb0yja3fiqcpxpdj",
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "txcz8wn8zt79309hl6j3vqlt",
+                "sourceHandle": "success",
+                "target": "vo4ekm2khy0rgx94y1bkdh4b",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "z1705kxuagqqdelm4b8lm854",
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "rsgbsv4fdx05mxu1u0zzzkls",
+                "sourceHandle": "success",
+                "target": "txcz8wn8zt79309hl6j3vqlt",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "z0hhgsn1jsc9bs87a3obd3ru",
+                "data": {
+                    "isAnimated": false
+                }
+            }
+        ],
+        "status": "stopped",
+        "tracingEnabled": true,
+        "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+        "version": 1,
+        "createdAt": 1786577947377,
+        "updatedAt": 1786578654311,
+        "publishedNames": [],
+        "previousStatus": "running"
+    }
+]
