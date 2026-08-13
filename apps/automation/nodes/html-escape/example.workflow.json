@@ -1,0 +1,126 @@
+[
+  {
+    "name": "HTML Escape Example",
+    "nodes": [
+      {
+        "id": "0ec49994-c2c7-4444-b154-7b3e5408dbf6",
+        "position": {
+          "x": 475.5,
+          "y": 296
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "zic1tsrmpvr8di0usny5b7ht",
+        "position": {
+          "x": 635.5,
+          "y": 294
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "html-escape",
+          "label": "HTML Escape",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "HTML-escape string for safe output.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "&<>\"'"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "7c6fb70c-c9f8-4613-8905-2285179e3c7a",
+        "position": {
+          "x": 823.5,
+          "y": 289
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "0ec49994-c2c7-4444-b154-7b3e5408dbf6",
+        "sourceHandle": "success",
+        "target": "zic1tsrmpvr8di0usny5b7ht",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "manual-trigger-to-html-escape",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "zic1tsrmpvr8di0usny5b7ht",
+        "sourceHandle": "success",
+        "target": "7c6fb70c-c9f8-4613-8905-2285179e3c7a",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "html-escape-to-log",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "version": 1,
+    "secrets": {}
+  }
+]
