@@ -1,0 +1,131 @@
+[
+  {
+    "name": "Break-Even Calculator Example",
+    "nodes": [
+      {
+        "id": "0c9781ee-7e48-4f7c-9edb-3bd81dd3015f",
+        "position": {
+          "x": 479.5,
+          "y": 468
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "pogsurusnmjj36h826ozmros",
+        "position": {
+          "x": 648,
+          "y": 588
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "break-even-calculator",
+          "label": "Break-Even Calculator",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Calculate break-even point, contribution margin, and margin of safety",
+          "showRunningStatus": true,
+          "parameters": {
+            "fixedCosts": 10000,
+            "variableCostPerUnit": 5,
+            "pricePerUnit": 10,
+            "units": 2500
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "3ecf8966-b5dd-4076-9515-b5546aebbc23",
+        "position": {
+          "x": 824.5,
+          "y": 461
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "0c9781ee-7e48-4f7c-9edb-3bd81dd3015f",
+        "sourceHandle": "success",
+        "target": "pogsurusnmjj36h826ozmros",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "manual-trigger-to-break-even-calculator",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "pogsurusnmjj36h826ozmros",
+        "sourceHandle": "success",
+        "target": "3ecf8966-b5dd-4076-9515-b5546aebbc23",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "break-even-calculator-to-log",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "version": 1,
+    "secrets": {},
+    "status": "stopped",
+    "publishedNames": []
+  }
+]
