@@ -1,0 +1,92 @@
+[
+  {
+    "name": "pixabay",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "sd5rca8sxwhvutli9dkzvcpp",
+        "position": {
+          "x": 512,
+          "y": 159
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "pixabay-image-search",
+          "label": "Pixabay Image Search",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search for free stock images from Pixabay.",
+          "showRunningStatus": true,
+          "parameters": {
+            "query": "dog"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "fibfcsta3ur63h8akdyfrqmr",
+        "position": {
+          "x": 330,
+          "y": 180.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "fibfcsta3ur63h8akdyfrqmr",
+        "sourceHandle": "success",
+        "target": "sd5rca8sxwhvutli9dkzvcpp",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__fibfcsta3ur63h8akdyfrqmrsuccess-sd5rca8sxwhvutli9dkzvcppinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1786961150392,
+    "updatedAt": 1786961512862,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
