@@ -1,0 +1,4 @@
+{
+  "label": "URL Encode",
+  "description": "URL-encode string (encode or encodeComponent mode)."
+}

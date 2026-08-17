@@ -1,0 +1,122 @@
+{
+  "name": "URL Encode Example",
+  "nodes": [
+    {
+      "id": "zrquhhyekmvxhx3b7v4djjx5",
+      "position": {
+        "x": 479.5,
+        "y": 468
+      },
+      "type": "trigger",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Triggers the workflow manually.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      }
+    },
+    {
+      "id": "ui0wu6xdat0n8kgh59v0ccu8",
+      "position": {
+        "x": 645.5,
+        "y": 487
+      },
+      "type": "action",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "url-encode",
+        "label": "URL Encode",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "URL-encode string (encode or encodeComponent mode).",
+        "showRunningStatus": false,
+        "parameters": {
+          "value": "https://example.com/search?q=hello world&lang=fr",
+          "mode": "encodeComponent"
+        },
+        "_morphing": false
+      }
+    },
+    {
+      "id": "j198zh9yv933sodlahxoydrh",
+      "position": {
+        "x": 771.5,
+        "y": 460
+      },
+      "type": "display",
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "data": {
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      }
+    }
+  ],
+  "connections": [
+    {
+      "source": "zrquhhyekmvxhx3b7v4djjx5",
+      "sourceHandle": "success",
+      "target": "ui0wu6xdat0n8kgh59v0ccu8",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__zrquhhyekmvxhx3b7v4djjx5success-ui0wu6xdat0n8kgh59v0ccu8input",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "source": "ui0wu6xdat0n8kgh59v0ccu8",
+      "sourceHandle": "success",
+      "target": "j198zh9yv933sodlahxoydrh",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__ui0wu6xdat0n8kgh59v0ccu8success-j198zh9yv933sodlahxoydrhinput",
+      "data": {
+        "isAnimated": false
+      }
+    }
+  ],
+  "version": 1,
+  "secrets": {}
+}
