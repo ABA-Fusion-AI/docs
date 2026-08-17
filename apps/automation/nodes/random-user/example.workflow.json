@@ -1,0 +1,719 @@
+[
+  {
+    "name": "RandomUser",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "zikaat0je9khnbqc3k8l1hmd",
+        "position": {
+          "x": 324,
+          "y": 118
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "j8vpt6qf281f3bete043k5p7",
+        "position": {
+          "x": 760,
+          "y": 102
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ettuum4d5anc9alonto5fxt4",
+        "position": {
+          "x": 524,
+          "y": 141
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "random-user",
+          "label": "RandomUser",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Generate random user data using the RandomUser API.",
+          "showRunningStatus": true,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "pwd3f5kg1nsqh5kp7ssh8cxi",
+        "position": {
+          "x": 275.661507626937,
+          "y": 376.4780708716094
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "w25ybsnbjf5vb8rpoawxfn9a",
+        "position": {
+          "x": 723.661507626937,
+          "y": 372.4780708716094
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "iobbm7ym8y9r117w1rakhcev",
+        "position": {
+          "x": 499.661507626937,
+          "y": 423.4780708716094
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "random-user",
+          "label": "RandomUser1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Generate random user data using the RandomUser API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "results": 3,
+            "gender": "female "
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ncxt993pq5n2ig3qfd9rjy4l",
+        "position": {
+          "x": 259.4164600130206,
+          "y": 605.5332422278302
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "qn834g1lwd5d2mh9z2hsxe6v",
+        "position": {
+          "x": 707.4164600130206,
+          "y": 601.5332422278302
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "qzwcn8y25hfhjshdo82ftuqr",
+        "position": {
+          "x": 483.4164600130206,
+          "y": 652.5332422278302
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "random-user",
+          "label": "RandomUser2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Generate random user data using the RandomUser API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "gender": "male",
+            "results": 3
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "rcajl4hlsd25zo2sj9lmp8l2",
+        "position": {
+          "x": 212.3058219326632,
+          "y": 860.5804897663171
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "mwkvenmf71ru0reggwhnfr4n",
+        "position": {
+          "x": 660.3058219326631,
+          "y": 856.5804897663171
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "zb4l1p4f6f9qp1s5cwyflv3z",
+        "position": {
+          "x": 436.3058219326632,
+          "y": 907.5804897663171
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "random-user",
+          "label": "RandomUser3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Generate random user data using the RandomUser API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "nat": "FR",
+            "gender": "male",
+            "results": 2
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "cbf2b2bf80apnyi5ltop8h4y",
+        "position": {
+          "x": 154.282634205764,
+          "y": 1101.9472551066222
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "p7qba46aeds6coijfi1hnvgc",
+        "position": {
+          "x": 390.2826342057641,
+          "y": 1160.9472551066222
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "random-user",
+          "label": "RandomUser4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Generate random user data using the RandomUser API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "nat": "US,FR,ES,GB",
+            "results": 5
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "m6avg7sdjojhv90zz12e5d4r",
+        "position": {
+          "x": 658.3017672700837,
+          "y": 1172.6652459238933
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ay5s1gcgyphfpcbamhwtmojc",
+        "position": {
+          "x": 138.399798918428,
+          "y": 1341.920044480313
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "e9jibsh3olonhrqu1khu7mr4",
+        "position": {
+          "x": 386.39979891842813,
+          "y": 1412.920044480313
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "random-user",
+          "label": "RandomUser5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Generate random user data using the RandomUser API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "nat": "US,FR,ES,GB",
+            "results": 0,
+            "gender": "test"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "l8593gohbsbfifyw20vrh7er",
+        "position": {
+          "x": 675.8712522253472,
+          "y": 1412.0494784393602
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "zikaat0je9khnbqc3k8l1hmd",
+        "sourceHandle": "success",
+        "target": "ettuum4d5anc9alonto5fxt4",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__zikaat0je9khnbqc3k8l1hmdsuccess-ettuum4d5anc9alonto5fxt4input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ettuum4d5anc9alonto5fxt4",
+        "sourceHandle": "success",
+        "target": "j8vpt6qf281f3bete043k5p7",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ettuum4d5anc9alonto5fxt4success-j8vpt6qf281f3bete043k5p7input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "pwd3f5kg1nsqh5kp7ssh8cxi",
+        "sourceHandle": "success",
+        "target": "iobbm7ym8y9r117w1rakhcev",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "gfgdawbmwj3xfee2n0razvpz",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "iobbm7ym8y9r117w1rakhcev",
+        "sourceHandle": "success",
+        "target": "w25ybsnbjf5vb8rpoawxfn9a",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "rb2pn5k4djihrahwzxpm9p9u",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ncxt993pq5n2ig3qfd9rjy4l",
+        "sourceHandle": "success",
+        "target": "qzwcn8y25hfhjshdo82ftuqr",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "qobchna2o74ialp05mufbzbo",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "qzwcn8y25hfhjshdo82ftuqr",
+        "sourceHandle": "success",
+        "target": "qn834g1lwd5d2mh9z2hsxe6v",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "wxvb04k9yrs9nmbddpb2yuga",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "rcajl4hlsd25zo2sj9lmp8l2",
+        "sourceHandle": "success",
+        "target": "zb4l1p4f6f9qp1s5cwyflv3z",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ns4rm6i36mpv5eo15ee0ucmy",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "zb4l1p4f6f9qp1s5cwyflv3z",
+        "sourceHandle": "success",
+        "target": "mwkvenmf71ru0reggwhnfr4n",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "zg205vavw7tki9li1wri5fsh",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "cbf2b2bf80apnyi5ltop8h4y",
+        "sourceHandle": "success",
+        "target": "p7qba46aeds6coijfi1hnvgc",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "jfcju3iql59ty2baix5ass2l",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "p7qba46aeds6coijfi1hnvgc",
+        "sourceHandle": "success",
+        "target": "m6avg7sdjojhv90zz12e5d4r",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__p7qba46aeds6coijfi1hnvgcsuccess-m6avg7sdjojhv90zz12e5d4rinput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "ay5s1gcgyphfpcbamhwtmojc",
+        "sourceHandle": "success",
+        "target": "e9jibsh3olonhrqu1khu7mr4",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "yt2pvgnd7zavo0c2p0ku8nkr",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "e9jibsh3olonhrqu1khu7mr4",
+        "sourceHandle": "success",
+        "target": "l8593gohbsbfifyw20vrh7er",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__e9jibsh3olonhrqu1khu7mr4success-l8593gohbsbfifyw20vrh7erinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1786999610754,
+    "updatedAt": 1787002210166,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
