@@ -1,0 +1,172 @@
+[
+  {
+    "name": "pmc",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "x3dvq5uxbpyt4s2oojzi1b2k",
+        "position": {
+          "x": 844,
+          "y": 8
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "pmc",
+          "label": "PMC (PubMed Central)",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve full-text articles from PubMed Central.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "search",
+            "apiKey": "",
+            "query": "test"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "eqsgz8nfw9m0lc7z3dy0drab",
+        "position": {
+          "x": 841,
+          "y": 168
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "pmc",
+          "label": "PMC (PubMed Central)1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve full-text articles from PubMed Central.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getById",
+            "apiKey": "",
+            "query": "test",
+            "pmcId": "13477420"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "sk6mfzmha37fm5y699roji06",
+        "position": {
+          "x": 581,
+          "y": -32.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "mu33r5fxs17hn0gmmlojj9le",
+        "position": {
+          "x": 578,
+          "y": 127.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "sk6mfzmha37fm5y699roji06",
+        "sourceHandle": "success",
+        "target": "x3dvq5uxbpyt4s2oojzi1b2k",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__sk6mfzmha37fm5y699roji06success-x3dvq5uxbpyt4s2oojzi1b2kinput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "mu33r5fxs17hn0gmmlojj9le",
+        "sourceHandle": "success",
+        "target": "eqsgz8nfw9m0lc7z3dy0drab",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "hipz4c81qmmlfgz9wk1yae18",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1786956381164,
+    "updatedAt": 1786957642122,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
