@@ -1,0 +1,171 @@
+[
+  {
+    "name": "perenual",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "jcw2b7apj7v9xy1iaejzmz4l",
+        "position": {
+          "x": 652,
+          "y": 139
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "perenual",
+          "label": "Perenual Info",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get plant care guides, watering needs, and sunlight info.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "search_species",
+            "apiKey": "",
+            "query": "rose"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "kany35e632yiby2t5xwu9lov",
+        "position": {
+          "x": 648,
+          "y": 288
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "perenual",
+          "label": "Perenual Info1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get plant care guides, watering needs, and sunlight info.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "get_details",
+            "apiKey": "",
+            "speciesId": "24"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "phqb1hna1uhw2l8dhpno6qak",
+        "position": {
+          "x": 435,
+          "y": 116.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "hfy22i6cbhrw0fz743zha5qu",
+        "position": {
+          "x": 431,
+          "y": 265.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "phqb1hna1uhw2l8dhpno6qak",
+        "sourceHandle": "success",
+        "target": "jcw2b7apj7v9xy1iaejzmz4l",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__phqb1hna1uhw2l8dhpno6qaksuccess-jcw2b7apj7v9xy1iaejzmz4linput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "hfy22i6cbhrw0fz743zha5qu",
+        "sourceHandle": "success",
+        "target": "kany35e632yiby2t5xwu9lov",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "kvqb3jec0pqve23c9pw1r8w1",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1786965255937,
+    "updatedAt": 1786965448057,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
