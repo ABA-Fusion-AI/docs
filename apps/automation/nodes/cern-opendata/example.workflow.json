@@ -1,0 +1,255 @@
+[
+  {
+    "name": "testCern-opendata",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "q75aqfvbvjooz8esiq4rzwon",
+        "position": {
+          "x": 0,
+          "y": 18
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "nv3uscldam70f9ufo28s0uid",
+        "position": {
+          "x": 568,
+          "y": 0
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "x6z4gptamjl6hsdtezs0g7u6",
+        "position": {
+          "x": 284,
+          "y": 18
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "cern-opendata",
+          "label": "CERN Open Data",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search records from CERN Open Data Portal API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "q": "CMS"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "fsv6d5vwjwwr1mrxlmjoh9x2",
+        "position": {
+          "x": 0,
+          "y": 358
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": true,
+        "draggable": true
+      },
+      {
+        "id": "fmyurw5l0xlk9egb0aczgziu",
+        "position": {
+          "x": 568,
+          "y": 340
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": true,
+        "draggable": true
+      },
+      {
+        "id": "m4uid7rr5995fo6t54sfo5rb",
+        "position": {
+          "x": 284,
+          "y": 358
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "cern-opendata",
+          "label": "CERN Open Data1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search records from CERN Open Data Portal API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "q": "Higgs"
+          },
+          "_morphing": false
+        },
+        "selected": true,
+        "draggable": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "q75aqfvbvjooz8esiq4rzwon",
+        "sourceHandle": "success",
+        "target": "x6z4gptamjl6hsdtezs0g7u6",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__q75aqfvbvjooz8esiq4rzwonsuccess-x6z4gptamjl6hsdtezs0g7u6input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "x6z4gptamjl6hsdtezs0g7u6",
+        "sourceHandle": "success",
+        "target": "nv3uscldam70f9ufo28s0uid",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__x6z4gptamjl6hsdtezs0g7u6success-nv3uscldam70f9ufo28s0uidinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "fsv6d5vwjwwr1mrxlmjoh9x2",
+        "sourceHandle": "success",
+        "target": "m4uid7rr5995fo6t54sfo5rb",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "lklre0ww4p340yj4zgd2rnsm",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "m4uid7rr5995fo6t54sfo5rb",
+        "sourceHandle": "success",
+        "target": "fmyurw5l0xlk9egb0aczgziu",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "td9pbfnqcksgnk6y7mihuays",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1786956925534,
+    "updatedAt": 1786964530937,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
