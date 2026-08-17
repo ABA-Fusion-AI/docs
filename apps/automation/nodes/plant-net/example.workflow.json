@@ -1,0 +1,94 @@
+[
+  {
+    "name": "play mt",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "mvx1eqx9q2s94bmtxphkvazr",
+        "position": {
+          "x": 1042,
+          "y": 136.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "plant-net",
+          "label": "Pl@ntNet ID",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Identify plant species from photos.",
+          "showRunningStatus": true,
+          "parameters": {
+            "organ": "bark",
+            "apiKey": "",
+            "imageUrl": "https://plus.unsplash.com/premium_photo-1675864663002-c330710c6ba0?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "vocrg0p7u5vtjag4bf4njo13",
+        "position": {
+          "x": 849,
+          "y": 141.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "vocrg0p7u5vtjag4bf4njo13",
+        "sourceHandle": "success",
+        "target": "mvx1eqx9q2s94bmtxphkvazr",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__vocrg0p7u5vtjag4bf4njo13success-mvx1eqx9q2s94bmtxphkvazrinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1786958826263,
+    "updatedAt": 1786960192990,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
