@@ -1,0 +1,246 @@
+[
+  {
+    "name": "pincone-vector-store",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "lxp9jsca7ugc0ign92w17f57",
+        "position": {
+          "x": 765,
+          "y": 63
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "performance-prompt",
+          "label": "Performance Prompt",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Fetch and compile a deployed prompt from Performance.",
+          "showRunningStatus": true,
+          "parameters": {
+            "promptVersion": "Specific Version",
+            "promptName": "test",
+            "promptVersionNumber": 2
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "i15kg5ty53rg0htmfn0np880",
+        "position": {
+          "x": 766,
+          "y": 201
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "performance-prompt",
+          "label": "Performance Prompt1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Fetch and compile a deployed prompt from Performance.",
+          "showRunningStatus": true,
+          "parameters": {
+            "promptVersion": "Specific Version",
+            "promptName": "test",
+            "promptVersionNumber": 1
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "i3rpxu8ed0scpgnqutblm6wj",
+        "position": {
+          "x": 775,
+          "y": 336
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "performance-prompt",
+          "label": "Performance Prompt2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Fetch and compile a deployed prompt from Performance.",
+          "showRunningStatus": true,
+          "parameters": {
+            "promptVersion": "Production",
+            "promptName": "test"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "kklrrzikk1tn9xxpigc1bk53",
+        "position": {
+          "x": 533,
+          "y": 23.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "c5ro88h3t6x5bbnhtge2o4tt",
+        "position": {
+          "x": 523,
+          "y": 160.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "pn1mqs7vv7b3skz7ag0hbzmk",
+        "position": {
+          "x": 543,
+          "y": 296.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "kklrrzikk1tn9xxpigc1bk53",
+        "sourceHandle": "success",
+        "target": "lxp9jsca7ugc0ign92w17f57",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__kklrrzikk1tn9xxpigc1bk53success-lxp9jsca7ugc0ign92w17f57input",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "c5ro88h3t6x5bbnhtge2o4tt",
+        "sourceHandle": "success",
+        "target": "i15kg5ty53rg0htmfn0np880",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "u4ahhe9gx8i76nur54uwrn5m",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "pn1mqs7vv7b3skz7ag0hbzmk",
+        "sourceHandle": "success",
+        "target": "i3rpxu8ed0scpgnqutblm6wj",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "izz8s4s8szlwp5d9vhsrrmlj",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1786962173555,
+    "updatedAt": 1786963502604,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
