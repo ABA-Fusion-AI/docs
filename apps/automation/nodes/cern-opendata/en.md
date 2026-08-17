@@ -1,7 +1,7 @@
 ---
 node_id: "cern-opendata"
 title: "CERN Open Data"
-description: "Search and retrieve scientific records and datasets from the CERN Open Data Portal API."
+description: "Search and retrieve scientific records and datasets from the CERN Open Data Portal API. "
 category: "Web Search & Information"
 subcategory: "Scientific Search"
 version: "1.0.0"
