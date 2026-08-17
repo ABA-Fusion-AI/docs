@@ -1,0 +1,625 @@
+[
+  {
+    "name": "retirement-calculator",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "vn9arjfex7zyzrr71ivmqkjs",
+        "position": {
+          "x": 978.975830611049,
+          "y": 162.45788512648755
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "retirement-calculator",
+          "label": "Retirement Calculator",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Calculate retirement savings projections and analyze if you're on track",
+          "showRunningStatus": true,
+          "parameters": {
+            "retirementAge": 35
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "i811ba29foqu2aloyl61tgbg",
+        "position": {
+          "x": 821.5657679743302,
+          "y": 145.29524669131274
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ib1kuq75ehd8apagccly2pes",
+        "position": {
+          "x": 1126.0705337611616,
+          "y": 158.3782027307707
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ghbms99vyn75yp6g34rlmxdw",
+        "position": {
+          "x": 978.9236293464727,
+          "y": 367.0618414640109
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "retirement-calculator",
+          "label": "Retirement Calculator1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Calculate retirement savings projections and analyze if you're on track",
+          "showRunningStatus": true,
+          "parameters": {
+            "retirementAge": 65,
+            "currentAge": 25,
+            "currentSavings": 100000,
+            "monthlyContribution": 1000,
+            "annualReturn": 8,
+            "retirementExpenses": 4000
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "bqphuudl83k6ucz5dzvkpdx9",
+        "position": {
+          "x": 833.513566709754,
+          "y": 361.8992030288361
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "vyhb31kl5o19390hdkrzumqz",
+        "position": {
+          "x": 1150.0183324965853,
+          "y": 386.9821590682941
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "p9c9bu8wkfhr8pk3l9t797sy",
+        "position": {
+          "x": 939.4490196534956,
+          "y": 615.3132757553997
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "retirement-calculator",
+          "label": "Retirement Calculator2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Calculate retirement savings projections and analyze if you're on track",
+          "showRunningStatus": true,
+          "parameters": {
+            "retirementAge": 45,
+            "currentAge": 28,
+            "currentSavings": 80000,
+            "monthlyContribution": 2500,
+            "annualReturn": 8,
+            "retirementExpenses": 3000
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "hd3yg05anpqs11nbn5jv3f5v",
+        "position": {
+          "x": 794.0389570167769,
+          "y": 610.1506373202249
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "sweqtou5l85uklxi1agcz5rk",
+        "position": {
+          "x": 1110.543722803608,
+          "y": 635.2335933596828
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "heovybztc1os23m6ky3bwod4",
+        "position": {
+          "x": 912.1851224244243,
+          "y": 766.2391996037675
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "retirement-calculator",
+          "label": "Retirement Calculator3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Calculate retirement savings projections and analyze if you're on track",
+          "showRunningStatus": true,
+          "parameters": {
+            "retirementAge": 65,
+            "currentAge": 50,
+            "currentSavings": 20000,
+            "monthlyContribution": 300,
+            "annualReturn": 6,
+            "retirementExpenses": 3500
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "celxr275ixz30axy1kuql5fk",
+        "position": {
+          "x": 766.7750597877056,
+          "y": 761.0765611685927
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "f5m6tmmvraxde4znl1uymkxq",
+        "position": {
+          "x": 1083.279825574537,
+          "y": 786.1595172080506
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "d1trzmakfcom7a1c10yy6t0f",
+        "position": {
+          "x": 948.132921159848,
+          "y": 1006.8431559412908
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "retirement-calculator",
+          "label": "Retirement Calculator3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Calculate retirement savings projections and analyze if you're on track",
+          "showRunningStatus": true,
+          "parameters": {
+            "retirementAge": 65,
+            "currentAge": 40,
+            "currentSavings": 300000,
+            "monthlyContribution": 0,
+            "retirementExpenses": 4000
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "rq29cskd0pwmc5kx8m5lc38t",
+        "position": {
+          "x": 814.7228585231293,
+          "y": 1013.680517506116
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "a95gbswcabnvap7wqhtdnn1v",
+        "position": {
+          "x": 1143.227624309961,
+          "y": 1050.763473545574
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "i811ba29foqu2aloyl61tgbg",
+        "sourceHandle": "success",
+        "target": "vn9arjfex7zyzrr71ivmqkjs",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__i811ba29foqu2aloyl61tgbgsuccess-vn9arjfex7zyzrr71ivmqkjsinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "vn9arjfex7zyzrr71ivmqkjs",
+        "sourceHandle": "success",
+        "target": "ib1kuq75ehd8apagccly2pes",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__vn9arjfex7zyzrr71ivmqkjssuccess-ib1kuq75ehd8apagccly2pesinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "bqphuudl83k6ucz5dzvkpdx9",
+        "sourceHandle": "success",
+        "target": "ghbms99vyn75yp6g34rlmxdw",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "pmwdjffqcycuvim41y738drb",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ghbms99vyn75yp6g34rlmxdw",
+        "sourceHandle": "success",
+        "target": "vyhb31kl5o19390hdkrzumqz",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "qe0t8r4vc79ethj93vay79ke",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "hd3yg05anpqs11nbn5jv3f5v",
+        "sourceHandle": "success",
+        "target": "p9c9bu8wkfhr8pk3l9t797sy",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "yh1eqw9p2jsnf86s9w5w1jts",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "p9c9bu8wkfhr8pk3l9t797sy",
+        "sourceHandle": "success",
+        "target": "sweqtou5l85uklxi1agcz5rk",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "zwmpnyq50l7rh6yuy0abcn7y",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "celxr275ixz30axy1kuql5fk",
+        "sourceHandle": "success",
+        "target": "heovybztc1os23m6ky3bwod4",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ey4b8e4eye09a2mnw0mvxqva",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "heovybztc1os23m6ky3bwod4",
+        "sourceHandle": "success",
+        "target": "f5m6tmmvraxde4znl1uymkxq",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "iwcqtdasxoc4yl7zxe0214hh",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "rq29cskd0pwmc5kx8m5lc38t",
+        "sourceHandle": "success",
+        "target": "d1trzmakfcom7a1c10yy6t0f",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "lfda5othswoe6cyii13or3l6",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "d1trzmakfcom7a1c10yy6t0f",
+        "sourceHandle": "success",
+        "target": "a95gbswcabnvap7wqhtdnn1v",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ll82t524bqgzyuddz8shfx17",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "cm1ng4fjmekyti9bdx7mirp7",
+        "sourceHandle": "success",
+        "target": "kl7a0yaze1o7immts9dga9ek",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "bzg1bg8s8sokf4gp84172kq0",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1787003189226,
+    "updatedAt": 1787003831905,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
