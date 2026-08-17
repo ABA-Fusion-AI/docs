@@ -1,0 +1,131 @@
+[
+  {
+    "name": "Default Fill Example",
+    "nodes": [
+      {
+        "id": "0c9781ee-7e48-4f7c-9edb-3bd81dd3015f",
+        "position": {
+          "x": 479.5,
+          "y": 468
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "no64dp64io9429e7vclrcv55",
+        "position": {
+          "x": 616,
+          "y": 514
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "default-fill",
+          "label": "Default Fill",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Fill null/undefined values with defaults.",
+          "showRunningStatus": false,
+          "parameters": {
+            "defaults": {
+              "country": "Morocco",
+              "role": "Developer"
+            },
+            "data": "{\"name\":\"Hamza\",\"country\":null}"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "3ecf8966-b5dd-4076-9515-b5546aebbc23",
+        "position": {
+          "x": 771.5,
+          "y": 460
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "0c9781ee-7e48-4f7c-9edb-3bd81dd3015f",
+        "sourceHandle": "success",
+        "target": "no64dp64io9429e7vclrcv55",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "manual-trigger-to-default-fill",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "no64dp64io9429e7vclrcv55",
+        "sourceHandle": "success",
+        "target": "3ecf8966-b5dd-4076-9515-b5546aebbc23",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "default-fill-to-log",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "version": 1,
+    "secrets": {},
+    "status": "stopped",
+    "publishedNames": []
+  }
+]
