@@ -1,0 +1,391 @@
+[
+  {
+    "name": "salary-converter",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "ui7vtacie69y9k6yfbwj4730",
+        "position": {
+          "x": 554,
+          "y": 177.0078125
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "salary-converter",
+          "label": "Salary Converter",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert between annual, monthly, weekly, and hourly salary rates",
+          "showRunningStatus": true,
+          "parameters": {
+            "from": "monthly",
+            "amount": 5000
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "af35fwxvkm2r2c9t4h0uedfu",
+        "position": {
+          "x": 386.5,
+          "y": 26.015625
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "jj1u9v6mnsdyl26pvvrpum1b",
+        "position": {
+          "x": 513.5143769267672,
+          "y": 414.811170054765
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "salary-converter",
+          "label": "Salary Converter1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert between annual, monthly, weekly, and hourly salary rates",
+          "showRunningStatus": true,
+          "parameters": {
+            "from": "annual",
+            "amount": 52000
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "u9ml266ggvbg79qixs0fkpmd",
+        "position": {
+          "x": 300.2150400828127,
+          "y": 261.8674184889829
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "xmorwmijfb5bze8q6d6rm8wp",
+        "position": {
+          "x": 467.56752665973806,
+          "y": 613.9141878785575
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "salary-converter",
+          "label": "Salary Converter2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert between annual, monthly, weekly, and hourly salary rates",
+          "showRunningStatus": true,
+          "parameters": {
+            "from": "hourly",
+            "amount": 30
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "xr6eirdvcrcmcu17mzvesfyg",
+        "position": {
+          "x": 243.30624662124052,
+          "y": 487.87702415392664
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "b7pprt2duckjw6rjd7mb4atp",
+        "position": {
+          "x": 436.93629314838535,
+          "y": 775.4243282111445
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "salary-converter",
+          "label": "Salary Converter3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert between annual, monthly, weekly, and hourly salary rates",
+          "showRunningStatus": true,
+          "parameters": {
+            "from": "weekly",
+            "amount": 800,
+            "hoursPerWeek": 35,
+            "weeksPerYear": 48
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "zntekdtltlq4o3yr1wqjbnrn",
+        "position": {
+          "x": 281.43629314838535,
+          "y": 636.4321407111445
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "t4gd2uq31c15bphq5patapwp",
+        "position": {
+          "x": 375.67382612568,
+          "y": 956.4270716873197
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "salary-converter",
+          "label": "Salary Converter4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert between annual, monthly, weekly, and hourly salary rates",
+          "showRunningStatus": true,
+          "parameters": {
+            "from": "monthly",
+            "amount": 0
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "ezrh33c2lrds8ukvw6mwdgtn",
+        "position": {
+          "x": 220.17382612568002,
+          "y": 817.4348841873197
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "af35fwxvkm2r2c9t4h0uedfu",
+        "sourceHandle": "success",
+        "target": "ui7vtacie69y9k6yfbwj4730",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__af35fwxvkm2r2c9t4h0uedfusuccess-ui7vtacie69y9k6yfbwj4730input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "u9ml266ggvbg79qixs0fkpmd",
+        "sourceHandle": "success",
+        "target": "jj1u9v6mnsdyl26pvvrpum1b",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "nu3v5gusnrsyhbxmqxelaufm",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "xr6eirdvcrcmcu17mzvesfyg",
+        "sourceHandle": "success",
+        "target": "xmorwmijfb5bze8q6d6rm8wp",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "tza2lmp8cku3h8h4u3jwzfkx",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "zntekdtltlq4o3yr1wqjbnrn",
+        "sourceHandle": "success",
+        "target": "b7pprt2duckjw6rjd7mb4atp",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "jfg3g2lmq6hh5q4ulsx4c057",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ezrh33c2lrds8ukvw6mwdgtn",
+        "sourceHandle": "success",
+        "target": "t4gd2uq31c15bphq5patapwp",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "gqt4hfpfxsgc0th4aitb1899",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1787002611547,
+    "updatedAt": 1787003037853,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
