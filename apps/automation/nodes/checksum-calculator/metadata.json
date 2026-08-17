@@ -1,0 +1,4 @@
+{
+  "label": "Checksum Calculator",
+  "description": "Calculate various checksums and hashes (MD5, SHA1, SHA256, SHA512, CRC32)"
+}
