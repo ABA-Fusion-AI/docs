@@ -1,0 +1,93 @@
+[
+  {
+    "name": "sunrise",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "dfbhcbgrmzlaadonef326yqe",
+        "position": {
+          "x": 750,
+          "y": 108
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "sunrise-sunset",
+          "label": "Sunrise-Sunset",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get sunrise and sunset times for a location using the Sunrise-Sunset API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "lat": 317917,
+            "lng": 70926
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "n7k8igbf7gx052yjfdhn5fw3",
+        "position": {
+          "x": 524,
+          "y": 47.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "n7k8igbf7gx052yjfdhn5fw3",
+        "sourceHandle": "success",
+        "target": "dfbhcbgrmzlaadonef326yqe",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__n7k8igbf7gx052yjfdhn5fw3success-dfbhcbgrmzlaadonef326yqeinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1787066726734,
+    "updatedAt": 1787067223171,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
