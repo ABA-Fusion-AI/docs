@@ -1,0 +1,130 @@
+[
+  {
+    "name": "test-la-vie-eco",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "hml6l7qegpls3225lbzzo4ds",
+        "position": {
+          "x": 812,
+          "y": 203
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "la-vie-eco",
+          "label": "La Vie Eco",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Fetch news from La Vie Eco RSS feed.",
+          "showRunningStatus": true,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "xj2mwncf46qt83awbq24e4sd",
+        "position": {
+          "x": 612.5726430088542,
+          "y": 192.02602922767522
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        }
+      },
+      {
+        "id": "erwzekn2isu0mh5eaxn3ngba",
+        "position": {
+          "x": 934.5726908308307,
+          "y": 167.67895691801397
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "xj2mwncf46qt83awbq24e4sd",
+        "sourceHandle": "success",
+        "target": "hml6l7qegpls3225lbzzo4ds",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__xj2mwncf46qt83awbq24e4sdsuccess-hml6l7qegpls3225lbzzo4dsinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "hml6l7qegpls3225lbzzo4ds",
+        "sourceHandle": "success",
+        "target": "erwzekn2isu0mh5eaxn3ngba",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__hml6l7qegpls3225lbzzo4dssuccess-erwzekn2isu0mh5eaxn3ngbainput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1787061467245,
+    "updatedAt": 1787062592297,
+    "publishedNames": []
+  }
+]
