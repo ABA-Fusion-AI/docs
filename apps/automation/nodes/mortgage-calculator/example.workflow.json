@@ -1,0 +1,132 @@
+[
+  {
+    "name": "Mortgage Calculator Example",
+    "nodes": [
+      {
+        "id": "0c9781ee-7e48-4f7c-9edb-3bd81dd3015f",
+        "position": {
+          "x": 479.5,
+          "y": 468
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "otjpkz3oblcdl0g1ecurskzm",
+        "position": {
+          "x": 641.9097045987877,
+          "y": 491.09709364189314
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "mortgage-calculator",
+          "label": "Mortgage Calculator",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Calculate mortgage payments with extra payment support and amortization schedule",
+          "showRunningStatus": true,
+          "parameters": {
+            "principal": 300000,
+            "annualRate": 4.5,
+            "years": 30,
+            "extraPayment": 500,
+            "frequency": "monthly"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "3ecf8966-b5dd-4076-9515-b5546aebbc23",
+        "position": {
+          "x": 824.5,
+          "y": 461
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "0c9781ee-7e48-4f7c-9edb-3bd81dd3015f",
+        "sourceHandle": "success",
+        "target": "otjpkz3oblcdl0g1ecurskzm",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "manual-trigger-to-mortgage-calculator",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "otjpkz3oblcdl0g1ecurskzm",
+        "sourceHandle": "success",
+        "target": "3ecf8966-b5dd-4076-9515-b5546aebbc23",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "mortgage-calculator-to-log",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "version": 1,
+    "secrets": {},
+    "status": "stopped",
+    "publishedNames": []
+  }
+]
