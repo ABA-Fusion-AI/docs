@@ -1,0 +1,130 @@
+[
+  {
+    "name": "Escrow Calculator Example",
+    "nodes": [
+      {
+        "id": "0c9781ee-7e48-4f7c-9edb-3bd81dd3015f",
+        "position": {
+          "x": 479.5,
+          "y": 468
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "hkqc34m2aolho7esn1ijwp4b",
+        "position": {
+          "x": 636.6576157384332,
+          "y": 487.94584032568036
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "escrow-calculator",
+          "label": "Escrow Account Calculator",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Calculate monthly escrow payments for property taxes and insurance",
+          "showRunningStatus": true,
+          "parameters": {
+            "homePrice": 300000,
+            "propertyTaxRate": 1.5,
+            "insuranceAnnual": 1200
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "3ecf8966-b5dd-4076-9515-b5546aebbc23",
+        "position": {
+          "x": 824.5,
+          "y": 461
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "0c9781ee-7e48-4f7c-9edb-3bd81dd3015f",
+        "sourceHandle": "success",
+        "target": "hkqc34m2aolho7esn1ijwp4b",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "manual-trigger-to-escrow-calculator",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "hkqc34m2aolho7esn1ijwp4b",
+        "sourceHandle": "success",
+        "target": "3ecf8966-b5dd-4076-9515-b5546aebbc23",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "escrow-calculator-to-log",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "version": 1,
+    "secrets": {},
+    "status": "stopped",
+    "publishedNames": []
+  }
+]
