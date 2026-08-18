@@ -1,0 +1,596 @@
+[
+  {
+    "name": "project-gutenberg-search",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "cfkxu3ja1kkuhuulweoc9baj",
+        "position": {
+          "x": 799,
+          "y": 336
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "project-gutenberg-search",
+          "label": "Project Gutenberg Search",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search for free books from Project Gutenberg via Gutendex API.",
+          "showRunningStatus": true,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "bu836qdry8ksu9olqdm8ip0q",
+        "position": {
+          "x": 636.5,
+          "y": 318.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "s3mcujsusvg02oa22zbj0yn9",
+        "position": {
+          "x": 916.3350655676584,
+          "y": 360.3060017371241
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ri721e8h1yt8cbgnrzllmzbi",
+        "position": {
+          "x": 750.6190122377135,
+          "y": 575.155976536206
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "project-gutenberg-search",
+          "label": "Project Gutenberg Search1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search for free books from Project Gutenberg via Gutendex API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "ids": "victor hugo",
+            "languages": "fr"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "zfk6x09vxh6qmmclztuyhfdu",
+        "position": {
+          "x": 600.1190122377134,
+          "y": 569.655976536206
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "h1i3xznxsbtyxwaqtfqgq8ts",
+        "position": {
+          "x": 891.9540778053716,
+          "y": 623.4619782733303
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "h5prnlkrs7zllpeppoou8yiy",
+        "position": {
+          "x": 756.3070859399847,
+          "y": 793.6445115203684
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "project-gutenberg-search",
+          "label": "Project Gutenberg Search2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search for free books from Project Gutenberg via Gutendex API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "ids": "1342,11,84"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "uq10dv7hygsa5ep6b88y6gqb",
+        "position": {
+          "x": 605.8070859399847,
+          "y": 788.1445115203684
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "pw2j353kru503bysabcn3zpc",
+        "position": {
+          "x": 897.6421515076431,
+          "y": 841.9505132574924
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ogqbna340s81sdvfq2f5x13z",
+        "position": {
+          "x": 743.9260981776982,
+          "y": 1068.8004880565745
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "project-gutenberg-search",
+          "label": "Project Gutenberg Search2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search for free books from Project Gutenberg via Gutendex API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "languages": "en"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "w28pubwb4aguwyjte6dnij5o",
+        "position": {
+          "x": 605.4260981776981,
+          "y": 1075.3004880565745
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ipt8nda6eoyz4b85wmdsv65u",
+        "position": {
+          "x": 909.2611637453564,
+          "y": 1141.1064897936985
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "q1d0dzad750hqa61t9avl549",
+        "position": {
+          "x": 680.5587092129344,
+          "y": 1303.7511872806344
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "project-gutenberg-search",
+          "label": "Project Gutenberg Search3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search for free books from Project Gutenberg via Gutendex API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "search": "xyzbooktitle999999"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "b58aq4xefpbi5szwv28ivbor",
+        "position": {
+          "x": 554.0587092129343,
+          "y": 1322.2511872806344
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "zza212b070ywqycwc0y3akc0",
+        "position": {
+          "x": 887.3158832415246,
+          "y": 1330.2517916145646
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "bu836qdry8ksu9olqdm8ip0q",
+        "sourceHandle": "success",
+        "target": "cfkxu3ja1kkuhuulweoc9baj",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__bu836qdry8ksu9olqdm8ip0qsuccess-cfkxu3ja1kkuhuulweoc9bajinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "cfkxu3ja1kkuhuulweoc9baj",
+        "sourceHandle": "success",
+        "target": "s3mcujsusvg02oa22zbj0yn9",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__cfkxu3ja1kkuhuulweoc9bajsuccess-s3mcujsusvg02oa22zbj0yn9input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "zfk6x09vxh6qmmclztuyhfdu",
+        "sourceHandle": "success",
+        "target": "ri721e8h1yt8cbgnrzllmzbi",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "hhc7iqefu2tbp0bx7tktzxx8",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ri721e8h1yt8cbgnrzllmzbi",
+        "sourceHandle": "success",
+        "target": "h1i3xznxsbtyxwaqtfqgq8ts",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "fqspxvsgnlybxwosn8b1evro",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "uq10dv7hygsa5ep6b88y6gqb",
+        "sourceHandle": "success",
+        "target": "h5prnlkrs7zllpeppoou8yiy",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "hovzmroj0nggxl0oq3vz7sic",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "h5prnlkrs7zllpeppoou8yiy",
+        "sourceHandle": "success",
+        "target": "pw2j353kru503bysabcn3zpc",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "x8lrf6xpivszplbz6y0sodvk",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "w28pubwb4aguwyjte6dnij5o",
+        "sourceHandle": "success",
+        "target": "ogqbna340s81sdvfq2f5x13z",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "v9gwcjo597ksn1r4b6vq4w4u",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "ogqbna340s81sdvfq2f5x13z",
+        "sourceHandle": "success",
+        "target": "ipt8nda6eoyz4b85wmdsv65u",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "femvxidn62r98mo1ydfvpk3q",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "b58aq4xefpbi5szwv28ivbor",
+        "sourceHandle": "success",
+        "target": "q1d0dzad750hqa61t9avl549",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "td6w4cz4gu7vjikwz5uh7zaf",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "q1d0dzad750hqa61t9avl549",
+        "sourceHandle": "success",
+        "target": "zza212b070ywqycwc0y3akc0",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__q1d0dzad750hqa61t9avl549success-zza212b070ywqycwc0y3akc0input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1787046277491,
+    "updatedAt": 1787052255340,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
