@@ -1,0 +1,136 @@
+[
+  {
+    "name": "testNobel-prize",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "pgn6ab9lvecosd8msc0gex0e",
+        "position": {
+          "x": 194.43827950841822,
+          "y": 212.83368598590158
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "nobel-prize",
+          "label": "Nobel Prize",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get Nobel Prize laureate data from Nobel Prize API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "year": 2021
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "pc0mzeon5ngensfahptbavs8",
+        "position": {
+          "x": 8.684449983489039,
+          "y": 251.51325130875216
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "draggable": true,
+        "selected": false
+      },
+      {
+        "id": "phqqvhbrrncapj1v1tjv3b50",
+        "position": {
+          "x": 420.2636401180436,
+          "y": 225.95010549713493
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "pc0mzeon5ngensfahptbavs8",
+        "sourceHandle": "success",
+        "target": "pgn6ab9lvecosd8msc0gex0e",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__pc0mzeon5ngensfahptbavs8success-pgn6ab9lvecosd8msc0gex0einput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "pgn6ab9lvecosd8msc0gex0e",
+        "sourceHandle": "success",
+        "target": "phqqvhbrrncapj1v1tjv3b50",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__pgn6ab9lvecosd8msc0gex0esuccess-phqqvhbrrncapj1v1tjv3b50input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1787066057910,
+    "updatedAt": 1787066933634,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
