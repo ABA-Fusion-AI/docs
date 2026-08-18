@@ -173,8 +173,8 @@ Add a comment and optionally notify all assignees.
         "resource": "task",
         "taskOperation": "create",
         "listId": "123456",
-        "taskName": "={{ $json.body.name }} Form Submission",
-        "taskDescription": "={{ $json.body.message }}"
+        "taskName": "{{outputs.Webhook.success.body.name}} Form Submission",
+        "taskDescription": "{{outputs.Webhook.success.body.message}}"
       }
     }
   ],

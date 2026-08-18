@@ -48,7 +48,7 @@ When a message is published, Fusion's event bus immediately notifies and trigger
 
 - **Asynchronous Event Broadcasting:** Broadcasts messages instantly to one or multiple subscriber workflows simultaneously.
 - **Decoupled Architecture:** Eliminates tight coupling between upstream event producers and downstream consumers.
-- **Dynamic Channel Routing:** Define static channel names or evaluate dynamic expressions to route events based on data fields (e.g., `{{$json.eventType}}`).
+- **Dynamic Channel Routing:** Define static channel names or evaluate dynamic expressions to route events based on data fields (e.g., `{{outputs.Function.success.eventType}}`).
 - **Flexible Payload Delivery:** Publishes any valid data structure, including JSON objects, nested arrays, strings, numbers, and booleans.
 - **One-to-Many Fan-Out:** A single **Pub** execution can trigger multiple different subscriber workflows running in parallel.
 - **Zero Infrastructure Overhead:** Uses Fusion's built-in event bus — no external message queues or brokers (Kafka, RabbitMQ, Redis) required.
@@ -112,7 +112,7 @@ When a message is published, Fusion's event bus immediately notifies and trigger
 The target topic/channel identifier where the payload will be broadcasted. Any workflow with a **Sub** node listening to this channel will be triggered.
 - **Type:** `string`
 - **Required:** Yes
-- **Expression Enabled:** Yes (supports dynamic evaluation like `orders.{{$json.region}}`)
+- **Expression Enabled:** Yes (supports dynamic evaluation like `orders.{{outputs.Function.success.region}}`)
 - **Naming Best Practices:**
   - Dot notation for hierarchical categorization: `billing.invoice.paid`, `notifications.slack`
   - Snake_case or kebab-case for simple names: `order_created`, `user-signup-event`
@@ -268,7 +268,7 @@ Dynamically route events to different region-specific channels based on incoming
 
 ```text
 HTTP Webhook (Incoming Lead)
-  → Pub (Channel: `leads.{{$json.country}}`)
+  → Pub (Channel: `leads.{{outputs.Webhook.success.country}}`)
 ```
 
 **Result:**

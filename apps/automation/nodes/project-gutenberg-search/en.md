@@ -162,7 +162,7 @@ https://gutendex.com/books/?ids={ids}&search={search}&languages={languages}
 
 | Input | Type | Description |
 |-------|------|-------------|
-| `input` | `any` | Upstream workflow execution data. Parameters can be bound dynamically using expressions (e.g., `{{$json.query}}`). |
+| `input` | `any` | Upstream workflow execution data. Parameters can be bound dynamically using expressions (e.g., `{{outputs.Function.success.query}}`). |
 
 ### Outputs
 

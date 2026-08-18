@@ -321,7 +321,7 @@ Calculate salary breakdowns dynamically upon receiving a candidate submission vi
 
 ```text
 Job Application Webhook (candidate hourly expectation: $45)
-  → Salary Converter (amount: {{ $json.hourly_rate }}, from: "hourly")
+  → Salary Converter (amount: {{outputs.Webhook.success.hourly_rate}}, from: "hourly")
   → Function (build formal offer letter payload)
   → PDF Generator (create offer letter PDF with monthly & annual rates)
   → SendGrid / Gmail (email offer letter to hiring manager)

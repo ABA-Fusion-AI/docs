@@ -105,7 +105,7 @@ Company Profile   Role & Missions   Candidate Profile  Traits & Skills
 The complete web address pointing to an individual job offer on ReKrute.com.
 - **Type:** `string`
 - **Required:** Yes
-- **Supported Format:** `https://www.rekrute.com/offre-emploi-[slug]-[id].html` or dynamic expression `{{ $json.lien_offre }}`.
+- **Supported Format:** `https://www.rekrute.com/offre-emploi-[slug]-[id].html` or dynamic expression `{{outputs.RekruteScraper.success.lien_offre}}`.
 - **Example:** `"https://www.rekrute.com/offre-emploi-chef-datelier-mecanique-recrutement-bouderka-marrakech-185572.html"`
 
 <!-- /SECTION: configuration -->
@@ -244,8 +244,8 @@ Combine **Rekrute Scraper** and **Rekrute Job Parser** to crawl recent listings 
 ```text
 Cron Trigger (Daily)
   → Rekrute Scraper (maxPages: 2)
-  → For Each (iterate over $json array)
-  → Rekrute Job Parser (url: {{ $json.lien_offre }})
+  → For Each (iterate over listings)
+  → Rekrute Job Parser (url: {{outputs.RekruteScraper.success.lien_offre}})
   → AI Agent (Match with talent pool)
   → Slack / Discord Notification
 ```
@@ -260,7 +260,7 @@ Parse a specific Rekrute job link submitted via webhook and insert the job into 
 
 ```text
 Webhook Trigger (Receives: { "job_url": "https://www.rekrute.com/..." })
-  → Rekrute Job Parser (url: {{ $json.job_url }})
+  → Rekrute Job Parser (url: {{outputs.WebhookTrigger.success.job_url}})
   → Function (Map to ATS schema)
   → PostgreSQL Action (Insert into "job_openings" table)
   → Log (Print confirmation)
