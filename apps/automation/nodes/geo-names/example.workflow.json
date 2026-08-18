@@ -1,0 +1,132 @@
+[
+  {
+    "name": "TestGeoNames",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "f6y6gjtvvted2wb0b5mn5swq",
+        "position": {
+          "x": 583,
+          "y": 329
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "geo-names",
+          "label": "GeoNames",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search for geographical places using the GeoNames API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "q": "Casablanca",
+            "username": "meryf"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "z4be5t6vz8615vw12haksa9l",
+        "position": {
+          "x": 414,
+          "y": 336
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        }
+      },
+      {
+        "id": "cecnod9iro2uhe1je4xsa7mc",
+        "position": {
+          "x": 846,
+          "y": 298
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "z4be5t6vz8615vw12haksa9l",
+        "sourceHandle": "success",
+        "target": "f6y6gjtvvted2wb0b5mn5swq",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__z4be5t6vz8615vw12haksa9lsuccess-f6y6gjtvvted2wb0b5mn5swqinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "f6y6gjtvvted2wb0b5mn5swq",
+        "sourceHandle": "success",
+        "target": "cecnod9iro2uhe1je4xsa7mc",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__f6y6gjtvvted2wb0b5mn5swqsuccess-cecnod9iro2uhe1je4xsa7mcinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1787052242063,
+    "updatedAt": 1787052275561,
+    "publishedNames": []
+  }
+]
