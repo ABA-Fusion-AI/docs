@@ -1,0 +1,132 @@
+[
+  {
+    "name": "Bond Pricing Example",
+    "nodes": [
+      {
+        "id": "0c9781ee-7e48-4f7c-9edb-3bd81dd3015f",
+        "position": {
+          "x": 479.5,
+          "y": 468
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "wwpai2icmzv2h5vlj7bu0rxo",
+        "position": {
+          "x": 640.8592868267168,
+          "y": 493.1979291860349
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bond-pricing",
+          "label": "Bond Pricing Calculator",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Calculate bond price, duration, and premium/discount analysis",
+          "showRunningStatus": true,
+          "parameters": {
+            "faceValue": 1000,
+            "couponRate": 5,
+            "yearsToMaturity": 10,
+            "yieldRate": 5,
+            "frequency": 2
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "3ecf8966-b5dd-4076-9515-b5546aebbc23",
+        "position": {
+          "x": 824.5,
+          "y": 461
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "0c9781ee-7e48-4f7c-9edb-3bd81dd3015f",
+        "sourceHandle": "success",
+        "target": "wwpai2icmzv2h5vlj7bu0rxo",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "manual-trigger-to-bond-pricing",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "wwpai2icmzv2h5vlj7bu0rxo",
+        "sourceHandle": "success",
+        "target": "3ecf8966-b5dd-4076-9515-b5546aebbc23",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "bond-pricing-to-log",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "version": 1,
+    "secrets": {},
+    "status": "stopped",
+    "publishedNames": []
+  }
+]
