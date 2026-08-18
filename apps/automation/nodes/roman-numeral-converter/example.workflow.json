@@ -1,0 +1,320 @@
+[
+  {
+    "name": "roman converter",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "uo2rbk19f9o4o3637s95v744",
+        "position": {
+          "x": 550,
+          "y": -16
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "roman-numeral-converter",
+          "label": "Roman Numeral Converter",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Bidirectional conversion between Arabic and Roman numerals with validation",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "toRoman",
+            "number": 10
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "mpw0c67lselyvuzrdnqgjl8k",
+        "position": {
+          "x": 549,
+          "y": 150
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "roman-numeral-converter",
+          "label": "Roman Numeral Converter1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Bidirectional conversion between Arabic and Roman numerals with validation",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "toArabic",
+            "roman": "X"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "thwrse011fmqsvt7w6pgdl3m",
+        "position": {
+          "x": 539,
+          "y": 311
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "roman-numeral-converter",
+          "label": "Roman Numeral Converter2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Bidirectional conversion between Arabic and Roman numerals with validation",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "validate",
+            "number": 10,
+            "roman": "X"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "d5riar0k1njbt7nnd3shr0m3",
+        "position": {
+          "x": 545,
+          "y": 485
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "roman-numeral-converter",
+          "label": "Roman Numeral Converter3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Bidirectional conversion between Arabic and Roman numerals with validation",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "convertRange",
+            "number": 10
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "r3epcz7pibkewhagmhwnkbop",
+        "position": {
+          "x": 298,
+          "y": 43.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ez2d496pcosvb35vdkwikwdl",
+        "position": {
+          "x": 297,
+          "y": 209.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "a784i0vd61u4ll91151byvl2",
+        "position": {
+          "x": 287,
+          "y": 370.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "e5k099zyshbchqf8g9j32hmx",
+        "position": {
+          "x": 293,
+          "y": 544.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "r3epcz7pibkewhagmhwnkbop",
+        "sourceHandle": "success",
+        "target": "uo2rbk19f9o4o3637s95v744",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__r3epcz7pibkewhagmhwnkbopsuccess-uo2rbk19f9o4o3637s95v744input",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "ez2d496pcosvb35vdkwikwdl",
+        "sourceHandle": "success",
+        "target": "mpw0c67lselyvuzrdnqgjl8k",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "spq53mueremc9o0m5b7lvhiv",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "a784i0vd61u4ll91151byvl2",
+        "sourceHandle": "success",
+        "target": "thwrse011fmqsvt7w6pgdl3m",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "m27y6fdny5xz0xdp4ag40no5",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "e5k099zyshbchqf8g9j32hmx",
+        "sourceHandle": "success",
+        "target": "d5riar0k1njbt7nnd3shr0m3",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "mbdfgcswv08ab9rw40hit4ok",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1787052491330,
+    "updatedAt": 1787052707686,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
