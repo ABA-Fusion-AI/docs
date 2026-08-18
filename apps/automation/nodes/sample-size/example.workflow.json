@@ -1,0 +1,94 @@
+[
+  {
+    "name": "sample size",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "c3nglm4tanz4pgtzz9o838il",
+        "position": {
+          "x": 711,
+          "y": 155
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "sample-size",
+          "label": "Sample Size / Power",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Calculates required sample size per group for A/B tests (proportions or means) with specified power and significance level.",
+          "showRunningStatus": true,
+          "parameters": {
+            "type": "ab_proportions",
+            "p1": 0.2,
+            "p2": 0.7
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "vu974ftg4xk5racu4wkoqmz9",
+        "position": {
+          "x": 506,
+          "y": 177.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "vu974ftg4xk5racu4wkoqmz9",
+        "sourceHandle": "success",
+        "target": "c3nglm4tanz4pgtzz9o838il",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__vu974ftg4xk5racu4wkoqmz9success-c3nglm4tanz4pgtzz9o838ilinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1787051670380,
+    "updatedAt": 1787051771139,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
