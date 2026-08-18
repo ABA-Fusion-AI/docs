@@ -1,0 +1,604 @@
+[
+  {
+    "name": "sub",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "qddwyab2kuktbyb57bceiouy",
+        "position": {
+          "x": 433.40697226687774,
+          "y": 100.61686856004036
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "sub",
+          "label": "Sub",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers this workflow when another workflow publishes to the selected channel.",
+          "showRunningStatus": true,
+          "parameters": {
+            "channel": "test_channel"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "igja6yd3hltvd2vjhfktxyqm",
+        "position": {
+          "x": 806.4357344592958,
+          "y": 107.36558970080335
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "fh8h9etwlfxywsegbtn8hmna",
+        "position": {
+          "x": 610.1726528612456,
+          "y": 93.15945040653929
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "function",
+          "label": "Function",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Executes custom JavaScript code on the input data.",
+          "showRunningStatus": true,
+          "parameters": {
+            "code": "const test=input+\"1\"\nreturn test;"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "tg0pxaww2mxe1kwl5etswdjs",
+        "position": {
+          "x": 420.82697131237893,
+          "y": 275.61296615367246
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "sub",
+          "label": "Sub1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers this workflow when another workflow publishes to the selected channel.",
+          "showRunningStatus": true,
+          "parameters": {
+            "channel": "order_created"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "annxy9hho294sxltyzsoc6yk",
+        "position": {
+          "x": 805.855733504797,
+          "y": 294.36168729443546
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "uhusiwkbzqiwk7l4k4cmxt9w",
+        "position": {
+          "x": 621.5926519067468,
+          "y": 292.1555480001714
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "function",
+          "label": "Function1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Executes custom JavaScript code on the input data.",
+          "showRunningStatus": true,
+          "parameters": {
+            "code": "const test=input+\"  valider\"\nreturn test;"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "f3q7wdrfc9o6o0yqkza29seo",
+        "position": {
+          "x": 421.66845079466424,
+          "y": 438.01850623475076
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "sub",
+          "label": "Sub2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers this workflow when another workflow publishes to the selected channel.",
+          "showRunningStatus": true,
+          "parameters": {
+            "channel": "notifications.email"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "z4nyn9pb9c0vtp96jvqkuwtm",
+        "position": {
+          "x": 806.6972129870824,
+          "y": 456.76722737551376
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "m9h7ym266upkwqcvpisq9c34",
+        "position": {
+          "x": 622.4341313890322,
+          "y": 454.5610880812497
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "function",
+          "label": "Function2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Executes custom JavaScript code on the input data.",
+          "showRunningStatus": true,
+          "parameters": {
+            "code": "const test=input+\"  okey\"\nreturn test;"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "m3v6ebu3ck1qf940t57fejy4",
+        "position": {
+          "x": 431.7662045820888,
+          "y": 628.7187939076748
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "sub",
+          "label": "Sub3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers this workflow when another workflow publishes to the selected channel.",
+          "showRunningStatus": true,
+          "parameters": {
+            "channel": "user-signup-event"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "swrattpfba4np8r512lta0tb",
+        "position": {
+          "x": 816.7949667745067,
+          "y": 647.4675150484379
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "zngugucg887hvva70mf6a0pn",
+        "position": {
+          "x": 632.5318851764566,
+          "y": 645.2613757541737
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "function",
+          "label": "Function3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Executes custom JavaScript code on the input data.",
+          "showRunningStatus": true,
+          "parameters": {
+            "code": "const test=input+\" good\"\nreturn test;"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "euk8rqpk6vmfg0fz3548opax",
+        "position": {
+          "x": 426.71732768837654,
+          "y": 809.5316976637458
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "sub",
+          "label": "Sub4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers this workflow when another workflow publishes to the selected channel.",
+          "showRunningStatus": true,
+          "parameters": {
+            "channel": "test_channel"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "k1ck23kfe2guvymu77v0ux26",
+        "position": {
+          "x": 811.7460898807946,
+          "y": 828.2804188045088
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "nqm2l80hhbmhgibpc37eq4hu",
+        "position": {
+          "x": 627.4830082827444,
+          "y": 826.0742795102448
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "function",
+          "label": "Function4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Executes custom JavaScript code on the input data.",
+          "showRunningStatus": true,
+          "parameters": {
+            "code": "const test=input+\"1\"\nreturn test;"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "fh8h9etwlfxywsegbtn8hmna",
+        "sourceHandle": "success",
+        "target": "igja6yd3hltvd2vjhfktxyqm",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__fh8h9etwlfxywsegbtn8hmnasuccess-igja6yd3hltvd2vjhfktxyqminput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "qddwyab2kuktbyb57bceiouy",
+        "sourceHandle": "success",
+        "target": "fh8h9etwlfxywsegbtn8hmna",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__qddwyab2kuktbyb57bceiouysuccess-fh8h9etwlfxywsegbtn8hmnainput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "uhusiwkbzqiwk7l4k4cmxt9w",
+        "sourceHandle": "success",
+        "target": "annxy9hho294sxltyzsoc6yk",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "nqw4mm3ez5tacaxtn3snogni",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "tg0pxaww2mxe1kwl5etswdjs",
+        "sourceHandle": "success",
+        "target": "uhusiwkbzqiwk7l4k4cmxt9w",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "pjcbzgqa61txxumcrcdud1xc",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "m9h7ym266upkwqcvpisq9c34",
+        "sourceHandle": "success",
+        "target": "z4nyn9pb9c0vtp96jvqkuwtm",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "apqut7w75hyfdvqrjbcgqzgn",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "f3q7wdrfc9o6o0yqkza29seo",
+        "sourceHandle": "success",
+        "target": "m9h7ym266upkwqcvpisq9c34",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "lrd7tlhbn7bmdev97du8nozd",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "zngugucg887hvva70mf6a0pn",
+        "sourceHandle": "success",
+        "target": "swrattpfba4np8r512lta0tb",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "f61ujfvgj9ovgd00gvvahx7b",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "m3v6ebu3ck1qf940t57fejy4",
+        "sourceHandle": "success",
+        "target": "zngugucg887hvva70mf6a0pn",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "nx025s5131yq8wc5mzci5mdf",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "nqm2l80hhbmhgibpc37eq4hu",
+        "sourceHandle": "success",
+        "target": "k1ck23kfe2guvymu77v0ux26",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "fux3gqucooh4wcecpb4nppr1",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "euk8rqpk6vmfg0fz3548opax",
+        "sourceHandle": "success",
+        "target": "nqm2l80hhbmhgibpc37eq4hu",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "vmk9j5nirmo13w10ihpk8qvj",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1787059409629,
+    "updatedAt": 1787060766078,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
