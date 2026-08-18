@@ -1,0 +1,259 @@
+[
+  {
+    "name": "testCensys",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "mbxv52x2lk7un63e3twfiyfj",
+        "position": {
+          "x": 284,
+          "y": 322
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "emsc-seismic",
+          "label": "EMSC Seismic Portal",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Query earthquake data from the European-Mediterranean Seismological Centre (EMSC).",
+          "showRunningStatus": true,
+          "parameters": {
+            "maxradius": 180,
+            "minmagnitude": 2,
+            "lat": 0,
+            "lon": 0
+          },
+          "_morphing": false
+        },
+        "selected": true,
+        "draggable": true
+      },
+      {
+        "id": "lj2e4sox5qhx0qe09bavckal",
+        "position": {
+          "x": 0,
+          "y": 322
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "kclmkutx20euqcxeirdriqln",
+        "position": {
+          "x": 568,
+          "y": 304
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "fg3o0gidkq0szk562uewfg8x",
+        "position": {
+          "x": 284,
+          "y": 662
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "face-check",
+          "label": "FaceCheck",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "FaceCheck API - Facial recognition reverse image face search. Search the Internet by face.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getInfo",
+            "apiKey": "if/CnSxcVGU81AG8fmMN0Z6rvTOWBirZqXQpm6AS9qbujNqk+hevnOfeW51xOZ+nZCo6Xa/I0PE="
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "mt5qik9ok2r6sxjdtybxc4ew",
+        "position": {
+          "x": 0,
+          "y": 662
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "nfr8p72tc91x0qkupmsj7q4v",
+        "position": {
+          "x": 568,
+          "y": 644
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "lj2e4sox5qhx0qe09bavckal",
+        "sourceHandle": "success",
+        "target": "mbxv52x2lk7un63e3twfiyfj",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__lj2e4sox5qhx0qe09bavckalsuccess-mbxv52x2lk7un63e3twfiyfjinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "mbxv52x2lk7un63e3twfiyfj",
+        "sourceHandle": "success",
+        "target": "kclmkutx20euqcxeirdriqln",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__mbxv52x2lk7un63e3twfiyfjsuccess-kclmkutx20euqcxeirdriqlninput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "mt5qik9ok2r6sxjdtybxc4ew",
+        "sourceHandle": "success",
+        "target": "fg3o0gidkq0szk562uewfg8x",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__mt5qik9ok2r6sxjdtybxc4ewsuccess-fg3o0gidkq0szk562uewfg8xinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "fg3o0gidkq0szk562uewfg8x",
+        "sourceHandle": "success",
+        "target": "nfr8p72tc91x0qkupmsj7q4v",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__fg3o0gidkq0szk562uewfg8xsuccess-nfr8p72tc91x0qkupmsj7q4vinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1787043017267,
+    "updatedAt": 1787048507329,
+    "publishedNames": [],
+    "previousStatus": "stopped"
+  }
+]
