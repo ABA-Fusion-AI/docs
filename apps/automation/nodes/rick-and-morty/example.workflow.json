@@ -1,0 +1,90 @@
+[
+  {
+    "name": "rick and morti",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "dlf9vhbnjb34jutrhupt6ory",
+        "position": {
+          "x": 746,
+          "y": 135
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "rick-and-morty",
+          "label": "Rick and Morty API",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get character information from the Rick and Morty API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "name": "rick"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "j5mrnw03jen0vl45097674rz",
+        "position": {
+          "x": 451,
+          "y": 126.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "j5mrnw03jen0vl45097674rz",
+        "sourceHandle": "success",
+        "target": "dlf9vhbnjb34jutrhupt6ory",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__j5mrnw03jen0vl45097674rzsuccess-dlf9vhbnjb34jutrhupt6oryinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1786981120642,
+    "updatedAt": 1786981288275,
+    "publishedNames": []
+  }
+]
