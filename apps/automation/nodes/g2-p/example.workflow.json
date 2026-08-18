@@ -1,0 +1,395 @@
+[
+  {
+    "name": "TestG2P",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "jb6ewg4ufep6b0o23px6mtnl",
+        "position": {
+          "x": 747,
+          "y": 142
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "g2-p",
+          "label": "G2P",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Genomics 2 Proteins Portal API - Gene-Transcript-Protein Isoform-Structure mapping, protein feature annotations, and isoform sequence alignments from the Broad Institute.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getProteinFeatures",
+            "format": "json",
+            "geneName": "BRCA1",
+            "uniprotId": "P38398"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "k04uykwft8dkhcmmktot13w6",
+        "position": {
+          "x": 482,
+          "y": 145
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "o9znyqnuur4hvjjnckmn4st3",
+        "position": {
+          "x": 1022,
+          "y": 99
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "t0mvxwuoopp5pa658vh0uv9n",
+        "position": {
+          "x": 655.1503043388743,
+          "y": 696.390757928804
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "g2-p",
+          "label": "G2P1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Genomics 2 Proteins Portal API - Gene-Transcript-Protein Isoform-Structure mapping, protein feature annotations, and isoform sequence alignments from the Broad Institute.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getGeneTranscriptProteinIsoformStructureMap",
+            "geneName": "BRCA1",
+            "uniprotId": "P38398"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "fl4oxkthx5s2e5cj6wydq7bi",
+        "position": {
+          "x": 402.1503043388743,
+          "y": 711.390757928804
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ut4hcjs1bnx5bbdcclkksgzg",
+        "position": {
+          "x": 954.1503043388743,
+          "y": 677.390757928804
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "wk7oddp16a3h8sla5lhiquuz",
+        "position": {
+          "x": 346.37782957601746,
+          "y": 1158.6860055269162
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "fj74yn8gteyyxr1wyhl0d101",
+        "position": {
+          "x": 910.3778295760175,
+          "y": 1136.6860055269162
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "mcmpbq9wavjorgyygmmnptyl",
+        "position": {
+          "x": 637.2900972623221,
+          "y": 1013.2304751915835
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "g2-p",
+          "label": "G2P2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Genomics 2 Proteins Portal API - Gene-Transcript-Protein Isoform-Structure mapping, protein feature annotations, and isoform sequence alignments from the Broad Institute.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getIsoformSequenceAlignment",
+            "geneName": "LDLR",
+            "format": "json",
+            "canonicalIsoformUniprotId": "P01130-1",
+            "alignmentIsoformUniprotId": "P01130-2"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "k04uykwft8dkhcmmktot13w6",
+        "sourceHandle": "success",
+        "target": "jb6ewg4ufep6b0o23px6mtnl",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__k04uykwft8dkhcmmktot13w6success-jb6ewg4ufep6b0o23px6mtnlinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "jb6ewg4ufep6b0o23px6mtnl",
+        "sourceHandle": "success",
+        "target": "o9znyqnuur4hvjjnckmn4st3",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__jb6ewg4ufep6b0o23px6mtnlsuccess-o9znyqnuur4hvjjnckmn4st3input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "fl4oxkthx5s2e5cj6wydq7bi",
+        "sourceHandle": "success",
+        "target": "t0mvxwuoopp5pa658vh0uv9n",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "abybcm0udws7qtevzvc3xqnt",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "t0mvxwuoopp5pa658vh0uv9n",
+        "sourceHandle": "success",
+        "target": "ut4hcjs1bnx5bbdcclkksgzg",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "g7imlmqemelut5uj7wcuj822",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "wk7oddp16a3h8sla5lhiquuz",
+        "sourceHandle": "success",
+        "target": "uarozznywmqb0d1ds2ui98fg",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "oqi5j0jcdnuxs85wevlffm2z",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "uarozznywmqb0d1ds2ui98fg",
+        "sourceHandle": "success",
+        "target": "fj74yn8gteyyxr1wyhl0d101",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "qtklxfu74a5c7470cg5d2r94",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "wk7oddp16a3h8sla5lhiquuz",
+        "sourceHandle": "success",
+        "target": "mcmpbq9wavjorgyygmmnptyl",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__wk7oddp16a3h8sla5lhiquuzsuccess-mcmpbq9wavjorgyygmmnptylinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "mcmpbq9wavjorgyygmmnptyl",
+        "sourceHandle": "success",
+        "target": "fj74yn8gteyyxr1wyhl0d101",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__mcmpbq9wavjorgyygmmnptylsuccess-fj74yn8gteyyxr1wyhl0d101input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1787049314866,
+    "updatedAt": 1787050048280,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
