@@ -1,0 +1,413 @@
+[
+  {
+    "name": "stock",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "t5o6nfmk4bt98cfkondh62nb",
+        "position": {
+          "x": 697,
+          "y": 143
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "stock-automation",
+          "label": "Stock Automation",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Stock automation calculations including Reorder Point, Min-Max inventory system, EOQ (Economic Order Quantity - Wilson), Periodic Review system, and ABC classification.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "abc",
+            "items": [
+              {
+                "sku": "test",
+                "annualUsage": 2,
+                "unitCost": 20
+              },
+              {
+                "sku": "TEST&",
+                "annualUsage": 55,
+                "unitCost": 30
+              }
+            ]
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "wjds4hlzors4tkurgc6ow7bx",
+        "position": {
+          "x": 702.4256976324224,
+          "y": 275.43033254988404
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "stock-automation",
+          "label": "Stock Automation1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Stock automation calculations including Reorder Point, Min-Max inventory system, EOQ (Economic Order Quantity - Wilson), Periodic Review system, and ABC classification.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "reorderPoint",
+            "dailyDemand": 12,
+            "leadTimeDays": 2
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "c273jg1xejpyejwne2fnud1s",
+        "position": {
+          "x": 697.4411792880037,
+          "y": 410.98372989282046
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "stock-automation",
+          "label": "Stock Automation2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Stock automation calculations including Reorder Point, Min-Max inventory system, EOQ (Economic Order Quantity - Wilson), Periodic Review system, and ABC classification.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "minMax",
+            "min": 12,
+            "max": 50,
+            "currentStock": 15
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "frhqff1ywf6tmlytxujamhse",
+        "position": {
+          "x": 1053.6911553399718,
+          "y": 183.4808450434229
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "stock-automation",
+          "label": "Stock Automation3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Stock automation calculations including Reorder Point, Min-Max inventory system, EOQ (Economic Order Quantity - Wilson), Periodic Review system, and ABC classification.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "eoq",
+            "annualDemand": 100,
+            "orderCost": 20,
+            "holdingCost": 3
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "oxqmvyr0u897pmvb3my32uwi",
+        "position": {
+          "x": 1051.8297017886055,
+          "y": 349.22386871919855
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "stock-automation",
+          "label": "Stock Automation4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Stock automation calculations including Reorder Point, Min-Max inventory system, EOQ (Economic Order Quantity - Wilson), Periodic Review system, and ABC classification.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "periodicReview",
+            "dailyDemandReview": 123,
+            "reviewPeriodDays": 1,
+            "leadTimeDaysReview": 1,
+            "currentStockReview": 0
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "rfc6oufcpt2xrhs8j54aglr9",
+        "position": {
+          "x": 516,
+          "y": 136.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "xyq34bxf8r64lbfy9cefna6m",
+        "position": {
+          "x": 521.4256976324224,
+          "y": 268.93033254988404
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "gmn6jrnij226i2iijn71lpqe",
+        "position": {
+          "x": 516.4411792880037,
+          "y": 404.48372989282046
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "wpo1lvqkff5pbhf2qx9l6k3j",
+        "position": {
+          "x": 865.4040041561831,
+          "y": 195.71923380173695
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "za70hbiot4rdbn1vrryw9enb",
+        "position": {
+          "x": 863.5425506048167,
+          "y": 361.4622574775126
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "rfc6oufcpt2xrhs8j54aglr9",
+        "sourceHandle": "success",
+        "target": "t5o6nfmk4bt98cfkondh62nb",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__rfc6oufcpt2xrhs8j54aglr9success-t5o6nfmk4bt98cfkondh62nbinput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "xyq34bxf8r64lbfy9cefna6m",
+        "sourceHandle": "success",
+        "target": "wjds4hlzors4tkurgc6ow7bx",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "wr0yez5u0uc867amgiqpjcyy",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "gmn6jrnij226i2iijn71lpqe",
+        "sourceHandle": "success",
+        "target": "c273jg1xejpyejwne2fnud1s",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "z9l2ozz7gkkvwavn3culi2jp",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "wpo1lvqkff5pbhf2qx9l6k3j",
+        "sourceHandle": "success",
+        "target": "frhqff1ywf6tmlytxujamhse",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "qvns1ook8rtzhlnn7edu4ety",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "za70hbiot4rdbn1vrryw9enb",
+        "sourceHandle": "success",
+        "target": "oxqmvyr0u897pmvb3my32uwi",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "jly5pbfctshcdk5mhc50vpb5",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1787146307178,
+    "updatedAt": 1787146748797,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
