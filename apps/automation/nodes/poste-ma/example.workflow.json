@@ -1,0 +1,93 @@
+[
+  {
+    "name": "postma",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "giingfp1qhwi266o0xrusgoh",
+        "position": {
+          "x": 792,
+          "y": 147
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "poste-ma",
+          "label": "Poste.ma",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Track packages using Morocco Post (Poste.ma) API",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "Track Package",
+            "codeAbars": "AB123456789MA"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "tpzivzacqhp74g9p1ew2h48f",
+        "position": {
+          "x": 599,
+          "y": 147.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "tpzivzacqhp74g9p1ew2h48f",
+        "sourceHandle": "success",
+        "target": "giingfp1qhwi266o0xrusgoh",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__tpzivzacqhp74g9p1ew2h48fsuccess-giingfp1qhwi266o0xrusgohinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1787139253621,
+    "updatedAt": 1787139451823,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
