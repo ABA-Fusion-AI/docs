@@ -1,0 +1,564 @@
+[
+  {
+    "name": "TestRestructure",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "oh33flttcjoylt7rh16878zv",
+        "position": {
+          "x": 284,
+          "y": 18
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "restructure",
+          "label": "Restructure",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Template-based object restructuring using expression paths.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "{ \"firstName\": \"Meryem\",     \"lastName\": \"ghanem\" , \"age\": \"28\"}",
+            "template": {
+              "name": "firstName",
+              "surname": "lastName",
+              "userAge": "age"
+            }
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "ig5utqdxak4i5vufzsypg4vf",
+        "position": {
+          "x": 0,
+          "y": 18
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "u26kwtwgqffhre3g7eb1lx6y",
+        "position": {
+          "x": 568,
+          "y": 0
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "soq8w3888grtkpl68sqod6du",
+        "position": {
+          "x": 568,
+          "y": 358
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "restructure",
+          "label": "Restructure1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Template-based object restructuring using expression paths.",
+          "showRunningStatus": false,
+          "parameters": {
+            "template": {
+              "name": "firstName",
+              "surname": "lastName",
+              "userAge": "age"
+            }
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "kyb4jetb534gr62bz9s8x0u5",
+        "position": {
+          "x": 0,
+          "y": 358
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "itlo1hjn662d3r48u7v9ml63",
+        "position": {
+          "x": 852,
+          "y": 340
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "iz1gvyfi6bu9pgrmql1olcxs",
+        "position": {
+          "x": 284,
+          "y": 358
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "function",
+          "label": "Function",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Executes custom JavaScript code on the input data.",
+          "showRunningStatus": true,
+          "parameters": {
+            "code": "// Write your code here\nreturn {\n  \"firstName\": \"Meryem\",\n  \"lastName\": \"Ghanem\",\n  \"age\": 25\n};"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "c8l7isex8w5q7wavs84tku7q",
+        "position": {
+          "x": 602.0776699029127,
+          "y": 512.2815533980582
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "vysvgkrxr7ga2e51zz5l5gam",
+        "position": {
+          "x": 568,
+          "y": 698
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "restructure",
+          "label": "Restructure2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Template-based object restructuring using expression paths.",
+          "showRunningStatus": false,
+          "parameters": {
+            "template": {
+              "username": "user.name",
+              "email": "user.email",
+              "city": "location.city"
+            }
+          },
+          "_morphing": false
+        },
+        "selected": true,
+        "draggable": true
+      },
+      {
+        "id": "sxm4gb2o1ztn1x9jzfdeiumr",
+        "position": {
+          "x": 0,
+          "y": 698
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "fva4wb0lsez23q6glvlinjkp",
+        "position": {
+          "x": 852,
+          "y": 680
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "chei0myk4svrpqm7gloyt0qa",
+        "position": {
+          "x": 284,
+          "y": 698
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "function",
+          "label": "Function1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Executes custom JavaScript code on the input data.",
+          "showRunningStatus": true,
+          "parameters": {
+            "code": "// Write your code here\nreturn {\n  \"user\": {\n    \"name\": \"Meryem\",\n    \"email\": \"meryem@example.com\"\n  },\n  \"location\": {\n    \"city\": \"Casablanca\",\n    \"country\": \"Morocco\"\n  }\n};"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "ntuzzoi9krin5oyayihp1i87",
+        "position": {
+          "x": 579.3592233009709,
+          "y": 905.2912621359224
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "ig5utqdxak4i5vufzsypg4vf",
+        "sourceHandle": "success",
+        "target": "oh33flttcjoylt7rh16878zv",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "eyjz57fqgwnru9jnfx9dh6zj",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "oh33flttcjoylt7rh16878zv",
+        "sourceHandle": "success",
+        "target": "u26kwtwgqffhre3g7eb1lx6y",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "bb3wzf73uubilelnic4kexcg",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "soq8w3888grtkpl68sqod6du",
+        "sourceHandle": "success",
+        "target": "itlo1hjn662d3r48u7v9ml63",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "apln3na5vnpfms7mzbkxtrtc",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "kyb4jetb534gr62bz9s8x0u5",
+        "sourceHandle": "success",
+        "target": "iz1gvyfi6bu9pgrmql1olcxs",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__kyb4jetb534gr62bz9s8x0u5success-iz1gvyfi6bu9pgrmql1olcxsinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "iz1gvyfi6bu9pgrmql1olcxs",
+        "sourceHandle": "success",
+        "target": "soq8w3888grtkpl68sqod6du",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__iz1gvyfi6bu9pgrmql1olcxssuccess-soq8w3888grtkpl68sqod6duinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "iz1gvyfi6bu9pgrmql1olcxs",
+        "sourceHandle": "success",
+        "target": "c8l7isex8w5q7wavs84tku7q",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__iz1gvyfi6bu9pgrmql1olcxssuccess-c8l7isex8w5q7wavs84tku7qinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "vysvgkrxr7ga2e51zz5l5gam",
+        "sourceHandle": "success",
+        "target": "fva4wb0lsez23q6glvlinjkp",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "vcgcc1ykbctavvamoe4r4qvt",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "sxm4gb2o1ztn1x9jzfdeiumr",
+        "sourceHandle": "success",
+        "target": "chei0myk4svrpqm7gloyt0qa",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ejmyuaurq090dwlu9wrimozq",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "chei0myk4svrpqm7gloyt0qa",
+        "sourceHandle": "success",
+        "target": "vysvgkrxr7ga2e51zz5l5gam",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "o36dnjbacxkxhe919k02i0yd",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "chei0myk4svrpqm7gloyt0qa",
+        "sourceHandle": "success",
+        "target": "ntuzzoi9krin5oyayihp1i87",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "zb5q2zbzxlbxqq2dpajlqr4g",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1787133069639,
+    "updatedAt": 1787133574212,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
