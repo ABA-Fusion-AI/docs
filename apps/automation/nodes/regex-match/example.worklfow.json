@@ -1,0 +1,140 @@
+[
+  {
+    "name": "replicate",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "l3hwy221mo2f2copewk0hcfx",
+        "position": {
+          "x": 921,
+          "y": 65.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "regex-match",
+          "label": "Regex Match",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Match string against regex pattern.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "{\"test\":\"test\"}",
+            "pattern": ":"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "y854p9twqqskh11kawi0is4n",
+        "position": {
+          "x": 917,
+          "y": 215.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "regex-replace",
+          "label": "Regex Replace",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Replace text using regex pattern.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "{\"test\":\"test\"}",
+            "pattern": ":",
+            "replacement": "/"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "g31i8r9p7d5ajsaaeqvl5pwk",
+        "position": {
+          "x": 610,
+          "y": 161.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "g31i8r9p7d5ajsaaeqvl5pwk",
+        "sourceHandle": "success",
+        "target": "l3hwy221mo2f2copewk0hcfx",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__g31i8r9p7d5ajsaaeqvl5pwksuccess-l3hwy221mo2f2copewk0hcfxinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "g31i8r9p7d5ajsaaeqvl5pwk",
+        "sourceHandle": "success",
+        "target": "y854p9twqqskh11kawi0is4n",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__g31i8r9p7d5ajsaaeqvl5pwksuccess-y854p9twqqskh11kawi0is4ninput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1787053487589,
+    "updatedAt": 1787132212754,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
