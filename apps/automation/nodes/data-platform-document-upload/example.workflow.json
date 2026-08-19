@@ -1,0 +1,16 @@
+{
+  "name": "Upload and ingest a Data Platform document",
+  "nodes": [
+    { "id": "trigger", "type": "trigger", "position": { "x": 60, "y": 160 }, "data": { "name": "manual-trigger", "label": "Run", "inputs": {}, "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } } } },
+    { "id": "dataset", "type": "action", "position": { "x": 280, "y": 160 }, "data": { "name": "data-platform-dataset", "label": "Ensure Dataset", "inputs": { "input": { "label": "Input" } }, "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } } } },
+    { "id": "upload", "type": "action", "position": { "x": 500, "y": 160 }, "data": { "name": "data-platform-document-upload", "label": "Upload Document", "inputs": { "input": { "label": "Input" } }, "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } } } },
+    { "id": "wait", "type": "action", "position": { "x": 720, "y": 160 }, "data": { "name": "data-platform-document-wait", "label": "Wait for Ingestion", "inputs": { "input": { "label": "Input" } }, "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } } } },
+    { "id": "result", "type": "display", "position": { "x": 940, "y": 160 }, "data": { "name": "log", "label": "Completed Document", "inputs": { "input": { "label": "Input" } }, "outputs": { "success": { "label": "Success" } } } }
+  ],
+  "connections": [
+    { "id": "trigger-dataset", "type": "directed", "source": "trigger", "target": "dataset", "sourceHandle": "success", "targetHandle": "input" },
+    { "id": "dataset-upload", "type": "directed", "source": "dataset", "target": "upload", "sourceHandle": "success", "targetHandle": "input" },
+    { "id": "upload-wait", "type": "directed", "source": "upload", "target": "wait", "sourceHandle": "success", "targetHandle": "input" },
+    { "id": "wait-result", "type": "directed", "source": "wait", "target": "result", "sourceHandle": "success", "targetHandle": "input" }
+  ]
+}

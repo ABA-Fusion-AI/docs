@@ -1,0 +1,14 @@
+{
+  "name": "Wait for Data Platform ingestion",
+  "nodes": [
+    { "id": "trigger", "type": "trigger", "position": { "x": 80, "y": 160 }, "data": { "name": "manual-trigger", "label": "Run", "inputs": {}, "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } } } },
+    { "id": "upload", "type": "action", "position": { "x": 300, "y": 160 }, "data": { "name": "data-platform-document-upload", "label": "Upload Document", "inputs": { "input": { "label": "Input" } }, "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } } } },
+    { "id": "wait", "type": "action", "position": { "x": 520, "y": 160 }, "data": { "name": "data-platform-document-wait", "label": "Wait for Ingestion", "inputs": { "input": { "label": "Input" } }, "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } } } },
+    { "id": "result", "type": "display", "position": { "x": 740, "y": 160 }, "data": { "name": "log", "label": "Completed Document", "inputs": { "input": { "label": "Input" } }, "outputs": { "success": { "label": "Success" } } } }
+  ],
+  "connections": [
+    { "id": "trigger-upload", "type": "directed", "source": "trigger", "target": "upload", "sourceHandle": "success", "targetHandle": "input" },
+    { "id": "upload-wait", "type": "directed", "source": "upload", "target": "wait", "sourceHandle": "success", "targetHandle": "input" },
+    { "id": "wait-result", "type": "directed", "source": "wait", "target": "result", "sourceHandle": "success", "targetHandle": "input" }
+  ]
+}

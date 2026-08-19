@@ -1,0 +1,12 @@
+{
+  "name": "Ensure a Data Platform dataset",
+  "nodes": [
+    { "id": "trigger", "type": "trigger", "position": { "x": 80, "y": 160 }, "data": { "name": "manual-trigger", "label": "Run", "inputs": {}, "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } } } },
+    { "id": "dataset", "type": "action", "position": { "x": 320, "y": 160 }, "data": { "name": "data-platform-dataset", "label": "Ensure Dataset", "inputs": { "input": { "label": "Input" } }, "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } } } },
+    { "id": "result", "type": "display", "position": { "x": 560, "y": 160 }, "data": { "name": "log", "label": "Dataset", "inputs": { "input": { "label": "Input" } }, "outputs": { "success": { "label": "Success" } } } }
+  ],
+  "connections": [
+    { "id": "trigger-dataset", "type": "directed", "source": "trigger", "target": "dataset", "sourceHandle": "success", "targetHandle": "input" },
+    { "id": "dataset-result", "type": "directed", "source": "dataset", "target": "result", "sourceHandle": "success", "targetHandle": "input" }
+  ]
+}

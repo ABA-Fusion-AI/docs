@@ -1,0 +1,12 @@
+{
+  "name": "List Data Platform chunks",
+  "nodes": [
+    { "id": "trigger", "type": "trigger", "position": { "x": 80, "y": 160 }, "data": { "name": "manual-trigger", "label": "Run", "inputs": {}, "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } } } },
+    { "id": "chunks", "type": "action", "position": { "x": 320, "y": 160 }, "data": { "name": "data-platform-chunk", "label": "List Chunks", "inputs": { "input": { "label": "Input" } }, "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } } } },
+    { "id": "result", "type": "display", "position": { "x": 560, "y": 160 }, "data": { "name": "log", "label": "Chunks", "inputs": { "input": { "label": "Input" } }, "outputs": { "success": { "label": "Success" } } } }
+  ],
+  "connections": [
+    { "id": "trigger-chunks", "type": "directed", "source": "trigger", "target": "chunks", "sourceHandle": "success", "targetHandle": "input" },
+    { "id": "chunks-result", "type": "directed", "source": "chunks", "target": "result", "sourceHandle": "success", "targetHandle": "input" }
+  ]
+}
