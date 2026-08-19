@@ -1,0 +1,640 @@
+[
+  {
+    "name": "schema-validate",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "z43lnp5hakqy1w5cmt9an917",
+        "position": {
+          "x": 636.5,
+          "y": 26.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "serialize-canonical-json",
+          "label": "Serialize Canonical JSON",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Serialize JSON with stable key ordering.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "{\"z\": 10, \"a\": 5, \"m\": 1}"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ouhb66nxousi3l3e520l9wi3",
+        "position": {
+          "x": 420.5,
+          "y": 28.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "m4ocqkrrczr8w0myug74949y",
+        "position": {
+          "x": 732.5,
+          "y": 64.5
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "bsv77fmaiof85a7gofw04fol",
+        "position": {
+          "x": 661.5,
+          "y": 208.16666666666666
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "serialize-canonical-json",
+          "label": "Serialize Canonical JSON1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Serialize JSON with stable key ordering.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "{\"user\": {\"name\": \"Ali\", \"age\": 25}, \"active\": true}"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "s9t59vzoir6ejccrw1g8eo4k",
+        "position": {
+          "x": 457.5,
+          "y": 222.16666666666666
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "s07sephgjxes5z5zazz8qw7q",
+        "position": {
+          "x": 781.5,
+          "y": 270.16666666666663
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "s69ay61o34q66kkobes3hvlj",
+        "position": {
+          "x": 671,
+          "y": 380.33333333333337
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "serialize-canonical-json",
+          "label": "Serialize Canonical JSON2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Serialize JSON with stable key ordering.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "[{\"c\": 3, \"b\": 2}, {\"y\": 2, \"x\": 1}]"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "g3y9mfu0gj86jfiobo66ioyg",
+        "position": {
+          "x": 467,
+          "y": 394.33333333333337
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "mznaftws6s2a9tj7yw1bhw8a",
+        "position": {
+          "x": 791,
+          "y": 442.33333333333337
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ve0m4u4q39wjpv23a18enddk",
+        "position": {
+          "x": 732,
+          "y": 598
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "serialize-canonical-json",
+          "label": "Serialize Canonical JSON2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Serialize JSON with stable key ordering.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ob3zskcsv9souh92n5jqig4p",
+        "position": {
+          "x": 422,
+          "y": 638
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "qc81122346tkyeltqnaxlbvw",
+        "position": {
+          "x": 876,
+          "y": 684
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "vekb0jeko8lxpc06jhd0ekcc",
+        "position": {
+          "x": 573.4833706878791,
+          "y": 612.6959196029286
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "function",
+          "label": "Function",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Executes custom JavaScript code on the input data.",
+          "showRunningStatus": true,
+          "parameters": {
+            "code": "// Write your code here\nreturn `{\"city\": \"Casablanca\", \"country\": \"Morocco\"}`;"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ptpvrhy927ixmbqav0ivpplc",
+        "position": {
+          "x": 688.873392172464,
+          "y": 834.1150791225725
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "serialize-canonical-json",
+          "label": "Serialize Canonical JSON3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Serialize JSON with stable key ordering.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "nbrdx1fvwtyuub6gne6i6t9d",
+        "position": {
+          "x": 390.87339217246404,
+          "y": 886.1150791225725
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "k84sqm5uecjseke7q76retb7",
+        "position": {
+          "x": 856.873392172464,
+          "y": 944.1150791225725
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "ouhb66nxousi3l3e520l9wi3",
+        "sourceHandle": "success",
+        "target": "z43lnp5hakqy1w5cmt9an917",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ouhb66nxousi3l3e520l9wi3success-z43lnp5hakqy1w5cmt9an917input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "z43lnp5hakqy1w5cmt9an917",
+        "sourceHandle": "success",
+        "target": "m4ocqkrrczr8w0myug74949y",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__z43lnp5hakqy1w5cmt9an917success-m4ocqkrrczr8w0myug74949yinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "s9t59vzoir6ejccrw1g8eo4k",
+        "sourceHandle": "success",
+        "target": "bsv77fmaiof85a7gofw04fol",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "j6rh7uljcqzbzxi24scfm34a",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "bsv77fmaiof85a7gofw04fol",
+        "sourceHandle": "success",
+        "target": "s07sephgjxes5z5zazz8qw7q",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "o2mcbkw208gxzmydvotr35xh",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "g3y9mfu0gj86jfiobo66ioyg",
+        "sourceHandle": "success",
+        "target": "s69ay61o34q66kkobes3hvlj",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "rs9unobzzit22d4difytzk8w",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "s69ay61o34q66kkobes3hvlj",
+        "sourceHandle": "success",
+        "target": "mznaftws6s2a9tj7yw1bhw8a",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "um6smjhpd4col37kly6e7k4y",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ve0m4u4q39wjpv23a18enddk",
+        "sourceHandle": "success",
+        "target": "qc81122346tkyeltqnaxlbvw",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xfa6g66ej7m8ocd574dl7kgq",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "ob3zskcsv9souh92n5jqig4p",
+        "sourceHandle": "success",
+        "target": "vekb0jeko8lxpc06jhd0ekcc",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ob3zskcsv9souh92n5jqig4psuccess-vekb0jeko8lxpc06jhd0ekccinput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "vekb0jeko8lxpc06jhd0ekcc",
+        "sourceHandle": "success",
+        "target": "ve0m4u4q39wjpv23a18enddk",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__vekb0jeko8lxpc06jhd0ekccsuccess-ve0m4u4q39wjpv23a18enddkinput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "ptpvrhy927ixmbqav0ivpplc",
+        "sourceHandle": "success",
+        "target": "k84sqm5uecjseke7q76retb7",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "sqbyiaav8dyxd4up39sxdycz",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "id": "nbrdx1fvwtyuub6gne6i6t9d-ptpvrhy927ixmbqav0ivpplc-5af6a1e4-5f80-4996-8d09-8c43c6cff4e0",
+        "source": "nbrdx1fvwtyuub6gne6i6t9d",
+        "target": "ptpvrhy927ixmbqav0ivpplc",
+        "type": "directed",
+        "animated": false,
+        "sourceHandle": "success",
+        "targetHandle": "input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1787138552207,
+    "updatedAt": 1787139580684,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
