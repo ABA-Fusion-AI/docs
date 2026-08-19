@@ -1,0 +1,4 @@
+{
+  "label": "SEC EDGAR",
+  "description": "Get official US financial filings (10-K, 10-Q) for public companies from SEC EDGAR database."
+}
