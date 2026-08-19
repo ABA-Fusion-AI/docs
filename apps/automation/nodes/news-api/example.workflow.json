@@ -1,0 +1,92 @@
+[
+  {
+    "name": "news",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "ji8ok8js5xt9hy1usf7tunc9",
+        "position": {
+          "x": 669,
+          "y": 177.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "stwsvi0luq32gydaw1qs3ups",
+        "position": {
+          "x": 1004,
+          "y": 239.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "news-api",
+          "label": "NewsAPI",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search news articles from NewsAPI. Monitor brand mentions or industry news.",
+          "showRunningStatus": true,
+          "parameters": {
+            "q": "sport"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "ji8ok8js5xt9hy1usf7tunc9",
+        "sourceHandle": "success",
+        "target": "stwsvi0luq32gydaw1qs3ups",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ji8ok8js5xt9hy1usf7tunc9success-stwsvi0luq32gydaw1qs3upsinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1787140212133,
+    "updatedAt": 1787140513940,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
