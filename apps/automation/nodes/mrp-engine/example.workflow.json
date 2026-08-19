@@ -1,0 +1,599 @@
+[
+  {
+    "name": "ConvertKit node",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "rfh4hg0elhnqbewvnrbq889b",
+        "position": {
+          "x": 598.9251227868333,
+          "y": 579.0179449277887
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "mrp-engine",
+          "label": "MRP Engine1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Material Requirements Planning (MRP) engine that calculates net requirements, offsets by lead times, and generates planned orders through recursive BOM explosion.",
+          "showRunningStatus": true,
+          "parameters": {
+            "bom": {
+              "Bicycle": [
+                {
+                  "childId": "Wheel",
+                  "qty": 2
+                },
+                {
+                  "childId": "Frame",
+                  "qty": 1
+                }
+              ]
+            },
+            "inventory": {
+              "Bicycle": {
+                "onHand": 0,
+                "leadTime": 2
+              },
+              "Wheel": {
+                "onHand": 5,
+                "leadTime": 3
+              },
+              "Frame": {
+                "onHand": 2,
+                "leadTime": 5
+              }
+            },
+            "demands": [
+              {
+                "itemId": "Bicycle",
+                "grossQty": 10,
+                "dueDay": 20
+              }
+            ]
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "qsjdubt73jtfbl1ax3uzh1ze",
+        "position": {
+          "x": 430.7151638953024,
+          "y": 507.62918298128403
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "cl80493x8ouprvyob1b9ficf",
+        "position": {
+          "x": 836.8201433410679,
+          "y": 619.8235639545364
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "obw8hy5xgbwywwg2bkcbsaig",
+        "position": {
+          "x": 581.3686868346431,
+          "y": 844.1196991819389
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "mrp-engine",
+          "label": "MRP Engine2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Material Requirements Planning (MRP) engine that calculates net requirements, offsets by lead times, and generates planned orders through recursive BOM explosion.",
+          "showRunningStatus": true,
+          "parameters": {
+            "bom": {
+              "Bicycle": [
+                {
+                  "childId": "Wheel",
+                  "qty": 2
+                },
+                {
+                  "childId": "Rubber",
+                  "qty": 1
+                }
+              ]
+            },
+            "inventory": {
+              "Bike": {
+                "onHand": 0,
+                "leadTime": 2
+              },
+              "Wheel": {
+                "onHand": 0,
+                "leadTime": 3
+              },
+              "Rubber": {
+                "onHand": 0,
+                "leadTime": 5
+              }
+            },
+            "demands": [
+              {
+                "itemId": "Bike",
+                "grossQty": 10,
+                "dueDay": 20
+              }
+            ]
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "jk7q2e6mpduxufix2kn7imym",
+        "position": {
+          "x": 413.15872794311207,
+          "y": 772.7309372354342
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ppxe6bsqw191t3mg008dwvwa",
+        "position": {
+          "x": 819.2637073888775,
+          "y": 884.9253182086866
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ffmb3l9t4ekj5nznkfj9bs69",
+        "position": {
+          "x": 574.3461124537669,
+          "y": 1107.4662384647945
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "mrp-engine",
+          "label": "MRP Engine3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Material Requirements Planning (MRP) engine that calculates net requirements, offsets by lead times, and generates planned orders through recursive BOM explosion.",
+          "showRunningStatus": true,
+          "parameters": {
+            "bom": {
+              "Bicycle": [
+                {
+                  "childId": "RAM",
+                  "qty": 2
+                }
+              ]
+            },
+            "inventory": {
+              "Laptop": {
+                "onHand": 3,
+                "leadTime": 1
+              },
+              "RAM": {
+                "onHand": 10,
+                "leadTime": 2
+              }
+            },
+            "demands": [
+              {
+                "itemId": "Laptop",
+                "grossQty": 15,
+                "dueDay": 10
+              }
+            ]
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ax5w4d07539nh8oyl82dvup4",
+        "position": {
+          "x": 406.1361535622359,
+          "y": 1036.07747651829
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "u1tuz3h3qw6n80cdkybai912",
+        "position": {
+          "x": 812.2411330080014,
+          "y": 1148.2718574915423
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "hj6rocolhwwjwlfm4v29rh4j",
+        "position": {
+          "x": 516.4098738115387,
+          "y": 1366.2041865212052
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "mrp-engine",
+          "label": "MRP Engine4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Material Requirements Planning (MRP) engine that calculates net requirements, offsets by lead times, and generates planned orders through recursive BOM explosion.",
+          "showRunningStatus": true,
+          "parameters": {
+            "bom": {
+              "Bicycle": [
+                {
+                  "childId": "Wheel",
+                  "qty": 2
+                },
+                {
+                  "childId": "Frame",
+                  "qty": 1
+                }
+              ]
+            },
+            "inventory": {
+              "Bicycle": {
+                "onHand": 0,
+                "leadTime": 5
+              },
+              "Wheel": {
+                "onHand": 5,
+                "leadTime": 5
+              },
+              "Frame": {
+                "onHand": 2,
+                "leadTime": 5
+              }
+            },
+            "demands": [
+              {
+                "itemId": "Bicycle",
+                "grossQty": 10,
+                "dueDay": 2
+              }
+            ]
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "x9ibar4a9db8kewue7onlbv4",
+        "position": {
+          "x": 348.1999149200077,
+          "y": 1294.8154245747003
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "wspuzsvz1y8csf2lsf28r5gq",
+        "position": {
+          "x": 754.3048943657732,
+          "y": 1407.0098055479527
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "qsjdubt73jtfbl1ax3uzh1ze",
+        "sourceHandle": "success",
+        "target": "rfh4hg0elhnqbewvnrbq889b",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xppwrxw32ljdott4e1erd1cp",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "rfh4hg0elhnqbewvnrbq889b",
+        "sourceHandle": "success",
+        "target": "cl80493x8ouprvyob1b9ficf",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ql42xid7g7iaok9t7nsz2xjb",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "jk7q2e6mpduxufix2kn7imym",
+        "sourceHandle": "success",
+        "target": "obw8hy5xgbwywwg2bkcbsaig",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "i7zudd8ltt45rm7e5kol27t0",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "obw8hy5xgbwywwg2bkcbsaig",
+        "sourceHandle": "success",
+        "target": "ppxe6bsqw191t3mg008dwvwa",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "zgbpzbl3z2aeaowh5oz3rynf",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ax5w4d07539nh8oyl82dvup4",
+        "sourceHandle": "success",
+        "target": "ffmb3l9t4ekj5nznkfj9bs69",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "w3wlau2134s05yo2fmdtwyf3",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ffmb3l9t4ekj5nznkfj9bs69",
+        "sourceHandle": "success",
+        "target": "u1tuz3h3qw6n80cdkybai912",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "zp49k46ki2ags83qxm6yckuy",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "x9ibar4a9db8kewue7onlbv4",
+        "sourceHandle": "success",
+        "target": "hj6rocolhwwjwlfm4v29rh4j",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "j5vn3jv4aad1cnno3sf0la7b",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "hj6rocolhwwjwlfm4v29rh4j",
+        "sourceHandle": "success",
+        "target": "wspuzsvz1y8csf2lsf28r5gq",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "scday91yoevvm96mv50xlijg",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1787139698042,
+    "updatedAt": 1787149697294,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]

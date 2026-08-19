@@ -1,0 +1,15 @@
+[
+  {
+    "name": "TestGlobal LEI Index (GLEIF)1",
+    "variables": {},
+    "secrets": {},
+    "nodes": [],
+    "connections": [],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1787150338606,
+    "updatedAt": 1787150338606
+  }
+]
