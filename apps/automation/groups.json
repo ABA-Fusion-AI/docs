@@ -149,8 +149,7 @@
           "take",
           "merge",
           "switch",
-          "if-else",
-          "stg-once"
+          "if-else"
         ],
         "subgroups": []
       },
@@ -1539,17 +1538,9 @@
           "world-bank"
         ],
         "subgroups": []
-      }
-    ]
-  },
-  {
-    "name": "Scientific Research",
-    "icon": "groupsicons/scientific-research",
-    "color": "#0F766E",
-    "nodes": [],
-    "subgroups": [
+      },
       {
-        "name": "Research Workflow",
+        "name": "Scientific Research",
         "nodes": [
           "scientific-research-state-prepare",
           "scientific-search-pages-combine",
@@ -1559,13 +1550,7 @@
           "scientific-articles-extract",
           "scientific-pdf-fetch",
           "scientific-pdf-archive-finalize",
-          "scientific-pagination-checkpoint"
-        ],
-        "subgroups": []
-      },
-      {
-        "name": "Literature Search & Metadata",
-        "nodes": [
+          "scientific-pagination-checkpoint",
           "scientific-openalex",
           "scientific-crossref",
           "scientific-semantic-scholar",
@@ -1573,22 +1558,10 @@
           "scientific-arxiv",
           "scientific-pubmed",
           "scientific-elsevier",
-          "scientific-web-of-science"
-        ],
-        "subgroups": []
-      },
-      {
-        "name": "Patents & Materials",
-        "nodes": [
+          "scientific-web-of-science",
           "scientific-lens",
           "scientific-espacenet",
-          "scientific-optimade"
-        ],
-        "subgroups": []
-      },
-      {
-        "name": "Private & Commercial Access",
-        "nodes": [
+          "scientific-optimade",
           "scientific-google-scholar-access",
           "scientific-google-patents-access",
           "scientific-patsnap-access",
@@ -2195,8 +2168,7 @@
           "http-request",
           "mcp-client",
           "strapi",
-          "facebook-graph",
-          "stg-http"
+          "facebook-graph"
         ],
         "subgroups": []
       },
@@ -2306,197 +2278,9 @@
       {
         "name": "STG",
         "nodes": [
-          "stg-http"
-        ],
-        "subgroups": [
-          {
-            "name": "stg-aya",
-            "nodes": [
-              "stg-telegram-send-message"
-            ],
-            "subgroups": []
-          },
-          {
-            "name": "stg-builtin",
-            "nodes": [
-              "stg-once"
-            ],
-            "subgroups": []
-          },
-          {
-            "name": "stg-fatimaZahra",
-            "nodes": [],
-            "subgroups": []
-          },
-          {
-            "name": "stg-imane",
-            "nodes": [],
-            "subgroups": []
-          }
-        ]
-      },
-      {
-        "name": "Peer-only",
-        "nodes": [
-          "adalo",
-          "adalo-action",
-          "affinity",
-          "airtop",
-          "apitemplate",
-          "autopilot",
-          "bannerbear",
-          "bannerbear-action",
-          "beeminder",
-          "bitly",
-          "bitwarden",
-          "box",
-          "brandfetch",
-          "bubble",
-          "calendly",
-          "chargebee",
-          "clearbit",
-          "clockify",
-          "cockpit",
-          "cockpit-action",
-          "coda",
-          "contentful",
-          "convertkit",
-          "copper",
-          "cortex",
-          "cortex-action",
-          "cratedb",
-          "crowddev",
-          "currents",
-          "customer-datastore",
-          "customer-messenger",
-          "customerio",
-          "deepl",
-          "demio",
-          "discourse",
-          "disqus",
-          "drift",
-          "dropcontact",
-          "egoi",
-          "elastic-security",
-          "erpnext",
-          "eventbrite",
-          "figma",
-          "flow-crm",
-          "formio",
-          "formstack",
-          "freshdesk",
-          "freshservice",
-          "freshworks-crm",
-          "getresponse",
-          "ghost",
-          "gong",
-          "google-cloud-nlp",
-          "google-firebase-rtdb",
-          "gotify",
-          "gotowebinar",
-          "grist",
-          "gumroad",
-          "hacker-news",
-          "halopsa",
-          "harvest",
-          "helpscout",
-          "home-assistant",
-          "humantic-ai",
-          "humantic-ai-action",
-          "hunter",
-          "intercom",
-          "invoice-ninja",
-          "iterable",
-          "jotform",
-          "keap",
-          "kitemaker",
-          "kobotoolbox",
-          "lemlist",
-          "lingvanex",
-          "lonescale",
-          "mailcheck",
-          "mailerlite",
-          "mailgun",
-          "mailjet",
-          "marketstack",
-          "matrix-action",
-          "mautic",
-          "messagebird",
-          "metabase",
-          "microsoft-todo",
-          "mindee",
-          "misp",
-          "mocean",
-          "monica-crm",
-          "ms-dynamics-crm",
-          "ms-entra-id",
-          "ms-graph-security",
-          "ms-sharepoint",
-          "ms-todo",
-          "msg91",
-          "netscaler",
-          "netscaler-adc",
-          "okta",
-          "one-simple-api",
-          "onfleet",
-          "openthesaurus",
-          "openweathermap",
-          "oura",
-          "paddle",
-          "pagerduty",
-          "paypal",
-          "peekalink",
-          "phantombuster",
-          "philips-hue",
-          "pipedrive",
-          "plivo",
-          "postbin",
-          "posthog",
-          "postmark",
-          "profitwell",
-          "pushbullet",
-          "pushcut",
-          "pushover",
-          "quickbase",
-          "quickbooks",
-          "raindrop",
-          "rocketchat",
-          "rundeck",
-          "salesmate",
-          "securityscorecard",
-          "securityscorecard-action",
-          "segment",
-          "sendy",
-          "sentryio",
-          "servicenow",
-          "seven",
-          "seven-io",
-          "sharepoint",
-          "signl4",
-          "snowflake",
-          "snowflake-action",
-          "splunk",
-          "spotify",
-          "stackby",
-          "storyblok",
-          "storyblok-action",
-          "strava",
-          "stripe",
-          "surveymonkey",
-          "syncromsp",
-          "tapfiliate",
-          "thehive",
-          "thehive5",
-          "twake",
-          "twist",
-          "uplead",
-          "uproc",
-          "venafi-tls-cloud",
-          "venafi-tls-dc",
-          "vero",
-          "vonage",
-          "wise",
-          "x-twitter"
+          "stg-http",
+          "stg-once",
+          "stg-telegram-send-message"
         ],
         "subgroups": []
       }
