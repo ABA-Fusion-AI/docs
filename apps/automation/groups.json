@@ -75,7 +75,8 @@
           "asana-trigger",
           "linear-trigger",
           "paypal-webhook-trigger",
-          "teams-on-new-channel-message-trigger"
+          "teams-on-new-channel-message-trigger",
+          "trigger-node"
         ],
         "subgroups": []
       },
@@ -148,7 +149,8 @@
           "take",
           "merge",
           "switch",
-          "if-else"
+          "if-else",
+          "stg-once"
         ],
         "subgroups": []
       },
@@ -263,7 +265,11 @@
           "regex-replace",
           "replace",
           "split",
-          "trim"
+          "trim",
+          "apitemplate",
+          "bannerbear",
+          "bannerbear-action",
+          "json-to-pdf"
         ],
         "subgroups": []
       },
@@ -431,7 +437,11 @@
           "ai-chat",
           "ai-chat-amazon-bedrock",
           "ai-chat-google",
-          "csmai"
+          "csmai",
+          "airtop",
+          "google-cloud-nlp",
+          "humantic-ai",
+          "humantic-ai-action"
         ],
         "subgroups": []
       },
@@ -528,7 +538,8 @@
           "aws-textract",
           "aws-transcribe",
           "azure-document-intelligence",
-          "google-document-ai"
+          "google-document-ai",
+          "mindee"
         ],
         "subgroups": []
       },
@@ -584,7 +595,10 @@
           "oracle-sql",
           "oracle-database",
           "mssql",
-          "supabase"
+          "supabase",
+          "cratedb",
+          "snowflake",
+          "snowflake-action"
         ],
         "subgroups": []
       },
@@ -639,7 +653,19 @@
           "abuse-ipdb",
           "azure-maria-db",
           "om-db",
-          "baserow"
+          "baserow",
+          "action-node",
+          "data-platform-chunk",
+          "data-platform-dataset",
+          "data-platform-document",
+          "data-platform-document-upload",
+          "data-platform-document-wait",
+          "data-platform-retrieval",
+          "google-big-query",
+          "grist",
+          "metabase",
+          "quickbase",
+          "stackby"
         ],
         "subgroups": []
       },
@@ -663,7 +689,9 @@
           "cosmos-upsert",
           "cosmos-database",
           "cosmos-change-feed",
-          "cosmos-container"
+          "cosmos-container",
+          "customer-datastore",
+          "google-firebase-rtdb"
         ],
         "subgroups": []
       },
@@ -704,7 +732,17 @@
           "brevo-contact-attribute-action",
           "brevo-email-action",
           "brevo-sender-action",
-          "outlook"
+          "outlook",
+          "convertkit",
+          "egoi",
+          "getresponse",
+          "mailcheck",
+          "mailerlite",
+          "mailgun",
+          "mailjet",
+          "postmark",
+          "sendy",
+          "vero"
         ],
         "subgroups": []
       },
@@ -774,7 +812,21 @@
           "teams-list-channels",
           "teams-list-chat-messages",
           "teams-send-chat-message-and-wait",
-          "teams-update-channel"
+          "teams-update-channel",
+          "currents",
+          "customer-messenger",
+          "discourse",
+          "disqus",
+          "gotify",
+          "line-messaging",
+          "matrix-action",
+          "pushbullet",
+          "pushcut",
+          "pushover",
+          "rocketchat",
+          "signl4",
+          "twake",
+          "twist"
         ],
         "subgroups": []
       },
@@ -789,7 +841,14 @@
           "azure-communication-send-sms",
           "azure-communication-create-thread",
           "azure-communication-send-chat-message",
-          "whatsapp"
+          "whatsapp",
+          "messagebird",
+          "mocean",
+          "msg91",
+          "plivo",
+          "seven",
+          "seven-io",
+          "vonage"
         ],
         "subgroups": []
       }
@@ -821,7 +880,8 @@
           "blob-storage",
           "google-business-profile",
           "google-cloud-storage",
-          "filemaker-action"
+          "filemaker-action",
+          "figma"
         ],
         "subgroups": []
       },
@@ -864,7 +924,11 @@
           "google-drive-folder",
           "google-drive-search",
           "google-drive-shared-drive",
-          "go-file-get-best-server"
+          "go-file-get-best-server",
+          "box",
+          "ms-sharepoint",
+          "raindrop",
+          "sharepoint"
         ],
         "subgroups": []
       },
@@ -976,7 +1040,9 @@
           "aws-elb",
           "nvidia-ngc-catalog-search",
           "nvidia-ngc-asset-metadata",
-          "nvidia-cloud-function-invoke"
+          "nvidia-cloud-function-invoke",
+          "cockpit",
+          "cockpit-action"
         ],
         "subgroups": []
       },
@@ -1003,7 +1069,8 @@
           "ssh",
           "bunny",
           "cap-rover",
-          "dokku"
+          "dokku",
+          "postbin"
         ],
         "subgroups": []
       },
@@ -1011,7 +1078,8 @@
         "name": "CI/CD",
         "nodes": [
           "azure-dev-ops",
-          "jenkins"
+          "jenkins",
+          "rundeck"
         ],
         "subgroups": []
       },
@@ -1029,7 +1097,11 @@
         "name": "Monitoring",
         "nodes": [
           "grafana",
-          "uptimerobot"
+          "uptimerobot",
+          "pagerduty",
+          "sentryio",
+          "splunk",
+          "syncromsp"
         ],
         "subgroups": []
       }
@@ -1061,7 +1133,8 @@
           "telquel",
           "yabiladi",
           "agadir24",
-          "google-news-search"
+          "google-news-search",
+          "hacker-news"
         ],
         "subgroups": []
       },
@@ -1132,7 +1205,14 @@
           "company-search",
           "legal-search",
           "mahakim-dossier",
-          "open-data-search"
+          "open-data-search",
+          "bitly",
+          "brandfetch",
+          "hunter",
+          "marketstack",
+          "one-simple-api",
+          "peekalink",
+          "phantombuster"
         ],
         "subgroups": []
       },
@@ -1178,7 +1258,10 @@
           "language-tool",
           "libre-translate",
           "oxford-dictionaries",
-          "urban-dictionary"
+          "urban-dictionary",
+          "deepl",
+          "lingvanex",
+          "openthesaurus"
         ],
         "subgroups": []
       },
@@ -1200,7 +1283,8 @@
           "weather-search",
           "wttr",
           "nvidia-corrdiff-infer",
-          "nvidia-fourcastnet-infer"
+          "nvidia-fourcastnet-infer",
+          "openweathermap"
         ],
         "subgroups": []
       },
@@ -1316,7 +1400,8 @@
       {
         "name": "Social Media",
         "nodes": [
-          "reddit-api"
+          "reddit-api",
+          "x-twitter"
         ],
         "subgroups": []
       },
@@ -1349,7 +1434,8 @@
       {
         "name": "Music",
         "nodes": [
-          "sound-cloud"
+          "sound-cloud",
+          "spotify"
         ],
         "subgroups": []
       },
@@ -1536,7 +1622,9 @@
           "gemini-medical",
           "google-fitness",
           "visiostation",
-          "medifus"
+          "medifus",
+          "oura",
+          "strava"
         ],
         "subgroups": []
       },
@@ -1630,7 +1718,7 @@
         "subgroups": []
       },
       {
-        "name": "M\u00e9dicaments API FR",
+        "name": "Médicaments API FR",
         "nodes": [
           "medicaments-api"
         ],
@@ -1812,7 +1900,14 @@
         "nodes": [
           "linkedin-company",
           "linkedin-job-scraper",
-          "linkedin-job-tools"
+          "linkedin-job-tools",
+          "adalo",
+          "adalo-action",
+          "bubble",
+          "eventbrite",
+          "halopsa",
+          "home-assistant",
+          "servicenow"
         ],
         "subgroups": []
       },
@@ -1847,7 +1942,13 @@
           "xero",
           "yodlee",
           "crypto",
-          "google-finance-search"
+          "google-finance-search",
+          "erpnext",
+          "harvest",
+          "invoice-ninja",
+          "profitwell",
+          "quickbooks",
+          "wise"
         ],
         "subgroups": []
       },
@@ -1863,7 +1964,11 @@
           "stripe-charges",
           "paypal-capture-payment",
           "paypal-create-order",
-          "stripe-create-payment-link"
+          "stripe-create-payment-link",
+          "chargebee",
+          "paddle",
+          "paypal",
+          "stripe"
         ],
         "subgroups": []
       },
@@ -1908,7 +2013,10 @@
           "searates-terminal-tracking",
           "searates-tracking",
           "searates-vessel-tracking",
-          "searates-world-sea-ports"
+          "searates-world-sea-ports",
+          "onfleet",
+          "unleashed",
+          "unleashed-action"
         ],
         "subgroups": []
       },
@@ -1929,7 +2037,41 @@
           "odoo",
           "high-level-action",
           "google-search-ads-360",
-          "zoho-crm"
+          "zoho-crm",
+          "affinity",
+          "autopilot",
+          "clearbit",
+          "copper",
+          "crowddev",
+          "customerio",
+          "demio",
+          "drift",
+          "dropcontact",
+          "flow-crm",
+          "freshdesk",
+          "freshservice",
+          "freshworks-crm",
+          "gong",
+          "helpscout",
+          "intercom",
+          "iterable",
+          "keap",
+          "lemlist",
+          "lonescale",
+          "mautic",
+          "monica-crm",
+          "ms-dynamics-crm",
+          "pipedrive",
+          "posthog",
+          "salesforce-einstien",
+          "salesmate",
+          "segment",
+          "surveymonkey",
+          "tapfiliate",
+          "uplead",
+          "uproc",
+          "zendesk",
+          "zammad"
         ],
         "subgroups": []
       },
@@ -1940,7 +2082,8 @@
           "shopify",
           "woo-commerce-action",
           "bamboo-hr",
-          "google-shopping-search"
+          "google-shopping-search",
+          "gumroad"
         ],
         "subgroups": []
       },
@@ -1966,7 +2109,10 @@
           "teams-get-planner-task",
           "teams-list-planner-tasks",
           "teams-update-planner-task",
-          "wekan"
+          "wekan",
+          "beeminder",
+          "clockify",
+          "kitemaker"
         ],
         "subgroups": []
       },
@@ -1989,7 +2135,16 @@
           "notion-file-uploads",
           "notion-pages",
           "notion-search",
-          "notion-users"
+          "notion-users",
+          "calendly",
+          "coda",
+          "formio",
+          "formstack",
+          "gotowebinar",
+          "jotform",
+          "kobotoolbox",
+          "microsoft-todo",
+          "ms-todo"
         ],
         "subgroups": []
       },
@@ -1997,7 +2152,11 @@
         "name": "CMS & Publishing",
         "nodes": [
           "wordpress",
-          "webflow"
+          "webflow",
+          "contentful",
+          "ghost",
+          "storyblok",
+          "storyblok-action"
         ],
         "subgroups": []
       }
@@ -2036,7 +2195,8 @@
           "http-request",
           "mcp-client",
           "strapi",
-          "facebook-graph"
+          "facebook-graph",
+          "stg-http"
         ],
         "subgroups": []
       },
@@ -2057,7 +2217,9 @@
           "ssl-labs",
           "cisco",
           "vast-ai-add-network-disk",
-          "action-network"
+          "action-network",
+          "netscaler",
+          "netscaler-adc"
         ],
         "subgroups": []
       },
@@ -2069,7 +2231,10 @@
           "aws-iam",
           "aws-cognito",
           "ldap",
-          "aws-sts"
+          "aws-sts",
+          "bitwarden",
+          "ms-entra-id",
+          "okta"
         ],
         "subgroups": []
       },
@@ -2096,7 +2261,18 @@
           "nvidia-jailbreak-detect",
           "nvidia-content-safety",
           "nvidia-topic-control",
-          "nvidia-safety-guard"
+          "nvidia-safety-guard",
+          "cortex",
+          "cortex-action",
+          "elastic-security",
+          "misp",
+          "ms-graph-security",
+          "securityscorecard",
+          "securityscorecard-action",
+          "thehive",
+          "thehive5",
+          "venafi-tls-cloud",
+          "venafi-tls-dc"
         ],
         "subgroups": []
       },
@@ -2340,7 +2516,8 @@
           "test-node",
           "numbers-api",
           "test",
-          "yourls"
+          "yourls",
+          "philips-hue"
         ],
         "subgroups": []
       },
