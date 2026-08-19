@@ -1,0 +1,4 @@
+{
+  "label": "Correlation Analyzer",
+  "description": "Calculates Pearson (linear) or Spearman (rank-based) correlation coefficient between two variables."
+}
