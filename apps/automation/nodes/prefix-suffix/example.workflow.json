@@ -1,0 +1,92 @@
+[
+  {
+    "name": "sound-cloud",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "jd28oel6b7l3cp0u7izpkxub",
+        "position": {
+          "x": 816,
+          "y": 193
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "prefix-suffix",
+          "label": "Prefix & Suffix",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Add prefix and/or suffix to a string input.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "heloo",
+            "prefix": "aa",
+            "suffix": "cc"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "vb863fgcdl6yzq46ihepipzt",
+        "position": {
+          "x": 602,
+          "y": 151.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "vb863fgcdl6yzq46ihepipzt",
+        "sourceHandle": "success",
+        "target": "jd28oel6b7l3cp0u7izpkxub",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__vb863fgcdl6yzq46ihepipztsuccess-jd28oel6b7l3cp0u7izpkxubinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1787137726021,
+    "updatedAt": 1787138286712,
+    "publishedNames": []
+  }
+]
