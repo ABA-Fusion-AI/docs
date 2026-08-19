@@ -1,0 +1,135 @@
+[
+  {
+    "name": "testReplace",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "us07sw0g4xl5811d0u5t6ngn",
+        "position": {
+          "x": 551,
+          "y": 33
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "bhgp7dvw6hpiylt2nhkla1d6",
+        "position": {
+          "x": 967,
+          "y": 5
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        }
+      },
+      {
+        "id": "ggbilyoycbdsl8gkvuhyd374",
+        "position": {
+          "x": 762.9768751936437,
+          "y": 32.349970810520134
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "replace",
+          "label": "Replace",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Replace text pattern with replacement string.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "I'm Meryem, I have 26y",
+            "pattern": "Meryem",
+            "replacement": "huda"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "us07sw0g4xl5811d0u5t6ngn",
+        "sourceHandle": "success",
+        "target": "ggbilyoycbdsl8gkvuhyd374",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__us07sw0g4xl5811d0u5t6ngnsuccess-ggbilyoycbdsl8gkvuhyd374input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ggbilyoycbdsl8gkvuhyd374",
+        "sourceHandle": "success",
+        "target": "bhgp7dvw6hpiylt2nhkla1d6",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ggbilyoycbdsl8gkvuhyd374success-bhgp7dvw6hpiylt2nhkla1d6input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1787129568013,
+    "updatedAt": 1787131953771,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]

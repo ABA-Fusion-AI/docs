@@ -1,0 +1,4 @@
+{
+  "label": "Replace",
+  "description": "Replace text pattern with replacement string using string or regex matching."
+}
