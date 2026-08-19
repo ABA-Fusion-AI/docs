@@ -1,0 +1,4 @@
+{
+  "label": "Regression",
+  "description": "Performs linear or polynomial regression and calculates R² (coefficient of determination)."
+}
