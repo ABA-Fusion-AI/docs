@@ -1,0 +1,138 @@
+{
+  "name": "KS Test Example",
+  "nodes": [
+    {
+      "id": "0c9781ee-7e48-4f7c-9edb-3bd81dd3015f",
+      "position": {
+        "x": 479.5,
+        "y": 468
+      },
+      "type": "trigger",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Triggers the workflow manually.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      },
+      "selected": false
+    },
+    {
+      "id": "3ecf8966-b5dd-4076-9515-b5546aebbc23",
+      "position": {
+        "x": 824.5,
+        "y": 461
+      },
+      "type": "display",
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "data": {
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      },
+      "selected": false
+    },
+    {
+      "id": "pfa26hapbuu88jr372mmap7w",
+      "position": {
+        "x": 645.5,
+        "y": 481
+      },
+      "type": "action",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "ks-test",
+        "label": "KS Test",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Kolmogorov-Smirnov test: tests if data follows a normal distribution or compares two samples.",
+        "showRunningStatus": true,
+        "parameters": {
+          "kind": "two_sample",
+          "a": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "b": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "_morphing": false
+      },
+      "selected": true
+    }
+  ],
+  "connections": [
+    {
+      "source": "0c9781ee-7e48-4f7c-9edb-3bd81dd3015f",
+      "sourceHandle": "success",
+      "target": "pfa26hapbuu88jr372mmap7w",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__0c9781ee-7e48-4f7c-9edb-3bd81dd3015fsuccess-pfa26hapbuu88jr372mmap7winput",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "source": "pfa26hapbuu88jr372mmap7w",
+      "sourceHandle": "success",
+      "target": "3ecf8966-b5dd-4076-9515-b5546aebbc23",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__pfa26hapbuu88jr372mmap7wsuccess-3ecf8966-b5dd-4076-9515-b5546aebbc23input",
+      "data": {
+        "isAnimated": false
+      }
+    }
+  ],
+  "version": 1,
+  "secrets": {}
+}

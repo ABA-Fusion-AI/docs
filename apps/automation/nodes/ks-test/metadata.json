@@ -1,0 +1,4 @@
+{
+  "label": "KS Test",
+  "description": "Kolmogorov-Smirnov test: tests if data follows a normal distribution or compares two samples."
+}
