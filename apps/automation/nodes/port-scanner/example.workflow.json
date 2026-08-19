@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Port Scanner",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "hwqupk1bnyrprao1rb64fpqh",
+        "position": {
+          "x": 414.3062857103704,
+          "y": 188.9940175936372
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "bl3vqngbqq7foy38y3fb5vnq",
+        "position": {
+          "x": 834.549603323828,
+          "y": 315.73400311608884
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "jbvkuliawp3kq0ng3465ltyz",
+        "position": {
+          "x": 665.0843634143392,
+          "y": 276.75199539818937
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "port-scanner",
+          "label": "Port Scanner",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Scans IP addresses for open ports. Supports single ports, comma-separated ports, or port ranges.",
+          "showRunningStatus": true,
+          "parameters": {
+            "ports": "53, 80, 443",
+            "timeout": 400,
+            "ip": "1.1.1.1"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "jbvkuliawp3kq0ng3465ltyz",
+        "sourceHandle": "success",
+        "target": "bl3vqngbqq7foy38y3fb5vnq",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__jbvkuliawp3kq0ng3465ltyzsuccess-bl3vqngbqq7foy38y3fb5vnqinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "id": "hwqupk1bnyrprao1rb64fpqh-jbvkuliawp3kq0ng3465ltyz-61e60e24-333b-4a37-94e2-150c8fff9922",
+        "source": "hwqupk1bnyrprao1rb64fpqh",
+        "target": "jbvkuliawp3kq0ng3465ltyz",
+        "type": "directed",
+        "animated": false,
+        "sourceHandle": "success",
+        "targetHandle": "input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1787152349680,
+    "updatedAt": 1787153910785,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
