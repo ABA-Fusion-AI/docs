@@ -1,0 +1,4 @@
+{
+  "label": "Moving Average",
+  "description": "Calculates Simple Moving Average (SMA), Exponential Moving Average (EMA), or Weighted Moving Average (WMA)."
+}
