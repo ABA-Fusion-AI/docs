@@ -1,0 +1,133 @@
+[
+  {
+    "name": "testNationalize.io",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "l5bewpmigj19obs1y5upwp3k",
+        "position": {
+          "x": 490,
+          "y": 235
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ys5mrkw04tt3v7r08isu2jrj",
+        "position": {
+          "x": 803,
+          "y": 232
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        }
+      },
+      {
+        "id": "jk0teleqxk0xmojyd1junnlo",
+        "position": {
+          "x": 633,
+          "y": 315
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "nationalize",
+          "label": "Nationalize.io",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Predict nationality based on a name using the Nationalize.io API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "name": "monica"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "l5bewpmigj19obs1y5upwp3k",
+        "sourceHandle": "success",
+        "target": "jk0teleqxk0xmojyd1junnlo",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__l5bewpmigj19obs1y5upwp3ksuccess-jk0teleqxk0xmojyd1junnloinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "jk0teleqxk0xmojyd1junnlo",
+        "sourceHandle": "success",
+        "target": "ys5mrkw04tt3v7r08isu2jrj",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__jk0teleqxk0xmojyd1junnlosuccess-ys5mrkw04tt3v7r08isu2jrjinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1787151394596,
+    "updatedAt": 1787151763194,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
