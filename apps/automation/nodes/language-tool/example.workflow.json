@@ -1,0 +1,300 @@
+[
+  {
+    "name": "liberation",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "z7l3dcgdvf4y4je1g4mpyxah",
+        "position": {
+          "x": 189,
+          "y": 218.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "v3b0mf0zfgapf4hgog6xvunf",
+        "position": {
+          "x": 595.5147061071762,
+          "y": 232.70479287510963
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "d87of63u7nba9k9jk3r3x8vd",
+        "position": {
+          "x": 405.771290309184,
+          "y": 223.90009039740937
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "language-tool",
+          "label": "LanguageTool",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Check grammar and spelling using LanguageTool API. Better used as POST for long text.",
+          "showRunningStatus": true,
+          "parameters": {
+            "text": "Bonjour tout le monde, comment allez-vous?",
+            "language": "fr"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "vtc2c4mlulkni1eto9afqriv",
+        "position": {
+          "x": 210.49535424813467,
+          "y": 428.27529304541986
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "dmkzbvs89lxzkn7fag0hueii",
+        "position": {
+          "x": 629.0100603553108,
+          "y": 454.48008592052946
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "frmsoskb9plyf5sqg087t8in",
+        "position": {
+          "x": 451.2666445573186,
+          "y": 457.67538344282923
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "language-tool",
+          "label": "LanguageTool1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Check grammar and spelling using LanguageTool API. Better used as POST for long text.",
+          "showRunningStatus": true,
+          "parameters": {
+            "text": {
+              "$expr": "output",
+              "node": "Function",
+              "outputId": "success"
+            },
+            "language": "auto"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "cuqd00pyb20pzui9l421rcoc",
+        "position": {
+          "x": 322.7573530535881,
+          "y": 445.8102541362595
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "function",
+          "label": "Function",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Executes custom JavaScript code on the input data.",
+          "showRunningStatus": true,
+          "parameters": {
+            "code": "// Write your code here\nreturn \"I has a dream.\";"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "z7l3dcgdvf4y4je1g4mpyxah",
+        "sourceHandle": "success",
+        "target": "d87of63u7nba9k9jk3r3x8vd",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__z7l3dcgdvf4y4je1g4mpyxahsuccess-d87of63u7nba9k9jk3r3x8vdinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "d87of63u7nba9k9jk3r3x8vd",
+        "sourceHandle": "success",
+        "target": "v3b0mf0zfgapf4hgog6xvunf",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__d87of63u7nba9k9jk3r3x8vdsuccess-v3b0mf0zfgapf4hgog6xvunfinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "frmsoskb9plyf5sqg087t8in",
+        "sourceHandle": "success",
+        "target": "dmkzbvs89lxzkn7fag0hueii",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "kfv8ms13m314hlq32kqb6tb9",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "vtc2c4mlulkni1eto9afqriv",
+        "sourceHandle": "success",
+        "target": "cuqd00pyb20pzui9l421rcoc",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__vtc2c4mlulkni1eto9afqrivsuccess-cuqd00pyb20pzui9l421rcocinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "cuqd00pyb20pzui9l421rcoc",
+        "sourceHandle": "success",
+        "target": "frmsoskb9plyf5sqg087t8in",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__cuqd00pyb20pzui9l421rcocsuccess-frmsoskb9plyf5sqg087t8ininput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1787149784181,
+    "updatedAt": 1787151158926,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
