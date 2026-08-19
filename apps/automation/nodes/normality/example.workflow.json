@@ -1,0 +1,130 @@
+{
+  "name": "Normality Example",
+  "nodes": [
+    {
+      "id": "0c9781ee-7e48-4f7c-9edb-3bd81dd3015f",
+      "position": {
+        "x": 479.5,
+        "y": 468
+      },
+      "type": "trigger",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Triggers the workflow manually.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      },
+      "selected": false
+    },
+    {
+      "id": "3ecf8966-b5dd-4076-9515-b5546aebbc23",
+      "position": {
+        "x": 824.5,
+        "y": 461
+      },
+      "type": "display",
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "data": {
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      },
+      "selected": false
+    },
+    {
+      "id": "b9tmsr213n3rgwgg4ry6anrb",
+      "position": {
+        "x": 632.5,
+        "y": 493
+      },
+      "type": "action",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "normality",
+        "label": "Normality Check (Jarque-Bera)",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Tests for normality using the Jarque-Bera test (based on skewness and kurtosis).",
+        "showRunningStatus": true,
+        "parameters": {
+          "series": [
+            1,
+            1,
+            1,
+            1,
+            10
+          ]
+        },
+        "_morphing": false
+      },
+      "selected": true
+    }
+  ],
+  "connections": [
+    {
+      "source": "0c9781ee-7e48-4f7c-9edb-3bd81dd3015f",
+      "sourceHandle": "success",
+      "target": "b9tmsr213n3rgwgg4ry6anrb",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__0c9781ee-7e48-4f7c-9edb-3bd81dd3015fsuccess-b9tmsr213n3rgwgg4ry6anrbinput",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "source": "b9tmsr213n3rgwgg4ry6anrb",
+      "sourceHandle": "success",
+      "target": "3ecf8966-b5dd-4076-9515-b5546aebbc23",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__b9tmsr213n3rgwgg4ry6anrbsuccess-3ecf8966-b5dd-4076-9515-b5546aebbc23input",
+      "data": {
+        "isAnimated": false
+      }
+    }
+  ],
+  "version": 1,
+  "secrets": {}
+}

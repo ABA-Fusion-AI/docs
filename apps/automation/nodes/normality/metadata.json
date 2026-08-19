@@ -1,0 +1,4 @@
+{
+  "label": "Normality Check (Jarque-Bera)",
+  "description": "Tests for normality using the Jarque-Bera test (based on skewness and kurtosis)."
+}
