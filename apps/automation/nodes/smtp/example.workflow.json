@@ -1,0 +1,96 @@
+[
+  {
+    "name": "smtp",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "s37l70z64992gtv8swjnf2rz",
+        "position": {
+          "x": 756,
+          "y": 205
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "smtp",
+          "label": "SMTP: Send Email",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Send emails via any custom SMTP server (Gmail, Outlook, Postfix, etc.)",
+          "showRunningStatus": true,
+          "parameters": {
+            "host": "smtp.gmail.com",
+            "from": "kaeamyassine43@gmail.com",
+            "to": "karamyassine1210@gmail.com",
+            "subject": "test",
+            "text": "test"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "njww2rt0376wjul1h5x6bto2",
+        "position": {
+          "x": 531,
+          "y": 207.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "njww2rt0376wjul1h5x6bto2",
+        "sourceHandle": "success",
+        "target": "s37l70z64992gtv8swjnf2rz",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__njww2rt0376wjul1h5x6bto2success-s37l70z64992gtv8swjnf2rzinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1787147522079,
+    "updatedAt": 1787147846184,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
