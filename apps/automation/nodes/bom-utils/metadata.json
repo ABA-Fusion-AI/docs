@@ -1,0 +1,4 @@
+{
+  "label": "Product & BOM Management",
+  "description": "Manages Bill of Materials (BOM) operations including Cost Rollup (recursive), BOM Explosion (flatten hierarchy), Where-Used Query, and Standard vs Actual Variance calculations."
+}
