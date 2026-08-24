@@ -1,0 +1,126 @@
+[
+  {
+    "name": "Set Field Example",
+    "nodes": [
+      {
+        "id": "0c9781ee-7e48-4f7c-9edb-3bd81dd3015f",
+        "position": {
+          "x": 479.5,
+          "y": 468
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        }
+      },
+      {
+        "id": "inukpka3tfw43bhvxzf771qj",
+        "position": {
+          "x": 653.5,
+          "y": 504
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "set-field",
+          "label": "Set Field",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Write value at a path, with optional merge mode.",
+          "showRunningStatus": false,
+          "parameters": {
+            "mode": "merge",
+            "data": "{\"name\":\"Hamza\",\"profile\":{\"age\":25,\"city\":\"Rabat\"}}",
+            "path": "profile",
+            "value": "{\"country\":\"Morocco\",\"city\":\"Sale\"}"
+          },
+          "_morphing": false
+        }
+      },
+      {
+        "id": "ve1rda1fopkytry6ifpps3nq",
+        "position": {
+          "x": 806.5,
+          "y": 453
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "0c9781ee-7e48-4f7c-9edb-3bd81dd3015f",
+        "sourceHandle": "success",
+        "target": "inukpka3tfw43bhvxzf771qj",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__0c9781ee-7e48-4f7c-9edb-3bd81dd3015fsuccess-inukpka3tfw43bhvxzf771qjinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "inukpka3tfw43bhvxzf771qj",
+        "sourceHandle": "success",
+        "target": "ve1rda1fopkytry6ifpps3nq",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__inukpka3tfw43bhvxzf771qjsuccess-ve1rda1fopkytry6ifpps3nqinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "version": 1,
+    "secrets": {}
+  }
+]
