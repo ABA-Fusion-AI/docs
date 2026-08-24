@@ -1,0 +1,92 @@
+[
+  {
+    "name": "to-string",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "mb7c5bhz3mc12963slbf8l1c",
+        "position": {
+          "x": 1038,
+          "y": 120
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "to-string",
+          "label": "To String",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert value to string.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "{\"este\":\"tetst\"}"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "f5hd2xt5mxzdbvsozxhrt9uz",
+        "position": {
+          "x": 739,
+          "y": 85.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "f5hd2xt5mxzdbvsozxhrt9uz",
+        "sourceHandle": "success",
+        "target": "mb7c5bhz3mc12963slbf8l1c",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__f5hd2xt5mxzdbvsozxhrt9uzsuccess-mb7c5bhz3mc12963slbf8l1cinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1787580603605,
+    "updatedAt": 1787580688417,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
