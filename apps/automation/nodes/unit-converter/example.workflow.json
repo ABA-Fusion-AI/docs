@@ -1,0 +1,772 @@
+[
+  {
+    "name": "unit-converter",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "v8uh4ee3ik0krrsc4zha54xf",
+        "position": {
+          "x": 899.4444964028781,
+          "y": 7.948578393483572
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "unit-converter",
+          "label": "Unit Converter",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Universal unit converter for logistics and general use. Converts between weight, length, volume, area, temperature, time, and speed units with maximum precision.",
+          "showRunningStatus": false,
+          "parameters": {
+            "fromUnit": "kg",
+            "toUnit": "g",
+            "value": 5
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "on1mq6dredszmx11b2ytj1ut",
+        "position": {
+          "x": 659.9201462631551,
+          "y": -11.589987811403752
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "yq4uyyf3h1vc3os643s5pz95",
+        "position": {
+          "x": 880.6579711932935,
+          "y": 159.5378858731197
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "unit-converter",
+          "label": "Unit Converter1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Universal unit converter for logistics and general use. Converts between weight, length, volume, area, temperature, time, and speed units with maximum precision.",
+          "showRunningStatus": false,
+          "parameters": {
+            "fromUnit": "km",
+            "toUnit": "m",
+            "value": 3
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "qfvhrch7vsv2q8rn79i4n0mz",
+        "position": {
+          "x": 653.1336210535704,
+          "y": 151.99931966823243
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "hd9dv1vn7frubogbi9zvw6kc",
+        "position": {
+          "x": 880.1412216094894,
+          "y": 298.9021883732689
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "unit-converter",
+          "label": "Unit Converter2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Universal unit converter for logistics and general use. Converts between weight, length, volume, area, temperature, time, and speed units with maximum precision.",
+          "showRunningStatus": false,
+          "parameters": {
+            "fromUnit": "c",
+            "toUnit": "f",
+            "value": 100
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "dhfr8q4iaezcbm8wndwoyo7h",
+        "position": {
+          "x": 652.6168714697664,
+          "y": 291.36362216838165
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "nhh6ehj38baj5bue5je3dmj9",
+        "position": {
+          "x": 885.3546963999048,
+          "y": 474.49149585290513
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "unit-converter",
+          "label": "Unit Converter2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Universal unit converter for logistics and general use. Converts between weight, length, volume, area, temperature, time, and speed units with maximum precision.",
+          "showRunningStatus": false,
+          "parameters": {
+            "fromUnit": "c",
+            "toUnit": "k",
+            "value": 0
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "astjwpts3nk7rz10jy46wq6t",
+        "position": {
+          "x": 669.8303462601817,
+          "y": 478.95292964801786
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "oby4bb6k0dvve30wj3vlxluz",
+        "position": {
+          "x": 873.8828468175876,
+          "y": 625.1648027900012
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "unit-converter",
+          "label": "Unit Converter3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Universal unit converter for logistics and general use. Converts between weight, length, volume, area, temperature, time, and speed units with maximum precision.",
+          "showRunningStatus": false,
+          "parameters": {
+            "fromUnit": "l",
+            "toUnit": "ml",
+            "value": 2
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "mljmcsdo99e516pe9stqdbmo",
+        "position": {
+          "x": 646.3584966778645,
+          "y": 617.6262365851139
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ihibbwxapnnw3ducqkw57dca",
+        "position": {
+          "x": 879.096321608003,
+          "y": 800.7541102696373
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "unit-converter",
+          "label": "Unit Converter3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Universal unit converter for logistics and general use. Converts between weight, length, volume, area, temperature, time, and speed units with maximum precision.",
+          "showRunningStatus": false,
+          "parameters": {
+            "fromUnit": "ha",
+            "toUnit": "m2",
+            "value": 5
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "pntkx51r3md7h8d32tgrrbdh",
+        "position": {
+          "x": 663.5719714682799,
+          "y": 805.21554406475
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "t1g8gplqf77034kb6m9w4f67",
+        "position": {
+          "x": 902.5795720241989,
+          "y": 964.1184127697866
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "unit-converter",
+          "label": "Unit Converter3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Universal unit converter for logistics and general use. Converts between weight, length, volume, area, temperature, time, and speed units with maximum precision.",
+          "showRunningStatus": false,
+          "parameters": {
+            "fromUnit": "h",
+            "toUnit": "min",
+            "value": 2
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "jeaow7jnpunkj7721pm29a67",
+        "position": {
+          "x": 687.0552218844758,
+          "y": 968.5798465648993
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "wxn3dr0v5henvghqk225zypl",
+        "position": {
+          "x": 931.7930468146143,
+          "y": 1163.707720249423
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "unit-converter",
+          "label": "Unit Converter3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Universal unit converter for logistics and general use. Converts between weight, length, volume, area, temperature, time, and speed units with maximum precision.",
+          "showRunningStatus": false,
+          "parameters": {
+            "fromUnit": "km/h",
+            "toUnit": "m/s",
+            "value": 120
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "s5qj0srtg5bt6sb8i8ull2hm",
+        "position": {
+          "x": 728.2686966748912,
+          "y": 1180.1691540445354
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "c6nkrjmn42jx97q5rk7d0fsf",
+        "position": {
+          "x": 916.2418543161386,
+          "y": 1358.6156532751315
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "unit-converter",
+          "label": "Unit Converter4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Universal unit converter for logistics and general use. Converts between weight, length, volume, area, temperature, time, and speed units with maximum precision.",
+          "showRunningStatus": false,
+          "parameters": {
+            "fromUnit": "kg",
+            "toUnit": "kg",
+            "value": 50
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "sp87hgu55sxbshl295zfbsss",
+        "position": {
+          "x": 724.7175041764156,
+          "y": 1387.077087070244
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ow92whu10p1cajl0ynitgwwv",
+        "position": {
+          "x": 917.7464056525433,
+          "y": 1516.5935435976382
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "unit-converter",
+          "label": "Unit Converter5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Universal unit converter for logistics and general use. Converts between weight, length, volume, area, temperature, time, and speed units with maximum precision.",
+          "showRunningStatus": false,
+          "parameters": {
+            "fromUnit": "kg",
+            "toUnit": "km",
+            "value": 10
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "iorncv0zblv768g01x210pgn",
+        "position": {
+          "x": 726.2220555128202,
+          "y": 1545.0549773927507
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "on1mq6dredszmx11b2ytj1ut",
+        "sourceHandle": "success",
+        "target": "v8uh4ee3ik0krrsc4zha54xf",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__on1mq6dredszmx11b2ytj1utsuccess-v8uh4ee3ik0krrsc4zha54xfinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "qfvhrch7vsv2q8rn79i4n0mz",
+        "sourceHandle": "success",
+        "target": "yq4uyyf3h1vc3os643s5pz95",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xaaw0pjl0xcmnbuvoafwc2o1",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "dhfr8q4iaezcbm8wndwoyo7h",
+        "sourceHandle": "success",
+        "target": "hd9dv1vn7frubogbi9zvw6kc",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "dfkbxkgj0042p6ho4zw41ggq",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "astjwpts3nk7rz10jy46wq6t",
+        "sourceHandle": "success",
+        "target": "nhh6ehj38baj5bue5je3dmj9",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ee95fomlo637plg880y69l5e",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "mljmcsdo99e516pe9stqdbmo",
+        "sourceHandle": "success",
+        "target": "oby4bb6k0dvve30wj3vlxluz",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "bsnid20cx6h5zuhnyi8lktfa",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "pntkx51r3md7h8d32tgrrbdh",
+        "sourceHandle": "success",
+        "target": "ihibbwxapnnw3ducqkw57dca",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "aks25xfe31zdtdmt8x0y0gek",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "jeaow7jnpunkj7721pm29a67",
+        "sourceHandle": "success",
+        "target": "t1g8gplqf77034kb6m9w4f67",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "om13ywxxazr0l6lq8xvb9ebv",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "s5qj0srtg5bt6sb8i8ull2hm",
+        "sourceHandle": "success",
+        "target": "wxn3dr0v5henvghqk225zypl",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "o0g10yoqv8sca9g8yscl0ped",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "sp87hgu55sxbshl295zfbsss",
+        "sourceHandle": "success",
+        "target": "c6nkrjmn42jx97q5rk7d0fsf",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "iqqes8o4jdy3yc4egugclmua",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "iorncv0zblv768g01x210pgn",
+        "sourceHandle": "success",
+        "target": "ow92whu10p1cajl0ynitgwwv",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "zade8m2ycrvam3t1lmet9mc1",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1787606601455,
+    "updatedAt": 1787610133187,
+    "publishedNames": [],
+    "previousStatus": "error"
+  }
+]
