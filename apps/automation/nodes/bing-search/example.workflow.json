@@ -1,0 +1,93 @@
+[
+  {
+    "name": "bing search",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "u4k0k1gfna30js4nc5bckgax",
+        "position": {
+          "x": 964,
+          "y": 200
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bing-search",
+          "label": "Bing Search",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search Bing using SerpApi (official Bing Search API was retired). Returns web search results, images, videos, and news.",
+          "showRunningStatus": true,
+          "parameters": {
+            "safeSearch": "Moderate",
+            "query": "facebook"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "p4358q39fvd15kxyujqosqov",
+        "position": {
+          "x": 635,
+          "y": 176.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "p4358q39fvd15kxyujqosqov",
+        "sourceHandle": "success",
+        "target": "u4k0k1gfna30js4nc5bckgax",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__p4358q39fvd15kxyujqosqovsuccess-u4k0k1gfna30js4nc5bckgaxinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1787568741954,
+    "updatedAt": 1787569856294,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
