@@ -1,0 +1,244 @@
+[
+  {
+    "name": "gbif",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "l9ks9gez8exkolux04gjxqjy",
+        "position": {
+          "x": 1052,
+          "y": 68.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "gbif",
+          "label": "GBIF Science",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Scientific biodiversity data and occurrences.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "get_species",
+            "taxonKey": "7412043"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "pv6f3mhxqdnntz8azvlhzl8i",
+        "position": {
+          "x": 1051.9444793648786,
+          "y": 197.22203291671056
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "gbif",
+          "label": "GBIF Science1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Scientific biodiversity data and occurrences.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "search_species",
+            "scientificName": "Calopteryx splendens"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "s1rgzfa9bgou9gwex6kukw8x",
+        "position": {
+          "x": 1051.8889587297572,
+          "y": 323.83295839814525
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "gbif",
+          "label": "GBIF Science2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Scientific biodiversity data and occurrences.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "get_occurrences",
+            "taxonKey": "7412043"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "rfmb4b5vajijfpzlaeaqmy0u",
+        "position": {
+          "x": 751.333768919802,
+          "y": 45.55580183651249
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "u9lnr26pdlk3n5wf2mtgclvt",
+        "position": {
+          "x": 751.2782482846806,
+          "y": 174.27783475322303
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "zpivjpy776sth9vzlwolsfx3",
+        "position": {
+          "x": 751.2227276495591,
+          "y": 300.8887602346577
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "rfmb4b5vajijfpzlaeaqmy0u",
+        "sourceHandle": "success",
+        "target": "l9ks9gez8exkolux04gjxqjy",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__rfmb4b5vajijfpzlaeaqmy0usuccess-l9ks9gez8exkolux04gjxqjyinput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "u9lnr26pdlk3n5wf2mtgclvt",
+        "sourceHandle": "success",
+        "target": "pv6f3mhxqdnntz8azvlhzl8i",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "q5ap4la5hi6oqmhaok1fuqo8",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "zpivjpy776sth9vzlwolsfx3",
+        "sourceHandle": "success",
+        "target": "s1rgzfa9bgou9gwex6kukw8x",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ya0h42iqy5v47s3w9xh5eibe",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1787567204416,
+    "updatedAt": 1787567455816,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
