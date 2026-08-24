@@ -1,0 +1,348 @@
+[
+  {
+    "name": "testText to binary",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "yp2w9lb4lhlrbbmo36szjhds",
+        "position": {
+          "x": 284,
+          "y": 18
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "text-to-binary",
+          "label": "Text to Binary",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert text to binary data using specified encoding.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "Hello"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "gjrcey3a2qak4fbg0okq2n6t",
+        "position": {
+          "x": 0,
+          "y": 18
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "k5tf02sq53q4gvfxe6od0vy9",
+        "position": {
+          "x": 568,
+          "y": 0
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "ke2sg2mlcppgtr9ashg0ake1",
+        "position": {
+          "x": 568,
+          "y": 358
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "text-to-binary",
+          "label": "Text to Binary1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert text to binary data using specified encoding.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": {
+              "$expr": "output",
+              "node": "Function",
+              "outputId": "success"
+            }
+          },
+          "_morphing": false
+        },
+        "selected": true,
+        "draggable": true
+      },
+      {
+        "id": "sozgs7sr3w5bvqkzucf7yrvz",
+        "position": {
+          "x": 0,
+          "y": 358
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "ct0alnkyc69i9wmqinj3q7ma",
+        "position": {
+          "x": 852,
+          "y": 340
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "k0g0w6i93kpfxg7pp83ais56",
+        "position": {
+          "x": 284,
+          "y": 358
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "function",
+          "label": "Function",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Executes custom JavaScript code on the input data.",
+          "showRunningStatus": true,
+          "parameters": {
+            "code": "// Write your code here\nreturn \"meryem\";"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "vusbc214qzvp79woh58zmo1c",
+        "position": {
+          "x": 579.747572815534,
+          "y": 550.3883495145631
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "gjrcey3a2qak4fbg0okq2n6t",
+        "sourceHandle": "success",
+        "target": "yp2w9lb4lhlrbbmo36szjhds",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__gjrcey3a2qak4fbg0okq2n6tsuccess-yp2w9lb4lhlrbbmo36szjhdsinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "yp2w9lb4lhlrbbmo36szjhds",
+        "sourceHandle": "success",
+        "target": "k5tf02sq53q4gvfxe6od0vy9",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__yp2w9lb4lhlrbbmo36szjhdssuccess-k5tf02sq53q4gvfxe6od0vy9input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ke2sg2mlcppgtr9ashg0ake1",
+        "sourceHandle": "success",
+        "target": "ct0alnkyc69i9wmqinj3q7ma",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "d1wvm048fqvu97twbpoogw54",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "sozgs7sr3w5bvqkzucf7yrvz",
+        "sourceHandle": "success",
+        "target": "k0g0w6i93kpfxg7pp83ais56",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__sozgs7sr3w5bvqkzucf7yrvzsuccess-k0g0w6i93kpfxg7pp83ais56input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "k0g0w6i93kpfxg7pp83ais56",
+        "sourceHandle": "success",
+        "target": "ke2sg2mlcppgtr9ashg0ake1",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__k0g0w6i93kpfxg7pp83ais56success-ke2sg2mlcppgtr9ashg0ake1input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "k0g0w6i93kpfxg7pp83ais56",
+        "sourceHandle": "success",
+        "target": "vusbc214qzvp79woh58zmo1c",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__k0g0w6i93kpfxg7pp83ais56success-vusbc214qzvp79woh58zmo1cinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1787581866058,
+    "updatedAt": 1787582026547,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
