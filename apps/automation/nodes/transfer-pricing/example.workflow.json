@@ -1,0 +1,394 @@
+[
+  {
+    "name": "transfer-pricing",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "iscjubr6nhjlqyuru4p9l1ng",
+        "position": {
+          "x": 219,
+          "y": 179
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "transfer-pricing",
+          "label": "Transfer Pricing Calculator",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Calculate transfer prices using cost-plus, resale-price, or market-price methods",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "cost-plus"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "w8fd2r1g27mzshj1bshzsnjq",
+        "position": {
+          "x": 69.875,
+          "y": 154.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "b18wc71sfa3b0l8mk2lqr2ui",
+        "position": {
+          "x": 205.4375,
+          "y": 503.75
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "transfer-pricing",
+          "label": "Transfer Pricing Calculator1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Calculate transfer prices using cost-plus, resale-price, or market-price methods",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "market-price",
+            "costBasis": 150,
+            "markup": 0
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "dkirbwgjewpt3p476vyj7uro",
+        "position": {
+          "x": 28.3125,
+          "y": 493.12457275390625
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "bo01ki2fejncrgzo3tpvgrz6",
+        "position": {
+          "x": 211.4375,
+          "y": 368.9999694824219
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "transfer-pricing",
+          "label": "Transfer Pricing Calculator2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Calculate transfer prices using cost-plus, resale-price, or market-price methods",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "resale-price",
+            "costBasis": 80
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "gr585faedcky0zqzydafvaya",
+        "position": {
+          "x": 46.3125,
+          "y": 356.25
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "rmuowf6yajdd2ipe3fy1tjv5",
+        "position": {
+          "x": 34.3125,
+          "y": 641.0618591308594
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "jomy7fwo8metmsiavrijylud",
+        "position": {
+          "x": 216.7419846609497,
+          "y": 670.1421801226923
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "transfer-pricing",
+          "label": "Transfer Pricing Calculator3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Calculate transfer prices using cost-plus, resale-price, or market-price methods",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "cost-plus",
+            "costBasis": 250,
+            "markup": 0
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "q47q45rxonlwgktwlgrd9qqx",
+        "position": {
+          "x": 309.01140883538596,
+          "y": 799.7865609247482
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "transfer-pricing",
+          "label": "Transfer Pricing Calculator4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Calculate transfer prices using cost-plus, resale-price, or market-price methods",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "cost-plus",
+            "costBasis": 50,
+            "markup": 100
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "wutdyezvyf8vmcrvb4glsvsq",
+        "position": {
+          "x": 40.37890807436894,
+          "y": 785.7709521893906
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "w8fd2r1g27mzshj1bshzsnjq",
+        "sourceHandle": "success",
+        "target": "iscjubr6nhjlqyuru4p9l1ng",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__w8fd2r1g27mzshj1bshzsnjqsuccess-iscjubr6nhjlqyuru4p9l1nginput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "dkirbwgjewpt3p476vyj7uro",
+        "sourceHandle": "success",
+        "target": "b18wc71sfa3b0l8mk2lqr2ui",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "onvj7z6cl794qfp2frkvxqq7",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "gr585faedcky0zqzydafvaya",
+        "sourceHandle": "success",
+        "target": "bo01ki2fejncrgzo3tpvgrz6",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "suqng6egc93eqhqpk40w68ot",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "rmuowf6yajdd2ipe3fy1tjv5",
+        "sourceHandle": "success",
+        "target": "jomy7fwo8metmsiavrijylud",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__rmuowf6yajdd2ipe3fy1tjv5success-jomy7fwo8metmsiavrijyludinput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "wutdyezvyf8vmcrvb4glsvsq",
+        "sourceHandle": "success",
+        "target": "q47q45rxonlwgktwlgrd9qqx",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__wutdyezvyf8vmcrvb4glsvsqsuccess-q47q45rxonlwgktwlgrd9qqxinput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1787581626089,
+    "updatedAt": 1787583510485,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
