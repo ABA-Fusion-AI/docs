@@ -1,0 +1,144 @@
+﻿{
+    "name":  "Schema Validate Example",
+    "nodes":  [
+                  {
+                      "id":  "0c9781ee-7e48-4f7c-9edb-3bd81dd3015f",
+                      "position":  {
+                                       "x":  479.5,
+                                       "y":  468
+                                   },
+                      "type":  "trigger",
+                      "width":  64,
+                      "height":  64,
+                      "data":  {
+                                   "name":  "manual-trigger",
+                                   "label":  "Manual Trigger",
+                                   "inputs":  {
+
+                                              },
+                                   "outputs":  {
+                                                   "success":  {
+                                                                   "label":  "Success"
+                                                               },
+                                                   "error":  {
+                                                                 "label":  "Error"
+                                                             }
+                                               },
+                                   "description":  "Triggers the workflow manually.",
+                                   "showRunningStatus":  false,
+                                   "parameters":  {
+
+                                                  }
+                               },
+                      "selected":  false
+                  },
+                  {
+                      "id":  "rqf799ty72tmsxv8y0aop9dx",
+                      "position":  {
+                                       "x":  641.5,
+                                       "y":  489
+                                   },
+                      "type":  "action",
+                      "width":  64,
+                      "height":  64,
+                      "data":  {
+                                   "name":  "schema-validate",
+                                   "label":  "Schema Validate",
+                                   "inputs":  {
+                                                  "input":  {
+                                                                "label":  "Input"
+                                                            }
+                                              },
+                                   "outputs":  {
+                                                   "success":  {
+                                                                   "label":  "Success"
+                                                               },
+                                                   "error":  {
+                                                                 "label":  "Error"
+                                                             }
+                                               },
+                                   "description":  "Production-grade validation with JSON Schema or Laravel-style rules. Supports detailed error messages, conditional validation, and custom rules.",
+                                   "showRunningStatus":  false,
+                                   "parameters":  {
+                                                      "validationMode":  "laravel",
+                                                      "data":  "{\n  \"name\": \"Hamza\",\n  \"email\": \"hamza@example.com\",\n  \"age\": 25\n}",
+                                                      "schema":  "{\n  \"name\": \"required|string|min:2\",\n  \"email\": \"required|email\",\n  \"age\": \"required|integer|min:18\"\n}",
+                                                      "stopOnFirstError":  false,
+                                                      "returnAllErrors":  true,
+                                                      "customMessages":  "{}",
+                                                      "removeAdditional":  false,
+                                                      "useDefaults":  true,
+                                                      "coerceTypes":  true,
+                                                      "strict":  false,
+                                                      "strictNumbers":  false,
+                                                      "strictTypes":  false
+                                                  }
+                               },
+                      "selected":  false
+                  },
+                  {
+                      "id":  "3ecf8966-b5dd-4076-9515-b5546aebbc23",
+                      "position":  {
+                                       "x":  824.5,
+                                       "y":  461
+                                   },
+                      "type":  "display",
+                      "width":  256,
+                      "height":  100,
+                      "dragHandle":  ".drag-handle__custom",
+                      "data":  {
+                                   "name":  "log",
+                                   "label":  "Log",
+                                   "inputs":  {
+                                                  "input":  {
+                                                                "label":  "Input"
+                                                            }
+                                              },
+                                   "outputs":  {
+                                                   "success":  {
+                                                                   "label":  "Success",
+                                                                   "isConnectable":  false
+                                                               }
+                                               },
+                                   "description":  "Logs the input data to the console.",
+                                   "showRunningStatus":  false,
+                                   "parameters":  {
+
+                                                  }
+                               },
+                      "selected":  false
+                  }
+              ],
+    "connections":  [
+                        {
+                            "source":  "0c9781ee-7e48-4f7c-9edb-3bd81dd3015f",
+                            "sourceHandle":  "success",
+                            "target":  "rqf799ty72tmsxv8y0aop9dx",
+                            "targetHandle":  "input",
+                            "type":  "directed",
+                            "id":  "edge-manual-schema-validate",
+                            "data":  {
+                                         "isAnimated":  false
+                                     }
+                        },
+                        {
+                            "source":  "rqf799ty72tmsxv8y0aop9dx",
+                            "sourceHandle":  "success",
+                            "target":  "3ecf8966-b5dd-4076-9515-b5546aebbc23",
+                            "targetHandle":  "input",
+                            "type":  "directed",
+                            "id":  "edge-schema-validate-log",
+                            "data":  {
+                                         "isAnimated":  false
+                                     }
+                        }
+                    ],
+    "version":  1,
+    "secrets":  {
+
+                },
+    "status":  "stopped",
+    "publishedNames":  [
+
+                       ]
+}

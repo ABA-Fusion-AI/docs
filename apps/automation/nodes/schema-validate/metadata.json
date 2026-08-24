@@ -1,0 +1,4 @@
+{
+  "label": "Schema Validate",
+  "description": "Production-grade validation with JSON Schema or Laravel-style rules. Supports detailed error messages, conditional validation, and custom rules."
+}
