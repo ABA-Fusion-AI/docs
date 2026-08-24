@@ -1,0 +1,534 @@
+[
+  {
+    "name": "To Boolean",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "koparewe7wijqk3p6ojxduau",
+        "position": {
+          "x": 549,
+          "y": 164.0092544555664
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "to-boolean",
+          "label": "To Boolean",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert value to boolean with optional strict mode.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "no"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "jtkcc8td3gznuyw5a9gaetqh",
+        "position": {
+          "x": 373.5,
+          "y": 134.5185089111328
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "sk5zso5e9qbfvwpv9yv6nxwj",
+        "position": {
+          "x": 469,
+          "y": 323.0185089111328
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "to-boolean",
+          "label": "To Boolean1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert value to boolean with optional strict mode.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "yes"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "tdlvfhav6o0fglhbs9ds4y8n",
+        "position": {
+          "x": 305.5,
+          "y": 305.5277633666992
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "efsmdu53d7v2dw546tt5e7ku",
+        "position": {
+          "x": 434,
+          "y": 481.0185089111328
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "to-boolean",
+          "label": "To Boolean2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert value to boolean with optional strict mode.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "false"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "jjjd7dunp7cf678xm1lk5457",
+        "position": {
+          "x": 270.5,
+          "y": 463.5277633666992
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "mpx2q14rstz355g2tduoeg6i",
+        "position": {
+          "x": 378,
+          "y": 664.0277633666992
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "to-boolean",
+          "label": "To Boolean2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert value to boolean with optional strict mode.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "true"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "v8mcr4z9fuywlqdghpku46ob",
+        "position": {
+          "x": 226.5,
+          "y": 658.5370178222656
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "cpnx2c79fgvaq94nc0zb12ja",
+        "position": {
+          "x": 200.125,
+          "y": 904.4073905944824
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "emh5rcjwhg234q5p7mtx9wtc",
+        "position": {
+          "x": 393.375,
+          "y": 823.148136138916
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "to-boolean",
+          "label": "To Boolean4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert value to boolean with optional strict mode.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "[[ active_user ]]"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "q75kekbndeeeo3ikocchome5",
+        "position": {
+          "x": 382.0042924484807,
+          "y": 1053.444731611536
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "to-boolean",
+          "label": "To Boolean5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert value to boolean with optional strict mode.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "1",
+            "strict": true
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "khnc0cg0vwmtrl3c8wvnurfx",
+        "position": {
+          "x": 196.14742352282198,
+          "y": 1066.5049440225284
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "y9rjekjv1ybbjqn6zet2bod8",
+        "position": {
+          "x": 375.4741862429846,
+          "y": 1199.618647442257
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "to-boolean",
+          "label": "To Boolean6",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert value to boolean with optional strict mode.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "on",
+            "strict": true
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "kzqug02w90tcng61sgjrqly9",
+        "position": {
+          "x": 201.61731731732584,
+          "y": 1224.6788598532494
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "jtkcc8td3gznuyw5a9gaetqh",
+        "sourceHandle": "success",
+        "target": "koparewe7wijqk3p6ojxduau",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__jtkcc8td3gznuyw5a9gaetqhsuccess-koparewe7wijqk3p6ojxduauinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "tdlvfhav6o0fglhbs9ds4y8n",
+        "sourceHandle": "success",
+        "target": "sk5zso5e9qbfvwpv9yv6nxwj",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "dtolbc8t2nzkn7ah1adan5jb",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "jjjd7dunp7cf678xm1lk5457",
+        "sourceHandle": "success",
+        "target": "efsmdu53d7v2dw546tt5e7ku",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "lv7r4q3fht167fn146n5kh9s",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "v8mcr4z9fuywlqdghpku46ob",
+        "sourceHandle": "success",
+        "target": "mpx2q14rstz355g2tduoeg6i",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "t22qbtatove7x84c81zftq3h",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "cpnx2c79fgvaq94nc0zb12ja",
+        "sourceHandle": "success",
+        "target": "emh5rcjwhg234q5p7mtx9wtc",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__cpnx2c79fgvaq94nc0zb12jasuccess-emh5rcjwhg234q5p7mtx9wtcinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "khnc0cg0vwmtrl3c8wvnurfx",
+        "sourceHandle": "success",
+        "target": "q75kekbndeeeo3ikocchome5",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__khnc0cg0vwmtrl3c8wvnurfxsuccess-q75kekbndeeeo3ikocchome5input",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "kzqug02w90tcng61sgjrqly9",
+        "sourceHandle": "success",
+        "target": "y9rjekjv1ybbjqn6zet2bod8",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "mezew4gc9rextc81rysoa82u",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1787587928971,
+    "updatedAt": 1787588786715,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]

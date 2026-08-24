@@ -1,0 +1,4 @@
+{
+  "label": "To Boolean",
+  "description": "Convert value to boolean with optional strict mode."
+}
