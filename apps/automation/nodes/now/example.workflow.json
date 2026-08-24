@@ -1,0 +1,610 @@
+[
+  {
+    "name": "signal-r",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "ysma7d4e5qxpmw6o73oyblvb",
+        "position": {
+          "x": 505.0949218117577,
+          "y": 154.10160363839233
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "now",
+          "label": "Now",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get the current UTC date/time in the selected output type.",
+          "showRunningStatus": false,
+          "parameters": {
+            "outputType": "string",
+            "format": "ISO 8601"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "tmtxeydbrohvo9ojwlj1fpdx",
+        "position": {
+          "x": 388.81764799702455,
+          "y": 74.87346118619678
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ry2ziipvukmgvyhsyyx32atb",
+        "position": {
+          "x": 495.5949218117578,
+          "y": 301.60160363839236
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "now",
+          "label": "Now1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get the current UTC date/time in the selected output type.",
+          "showRunningStatus": false,
+          "parameters": {
+            "outputType": "string",
+            "format": "YYYY-MM-DD"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ie0obys4x5z7my9trqotlxe3",
+        "position": {
+          "x": 391.31764799702455,
+          "y": 234.37346118619678
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "y88olnobj0ud8g0n53gw9qwa",
+        "position": {
+          "x": 473.5949218117578,
+          "y": 462.60160363839236
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "now",
+          "label": "Now2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get the current UTC date/time in the selected output type.",
+          "showRunningStatus": false,
+          "parameters": {
+            "outputType": "string",
+            "format": "YYYY-MM-DD HH:mm:ss"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "pc2tkep1q0dgtwfhhn5xnbsd",
+        "position": {
+          "x": 369.31764799702455,
+          "y": 395.3734611861968
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "m97ga24xqkmc6awxans0ofz5",
+        "position": {
+          "x": 446.5949218117578,
+          "y": 616.6016036383922
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "now",
+          "label": "Now3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get the current UTC date/time in the selected output type.",
+          "showRunningStatus": false,
+          "parameters": {
+            "outputType": "string",
+            "format": "DD/MM/YYYY"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "wqgc3ss86bcwcvh4dcsrnaye",
+        "position": {
+          "x": 342.3176479970246,
+          "y": 549.3734611861968
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "k6x2kdltcn06l5a4qw8iqnu4",
+        "position": {
+          "x": 418.6103510429557,
+          "y": 753.6356273116234
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "now",
+          "label": "Now4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get the current UTC date/time in the selected output type.",
+          "showRunningStatus": false,
+          "parameters": {
+            "outputType": "string",
+            "format": "MM/DD/YYYY"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "gdwka4vfj8xgyu8kps0rl9os",
+        "position": {
+          "x": 314.3330772282227,
+          "y": 686.4074848594278
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "fphno99yx9gg0i9n6x9yql5h",
+        "position": {
+          "x": 433.1103510429559,
+          "y": 925.1356273116235
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "now",
+          "label": "Now4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get the current UTC date/time in the selected output type.",
+          "showRunningStatus": false,
+          "parameters": {
+            "outputType": "string",
+            "format": "RFC 2822"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "kkkf9yn5f411waqpo4jc9526",
+        "position": {
+          "x": 340.8330772282227,
+          "y": 869.9074848594278
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "nufwdv301zjvcvzfuusmtrmo",
+        "position": {
+          "x": 528.862558057822,
+          "y": 1075.720260179584
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "now",
+          "label": "Now4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get the current UTC date/time in the selected output type.",
+          "showRunningStatus": false,
+          "parameters": {
+            "outputType": "number"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "kt6v9fllpnp6d3rc0w4nhhc8",
+        "position": {
+          "x": 342.8330772282227,
+          "y": 1054.9074848594278
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "z3n34t3sfp18j3kuazt4ph5f",
+        "position": {
+          "x": 432.1103510429559,
+          "y": 1288.1356273116232
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "now",
+          "label": "Now4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get the current UTC date/time in the selected output type.",
+          "showRunningStatus": false,
+          "parameters": {
+            "outputType": "string",
+            "format": "DD/MM/YYYY"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "u13eaii8tjfegwrjysws761c",
+        "position": {
+          "x": 339.8330772282227,
+          "y": 1232.9074848594278
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "tmtxeydbrohvo9ojwlj1fpdx",
+        "sourceHandle": "success",
+        "target": "ysma7d4e5qxpmw6o73oyblvb",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__tmtxeydbrohvo9ojwlj1fpdxsuccess-ysma7d4e5qxpmw6o73oyblvbinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ie0obys4x5z7my9trqotlxe3",
+        "sourceHandle": "success",
+        "target": "ry2ziipvukmgvyhsyyx32atb",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "pn5eavmmw90vii61piahi6xw",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "pc2tkep1q0dgtwfhhn5xnbsd",
+        "sourceHandle": "success",
+        "target": "y88olnobj0ud8g0n53gw9qwa",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "pjkzmbp4zs1eya4ecab927wg",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "wqgc3ss86bcwcvh4dcsrnaye",
+        "sourceHandle": "success",
+        "target": "m97ga24xqkmc6awxans0ofz5",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "oy0ht9q1nk40rp98ftc6uk98",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "gdwka4vfj8xgyu8kps0rl9os",
+        "sourceHandle": "success",
+        "target": "k6x2kdltcn06l5a4qw8iqnu4",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "dnribzqzre3f0b2dibriudyv",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "kkkf9yn5f411waqpo4jc9526",
+        "sourceHandle": "success",
+        "target": "fphno99yx9gg0i9n6x9yql5h",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "bl5qyspokwst780di2z4u450",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "kt6v9fllpnp6d3rc0w4nhhc8",
+        "sourceHandle": "success",
+        "target": "nufwdv301zjvcvzfuusmtrmo",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "hhono4mpzp9lg24n7n3bfm7v",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "u13eaii8tjfegwrjysws761c",
+        "sourceHandle": "success",
+        "target": "z3n34t3sfp18j3kuazt4ph5f",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ivcxdu0yhc4zpeudpjucdu8y",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1787578072031,
+    "updatedAt": 1787580100753,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
