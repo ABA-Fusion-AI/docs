@@ -1,0 +1,134 @@
+[
+  {
+    "name": "testPostCode",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "nv1a7m0l5i04nw9bpf1zsruo",
+        "position": {
+          "x": 698.3403464747275,
+          "y": 170.02754192415932
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "postcode-io",
+          "label": "Postcode.io1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get UK postcode information using the Postcode.io API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "postcode": "SW1A 1AA"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "xnhmgdqbhriucmc5ygjum95g",
+        "position": {
+          "x": 527.6596535252725,
+          "y": 163.97245807584068
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "qkghgmjdahvvy31n1t4j39a3",
+        "position": {
+          "x": 935,
+          "y": 152
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log6",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": true,
+        "draggable": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "xnhmgdqbhriucmc5ygjum95g",
+        "sourceHandle": "success",
+        "target": "nv1a7m0l5i04nw9bpf1zsruo",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "hggy7ui412oyib970bbbnw8p",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "nv1a7m0l5i04nw9bpf1zsruo",
+        "sourceHandle": "success",
+        "target": "qkghgmjdahvvy31n1t4j39a3",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__nv1a7m0l5i04nw9bpf1zsruosuccess-qkghgmjdahvvy31n1t4j39a3input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1787587141387,
+    "updatedAt": 1787587172330,
+    "publishedNames": []
+  }
+]
