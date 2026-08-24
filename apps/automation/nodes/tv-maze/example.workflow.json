@@ -1,0 +1,312 @@
+[
+  {
+    "name": "tv-maze",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "k3ydwxpk9r88r5vrbtsneknw",
+        "position": {
+          "x": 686,
+          "y": 225
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "tv-maze",
+          "label": "TVMaze",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search TV shows and get metadata & episodes from TVMaze API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "q": "Breaking Bad"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "gokmgkho09r6hqdkxjbe391z",
+        "position": {
+          "x": 540,
+          "y": 170.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "qiogtx6nhqtw5mon1sz3k8nh",
+        "position": {
+          "x": 618.0510663749084,
+          "y": 379.76757681676924
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "tv-maze",
+          "label": "TVMaze1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search TV shows and get metadata & episodes from TVMaze API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "q": "Friends"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "jhwq3z1pwh08b54astu45e6p",
+        "position": {
+          "x": 484.0510663749084,
+          "y": 337.26757681676924
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "vc36pwu95fqjocwusid1pk58",
+        "position": {
+          "x": 597.5291181043413,
+          "y": 538.277972424567
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "tv-maze",
+          "label": "TVMaze2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search TV shows and get metadata & episodes from TVMaze API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "q": "Batman "
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "k291ema1sywztzffwly32tl1",
+        "position": {
+          "x": 463.5291181043413,
+          "y": 495.77797242456694
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "e4dq9eurnwwyd4vsexlg5gej",
+        "position": {
+          "x": 553.5801844792497,
+          "y": 717.0455492413362
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "tv-maze",
+          "label": "TVMaze2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search TV shows and get metadata & episodes from TVMaze API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "q": "Prison Break"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "tuas3j6c1d9voubkrnrah1qi",
+        "position": {
+          "x": 431.5801844792497,
+          "y": 686.5455492413362
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "gokmgkho09r6hqdkxjbe391z",
+        "sourceHandle": "success",
+        "target": "k3ydwxpk9r88r5vrbtsneknw",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__gokmgkho09r6hqdkxjbe391zsuccess-k3ydwxpk9r88r5vrbtsneknwinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "jhwq3z1pwh08b54astu45e6p",
+        "sourceHandle": "success",
+        "target": "qiogtx6nhqtw5mon1sz3k8nh",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "e1lvvmbtyawc2gpfc4nss5lq",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "k291ema1sywztzffwly32tl1",
+        "sourceHandle": "success",
+        "target": "vc36pwu95fqjocwusid1pk58",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "l2xqplvuanikms5rae2e1pql",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "tuas3j6c1d9voubkrnrah1qi",
+        "sourceHandle": "success",
+        "target": "e4dq9eurnwwyd4vsexlg5gej",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "cdqjs8jaz6riih6zgjxr1kgb",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1787611515631,
+    "updatedAt": 1787611919281,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
