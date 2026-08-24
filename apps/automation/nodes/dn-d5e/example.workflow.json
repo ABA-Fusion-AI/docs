@@ -1,0 +1,612 @@
+[
+  {
+    "name": "TestD&D 5e API",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "lhrbmxwqiwhrz04uciqnaji5",
+        "position": {
+          "x": 284,
+          "y": 18
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "dn-d5e",
+          "label": "D&D 5e API",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get D&D 5th edition information including spells, classes, features, and monsters.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getSpell",
+            "spellIndex": "magic-missile"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "xazs7hfw8fcmd4dvoswaeogn",
+        "position": {
+          "x": 0,
+          "y": 18
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "draggable": true,
+        "selected": false
+      },
+      {
+        "id": "x72ihkf90e5sp3esr66xoy8h",
+        "position": {
+          "x": 568,
+          "y": 0
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "draggable": true,
+        "selected": false
+      },
+      {
+        "id": "mzi603gamgnv05pvelld7b1v",
+        "position": {
+          "x": 284,
+          "y": 358
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "dn-d5e",
+          "label": "D&D 5e API1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get D&D 5th edition information including spells, classes, features, and monsters.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "searchSpellByName",
+            "spellName": "Fireball"
+          },
+          "_morphing": false
+        },
+        "draggable": true,
+        "selected": false
+      },
+      {
+        "id": "xkez93v8sxb0o4obuzupjxq0",
+        "position": {
+          "x": 0,
+          "y": 358
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "draggable": true,
+        "selected": false
+      },
+      {
+        "id": "qjmy2nxsf712ip1730f7nqul",
+        "position": {
+          "x": 568,
+          "y": 340
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "draggable": true,
+        "selected": false
+      },
+      {
+        "id": "nnwguufdlenmzrnmllrfqvzh",
+        "position": {
+          "x": 238.28471542997863,
+          "y": 689.0544173283504
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "dn-d5e",
+          "label": "D&D 5e API2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get D&D 5th edition information including spells, classes, features, and monsters.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getClasses"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "sgu8pwr2gd301g37lm1ezoil",
+        "position": {
+          "x": -33.71528457002137,
+          "y": 701.0544173283504
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "draggable": true,
+        "selected": false
+      },
+      {
+        "id": "kje5q2o49g5xsgz8v76rchx8",
+        "position": {
+          "x": 546.2847154299786,
+          "y": 695.0544173283504
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "draggable": true,
+        "selected": false
+      },
+      {
+        "id": "o53nqs3rbyj114jay7wz4o57",
+        "position": {
+          "x": 274.28471542997863,
+          "y": 1065.0544173283504
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "dn-d5e",
+          "label": "D&D 5e API2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get D&D 5th edition information including spells, classes, features, and monsters.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getFeatures"
+          },
+          "_morphing": false
+        },
+        "draggable": true,
+        "selected": false
+      },
+      {
+        "id": "y60iuxyaa921wwp7z6zxktrs",
+        "position": {
+          "x": 2.2847154299786308,
+          "y": 1077.0544173283504
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "draggable": true,
+        "selected": false
+      },
+      {
+        "id": "dpxb9qg9ynvz7i6of1x8iyr2",
+        "position": {
+          "x": 766.7325631393809,
+          "y": 1282.1053199958394
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "draggable": true,
+        "selected": true
+      },
+      {
+        "id": "chqy1r904jl179kt0fuyuopo",
+        "position": {
+          "x": 243.60532642159603,
+          "y": 1485.3725290737505
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "dn-d5e",
+          "label": "D&D 5e API3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get D&D 5th edition information including spells, classes, features, and monsters.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getMonster",
+            "monsterIndex": "adult-black-dragon"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "z6dnzzf9g153g4wxxp1pinge",
+        "position": {
+          "x": -28.394673578403967,
+          "y": 1497.3725290737505
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "draggable": true,
+        "selected": false
+      },
+      {
+        "id": "othilrjdlftwrlvvg5ri09qc",
+        "position": {
+          "x": 551.605326421596,
+          "y": 1491.3725290737505
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "draggable": true,
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "xazs7hfw8fcmd4dvoswaeogn",
+        "sourceHandle": "success",
+        "target": "lhrbmxwqiwhrz04uciqnaji5",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__xazs7hfw8fcmd4dvoswaeognsuccess-lhrbmxwqiwhrz04uciqnaji5input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "lhrbmxwqiwhrz04uciqnaji5",
+        "sourceHandle": "success",
+        "target": "x72ihkf90e5sp3esr66xoy8h",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__lhrbmxwqiwhrz04uciqnaji5success-x72ihkf90e5sp3esr66xoy8hinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "xkez93v8sxb0o4obuzupjxq0",
+        "sourceHandle": "success",
+        "target": "mzi603gamgnv05pvelld7b1v",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__xkez93v8sxb0o4obuzupjxq0success-mzi603gamgnv05pvelld7b1vinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "mzi603gamgnv05pvelld7b1v",
+        "sourceHandle": "success",
+        "target": "qjmy2nxsf712ip1730f7nqul",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__mzi603gamgnv05pvelld7b1vsuccess-qjmy2nxsf712ip1730f7nqulinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "sgu8pwr2gd301g37lm1ezoil",
+        "sourceHandle": "success",
+        "target": "nnwguufdlenmzrnmllrfqvzh",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "asbhjw1y406mb0l4jcja6opf",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "nnwguufdlenmzrnmllrfqvzh",
+        "sourceHandle": "success",
+        "target": "kje5q2o49g5xsgz8v76rchx8",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ugfn8ccaxmac71ssjzf632lo",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "y60iuxyaa921wwp7z6zxktrs",
+        "sourceHandle": "success",
+        "target": "o53nqs3rbyj114jay7wz4o57",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "s0bw0egb74o5dck4n4usl5kw",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "o53nqs3rbyj114jay7wz4o57",
+        "sourceHandle": "success",
+        "target": "dpxb9qg9ynvz7i6of1x8iyr2",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "tasiyi5a6p9dgs2ifgtr13hf",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "z6dnzzf9g153g4wxxp1pinge",
+        "sourceHandle": "success",
+        "target": "chqy1r904jl179kt0fuyuopo",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "js0kz0qg3ws07xgsgh2c34mj",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "chqy1r904jl179kt0fuyuopo",
+        "sourceHandle": "success",
+        "target": "othilrjdlftwrlvvg5ri09qc",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "aswm2ml77ov3n2i0cnfp3poi",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1787571975241,
+    "updatedAt": 1787578013599,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
