@@ -1,0 +1,253 @@
+[
+  {
+    "name": "TestCrossref-search",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "jnnz9a7ilcolighn52sb13kh",
+        "position": {
+          "x": 679,
+          "y": 250
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "crossref-search",
+          "label": "Crossref Search",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search for scholarly works, publications, and research papers from Crossref.",
+          "showRunningStatus": true,
+          "parameters": {
+            "query": "artificial intelligence",
+            "filter": "from-pub-date:2024-01-01,type:journal-article"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "wvbkm1l868wi4an5glqzag6t",
+        "position": {
+          "x": 382,
+          "y": 249
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger9",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "s96nm2hd2eqvdrj49limhz82",
+        "position": {
+          "x": 900,
+          "y": 242
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log9",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "nhihzl5oc0lfufzmkab97j10",
+        "position": {
+          "x": 621.3333333333334,
+          "y": -75
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "crossref-search",
+          "label": "Crossref Search1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search for scholarly works, publications, and research papers from Crossref.",
+          "showRunningStatus": true,
+          "parameters": {
+            "query": "artificial intelligence"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "kfdzz9nw0iqzn8tq0ol4usl6",
+        "position": {
+          "x": 336.33333333333337,
+          "y": -64
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger10",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": true,
+        "draggable": true
+      },
+      {
+        "id": "wm42a2p9bem42jp17op80neh",
+        "position": {
+          "x": 866.3333333333334,
+          "y": -59
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log10",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": true,
+        "draggable": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "jnnz9a7ilcolighn52sb13kh",
+        "sourceHandle": "success",
+        "target": "s96nm2hd2eqvdrj49limhz82",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__jnnz9a7ilcolighn52sb13khsuccess-s96nm2hd2eqvdrj49limhz82input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "wvbkm1l868wi4an5glqzag6t",
+        "sourceHandle": "success",
+        "target": "jnnz9a7ilcolighn52sb13kh",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__wvbkm1l868wi4an5glqzag6tsuccess-jnnz9a7ilcolighn52sb13khinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "nhihzl5oc0lfufzmkab97j10",
+        "sourceHandle": "success",
+        "target": "wm42a2p9bem42jp17op80neh",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "jul3v1px7h1hdc5m0qrgctyb",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "kfdzz9nw0iqzn8tq0ol4usl6",
+        "sourceHandle": "success",
+        "target": "nhihzl5oc0lfufzmkab97j10",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "dbh7rlc76ilmr9ard1kzsmru",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1787570237621,
+    "updatedAt": 1787570297001,
+    "publishedNames": []
+  }
+]
