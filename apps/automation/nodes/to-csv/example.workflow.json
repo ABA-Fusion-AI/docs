@@ -1,0 +1,460 @@
+[
+  {
+    "name": "to-csv",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "dnzkuvyq1s1rr9eylyhtfr0s",
+        "position": {
+          "x": 623,
+          "y": 161.0092544555664
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "to-csv",
+          "label": "To CSV",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert array of objects to CSV string.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "[   {\"id\": 1, \"name\": \"Abdel\", \"role\": \"Developer\"},   {\"id\": 2, \"name\": \"Sara\", \"role\": \"Designer\"} ]"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "dzc0tg83j7kq5uu9etkvif7z",
+        "position": {
+          "x": 492,
+          "y": 165.5185089111328
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "d3if5n9uf3mowajqc7ytuo5b",
+        "position": {
+          "x": 608.5,
+          "y": 286.017352104187
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "to-csv",
+          "label": "To CSV1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert array of objects to CSV string.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "[   {\"id\": 1, \"product\": \"Laptop\", \"price\": 1200},   {\"id\": 2, \"product\": \"Mouse\", \"price\": 25} ]",
+            "includeHeaders": false
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ixnipa3cxlxm6i5b55uupr73",
+        "position": {
+          "x": 489.5,
+          "y": 302.5266065597534
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "jfplhrxcuz15gv7xvgf19iih",
+        "position": {
+          "x": 584.75,
+          "y": 423.5133032798767
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "to-csv",
+          "label": "To CSV2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert array of objects to CSV string.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "[   {\"ville\": \"Casablanca\", \"code\": 20000},   {\"ville\": \"Rabat\", \"code\": 10000} ]",
+            "delimiter": ";"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "yusw5p9c5eyuhyzh3zp2ctky",
+        "position": {
+          "x": 465.75,
+          "y": 440.0225577354431
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "k2b6814oyq50z0bggimle0ol",
+        "position": {
+          "x": 594.25,
+          "y": 572.5214009284973
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "to-csv",
+          "label": "To CSV2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert array of objects to CSV string.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "[   {\"title\": \"Book, Part 1\", \"author\": \"John Doe\"},   {\"title\": \"Book, Part 2\", \"author\": \"Jane Doe\"} ]",
+            "delimiter": "|"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "rx04dbcqvyj2oh91lux7bqsz",
+        "position": {
+          "x": 487.25,
+          "y": 601.0306553840637
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ja23l96m08daig02caphp4ez",
+        "position": {
+          "x": 590.875,
+          "y": 724.7473590373993
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "to-csv",
+          "label": "To CSV3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert array of objects to CSV string.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "[   {\"id\": 1, \"name\": \"Karim\", \"phone\": \"0600000000\"},   {\"id\": 2, \"name\": \"Yassine\"} ]"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "nh2uhzbq5pk4algo8lywutr1",
+        "position": {
+          "x": 471.875,
+          "y": 741.2566134929657
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "kcqlwsipa1bq0t93vsz60ddn",
+        "position": {
+          "x": 600.375,
+          "y": 873.7554566860199
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "to-csv",
+          "label": "To CSV3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert array of objects to CSV string.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "texte_3adi_machi_json"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "insd1osdoz784zex7ivlmbo1",
+        "position": {
+          "x": 493.375,
+          "y": 902.2647111415863
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "dzc0tg83j7kq5uu9etkvif7z",
+        "sourceHandle": "success",
+        "target": "dnzkuvyq1s1rr9eylyhtfr0s",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__dzc0tg83j7kq5uu9etkvif7zsuccess-dnzkuvyq1s1rr9eylyhtfr0sinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ixnipa3cxlxm6i5b55uupr73",
+        "sourceHandle": "success",
+        "target": "d3if5n9uf3mowajqc7ytuo5b",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "jbv35apcsn68fl3k2zff5ymu",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "yusw5p9c5eyuhyzh3zp2ctky",
+        "sourceHandle": "success",
+        "target": "jfplhrxcuz15gv7xvgf19iih",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "rla96n3bzhln4gsue0j65tbj",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "rx04dbcqvyj2oh91lux7bqsz",
+        "sourceHandle": "success",
+        "target": "k2b6814oyq50z0bggimle0ol",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "sruy9m2rzd4vx2c1598ydb6h",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "nh2uhzbq5pk4algo8lywutr1",
+        "sourceHandle": "success",
+        "target": "ja23l96m08daig02caphp4ez",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "i6t4dzyjg930kk8w334oi4me",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "insd1osdoz784zex7ivlmbo1",
+        "sourceHandle": "success",
+        "target": "kcqlwsipa1bq0t93vsz60ddn",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ct5534q3janbaqavldtkyg0s",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1787586851073,
+    "updatedAt": 1787587225233,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]

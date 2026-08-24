@@ -1,0 +1,4 @@
+{
+  "label": "To CSV",
+  "description": "Convert array of objects to CSV string."
+}
