@@ -1,0 +1,257 @@
+[
+  {
+    "name": "test Shodan IP Lookup",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "cvqyd7tlglleignsk69ps3do",
+        "position": {
+          "x": 284,
+          "y": 18
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "shodan-lookup",
+          "label": "Shodan IP Lookup",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Performs IP intelligence lookup using Shodan InternetDB (free, no API key required) or Shodan API (requires API key).",
+          "showRunningStatus": true,
+          "parameters": {
+            "ip": "1.1.1.1"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "a8krhtbl3flxxny2k1jdiqj4",
+        "position": {
+          "x": 0,
+          "y": 18
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "dmlwwg2lx5jw2wy89ee0f624",
+        "position": {
+          "x": 568,
+          "y": 0
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "vk01rc5vvw432qlk9jghivw3",
+        "position": {
+          "x": 284,
+          "y": 358
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "shodan-lookup",
+          "label": "Shodan IP Lookup1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Performs IP intelligence lookup using Shodan InternetDB (free, no API key required) or Shodan API (requires API key).",
+          "showRunningStatus": true,
+          "parameters": {
+            "ip": "8.8.8.8",
+            "apiKey": "KECCRZ0Wkmecp3E2ErbpFo6IOf43DR8y",
+            "useInternetDb": false
+          },
+          "_morphing": false
+        },
+        "selected": true,
+        "draggable": true
+      },
+      {
+        "id": "serjohhya8q52x25ghkif7ol",
+        "position": {
+          "x": 0,
+          "y": 358
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": true,
+        "draggable": true
+      },
+      {
+        "id": "wyxbvyz1wxv63ljnntvx4itz",
+        "position": {
+          "x": 568,
+          "y": 340
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": true,
+        "draggable": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "cvqyd7tlglleignsk69ps3do",
+        "sourceHandle": "success",
+        "target": "dmlwwg2lx5jw2wy89ee0f624",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__cvqyd7tlglleignsk69ps3dosuccess-dmlwwg2lx5jw2wy89ee0f624input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "a8krhtbl3flxxny2k1jdiqj4",
+        "sourceHandle": "success",
+        "target": "cvqyd7tlglleignsk69ps3do",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__a8krhtbl3flxxny2k1jdiqj4success-cvqyd7tlglleignsk69ps3doinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "vk01rc5vvw432qlk9jghivw3",
+        "sourceHandle": "success",
+        "target": "wyxbvyz1wxv63ljnntvx4itz",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "li9dfxhvihfpbyzmhtqltch2",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "serjohhya8q52x25ghkif7ol",
+        "sourceHandle": "success",
+        "target": "vk01rc5vvw432qlk9jghivw3",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "gf3s1fi8svp1axs7v8twr56d",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1787588561768,
+    "updatedAt": 1787588785797,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]

@@ -1,0 +1,4 @@
+{
+  "label": "Shodan IP Lookup",
+  "description": "Perform IP intelligence lookups using Shodan InternetDB or the Shodan API."
+}
