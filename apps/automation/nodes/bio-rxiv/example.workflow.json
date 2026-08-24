@@ -1,0 +1,378 @@
+[
+  {
+    "name": "TestBioRxiv",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "tfn937qaz68bmg427ahynjxn",
+        "position": {
+          "x": 284,
+          "y": 18
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bio-rxiv",
+          "label": "bioRxiv/medRxiv",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve preprints from bioRxiv and medRxiv servers.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "search",
+            "server": "biorxiv",
+            "query": "neuroscience"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "gof98frxmlg2lma2yk9kv6rt",
+        "position": {
+          "x": 0,
+          "y": 18
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "cscz35hjoqcwv3muxhhrxcpf",
+        "position": {
+          "x": 568,
+          "y": 0
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "cg0m79z56pus2k7jtwrzd5ky",
+        "position": {
+          "x": 0,
+          "y": 358
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "k4hp61ue1e2wbp3zz9x8r76a",
+        "position": {
+          "x": 568,
+          "y": 340
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "bei7m6erekvw6ditxcxv8ska",
+        "position": {
+          "x": 284,
+          "y": 358
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "gleif",
+          "label": "Global LEI Index (GLEIF)",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve Legal Entity Identifier (LEI) data from the GLEIF API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "search",
+            "country": "us",
+            "legal_name": "Apple"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "dttpfw0c8oedwok19lw3wjwl",
+        "position": {
+          "x": 0,
+          "y": 698
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "m14yvaqm6qnubn5hqd00kish",
+        "position": {
+          "x": 568,
+          "y": 680
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "zyyqz9xzbt2pa8zclxpncsb0",
+        "position": {
+          "x": 284,
+          "y": 698
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "gleif",
+          "label": "Global LEI Index (GLEIF)1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve Legal Entity Identifier (LEI) data from the GLEIF API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "get_record",
+            "lei": "549300N1UWZ4871DND44"
+          },
+          "_morphing": false
+        },
+        "selected": true,
+        "draggable": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "gof98frxmlg2lma2yk9kv6rt",
+        "sourceHandle": "success",
+        "target": "tfn937qaz68bmg427ahynjxn",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__gof98frxmlg2lma2yk9kv6rtsuccess-tfn937qaz68bmg427ahynjxninput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "tfn937qaz68bmg427ahynjxn",
+        "sourceHandle": "success",
+        "target": "cscz35hjoqcwv3muxhhrxcpf",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__tfn937qaz68bmg427ahynjxnsuccess-cscz35hjoqcwv3muxhhrxcpfinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "cg0m79z56pus2k7jtwrzd5ky",
+        "sourceHandle": "success",
+        "target": "bei7m6erekvw6ditxcxv8ska",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__cg0m79z56pus2k7jtwrzd5kysuccess-bei7m6erekvw6ditxcxv8skainput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "bei7m6erekvw6ditxcxv8ska",
+        "sourceHandle": "success",
+        "target": "k4hp61ue1e2wbp3zz9x8r76a",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__bei7m6erekvw6ditxcxv8skasuccess-k4hp61ue1e2wbp3zz9x8r76ainput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "dttpfw0c8oedwok19lw3wjwl",
+        "sourceHandle": "success",
+        "target": "zyyqz9xzbt2pa8zclxpncsb0",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "aipx64ibf2iuvaq6bitv3d5q",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "zyyqz9xzbt2pa8zclxpncsb0",
+        "sourceHandle": "success",
+        "target": "m14yvaqm6qnubn5hqd00kish",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "l6fnqpdzxgr5ormr17016teq",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1787147669820,
+    "updatedAt": 1787561803745,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
