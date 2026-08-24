@@ -1,0 +1,318 @@
+[
+  {
+    "name": "stack-exchange",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "k7s0x41iw4kicxep4owu0hca",
+        "position": {
+          "x": 535,
+          "y": 299
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "stack-exchange",
+          "label": "StackExchange",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search questions from StackExchange API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "pagesize": 5
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "w8t8w8mcvm9fwq2i98t8s86b",
+        "position": {
+          "x": 302.903093590355,
+          "y": 146.53643847666123
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "xyxc7qktffev284m796dl5yd",
+        "position": {
+          "x": 509.809409175312,
+          "y": 517.1591282055947
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "stack-exchange",
+          "label": "StackExchange1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search questions from StackExchange API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "pagesize": 3,
+            "tagged": "javascript",
+            "sort": "votes"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "yrgwngutsua1zl3khayp69cm",
+        "position": {
+          "x": 289.712502765667,
+          "y": 376.69556668225596
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "v8v0q5sy8sd7p9ade6oilt5l",
+        "position": {
+          "x": 483.809409175312,
+          "y": 706.1591282055947
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "stack-exchange",
+          "label": "StackExchange2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search questions from StackExchange API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "pagesize": 5,
+            "site": "askubuntu",
+            "tagged": "docker",
+            "sort": "creation "
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "unziggsh232cw6eheh6itsxb",
+        "position": {
+          "x": 263.712502765667,
+          "y": 565.695566682256
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "fjmq8zlrwtigchd8tz76g07y",
+        "position": {
+          "x": 469.809409175312,
+          "y": 948.1591282055947
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "stack-exchange",
+          "label": "StackExchange3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search questions from StackExchange API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "pagesize": 5,
+            "tagged": "python",
+            "sort": "votes"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "jvmutt5y1022354inpkw46n4",
+        "position": {
+          "x": 249.712502765667,
+          "y": 807.695566682256
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "w8t8w8mcvm9fwq2i98t8s86b",
+        "sourceHandle": "success",
+        "target": "k7s0x41iw4kicxep4owu0hca",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__w8t8w8mcvm9fwq2i98t8s86bsuccess-k7s0x41iw4kicxep4owu0hcainput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "yrgwngutsua1zl3khayp69cm",
+        "sourceHandle": "success",
+        "target": "xyxc7qktffev284m796dl5yd",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "a691y9qzgelgseqm14bjou5v",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "unziggsh232cw6eheh6itsxb",
+        "sourceHandle": "success",
+        "target": "v8v0q5sy8sd7p9ade6oilt5l",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "smpntpqc9jwlvb0wrses8ll1",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "jvmutt5y1022354inpkw46n4",
+        "sourceHandle": "success",
+        "target": "fjmq8zlrwtigchd8tz76g07y",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "vhcsf422wzbwg2ed8wa53vzr",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1787572788012,
+    "updatedAt": 1787578011922,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
