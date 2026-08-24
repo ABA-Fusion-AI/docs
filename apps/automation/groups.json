@@ -36,7 +36,9 @@
         "nodes": [
           "cron",
           "interval",
-          "manual-trigger"
+          "manual-trigger",
+          "chat-trigger",
+          "chat-respond"
         ],
         "subgroups": []
       },
