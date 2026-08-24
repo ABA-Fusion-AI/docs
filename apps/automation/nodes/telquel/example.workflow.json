@@ -1,0 +1,90 @@
+[
+  {
+    "name": "to-xml",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "blrp8rug5tas4bzaoaf4d9vx",
+        "position": {
+          "x": 920,
+          "y": 77
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "telquel",
+          "label": "TelQuel",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Fetch news from TelQuel RSS feed.",
+          "showRunningStatus": true,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "xcsim8h70zaxc7t2bg4ty0d2",
+        "position": {
+          "x": 696,
+          "y": 106.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "xcsim8h70zaxc7t2bg4ty0d2",
+        "sourceHandle": "success",
+        "target": "blrp8rug5tas4bzaoaf4d9vx",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__xcsim8h70zaxc7t2bg4ty0d2success-blrp8rug5tas4bzaoaf4d9vxinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1787580991873,
+    "updatedAt": 1787581683351,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
