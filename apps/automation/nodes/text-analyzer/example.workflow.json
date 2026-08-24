@@ -1,0 +1,169 @@
+[
+  {
+    "name": "text to binary",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "rgzqe9cfyo7eep5atbby3x4c",
+        "position": {
+          "x": 792,
+          "y": 164.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "text-analyzer",
+          "label": "Text Analyzer",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Comprehensive text analysis with character/word counts, readability scores, and word frequency",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "analyze",
+            "text": "hello my name is achraf"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "pyu2bq2tx0i1ffj0zhodk3x0",
+        "position": {
+          "x": 785,
+          "y": 327.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "text-analyzer",
+          "label": "Text Analyzer1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Comprehensive text analysis with character/word counts, readability scores, and word frequency",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getWordFrequency",
+            "text": "hello my name is achraf my age is 18 hi achraf"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "chlqx08tt36gaa4qp1im2pg3",
+        "position": {
+          "x": 507,
+          "y": 117.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "rkmbimsfh4pmpw0gxbaso5ex",
+        "position": {
+          "x": 500,
+          "y": 280.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "chlqx08tt36gaa4qp1im2pg3",
+        "sourceHandle": "success",
+        "target": "rgzqe9cfyo7eep5atbby3x4c",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__chlqx08tt36gaa4qp1im2pg3success-rgzqe9cfyo7eep5atbby3x4cinput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "rkmbimsfh4pmpw0gxbaso5ex",
+        "sourceHandle": "success",
+        "target": "pyu2bq2tx0i1ffj0zhodk3x0",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "bvzh7qj41ixe2i7m3obg4650",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1787579489987,
+    "updatedAt": 1787579890978,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
