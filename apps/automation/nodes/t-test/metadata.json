@@ -1,0 +1,4 @@
+{
+  "label": "t-test",
+  "description": "Performs one-sample, two-sample (Welch), or paired t-tests with approximate p-values."
+}
