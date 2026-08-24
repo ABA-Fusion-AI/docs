@@ -1,0 +1,765 @@
+[
+  {
+    "name": "beeceptor",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "w45a7tbyq0o2lhu2ahthc1ng",
+        "position": {
+          "x": 658,
+          "y": 123
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "beeceptor",
+          "label": "Beeceptor",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Create a temporary API endpoint to inspect incoming payloads using Beeceptor.",
+          "showRunningStatus": true,
+          "parameters": {
+            "endpoint": "https://aba-test-api.free.beeceptor.com/users",
+            "method": "GET"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "jxvhaxaqg9jomuu8ie2o2pu4",
+        "position": {
+          "x": 471.5,
+          "y": 114
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "txwtdg5ho6giblhbhzzdlhsq",
+        "position": {
+          "x": 639,
+          "y": 244.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "beeceptor",
+          "label": "Beeceptor1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Create a temporary API endpoint to inspect incoming payloads using Beeceptor.",
+          "showRunningStatus": true,
+          "parameters": {
+            "endpoint": "https://aba-test-api.free.beeceptor.com",
+            "method": "GET"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "tasswk39z625f8t3t6j4zyg2",
+        "position": {
+          "x": 464.5,
+          "y": 247.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "go6doln3204qk69urzivujmg",
+        "position": {
+          "x": 743,
+          "y": 405.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "beeceptor",
+          "label": "Beeceptor2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Create a temporary API endpoint to inspect incoming payloads using Beeceptor.",
+          "showRunningStatus": true,
+          "parameters": {
+            "endpoint": "https://aba-test-api.free.beeceptor.com/users",
+            "method": "POST",
+            "payload": "{   \"name\": \"Karim\",   \"role\": \"DevOps Engineer\",   \"email\": \"karim@example.com\" }"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "abhrr2w17l0ntkaodiav46mz",
+        "position": {
+          "x": 397,
+          "y": 397
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "wx3isj1wrjanauzgv1pnnl01",
+        "position": {
+          "x": 624.8333333333334,
+          "y": 532.5208333333334
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "beeceptor",
+          "label": "Beeceptor3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Create a temporary API endpoint to inspect incoming payloads using Beeceptor.",
+          "showRunningStatus": true,
+          "parameters": {
+            "endpoint": "https://aba-test-api.free.beeceptor.com/todos",
+            "method": "POST",
+            "payload": "[   { \"id\": 1, \"item\": \"Laptop\" },   { \"id\": 2, \"item\": \"Mouse\" } ]"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "z4phhr0f0k8nbiuwscsq5xv3",
+        "position": {
+          "x": 450.33333333333337,
+          "y": 535.5208333333334
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "y626ixj5lh80qxz77p6l71i6",
+        "position": {
+          "x": 629.8333333333334,
+          "y": 678.0208333333334
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "beeceptor",
+          "label": "Beeceptor3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Create a temporary API endpoint to inspect incoming payloads using Beeceptor.",
+          "showRunningStatus": true,
+          "parameters": {
+            "endpoint": "https://aba-test-api.free.beeceptor.com/users/1",
+            "method": "PUT",
+            "payload": "{   \"id\": 1,   \"name\": \"Abdel - Updated\",   \"role\": \"Tech Lead\" }"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "n2st4rs0b66xflwqq2lhuyyp",
+        "position": {
+          "x": 467.33333333333337,
+          "y": 693.0208333333334
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "h8x7tmsh9jg6m5xjxs4f40om",
+        "position": {
+          "x": 647.3333333333334,
+          "y": 849.5208333333334
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "beeceptor",
+          "label": "Beeceptor3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Create a temporary API endpoint to inspect incoming payloads using Beeceptor.",
+          "showRunningStatus": true,
+          "parameters": {
+            "endpoint": "https://aba-test-api.free.beeceptor.com/users/1",
+            "method": "PATCH",
+            "payload": "{   \"role\": \"Engineering Manager\" }"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "bosygsz4ebyj02j10feahhyq",
+        "position": {
+          "x": 484.83333333333337,
+          "y": 864.5208333333334
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "g59g6x76i20cnt84g5vnv4fe",
+        "position": {
+          "x": 675.2702432924018,
+          "y": 988.0457852852319
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "beeceptor",
+          "label": "Beeceptor4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Create a temporary API endpoint to inspect incoming payloads using Beeceptor.",
+          "showRunningStatus": true,
+          "parameters": {
+            "endpoint": "https://aba-test-api.free.beeceptor.com/users/2",
+            "method": "DELET"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "xefg8cp8t7i6vpv1lpkubsya",
+        "position": {
+          "x": 524.7702432924018,
+          "y": 1015.0457852852319
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "w2dm1j9ar55iapndoqrblo8o",
+        "position": {
+          "x": 680.4382366879463,
+          "y": 1116.3842879412584
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "beeceptor",
+          "label": "Beeceptor5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Create a temporary API endpoint to inspect incoming payloads using Beeceptor.",
+          "showRunningStatus": true,
+          "parameters": {
+            "endpoint": "https:// "
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "z0t2uh8yfuwiv8fm6qtf0eaq",
+        "position": {
+          "x": 529.9382366879463,
+          "y": 1143.3842879412584
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "sun0q6ewpsakzpd19e5abfvs",
+        "position": {
+          "x": 661.3804005498954,
+          "y": 1248.9121100742552
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "beeceptor",
+          "label": "Beeceptor6",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Create a temporary API endpoint to inspect incoming payloads using Beeceptor.",
+          "showRunningStatus": true,
+          "parameters": {
+            "endpoint": "https://aba-test-api.free.beeceptor.com/not-found-path-12345"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "xssl4hxcwx0xstpfu4x7bs9o",
+        "position": {
+          "x": 522.8804005498954,
+          "y": 1287.9121100742552
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger6",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "dav595bx9mtnyyqn8pku56mm",
+        "position": {
+          "x": 689.2376516045462,
+          "y": 1387.237770483556
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "beeceptor",
+          "label": "Beeceptor7",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Create a temporary API endpoint to inspect incoming payloads using Beeceptor.",
+          "showRunningStatus": true,
+          "parameters": {
+            "endpoint": "https:// "
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "wclsmsxets3t883brg3ljf1b",
+        "position": {
+          "x": 550.7376516045462,
+          "y": 1426.237770483556
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger7",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "jxvhaxaqg9jomuu8ie2o2pu4",
+        "sourceHandle": "success",
+        "target": "w45a7tbyq0o2lhu2ahthc1ng",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__jxvhaxaqg9jomuu8ie2o2pu4success-w45a7tbyq0o2lhu2ahthc1nginput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "tasswk39z625f8t3t6j4zyg2",
+        "sourceHandle": "success",
+        "target": "txwtdg5ho6giblhbhzzdlhsq",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "yvqbc0br5cqgyl23bmzfsl83",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "abhrr2w17l0ntkaodiav46mz",
+        "sourceHandle": "success",
+        "target": "go6doln3204qk69urzivujmg",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "u4e2r1xt83ohozlx1gthbwqa",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "z4phhr0f0k8nbiuwscsq5xv3",
+        "sourceHandle": "success",
+        "target": "wx3isj1wrjanauzgv1pnnl01",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "wz52rff4d1sl27e0enpk5a6x",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "n2st4rs0b66xflwqq2lhuyyp",
+        "sourceHandle": "success",
+        "target": "y626ixj5lh80qxz77p6l71i6",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ml3usltak0wvodzck69xsedf",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "bosygsz4ebyj02j10feahhyq",
+        "sourceHandle": "success",
+        "target": "h8x7tmsh9jg6m5xjxs4f40om",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "wcopv0ycx9xk3u6ooc5gncs2",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "xefg8cp8t7i6vpv1lpkubsya",
+        "sourceHandle": "success",
+        "target": "g59g6x76i20cnt84g5vnv4fe",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "l4u2juy8gn5cucmi9wukh3l1",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "z0t2uh8yfuwiv8fm6qtf0eaq",
+        "sourceHandle": "success",
+        "target": "w2dm1j9ar55iapndoqrblo8o",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "smycw1jn68g30p7e64oevyq7",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "xssl4hxcwx0xstpfu4x7bs9o",
+        "sourceHandle": "success",
+        "target": "sun0q6ewpsakzpd19e5abfvs",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ze53lustk8l5a92wq117b75e",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "wclsmsxets3t883brg3ljf1b",
+        "sourceHandle": "success",
+        "target": "dav595bx9mtnyyqn8pku56mm",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "rfvbrwvlibb4m1a2gue4lk7i",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1787566727441,
+    "updatedAt": 1787568964241,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
