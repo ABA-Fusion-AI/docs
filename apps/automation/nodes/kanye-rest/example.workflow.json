@@ -1,0 +1,90 @@
+[
+  {
+    "name": "kayne rest",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "vbmhxh0iwamgd03p6iasm61b",
+        "position": {
+          "x": 876,
+          "y": 28
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "kanye-rest",
+          "label": "Kanye Rest",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get a random Kanye West quote from the Kanye Rest API.",
+          "showRunningStatus": true,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "bk6015ds45al7deqqme35r0q",
+        "position": {
+          "x": 640,
+          "y": 12.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "bk6015ds45al7deqqme35r0q",
+        "sourceHandle": "success",
+        "target": "vbmhxh0iwamgd03p6iasm61b",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__bk6015ds45al7deqqme35r0qsuccess-vbmhxh0iwamgd03p6iasm61binput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1787566126876,
+    "updatedAt": 1787566234436,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
