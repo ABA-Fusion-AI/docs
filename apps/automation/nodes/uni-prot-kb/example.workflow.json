@@ -1,0 +1,501 @@
+[
+  {
+    "name": "test-uni-prot-kb",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "umpr9zq7sh4myo888ssmby2v",
+        "position": {
+          "x": 284,
+          "y": 18
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "uni-prot-kb",
+          "label": "UniProtKB",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Access the UniProt Knowledgebase (UniProtKB) - the global hub of accurate, consistent and expertly curated information on protein sequence and function.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getByAccession",
+            "accession": "P05067"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "vfd81qijd0ekamllrnjdurx7",
+        "position": {
+          "x": 0,
+          "y": 18
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "draggable": true,
+        "selected": false
+      },
+      {
+        "id": "g11zgv8ppdrrgtkgologcpzi",
+        "position": {
+          "x": 568,
+          "y": 0
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "cpc60gwakcrprp03c2ldiu0u",
+        "position": {
+          "x": 284,
+          "y": 358
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "uni-prot-kb",
+          "label": "UniProtKB1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Access the UniProt Knowledgebase (UniProtKB) - the global hub of accurate, consistent and expertly curated information on protein sequence and function.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "search",
+            "query": "gene:BRCA1 AND organism_id:9606",
+            "sort": "accession asc",
+            "fields": "accession,id,protein_name,gene_names,organism_name,length"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "da2sci048sv1k6wiavqnwh84",
+        "position": {
+          "x": 0,
+          "y": 358
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "draggable": true,
+        "selected": false
+      },
+      {
+        "id": "bi3c2yokgpcsblaiybh8xf7z",
+        "position": {
+          "x": 773.8859223300965,
+          "y": 216.94174757281556
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "e77vuj6v82eqm6h0abzrs7n6",
+        "position": {
+          "x": 333.22330097087377,
+          "y": 788.8737864077669
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "uni-prot-kb",
+          "label": "UniProtKB2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Access the UniProt Knowledgebase (UniProtKB) - the global hub of accurate, consistent and expertly curated information on protein sequence and function.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "stream",
+            "query": "gene:BRCA1 AND organism_id:9606",
+            "fields": "accession,id,protein_name,gene_names,organism_name,length"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "edxgrj9vn8b70ihb8kivis2i",
+        "position": {
+          "x": 0,
+          "y": 698
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "draggable": true,
+        "selected": false
+      },
+      {
+        "id": "j7e6rrsm5tgxdwlbwla8i719",
+        "position": {
+          "x": 568,
+          "y": 680
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "oeogt8yb7lkhagc2vtn3rnze",
+        "position": {
+          "x": 379.06067961165047,
+          "y": 1381.6407766990292
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "uni-prot-kb",
+          "label": "UniProtKB3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Access the UniProt Knowledgebase (UniProtKB) - the global hub of accurate, consistent and expertly curated information on protein sequence and function.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "stream",
+            "query": "accession:P05067",
+            "fields": "accession,id,protein_name,length",
+            "includeIsoform": true,
+            "download": "false"
+          },
+          "_morphing": false
+        },
+        "selected": true,
+        "draggable": true
+      },
+      {
+        "id": "de72qrkf3pfb08cmuvofwepl",
+        "position": {
+          "x": 91.06067961165047,
+          "y": 1347.6407766990292
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "draggable": true,
+        "selected": false
+      },
+      {
+        "id": "kyg0m1v1hfknj8bakotcj5j7",
+        "position": {
+          "x": 725.0606796116505,
+          "y": 1337.6407766990292
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "vfd81qijd0ekamllrnjdurx7",
+        "sourceHandle": "success",
+        "target": "umpr9zq7sh4myo888ssmby2v",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__vfd81qijd0ekamllrnjdurx7success-umpr9zq7sh4myo888ssmby2vinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "umpr9zq7sh4myo888ssmby2v",
+        "sourceHandle": "success",
+        "target": "g11zgv8ppdrrgtkgologcpzi",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__umpr9zq7sh4myo888ssmby2vsuccess-g11zgv8ppdrrgtkgologcpziinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "da2sci048sv1k6wiavqnwh84",
+        "sourceHandle": "success",
+        "target": "cpc60gwakcrprp03c2ldiu0u",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "dp4venr13nh8fa7tuis1fey3",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "cpc60gwakcrprp03c2ldiu0u",
+        "sourceHandle": "success",
+        "target": "bi3c2yokgpcsblaiybh8xf7z",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xbieym055vydd6n4e214rofs",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "edxgrj9vn8b70ihb8kivis2i",
+        "sourceHandle": "success",
+        "target": "e77vuj6v82eqm6h0abzrs7n6",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "wobx42t2ihottdrhsbciq1ty",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "e77vuj6v82eqm6h0abzrs7n6",
+        "sourceHandle": "success",
+        "target": "j7e6rrsm5tgxdwlbwla8i719",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "hqaapfzsjujudkevrszv8lu9",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "de72qrkf3pfb08cmuvofwepl",
+        "sourceHandle": "success",
+        "target": "oeogt8yb7lkhagc2vtn3rnze",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__de72qrkf3pfb08cmuvofweplsuccess-oeogt8yb7lkhagc2vtn3rnzeinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "oeogt8yb7lkhagc2vtn3rnze",
+        "sourceHandle": "success",
+        "target": "kyg0m1v1hfknj8bakotcj5j7",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__oeogt8yb7lkhagc2vtn3rnzesuccess-kyg0m1v1hfknj8bakotcj5j7input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1787757706198,
+    "updatedAt": 1787758499178,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
