@@ -1,0 +1,539 @@
+[
+  {
+    "name": "om-db",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "f6ytxclf6lozenbowdndtpxk",
+        "position": {
+          "x": 721,
+          "y": 278
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "om-db",
+          "label": "OMDb API",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search for movie information using the OMDb API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "apiKey": " ",
+            "title": "batman"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "a79hn7ogonlel8a2ewevu5em",
+        "position": {
+          "x": 544,
+          "y": 110
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "lbe0fu2kk75w2acd7bb2cvuw",
+        "position": {
+          "x": 685.5,
+          "y": 399
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "om-db",
+          "label": "OMDb API1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search for movie information using the OMDb API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "apiKey": " ",
+            "title": "batman",
+            "year": "2022"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "gkmwiyrczm9u4rq76dpyrrvg",
+        "position": {
+          "x": 533.5,
+          "y": 240
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "azux7kuwqxeld95jctk0jr6h",
+        "position": {
+          "x": 660.25,
+          "y": 510.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "om-db",
+          "label": "OMDb API2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search for movie information using the OMDb API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "apiKey": " ",
+            "title": "interstellar",
+            "year": "2014"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ctfczv7asbz68yv1k2rpzrqq",
+        "position": {
+          "x": 518.25,
+          "y": 375.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ts9i6w8mja4vnkzgl8nhv5u6",
+        "position": {
+          "x": 648.75,
+          "y": 655.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "om-db",
+          "label": "OMDb API2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search for movie information using the OMDb API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "apiKey": " ",
+            "title": "breaking bad"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "zicsy4nb2shdmsuf7slmrhfn",
+        "position": {
+          "x": 502.75,
+          "y": 505.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "blxs8gy0mbnv2od0dy9w3s7f",
+        "position": {
+          "x": 389,
+          "y": 964.25
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "iintt9ozubxlht04gd9evl1f",
+        "position": {
+          "x": 593,
+          "y": 1088.25
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "om-db",
+          "label": "OMDb API3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search for movie information using the OMDb API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "apiKey": " ",
+            "title": "azerty_movie_not_found_999"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "hinweecqwtozh10d7zw6f89v",
+        "position": {
+          "x": 423.5,
+          "y": 857.25
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "wq31rhs4g6hh36s5a548pqnv",
+        "position": {
+          "x": 595.5,
+          "y": 928.25
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "om-db",
+          "label": "OMDb API3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search for movie information using the OMDb API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "title": "avatar"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "i63otuv6dh0u85ebwxncw8ox",
+        "position": {
+          "x": 449.75,
+          "y": 685.75
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "xe7jy9lsaaa4v4z5fj0p2o6d",
+        "position": {
+          "x": 624.75,
+          "y": 793.75
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "om-db",
+          "label": "OMDb API3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search for movie information using the OMDb API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "apiKey": " ",
+            "title": "titanic",
+            "year": "1997"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "a79hn7ogonlel8a2ewevu5em",
+        "sourceHandle": "success",
+        "target": "f6ytxclf6lozenbowdndtpxk",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__a79hn7ogonlel8a2ewevu5emsuccess-f6ytxclf6lozenbowdndtpxkinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "gkmwiyrczm9u4rq76dpyrrvg",
+        "sourceHandle": "success",
+        "target": "lbe0fu2kk75w2acd7bb2cvuw",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "u66noo27cdz7pe57yyrdcugm",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ctfczv7asbz68yv1k2rpzrqq",
+        "sourceHandle": "success",
+        "target": "azux7kuwqxeld95jctk0jr6h",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "kxl3t1rdiv2qo4wdppkh35y0",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "zicsy4nb2shdmsuf7slmrhfn",
+        "sourceHandle": "success",
+        "target": "ts9i6w8mja4vnkzgl8nhv5u6",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "vqj2zoti13hd4scqsdceksxv",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "i63otuv6dh0u85ebwxncw8ox",
+        "sourceHandle": "success",
+        "target": "xe7jy9lsaaa4v4z5fj0p2o6d",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__i63otuv6dh0u85ebwxncw8oxsuccess-xe7jy9lsaaa4v4z5fj0p2o6dinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "hinweecqwtozh10d7zw6f89v",
+        "sourceHandle": "success",
+        "target": "wq31rhs4g6hh36s5a548pqnv",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__hinweecqwtozh10d7zw6f89vsuccess-wq31rhs4g6hh36s5a548pqnvinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "blxs8gy0mbnv2od0dy9w3s7f",
+        "sourceHandle": "success",
+        "target": "iintt9ozubxlht04gd9evl1f",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__blxs8gy0mbnv2od0dy9w3s7fsuccess-iintt9ozubxlht04gd9evl1finput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1787752195156,
+    "updatedAt": 1787752869387,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
