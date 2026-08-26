@@ -1,0 +1,131 @@
+[
+  {
+    "name": "MAP News",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "trigger_map_news",
+        "position": {
+          "x": 320,
+          "y": 50
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "action_map_news",
+        "position": {
+          "x": 580,
+          "y": 50
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "map-news",
+          "label": "MAP News (Maghreb Arabe Presse)",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Fetch news from Maghreb Arabe Presse (MAP) RSS feeds by category.",
+          "showRunningStatus": true,
+          "parameters": {
+            "category": "politics",
+            "language": "ar",
+            "maxItems": 10
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "log_map_news",
+        "position": {
+          "x": 880,
+          "y": 50
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "trigger_map_news",
+        "sourceHandle": "success",
+        "target": "action_map_news",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "edge_trigger_to_map",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "action_map_news",
+        "sourceHandle": "success",
+        "target": "log_map_news",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "edge_map_to_log",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "version": 1
+  }
+]
