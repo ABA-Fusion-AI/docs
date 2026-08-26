@@ -1,0 +1,446 @@
+[
+  {
+    "name": "zippopotam",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "erzxk7l3x6n2sa25ia9czgbg",
+        "position": {
+          "x": 428.5176488082571,
+          "y": 119.79859149937525
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "zippopotam",
+          "label": "Zippopotam.us",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get location information based on zip/postal code. Supports 60+ countries.",
+          "showRunningStatus": true,
+          "parameters": {
+            "country": "US",
+            "zip": "10001"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "v8rpv5n5rizlk284toc13xts",
+        "position": {
+          "x": 295.45273563259406,
+          "y": 2.035866254160574
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "n5t53ygkz7tt5mt3225l1hjn",
+        "position": {
+          "x": 380.3917179801252,
+          "y": 235.6006342393132
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "zippopotam",
+          "label": "Zippopotam.us1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get location information based on zip/postal code. Supports 60+ countries.",
+          "showRunningStatus": true,
+          "parameters": {
+            "country": "it",
+            "zip": "00184"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "yhkufiwsewreglqofn20d4tt",
+        "position": {
+          "x": 259.32680480446214,
+          "y": 129.8379089940985
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "mll9wj1g8v3px5d31bxjpbw2",
+        "position": {
+          "x": 559.2694156974364,
+          "y": 347.0408971821945
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "zippopotam",
+          "label": "Zippopotam.us2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get location information based on zip/postal code. Supports 60+ countries.",
+          "showRunningStatus": true,
+          "parameters": {
+            "country": {
+              "$expr": "output",
+              "node": "Function",
+              "outputId": "success",
+              "path": "country"
+            },
+            "zip": {
+              "$expr": "output",
+              "node": "Function",
+              "outputId": "success",
+              "path": "zip"
+            }
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "t35smal21wtjqwzlnc6644mf",
+        "position": {
+          "x": 214.90746655046672,
+          "y": 268.2464129963164
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "n3zqbh7rrz89t847iqyyqk0s",
+        "position": {
+          "x": 311.84644889799796,
+          "y": 513.8111809814691
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "zippopotam",
+          "label": "Zippopotam.us2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get location information based on zip/postal code. Supports 60+ countries.",
+          "showRunningStatus": true,
+          "parameters": {
+            "country": "es",
+            "zip": "08001"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "jfl3s1w0mz1uee31fqd74a09",
+        "position": {
+          "x": 202.7815357223348,
+          "y": 420.04845573625437
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "st1cam106ovyxo8oi8t1ims8",
+        "position": {
+          "x": 291.493196822105,
+          "y": 663.0245292098191
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "zippopotam",
+          "label": "Zippopotam.us3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get location information based on zip/postal code. Supports 60+ countries.",
+          "showRunningStatus": true,
+          "parameters": {
+            "country": "ca",
+            "zip": "M5V"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "zru41yrmfulkfa461y224lky",
+        "position": {
+          "x": 182.42828364644183,
+          "y": 569.2618039646044
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "odtejrjjcsib4ci3vnx7fdsp",
+        "position": {
+          "x": 382.64144907765206,
+          "y": 376.74277009411696
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "function",
+          "label": "Function",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Executes custom JavaScript code on the input data.",
+          "showRunningStatus": true,
+          "parameters": {
+            "code": "return {\n  country: \"ca\",\n  zip: \"H3Z\"\n};"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "v8rpv5n5rizlk284toc13xts",
+        "sourceHandle": "success",
+        "target": "erzxk7l3x6n2sa25ia9czgbg",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__v8rpv5n5rizlk284toc13xtssuccess-erzxk7l3x6n2sa25ia9czgbginput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "yhkufiwsewreglqofn20d4tt",
+        "sourceHandle": "success",
+        "target": "n5t53ygkz7tt5mt3225l1hjn",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "gi3hxrmn0gh1bfy3sseq3q4x",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "jfl3s1w0mz1uee31fqd74a09",
+        "sourceHandle": "success",
+        "target": "n3zqbh7rrz89t847iqyyqk0s",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "gkkn2y532zti1c66x30b7dnz",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "zru41yrmfulkfa461y224lky",
+        "sourceHandle": "success",
+        "target": "st1cam106ovyxo8oi8t1ims8",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "siw8qlhep32sk3fcpht0g94v",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "odtejrjjcsib4ci3vnx7fdsp",
+        "sourceHandle": "success",
+        "target": "mll9wj1g8v3px5d31bxjpbw2",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__odtejrjjcsib4ci3vnx7fdspsuccess-mll9wj1g8v3px5d31bxjpbw2input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "t35smal21wtjqwzlnc6644mf",
+        "sourceHandle": "success",
+        "target": "odtejrjjcsib4ci3vnx7fdsp",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__t35smal21wtjqwzlnc6644mfsuccess-odtejrjjcsib4ci3vnx7fdspinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1787756921696,
+    "updatedAt": 1787758839783,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
