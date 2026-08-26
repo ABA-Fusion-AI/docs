@@ -1,0 +1,92 @@
+[
+  {
+    "name": "yabiladi",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "q5obd5c0d3fx28s6ix4v7wd5",
+        "position": {
+          "x": 570,
+          "y": 211
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "yabiladi",
+          "label": "Yabiladi",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Fetch news from Yabiladi RSS feed.",
+          "showRunningStatus": true,
+          "parameters": {
+            "maxItems": 7
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "yx3djkw0lwv2n70lsk61jrtp",
+        "position": {
+          "x": 449.5,
+          "y": 119.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "yx3djkw0lwv2n70lsk61jrtp",
+        "sourceHandle": "success",
+        "target": "q5obd5c0d3fx28s6ix4v7wd5",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__yx3djkw0lwv2n70lsk61jrtpsuccess-q5obd5c0d3fx28s6ix4v7wd5input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1787760789073,
+    "updatedAt": 1787760958498,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
