@@ -1,0 +1,1211 @@
+[
+  {
+    "name": "testProductLookup",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "iobl0umultp7xtusnf3aiuqe",
+        "position": {
+          "x": 284,
+          "y": 18
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "product-lookup",
+          "label": "Lookup Product",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Universal product lookup system. Handles ISBN, EAN, UPC for books, movies, music, games, and general products. Supports multiple APIs including Open Library, Google Books, OMDB, UPCItemDB, and MusicBrainz.",
+          "showRunningStatus": false,
+          "parameters": {
+            "operation": "Lookup Product",
+            "code": "9780140328721"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "f2thkm8unnv3aigs5k0xg8ce",
+        "position": {
+          "x": 0,
+          "y": 18
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "yz1afbw3k1wa6tf2pcdgzz93",
+        "position": {
+          "x": 568,
+          "y": 0
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "hhdaspqdur6tmmeavja0ozhz",
+        "position": {
+          "x": 284,
+          "y": 358
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "product-lookup",
+          "label": "Lookup ISBN",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Universal product lookup system. Handles ISBN, EAN, UPC for books, movies, music, games, and general products. Supports multiple APIs including Open Library, Google Books, OMDB, UPCItemDB, and MusicBrainz.",
+          "showRunningStatus": false,
+          "parameters": {
+            "operation": "Lookup ISBN",
+            "code": "9780140328721"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "qmiz7sg2vfcmdjtj46td8r7b",
+        "position": {
+          "x": 0,
+          "y": 358
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "jb0awxab4c4gty6w8qnbkbx5",
+        "position": {
+          "x": 1078.7926834804218,
+          "y": 26.913830102688877
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "eh37s5cgpud09jmsf5bp4oyx",
+        "position": {
+          "x": 284,
+          "y": 698
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "product-lookup",
+          "label": "Lookup Google Books",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Universal product lookup system. Handles ISBN, EAN, UPC for books, movies, music, games, and general products. Supports multiple APIs including Open Library, Google Books, OMDB, UPCItemDB, and MusicBrainz.",
+          "showRunningStatus": false,
+          "parameters": {
+            "operation": "Lookup Google Books",
+            "code": "9780306406157"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "nsaqz294m5votnjlzs9lcuzf",
+        "position": {
+          "x": 0,
+          "y": 698
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "r9r03lins0ba48t8fto67xk0",
+        "position": {
+          "x": 1056.7814866119206,
+          "y": 670.1455345441145
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "qavm0sikkyy8s3d0yvl1no1g",
+        "position": {
+          "x": 284,
+          "y": 1038
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "product-lookup",
+          "label": "Lookup Movie",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Universal product lookup system. Handles ISBN, EAN, UPC for books, movies, music, games, and general products. Supports multiple APIs including Open Library, Google Books, OMDB, UPCItemDB, and MusicBrainz.",
+          "showRunningStatus": false,
+          "parameters": {
+            "operation": "Lookup Movie",
+            "omdbApiKey": "e0e285a2",
+            "movieTitle": "Inception"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "pxicvr06dluvx7ssujufdu9n",
+        "position": {
+          "x": 0,
+          "y": 1038
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "nsr8akgdxz48ua8k76vrqc8q",
+        "position": {
+          "x": 1058.7415353067313,
+          "y": 1016.31021402025
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "adoi6ljhl39gvhcn9k7s243q",
+        "position": {
+          "x": 236.9221094822363,
+          "y": 1348.9700840059165
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "product-lookup",
+          "label": "Lookup UPC/EAN",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Universal product lookup system. Handles ISBN, EAN, UPC for books, movies, music, games, and general products. Supports multiple APIs including Open Library, Google Books, OMDB, UPCItemDB, and MusicBrainz.",
+          "showRunningStatus": false,
+          "parameters": {
+            "operation": "Lookup UPC/EAN",
+            "upcCode": "190198764690"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "fw1niqgwzn1xnyei1hg31iy7",
+        "position": {
+          "x": -31.891474221710926,
+          "y": 1317.0786097842056
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": true,
+        "draggable": true
+      },
+      {
+        "id": "knxdvf7rb87phdlcdaa97nj4",
+        "position": {
+          "x": 1083.9059402894816,
+          "y": 1286.051743683338
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "qtcitxso3jztxdg9denqykiq",
+        "position": {
+          "x": 284,
+          "y": 2058
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "product-lookup",
+          "label": "Lookup Music",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Universal product lookup system. Handles ISBN, EAN, UPC for books, movies, music, games, and general products. Supports multiple APIs including Open Library, Google Books, OMDB, UPCItemDB, and MusicBrainz.",
+          "showRunningStatus": false,
+          "parameters": {
+            "operation": "Lookup Music",
+            "code": "9780140328721",
+            "musicBarcode": "888837168618"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "r47aqiv6j9urhl83wprupbva",
+        "position": {
+          "x": 0,
+          "y": 2058
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger6",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "nr6oi414jng216ae8ec9lk8x",
+        "position": {
+          "x": 1097.4842880941046,
+          "y": 2067.673394848124
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log6",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "mhnkvptbqxro44dt73wr9k7a",
+        "position": {
+          "x": 284,
+          "y": 2398
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "product-lookup",
+          "label": "Batch Lookup",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Universal product lookup system. Handles ISBN, EAN, UPC for books, movies, music, games, and general products. Supports multiple APIs including Open Library, Google Books, OMDB, UPCItemDB, and MusicBrainz.",
+          "showRunningStatus": false,
+          "parameters": {
+            "operation": "Batch Lookup",
+            "codes": "[\"9780140328721\",\"3017620422003\"]"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "rcn4i81xbni8klg4z0ofugp7",
+        "position": {
+          "x": 0,
+          "y": 2398
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger6",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "kehxn2ntmhfg29yr52tgt3al",
+        "position": {
+          "x": 568,
+          "y": 2380
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log6",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "j4g9gvyxxajqczyl0weysd1d",
+        "position": {
+          "x": 284,
+          "y": 2738
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "product-lookup",
+          "label": "Validate Checksum",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Universal product lookup system. Handles ISBN, EAN, UPC for books, movies, music, games, and general products. Supports multiple APIs including Open Library, Google Books, OMDB, UPCItemDB, and MusicBrainz.",
+          "showRunningStatus": false,
+          "parameters": {
+            "operation": "Validate Checksum",
+            "checksumCode": "3017620422003"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "u9ae1o6jse3vy2t5xb1q6rza",
+        "position": {
+          "x": 0,
+          "y": 2738
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger6",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "hw3sn62gvj3rsno2wj1wvpap",
+        "position": {
+          "x": 1117.7781109827288,
+          "y": 2677.5674612328767
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log6",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "b318zt957mh11ae1b3mc878c",
+        "position": {
+          "x": 284,
+          "y": 3078
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "product-lookup",
+          "label": "Convert ISBN-10 to ISBN-13",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Universal product lookup system. Handles ISBN, EAN, UPC for books, movies, music, games, and general products. Supports multiple APIs including Open Library, Google Books, OMDB, UPCItemDB, and MusicBrainz.",
+          "showRunningStatus": false,
+          "parameters": {
+            "operation": "Convert ISBN-10 to ISBN-13",
+            "isbn10": "0306406152"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "romxyj50wg6e41g0nun0jjii",
+        "position": {
+          "x": 0,
+          "y": 3078
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger6",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "xe5v8731ez0je997z6usw088",
+        "position": {
+          "x": 568,
+          "y": 3060
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log6",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "ax6g6wbwsgtkyc6gs76kiadd",
+        "position": {
+          "x": 284,
+          "y": 3418
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "product-lookup",
+          "label": "Detect Barcode Type",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Universal product lookup system. Handles ISBN, EAN, UPC for books, movies, music, games, and general products. Supports multiple APIs including Open Library, Google Books, OMDB, UPCItemDB, and MusicBrainz.",
+          "showRunningStatus": false,
+          "parameters": {
+            "operation": "Detect Barcode Type",
+            "code": "3017620422003"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "v86r39i2l74mdvgkcpea1xa1",
+        "position": {
+          "x": 0,
+          "y": 3418
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger6",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "rb3clidixeo4v09k73hy4e5z",
+        "position": {
+          "x": 568,
+          "y": 3400
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log6",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "f2thkm8unnv3aigs5k0xg8ce",
+        "sourceHandle": "success",
+        "target": "iobl0umultp7xtusnf3aiuqe",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__f2thkm8unnv3aigs5k0xg8cesuccess-iobl0umultp7xtusnf3aiuqeinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "iobl0umultp7xtusnf3aiuqe",
+        "sourceHandle": "success",
+        "target": "yz1afbw3k1wa6tf2pcdgzz93",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__iobl0umultp7xtusnf3aiuqesuccess-yz1afbw3k1wa6tf2pcdgzz93input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "qmiz7sg2vfcmdjtj46td8r7b",
+        "sourceHandle": "success",
+        "target": "hhdaspqdur6tmmeavja0ozhz",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xsz22lq2fhx2l5e9mnq02gxh",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "hhdaspqdur6tmmeavja0ozhz",
+        "sourceHandle": "success",
+        "target": "jb0awxab4c4gty6w8qnbkbx5",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "i549glmef0rw6x2ibvrakigi",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "nsaqz294m5votnjlzs9lcuzf",
+        "sourceHandle": "success",
+        "target": "eh37s5cgpud09jmsf5bp4oyx",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "wkj1nhi7dvo3emaytyze1qae",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "eh37s5cgpud09jmsf5bp4oyx",
+        "sourceHandle": "success",
+        "target": "r9r03lins0ba48t8fto67xk0",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "o5n80dqkrk8bhuzidkiahiw1",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "pxicvr06dluvx7ssujufdu9n",
+        "sourceHandle": "success",
+        "target": "qavm0sikkyy8s3d0yvl1no1g",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "op0kqgbrysj7ua1osxzfcuni",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "qavm0sikkyy8s3d0yvl1no1g",
+        "sourceHandle": "success",
+        "target": "nsr8akgdxz48ua8k76vrqc8q",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "g61j3famitc0ohh64fvjko2p",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "fw1niqgwzn1xnyei1hg31iy7",
+        "sourceHandle": "success",
+        "target": "adoi6ljhl39gvhcn9k7s243q",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "dt0cposp6yycm44hvx49vjvf",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "adoi6ljhl39gvhcn9k7s243q",
+        "sourceHandle": "success",
+        "target": "knxdvf7rb87phdlcdaa97nj4",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "z5rgqan96g08fukky9ty0go7",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "r47aqiv6j9urhl83wprupbva",
+        "sourceHandle": "success",
+        "target": "qtcitxso3jztxdg9denqykiq",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "qbeq3x4ovew2ot3uiww5d0g3",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "qtcitxso3jztxdg9denqykiq",
+        "sourceHandle": "success",
+        "target": "nr6oi414jng216ae8ec9lk8x",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "cxfx2yv7msw680gwrvpzdua7",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "rcn4i81xbni8klg4z0ofugp7",
+        "sourceHandle": "success",
+        "target": "mhnkvptbqxro44dt73wr9k7a",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "l3zhw5ucjwu1aaz3i3u8bymq",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "mhnkvptbqxro44dt73wr9k7a",
+        "sourceHandle": "success",
+        "target": "kehxn2ntmhfg29yr52tgt3al",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "yofjuq2ru63f9zfjqah7akzd",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "u9ae1o6jse3vy2t5xb1q6rza",
+        "sourceHandle": "success",
+        "target": "j4g9gvyxxajqczyl0weysd1d",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "zvhdywdporpws9o0bfjmb1u6",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "j4g9gvyxxajqczyl0weysd1d",
+        "sourceHandle": "success",
+        "target": "hw3sn62gvj3rsno2wj1wvpap",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "mvtrl3wms7uhnp4nh0ebcvkk",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "romxyj50wg6e41g0nun0jjii",
+        "sourceHandle": "success",
+        "target": "b318zt957mh11ae1b3mc878c",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "zqqbhf1vc9q3vrvz6n1bt3zu",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "b318zt957mh11ae1b3mc878c",
+        "sourceHandle": "success",
+        "target": "xe5v8731ez0je997z6usw088",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "mbbjlah1f9d0d4415osirwhh",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "v86r39i2l74mdvgkcpea1xa1",
+        "sourceHandle": "success",
+        "target": "ax6g6wbwsgtkyc6gs76kiadd",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "vlzuywgelwrcqdzab2trdkff",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ax6g6wbwsgtkyc6gs76kiadd",
+        "sourceHandle": "success",
+        "target": "rb3clidixeo4v09k73hy4e5z",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "jm00o3s1fowdb0v03kz6iy7q",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1787749159239,
+    "updatedAt": 1787751317750,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
