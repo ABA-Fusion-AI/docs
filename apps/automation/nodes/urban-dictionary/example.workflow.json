@@ -1,0 +1,135 @@
+[
+  {
+    "name": "testUrban-dictionary",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "atrptqkyqmocw4q53u7oh9cq",
+        "position": {
+          "x": 303.5,
+          "y": 246
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "urban-dictionary",
+          "label": "Urban Dictionary",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get slang definitions and meanings from Urban Dictionary.",
+          "showRunningStatus": true,
+          "parameters": {
+            "term": "ghosting"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "egyo0v3zlnhkoi0xj5y3baa1",
+        "position": {
+          "x": 483,
+          "y": 191
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "bt7e37m6fexqbqn8rzmvj6q6",
+        "position": {
+          "x": 114,
+          "y": 217
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "draggable": true,
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "bt7e37m6fexqbqn8rzmvj6q6",
+        "sourceHandle": "success",
+        "target": "atrptqkyqmocw4q53u7oh9cq",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__bt7e37m6fexqbqn8rzmvj6q6success-atrptqkyqmocw4q53u7oh9cqinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "atrptqkyqmocw4q53u7oh9cq",
+        "sourceHandle": "success",
+        "target": "egyo0v3zlnhkoi0xj5y3baa1",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__atrptqkyqmocw4q53u7oh9cqsuccess-egyo0v3zlnhkoi0xj5y3baa1input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1787759665361,
+    "updatedAt": 1787759758487,
+    "publishedNames": []
+  }
+]
