@@ -1,0 +1,775 @@
+[
+  {
+    "name": "tavily",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "o5c8bjzjc88bew9eqhx7kwut",
+        "position": {
+          "x": 1041,
+          "y": 42
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "tavily",
+          "label": "Tavily",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Perform web search or extract content from URLs using Tavily API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "search",
+            "topic": "general",
+            "searchDepth": "basic",
+            "extractionType": "basic",
+            "convertToTool": false,
+            "query": "youtube"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ydlx9y2ckpvg8h4u690yde3o",
+        "position": {
+          "x": 1505.4877965317341,
+          "y": 68.94512182080835
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "tavily",
+          "label": "Tavily3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Perform web search or extract content from URLs using Tavily API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "search",
+            "topic": "general",
+            "searchDepth": "advanced",
+            "extractionType": "basic",
+            "convertToTool": false,
+            "query": "youtube",
+            "includeRawContent": true,
+            "includeImages": true
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "wq9mcjzfbufmus3xp0m25snw",
+        "position": {
+          "x": 1024.538110440756,
+          "y": 367.5853601155672
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "tavily",
+          "label": "Tavily2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Perform web search or extract content from URLs using Tavily API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "search",
+            "topic": "finance",
+            "searchDepth": "basic",
+            "extractionType": "basic",
+            "convertToTool": false,
+            "query": "youtube"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "g7j3gqxiaaq6xl1pjwous2ot",
+        "position": {
+          "x": 1489.0259069724902,
+          "y": 394.53048193637557
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "tavily",
+          "label": "Tavily3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Perform web search or extract content from URLs using Tavily API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "search",
+            "topic": "finance",
+            "searchDepth": "basic",
+            "extractionType": "basic",
+            "convertToTool": true,
+            "query": "youtube",
+            "toolName": "tavilysearch",
+            "toolDescription": "Perform web search or extract content from URLs using Tavily API."
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "tk25j92qkctgqxsim52okwvy",
+        "position": {
+          "x": 1032,
+          "y": 206
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "tavily",
+          "label": "Tavily1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Perform web search or extract content from URLs using Tavily API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "search",
+            "topic": "news",
+            "searchDepth": "basic",
+            "extractionType": "basic",
+            "convertToTool": false,
+            "query": "youtube"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "jngjdmhuiste3nmt4o8avdsx",
+        "position": {
+          "x": 1496.4877965317341,
+          "y": 232.94512182080837
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "tavily",
+          "label": "Tavily3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Perform web search or extract content from URLs using Tavily API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "search",
+            "topic": "news",
+            "searchDepth": "basic",
+            "extractionType": "advanced",
+            "convertToTool": false,
+            "query": "youtube",
+            "includeRawContent": true,
+            "includeImages": true,
+            "urls": [
+              "https://blog.tavily.com/how-agentic-communication-will-transform-the-web/"
+            ]
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "efhq68nnf3qdbszrobgpusqs",
+        "position": {
+          "x": 1456.583447047729,
+          "y": 700.315902009869
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "tavily",
+          "label": "Tavily4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Perform web search or extract content from URLs using Tavily API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": {
+              "$expr": "agent"
+            },
+            "topic": {
+              "$expr": "agent"
+            },
+            "searchDepth": {
+              "$expr": "agent"
+            },
+            "extractionType": {
+              "$expr": "agent"
+            },
+            "convertToTool": false,
+            "query": {
+              "$expr": "agent"
+            },
+            "includeRawContent": {
+              "$expr": "agent"
+            },
+            "includeImages": {
+              "$expr": "agent"
+            },
+            "urls": {
+              "$expr": "agent"
+            },
+            "maxResults": {
+              "$expr": "agent"
+            }
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "h157ojzevxuox2prhvonpkn9",
+        "position": {
+          "x": 1015.5381104407561,
+          "y": 531.5853601155673
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "tavily",
+          "label": "Tavily2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Perform web search or extract content from URLs using Tavily API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "extract",
+            "topic": "news",
+            "searchDepth": "basic",
+            "extractionType": "basic",
+            "convertToTool": false,
+            "query": "youtube",
+            "urls": [
+              "https://blog.tavily.com/how-agentic-communication-will-transform-the-web/"
+            ]
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "qay0wn4keakjxex8g6zilsrc",
+        "position": {
+          "x": 782,
+          "y": -5.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "g8piuskt62vcbpfu3d914xer",
+        "position": {
+          "x": 1246.4877965317341,
+          "y": 21.445121820808353
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "cfbaj18zk15ks4o3cv7j6s3z",
+        "position": {
+          "x": 765.5381104407561,
+          "y": 320.0853601155672
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "runxll2ranbg0hfu1g33fu4v",
+        "position": {
+          "x": 1230.0259069724902,
+          "y": 347.03048193637557
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "euf01j1e7bpe0das1uby93dq",
+        "position": {
+          "x": 773,
+          "y": 158.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "v87gqh5z3ykast286sivslup",
+        "position": {
+          "x": 1237.4877965317341,
+          "y": 185.44512182080837
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "td78aaxltvbtk4gj1md5ib9b",
+        "position": {
+          "x": 756.5381104407561,
+          "y": 484.0853601155672
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "eqg11f2i96ljga30tbl5js7r",
+        "position": {
+          "x": 1221.0259069724902,
+          "y": 511.03048193637557
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "l28u36wga2vo4k2ncaocq0il",
+        "position": {
+          "x": 1470.956297168103,
+          "y": 522.1779637693077
+        },
+        "type": "agent",
+        "width": 96,
+        "height": 96,
+        "data": {
+          "name": "agent",
+          "label": "Agent",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "An AI agent that can perform tasks using nodes as tools based on user input.",
+          "showRunningStatus": true,
+          "parameters": {
+            "systemPrompt": "do you have access to a tool name Tavily4\nand if so make a search about top 10 best sites to watch movies",
+            "threadId": "1"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "j1g38hp6xp5fzm6sem04e9mk",
+        "position": {
+          "x": 1580.1899497319464,
+          "y": 696.5105112187123
+        },
+        "type": "agent-llm",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "groq-llm",
+          "label": "Groq LLM",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "A node that uses Groq's ultra-fast LLM inference.",
+          "showRunningStatus": true,
+          "parameters": {
+            "model": "openai/gpt-oss-120b"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "qay0wn4keakjxex8g6zilsrc",
+        "sourceHandle": "success",
+        "target": "o5c8bjzjc88bew9eqhx7kwut",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__qay0wn4keakjxex8g6zilsrcsuccess-o5c8bjzjc88bew9eqhx7kwutinput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "euf01j1e7bpe0das1uby93dq",
+        "sourceHandle": "success",
+        "target": "tk25j92qkctgqxsim52okwvy",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "wlybjfrakikd02usx7gm93ng",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "cfbaj18zk15ks4o3cv7j6s3z",
+        "sourceHandle": "success",
+        "target": "wq9mcjzfbufmus3xp0m25snw",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "f2ps3f9eq8190m1xnqa6bksy",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "td78aaxltvbtk4gj1md5ib9b",
+        "sourceHandle": "success",
+        "target": "h157ojzevxuox2prhvonpkn9",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "jsl02cxd7lq2t6xtsll6kfm6",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "g8piuskt62vcbpfu3d914xer",
+        "sourceHandle": "success",
+        "target": "ydlx9y2ckpvg8h4u690yde3o",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "qbzhglzyc1d69i4eww7sb2rk",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "v87gqh5z3ykast286sivslup",
+        "sourceHandle": "success",
+        "target": "jngjdmhuiste3nmt4o8avdsx",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "twd738j1wzh8nb37gvedmsoo",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "runxll2ranbg0hfu1g33fu4v",
+        "sourceHandle": "success",
+        "target": "g7j3gqxiaaq6xl1pjwous2ot",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "bi80isjgak82p5tnu3eh1t0c",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "eqg11f2i96ljga30tbl5js7r",
+        "sourceHandle": "success",
+        "target": "l28u36wga2vo4k2ncaocq0il",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__eqg11f2i96ljga30tbl5js7rsuccess-l28u36wga2vo4k2ncaocq0ilinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "efhq68nnf3qdbszrobgpusqs",
+        "sourceHandle": "tool",
+        "target": "l28u36wga2vo4k2ncaocq0il",
+        "targetHandle": "tool",
+        "type": "agentConnection",
+        "id": "xy-edge__efhq68nnf3qdbszrobgpusqstool-l28u36wga2vo4k2ncaocq0iltool",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "j1g38hp6xp5fzm6sem04e9mk",
+        "sourceHandle": "llm",
+        "target": "l28u36wga2vo4k2ncaocq0il",
+        "targetHandle": "llm",
+        "type": "agentConnection",
+        "id": "xy-edge__j1g38hp6xp5fzm6sem04e9mkllm-l28u36wga2vo4k2ncaocq0illlm",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1787746474392,
+    "updatedAt": 1787749472359,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
