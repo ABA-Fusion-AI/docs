@@ -1,0 +1,695 @@
+[
+  {
+    "name": "Working Capital Calculator",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "thnagjmot0vetqzsl7x6twys",
+        "position": {
+          "x": 465.5,
+          "y": 68
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "working-capital-calculator",
+          "label": "Working Capital Calculator",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Calculate working capital, current/quick ratios, and cash conversion cycle",
+          "showRunningStatus": true,
+          "parameters": {
+            "inventory": 0
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "tg4qa700n01spr1zmnrnk9fu",
+        "position": {
+          "x": 330,
+          "y": 63
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "yr4faav7l0xzsbxdd67moss5",
+        "position": {
+          "x": 472.75,
+          "y": 212
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "working-capital-calculator",
+          "label": "Working Capital Calculator1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Calculate working capital, current/quick ratios, and cash conversion cycle",
+          "showRunningStatus": true,
+          "parameters": {
+            "inventory": 20000,
+            "currentAssets": 100000,
+            "currentLiabilities": 40000,
+            "receivables": 15000,
+            "payables": 10000,
+            "cogs": 80000,
+            "sales": 120000
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "a0r1aynf2t99jfp9zi61vjbv",
+        "position": {
+          "x": 340.75,
+          "y": 202.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "toizof3bryi63wfvsdt86aoi",
+        "position": {
+          "x": 460.875,
+          "y": 339.25
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "working-capital-calculator",
+          "label": "Working Capital Calculator2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Calculate working capital, current/quick ratios, and cash conversion cycle",
+          "showRunningStatus": true,
+          "parameters": {
+            "inventory": 15000,
+            "currentAssets": 20000,
+            "currentLiabilities": 50000
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "y0wcgrj0hqh1enyhvih5u2wu",
+        "position": {
+          "x": 337.375,
+          "y": 346.25
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "mtrwj4l2c1ma702fep643kth",
+        "position": {
+          "x": 572.625,
+          "y": 469.75
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "working-capital-calculator",
+          "label": "Working Capital Calculator2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Calculate working capital, current/quick ratios, and cash conversion cycle",
+          "showRunningStatus": true,
+          "parameters": {
+            "inventory": 0,
+            "currentAssets": {
+              "$expr": "output",
+              "node": "Function",
+              "outputId": "success",
+              "path": "currentAssets"
+            },
+            "currentLiabilities": {
+              "$expr": "output",
+              "node": "Function",
+              "outputId": "success",
+              "path": "currentLiabilities"
+            }
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "pcr0zd1p8qy82gioywrj649w",
+        "position": {
+          "x": 281.125,
+          "y": 467.25
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "cw45xcdre1iwdi5t6rvvmww2",
+        "position": {
+          "x": 404.16052878194193,
+          "y": 465.16934181430696
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "function",
+          "label": "Function",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Executes custom JavaScript code on the input data.",
+          "showRunningStatus": true,
+          "parameters": {
+            "code": "return {\n  currentAssets: 75000,\n  currentLiabilities: 25000\n};"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ihaadj4fzq0z7bkxf65h4e0q",
+        "position": {
+          "x": 448.91052878194193,
+          "y": 777.0592536839833
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "working-capital-calculator",
+          "label": "Working Capital Calculator3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Calculate working capital, current/quick ratios, and cash conversion cycle",
+          "showRunningStatus": true,
+          "parameters": {
+            "inventory": 10000,
+            "currentAssets": 200000,
+            "currentLiabilities": 150000,
+            "receivables": 5000,
+            "payables": 60000,
+            "sales": 300000,
+            "cogs": 200000
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ume7p2e2jd9bq4yusady68nn",
+        "position": {
+          "x": 279.41052878194193,
+          "y": 758.5592536839833
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "aw0p2wjkkvurzdn9rocsxn8c",
+        "position": {
+          "x": 440.38213696571256,
+          "y": 952.1184971489135
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "working-capital-calculator",
+          "label": "Working Capital Calculator4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Calculate working capital, current/quick ratios, and cash conversion cycle",
+          "showRunningStatus": true,
+          "parameters": {
+            "inventory": 10000,
+            "currentAssets": 60000,
+            "currentLiabilities": 30000,
+            "receivables": 10000,
+            "payables": 0,
+            "sales": 100000,
+            "cogs": 0
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "eai4vdzrkadrjihlayn1m73v",
+        "position": {
+          "x": 282.88213696571256,
+          "y": 945.6184971489135
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "xy0bh10wuzzolvoetkeh185w",
+        "position": {
+          "x": 415.0290014578961,
+          "y": 1129.4599200615278
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "working-capital-calculator",
+          "label": "Working Capital Calculator5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Calculate working capital, current/quick ratios, and cash conversion cycle",
+          "showRunningStatus": true,
+          "parameters": {
+            "inventory": 0,
+            "currentAssets": 50000,
+            "currentLiabilities": 50000,
+            "receivables": 0,
+            "payables": 0
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "k12rvef2swfqumlf5ryve1s2",
+        "position": {
+          "x": 257.5290014578961,
+          "y": 1122.9599200615278
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "tk2xu0tl8kwtyzhiu2d1srgh",
+        "position": {
+          "x": 372.2767618094556,
+          "y": 1317.5697745146654
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "working-capital-calculator",
+          "label": "Working Capital Calculator6",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Calculate working capital, current/quick ratios, and cash conversion cycle",
+          "showRunningStatus": true,
+          "parameters": {
+            "inventory": 80000,
+            "currentAssets": 100000,
+            "currentLiabilities": 50000,
+            "receivables": 0,
+            "payables": 0,
+            "sales": 0,
+            "cogs": 0
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "uqrvvz6ib6ffie2y80i5ubj1",
+        "position": {
+          "x": 214.7767618094556,
+          "y": 1311.0697745146654
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger6",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "tg4qa700n01spr1zmnrnk9fu",
+        "sourceHandle": "success",
+        "target": "thnagjmot0vetqzsl7x6twys",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__tg4qa700n01spr1zmnrnk9fusuccess-thnagjmot0vetqzsl7x6twysinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "a0r1aynf2t99jfp9zi61vjbv",
+        "sourceHandle": "success",
+        "target": "yr4faav7l0xzsbxdd67moss5",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ay3qkm74z61ej2jl1foxsua8",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "y0wcgrj0hqh1enyhvih5u2wu",
+        "sourceHandle": "success",
+        "target": "toizof3bryi63wfvsdt86aoi",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "drmh93i9tdf9n97wojce1tp6",
+        "selected": false,
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "pcr0zd1p8qy82gioywrj649w",
+        "sourceHandle": "success",
+        "target": "cw45xcdre1iwdi5t6rvvmww2",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__pcr0zd1p8qy82gioywrj649wsuccess-cw45xcdre1iwdi5t6rvvmww2input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "cw45xcdre1iwdi5t6rvvmww2",
+        "sourceHandle": "success",
+        "target": "mtrwj4l2c1ma702fep643kth",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__cw45xcdre1iwdi5t6rvvmww2success-mtrwj4l2c1ma702fep643kthinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ume7p2e2jd9bq4yusady68nn",
+        "sourceHandle": "success",
+        "target": "ihaadj4fzq0z7bkxf65h4e0q",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "sdsjaizh04bwj0ftp8l727t4",
+        "selected": false,
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "eai4vdzrkadrjihlayn1m73v",
+        "sourceHandle": "success",
+        "target": "aw0p2wjkkvurzdn9rocsxn8c",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "bxu5bkl0zj7czulc0pwxrdjy",
+        "selected": false,
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "k12rvef2swfqumlf5ryve1s2",
+        "sourceHandle": "success",
+        "target": "xy0bh10wuzzolvoetkeh185w",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "pb8fd40zgwzgitoya88uzkrs",
+        "selected": false,
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "uqrvvz6ib6ffie2y80i5ubj1",
+        "sourceHandle": "success",
+        "target": "tk2xu0tl8kwtyzhiu2d1srgh",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "mhwxsza5860jgivlw7t53scd",
+        "selected": false,
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1787762675801,
+    "updatedAt": 1787766341079,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
