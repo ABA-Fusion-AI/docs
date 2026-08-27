@@ -1,0 +1,253 @@
+[
+  {
+    "name": "wearther search",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "kkiht9y734ln31raiwfhxv5p",
+        "position": {
+          "x": 949,
+          "y": 180
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "weather-search",
+          "label": "Weather Search",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get current weather data from multiple sources (OpenWeatherMap, WeatherAPI, Open-Meteo)",
+          "showRunningStatus": true,
+          "parameters": {
+            "source": "openmeteo",
+            "city": "rabat",
+            "country": "ma",
+            "longitude": -6.83255,
+            "latitude": 34.01325
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "mvat81c5wjihhj3ok1a32fxw",
+        "position": {
+          "x": 955,
+          "y": 321
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "weather-search",
+          "label": "Weather Search1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get current weather data from multiple sources (OpenWeatherMap, WeatherAPI, Open-Meteo)",
+          "showRunningStatus": true,
+          "parameters": {
+            "source": "openweathermap",
+            "city": "rabat",
+            "country": "ma",
+            "longitude": -6.83255,
+            "latitude": 34.01325
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "npm3zxab4igd6tyk99s2b3n9",
+        "position": {
+          "x": 1375,
+          "y": 262
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "weather-search",
+          "label": "Weather Search2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get current weather data from multiple sources (OpenWeatherMap, WeatherAPI, Open-Meteo)",
+          "showRunningStatus": true,
+          "parameters": {
+            "source": "weatherapi",
+            "city": "rabat",
+            "country": "ma",
+            "longitude": -6.83255,
+            "latitude": 34.01325
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "temllv09n82xernd0m7ef1eo",
+        "position": {
+          "x": 658,
+          "y": 141.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "l8w72msrgsd4ksgchdpdma7y",
+        "position": {
+          "x": 664,
+          "y": 282.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "g1kg8spovm9rgi937tat2why",
+        "position": {
+          "x": 1084,
+          "y": 223.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "temllv09n82xernd0m7ef1eo",
+        "sourceHandle": "success",
+        "target": "kkiht9y734ln31raiwfhxv5p",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__temllv09n82xernd0m7ef1eosuccess-kkiht9y734ln31raiwfhxv5pinput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "l8w72msrgsd4ksgchdpdma7y",
+        "sourceHandle": "success",
+        "target": "mvat81c5wjihhj3ok1a32fxw",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "b8bw8gbjx4ar1czx84vv545t",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "g1kg8spovm9rgi937tat2why",
+        "sourceHandle": "success",
+        "target": "npm3zxab4igd6tyk99s2b3n9",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "a8022ubqtj63ouyqnzg5xh58",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1787823360304,
+    "updatedAt": 1787825538056,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
