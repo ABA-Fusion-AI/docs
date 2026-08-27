@@ -69,8 +69,8 @@
       {
         "id": "n4gowbhvazih83zaqiilpsem",
         "position": {
-          "x": 504,
-          "y": 278
+          "x": 541,
+          "y": 273
         },
         "type": "action",
         "width": 64,
@@ -98,7 +98,7 @@
           },
           "_morphing": false
         },
-        "selected": true
+        "selected": false
       },
       {
         "id": "yz9pslh05c8ca1o2fdlgp9ee",
@@ -127,6 +127,100 @@
           "_morphing": false
         },
         "selected": false
+      },
+      {
+        "id": "ijhth1gr63cymsv9vlxkjfon",
+        "position": {
+          "x": 658.25,
+          "y": 537.75
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "whois",
+          "label": "WHOIS Lookup2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Performs WHOIS lookup for domain information including registrar, creation date, expiration date, and nameservers.",
+          "showRunningStatus": true,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "q3asr2bmyqtxzs41etx6nkkz",
+        "position": {
+          "x": 479.05781265805933,
+          "y": 578.75
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "vp04xr528t8nlm8mr0leyaw9",
+        "position": {
+          "x": 556.9280204867567,
+          "y": 448.2330203702694
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "function",
+          "label": "Function",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Executes custom JavaScript code on the input data.",
+          "showRunningStatus": true,
+          "parameters": {
+            "code": "// Write your code here\nreturn \"https://roomly.ma/\";"
+          },
+          "_morphing": false
+        },
+        "selected": false
       }
     ],
     "connections": [
@@ -151,6 +245,28 @@
         "data": {
           "isAnimated": false
         }
+      },
+      {
+        "source": "q3asr2bmyqtxzs41etx6nkkz",
+        "sourceHandle": "success",
+        "target": "vp04xr528t8nlm8mr0leyaw9",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__q3asr2bmyqtxzs41etx6nkkzsuccess-vp04xr528t8nlm8mr0leyaw9input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "vp04xr528t8nlm8mr0leyaw9",
+        "sourceHandle": "success",
+        "target": "ijhth1gr63cymsv9vlxkjfon",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__vp04xr528t8nlm8mr0leyaw9success-ijhth1gr63cymsv9vlxkjfoninput",
+        "data": {
+          "isAnimated": false
+        }
       }
     ],
     "status": "stopped",
@@ -158,7 +274,7 @@
     "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
     "version": 1,
     "createdAt": 1787819535694,
-    "updatedAt": 1787822860152,
+    "updatedAt": 1787823167518,
     "publishedNames": [],
     "previousStatus": "running"
   }

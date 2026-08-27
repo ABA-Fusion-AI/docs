@@ -1,0 +1,810 @@
+[
+  {
+    "name": "wikimedia-commons",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "wieujazacz76c7khyyv7y8pj",
+        "position": {
+          "x": 620,
+          "y": 235
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "wikimedia-commons",
+          "label": "Wikimedia Commons",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get image information from Wikimedia Commons API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "titles": "File:Albert Einstein Head.jpg"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "gcx0lwxexbx88tfa2w6l7332",
+        "position": {
+          "x": 408.5,
+          "y": 79.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "zct6a8w09ou9kqk8fut4stk0",
+        "position": {
+          "x": 614.75,
+          "y": 426.75
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "wikimedia-commons",
+          "label": "Wikimedia Commons1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get image information from Wikimedia Commons API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "titles": "File:Flag of Morocco.svg"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "w5g70a8ysgiotutx9a2r9et5",
+        "position": {
+          "x": 415.25,
+          "y": 283.25
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "qkrpaj3w935nf83igzzy1qxb",
+        "position": {
+          "x": 593.25,
+          "y": 633.374870300293
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "wikimedia-commons",
+          "label": "Wikimedia Commons2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get image information from Wikimedia Commons API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "titles": "File:Tesla.jpg",
+            "iiprop": "url|size|mime|dimensions"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "u9cjokbndg0gpna56zh7594h",
+        "position": {
+          "x": 393.75,
+          "y": 489.87487030029297
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "bco9wwvayr7ak4sh41sv84ho",
+        "position": {
+          "x": 574.0877051413534,
+          "y": 848.978021285903
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "wikimedia-commons",
+          "label": "Wikimedia Commons3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get image information from Wikimedia Commons API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "titles": "File:Flag of Morocco.svg|File:Flag of France.svg"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "mojjpq6w5h3xcsdgx3tq91nq",
+        "position": {
+          "x": 374.58770514135347,
+          "y": 705.478021285903
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "o1gxv2nrvqzedpzn6osdxksu",
+        "position": {
+          "x": 592.8377051413534,
+          "y": 1064.728021285903
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "wikimedia-commons",
+          "label": "Wikimedia Commons3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get image information from Wikimedia Commons API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "titles": "File:random_non_existent_image_123456789.png"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "n42cp0ywkrku7uuywnjxybhs",
+        "position": {
+          "x": 405.33770514135347,
+          "y": 933.228021285903
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "jtyr6vn6m9pom45aawevvvxu",
+        "position": {
+          "x": 595.3377051413534,
+          "y": 1295.3528915861962
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "wikimedia-commons",
+          "label": "Wikimedia Commons3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get image information from Wikimedia Commons API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "titles": "File:Morocco national anthem.ogg",
+            "iiprop": "url|size|mime"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "znt9yid775tbf1t17wz3ho4i",
+        "position": {
+          "x": 407.83770514135347,
+          "y": 1163.852891586196
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "oiomfqn3asyvyry0nzwugwmi",
+        "position": {
+          "x": 563.3925110337768,
+          "y": 1548.9202449987138
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "wikimedia-commons",
+          "label": "Wikimedia Commons4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get image information from Wikimedia Commons API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "titles": "File:Rotating earth (large).gif",
+            "iiprop": "url|size|mime|dimensions"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "hpneshrbqbr1otpilgzllydp",
+        "position": {
+          "x": 387.89251103377694,
+          "y": 1429.4202449987138
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "pkd63er0w0lcrupd3fgpvv7d",
+        "position": {
+          "x": 589.8925110337768,
+          "y": 1803.545115299007
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "wikimedia-commons",
+          "label": "Wikimedia Commons4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get image information from Wikimedia Commons API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "titles": "File:Sample.pdf",
+            "iiprop": "url|size|mime"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "qg4n6dvpc78oj5lyy32mkway",
+        "position": {
+          "x": 414.39251103377694,
+          "y": 1684.0451152990067
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "g0vhe9kurxvvifahv3ptfb6h",
+        "position": {
+          "x": 577.0199722599726,
+          "y": 2005.5687246574307
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "wikimedia-commons",
+          "label": "Wikimedia Commons5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get image information from Wikimedia Commons API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "titles": "File:Casablanca - Place Mohammed V (1).jpg",
+            "iiprop": "url|size|mime"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "zgc2qnotbamcmndqzc1bnhtb",
+        "position": {
+          "x": 401.5199722599728,
+          "y": 1886.0687246574307
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "m49umzvh4ksmt2y7tpexa95o",
+        "position": {
+          "x": 683.5544360070979,
+          "y": 2223.2546116898193
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "wikimedia-commons",
+          "label": "Wikimedia Commons5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get image information from Wikimedia Commons API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "titles": {
+              "$expr": "output",
+              "node": "Function",
+              "outputId": "success",
+              "path": "imageName"
+            },
+            "iiprop": "url|size|mime"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "r3dx6wm3rlncwcu95b81pp7d",
+        "position": {
+          "x": 291.34573416872814,
+          "y": 2165.319583802993
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "p9yqwq13fv21iwq0hfolrlfu",
+        "position": {
+          "x": 523.9353399112539,
+          "y": 2156.111499572031
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "function",
+          "label": "Function",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Executes custom JavaScript code on the input data.",
+          "showRunningStatus": true,
+          "parameters": {
+            "code": "return {\n  \"imageName\": \"File:Wikipedia-logo-v2.svg\"\n};"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "gcx0lwxexbx88tfa2w6l7332",
+        "sourceHandle": "success",
+        "target": "wieujazacz76c7khyyv7y8pj",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__gcx0lwxexbx88tfa2w6l7332success-wieujazacz76c7khyyv7y8pjinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "w5g70a8ysgiotutx9a2r9et5",
+        "sourceHandle": "success",
+        "target": "zct6a8w09ou9kqk8fut4stk0",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "saxt9gyzbai79i37joe9x92e",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "u9cjokbndg0gpna56zh7594h",
+        "sourceHandle": "success",
+        "target": "qkrpaj3w935nf83igzzy1qxb",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "w86yif9asfe8rmfp3yxer1gv",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "mojjpq6w5h3xcsdgx3tq91nq",
+        "sourceHandle": "success",
+        "target": "bco9wwvayr7ak4sh41sv84ho",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xlaobh1sv348l79k8ohxd573",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "n42cp0ywkrku7uuywnjxybhs",
+        "sourceHandle": "success",
+        "target": "o1gxv2nrvqzedpzn6osdxksu",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "tdsfy86f0y1d1tn7cnahywrc",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "znt9yid775tbf1t17wz3ho4i",
+        "sourceHandle": "success",
+        "target": "jtyr6vn6m9pom45aawevvvxu",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "fxog56qpz3wll8pf5mshw3rr",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "hpneshrbqbr1otpilgzllydp",
+        "sourceHandle": "success",
+        "target": "oiomfqn3asyvyry0nzwugwmi",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "r4ybi81qd6wwzkmn4aj7aldz",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "qg4n6dvpc78oj5lyy32mkway",
+        "sourceHandle": "success",
+        "target": "pkd63er0w0lcrupd3fgpvv7d",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "bs2zlix8s46fylniaqd3k2e1",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "zgc2qnotbamcmndqzc1bnhtb",
+        "sourceHandle": "success",
+        "target": "g0vhe9kurxvvifahv3ptfb6h",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "zo4db0ej66c2kb7051vv328a",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "r3dx6wm3rlncwcu95b81pp7d",
+        "sourceHandle": "success",
+        "target": "p9yqwq13fv21iwq0hfolrlfu",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__r3dx6wm3rlncwcu95b81pp7dsuccess-p9yqwq13fv21iwq0hfolrlfuinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "p9yqwq13fv21iwq0hfolrlfu",
+        "sourceHandle": "success",
+        "target": "m49umzvh4ksmt2y7tpexa95o",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__p9yqwq13fv21iwq0hfolrlfusuccess-m49umzvh4ksmt2y7tpexa95oinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1787819740525,
+    "updatedAt": 1787822216371,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
