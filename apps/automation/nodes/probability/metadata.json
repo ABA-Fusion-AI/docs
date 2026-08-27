@@ -1,0 +1,4 @@
+{
+  "label": "Probability",
+  "description": "Calculates probability mass/density functions (PMF/PDF) and cumulative distribution functions (CDF) for Binomial, Poisson, and Normal distributions."
+}
