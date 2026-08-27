@@ -1,0 +1,939 @@
+[
+  {
+    "name": "wikipedia",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "dtfkjj03m94vtqydm7pkq0ue",
+        "position": {
+          "x": 598,
+          "y": 211
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "wikipedia",
+          "label": "Wikipedia",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve articles from Wikipedia.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "search",
+            "query": "artificial intelligence",
+            "pageSize": 5
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "hyn9xqhr2uhs6t587hgif0dw",
+        "position": {
+          "x": 359,
+          "y": 182.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "k76jof5gwohacs5iiy2efr1f",
+        "position": {
+          "x": 595,
+          "y": 365.75
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "wikipedia",
+          "label": "Wikipedia1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve articles from Wikipedia.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getById",
+            "pageTitle": "Morocco "
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "kjlaachi2sv398cshwav9zjn",
+        "position": {
+          "x": 396,
+          "y": 319.25
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "lit108r9dy3tvbu9a629ma4z",
+        "position": {
+          "x": 595,
+          "y": 487.375
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "wikipedia",
+          "label": "Wikipedia2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve articles from Wikipedia.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "search",
+            "query": "SpaceX",
+            "page": 2,
+            "pageSize": 3
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "oncpu4h1nbtyn0xwe02g37k2",
+        "position": {
+          "x": 396,
+          "y": 440.875
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "nrqmvplh74gr1j4ddnwyt7xd",
+        "position": {
+          "x": 616,
+          "y": 666.125
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "wikipedia",
+          "label": "Wikipedia2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve articles from Wikipedia.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getById",
+            "pageTitle": "random_non_existent_page_123456789"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "rj0phrpvd16eh041wigy2ngc",
+        "position": {
+          "x": 429,
+          "y": 631.625
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "fiibhem1l15vxvsyf92otbuf",
+        "position": {
+          "x": 603.5,
+          "y": 825.1875
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "wikipedia",
+          "label": "Wikipedia3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve articles from Wikipedia.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "search",
+            "query": "asdkjhasdkhjasdkjhasd123987"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "hkpny3n1xgm7scb0qm0sk5w1",
+        "position": {
+          "x": 404.5,
+          "y": 778.6875
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "l3h58vuippmvvr7i2yyyd5wx",
+        "position": {
+          "x": 624.5,
+          "y": 1003.9375
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "wikipedia",
+          "label": "Wikipedia3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve articles from Wikipedia.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getById",
+            "pageTitle": "Python (programming language)"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "rrt08zmvux7iczsfr6aizs41",
+        "position": {
+          "x": 437.5,
+          "y": 969.4375
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "b7u7yiry1a1rkfnimx5rcouh",
+        "position": {
+          "x": 648.5,
+          "y": 1149.5625
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "wikipedia",
+          "label": "Wikipedia3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve articles from Wikipedia.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "search",
+            "query": "طنجة",
+            "pageSize": 3
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "i1nco5uy2i5hga49qd82ap76",
+        "position": {
+          "x": 461.5,
+          "y": 1115.0625
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "phujtd3c409iqwjvgh754x5u",
+        "position": {
+          "x": 693.5,
+          "y": 1352.3125
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "wikipedia",
+          "label": "Wikipedia3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve articles from Wikipedia.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "search"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "p083pn8nls5xgdcr4nt6llzb",
+        "position": {
+          "x": 518.5,
+          "y": 1329.8125
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ua8n502o2cclos26lg2f6ysu",
+        "position": {
+          "x": 700.2044872762616,
+          "y": 1547.022199081905
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "wikipedia",
+          "label": "Wikipedia4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve articles from Wikipedia.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "search",
+            "query": "Computer science",
+            "pageSize": 50
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "kbgsfxb509yndfv1i6k65zp0",
+        "position": {
+          "x": 537.2044872762616,
+          "y": 1536.522199081905
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "mve8ppklfxb9mnt41q66px1d",
+        "position": {
+          "x": 677.1022436381309,
+          "y": 1725.5110995409525
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "wikipedia",
+          "label": "Wikipedia5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve articles from Wikipedia.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getById",
+            "pageSize": 3,
+            "pageTitle": {
+              "$expr": "output",
+              "node": "Function",
+              "outputId": "success",
+              "path": "title"
+            }
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "a5kujo22fgytcbo2smmfxd46",
+        "position": {
+          "x": 430.10224363813086,
+          "y": 1723.0110995409525
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "fylcxd1sbtdpm1x9qntc65qg",
+        "position": {
+          "x": 561.6022436381309,
+          "y": 1663.7610995409525
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "function",
+          "label": "Function",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Executes custom JavaScript code on the input data.",
+          "showRunningStatus": true,
+          "parameters": {
+            "code": "// Write your code here\nreturn {\n  \"title\":\"Docker (software)\"\n};"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "pgfops1ka0oj70dv5cyimqb6",
+        "position": {
+          "x": 669.4355769714643,
+          "y": 1899.177766207619
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "wikipedia",
+          "label": "Wikipedia7",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve articles from Wikipedia.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getById",
+            "pageSize": 2
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "cg9pbb9zz03s913g8tus7nah",
+        "position": {
+          "x": 430.43557697146423,
+          "y": 1898.677766207619
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger7",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "qdgzeyzm6365opsodqr2766y",
+        "position": {
+          "x": 577.9355769714642,
+          "y": 1861.427766207619
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "function",
+          "label": "Function1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Executes custom JavaScript code on the input data.",
+          "showRunningStatus": true,
+          "parameters": {
+            "code": "// Write your code here\nreturn \"linux\";"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "hyn9xqhr2uhs6t587hgif0dw",
+        "sourceHandle": "success",
+        "target": "dtfkjj03m94vtqydm7pkq0ue",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__hyn9xqhr2uhs6t587hgif0dwsuccess-dtfkjj03m94vtqydm7pkq0ueinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "kjlaachi2sv398cshwav9zjn",
+        "sourceHandle": "success",
+        "target": "k76jof5gwohacs5iiy2efr1f",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ysok00yrfc284ihyy71kpp2u",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "oncpu4h1nbtyn0xwe02g37k2",
+        "sourceHandle": "success",
+        "target": "lit108r9dy3tvbu9a629ma4z",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "sbx7gnzykic1w2v2bf4vft0x",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "rj0phrpvd16eh041wigy2ngc",
+        "sourceHandle": "success",
+        "target": "nrqmvplh74gr1j4ddnwyt7xd",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xtyvitep0u67ufm03bnw72d3",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "hkpny3n1xgm7scb0qm0sk5w1",
+        "sourceHandle": "success",
+        "target": "fiibhem1l15vxvsyf92otbuf",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "tkrwvpqgfar7y5r51bqv2bz0",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "rrt08zmvux7iczsfr6aizs41",
+        "sourceHandle": "success",
+        "target": "l3h58vuippmvvr7i2yyyd5wx",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "j4kwgf1on2jm29jgyynw9mdi",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "i1nco5uy2i5hga49qd82ap76",
+        "sourceHandle": "success",
+        "target": "b7u7yiry1a1rkfnimx5rcouh",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "p1gmei26m9hc8v15dzwoimpo",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "p083pn8nls5xgdcr4nt6llzb",
+        "sourceHandle": "success",
+        "target": "phujtd3c409iqwjvgh754x5u",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "pkinbitzl7iiar0vt17vbdd4",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "kbgsfxb509yndfv1i6k65zp0",
+        "sourceHandle": "success",
+        "target": "ua8n502o2cclos26lg2f6ysu",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "dez9t37uyy1b6qwdgatowm1f",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "fylcxd1sbtdpm1x9qntc65qg",
+        "sourceHandle": "success",
+        "target": "mve8ppklfxb9mnt41q66px1d",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__fylcxd1sbtdpm1x9qntc65qgsuccess-mve8ppklfxb9mnt41q66px1dinput",
+        "selected": false,
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "a5kujo22fgytcbo2smmfxd46",
+        "sourceHandle": "success",
+        "target": "fylcxd1sbtdpm1x9qntc65qg",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__a5kujo22fgytcbo2smmfxd46success-fylcxd1sbtdpm1x9qntc65qginput",
+        "selected": false,
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "qdgzeyzm6365opsodqr2766y",
+        "sourceHandle": "success",
+        "target": "pgfops1ka0oj70dv5cyimqb6",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "l2izz2kiycf0ounbjml40uli",
+        "selected": false,
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "cg9pbb9zz03s913g8tus7nah",
+        "sourceHandle": "success",
+        "target": "qdgzeyzm6365opsodqr2766y",
+        "targetHandle": "input",
+        "type": "directed",
+        "selected": false,
+        "data": {
+          "isAnimated": false
+        },
+        "id": "xy-edge__cg9pbb9zz03s913g8tus7nahsuccess-qdgzeyzm6365opsodqr2766yinput"
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1787818288319,
+    "updatedAt": 1787820611674,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
