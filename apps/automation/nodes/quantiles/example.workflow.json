@@ -1,0 +1,136 @@
+[
+  {
+    "name": "Quantiles Example",
+    "nodes": [
+      {
+        "id": "0c9781ee-7e48-4f7c-9edb-3bd81dd3015f",
+        "position": {
+          "x": 362.5,
+          "y": 480
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "wj8eape2wsjm2rxli0lqm9er",
+        "position": {
+          "x": 612.5,
+          "y": 497.75
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "quantiles",
+          "label": "Quantiles / Percentiles / IQR",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Calculates quantiles, percentiles, and IQR (Interquartile Range) for a data series.",
+          "showRunningStatus": true,
+          "parameters": {
+            "series": [
+              1,
+              2,
+              3,
+              4,
+              6,
+              8
+            ],
+            "qs": []
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ve1rda1fopkytry6ifpps3nq",
+        "position": {
+          "x": 943.5,
+          "y": 507
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "0c9781ee-7e48-4f7c-9edb-3bd81dd3015f",
+        "sourceHandle": "success",
+        "target": "wj8eape2wsjm2rxli0lqm9er",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__0c9781ee-7e48-4f7c-9edb-3bd81dd3015fsuccess-wj8eape2wsjm2rxli0lqm9erinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "wj8eape2wsjm2rxli0lqm9er",
+        "sourceHandle": "success",
+        "target": "ve1rda1fopkytry6ifpps3nq",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__wj8eape2wsjm2rxli0lqm9ersuccess-ve1rda1fopkytry6ifpps3nqinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "version": 1,
+    "secrets": {},
+    "status": "stopped",
+    "publishedNames": []
+  }
+]

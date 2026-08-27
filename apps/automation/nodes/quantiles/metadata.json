@@ -1,0 +1,4 @@
+{
+  "label": "Quantiles / Percentiles / IQR",
+  "description": "Calculates quantiles, percentiles, and IQR (Interquartile Range) for a data series."
+}
