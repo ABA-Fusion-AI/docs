@@ -1,0 +1,4 @@
+{
+  "label": "Yahoo Search",
+  "description": "Search Yahoo through SerpAPI and return structured web search results."
+}
