@@ -1,0 +1,338 @@
+[
+  {
+    "name": "bunny",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "ol8md507yqeubdekwlzlolf3",
+        "position": {
+          "x": 861,
+          "y": -69.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "jk0xbf8ejw361l50cf2l8em5",
+        "position": {
+          "x": 857,
+          "y": 52.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "e7rnci6yx59fbk6u09e13b1e",
+        "position": {
+          "x": 848,
+          "y": 330.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ropm98yt0981zebth6aqtdc7",
+        "position": {
+          "x": 848,
+          "y": 196.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "vhp6y5cfboy76g30brddawig",
+        "position": {
+          "x": 1098,
+          "y": -42.25
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bunny",
+          "label": "Bunny.net1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage Storage Zones and CDN Cache.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "upload_file",
+            "accessKey": "",
+            "contentEncoding": "text",
+            "fileContent": "testtest",
+            "storageZoneName": "karamyassinefudsiontest",
+            "path": "/test.txt"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "n51cpxf8je5s7rn3vkr5eebc",
+        "position": {
+          "x": 1082,
+          "y": 76.75
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bunny",
+          "label": "Bunny.net2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage Storage Zones and CDN Cache.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "list_storage_zones",
+            "accessKey": ""
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "w4d1ctli6qc2jygzmyhzvw5j",
+        "position": {
+          "x": 1073,
+          "y": 354.75
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bunny",
+          "label": "Bunny.net4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage Storage Zones and CDN Cache.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "delete_file",
+            "accessKey": "",
+            "storageZoneName": "karamyassinefudsiontest",
+            "path": "/test.txt"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "oagwl8ou1r6v2yblors66m6e",
+        "position": {
+          "x": 1085,
+          "y": 223.75
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bunny",
+          "label": "Bunny.net3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage Storage Zones and CDN Cache.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "purge_cache",
+            "accessKey": "",
+            "url": "https://testfusion.b-cdn.net/test.txt"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "ol8md507yqeubdekwlzlolf3",
+        "sourceHandle": "success",
+        "target": "uoraqxo9oew547r1oiqg8bu5",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ol8md507yqeubdekwlzlolf3success-uoraqxo9oew547r1oiqg8bu5input",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "ol8md507yqeubdekwlzlolf3",
+        "sourceHandle": "success",
+        "target": "vhp6y5cfboy76g30brddawig",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ol8md507yqeubdekwlzlolf3success-vhp6y5cfboy76g30brddawiginput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "jk0xbf8ejw361l50cf2l8em5",
+        "sourceHandle": "success",
+        "target": "n51cpxf8je5s7rn3vkr5eebc",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "guyjjrl5huzks439bkas4se9",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "ropm98yt0981zebth6aqtdc7",
+        "sourceHandle": "success",
+        "target": "oagwl8ou1r6v2yblors66m6e",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "lbyn7z4qi4qmtl7ni87sem6t",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "e7rnci6yx59fbk6u09e13b1e",
+        "sourceHandle": "success",
+        "target": "w4d1ctli6qc2jygzmyhzvw5j",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "zd1ucgguub6j16v8klmnnrxw",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1787586906537,
+    "updatedAt": 1787840361253,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
