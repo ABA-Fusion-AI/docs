@@ -1,0 +1,127 @@
+[
+  {
+    "name": "tip calculator",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "sv9zsqui2ujnlqfk2482itxv",
+        "position": {
+          "x": 681,
+          "y": 169.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "n2fyfsbjbqmzsfvzwnwi0wgk",
+        "position": {
+          "x": 938,
+          "y": 153.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "template-safe-render",
+          "label": "Template Safe Render",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Safe template rendering (no eval, only variable substitution).",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "{\"name\":\"karam\",\"age\":\"25\"}",
+            "template": "Hello {{name}}, you are {{age}} years old.",
+            "variables": {}
+          },
+          "_morphing": false
+        },
+        "selected": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "sv9zsqui2ujnlqfk2482itxv",
+        "sourceHandle": "success",
+        "target": "b6grli7xkwm1o53pfh379hym",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__sv9zsqui2ujnlqfk2482itxvsuccess-b6grli7xkwm1o53pfh379hyminput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "sv9zsqui2ujnlqfk2482itxv",
+        "sourceHandle": "success",
+        "target": "dv87bvu5a71m7dydzjb0z0bf",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__sv9zsqui2ujnlqfk2482itxvsuccess-dv87bvu5a71m7dydzjb0z0bfinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "sv9zsqui2ujnlqfk2482itxv",
+        "sourceHandle": "success",
+        "target": "ce5ny5zy1ge62llowltan54q",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__sv9zsqui2ujnlqfk2482itxvsuccess-ce5ny5zy1ge62llowltan54qinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "sv9zsqui2ujnlqfk2482itxv",
+        "sourceHandle": "success",
+        "target": "n2fyfsbjbqmzsfvzwnwi0wgk",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__sv9zsqui2ujnlqfk2482itxvsuccess-n2fyfsbjbqmzsfvzwnwi0wgkinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1787745023230,
+    "updatedAt": 1787841273405,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
