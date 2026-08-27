@@ -1,0 +1,623 @@
+[
+  {
+    "name": "testWorld Bank Data",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "xjt1zue34iib8c9op61p261y",
+        "position": {
+          "x": 284,
+          "y": 18
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "world-bank",
+          "label": "World Bank Data1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Access global development data (GDP, Population, etc.), country lists, and indicators via the World Bank API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "resource": "data",
+            "language": "en",
+            "countryCode": "MA",
+            "indicatorCode": "SP.POP.TOTL",
+            "date": "2020:2024"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "hzkvxduec9omzwq5msfs94t7",
+        "position": {
+          "x": 0,
+          "y": 18
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "b149or0rofzibj8mgo6xlejq",
+        "position": {
+          "x": 568,
+          "y": 0
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "vkn585pu9urzz3dt70ed05v9",
+        "position": {
+          "x": 284,
+          "y": 358
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "world-bank",
+          "label": "World Bank Data2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Access global development data (GDP, Population, etc.), country lists, and indicators via the World Bank API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "resource": "countries",
+            "language": "en",
+            "countryCode": "MA"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "roat5hczb5ixkxo6zc5bgkks",
+        "position": {
+          "x": 0,
+          "y": 358
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger6",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "cyjeuhtcrchwhrbjfbdhl27o",
+        "position": {
+          "x": 568,
+          "y": 340
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log6",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "naswlhy0tdd3hadeztjr6htw",
+        "position": {
+          "x": 284,
+          "y": 698
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "world-bank",
+          "label": "World Bank Data3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Access global development data (GDP, Population, etc.), country lists, and indicators via the World Bank API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "resource": "indicators",
+            "language": "en",
+            "countryCode": "all",
+            "perPage": 10
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "z7zton003spt08f16u76japj",
+        "position": {
+          "x": 0,
+          "y": 698
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger7",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "kz7628cmlghj89xsz0votxvd",
+        "position": {
+          "x": 958,
+          "y": 802
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log7",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "fbewurvypkyx0hodow8bc8nr",
+        "position": {
+          "x": 284,
+          "y": 1038
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "world-bank",
+          "label": "World Bank Data4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Access global development data (GDP, Population, etc.), country lists, and indicators via the World Bank API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "resource": "topics",
+            "language": "en",
+            "countryCode": "all",
+            "perPage": 10
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "sly5deozli3hga82tq5d8e08",
+        "position": {
+          "x": 0,
+          "y": 1038
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger8",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "k1znuhhmxtpm4rzz625452az",
+        "position": {
+          "x": 568,
+          "y": 1020
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log8",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "uz912krozqckl82u9rbu55df",
+        "position": {
+          "x": 284,
+          "y": 1378
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "world-bank",
+          "label": "World Bank Data5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Access global development data (GDP, Population, etc.), country lists, and indicators via the World Bank API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "resource": "sources",
+            "language": "en",
+            "perPage": 10
+          },
+          "_morphing": false
+        },
+        "selected": true,
+        "draggable": true
+      },
+      {
+        "id": "wdw7kdmumf5xobv1comjqtou",
+        "position": {
+          "x": 0,
+          "y": 1378
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger9",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "g1snv66cnx7qaaywx4sap0hr",
+        "position": {
+          "x": 748.0487625484047,
+          "y": 1575.2756943513534
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log9",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "hzkvxduec9omzwq5msfs94t7",
+        "sourceHandle": "success",
+        "target": "xjt1zue34iib8c9op61p261y",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "aai4meg4ldx4jnh2h5nel8f9",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "xjt1zue34iib8c9op61p261y",
+        "sourceHandle": "success",
+        "target": "b149or0rofzibj8mgo6xlejq",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__xjt1zue34iib8c9op61p261ysuccess-b149or0rofzibj8mgo6xlejqinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "roat5hczb5ixkxo6zc5bgkks",
+        "sourceHandle": "success",
+        "target": "vkn585pu9urzz3dt70ed05v9",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "nntgt7r2oga5kgv8oapak2rd",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "vkn585pu9urzz3dt70ed05v9",
+        "sourceHandle": "success",
+        "target": "cyjeuhtcrchwhrbjfbdhl27o",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "j1p0pmlaqprghdr2avmbhg3y",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "z7zton003spt08f16u76japj",
+        "sourceHandle": "success",
+        "target": "naswlhy0tdd3hadeztjr6htw",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "im2gad4qxzmr7my19luqts52",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "naswlhy0tdd3hadeztjr6htw",
+        "sourceHandle": "success",
+        "target": "kz7628cmlghj89xsz0votxvd",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "bugoo0k58c3cxiu8twg7g619",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "sly5deozli3hga82tq5d8e08",
+        "sourceHandle": "success",
+        "target": "fbewurvypkyx0hodow8bc8nr",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ukx00t4c14tfg0buff5zb47u",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "fbewurvypkyx0hodow8bc8nr",
+        "sourceHandle": "success",
+        "target": "k1znuhhmxtpm4rzz625452az",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ql78r44s3kd5oepyn97wu7vu",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "wdw7kdmumf5xobv1comjqtou",
+        "sourceHandle": "success",
+        "target": "uz912krozqckl82u9rbu55df",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "nocjxqq8rzir43map8id7fg1",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "uz912krozqckl82u9rbu55df",
+        "sourceHandle": "success",
+        "target": "g1snv66cnx7qaaywx4sap0hr",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "e4rplnkrtkgwexydmxafd3x2",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1787825550375,
+    "updatedAt": 1787838900175,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]

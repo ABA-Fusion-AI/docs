@@ -1,0 +1,4 @@
+{
+  "label": "World Bank Data",
+  "description": "Retrieve global development indicators, country lists, topics, and data sources from the World Bank API."
+}
