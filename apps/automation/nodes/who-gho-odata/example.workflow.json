@@ -1,0 +1,394 @@
+[
+  {
+    "name": "whogoodata",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "ry28g811fetc2m2zvlpetlvd",
+        "position": {
+          "x": 920,
+          "y": 59
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "who-gho-odata",
+          "label": "WHO GHO OData",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Access World Health Organization Global Health Observatory data via OData API",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getDimensions"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "iei9glmxk9b7f4p6mvcz95u4",
+        "position": {
+          "x": 920,
+          "y": 215
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "who-gho-odata",
+          "label": "WHO GHO OData1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Access World Health Organization Global Health Observatory data via OData API",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getDimensionValues",
+            "dimensionCode": "ADVERTISINGTYPE"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "jv32uem3hforo58in0ecco8g",
+        "position": {
+          "x": 1323,
+          "y": 94
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "who-gho-odata",
+          "label": "WHO GHO OData2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Access World Health Organization Global Health Observatory data via OData API",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getIndicators",
+            "indicatorNameExact": "Estimated number of people (all ages) living with HIV"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "l0n9w8fustok1jzs1rhkk9nc",
+        "position": {
+          "x": 1319,
+          "y": 251
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "who-gho-odata",
+          "label": "WHO GHO OData3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Access World Health Organization Global Health Observatory data via OData API",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getIndicatorData",
+            "indicatorCode": "HIV_0000000001"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ooun9lj32qbdyplv4gj2hl40",
+        "position": {
+          "x": 1329.086771932498,
+          "y": 429.61164908002894
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "who-gho-odata",
+          "label": "WHO GHO OData4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Access World Health Organization Global Health Observatory data via OData API",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "customQuery",
+            "customEndpoint": "Indicator",
+            "customQueryParams": "{\"$top\":5}"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "sfeced1nq3emd61zcack5h0e",
+        "position": {
+          "x": 688,
+          "y": 2.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "b22ubajco89v2vpo9kq82n4f",
+        "position": {
+          "x": 688,
+          "y": 158.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "iqd9yty3uieh1jn47ucv5e32",
+        "position": {
+          "x": 1091,
+          "y": 37.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "p16s10fqi775zgd9zuyl0btq",
+        "position": {
+          "x": 1087,
+          "y": 194.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "iwhgpoaeqjxh44ob8t9xdihu",
+        "position": {
+          "x": 1092.8382456178545,
+          "y": 368.86312276538536
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "sfeced1nq3emd61zcack5h0e",
+        "sourceHandle": "success",
+        "target": "ry28g811fetc2m2zvlpetlvd",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__sfeced1nq3emd61zcack5h0esuccess-ry28g811fetc2m2zvlpetlvdinput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "b22ubajco89v2vpo9kq82n4f",
+        "sourceHandle": "success",
+        "target": "iei9glmxk9b7f4p6mvcz95u4",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "u897bus49c4vplylmyudkkf6",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "iqd9yty3uieh1jn47ucv5e32",
+        "sourceHandle": "success",
+        "target": "jv32uem3hforo58in0ecco8g",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xjz4f3ql88tr1tgqsfcv94p5",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "p16s10fqi775zgd9zuyl0btq",
+        "sourceHandle": "success",
+        "target": "l0n9w8fustok1jzs1rhkk9nc",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "b8nuiocr063xaykq5txmr6qy",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "iwhgpoaeqjxh44ob8t9xdihu",
+        "sourceHandle": "success",
+        "target": "ooun9lj32qbdyplv4gj2hl40",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "k895vozn14q69ha3t74qbv12",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1787828614225,
+    "updatedAt": 1787829455853,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
