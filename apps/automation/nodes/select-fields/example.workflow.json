@@ -1,0 +1,139 @@
+[
+  {
+    "name": "Select Fields Example",
+    "nodes": [
+      {
+        "id": "0c9781ee-7e48-4f7c-9edb-3bd81dd3015f",
+        "position": {
+          "x": 479.5,
+          "y": 468
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "pksdm9jcri1jxoqwqydk2601",
+        "position": {
+          "x": 656.5,
+          "y": 504.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "select-fields",
+          "label": "Select Fields",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Pick specific fields from an object or array of objects with optional renaming. Supports nested paths using dot notation.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "[{\"name\":\"Hamza\",\"age\":25,\"country\":\"Morocco\"},{\"name\":\"Sara\",\"age\":30,\"country\":\"France\"}]",
+            "fields": [
+              {
+                "from": "name",
+                "to": "fullName"
+              },
+              {
+                "from": "country",
+                "to": "location"
+              }
+            ],
+            "onMissing": "include"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ve1rda1fopkytry6ifpps3nq",
+        "position": {
+          "x": 806.5,
+          "y": 453
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "0c9781ee-7e48-4f7c-9edb-3bd81dd3015f",
+        "sourceHandle": "success",
+        "target": "pksdm9jcri1jxoqwqydk2601",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__0c9781ee-7e48-4f7c-9edb-3bd81dd3015fsuccess-pksdm9jcri1jxoqwqydk2601input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "pksdm9jcri1jxoqwqydk2601",
+        "sourceHandle": "success",
+        "target": "ve1rda1fopkytry6ifpps3nq",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__pksdm9jcri1jxoqwqydk2601success-ve1rda1fopkytry6ifpps3nqinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "version": 1,
+    "secrets": {},
+    "status": "stopped",
+    "publishedNames": []
+  }
+]

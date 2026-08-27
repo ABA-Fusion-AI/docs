@@ -1,0 +1,4 @@
+{
+  "label": "Select Fields",
+  "description": "Pick specific fields from an object or array of objects with optional renaming. Supports nested paths using dot notation."
+}
