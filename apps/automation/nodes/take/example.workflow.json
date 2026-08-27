@@ -1,0 +1,181 @@
+[
+  {
+    "name": "take",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "npv096jkab0q5d0izltk9uw7",
+        "position": {
+          "x": 1171,
+          "y": 338
+        },
+        "type": "utility",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "take",
+          "label": "Take",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "output": {
+              "label": "Output"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Takes the first number of items from the input array",
+          "showRunningStatus": false,
+          "parameters": {
+            "count": 4
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "wzh2nz8bhu5byozct3jbgimx",
+        "position": {
+          "x": 1003,
+          "y": 340.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "now",
+          "label": "Now",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get the current UTC date/time in the selected output type.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "guhlbjv1xgq18la08mhqq1gm",
+        "position": {
+          "x": 827,
+          "y": 367.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "cron",
+          "label": "Cron",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers workflow on a cron schedule.",
+          "showRunningStatus": true,
+          "parameters": {
+            "schedule": "* * * * * *"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "rxlq35zaqf2w0y8mzsktvqvq",
+        "sourceHandle": "success",
+        "target": "npv096jkab0q5d0izltk9uw7",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__rxlq35zaqf2w0y8mzsktvqvqsuccess-npv096jkab0q5d0izltk9uw7input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "v3p2v200unmef4jam9u1sjjq",
+        "sourceHandle": "success",
+        "target": "rxlq35zaqf2w0y8mzsktvqvq",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__v3p2v200unmef4jam9u1sjjqsuccess-rxlq35zaqf2w0y8mzsktvqvqinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "sn2dbj9chrnphamfugkz8ov2",
+        "sourceHandle": "success",
+        "target": "tqdx6vrdyu3xoampot4atbjs",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__sn2dbj9chrnphamfugkz8ov2success-tqdx6vrdyu3xoampot4atbjsinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "tqdx6vrdyu3xoampot4atbjs",
+        "sourceHandle": "output",
+        "target": "rxlq35zaqf2w0y8mzsktvqvq",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__tqdx6vrdyu3xoampot4atbjsoutput-rxlq35zaqf2w0y8mzsktvqvqinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "guhlbjv1xgq18la08mhqq1gm",
+        "sourceHandle": "success",
+        "target": "wzh2nz8bhu5byozct3jbgimx",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__guhlbjv1xgq18la08mhqq1gmsuccess-wzh2nz8bhu5byozct3jbgimxinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "wzh2nz8bhu5byozct3jbgimx",
+        "sourceHandle": "success",
+        "target": "npv096jkab0q5d0izltk9uw7",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__wzh2nz8bhu5byozct3jbgimxsuccess-npv096jkab0q5d0izltk9uw7input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1787755932484,
+    "updatedAt": 1787822732149,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
