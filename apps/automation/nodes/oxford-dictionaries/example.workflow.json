@@ -1,0 +1,1428 @@
+[
+    {
+        "name": "oxford-dictionnary",
+        "variables": {},
+        "secrets": {},
+        "nodes": [
+            {
+                "id": "d1xaye7c7dkz6cr50plpi92i",
+                "position": {
+                    "x": 284,
+                    "y": 0
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "oxford-dictionaries",
+                    "label": "Oxford Dictionaries",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Access Oxford Dictionaries API for definitions, translations, and examples",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "operation": "getDefinition",
+                        "appId": " ",
+                        "appKey": " ",
+                        "sandbox": true,
+                        "language": "en-gb",
+                        "wordId": "ace"
+                    },
+                    "_morphing": false
+                },
+                "selected": false,
+                "draggable": true
+            },
+            {
+                "id": "ih5ftwbjzzai5hdsb4tjpdru",
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false,
+                "draggable": true
+            },
+            {
+                "id": "g895zi7v11c56x03j5dzxo3w",
+                "position": {
+                    "x": 284,
+                    "y": 304
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "oxford-dictionaries",
+                    "label": "Oxford Dictionaries1",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Access Oxford Dictionaries API for definitions, translations, and examples",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "operation": "getTranslation",
+                        "appId": " ",
+                        "appKey": " ",
+                        "sandbox": true,
+                        "wordId": "ace",
+                        "sourceLang": "en",
+                        "targetLang": "es"
+                    },
+                    "_morphing": false
+                },
+                "selected": false,
+                "draggable": true
+            },
+            {
+                "id": "vezx176dvceu0he6731mz5ex",
+                "position": {
+                    "x": 0,
+                    "y": 304
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger1",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false,
+                "draggable": true
+            },
+            {
+                "id": "tqeqhzjvzrxuvc6adopz2d6o",
+                "position": {
+                    "x": 284,
+                    "y": 608
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "oxford-dictionaries",
+                    "label": "Oxford Dictionaries2",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Access Oxford Dictionaries API for definitions, translations, and examples",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "operation": "getExamples",
+                        "appId": " ",
+                        "appKey": " ",
+                        "sandbox": true,
+                        "language": "en",
+                        "wordId": "ace"
+                    },
+                    "_morphing": false
+                },
+                "selected": false,
+                "draggable": true
+            },
+            {
+                "id": "hmqtj84zihjoy5f6lqdfeeag",
+                "position": {
+                    "x": 0,
+                    "y": 608
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger2",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false,
+                "draggable": true
+            },
+            {
+                "id": "m9zzeubmpj4gi3icx8zpjkr4",
+                "position": {
+                    "x": 442,
+                    "y": 2164
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "oxford-dictionaries",
+                    "label": "Oxford Dictionaries2",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Access Oxford Dictionaries API for definitions, translations, and examples",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "operation": "getDefinition",
+                        "appId": " ",
+                        "appKey": " ",
+                        "sandbox": true,
+                        "wordId": {
+                            "$expr": "output",
+                            "node": "Function",
+                            "outputId": "success",
+                            "path": "searchWord"
+                        },
+                        "language": {
+                            "$expr": "output",
+                            "node": "Function",
+                            "outputId": "success",
+                            "path": "searchLang"
+                        }
+                    },
+                    "_morphing": false
+                },
+                "selected": false,
+                "draggable": true
+            },
+            {
+                "id": "gn28tgh38afp6l3o9yg29wma",
+                "position": {
+                    "x": -126,
+                    "y": 2164
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger2",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": true,
+                "draggable": true
+            },
+            {
+                "id": "tg1ay788n3jzby5daxj3ds22",
+                "position": {
+                    "x": 314,
+                    "y": 1260
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "oxford-dictionaries",
+                    "label": "Oxford Dictionaries3",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Access Oxford Dictionaries API for definitions, translations, and examples",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "operation": "getDefinition",
+                        "appId": " ",
+                        "appKey": " ",
+                        "sandbox": true,
+                        "language": "en-gb",
+                        "wordId": "AcE"
+                    },
+                    "_morphing": false
+                },
+                "selected": false,
+                "draggable": true
+            },
+            {
+                "id": "kmhd8w8e8xb87ji8sijt6gk7",
+                "position": {
+                    "x": 30,
+                    "y": 1260
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger3",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false,
+                "draggable": true
+            },
+            {
+                "id": "ks78kchianhvpltsc2mjeqqj",
+                "position": {
+                    "x": 10,
+                    "y": 1388
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger3",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false,
+                "draggable": true
+            },
+            {
+                "id": "kbiykjabszisb6sd68wghih8",
+                "position": {
+                    "x": 0,
+                    "y": 1520
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger3",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false,
+                "draggable": true
+            },
+            {
+                "id": "a7ivkeh81jp6dsh9lyixx0to",
+                "position": {
+                    "x": -14,
+                    "y": 1688
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger6",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false,
+                "draggable": true
+            },
+            {
+                "id": "upk4g7i75k61vxwix1f7xyx1",
+                "position": {
+                    "x": 158,
+                    "y": 2164
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "function",
+                    "label": "Function",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Executes custom JavaScript code on the input data.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "code": "// Write your code here\nreturn {\n  \"searchWord\": \"ace\",\n  \"searchLang\": \"en-gb\"\n}\n;"
+                    },
+                    "_morphing": false
+                },
+                "selected": false,
+                "draggable": true
+            },
+            {
+                "id": "tqpl8l47n1vhsqownoyjr3um",
+                "position": {
+                    "x": 138,
+                    "y": 2326
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "oxford-dictionaries",
+                    "label": "Oxford Dictionaries4",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Access Oxford Dictionaries API for definitions, translations, and examples",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "operation": "getDefinition",
+                        "appId": " ",
+                        "appKey": " ",
+                        "sandbox": true,
+                        "language": "en-gb",
+                        "wordId": "ace"
+                    },
+                    "_morphing": false
+                },
+                "selected": false,
+                "draggable": true
+            },
+            {
+                "id": "v1decvwfp0kugzzdxwhjrzhb",
+                "position": {
+                    "x": -146,
+                    "y": 2326
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger4",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false,
+                "draggable": true
+            },
+            {
+                "id": "iyl1degdbc9t3vznktsff7rp",
+                "position": {
+                    "x": 422,
+                    "y": 2326
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "function",
+                    "label": "Function1",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Executes custom JavaScript code on the input data.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "code": "const def = input.results[0].lexicalEntries[0].entries[0].senses[0].definitions[0];\nreturn { definition: def };\n"
+                    },
+                    "_morphing": false
+                },
+                "selected": false,
+                "draggable": true
+            },
+            {
+                "id": "prvgzm2xjgfv0mlt515vtvfg",
+                "position": {
+                    "x": 294,
+                    "y": 1388
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "oxford-dictionaries",
+                    "label": "Oxford Dictionaries5",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Access Oxford Dictionaries API for definitions, translations, and examples",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "operation": "getDefinition",
+                        "appId": " ",
+                        "appKey": " ",
+                        "sandbox": true,
+                        "language": "en-gb",
+                        "wordId": "AcE"
+                    },
+                    "_morphing": false
+                },
+                "selected": false,
+                "draggable": true
+            },
+            {
+                "id": "wrn3ewu4ju1axdgama5n4knn",
+                "position": {
+                    "x": 284,
+                    "y": 1520
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "oxford-dictionaries",
+                    "label": "Oxford Dictionaries6",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Access Oxford Dictionaries API for definitions, translations, and examples",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "operation": "getTranslation",
+                        "appId": " ",
+                        "appKey": " ",
+                        "sandbox": true,
+                        "wordId": "apple",
+                        "sourceLang": "en",
+                        "targetLang": "es"
+                    },
+                    "_morphing": false
+                },
+                "selected": false,
+                "draggable": true
+            },
+            {
+                "id": "dvw8789mri9f5d6rrbwi0fp5",
+                "position": {
+                    "x": 270,
+                    "y": 1688
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "oxford-dictionaries",
+                    "label": "Oxford Dictionaries8",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Access Oxford Dictionaries API for definitions, translations, and examples",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "operation": "getExamples",
+                        "appId": " ",
+                        "appKey": " ",
+                        "sandbox": true,
+                        "wordId": "action",
+                        "language": "en"
+                    },
+                    "_morphing": false
+                },
+                "selected": false,
+                "draggable": true
+            },
+            {
+                "id": "sctx22ju4jyxeib56q429mwt",
+                "position": {
+                    "x": 0,
+                    "y": 1824
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger5",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false,
+                "draggable": true
+            },
+            {
+                "id": "u4bf6gcvw1yhsh2b5qtz11we",
+                "position": {
+                    "x": 0,
+                    "y": 2006
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger5",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false,
+                "draggable": true
+            },
+            {
+                "id": "bm5ugnjruts0tdcr7usc7j9w",
+                "position": {
+                    "x": 284,
+                    "y": 2006
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "oxford-dictionaries",
+                    "label": "Oxford Dictionaries7",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Access Oxford Dictionaries API for definitions, translations, and examples",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "operation": "getDefinition",
+                        "appId": " ",
+                        "appKey": " ",
+                        "sandbox": true,
+                        "language": "en-gb",
+                        "wordId": "AcE"
+                    },
+                    "_morphing": false
+                },
+                "selected": false,
+                "draggable": true
+            },
+            {
+                "id": "gu8judjwibxdrw2lxnhkba7m",
+                "position": {
+                    "x": 284,
+                    "y": 1824
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "oxford-dictionaries",
+                    "label": "Oxford Dictionaries7",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Access Oxford Dictionaries API for definitions, translations, and examples",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "operation": "getDefinition",
+                        "appId": " ",
+                        "appKey": " ",
+                        "sandbox": true,
+                        "language": "en-gb",
+                        "wordId": "apple"
+                    },
+                    "_morphing": false
+                },
+                "selected": false,
+                "draggable": true
+            },
+            {
+                "id": "i01ox1ebcewo94bwscxh30w5",
+                "position": {
+                    "x": -30.525917259109605,
+                    "y": 2497.3454804038647
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger8",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false,
+                "draggable": true
+            },
+            {
+                "id": "mdjq5j2uzxyfphqeil3ue9sn",
+                "position": {
+                    "x": 265.47408274089037,
+                    "y": 2509.3454804038647
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "oxford-dictionaries",
+                    "label": "Oxford Dictionaries10",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Access Oxford Dictionaries API for definitions, translations, and examples",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "operation": "getDefinition",
+                        "appId": " ",
+                        "appKey": " ",
+                        "sandbox": true,
+                        "language": "en-us ",
+                        "wordId": "ace"
+                    },
+                    "_morphing": false
+                },
+                "selected": false,
+                "draggable": true
+            },
+            {
+                "id": "txan6j08ykw9j433lurd3bg0",
+                "position": {
+                    "x": -32.752262343601494,
+                    "y": 2648.5811018833674
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger9",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false,
+                "draggable": true
+            },
+            {
+                "id": "s1fnmdch9gjb3d19elp6tnsw",
+                "position": {
+                    "x": 275.2477376563985,
+                    "y": 2672.5811018833674
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "oxford-dictionaries",
+                    "label": "Oxford Dictionaries11",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Access Oxford Dictionaries API for definitions, translations, and examples",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "operation": "getTranslation",
+                        "appId": " ",
+                        "appKey": " ",
+                        "sandbox": true,
+                        "wordId": "as",
+                        "sourceLang": "es",
+                        "targetLang": "en"
+                    },
+                    "_morphing": false
+                },
+                "selected": false,
+                "draggable": true
+            },
+            {
+                "id": "be2yjwdjnqs80338eqk6d8bt",
+                "position": {
+                    "x": -69.6476866482289,
+                    "y": 2852.574104137513
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger10",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false,
+                "draggable": true
+            },
+            {
+                "id": "bv54sz7af6aqo8g42qvj7iij",
+                "position": {
+                    "x": 238.3523133517711,
+                    "y": 2876.574104137513
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "oxford-dictionaries",
+                    "label": "Oxford Dictionaries12",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Access Oxford Dictionaries API for definitions, translations, and examples",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "operation": "getDefinition",
+                        "appId": " ",
+                        "appKey": " ",
+                        "sandbox": true,
+                        "wordId": "ace",
+                        "language": "en"
+                    },
+                    "_morphing": false
+                },
+                "selected": false,
+                "draggable": true
+            },
+            {
+                "id": "ieg3euw2bp81l7buc6kimmn6",
+                "position": {
+                    "x": -47.87403173272077,
+                    "y": 3027.809725617016
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger10",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false,
+                "draggable": true
+            },
+            {
+                "id": "jaccmhis3232cwmoikpz7fq1",
+                "position": {
+                    "x": 272.12596826727923,
+                    "y": 3063.809725617016
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "oxford-dictionaries",
+                    "label": "Oxford Dictionaries12",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Access Oxford Dictionaries API for definitions, translations, and examples",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "operation": "getExamples",
+                        "appId": " ",
+                        "appKey": " ",
+                        "sandbox": true,
+                        "wordId": "ace",
+                        "language": "en"
+                    },
+                    "_morphing": false
+                },
+                "selected": false,
+                "draggable": true
+            },
+            {
+                "id": "bbh9jeh4jto75l6ctwoimnw8",
+                "position": {
+                    "x": 498.38601891595613,
+                    "y": 2814.803983261408
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "function",
+                    "label": "Function2",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Executes custom JavaScript code on the input data.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "code": "const pronunciation = input.results[0].lexicalEntries[0].entries[0].pronunciations[0];\nreturn {\n  audioUrl: pronunciation.audioFile,\n  phonetic: pronunciation.phoneticSpelling\n};\n"
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "laomi0cyoxjdntbcq6z79ihv",
+                "position": {
+                    "x": 518.1157396900147,
+                    "y": 2941.27014390884
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "function",
+                    "label": "Function3",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Executes custom JavaScript code on the input data.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "code": "const sentencesList = input.results[0].lexicalEntries[0].sentences.map(s => s.text);\nreturn {\n  totalExamples: sentencesList.length,\n  top3: sentencesList.slice(0, 3)\n};\n"
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            }
+        ],
+        "connections": [
+            {
+                "source": "ih5ftwbjzzai5hdsb4tjpdru",
+                "sourceHandle": "success",
+                "target": "d1xaye7c7dkz6cr50plpi92i",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__ih5ftwbjzzai5hdsb4tjpdrusuccess-d1xaye7c7dkz6cr50plpi92iinput",
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "vezx176dvceu0he6731mz5ex",
+                "sourceHandle": "success",
+                "target": "g895zi7v11c56x03j5dzxo3w",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "ixvkrdqt6nzy8pk9c9eu3igt",
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "hmqtj84zihjoy5f6lqdfeeag",
+                "sourceHandle": "success",
+                "target": "tqeqhzjvzrxuvc6adopz2d6o",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "j42fyzexb8vyzaqog8gp6hn9",
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "kmhd8w8e8xb87ji8sijt6gk7",
+                "sourceHandle": "success",
+                "target": "tg1ay788n3jzby5daxj3ds22",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "nbbcgdliqufqs8k4g2hwlxvm",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false
+            },
+            {
+                "source": "gn28tgh38afp6l3o9yg29wma",
+                "sourceHandle": "success",
+                "target": "upk4g7i75k61vxwix1f7xyx1",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__gn28tgh38afp6l3o9yg29wmasuccess-upk4g7i75k61vxwix1f7xyx1input",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false
+            },
+            {
+                "source": "upk4g7i75k61vxwix1f7xyx1",
+                "sourceHandle": "success",
+                "target": "m9zzeubmpj4gi3icx8zpjkr4",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__upk4g7i75k61vxwix1f7xyx1success-m9zzeubmpj4gi3icx8zpjkr4input",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false
+            },
+            {
+                "source": "v1decvwfp0kugzzdxwhjrzhb",
+                "sourceHandle": "success",
+                "target": "tqpl8l47n1vhsqownoyjr3um",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "nlw99a280wi0tiec5zqvqgcv",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false
+            },
+            {
+                "source": "tqpl8l47n1vhsqownoyjr3um",
+                "sourceHandle": "success",
+                "target": "iyl1degdbc9t3vznktsff7rp",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__tqpl8l47n1vhsqownoyjr3umsuccess-iyl1degdbc9t3vznktsff7rpinput",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false
+            },
+            {
+                "source": "kbiykjabszisb6sd68wghih8",
+                "sourceHandle": "success",
+                "target": "wrn3ewu4ju1axdgama5n4knn",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__kbiykjabszisb6sd68wghih8success-wrn3ewu4ju1axdgama5n4knninput",
+                "selected": false,
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "ks78kchianhvpltsc2mjeqqj",
+                "sourceHandle": "success",
+                "target": "prvgzm2xjgfv0mlt515vtvfg",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__ks78kchianhvpltsc2mjeqqjsuccess-prvgzm2xjgfv0mlt515vtvfginput",
+                "selected": false,
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "u4bf6gcvw1yhsh2b5qtz11we",
+                "sourceHandle": "success",
+                "target": "bm5ugnjruts0tdcr7usc7j9w",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "u7gvffitf5h8mbthms66xz3v",
+                "selected": false,
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "sctx22ju4jyxeib56q429mwt",
+                "sourceHandle": "success",
+                "target": "gu8judjwibxdrw2lxnhkba7m",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xh5cgdpsump5723akconse1u",
+                "selected": false,
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "a7ivkeh81jp6dsh9lyixx0to",
+                "sourceHandle": "success",
+                "target": "dvw8789mri9f5d6rrbwi0fp5",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "r5e51zfycv1ndej2rvlrtijv",
+                "selected": false,
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "i01ox1ebcewo94bwscxh30w5",
+                "sourceHandle": "success",
+                "target": "mdjq5j2uzxyfphqeil3ue9sn",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "utlru8nyeb6xisa6f9vyrr4p",
+                "selected": false,
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "txan6j08ykw9j433lurd3bg0",
+                "sourceHandle": "success",
+                "target": "s1fnmdch9gjb3d19elp6tnsw",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "ed3hym5qpuel8y1lem0ouh54",
+                "selected": false,
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "be2yjwdjnqs80338eqk6d8bt",
+                "sourceHandle": "success",
+                "target": "bv54sz7af6aqo8g42qvj7iij",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "vkb7lmvtpnecoscngul3ahmi",
+                "selected": false,
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "ieg3euw2bp81l7buc6kimmn6",
+                "sourceHandle": "success",
+                "target": "jaccmhis3232cwmoikpz7fq1",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "f8g781c5172ty7calutd9jyh",
+                "selected": false,
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "bv54sz7af6aqo8g42qvj7iij",
+                "sourceHandle": "success",
+                "target": "bbh9jeh4jto75l6ctwoimnw8",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__bv54sz7af6aqo8g42qvj7iijsuccess-bbh9jeh4jto75l6ctwoimnw8input",
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "jaccmhis3232cwmoikpz7fq1",
+                "sourceHandle": "success",
+                "target": "laomi0cyoxjdntbcq6z79ihv",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__jaccmhis3232cwmoikpz7fq1success-laomi0cyoxjdntbcq6z79ihvinput",
+                "data": {
+                    "isAnimated": false
+                }
+            }
+        ],
+        "status": "stopped",
+        "tracingEnabled": true,
+        "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+        "version": 1,
+        "createdAt": 1786960850975,
+        "updatedAt": 1787849233763,
+        "publishedNames": [],
+        "previousStatus": "running"
+    }
+]
