@@ -1,0 +1,4 @@
+{
+  "label": "VirusTotal Lookup",
+  "description": "Retrieve VirusTotal threat-intelligence reports for IPs, domains, URLs, and file hashes."
+}
