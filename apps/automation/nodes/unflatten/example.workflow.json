@@ -1,0 +1,1294 @@
+[
+  {
+    "name": "unflatten",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "e4zfpzxgwjpdcobcstxm4fo6",
+        "position": {
+          "x": 784,
+          "y": 251
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "unflatten",
+          "label": "Unflatten",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert keys with separators (., _, -, /, |) back to nested objects.",
+          "showRunningStatus": false,
+          "parameters": {
+            "separator": ".",
+            "data": {
+              "user.name": "Karim",
+              "user.age": 28,
+              "user.address.city": "Casablanca",
+              "user.address.country": "Morocco"
+            }
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "hsjudofvu9wk3lq9y8vepdiu",
+        "position": {
+          "x": 668,
+          "y": 210
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "gqlpaiq32novy6c3zla17a3y",
+        "position": {
+          "x": 765,
+          "y": 375
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "unflatten",
+          "label": "Unflatten1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert keys with separators (., _, -, /, |) back to nested objects.",
+          "showRunningStatus": false,
+          "parameters": {
+            "separator": "_",
+            "data": {
+              "server_host": "127.0.0.1",
+              "server_config_port": 8080,
+              "server_config_ssl": true
+            }
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "seophf7x6ftnok5pxelct7ch",
+        "position": {
+          "x": 661,
+          "y": 346
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "q8a98646f4rwmoj6ukjatr9a",
+        "position": {
+          "x": 749,
+          "y": 499.375
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "unflatten",
+          "label": "Unflatten2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert keys with separators (., _, -, /, |) back to nested objects.",
+          "showRunningStatus": false,
+          "parameters": {
+            "separator": "-",
+            "data": {
+              "client-info-id": 101,
+              "client-info-email": "user@example.com",
+              "client-status": "active"
+            }
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "watxoh24ypob7g6w439gy94t",
+        "position": {
+          "x": 645,
+          "y": 470.375
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "m9xui3zt8hm3dgmrrxs62vl0",
+        "position": {
+          "x": 754,
+          "y": 647.375
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "unflatten",
+          "label": "Unflatten2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert keys with separators (., _, -, /, |) back to nested objects.",
+          "showRunningStatus": false,
+          "parameters": {
+            "separator": "/",
+            "data": {
+              "api/v1/auth/token": "xyz123abc",
+              "api/v1/auth/expiresIn": 3600
+            }
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "bxiz8fn9yq3hnim19sytfg9z",
+        "position": {
+          "x": 662,
+          "y": 630.375
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "se5j50w9jkq24cz5id22coqi",
+        "position": {
+          "x": 794,
+          "y": 756.375
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "unflatten",
+          "label": "Unflatten3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert keys with separators (., _, -, /, |) back to nested objects.",
+          "showRunningStatus": false,
+          "parameters": {
+            "separator": "|",
+            "data": {
+              "company|department|team|name": "Engineering",
+              "company|location": "Rabat"
+            }
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "hwwz5jc323zsf6t4vvi1nwwo",
+        "position": {
+          "x": 612.5,
+          "y": 750.375
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "xo3zaszgpsvrfc1zdp0ykvmn",
+        "position": {
+          "x": 871.25,
+          "y": 943.875
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "unflatten",
+          "label": "Unflatten4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert keys with separators (., _, -, /, |) back to nested objects.",
+          "showRunningStatus": false,
+          "parameters": {
+            "separator": ".",
+            "data": {
+              "$expr": "output",
+              "node": "Function",
+              "outputId": "success"
+            }
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "cp4rud5dlbhtto8ycbm47qc6",
+        "position": {
+          "x": 636.75,
+          "y": 925.875
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "zr9lkm6ghg7i3b3ay5fukhyo",
+        "position": {
+          "x": 747.7233033797767,
+          "y": 887.2406853543008
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "function",
+          "label": "Function",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Executes custom JavaScript code on the input data.",
+          "showRunningStatus": true,
+          "parameters": {
+            "code": "// Write your code here\nreturn `{\n  \"order.id\": 45892,\n  \"order.customer.name\": \"Sara\",\n  \"order.total\": 1250.50\n}\n`;"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ohuk2zgq2cmxi0tvtj2le6jo",
+        "position": {
+          "x": 882.1183988090256,
+          "y": 1105.887387977789
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "flatten",
+          "label": "Flatten",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Flatten nested objects into keys using a separator (., _, -, /, |).",
+          "showRunningStatus": false,
+          "parameters": {
+            "separator": ".",
+            "data": {
+              "$expr": "output",
+              "node": "Function1",
+              "outputId": "success"
+            }
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "qkfvqoz5qn746sp3lq2q3f4f",
+        "position": {
+          "x": 937.8159329306044,
+          "y": 1373.8964773843793
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "unflatten",
+          "label": "Unflatten5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert keys with separators (., _, -, /, |) back to nested objects.",
+          "showRunningStatus": false,
+          "parameters": {
+            "separator": ".",
+            "data": {
+              "$expr": "output",
+              "node": "Function2",
+              "outputId": "success"
+            }
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "zhb436b6xsv2n0vb8exf1ret",
+        "position": {
+          "x": 601.0394956995442,
+          "y": 1147.2197888298613
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "sdms78s9x81m6g5d66iijgvh",
+        "position": {
+          "x": 733.0966995474422,
+          "y": 1085.2014399979732
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "function",
+          "label": "Function1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Executes custom JavaScript code on the input data.",
+          "showRunningStatus": true,
+          "parameters": {
+            "code": "// Write your code here\nreturn `\n{\n  \"app\": {\n    \"name\": \"MyPlatform\",\n    \"version\": \"2.0.0\",\n    \"database\": {\n      \"type\": \"postgres\",\n      \"port\": 5432,\n      \"options\": {\n        \"ssl\": true,\n        \"timeout\": 30\n      }\n    }\n  }\n}\n\n`;"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "vq7nn9gyd8pbomp4oi06sa44",
+        "position": {
+          "x": 682.9338215100669,
+          "y": 1308.6358853594631
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger6",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "g0ldddpbobn2a6q5ttv7mn34",
+        "position": {
+          "x": 1112.7716840371513,
+          "y": 1176.1361781493263
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "unflatten",
+          "label": "Unflatten6",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert keys with separators (., _, -, /, |) back to nested objects.",
+          "showRunningStatus": false,
+          "parameters": {
+            "separator": ".",
+            "data": {
+              "$expr": "output",
+              "node": "Flatten",
+              "outputId": "success"
+            }
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "scryw01dr7swhb34o1n5vs8p",
+        "position": {
+          "x": 957.5579049354117,
+          "y": 1520.8544109406912
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "unflatten",
+          "label": "Unflatten7",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert keys with separators (., _, -, /, |) back to nested objects.",
+          "showRunningStatus": false,
+          "parameters": {
+            "separator": ".",
+            "data": "{   \"id\": 10,   \"status\": \"success\",   \"data.user.name\": \"Amine\" }"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ipafkescws5do2j6e1g5vffw",
+        "position": {
+          "x": 714.6757935148742,
+          "y": 1467.593818915775
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger7",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "fqr5jzv3jjz8bvzf25heyyvi",
+        "position": {
+          "x": 930.938538559516,
+          "y": 1674.6545003538836
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "unflatten",
+          "label": "Unflatten8",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert keys with separators (., _, -, /, |) back to nested objects.",
+          "showRunningStatus": false,
+          "parameters": {
+            "separator": ".",
+            "data": "{   \"user\": \"old_string_value\",   \"user.profile.name\": \"Ali\" }"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "xvi4jwq3b5atx9f9w7bkoqd0",
+        "position": {
+          "x": 700.0564271389785,
+          "y": 1633.3939083289674
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger8",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "f7sbphz6ruxcwuedf8xrskx1",
+        "position": {
+          "x": 809.3568665548779,
+          "y": 1270.535432842761
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "function",
+          "label": "Function2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Executes custom JavaScript code on the input data.",
+          "showRunningStatus": true,
+          "parameters": {
+            "code": "// Write your code here\nreturn `{   \"settings.enabled\": true,   \"settings.count\": 0,   \"settings.price\": 99.99,   \"settings.metadata\": null,   \"settings.tags\": [\"production\", \"v2\", \"web\"],   \"settings.items\": [{\"id\": 1}, {\"id\": 2}] }`;"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "u0ipydcbfe4kbmd9ztb07zj4",
+        "position": {
+          "x": 927.580355350701,
+          "y": 1947.8229286333058
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "unflatten",
+          "label": "Unflatten9",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert keys with separators (., _, -, /, |) back to nested objects.",
+          "showRunningStatus": false,
+          "parameters": {
+            "separator": ".",
+            "data": {
+              "__proto__.isAdmin": true,
+              "constructor.prototype.hacked": "yes",
+              "user.name": "Mehdi"
+            }
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "my0euy2b8bdrnbm4jfeodqs7",
+        "position": {
+          "x": 684.6982439301635,
+          "y": 1894.5623366083896
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger9",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "bgfzydvhusuixis3jcc179lt",
+        "position": {
+          "x": 918.8687999797271,
+          "y": 2142.35053719345
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "unflatten",
+          "label": "Unflatten10",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert keys with separators (., _, -, /, |) back to nested objects.",
+          "showRunningStatus": false,
+          "parameters": {
+            "separator": ".",
+            "data": {
+              "a.b.c.d.e.f.g": "deep_value"
+            }
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ng0ft6brrbzudoivjuamtg6e",
+        "position": {
+          "x": 687.9866885591896,
+          "y": 2101.0899451685336
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger10",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "e2wkx4tem4gfshh6457nthrl",
+        "position": {
+          "x": 843.4562388176773,
+          "y": 2308.7507279794104
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "unflatten",
+          "label": "Unflatten11",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert keys with separators (., _, -, /, |) back to nested objects.",
+          "showRunningStatus": false,
+          "parameters": {
+            "separator": ".",
+            "data": {
+              "user..name": "Ali"
+            }
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "wi2miwrh2b2xkn4ukus4qjyl",
+        "position": {
+          "x": 624.5741273971397,
+          "y": 2279.4901359544942
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger11",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "jdch0h2jezjz3elal84p3qry",
+        "position": {
+          "x": 833.4562388176772,
+          "y": 2468.7507279794104
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "unflatten",
+          "label": "Unflatten12",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert keys with separators (., _, -, /, |) back to nested objects.",
+          "showRunningStatus": false,
+          "parameters": {
+            "separator": ".",
+            "data": ""
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "x667atzxd7bsizyd6c64j2mh",
+        "position": {
+          "x": 614.5741273971397,
+          "y": 2439.4901359544942
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger12",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "hsjudofvu9wk3lq9y8vepdiu",
+        "sourceHandle": "success",
+        "target": "e4zfpzxgwjpdcobcstxm4fo6",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__hsjudofvu9wk3lq9y8vepdiusuccess-e4zfpzxgwjpdcobcstxm4fo6input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "seophf7x6ftnok5pxelct7ch",
+        "sourceHandle": "success",
+        "target": "gqlpaiq32novy6c3zla17a3y",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ns94yvbrvmlejn8pci25s60o",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "watxoh24ypob7g6w439gy94t",
+        "sourceHandle": "success",
+        "target": "q8a98646f4rwmoj6ukjatr9a",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "u8k9j5yjckgrga6wsrfl40w9",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "bxiz8fn9yq3hnim19sytfg9z",
+        "sourceHandle": "success",
+        "target": "m9xui3zt8hm3dgmrrxs62vl0",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ioyuf1rukii1f0iaekr0q9w5",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "hwwz5jc323zsf6t4vvi1nwwo",
+        "sourceHandle": "success",
+        "target": "se5j50w9jkq24cz5id22coqi",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "acyq24pzeqgid9dc1wjvuewh",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "cp4rud5dlbhtto8ycbm47qc6",
+        "sourceHandle": "success",
+        "target": "zr9lkm6ghg7i3b3ay5fukhyo",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__cp4rud5dlbhtto8ycbm47qc6success-zr9lkm6ghg7i3b3ay5fukhyoinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "zr9lkm6ghg7i3b3ay5fukhyo",
+        "sourceHandle": "success",
+        "target": "xo3zaszgpsvrfc1zdp0ykvmn",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__zr9lkm6ghg7i3b3ay5fukhyosuccess-xo3zaszgpsvrfc1zdp0ykvmninput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "zhb436b6xsv2n0vb8exf1ret",
+        "sourceHandle": "success",
+        "target": "sdms78s9x81m6g5d66iijgvh",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__zhb436b6xsv2n0vb8exf1retsuccess-sdms78s9x81m6g5d66iijgvhinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "sdms78s9x81m6g5d66iijgvh",
+        "sourceHandle": "success",
+        "target": "ohuk2zgq2cmxi0tvtj2le6jo",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__sdms78s9x81m6g5d66iijgvhsuccess-ohuk2zgq2cmxi0tvtj2le6joinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ipafkescws5do2j6e1g5vffw",
+        "sourceHandle": "success",
+        "target": "scryw01dr7swhb34o1n5vs8p",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "tzgfxj05v2pfi5yi0u1ta9h3",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "xvi4jwq3b5atx9f9w7bkoqd0",
+        "sourceHandle": "success",
+        "target": "fqr5jzv3jjz8bvzf25heyyvi",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "p3x7jojzlruwqeqaalt2zk1b",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "ohuk2zgq2cmxi0tvtj2le6jo",
+        "sourceHandle": "success",
+        "target": "g0ldddpbobn2a6q5ttv7mn34",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ohuk2zgq2cmxi0tvtj2le6josuccess-g0ldddpbobn2a6q5ttv7mn34input",
+        "selected": false,
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "vq7nn9gyd8pbomp4oi06sa44",
+        "sourceHandle": "success",
+        "target": "f7sbphz6ruxcwuedf8xrskx1",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__vq7nn9gyd8pbomp4oi06sa44success-f7sbphz6ruxcwuedf8xrskx1input",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "f7sbphz6ruxcwuedf8xrskx1",
+        "sourceHandle": "success",
+        "target": "qkfvqoz5qn746sp3lq2q3f4f",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__f7sbphz6ruxcwuedf8xrskx1success-qkfvqoz5qn746sp3lq2q3f4finput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "id": "my0euy2b8bdrnbm4jfeodqs7-u0ipydcbfe4kbmd9ztb07zj4-3f5dc2a3-b27f-41d5-9b37-d9c82f6949aa",
+        "source": "my0euy2b8bdrnbm4jfeodqs7",
+        "target": "u0ipydcbfe4kbmd9ztb07zj4",
+        "type": "directed",
+        "animated": false,
+        "sourceHandle": "success",
+        "targetHandle": "input",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "id": "vxtmuy8tklmrhd99tzg74qt9",
+        "source": "ng0ft6brrbzudoivjuamtg6e",
+        "target": "bgfzydvhusuixis3jcc179lt",
+        "type": "directed",
+        "animated": false,
+        "sourceHandle": "success",
+        "targetHandle": "input",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "id": "hymj8o1xpu5g5r7coqxid3jp",
+        "source": "wi2miwrh2b2xkn4ukus4qjyl",
+        "target": "e2wkx4tem4gfshh6457nthrl",
+        "type": "directed",
+        "animated": false,
+        "sourceHandle": "success",
+        "targetHandle": "input",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "id": "mi84epqi6jtb2sfeccdfau03",
+        "source": "x667atzxd7bsizyd6c64j2mh",
+        "target": "jdch0h2jezjz3elal84p3qry",
+        "type": "directed",
+        "animated": false,
+        "sourceHandle": "success",
+        "targetHandle": "input",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1787742173348,
+    "updatedAt": 1787917807672,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
