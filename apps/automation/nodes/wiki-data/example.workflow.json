@@ -1,0 +1,870 @@
+[
+    {
+        "name": "wikidata",
+        "variables": {},
+        "secrets": {},
+        "nodes": [
+            {
+                "id": "tcdjchcf9gssd4w6zr0wbro2",
+                "position": {
+                    "x": 929,
+                    "y": 316
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "wikidata",
+                    "label": "WikiData",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Search for Entity IDs in WikiData knowledge base.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "search": "Morocco",
+                        "limit": 5
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "cwqc3o5lbp96uqeinmzd1t97",
+                "position": {
+                    "x": 728.5,
+                    "y": 299
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "s9tb5e5nrt4urf4dnzj0mjwr",
+                "position": {
+                    "x": 925.25,
+                    "y": 476.5
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "wikidata",
+                    "label": "WikiData1",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Search for Entity IDs in WikiData knowledge base.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "search": "Casablanca",
+                        "language": "ar"
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "ipytocjr3sb5fhmh2750giot",
+                "position": {
+                    "x": 736.75,
+                    "y": 471.5
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger1",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "zhuis5ctxm5kb2uplm6uvr9t",
+                "position": {
+                    "x": 926.625,
+                    "y": 616.25
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "wikidata",
+                    "label": "WikiData2",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Search for Entity IDs in WikiData knowledge base.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "search": "Casablanca",
+                        "language": "fr"
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "xht5dgevxpzu2hv9un44v68y",
+                "position": {
+                    "x": 738.125,
+                    "y": 611.25
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger2",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "ze8apxngh8d0p6hwvk7krd7y",
+                "position": {
+                    "x": 946.875,
+                    "y": 800.75
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "wikidata",
+                    "label": "WikiData2",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Search for Entity IDs in WikiData knowledge base.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "search": "Ibn Battuta\t",
+                        "language": "ar"
+                    },
+                    "_morphing": false
+                },
+                "selected": true
+            },
+            {
+                "id": "j08osgvvrs8mwa7nbjvfvcvg",
+                "position": {
+                    "x": 770.375,
+                    "y": 807.75
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger2",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "ko9i37xujpeao0up9sxh2s2j",
+                "position": {
+                    "x": 932.7916666666667,
+                    "y": 980.0416208902994
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "wikidata",
+                    "label": "WikiData4",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Search for Entity IDs in WikiData knowledge base.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "search": "Apple",
+                        "limit": 3,
+                        "continue": 3
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "c7owqi50b0dz36qgx84v4rm7",
+                "position": {
+                    "x": 756.2916666666667,
+                    "y": 987.0416208902994
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger4",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "f7rp3u4enre3dhd9lepa04t3",
+                "position": {
+                    "x": 977.0416666666667,
+                    "y": 1188.5416208902993
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "wikidata",
+                    "label": "WikiData4",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Search for Entity IDs in WikiData knowledge base.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "search": "Python",
+                        "limit": 1
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "izonx75c2uo04wcqr3d5ceq7",
+                "position": {
+                    "x": 812.5416666666667,
+                    "y": 1207.5416208902993
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger4",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "n74k5156a8s9e2htou300cbz",
+                "position": {
+                    "x": 1026.4166666666667,
+                    "y": 1376.2916208902993
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "wikidata",
+                    "label": "WikiData4",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Search for Entity IDs in WikiData knowledge base.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "search": "AI",
+                        "limit": 100
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "cf35ppj9a8s3qao9ar3uncmh",
+                "position": {
+                    "x": 861.9166666666667,
+                    "y": 1395.2916208902993
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger4",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "kfwwhu2zif3bix38gq02y617",
+                "position": {
+                    "x": 1026.7189782242467,
+                    "y": 1787.9586346339947
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "wikidata",
+                    "label": "WikiData6",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Search for Entity IDs in WikiData knowledge base.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "search": {
+                            "$expr": "output",
+                            "node": "Function",
+                            "outputId": "success",
+                            "path": "Search"
+                        },
+                        "limit": 5
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "ybke3s3pshmcjlopukhpuvd2",
+                "position": {
+                    "x": 714.6829498237707,
+                    "y": 1819.0830634370386
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger6",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "uyhfu2c63b7dy7tfy33qjvfl",
+                "position": {
+                    "x": 870.9666934364227,
+                    "y": 1804.1164554256236
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "function",
+                    "label": "Function",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Executes custom JavaScript code on the input data.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "code": "// Write your code here\nreturn {\n  \"Search\":\"maroc telecom\"\n};"
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "usu9qjds7ndwytzkcr5ws313",
+                "position": {
+                    "x": 1064.5984730681098,
+                    "y": 2151.7224487534895
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "wikidata",
+                    "label": "WikiData7",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Search for Entity IDs in WikiData knowledge base.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "search": "فاس",
+                        "limit": 5,
+                        "language": "ar"
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "twp5e1afdlajure31nwz876z",
+                "position": {
+                    "x": 875.3205192481032,
+                    "y": 2156.900932911184
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger7",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "dcsfqqvq65vt6csw0x2s7som",
+                "position": {
+                    "x": 1118.6339793927793,
+                    "y": 2311.411100244676
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "wikidata",
+                    "label": "WikiData8",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Search for Entity IDs in WikiData knowledge base.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "search": {
+                            "$expr": "output",
+                            "node": "Function1",
+                            "outputId": "success",
+                            "path": "keyword"
+                        },
+                        "limit": 5
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "v6s6r4e3k1u59dgs7jnj6t98",
+                "position": {
+                    "x": 818.5979509923034,
+                    "y": 2354.5355290477205
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger8",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "qdd06f6kqfj2qlr3smoz3kyt",
+                "position": {
+                    "x": 986.8816946049553,
+                    "y": 2351.5689210363053
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "function",
+                    "label": "Function1",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Executes custom JavaScript code on the input data.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "code": "return { \"keyword\": \"Rabat\" };"
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            }
+        ],
+        "connections": [
+            {
+                "source": "cwqc3o5lbp96uqeinmzd1t97",
+                "sourceHandle": "success",
+                "target": "tcdjchcf9gssd4w6zr0wbro2",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__cwqc3o5lbp96uqeinmzd1t97success-tcdjchcf9gssd4w6zr0wbro2input",
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "ipytocjr3sb5fhmh2750giot",
+                "sourceHandle": "success",
+                "target": "s9tb5e5nrt4urf4dnzj0mjwr",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "lx7l2hhzkmafqqfa6fuo3wjn",
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "xht5dgevxpzu2hv9un44v68y",
+                "sourceHandle": "success",
+                "target": "zhuis5ctxm5kb2uplm6uvr9t",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "skmw7hbzbhgttf7d97ekk336",
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "j08osgvvrs8mwa7nbjvfvcvg",
+                "sourceHandle": "success",
+                "target": "ze8apxngh8d0p6hwvk7krd7y",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "mcn51moej4pujfzeaaon21er",
+                "selected": false,
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "c7owqi50b0dz36qgx84v4rm7",
+                "sourceHandle": "success",
+                "target": "ko9i37xujpeao0up9sxh2s2j",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "ms24ii9d0qqeph8gfdnxj1mf",
+                "selected": false,
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "izonx75c2uo04wcqr3d5ceq7",
+                "sourceHandle": "success",
+                "target": "f7rp3u4enre3dhd9lepa04t3",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "j6xm2wdtopbfy3khkjvuai64",
+                "selected": false,
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "cf35ppj9a8s3qao9ar3uncmh",
+                "sourceHandle": "success",
+                "target": "n74k5156a8s9e2htou300cbz",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "nmssnfkouyqngxoii5kj9b0d",
+                "selected": false,
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "ybke3s3pshmcjlopukhpuvd2",
+                "sourceHandle": "success",
+                "target": "uyhfu2c63b7dy7tfy33qjvfl",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__ybke3s3pshmcjlopukhpuvd2success-uyhfu2c63b7dy7tfy33qjvflinput",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false
+            },
+            {
+                "source": "uyhfu2c63b7dy7tfy33qjvfl",
+                "sourceHandle": "success",
+                "target": "kfwwhu2zif3bix38gq02y617",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__uyhfu2c63b7dy7tfy33qjvflsuccess-kfwwhu2zif3bix38gq02y617input",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false
+            },
+            {
+                "source": "twp5e1afdlajure31nwz876z",
+                "sourceHandle": "success",
+                "target": "usu9qjds7ndwytzkcr5ws313",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "daxm7igp7k7bjz30bn7j0k34",
+                "selected": false,
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "v6s6r4e3k1u59dgs7jnj6t98",
+                "sourceHandle": "success",
+                "target": "qdd06f6kqfj2qlr3smoz3kyt",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "j5b2tymfr1tn0tg8d552ixrq",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false
+            },
+            {
+                "source": "qdd06f6kqfj2qlr3smoz3kyt",
+                "sourceHandle": "success",
+                "target": "dcsfqqvq65vt6csw0x2s7som",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "wvudxp0cloove92z8457mvuh",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false
+            }
+        ],
+        "status": "stopped",
+        "tracingEnabled": true,
+        "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+        "version": 1,
+        "createdAt": 1787823593509,
+        "updatedAt": 1787932718827,
+        "publishedNames": [],
+        "previousStatus": "running"
+    }
+]
