@@ -419,6 +419,7 @@
         "nodes": [
           "agentic-flow",
           "agent",
+          "agent-v2",
           "ai-chat-anthropic",
           "ai-chat-cohere",
           "ai-chat-deepseek",
