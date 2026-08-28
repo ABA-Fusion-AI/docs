@@ -1,0 +1,593 @@
+[
+    {
+        "name": "rest-countries",
+        "variables": {},
+        "secrets": {},
+        "nodes": [
+            {
+                "id": "ojbybbak85iagsij9ev9mvau",
+                "position": {
+                    "x": 1108.584072672622,
+                    "y": 135.0669670084632
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "rest-countries",
+                    "label": "REST Countries",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Get country information using the REST Countries API.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "name": "Morocco",
+                        "apiKey": " "
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "je9d972ut31aboqrtjs8taa0",
+                "position": {
+                    "x": 875.084072672622,
+                    "y": 90.5669670084632
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "j556s60810vw0csealmpt50m",
+                "position": {
+                    "x": 1087.2046455930197,
+                    "y": 293.14744577701765
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "rest-countries",
+                    "label": "REST Countries1",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Get country information using the REST Countries API.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "name": "Japan",
+                        "apiKey": " "
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "ep6hdt2xauuubg9cvxft41n8",
+                "position": {
+                    "x": 865.7046455930197,
+                    "y": 260.64744577701765
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger1",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "fdyjixbnc3tghy6x0norb4wo",
+                "position": {
+                    "x": 1080.898864259769,
+                    "y": 458.3609491499943
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "rest-countries",
+                    "label": "REST Countries2",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Get country information using the REST Countries API.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "name": "Saudi Arabia",
+                        "apiKey": " "
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "yv7300kg9wriz7h1eqvgqwxy",
+                "position": {
+                    "x": 859.398864259769,
+                    "y": 425.8609491499943
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger2",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "h1jfrxoelmj81tthy8ad7sjc",
+                "position": {
+                    "x": 1083.5194371801667,
+                    "y": 640.4414279185487
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "rest-countries",
+                    "label": "REST Countries2",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Get country information using the REST Countries API.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "name": "France",
+                        "apiKey": " "
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "x7xh1oiogypdrvw6pxg93m6s",
+                "position": {
+                    "x": 874.0194371801667,
+                    "y": 619.9414279185487
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger2",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "wrknb1tzgg9m3u83svaoq7w1",
+                "position": {
+                    "x": 1067.245256125168,
+                    "y": 797.9792124265415
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "rest-countries",
+                    "label": "REST Countries3",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Get country information using the REST Countries API.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "name": "Canada",
+                        "apiKey": " "
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "qk7buj3sr9wpqy2uy1ievdlk",
+                "position": {
+                    "x": 857.745256125168,
+                    "y": 777.4792124265415
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger3",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "dret5wrmemct0t2xhux9eg3d",
+                "position": {
+                    "x": 1171.678329045566,
+                    "y": 1007.0596911950959
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "rest-countries",
+                    "label": "REST Countries3",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Get country information using the REST Countries API.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "name": {
+                            "$expr": "output",
+                            "node": "Function",
+                            "outputId": "success",
+                            "path": "countryName"
+                        },
+                        "apiKey": " "
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "a0cd0h91t63053iou873n963",
+                "position": {
+                    "x": 860.365829045566,
+                    "y": 997.5596911950959
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger3",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "soomh5x785llovu6ue8iaha1",
+                "position": {
+                    "x": 1013.8505478196703,
+                    "y": 1024.1587798156795
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "function",
+                    "label": "Function",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Executes custom JavaScript code on the input data.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "code": "// Write your code here\nreturn {\"countryName\":\"Germany\"};"
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "b9q0ofqu0epc6218x5h7ww8p",
+                "position": {
+                    "x": 1081.502540462873,
+                    "y": 1212.6313820626267
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "rest-countries",
+                    "label": "REST Countries4",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Get country information using the REST Countries API.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "name": "Morocco",
+                        "apiKey": ""
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "lnm8azk80milzajbqtj9nmk1",
+                "position": {
+                    "x": 882.771396049528,
+                    "y": 1203.515809855954
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger4",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            }
+        ],
+        "connections": [
+            {
+                "source": "je9d972ut31aboqrtjs8taa0",
+                "sourceHandle": "success",
+                "target": "ojbybbak85iagsij9ev9mvau",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__je9d972ut31aboqrtjs8taa0success-ojbybbak85iagsij9ev9mvauinput",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false
+            },
+            {
+                "source": "ep6hdt2xauuubg9cvxft41n8",
+                "sourceHandle": "success",
+                "target": "j556s60810vw0csealmpt50m",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "mq0xdxafq84zi1a8fnmllnvr",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false
+            },
+            {
+                "source": "yv7300kg9wriz7h1eqvgqwxy",
+                "sourceHandle": "success",
+                "target": "fdyjixbnc3tghy6x0norb4wo",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "wacwf1sydq6mymhpe73yix5o",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false
+            },
+            {
+                "source": "x7xh1oiogypdrvw6pxg93m6s",
+                "sourceHandle": "success",
+                "target": "h1jfrxoelmj81tthy8ad7sjc",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "ux2c29laxgzvpoy0cy1vpeer",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false
+            },
+            {
+                "source": "qk7buj3sr9wpqy2uy1ievdlk",
+                "sourceHandle": "success",
+                "target": "wrknb1tzgg9m3u83svaoq7w1",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "skyuolmez08oor927i8ac9xa",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false
+            },
+            {
+                "source": "a0cd0h91t63053iou873n963",
+                "sourceHandle": "success",
+                "target": "soomh5x785llovu6ue8iaha1",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__a0cd0h91t63053iou873n963success-soomh5x785llovu6ue8iaha1input",
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "soomh5x785llovu6ue8iaha1",
+                "sourceHandle": "success",
+                "target": "dret5wrmemct0t2xhux9eg3d",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__soomh5x785llovu6ue8iaha1success-dret5wrmemct0t2xhux9eg3dinput",
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "lnm8azk80milzajbqtj9nmk1",
+                "sourceHandle": "success",
+                "target": "b9q0ofqu0epc6218x5h7ww8p",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "v96ybgkgqarvw9qw1oj73xir",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false
+            }
+        ],
+        "status": "stopped",
+        "tracingEnabled": true,
+        "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+        "version": 1,
+        "createdAt": 1787003879114,
+        "updatedAt": 1787924099174,
+        "publishedNames": [],
+        "previousStatus": "running"
+    }
+]
