@@ -1,0 +1,876 @@
+[
+    {
+        "name": "portfolio-tracker",
+        "variables": {},
+        "secrets": {},
+        "nodes": [
+            {
+                "id": "x1xi84i4jgbga9gmibkzdgav",
+                "position": {
+                    "x": 473,
+                    "y": 199
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "portfolio-tracker",
+                    "label": "Portfolio Tracker",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Analyze investment portfolio performance, returns, and allocation",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "holdings": [
+                            {
+                                "symbol": "AAPL",
+                                "shares": 10,
+                                "buyPrice": 150,
+                                "currentPrice": 180,
+                                "dividends": 20
+                            },
+                            {
+                                "symbol": "MSFT",
+                                "shares": 5,
+                                "buyPrice": 200,
+                                "currentPrice": 260,
+                                "dividends": 0
+                            }
+                        ]
+                    },
+                    "_morphing": false,
+                    "metadata": {
+                        "holdings": "number"
+                    }
+                },
+                "selected": false
+            },
+            {
+                "id": "roodl3vcqzdwvgzr24ms6xnh",
+                "position": {
+                    "x": 292,
+                    "y": 174.5
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "e96ri4c5icsiouxjpmf2d3gv",
+                "position": {
+                    "x": 622,
+                    "y": 187.5
+                },
+                "type": "display",
+                "width": 256,
+                "height": 100,
+                "dragHandle": ".drag-handle__custom",
+                "data": {
+                    "name": "log",
+                    "label": "Log",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": false
+                        }
+                    },
+                    "description": "Logs the input data to the console.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "iq5n4yr7r78yj1yd7pexge0w",
+                "position": {
+                    "x": 424.1666666666667,
+                    "y": 404.66666666666663
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "portfolio-tracker",
+                    "label": "Portfolio Tracker1",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Analyze investment portfolio performance, returns, and allocation",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "holdings": [
+                            {
+                                "symbol": "NVDA",
+                                "shares": 10,
+                                "buyPrice": 100,
+                                "currentPrice": 116,
+                                "dividends": 0
+                            },
+                            {
+                                "symbol": "TSLA",
+                                "shares": 10,
+                                "buyPrice": 250,
+                                "currentPrice": 200,
+                                "dividends": 0
+                            },
+                            {
+                                "symbol": "BTC",
+                                "shares": 0.5,
+                                "buyPrice": 60000,
+                                "currentPrice": 70000,
+                                "dividends": 0
+                            }
+                        ]
+                    },
+                    "_morphing": false,
+                    "metadata": {
+                        "holdings": "number"
+                    }
+                },
+                "selected": false
+            },
+            {
+                "id": "mkhn7cx423e89q8lvo3cyrk1",
+                "position": {
+                    "x": 255.16666666666669,
+                    "y": 392.16666666666663
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger1",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "mq5k48w7mklkll0mi2b5q4x1",
+                "position": {
+                    "x": 979.0416977698595,
+                    "y": 324.6552731595101
+                },
+                "type": "display",
+                "width": 256,
+                "height": 100,
+                "dragHandle": ".drag-handle__custom",
+                "data": {
+                    "name": "log",
+                    "label": "Log1",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": false
+                        }
+                    },
+                    "description": "Logs the input data to the console.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "i4l970vltrptwh9n0456bdf6",
+                "position": {
+                    "x": 423.1535538850355,
+                    "y": 621.5674601695806
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "portfolio-tracker",
+                    "label": "Portfolio Tracker2",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Analyze investment portfolio performance, returns, and allocation",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "holdings": [
+                            {
+                                "symbol": {
+                                    "$expr": "output",
+                                    "node": "Function",
+                                    "outputId": "success",
+                                    "path": "symbol"
+                                },
+                                "shares": {
+                                    "$expr": "output",
+                                    "node": "Function",
+                                    "outputId": "success",
+                                    "path": "shares"
+                                },
+                                "buyPrice": {
+                                    "$expr": "output",
+                                    "node": "Function",
+                                    "outputId": "success",
+                                    "path": "buyPrice"
+                                },
+                                "currentPrice": {
+                                    "$expr": "output",
+                                    "node": "Function",
+                                    "outputId": "success",
+                                    "path": "currentPrice"
+                                },
+                                "dividends": {
+                                    "$expr": "output",
+                                    "node": "Function",
+                                    "outputId": "success",
+                                    "path": "dividends"
+                                }
+                            }
+                        ]
+                    },
+                    "_morphing": false,
+                    "metadata": {
+                        "holdings": "number"
+                    }
+                },
+                "selected": false
+            },
+            {
+                "id": "uv6ds323qzswtwsldat5doo9",
+                "position": {
+                    "x": 126.04079019975353,
+                    "y": 598.5118742865437
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger2",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "xktkpoyx54f93fbn8chcz60y",
+                "position": {
+                    "x": 591.6446770980258,
+                    "y": 626.402341880918
+                },
+                "type": "display",
+                "width": 256,
+                "height": 100,
+                "dragHandle": ".drag-handle__custom",
+                "data": {
+                    "name": "log",
+                    "label": "Log2",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": false
+                        }
+                    },
+                    "description": "Logs the input data to the console.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "dah1f0kj3nv03a0tr8cusaep",
+                "position": {
+                    "x": 275.2921619929755,
+                    "y": 590.8916817926198
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "function",
+                    "label": "Function",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Executes custom JavaScript code on the input data.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "code": "// Write your code here\nreturn {\n    \"symbol\": \"ETH\",\n    \"shares\": 2,\n    \"buyPrice\": 2500,\n    \"currentPrice\": 3200,\n    \"dividends\": 0\n  };"
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "u4vvyx71o30gmnw10khomsg2",
+                "position": {
+                    "x": 186.22116857022087,
+                    "y": 865.5969472814359
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "portfolio-tracker",
+                    "label": "Portfolio Tracker4",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Analyze investment portfolio performance, returns, and allocation",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "holdings": [
+                            {
+                                "symbol": "AIRDROP",
+                                "shares": 100,
+                                "buyPrice": 0,
+                                "currentPrice": 10,
+                                "dividends": 50
+                            }
+                        ]
+                    },
+                    "_morphing": false,
+                    "metadata": {
+                        "holdings": "number"
+                    }
+                },
+                "selected": false
+            },
+            {
+                "id": "ij3swgkabnwdg8wmn44n8y60",
+                "position": {
+                    "x": 17.22116857022087,
+                    "y": 853.0969472814359
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger3",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "tuyt57axa52yh88ejxb0mpd7",
+                "position": {
+                    "x": 359.2211685702209,
+                    "y": 878.0969472814359
+                },
+                "type": "display",
+                "width": 256,
+                "height": 100,
+                "dragHandle": ".drag-handle__custom",
+                "data": {
+                    "name": "log",
+                    "label": "Log3",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": false
+                        }
+                    },
+                    "description": "Logs the input data to the console.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "yqj1iw6g0gv21lw9a4ex8wo9",
+                "position": {
+                    "x": 216.66103302242047,
+                    "y": 1066.8145027399985
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "portfolio-tracker",
+                    "label": "Portfolio Tracker5",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Analyze investment portfolio performance, returns, and allocation",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "holdings": [
+                            {
+                                "symbol": "TEST",
+                                "shares": 0,
+                                "buyPrice": 0,
+                                "currentPrice": 0,
+                                "dividends": 0
+                            }
+                        ]
+                    },
+                    "_morphing": false,
+                    "metadata": {
+                        "holdings": "number"
+                    }
+                },
+                "selected": false
+            },
+            {
+                "id": "t33gz62bjx0i3rbousf299w5",
+                "position": {
+                    "x": 59.66103302242047,
+                    "y": 1066.3145027399985
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger4",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "w0p3ecpcczysv3zswdmj84ss",
+                "position": {
+                    "x": 413.6610330224206,
+                    "y": 1103.3145027399985
+                },
+                "type": "display",
+                "width": 256,
+                "height": 100,
+                "dragHandle": ".drag-handle__custom",
+                "data": {
+                    "name": "log",
+                    "label": "Log4",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": false
+                        }
+                    },
+                    "description": "Logs the input data to the console.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "mykm3euxr1v6776qiz6kwp15",
+                "position": {
+                    "x": 161.69316084645178,
+                    "y": 1308.8023693801692
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "portfolio-tracker",
+                    "label": "Portfolio Tracker6",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Analyze investment portfolio performance, returns, and allocation",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "holdings": [
+                            {
+                                "symbol": "BRK.B",
+                                "shares": 1,
+                                "buyPrice": 450,
+                                "currentPrice": 460,
+                                "dividends": 0
+                            }
+                        ]
+                    },
+                    "_morphing": false,
+                    "metadata": {
+                        "holdings": "number"
+                    }
+                },
+                "selected": false
+            },
+            {
+                "id": "idp9zg1gzdoy9cotwqkbvv6u",
+                "position": {
+                    "x": 16.693160846451775,
+                    "y": 1320.3023693801692
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger5",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "qufarnxdweh31o4jrwo6uasn",
+                "position": {
+                    "x": 382.6931608464519,
+                    "y": 1369.3023693801692
+                },
+                "type": "display",
+                "width": 256,
+                "height": 100,
+                "dragHandle": ".drag-handle__custom",
+                "data": {
+                    "name": "log",
+                    "label": "Log5",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": false
+                        }
+                    },
+                    "description": "Logs the input data to the console.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            }
+        ],
+        "connections": [
+            {
+                "source": "roodl3vcqzdwvgzr24ms6xnh",
+                "sourceHandle": "success",
+                "target": "x1xi84i4jgbga9gmibkzdgav",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__roodl3vcqzdwvgzr24ms6xnhsuccess-x1xi84i4jgbga9gmibkzdgavinput",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false
+            },
+            {
+                "source": "x1xi84i4jgbga9gmibkzdgav",
+                "sourceHandle": "success",
+                "target": "e96ri4c5icsiouxjpmf2d3gv",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__x1xi84i4jgbga9gmibkzdgavsuccess-e96ri4c5icsiouxjpmf2d3gvinput",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false
+            },
+            {
+                "source": "mkhn7cx423e89q8lvo3cyrk1",
+                "sourceHandle": "success",
+                "target": "iq5n4yr7r78yj1yd7pexge0w",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "tg8m8uxrfzrzucfb7vto48ca",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false
+            },
+            {
+                "source": "iq5n4yr7r78yj1yd7pexge0w",
+                "sourceHandle": "success",
+                "target": "mq5k48w7mklkll0mi2b5q4x1",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "owcsmlqngsxxtq803bp6pnki",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false
+            },
+            {
+                "source": "i4l970vltrptwh9n0456bdf6",
+                "sourceHandle": "success",
+                "target": "xktkpoyx54f93fbn8chcz60y",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__i4l970vltrptwh9n0456bdf6success-xktkpoyx54f93fbn8chcz60yinput",
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "uv6ds323qzswtwsldat5doo9",
+                "sourceHandle": "success",
+                "target": "dah1f0kj3nv03a0tr8cusaep",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__uv6ds323qzswtwsldat5doo9success-dah1f0kj3nv03a0tr8cusaepinput",
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "dah1f0kj3nv03a0tr8cusaep",
+                "sourceHandle": "success",
+                "target": "i4l970vltrptwh9n0456bdf6",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__dah1f0kj3nv03a0tr8cusaepsuccess-i4l970vltrptwh9n0456bdf6input",
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "ij3swgkabnwdg8wmn44n8y60",
+                "sourceHandle": "success",
+                "target": "u4vvyx71o30gmnw10khomsg2",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "ukperko9tl0ctc3gt9r66noc",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false
+            },
+            {
+                "source": "u4vvyx71o30gmnw10khomsg2",
+                "sourceHandle": "success",
+                "target": "tuyt57axa52yh88ejxb0mpd7",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "opkyb1uxv0tqhu5e0dub0z1w",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false
+            },
+            {
+                "source": "t33gz62bjx0i3rbousf299w5",
+                "sourceHandle": "success",
+                "target": "yqj1iw6g0gv21lw9a4ex8wo9",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "f51vleu7rlvd0nyw1zexdx3c",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false
+            },
+            {
+                "source": "yqj1iw6g0gv21lw9a4ex8wo9",
+                "sourceHandle": "success",
+                "target": "w0p3ecpcczysv3zswdmj84ss",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "bqrgu66ni1c4scv32kz1zocy",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false
+            },
+            {
+                "source": "idp9zg1gzdoy9cotwqkbvv6u",
+                "sourceHandle": "success",
+                "target": "mykm3euxr1v6776qiz6kwp15",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "zwm40g5ihkw987h4rmtobfff",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false
+            },
+            {
+                "source": "mykm3euxr1v6776qiz6kwp15",
+                "sourceHandle": "success",
+                "target": "qufarnxdweh31o4jrwo6uasn",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "f1rlm71ngc9t29i8mdwf3rfm",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false
+            }
+        ],
+        "status": "stopped",
+        "tracingEnabled": true,
+        "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+        "version": 1,
+        "createdAt": 1787154286714,
+        "updatedAt": 1787927364923,
+        "publishedNames": [],
+        "previousStatus": "running"
+    }
+]
