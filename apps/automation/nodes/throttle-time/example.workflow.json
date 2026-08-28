@@ -1,0 +1,395 @@
+[
+  {
+    "name": "throttle",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "qwhq53wkh4fm8zcn4q6rws9m",
+        "position": {
+          "x": 178.10379598591396,
+          "y": 193.0533551727328
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "function",
+          "label": "Function",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Executes custom JavaScript code on the input data.",
+          "showRunningStatus": true,
+          "parameters": {
+            "code": "// Write your code here\nreturn \"devloppeur web full stack\";"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "qpc8gt2x75ufxc7827xk5199",
+        "position": {
+          "x": 484.8885583865872,
+          "y": 177.9590557736704
+        },
+        "type": "agent",
+        "width": 96,
+        "height": 96,
+        "data": {
+          "name": "agent",
+          "label": "Agent",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "An AI agent that can perform tasks using nodes as tools based on user input.",
+          "showRunningStatus": true,
+          "parameters": {
+            "systemPrompt": "Tu es un **RH + Technical Recruiter** spécialisé dans le recrutement des développeurs Full Stack.\n\nJe vais te donner **une offre d’emploi + mon CV**.\n\nAnalyse-les et génère les **questions d’entretien les plus probables pour mon profil**, pas des questions génériques.\n\nClasse-les en :\n\n1. Questions RH\n2. Questions sur mon expérience et mes projets\n3. Questions techniques liées au Job Post\n4. Questions sur mes éventuels gaps\n5. Questions pièges que le recruteur pourrait me poser\n\nPour chaque question, indique brièvement **ce que le recruteur cherche à évaluer**.\n\nPrends en compte mon niveau de français et formule les questions dans un **français professionnel mais simple, adapté à un entretien oral**.\n\nNe jamais inventer une compétence ou une expérience absente de mon CV.\n",
+            "threadId": "1"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "vbr581j96h8gh6igs6la1sy1",
+        "position": {
+          "x": 505.49857435215995,
+          "y": 367.36076032142853
+        },
+        "type": "agent-llm",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "ai-chat-google",
+          "label": "AI Chat (Google)",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Google Generative AI chat node for Gemini Developer API models.",
+          "showRunningStatus": true,
+          "parameters": {
+            "model": "gemini-3.6-flash",
+            "apiKey": ""
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "dzyhh24xrgtmnas5pczpext5",
+        "position": {
+          "x": 730.9026760658274,
+          "y": 188.546961953644
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "fiv9fmupz5ilwaowx5msrp1x",
+        "position": {
+          "x": 422.12277967057963,
+          "y": 478.23172587624765
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "function",
+          "label": "Function1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Executes custom JavaScript code on the input data.",
+          "showRunningStatus": true,
+          "parameters": {
+            "code": "// Write your code here\nreturn {\n  \"user\": \"Omar\",\n  \"action\": \"click\",\n  \"count\": 1\n};"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "hc4ilkmuwum5a2x23u18xogg",
+        "position": {
+          "x": 90.74068652919266,
+          "y": 490.79850018826573
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "interval",
+          "label": "Interval3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Emits a tick at specified time intervals.",
+          "showRunningStatus": false,
+          "parameters": {
+            "duration": 500
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ymhbavvb40w819uzxb63eskj",
+        "position": {
+          "x": -8.36643874507312,
+          "y": 201.47956305221052
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "interval",
+          "label": "Interval4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Emits a tick at specified time intervals.",
+          "showRunningStatus": false,
+          "parameters": {
+            "duration": 500
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "sqeat85i0k1614yr6qp4rjv3",
+        "position": {
+          "x": 330.5834039192449,
+          "y": 176.96705078688447
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "throttle-time",
+          "label": "Throttle Time",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Emits a value from the source, then ignores subsequent source values for a specified duration.",
+          "showRunningStatus": false,
+          "parameters": {
+            "duration": 3000
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "f82cge88ayc9n5xgfyje8lhj",
+        "position": {
+          "x": 736.5345282788209,
+          "y": 483.17612823867177
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "throttle-time",
+          "label": "Throttle Time1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Emits a value from the source, then ignores subsequent source values for a specified duration.",
+          "showRunningStatus": false,
+          "parameters": {
+            "duration": 2000
+          },
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "vbr581j96h8gh6igs6la1sy1",
+        "sourceHandle": "llm",
+        "target": "qpc8gt2x75ufxc7827xk5199",
+        "targetHandle": "llm",
+        "type": "agentConnection",
+        "id": "xy-edge__vbr581j96h8gh6igs6la1sy1llm-qpc8gt2x75ufxc7827xk5199llm",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "qpc8gt2x75ufxc7827xk5199",
+        "sourceHandle": "success",
+        "target": "dzyhh24xrgtmnas5pczpext5",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__qpc8gt2x75ufxc7827xk5199success-dzyhh24xrgtmnas5pczpext5input",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "hc4ilkmuwum5a2x23u18xogg",
+        "sourceHandle": "success",
+        "target": "fiv9fmupz5ilwaowx5msrp1x",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__hc4ilkmuwum5a2x23u18xoggsuccess-fiv9fmupz5ilwaowx5msrp1xinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ymhbavvb40w819uzxb63eskj",
+        "sourceHandle": "success",
+        "target": "qwhq53wkh4fm8zcn4q6rws9m",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ymhbavvb40w819uzxb63eskjsuccess-qwhq53wkh4fm8zcn4q6rws9minput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "qwhq53wkh4fm8zcn4q6rws9m",
+        "sourceHandle": "success",
+        "target": "sqeat85i0k1614yr6qp4rjv3",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__qwhq53wkh4fm8zcn4q6rws9msuccess-sqeat85i0k1614yr6qp4rjv3input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "sqeat85i0k1614yr6qp4rjv3",
+        "sourceHandle": "success",
+        "target": "qpc8gt2x75ufxc7827xk5199",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__sqeat85i0k1614yr6qp4rjv3success-qpc8gt2x75ufxc7827xk5199input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "fiv9fmupz5ilwaowx5msrp1x",
+        "sourceHandle": "success",
+        "target": "f82cge88ayc9n5xgfyje8lhj",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__fiv9fmupz5ilwaowx5msrp1xsuccess-f82cge88ayc9n5xgfyje8lhjinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1787816992865,
+    "updatedAt": 1787921220992,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
