@@ -1,0 +1,130 @@
+[
+  {
+    "name": "Quality Maintenance Example",
+    "nodes": [
+      {
+        "id": "0c9781ee-7e48-4f7c-9edb-3bd81dd3015f",
+        "position": {
+          "x": 362.5,
+          "y": 480
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "iq6yb5qn4neo8sxg60e8nkc9",
+        "position": {
+          "x": 515.5,
+          "y": 496.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "quality-maintenance",
+          "label": "Quality Assurance & Maintenance",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Calculates quality assurance and maintenance metrics including Process Capability (Cp, Cpk), AQL Sample Size, Six Sigma Level, MTBF (Mean Time Between Failures), MTTR (Mean Time To Repair), Spare Parts Forecasting, and OSHA Incident Rate.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "cpk",
+            "mean": 100,
+            "stdDev": 2,
+            "usl": 106,
+            "lsl": 94
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ve1rda1fopkytry6ifpps3nq",
+        "position": {
+          "x": 700.5,
+          "y": 478
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "0c9781ee-7e48-4f7c-9edb-3bd81dd3015f",
+        "sourceHandle": "success",
+        "target": "iq6yb5qn4neo8sxg60e8nkc9",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__0c9781ee-7e48-4f7c-9edb-3bd81dd3015fsuccess-iq6yb5qn4neo8sxg60e8nkc9input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "iq6yb5qn4neo8sxg60e8nkc9",
+        "sourceHandle": "success",
+        "target": "ve1rda1fopkytry6ifpps3nq",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__iq6yb5qn4neo8sxg60e8nkc9success-ve1rda1fopkytry6ifpps3nqinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "version": 1,
+    "secrets": {}
+  }
+]

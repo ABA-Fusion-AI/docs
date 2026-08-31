@@ -1,0 +1,4 @@
+{
+  "label": "Quality Assurance & Maintenance",
+  "description": "Calculates quality assurance and maintenance metrics including Process Capability (Cp, Cpk), AQL Sample Size, Six Sigma Level, MTBF (Mean Time Between Failures), MTTR (Mean Time To Repair), Spare Parts Forecasting, and OSHA Incident Rate."
+}
