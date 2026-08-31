@@ -33,7 +33,7 @@
           "showRunningStatus": true,
           "parameters": {
             "where": "web",
-            "apiKey": "9ab761b89567099a9daf51ddb3c4b257f80c6528c46ba46ef1cb4cb2a7f6c374",
+            "apiKey": "",
             "query": "두벌식"
           },
           "_morphing": false
