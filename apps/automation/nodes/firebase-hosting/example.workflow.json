@@ -1,0 +1,207 @@
+[
+  {
+    "name": "patient",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "blba3fn9oyp4p62kyg040dws",
+        "position": {
+          "x": 730.1917524730167,
+          "y": -219.11642257412694
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "mz6ugvrhda1o7ej8k0gxo3pa",
+        "position": {
+          "x": 730.1506412971652,
+          "y": -28.098940540194135
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ov7s8x5o5t81jqfe15lltjce",
+        "position": {
+          "x": 977.6386486325343,
+          "y": -140.58701143348424
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "firebase-hosting",
+          "label": "Firebase Hosting",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage Hosting Sites and Releases.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "list_sites",
+            "accessToken": "",
+            "parentParams": "projects/test-42d30"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "hlmm6j9rpx6q6hg7crad3fov",
+        "position": {
+          "x": 977.5975374566829,
+          "y": 50.43047060044857
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "firebase-hosting",
+          "label": "Firebase Hosting1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage Hosting Sites and Releases.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "list_releases",
+            "accessToken": "",
+            "siteId": "my-site-a7426"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "blba3fn9oyp4p62kyg040dws",
+        "sourceHandle": "success",
+        "target": "lxl49gdluyg88l6pje9pedgq",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__blba3fn9oyp4p62kyg040dwssuccess-lxl49gdluyg88l6pje9pedgqinput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "blba3fn9oyp4p62kyg040dws",
+        "sourceHandle": "success",
+        "target": "jphjssue0d4mdsuh4h2l7onf",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__blba3fn9oyp4p62kyg040dwssuccess-jphjssue0d4mdsuh4h2l7onfinput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "blba3fn9oyp4p62kyg040dws",
+        "sourceHandle": "success",
+        "target": "ov7s8x5o5t81jqfe15lltjce",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__blba3fn9oyp4p62kyg040dwssuccess-ov7s8x5o5t81jqfe15lltjceinput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "mz6ugvrhda1o7ej8k0gxo3pa",
+        "sourceHandle": "success",
+        "target": "hlmm6j9rpx6q6hg7crad3fov",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "w9oahffg08vz75kn5u53jyjx",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "x83thpu2tecw8mglg376wa5i",
+        "sourceHandle": "success",
+        "target": "ubvenpbzz0wnhboy78uu9gp7",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "jcm25zqzxdcurlc73qlos8n5",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1788175403519,
+    "updatedAt": 1788191851575,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
