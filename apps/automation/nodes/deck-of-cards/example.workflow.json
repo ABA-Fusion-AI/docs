@@ -1,0 +1,126 @@
+[
+  {
+    "name": "Deck of Cards Example",
+    "nodes": [
+      {
+        "id": "0c9781ee-7e48-4f7c-9edb-3bd81dd3015f",
+        "position": {
+          "x": 362.5,
+          "y": 480
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "oo6c1tn0ne4z178l8h04m500",
+        "position": {
+          "x": 506.5,
+          "y": 487.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "deck-of-cards",
+          "label": "Deck of Cards",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Create, shuffle, draw, and manage decks of cards using the Deck of Cards API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "newDeck"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ve1rda1fopkytry6ifpps3nq",
+        "position": {
+          "x": 700.5,
+          "y": 478
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "0c9781ee-7e48-4f7c-9edb-3bd81dd3015f",
+        "sourceHandle": "success",
+        "target": "oo6c1tn0ne4z178l8h04m500",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__0c9781ee-7e48-4f7c-9edb-3bd81dd3015fsuccess-oo6c1tn0ne4z178l8h04m500input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "oo6c1tn0ne4z178l8h04m500",
+        "sourceHandle": "success",
+        "target": "ve1rda1fopkytry6ifpps3nq",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__oo6c1tn0ne4z178l8h04m500success-ve1rda1fopkytry6ifpps3nqinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "version": 1,
+    "secrets": {}
+  }
+]
