@@ -91,7 +91,7 @@
           "description": "Convert text to speech using Deepgram API (STT/TTS).",
           "showRunningStatus": true,
           "parameters": {
-            "apiKey": "5c8bd8285437d22c019593cff78cdf71a1dbcdfe",
+            "apiKey": " ",
             "text": "Hello, welcome to our hotel. How can I help you today?",
             "encoding": "mp3"
           },
@@ -186,7 +186,7 @@
           "description": "Convert text to speech using Deepgram API (STT/TTS).",
           "showRunningStatus": true,
           "parameters": {
-            "apiKey": "5c8bd8285437d22c019593cff78cdf71a1dbcdfe",
+            "apiKey": "",
             "text": "Hello, welcome to our hotel. How can I help you today?",
             "encoding": "linear16",
             "voice": "Welcome to our hotel. We hope you enjoy your stay.",
