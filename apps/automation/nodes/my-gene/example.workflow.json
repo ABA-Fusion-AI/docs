@@ -1,0 +1,128 @@
+[
+  {
+    "name": "MyGene.info Example",
+    "nodes": [
+      {
+        "id": "0c9781ee-7e48-4f7c-9edb-3bd81dd3015f",
+        "position": {
+          "x": 362.5,
+          "y": 480
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ztgbjfr9gmquzzg1nhvp3eiz",
+        "position": {
+          "x": 508.5,
+          "y": 559.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "my-gene",
+          "label": "MyGene.info",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "MyGene.info API - Gene query web services. Search and retrieve gene annotations from multiple databases.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getGeneBatch",
+            "species": "human",
+            "ids": "1017,672"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "rrq89syw0wpqn20n5zm6q1f1",
+        "position": {
+          "x": 658.5,
+          "y": 519.5
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "0c9781ee-7e48-4f7c-9edb-3bd81dd3015f",
+        "sourceHandle": "success",
+        "target": "ztgbjfr9gmquzzg1nhvp3eiz",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__0c9781ee-7e48-4f7c-9edb-3bd81dd3015fsuccess-ztgbjfr9gmquzzg1nhvp3eizinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ztgbjfr9gmquzzg1nhvp3eiz",
+        "sourceHandle": "success",
+        "target": "rrq89syw0wpqn20n5zm6q1f1",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ztgbjfr9gmquzzg1nhvp3eizsuccess-rrq89syw0wpqn20n5zm6q1f1input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "version": 1,
+    "secrets": {}
+  }
+]
