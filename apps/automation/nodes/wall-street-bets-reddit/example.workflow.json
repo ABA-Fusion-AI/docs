@@ -1,0 +1,493 @@
+[
+  {
+    "name": "testWall-street-bets-reddit",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "tthe5mbxcgnqpelwdtzn3qpm",
+        "position": {
+          "x": 284,
+          "y": 18
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "wall-street-bets-reddit",
+          "label": "WallStreetBets Reddit",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get top 50 posts from WallStreetBets subreddit via TradeStie API.",
+          "showRunningStatus": true,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "us3m5c0ahr0fpd407q5cspml",
+        "position": {
+          "x": 0,
+          "y": 18
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "xo827h2hp8kkd04wackxi2iy",
+        "position": {
+          "x": 568,
+          "y": 0
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "czfzwp827xsb392ty2vbn098",
+        "position": {
+          "x": 283.88366890380314,
+          "y": 334.4697986577181
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "wayback-machine",
+          "label": "Wayback Machine",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Check if a webpage existed or what it looked like on a specific date using Archive.org's Wayback Machine.",
+          "showRunningStatus": true,
+          "parameters": {
+            "url": "https://www.google.com",
+            "timestamp": "20200101"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "co5gaav4uz5x1tebh0x5ovxl",
+        "position": {
+          "x": -14.747203579418287,
+          "y": 332.8814317673378
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "fqzlba0b134p1qafp3w3zaxv",
+        "position": {
+          "x": 582.5145413870246,
+          "y": 340.25503355704694
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "if7smybt1lw4iikjkd53rhfk",
+        "position": {
+          "x": 311.7772518861328,
+          "y": 701.2436663989236
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "wikidata",
+          "label": "WikiData",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search for Entity IDs in WikiData knowledge base.",
+          "showRunningStatus": true,
+          "parameters": {
+            "search": "Albert Einstein",
+            "limit": 5
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "isx34z2wp19rzrr4case0rus",
+        "position": {
+          "x": 81.36596104233841,
+          "y": 706.5345904947488
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": true,
+        "draggable": true
+      },
+      {
+        "id": "her8ogbakv5iq2yspagr0e4w",
+        "position": {
+          "x": 562.4884205133803,
+          "y": 768.2374533792831
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "tyxu982ueclkl1sab3xdvj1z",
+        "position": {
+          "x": 422.5909106572716,
+          "y": 1387.9967358884808
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "world-bank",
+          "label": "World Bank Data",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Access global development data (GDP, Population, etc.), country lists, and indicators via the World Bank API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "resource": "data",
+            "language": "en",
+            "countryCode": "MA",
+            "indicatorCode": "SP.POP.TOTL",
+            "date": "2020:2024"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "u9i5z8nru744c6j2scrcscy8",
+        "position": {
+          "x": 155.68564686670004,
+          "y": 1309.183077117342
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "zgqynri5cqchwy771351ivof",
+        "position": {
+          "x": 778.2834402255979,
+          "y": 1351.831754999655
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "us3m5c0ahr0fpd407q5cspml",
+        "sourceHandle": "success",
+        "target": "tthe5mbxcgnqpelwdtzn3qpm",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__us3m5c0ahr0fpd407q5cspmlsuccess-tthe5mbxcgnqpelwdtzn3qpminput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "tthe5mbxcgnqpelwdtzn3qpm",
+        "sourceHandle": "success",
+        "target": "xo827h2hp8kkd04wackxi2iy",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__tthe5mbxcgnqpelwdtzn3qpmsuccess-xo827h2hp8kkd04wackxi2iyinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "co5gaav4uz5x1tebh0x5ovxl",
+        "sourceHandle": "success",
+        "target": "czfzwp827xsb392ty2vbn098",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__co5gaav4uz5x1tebh0x5ovxlsuccess-czfzwp827xsb392ty2vbn098input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "czfzwp827xsb392ty2vbn098",
+        "sourceHandle": "success",
+        "target": "fqzlba0b134p1qafp3w3zaxv",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__czfzwp827xsb392ty2vbn098success-fqzlba0b134p1qafp3w3zaxvinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "isx34z2wp19rzrr4case0rus",
+        "sourceHandle": "success",
+        "target": "if7smybt1lw4iikjkd53rhfk",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__isx34z2wp19rzrr4case0russuccess-if7smybt1lw4iikjkd53rhfkinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "if7smybt1lw4iikjkd53rhfk",
+        "sourceHandle": "success",
+        "target": "her8ogbakv5iq2yspagr0e4w",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__if7smybt1lw4iikjkd53rhfksuccess-her8ogbakv5iq2yspagr0e4winput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "tyxu982ueclkl1sab3xdvj1z",
+        "sourceHandle": "success",
+        "target": "zgqynri5cqchwy771351ivof",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__tyxu982ueclkl1sab3xdvj1zsuccess-zgqynri5cqchwy771351ivofinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "u9i5z8nru744c6j2scrcscy8",
+        "sourceHandle": "success",
+        "target": "tyxu982ueclkl1sab3xdvj1z",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__u9i5z8nru744c6j2scrcscy8success-tyxu982ueclkl1sab3xdvj1zinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1787823910116,
+    "updatedAt": 1788173623226,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]

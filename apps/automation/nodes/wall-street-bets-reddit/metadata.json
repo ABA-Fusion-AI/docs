@@ -1,0 +1,4 @@
+{
+  "label": "WallStreetBets Reddit",
+  "description": "Retrieve the top 50 stocks discussed on Reddit's WallStreetBets subreddit, including comment counts and sentiment data, through the Tradestie API."
+}
