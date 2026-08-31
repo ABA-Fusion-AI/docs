@@ -34,7 +34,7 @@
           "parameters": {
             "resourceType": "ip",
             "resource": "8.8.8.8",
-            "apiKey": "34256a432a9845cf23a95436a3549992046ce0de85a8c458701458957edd00e2"
+            "apiKey": "tap your VirusTotal API key here"
           },
           "_morphing": false
         },

@@ -63,7 +63,7 @@
           "description": "Search Yahoo using SerpAPI. Returns structured web search results.",
           "showRunningStatus": true,
           "parameters": {
-            "apiKey": "1ff89cb7052b8854e9e8079b91c889a1eeca0fb99a18df879a1d1e826e8f71ff",
+            "apiKey": "tap your SerpAPI key here",
             "query": "artificial intelligence"
           },
           "_morphing": false

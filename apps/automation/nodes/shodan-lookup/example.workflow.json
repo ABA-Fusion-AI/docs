@@ -129,7 +129,7 @@
           "showRunningStatus": true,
           "parameters": {
             "ip": "8.8.8.8",
-            "apiKey": "KECCRZ0Wkmecp3E2ErbpFo6IOf43DR8y",
+            "apiKey": "tap your Shodan API key here",
             "useInternetDb": false
           },
           "_morphing": false
