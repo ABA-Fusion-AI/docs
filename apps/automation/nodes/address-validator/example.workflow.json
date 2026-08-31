@@ -60,7 +60,7 @@
           "showRunningStatus": true,
           "parameters": {
             "operation": "parseAddress",
-            "apiKey": "75345c9e0eae92fd9024790e6f3497c1"
+            "apiKey": ""
           },
           "_morphing": false
         },

@@ -1,0 +1,90 @@
+[
+  {
+    "name": "liberation",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "navds2kc2m4bofvjeiiubk5m",
+        "position": {
+          "x": 973,
+          "y": 113
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "liberation",
+          "label": "Libération",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Fetch news from Libération RSS feed.",
+          "showRunningStatus": true,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "d4j1digvk7m258ksz05v16g3",
+        "position": {
+          "x": 706,
+          "y": 92.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "d4j1digvk7m258ksz05v16g3",
+        "sourceHandle": "success",
+        "target": "navds2kc2m4bofvjeiiubk5m",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__d4j1digvk7m258ksz05v16g3success-navds2kc2m4bofvjeiiubk5minput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1787842035975,
+    "updatedAt": 1788167292499,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
