@@ -1,0 +1,4 @@
+{
+  "label": "Geospatial Utils",
+  "description": "Geospatial distance & location utilities for logistics. Calculates distances, bearings, midpoints, route optimization, and more."
+}
