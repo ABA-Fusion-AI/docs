@@ -1,0 +1,398 @@
+[
+  {
+    "name": "chamber-scraper",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "wxirdzpk1y0x94rhi0inrzj9",
+        "position": {
+          "x": 800.5,
+          "y": 133
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "chamber-scraper",
+          "label": "Chambre des Représentants Scraper",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Scrape parliamentary questions and details using fetch and regex.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "listingOnly",
+            "maxPages": 1
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "p7fxu3dfcrd7sonxdyytafjj",
+        "position": {
+          "x": 615.5,
+          "y": 137.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "f6uaxndvkubu801iifgzjuei",
+        "position": {
+          "x": 808.75,
+          "y": 266
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "chamber-scraper",
+          "label": "Chambre des Représentants Scraper1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Scrape parliamentary questions and details using fetch and regex.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "listingWithDetails",
+            "maxPages": 1,
+            "detailsLimit": 2
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "q6pkmadce0t2ocab3kqinula",
+        "position": {
+          "x": 635.75,
+          "y": 282.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "bpe8vu8hm79x38sdtj0208v8",
+        "position": {
+          "x": 816,
+          "y": 406.75
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "chamber-scraper",
+          "label": "Chambre des Représentants Scraper2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Scrape parliamentary questions and details using fetch and regex.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "listingOnly",
+            "maxPages": 1,
+            "targetUrl": "https://www.chambredesrepresentants.ma/ar/مراقبة-العمل-الحكومي/الأسـئلة-الكتابية"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "yup5wlssf56fg9swh3caf3p9",
+        "position": {
+          "x": 655,
+          "y": 435.25
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "webd5pbn2ku98ntxows9fiuo",
+        "position": {
+          "x": 839.8479830334284,
+          "y": 534.1534576569799
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "chamber-scraper",
+          "label": "Chambre des Représentants Scraper3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Scrape parliamentary questions and details using fetch and regex.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "listingOnly",
+            "maxPages": 2
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "oryf2y3rypc5rm26bvay0z3r",
+        "position": {
+          "x": 680,
+          "y": 593.25
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "nz0ke0q1ktaxxdu3zhybyp02",
+        "position": {
+          "x": 830.5,
+          "y": 700.75
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "chamber-scraper",
+          "label": "Chambre des Représentants Scraper4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Scrape parliamentary questions and details using fetch and regex.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "listingWithDetails",
+            "maxPages": 1,
+            "targetUrl": "https://www.chambredesrepresentants.ma/ar/مراقبة-العمل-الحكومي/الأسـئلة-الشفوية?field_transfere_ou_non_value=1",
+            "detailsLimit": 2
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "gc4qvkahqocw48824vka541r",
+        "position": {
+          "x": 693.5,
+          "y": 753.25
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "p7fxu3dfcrd7sonxdyytafjj",
+        "sourceHandle": "success",
+        "target": "wxirdzpk1y0x94rhi0inrzj9",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__p7fxu3dfcrd7sonxdyytafjjsuccess-wxirdzpk1y0x94rhi0inrzj9input",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "q6pkmadce0t2ocab3kqinula",
+        "sourceHandle": "success",
+        "target": "f6uaxndvkubu801iifgzjuei",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "n8nu9h26tc7bnseodk1ry4gw",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "yup5wlssf56fg9swh3caf3p9",
+        "sourceHandle": "success",
+        "target": "bpe8vu8hm79x38sdtj0208v8",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "dw4s8bsvsf774dtkd7aazz62",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "oryf2y3rypc5rm26bvay0z3r",
+        "sourceHandle": "success",
+        "target": "webd5pbn2ku98ntxows9fiuo",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ihfv77poc2kboedlre0n5yyf",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "gc4qvkahqocw48824vka541r",
+        "sourceHandle": "success",
+        "target": "nz0ke0q1ktaxxdu3zhybyp02",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "zhih7jswhb8id495i8a12c66",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1788028022947,
+    "updatedAt": 1788194500622,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
