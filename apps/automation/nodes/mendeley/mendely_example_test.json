@@ -61,7 +61,7 @@
           "showRunningStatus": true,
           "parameters": {
             "operation": "getById",
-            "clientSecret": "tQBfYI4aNSldvctm",
+            "clientSecret": "",
             "clientId": "24602",
             "documentId": "10.1007/s11469-020-00429-3"
           },

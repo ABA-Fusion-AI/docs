@@ -1,0 +1,94 @@
+[
+  {
+    "name": "velo payment",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "mf2rljfd7695mfbsdfs5fieg",
+        "position": {
+          "x": 737,
+          "y": 39.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "naver-search",
+          "label": "Naver Search",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search Naver (Korean search engine) using SerpAPI. Returns structured web search results.",
+          "showRunningStatus": true,
+          "parameters": {
+            "where": "web",
+            "apiKey": "9ab761b89567099a9daf51ddb3c4b257f80c6528c46ba46ef1cb4cb2a7f6c374",
+            "query": "두벌식"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "vbnzsy8oqhbs7ltt48otfjy8",
+        "position": {
+          "x": 459,
+          "y": -3.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "vbnzsy8oqhbs7ltt48otfjy8",
+        "sourceHandle": "success",
+        "target": "mf2rljfd7695mfbsdfs5fieg",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__vbnzsy8oqhbs7ltt48otfjy8success-mf2rljfd7695mfbsdfs5fieginput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1788172437966,
+    "updatedAt": 1788173797741,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
