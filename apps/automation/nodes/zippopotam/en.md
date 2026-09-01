@@ -1,12 +1,12 @@
 ---
 node_id: "zippopotam"
 title: "Zippopotam.us"
-description: "Get location and geographic information based on zip or postal codes across 60+ countries."
+description: "Get location and geographic information (city, state, region, latitude, longitude) based on zip or postal codes across 60+ countries."
 category: "Location & Mapping"
 subcategory: "Geocoding & Postal Codes"
 version: "1.0.0"
 language: "en"
-last_updated: "2026-08-26"
+last_updated: "2026-09-01"
 author: "Fusion Team"
 tags:
   - zippopotam
@@ -20,13 +20,18 @@ tags:
   - latitude
   - longitude
   - maps
+  - reverse-geocoding
+  - address-enrichment
 related_nodes:
   - http-request
   - ip-geolocation
+  - address-validator
   - function
   - webhook
+  - google-maps
+  - mapbox
+  - open-street-map
   - slack
-  - discord-bot-send
 ---
 
 <!-- SECTION: header -->
@@ -34,7 +39,7 @@ related_nodes:
 
 > **Category:** Location & Mapping | **Subcategory:** Geocoding & Postal Codes | **Type:** Action Node
 
-Retrieve detailed geographic and location information (city, state, region, latitude, and longitude) from postal codes and country codes worldwide using the free [Zippopotam.us API](http://www.zippopotam.us/).
+Retrieve detailed geographic and location information (city, state, region, ISO country abbreviation, latitude, and longitude) from postal codes and country codes worldwide using the free [Zippopotam.us API](https://www.zippopotam.us/).
 
 <!-- /SECTION: header -->
 
@@ -43,25 +48,72 @@ Retrieve detailed geographic and location information (city, state, region, lati
 <!-- SECTION: overview -->
 ## Overview
 
-The **Zippopotam.us** node allows automated workflows to convert postal or ZIP codes into rich geographic metadata across more than 60 supported countries. It provides instant access to location names, state/province administrative divisions, ISO country abbreviations, and precise GPS coordinates (latitude and longitude).
+The **Zippopotam.us** action node converts international postal and ZIP codes into structured geographic metadata across more than 60 supported countries. With every successful query, the node returns the official city/place name, state or province, administrative division codes, and precise GPS coordinates (latitude and longitude).
 
-Because the Zippopotam.us API is completely free and requires **no API key or registration**, this node is ideal for address verification pipelines, shipping calculation workflows, localized content delivery, CRM address enrichment, and form autofill systems.
+Because the underlying Zippopotam.us API is completely free, open, and requires **no API key or registration**, this node can be instantly integrated into automated pipelines for address autofill, checkout validation, CRM data enrichment, shipping zone calculation, and localized weather dispatching.
 
-### Key Features
+```
+                  ┌────────────────────────┐
+                  │    Trigger / Webhook   │
+                  │  (e.g., Form / Order)  │
+                  └───────────┬────────────┘
+                              │
+                              ▼
+                  ┌────────────────────────┐
+                  │     Zippopotam.us      │
+                  │ country: "FR", zip: "75001" │
+                  └───────────┬────────────┘
+                              │
+            ┌─────────────────┴─────────────────┐
+            │                                   │
+      [success]                           [error]
+            │                                   │
+            ▼                                   ▼
+┌───────────────────────────┐       ┌───────────────────────────┐
+│     Downstream Nodes      │       │     Error Handling        │
+│ • Autofill City / State   │       │ • Fallback Geocoder       │
+│ • Distance / Freight Calc │       │ • Alert / Manual Review   │
+│ • Weather & Route Mapping │       │                           │
+└───────────────────────────┘       └───────────────────────────┘
+```
 
-- **Global Coverage:** Supports postal and ZIP code lookup for 60+ countries (including United States, Canada, United Kingdom, France, Germany, Spain, Italy, Australia, and more).
-- **Precise Geocoordinates:** Returns latitude and longitude coordinates for mapping, distance calculation, and routing workflows.
-- **Zero Configuration / Keyless:** No API keys, subscriptions, or authentication credentials required.
-- **Case-Insensitive:** Automatically normalizes country codes (e.g. `US`, `us`, `Us`).
-- **Dynamic Expression Support:** Easily accept dynamic country codes and postal codes from upstream form triggers, webhooks, or CRM integrations.
-- **Structured Array Output:** Handles multi-location postal codes seamlessly through a structured `places` array.
+### Key Capabilities
+
+- **Global Coverage (60+ Countries):** Supports postal code lookup across North America, Europe, Asia, Latin America, and Oceania (including USA, Canada, UK, France, Germany, Spain, Italy, Australia, and more).
+- **Zero Authentication / Keyless:** No API keys, credentials, or billing setups required. Ready to run out of the box.
+- **Accurate GPS Geocoordinates:** Returns latitude and longitude in decimal degrees for mapping, distance calculations, and proximity routing.
+- **Case-Insensitive Country Codes:** Automatically normalizes country inputs to lowercase (e.g. `US`, `us`, `Us` are all handled identically).
+- **Multi-Place Resolution:** Seamlessly provides all locations and neighborhoods associated with a single postal code inside an array of `places`.
+- **Dynamic Expression Support:** Effortlessly bind upstream form values, webhook payloads, or customer records using expression tokens (e.g., `{{$json.country}}`, `{{$json.zip}}`).
+
+### Supported Countries Reference
+
+Below is a representative sample of popular countries supported by Zippopotam.us:
+
+| Country | Code | Postal Format Example | Example City / Region |
+|---------|:----:|-----------------------|-----------------------|
+| **United States** | `US` | `90210`, `10001` | Beverly Hills, CA / New York, NY |
+| **France** | `FR` | `75001`, `69001` | Paris / Lyon |
+| **Germany** | `DE` | `10115`, `80331` | Berlin / Munich |
+| **Spain** | `ES` | `08001`, `28001` | Barcelona / Madrid |
+| **Italy** | `IT` | `00184`, `20121` | Rome / Milan |
+| **Canada** | `CA` | `M5V`, `H3Z` (First 3 chars / FSA) | Toronto, ON / Montreal, QC |
+| **United Kingdom** | `GB` | `SW1A`, `EC1A` (Outward code) | London, Westminster |
+| **Netherlands** | `NL` | `1012` (4 digits) | Amsterdam |
+| **Belgium** | `BE` | `1000` | Brussels |
+| **Switzerland** | `CH` | `8001` | Zurich |
+| **Austria** | `AT` | `1010` | Vienna |
+| **Australia** | `AU` | `2000` | Sydney, NSW |
+| **Mexico** | `MX` | `01000` | Mexico City |
+| **Brazil** | `BR` | `01000-000` or `01000` | São Paulo |
+| **Japan** | `JP` | `100-0001` or `1000001` | Tokyo |
 
 ### Common Use Cases
 
-- **Checkout & Form Autofill:** Automatically resolve City and State when a user enters their ZIP code on an e-commerce checkout form or lead capture page.
-- **Delivery & Shipping Routing:** Determine geographic regions and calculate logistics zones based on customer postal codes.
-- **Localized Weather & Notifications:** Fetch latitude and longitude from a postal code to trigger local weather alerts or regional marketing campaigns.
-- **CRM Data Enrichment:** Cleanse and standardize customer address data by populating missing city or state fields automatically.
+- **E-Commerce Checkout & Form Autofill:** Automatically populate City and State as soon as the user finishes typing their postal code, reducing checkout friction and typos.
+- **Logistics & Delivery Zone Routing:** Calculate direct geometric distance (via latitude and longitude) between a customer's postal code and the nearest fulfillment warehouse.
+- **Localized Weather & Notifications:** Extract geocoordinates from a user's postal code to query localized forecast APIs and trigger push alerts.
+- **CRM & Lead Data Cleansing:** Standardize inbound customer address records by filling in missing municipal or administrative region data.
 
 <!-- /SECTION: overview -->
 
@@ -70,31 +122,61 @@ Because the Zippopotam.us API is completely free and requires **no API key or re
 <!-- SECTION: configuration -->
 ## Configuration
 
-Configure the Zippopotam.us node by supplying the target country code and postal/ZIP code.
+Configure the Zippopotam.us node in the workflow canvas by setting the target country code and postal/ZIP code.
 
 ![Zippopotam Node Configuration](icon.svg)
 
 ### Parameters
 
 | Parameter | Type | Required | Default | Description |
-|-----------|------|:--------:|:-------:|-------------|
-| `country` | `string` | ✅ Yes | — | Two-letter ISO 3166-1 alpha-2 country code (e.g. `us`, `fr`, `de`, `es`, `ca`, `it`, `gb`). Case-insensitive. |
-| `zip` | `string` | ✅ Yes | — | Postal or ZIP code to search for (e.g. `90210`, `75001`, `10115`, `08001`, `M5V`, `00184`). |
+|-----------|:----:|:--------:|:-------:|-------------|
+| `country` | `string` | ✅ Yes | — | Two-letter ISO 3166-1 alpha-2 country code (e.g. `US`, `FR`, `DE`, `ES`, `CA`, `GB`, `IT`). Case-insensitive. |
+| `zip` | `string` | ✅ Yes | — | Postal or ZIP code to search for (e.g. `90210`, `75001`, `10115`, `08001`, `M5V`). |
 
 ---
 
 ### Detailed Parameter Descriptions
 
 #### `country` (Required)
-The standard two-letter country code for the destination country.
-- Examples: `us` (United States), `fr` (France), `de` (Germany), `es` (Spain), `ca` (Canada), `it` (Italy), `gb` (Great Britain).
-- Case-insensitive: Both uppercase (`US`, `FR`) and lowercase (`us`, `fr`) are accepted.
-- Supports expressions: e.g. `{{$json.country}}` or `{{outputs.Webhook.body.countryCode}}`.
+The standard two-letter ISO 3166-1 alpha-2 country code corresponding to the postal code.
+- **Format:** 2 characters (e.g. `US`, `FR`, `DE`, `CA`, `GB`, `ES`, `IT`, `AU`).
+- **Case Sensitivity:** Completely case-insensitive. The node automatically normalizes values to lowercase before dispatching the request (`US` and `us` behave identically).
+- **Dynamic Expression:** Click the **Expression** button in the node modal to pass dynamic values from upstream nodes, such as `{{$json.country}}` or `{{outputs.Webhook.body.shippingAddress.countryCode}}`.
 
 #### `zip` (Required)
-The postal code or ZIP code to query.
-- Examples: `90210` (Beverly Hills), `10001` (New York), `75001` (Paris), `10115` (Berlin), `M5V` (Toronto).
-- Supports expressions: e.g. `{{$json.postalCode}}` or `{{outputs.Function.zip}}`.
+The postal or ZIP code to look up.
+- **Format:** Standard postal code format for the specified country (e.g., `90210`, `75001`, `10115`, `08001`).
+- **Country Specific Rules:**
+  - **United States:** Standard 5-digit ZIP code (e.g. `90210`, `10001`, `02138`).
+  - **Canada:** Use the 3-character Forward Sortation Area (FSA), e.g. `M5V`, `H3Z`, `V6B`.
+  - **United Kingdom:** Use the outward code (first half of the postal code), e.g. `SW1A`, `EC1A`, `OX1`.
+  - **Leading Zeros:** Ensure leading zeros are preserved as strings (e.g. `"00184"` for Rome, `"08001"` for Barcelona, `"01001"` for Agawam, MA).
+- **Dynamic Expression:** Supports dynamic expressions such as `{{$json.zip}}` or `{{outputs.FormTrigger.data.postal_code}}`.
+
+---
+
+### Static vs Expression Mode
+
+The node supports both static text entries and dynamic expressions:
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│ Parameters                                                  │
+│                                                             │
+│ Country                                         [Expression]│
+│ ┌─────────────────────────────────────────────────────────┐ │
+│ │ {{$json.country}}                                       │ │
+│ └─────────────────────────────────────────────────────────┘ │
+│                                                             │
+│ Zip                                             [Expression]│
+│ ┌─────────────────────────────────────────────────────────┐ │
+│ │ {{$json.postalCode}}                                    │ │
+│ └─────────────────────────────────────────────────────────┘ │
+└─────────────────────────────────────────────────────────────┘
+```
+
+- **Static Mode:** Type fixed strings directly (e.g., `FR` in Country and `75001` in Zip).
+- **Expression Mode:** Click **Expression** to bind incoming workflow attributes. The node resolves the expression at runtime before querying the API.
 
 <!-- /SECTION: configuration -->
 
@@ -106,35 +188,35 @@ The postal code or ZIP code to query.
 ### Inputs
 
 | Input | Type | Description |
-|-------|------|-------------|
-| `input` | `any` | Incoming workflow trigger or data payload that initiates the lookup. |
+|-------|:----:|-------------|
+| `input` | `any` | Incoming event payload or trigger data that activates the node. Upstream fields can be referenced via expressions in the node parameters. |
 
 ### Outputs
 
 | Output | Type | Description |
-|--------|------|-------------|
-| `success` | `object` | Emitted when the postal code lookup succeeds. Contains geographic and place metadata. |
-| `error` | `Error` | Emitted when the postal code is not found (404) or when required parameters are missing. |
+|--------|:----:|-------------|
+| `success` | `object` | Emitted when the postal code is successfully resolved. Contains the country metadata and an array of matching place records with coordinates. |
+| `error` | `Error` | Emitted if the postal code is not found (404), if parameters are missing, or if an upstream network error occurs. |
 
 ---
 
 ### Output Data Structure Example
 
-When querying `country: "US"` and `zip: "90210"`:
+When querying `country: "FR"` and `zip: "75001"`:
 
 ```json
 {
   "success": true,
-  "country": "United States",
-  "country_abbreviation": "US",
-  "post_code": "90210",
+  "country": "France",
+  "country_abbreviation": "FR",
+  "post_code": "75001",
   "places": [
     {
-      "place_name": "Beverly Hills",
-      "longitude": "-118.4065",
-      "latitude": "34.0901",
-      "state": "California",
-      "state_abbreviation": "CA"
+      "place_name": "Paris 01 Louvre",
+      "longitude": "2.3417",
+      "latitude": "48.8604",
+      "state": "Île-de-France",
+      "state_abbreviation": "11"
     }
   ],
   "total_places": 1
@@ -145,19 +227,39 @@ When querying `country: "US"` and `zip: "90210"`:
 
 ### Output Field Reference
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `success` | `boolean` | Indicates whether the postal code query was successfully resolved (`true`). |
-| `country` | `string` | Full name of the queried country (e.g. `"United States"`, `"France"`, `"Germany"`). |
-| `country_abbreviation` | `string` | Official two-letter ISO country code (e.g. `"US"`, `"FR"`, `"DE"`). |
-| `post_code` | `string` | The postal code that was queried (e.g. `"90210"`, `"75001"`). |
-| `places` | `array` | Array of locations associated with this postal code. |
-| `places[].place_name` | `string` | City, district, or town name (e.g. `"Beverly Hills"`, `"Paris 01 Louvre"`). |
-| `places[].state` | `string` | State, province, or region name (e.g. `"California"`, `"Île-de-France"`, `"Ontario"`). |
-| `places[].state_abbreviation` | `string` | State or administrative code (e.g. `"CA"`, `"NY"`, `"ON"`, `"BE"`). |
-| `places[].latitude` | `string` | Geographic latitude in decimal degrees (e.g. `"34.0901"`). |
-| `places[].longitude` | `string` | Geographic longitude in decimal degrees (e.g. `"-118.4065"`). |
-| `total_places` | `number` | Total count of places returned in the `places` array. |
+| Field | Type | Description | Example |
+|-------|:----:|-------------|---------|
+| `success` | `boolean` | Indicates that the query was successfully executed. | `true` |
+| `country` | `string` | Full name of the queried country. | `"France"`, `"United States"` |
+| `country_abbreviation` | `string` | Official 2-letter uppercase ISO country code. | `"FR"`, `"US"`, `"DE"` |
+| `post_code` | `string` | The postal/ZIP code that was queried. | `"75001"`, `"90210"` |
+| `places` | `array` | List of places/neighborhoods associated with this postal code. | `[...]` |
+| `places[i].place_name` | `string` | City, district, or municipality name. | `"Paris 01 Louvre"`, `"Beverly Hills"` |
+| `places[i].state` | `string` | State, province, or primary administrative region. | `"Île-de-France"`, `"California"` |
+| `places[i].state_abbreviation` | `string` | State, province, or departmental abbreviation. | `"11"`, `"CA"`, `"BY"` |
+| `places[i].latitude` | `string` | Latitude coordinate in decimal degrees. | `"48.8604"`, `"34.0901"` |
+| `places[i].longitude` | `string` | Longitude coordinate in decimal degrees. | `"2.3417"`, `"-118.4065"` |
+| `total_places` | `number` | Count of records in the `places` array. | `1` |
+
+---
+
+### Consuming Output Data in Downstream Nodes
+
+You can directly access any field in subsequent workflow nodes using standard expression syntax:
+
+| Desired Data | Expression Syntax | Result Example |
+|--------------|-------------------|----------------|
+| **City / Place Name** | `{{$json.places[0].place_name}}` | `"Paris 01 Louvre"` |
+| **State / Province** | `{{$json.places[0].state}}` | `"Île-de-France"` |
+| **State Abbreviation** | `{{$json.places[0].state_abbreviation}}` | `"11"` |
+| **Latitude** | `{{$json.places[0].latitude}}` | `"48.8604"` |
+| **Longitude** | `{{$json.places[0].longitude}}` | `"2.3417"` |
+| **Country Name** | `{{$json.country}}` | `"France"` |
+| **Numeric Latitude** | `{{parseFloat($json.places[0].latitude)}}` | `48.8604` |
+| **Numeric Longitude** | `{{parseFloat($json.places[0].longitude)}}` | `2.3417` |
+
+> [!TIP]
+> **Handling Multiple Places:** Some postal codes cover multiple towns or districts. To get the primary location, access index `0` via `places[0]`. To process all returned locations, connect the node to a **For Each** or **Function** node.
 
 <!-- /SECTION: inputs-outputs -->
 
@@ -168,13 +270,13 @@ When querying `country: "US"` and `zip: "90210"`:
 
 ### Example 1: United States ZIP Code (Beverly Hills)
 
-Look up geographic data for Beverly Hills, California:
+Look up geographic data for Beverly Hills, California (`90210`):
 
 **Configuration:**
-- **Country:** `us`
+- **Country:** `US`
 - **Zip:** `90210`
 
-**Output:**
+**Output (`success`):**
 ```json
 {
   "success": true,
@@ -196,53 +298,171 @@ Look up geographic data for Beverly Hills, California:
 
 ---
 
-### Example 2: France Postal Code (Paris)
+### Example 2: France Postal Code (Paris Louvre)
 
-Retrieve district and coordinates for Paris, France:
+Retrieve municipal district and GPS coordinates for Paris, France:
 
 **Configuration:**
-- **Country:** `fr`
+- **Country:** `FR`
 - **Zip:** `75001`
+
+**Output (`success`):**
+```json
+{
+  "success": true,
+  "country": "France",
+  "country_abbreviation": "FR",
+  "post_code": "75001",
+  "places": [
+    {
+      "place_name": "Paris 01 Louvre",
+      "longitude": "2.3417",
+      "latitude": "48.8604",
+      "state": "Île-de-France",
+      "state_abbreviation": "11"
+    }
+  ],
+  "total_places": 1
+}
+```
 
 ---
 
-### Example 3: Germany Postal Code (Berlin)
+### Example 3: Germany Postal Code (Berlin Mitte)
 
-Look up city and administrative region for Berlin, Germany:
+Look up city, state, and coordinates for central Berlin:
 
 **Configuration:**
 - **Country:** `de`
 - **Zip:** `10115`
 
+**Output (`success`):**
+```json
+{
+  "success": true,
+  "country": "Germany",
+  "country_abbreviation": "DE",
+  "post_code": "10115",
+  "places": [
+    {
+      "place_name": "Berlin",
+      "longitude": "13.3889",
+      "latitude": "52.5323",
+      "state": "Berlin",
+      "state_abbreviation": "BE"
+    }
+  ],
+  "total_places": 1
+}
+```
+
 ---
 
-### Example 4: Spain Postal Code (Barcelona)
+### Example 4: Canada Postal Code (Toronto Downtown)
 
-Retrieve municipality metadata for Barcelona, Spain:
-
-**Configuration:**
-- **Country:** `es`
-- **Zip:** `08001`
-
----
-
-### Example 5: Canada Postal Code (Toronto)
-
-Look up location information for a Canadian postal code area:
+Look up location information for Canadian Forward Sortation Area `M5V`:
 
 **Configuration:**
-- **Country:** `ca`
+- **Country:** `CA`
 - **Zip:** `M5V`
 
+**Output (`success`):**
+```json
+{
+  "success": true,
+  "country": "Canada",
+  "country_abbreviation": "CA",
+  "post_code": "M5V",
+  "places": [
+    {
+      "place_name": "Downtown Toronto (CN Tower / King and Spadina)",
+      "longitude": "-79.3957",
+      "latitude": "43.6426",
+      "state": "Ontario",
+      "state_abbreviation": "ON"
+    }
+  ],
+  "total_places": 1
+}
+```
+
 ---
 
-### Example 6: Dynamic Postal Code Resolution from Upstream Node
+### Example 5: Spain Postal Code (Barcelona)
 
-Receive address data dynamically from an upstream webhook or function:
+Retrieve municipal district data for central Barcelona:
 
 **Configuration:**
-- **Country:** `{{$json.country}}`
-- **Zip:** `{{$json.zip}}`
+- **Country:** `ES`
+- **Zip:** `08001`
+
+**Output (`success`):**
+```json
+{
+  "success": true,
+  "country": "Spain",
+  "country_abbreviation": "ES",
+  "post_code": "08001",
+  "places": [
+    {
+      "place_name": "Barcelona",
+      "longitude": "2.1701",
+      "latitude": "41.3818",
+      "state": "Cataluna",
+      "state_abbreviation": "CT"
+    }
+  ],
+  "total_places": 1
+}
+```
+
+---
+
+### Example 6: Dynamic Lookup from Inbound Webhook
+
+Receive dynamic address payload from an upstream webhook or checkout form:
+
+**Upstream Webhook Payload:**
+```json
+{
+  "orderId": "ORD-55421",
+  "customer": {
+    "name": "Jane Doe",
+    "countryCode": "US",
+    "zipCode": "94103"
+  }
+}
+```
+
+**Node Configuration:**
+- **Country:** `{{$json.customer.countryCode}}`
+- **Zip:** `{{$json.customer.zipCode}}`
+
+**Downstream Usage in Function Node (Distance Calculation):**
+```javascript
+// Calculate distance to fulfillment center in San Jose (37.3382, -121.8863)
+const destLat = parseFloat(input.places[0].latitude);
+const destLng = parseFloat(input.places[0].longitude);
+const centerLat = 37.3382;
+const centerLng = -121.8863;
+
+const R = 6371; // Earth radius in km
+const dLat = (destLat - centerLat) * Math.PI / 180;
+const dLng = (destLng - centerLng) * Math.PI / 180;
+const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+          Math.cos(centerLat * Math.PI / 180) * Math.cos(destLat * Math.PI / 180) *
+          Math.sin(dLng/2) * Math.sin(dLng/2);
+const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+const distanceKm = R * c;
+
+return {
+  orderId: input.orderId,
+  city: input.places[0].place_name,
+  state: input.places[0].state_abbreviation,
+  deliveryDistanceKm: Math.round(distanceKm * 100) / 100,
+  shippingFee: distanceKm > 50 ? 15.00 : 5.00
+};
+```
 
 <!-- /SECTION: examples -->
 
@@ -260,9 +480,40 @@ title: Lookup geographic location and coordinates using Zippopotam.us
 
 ### Common Architecture Patterns
 
-- **Address Autofill Pipeline:** Form Submission Trigger → Zippopotam.us (`country: input.country`, `zip: input.postalCode`) → Update CRM Record (Set `city: places[0].place_name`, `state: places[0].state`).
-- **Geo-Distance & Routing:** Webhook (Order Created) → Zippopotam.us → Function (Calculate distance to nearest fulfillment warehouse via latitude/longitude) → Assign Carrier.
-- **Local Weather Integration:** User Chat Trigger → Zippopotam.us → Weather API (Pass `latitude` and `longitude`) → Reply with Local Forecast.
+#### Pattern 1: E-Commerce Address Autofill & Validation
+```text
+[Form Submission Trigger]
+          ↓
+[Zippopotam.us] (country: input.country, zip: input.postalCode)
+          ↓
+[Function: Verify State / City Match]
+    ├── (Match) ──> [Database / Order Created]
+    └── (Mismatch) ──> [Prompt User to Confirm City]
+```
+
+#### Pattern 2: Proximity Routing & Freight Zone Assignment
+```text
+[Shopify Order Webhook]
+          ↓
+[Zippopotam.us] (Lookup Customer Postal Coordinates)
+          ↓
+[Function: Haversine Distance to Warehouses]
+          ↓
+[Branch by Zone]
+    ├── Zone 1 (< 50 km)  ──> [Assign Local Same-Day Courier]
+    └── Zone 2 (>= 50 km) ──> [Generate National Freight Label]
+```
+
+#### Pattern 3: Localized Weather Forecast Notification
+```text
+[User Chat Trigger / Telegram Bot] (User sends ZIP)
+          ↓
+[Zippopotam.us] (Get Latitude & Longitude)
+          ↓
+[HTTP Request / Open-Meteo API] (lat: places[0].latitude, lon: places[0].longitude)
+          ↓
+[Slack / Discord / SMS] (Send Daily Local Weather Summary)
+```
 
 <!-- /SECTION: workflow-example -->
 
@@ -271,37 +522,59 @@ title: Lookup geographic location and coordinates using Zippopotam.us
 <!-- SECTION: troubleshooting -->
 ## Troubleshooting
 
-### Common Issues
+### Common Issues & Solutions
 
-#### `Zippopotam.us request failed: Postal code not found`
-- **Cause:** The postal code does not exist in the specified country's postal registry, or the country code is unsupported.
-- **Solution:** Verify that the two-letter country code is valid (e.g. `us`, `ca`, `fr`, `de`, `es`, `it`). Ensure the postal code format matches the country's postal standard.
+#### 1. `Zippopotam.us request failed: Postal code not found`
+- **Cause:** The requested postal code does not exist in the Zippopotam database for that country, or the country code is invalid/unsupported.
+- **Solutions:**
+  - Verify that the country code is an ISO 3166-1 alpha-2 code (e.g. `US`, `FR`, `DE`, `CA`, `GB`, `ES`, `IT`).
+  - For **Canada**, verify you are passing the 3-character Forward Sortation Area (e.g. `M5V` instead of full `M5V 2H1`).
+  - For the **United Kingdom**, verify you are passing the outward code (e.g. `SW1A` or `EC1A`).
+  - Check for accidental leading or trailing whitespace in expression inputs (use `.trim()` if needed).
 
-#### `Country code and zip code are required`
-- **Cause:** One or both parameters (`country`, `zip`) were left blank or evaluated to an empty string.
-- **Solution:** Provide both the two-letter country code and the postal code in the node configuration or expression.
+#### 2. `Country code and zip code are required`
+- **Cause:** One or both parameters (`country`, `zip`) were evaluated as empty strings, `null`, or `undefined`.
+- **Solutions:**
+  - Check upstream node outputs to ensure the fields exist before triggering the Zippopotam node.
+  - Set default fallback values in expressions: `{{$json.country || 'US'}}` and `{{$json.zip || '90210'}}`.
+
+#### 3. Leading Zeros Stripped from Postal Codes
+- **Cause:** Upstream JSON parsers or numerical conversions converted strings like `"00184"` or `"08001"` to numbers (`184` or `8001`).
+- **Solutions:**
+  - Keep postal codes formatted as strings throughout your workflow.
+  - In a Function node, pad numbers if necessary: `String(input.zip).padStart(5, '0')`.
 
 ---
 
-### Error Reference
+### Error Reference Table
 
-| Error Message | Cause | Solution |
-|---------------|-------|----------|
-| `Postal code not found` | The postal code does not exist in the database (HTTP 404) | Double check postal code spelling and country code |
-| `Country code and zip code are required` | Required parameter is missing | Ensure both `country` and `zip` parameters are supplied |
-| `Zippopotam.us API error: 500` | Temporary upstream API server issue | Retry the workflow request |
+| Error Message | Cause | Resolution |
+|---------------|-------|------------|
+| `Zippopotam.us request failed: Postal code not found` | HTTP 404 — Postal code does not exist in the country registry | Double-check country code and postal code format. Ensure Canadian/UK postal codes use outward format. |
+| `Country code and zip code are required` | Required parameter is missing or empty | Provide both `country` and `zip` in node parameters or expressions. |
+| `Zippopotam.us request failed: Zippopotam.us API error: 500` | Temporary upstream server issue at zippopotam.us | Configure workflow retry policy or add fallback geocoding node. |
+| `Zippopotam.us request failed: TypeError: fetch failed` | Network connection timeout or DNS resolution failure | Verify network connectivity from the workflow runner. |
+
+---
+
+### Best Practices
+
+- **Validate Input Existence:** When accepting user input from forms, verify that the country and postal code fields are populated before invoking the node.
+- **Route Errors with the Error Handle:** Wire the red `error` output port to a fallback geocoding service (e.g., [HTTP Request](../http-request/en.md) or [IP Geolocation](../ip-geolocation/en.md)) to maintain high availability.
+- **Parse Coordinates for Math:** Because latitude and longitude are returned as strings (e.g. `"48.8604"`), convert them with `parseFloat()` before doing mathematical distance comparisons.
 
 <!-- /SECTION: troubleshooting -->
 
 ---
 
 <!-- SECTION: related -->
-## Related
+## Related Nodes
 
-- [IP Geolocation](../ip-geolocation/en.md) — Identify user location and timezone from IP address
-- [HTTP Request](../http-request/en.md) — Make custom API calls to external geocoding providers
-- [Function](../function/en.md) — Transform and manipulate address coordinates
-- [Webhook](../webhook/en.md) — Receive incoming postal code requests from web forms
+- [IP Geolocation](../ip-geolocation/en.md) — Identify location, city, and coordinates from IP addresses
+- [Address Validator](../address-validator/en.md) — Validate and standardize street address records
+- [HTTP Request](../http-request/en.md) — Query custom external geocoding and mapping APIs
+- [Function](../function/en.md) — Transform coordinates, calculate distances, and structure address payloads
+- [Webhook](../webhook/en.md) — Ingest inbound postal code requests from web forms and e-commerce platforms
 
 <!-- /SECTION: related -->
 
@@ -311,7 +584,8 @@ title: Lookup geographic location and coordinates using Zippopotam.us
 ## Changelog
 
 | Version | Date | Changes |
-|---------|------|---------|
-| 1.0.0 | 2026-08-26 | Initial release of Zippopotam.us Geocoding Action Node |
+|:-------:|:----:|---------|
+| `1.0.0` | 2026-09-01 | Comprehensive documentation update with parameter guides, supported countries reference, expression usage, distance calculation patterns, and troubleshooting. |
+| `1.0.0` | 2026-08-26 | Initial release of Zippopotam.us Geocoding Action Node. |
 
 <!-- /SECTION: changelog -->
