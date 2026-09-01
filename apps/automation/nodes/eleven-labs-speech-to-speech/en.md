@@ -2,7 +2,7 @@
 node_id: "eleven-labs-speech-to-speech"
 title: "Eleven Labs: Speech to Speech"
 description: "Convert an audio recording from one voice to another using the ElevenLabs voice-conversion API."
-category: "Generative AI & LLMs"
+category: "Generative AI & LLMs "
 subcategory: "Multimodal AI"
 version: "1.0.0"
 language: "en"
