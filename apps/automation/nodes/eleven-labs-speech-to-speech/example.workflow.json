@@ -1,0 +1,138 @@
+[
+  {
+    "name": "test-eleven-labs-speech-to-speech",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "l33eiv3pdyhx9fbshv718hzv",
+        "position": {
+          "x": 357,
+          "y": 246
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "eleven-labs-speech-to-speech",
+          "label": "Eleven Labs: Speech to Speech",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert speech to speech (voice conversion) using Eleven Labs API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "apiKey": "sk_c9367483a47c3002c918846a0c4b3da18ede021e17b180f5",
+            "voiceId": "JBFqnCBsd6RMkjVDRZzb",
+            "audioUrl": "https://raw.githubusercontent.com/voxserv/audio_quality_testing_samples/master/testaudio/44100/test01_20s.wav"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "xaprswg0x8lc257xiwm58swx",
+        "position": {
+          "x": 192,
+          "y": 271
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "rk2c7h7on0amrphaddeq3i9l",
+        "position": {
+          "x": 572,
+          "y": 373
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "xaprswg0x8lc257xiwm58swx",
+        "sourceHandle": "success",
+        "target": "l33eiv3pdyhx9fbshv718hzv",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__xaprswg0x8lc257xiwm58swxsuccess-l33eiv3pdyhx9fbshv718hzvinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "l33eiv3pdyhx9fbshv718hzv",
+        "sourceHandle": "success",
+        "target": "rk2c7h7on0amrphaddeq3i9l",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__l33eiv3pdyhx9fbshv718hzvsuccess-rk2c7h7on0amrphaddeq3i9linput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1788261328099,
+    "updatedAt": 1788261380090,
+    "publishedNames": []
+  }
+]
