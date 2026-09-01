@@ -1,97 +1,126 @@
-{
-  "name": "Execute a GraphQL request",
-  "nodes": [
-    {
-      "id": "trigger",
-      "type": "trigger",
-      "position": {
-        "x": 80,
-        "y": 160
-      },
-      "width": 64,
-      "height": 64,
-      "data": {
-        "name": "manual-trigger",
-        "label": "Manual Trigger",
-        "inputs": {},
-        "outputs": {
-          "success": {
-            "label": "Success"
-          },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "graphql",
-      "type": "action",
-      "position": {
-        "x": 260,
-        "y": 160
-      },
-      "width": 64,
-      "height": 64,
-      "data": {
-        "name": "graphql",
-        "label": "GraphQL",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+[
+  {
+    "name": "GraphQL Example",
+    "nodes": [
+      {
+        "id": "rrq89syw0wpqn20n5zm6q1f1",
+        "position": {
+          "x": 658.5,
+          "y": 519.5
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
           },
-          "error": {
-            "label": "Error"
-          }
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {}
         }
-      }
-    },
-    {
-      "id": "out",
-      "type": "display",
-      "position": {
-        "x": 440,
-        "y": 140
       },
-      "width": 256,
-      "height": 100,
-      "data": {
-        "name": "log",
-        "label": "Result",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+      {
+        "id": "ql69g91a0m4gvjjt8l008mo7",
+        "position": {
+          "x": 301.5,
+          "y": 495.5
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "z0jzwz8mnrqgxmrk7jifg6xn",
+        "position": {
+          "x": 455.5,
+          "y": 506.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "graphql",
+          "label": "GraphQL",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Execute GraphQL queries and mutations. Supports both JSON and GraphQL request formats.",
+          "showRunningStatus": true,
+          "parameters": {
+            "httpMethod": "POST",
+            "requestFormat": "json",
+            "responseFormat": "json",
+            "endpointUrl": "https://countries.trevorblades.com/",
+            "query": "query GetCountry($code: ID!) {   country(code: $code) {     name     capital     currency   } }",
+            "variables": "{\"code\":\"IT\"}",
+            "operationName": "GetCountry"
           }
         }
       }
-    }
-  ],
-  "connections": [
-    {
-      "id": "xy-edge__triggersuccess-graphqlinput",
-      "type": "directed",
-      "source": "trigger",
-      "target": "graphql",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    },
-    {
-      "id": "xy-edge__graphqlsuccess-outinput",
-      "type": "directed",
-      "source": "graphql",
-      "target": "out",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    }
-  ]
-}
+    ],
+    "connections": [
+      {
+        "source": "ql69g91a0m4gvjjt8l008mo7",
+        "sourceHandle": "success",
+        "target": "z0jzwz8mnrqgxmrk7jifg6xn",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ql69g91a0m4gvjjt8l008mo7success-z0jzwz8mnrqgxmrk7jifg6xninput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "z0jzwz8mnrqgxmrk7jifg6xn",
+        "sourceHandle": "success",
+        "target": "rrq89syw0wpqn20n5zm6q1f1",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__z0jzwz8mnrqgxmrk7jifg6xnsuccess-rrq89syw0wpqn20n5zm6q1f1input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "version": 1,
+    "secrets": {}
+  }
+]
