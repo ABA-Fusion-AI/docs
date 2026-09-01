@@ -1,0 +1,184 @@
+[
+  {
+    "name": "xmps",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "y5y8mfvyho5luw4jmkfmx8s0",
+        "position": {
+          "x": 1044,
+          "y": -57.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "vimeo-get-thumbnails",
+          "label": "Vimeo Get Thumbnails",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get Vimeo video thumbnails. Tries oEmbed API first (no auth), then falls back to Vimeo API if token provided.",
+          "showRunningStatus": true,
+          "parameters": {
+            "thumbnailSize": "all",
+            "videoUrl": "https://vimeo.com/1209896622?fl=pl&fe=sh"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "bwekugdhp7258y91qg1t1d0k",
+        "position": {
+          "x": 1037,
+          "y": 82.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "vimeo-get-transcript",
+          "label": "Vimeo Get Transcript",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get Vimeo video transcript/captions. Requires access token for Vimeo API (texttracks endpoint).",
+          "showRunningStatus": true,
+          "parameters": {
+            "outputFormat": "text",
+            "videoUrl": "https://vimeo.com/1209896622?fl=pl&fe=sh"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "acm5j5j7acs2rmr3s71fjf8z",
+        "position": {
+          "x": 1044,
+          "y": 206.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "vimeo-get-video",
+          "label": "Vimeo Get Video",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get Vimeo video details. Tries oEmbed API first (no auth), then falls back to Vimeo API if token provided.",
+          "showRunningStatus": true,
+          "parameters": {
+            "videoUrl": "https://vimeo.com/1209896622?fl=pl&fe=sh"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ko8dpms49yxtn4jr6qjcod52",
+        "position": {
+          "x": 720,
+          "y": -12.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "ko8dpms49yxtn4jr6qjcod52",
+        "sourceHandle": "success",
+        "target": "y5y8mfvyho5luw4jmkfmx8s0",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ko8dpms49yxtn4jr6qjcod52success-y5y8mfvyho5luw4jmkfmx8s0input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ko8dpms49yxtn4jr6qjcod52",
+        "sourceHandle": "success",
+        "target": "bwekugdhp7258y91qg1t1d0k",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ko8dpms49yxtn4jr6qjcod52success-bwekugdhp7258y91qg1t1d0kinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ko8dpms49yxtn4jr6qjcod52",
+        "sourceHandle": "success",
+        "target": "acm5j5j7acs2rmr3s71fjf8z",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ko8dpms49yxtn4jr6qjcod52success-acm5j5j7acs2rmr3s71fjf8zinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1788256146247,
+    "updatedAt": 1788256950423,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
