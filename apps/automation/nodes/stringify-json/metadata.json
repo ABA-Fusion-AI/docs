@@ -1,0 +1,4 @@
+{
+  "label": "Stringify JSON",
+  "description": "Convert data to a JSON string with optional indentation."
+}
