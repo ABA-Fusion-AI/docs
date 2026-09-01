@@ -1,0 +1,147 @@
+[
+  {
+    "name": "test-Eleven Labs: Text to Speech",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "pkvspzngtgn9dtg5xvn89flj",
+        "position": {
+          "x": 211,
+          "y": 223
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "eleven-labs-text-to-speech",
+          "label": "Eleven Labs: Text to Speech",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert text to speech using Eleven Labs API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "applyTextNormalization": "on",
+            "outputFormat": "mp3_44100_128",
+            "apiKey": "tap your Eleven Labs API key here",
+            "voiceId": "JBFqnCBsd6RMkjVDRZzb",
+            "text": "Votre rendez-vous est confirmé pour le 15 septembre 2026 à 14 heures 30. Le montant total est de 1 250 euros.",
+            "voiceSettings": {
+              "stability": 0.45,
+              "similarity_boost": 1,
+              "style": 0,
+              "use_speaker_boost": true,
+              "speed": 0.7
+            },
+            "nextText": "Merci pour votre confiance et à bientôt.",
+            "enableLogging": true
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "ln3no2bosymn5ptlsqpdal6b",
+        "position": {
+          "x": -40,
+          "y": 271
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "t4h4ua8to6drx5f6hjoko0zh",
+        "position": {
+          "x": 427,
+          "y": 267
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "ln3no2bosymn5ptlsqpdal6b",
+        "sourceHandle": "success",
+        "target": "pkvspzngtgn9dtg5xvn89flj",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ln3no2bosymn5ptlsqpdal6bsuccess-pkvspzngtgn9dtg5xvn89fljinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "pkvspzngtgn9dtg5xvn89flj",
+        "sourceHandle": "success",
+        "target": "t4h4ua8to6drx5f6hjoko0zh",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__pkvspzngtgn9dtg5xvn89fljsuccess-t4h4ua8to6drx5f6hjoko0zhinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1788275336832,
+    "updatedAt": 1788275392273,
+    "publishedNames": []
+  }
+]
