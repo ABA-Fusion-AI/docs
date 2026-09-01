@@ -1,0 +1,121 @@
+[
+  {
+    "name": "MyVariant.info Example",
+    "nodes": [
+      {
+        "id": "rrq89syw0wpqn20n5zm6q1f1",
+        "position": {
+          "x": 658.5,
+          "y": 519.5
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "ql69g91a0m4gvjjt8l008mo7",
+        "position": {
+          "x": 301.5,
+          "y": 495.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "ei6vgc58j5irmo2tayew65hk",
+        "position": {
+          "x": 447.5,
+          "y": 516.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "my-variant",
+          "label": "MyVariant.info",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "MyVariant.info API - Genetic variant query web services. Search and retrieve variant annotations from multiple databases.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "queryGet",
+            "q": "rs58991260"
+          }
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "ql69g91a0m4gvjjt8l008mo7",
+        "sourceHandle": "success",
+        "target": "ei6vgc58j5irmo2tayew65hk",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ql69g91a0m4gvjjt8l008mo7success-ei6vgc58j5irmo2tayew65hkinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ei6vgc58j5irmo2tayew65hk",
+        "sourceHandle": "success",
+        "target": "rrq89syw0wpqn20n5zm6q1f1",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ei6vgc58j5irmo2tayew65hksuccess-rrq89syw0wpqn20n5zm6q1f1input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "version": 1,
+    "secrets": {}
+  }
+]
