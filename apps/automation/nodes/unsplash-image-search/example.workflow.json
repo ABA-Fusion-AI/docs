@@ -1,0 +1,446 @@
+[
+    {
+        "name": "Customer Messenger  n8n Training",
+        "variables": {},
+        "secrets": {},
+        "nodes": [
+            {
+                "id": "cq5ib7tv0p330kx5ef2hy02t",
+                "position": {
+                    "x": 609.2658464052638,
+                    "y": 199.82901826762304
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "unsplash-image-search",
+                    "label": "Unsplash Image Search",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Search for free stock images from Unsplash.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "apiKey": "",
+                        "query": "cyberpunk neon city"
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "optlojn750fg8k25jrdn7wm4",
+                "position": {
+                    "x": 459.36071107815076,
+                    "y": 157.90152831023124
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "hwequr6blqizqvan7otng54z",
+                "position": {
+                    "x": 588.5158464052638,
+                    "y": 388.57901826762304
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "unsplash-image-search",
+                    "label": "Unsplash Image Search1",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Search for free stock images from Unsplash.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "apiKey": "",
+                        "query": "sunset over ocean waves",
+                        "perPage": 1
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "gd9b6u76yvnp52w80kiyzji6",
+                "position": {
+                    "x": 457.61071107815076,
+                    "y": 323.15152831023124
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger1",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "ctgge3oias960v37m2oipaoo",
+                "position": {
+                    "x": 593.6408464052638,
+                    "y": 498.829003008834
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "unsplash-image-search",
+                    "label": "Unsplash Image Search2",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Search for free stock images from Unsplash.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "apiKey": "",
+                        "query": "sunset over ocean waves",
+                        "perPage": 50
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "dwiayp79fap3pck70a07vfzf",
+                "position": {
+                    "x": 455.73571107815076,
+                    "y": 468.9015130514422
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger2",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "xa136jfexyky2cxyymi73rsd",
+                "position": {
+                    "x": 603.8908464052638,
+                    "y": 676.079003008834
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "unsplash-image-search",
+                    "label": "Unsplash Image Search2",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Search for free stock images from Unsplash.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "apiKey": "",
+                        "query": "coffee & croissant vintage",
+                        "perPage": 3
+                    },
+                    "_morphing": false
+                },
+                "selected": true
+            },
+            {
+                "id": "cw33zrgvlsilptc6j3i45o77",
+                "position": {
+                    "x": 477.98571107815076,
+                    "y": 658.1515130514422
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger2",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "inyef3eijebkyi55idpxgybm",
+                "position": {
+                    "x": 657.7658464052638,
+                    "y": 872.454003008834
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "unsplash-image-search",
+                    "label": "Unsplash Image Search3",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Search for free stock images from Unsplash.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "query": {
+                            "$expr": "output",
+                            "node": "Function",
+                            "outputId": "success",
+                            "path": "query"
+                        },
+                        "apiKey": ""
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "r078o2t77ytlsqrwofw3gw2m",
+                "position": {
+                    "x": 402.86071107815076,
+                    "y": 842.5265130514422
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger3",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "ngs78pgve5r5grwqfsjvfi6o",
+                "position": {
+                    "x": 536.8132787417073,
+                    "y": 843.9902580301381
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "function",
+                    "label": "Function",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Executes custom JavaScript code on the input data.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "code": "// Write your code here\nreturn {\n  \"query\":\"futuristic supercar\"\n};"
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            }
+        ],
+        "connections": [
+            {
+                "source": "optlojn750fg8k25jrdn7wm4",
+                "sourceHandle": "success",
+                "target": "cq5ib7tv0p330kx5ef2hy02t",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__optlojn750fg8k25jrdn7wm4success-cq5ib7tv0p330kx5ef2hy02tinput",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false
+            },
+            {
+                "source": "gd9b6u76yvnp52w80kiyzji6",
+                "sourceHandle": "success",
+                "target": "hwequr6blqizqvan7otng54z",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "qw4dyq0r7i83yakhh0p8wq7u",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false
+            },
+            {
+                "source": "dwiayp79fap3pck70a07vfzf",
+                "sourceHandle": "success",
+                "target": "ctgge3oias960v37m2oipaoo",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "y661bzw6gc0geh235ic12qrm",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false
+            },
+            {
+                "source": "cw33zrgvlsilptc6j3i45o77",
+                "sourceHandle": "success",
+                "target": "xa136jfexyky2cxyymi73rsd",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "tfdhb6fbwtkgvfxwtua7dhrq",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false
+            },
+            {
+                "source": "r078o2t77ytlsqrwofw3gw2m",
+                "sourceHandle": "success",
+                "target": "ngs78pgve5r5grwqfsjvfi6o",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__r078o2t77ytlsqrwofw3gw2msuccess-ngs78pgve5r5grwqfsjvfi6oinput",
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "ngs78pgve5r5grwqfsjvfi6o",
+                "sourceHandle": "success",
+                "target": "inyef3eijebkyi55idpxgybm",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__ngs78pgve5r5grwqfsjvfi6osuccess-inyef3eijebkyi55idpxgybminput",
+                "data": {
+                    "isAnimated": false
+                }
+            }
+        ],
+        "status": "stopped",
+        "tracingEnabled": true,
+        "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+        "version": 1,
+        "createdAt": 1788271074491,
+        "updatedAt": 1788275025919,
+        "publishedNames": [],
+        "previousStatus": "running"
+    }
+]
