@@ -1,0 +1,4 @@
+{
+  "label": "CoAP Server",
+  "description": "Listen for incoming CoAP requests and trigger workflows when messages are received."
+}

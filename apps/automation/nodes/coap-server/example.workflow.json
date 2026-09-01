@@ -1,0 +1,569 @@
+[
+  {
+    "name": "tes coap server",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "rap1mqjtkflzyaq90wy420uu",
+        "position": {
+          "x": 284,
+          "y": 358
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "coap-client",
+          "label": "CoAP Client",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Sends CoAP requests to CoAP servers. Supports GET, POST, PUT, and DELETE methods over UDP.",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "POST",
+            "url": "coap://127.0.0.1:5683/sensor",
+            "payload": "{\"temperature\":25}"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "gisj5ehu6u4k5vdlqfker4e5",
+        "position": {
+          "x": 0,
+          "y": 18
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "coap-server",
+          "label": "CoAP Server",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Creates a CoAP server that listens for incoming CoAP requests and triggers workflows on received messages.",
+          "showRunningStatus": true,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "zt0514fohxmbfjljx93jpt59",
+        "position": {
+          "x": 0,
+          "y": 358
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "zjzmf8qa7p2rxxouwp11jncm",
+        "position": {
+          "x": 596.787074548475,
+          "y": 335.2021542419208
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "lyhnid8c51wvlrp6saza6zpk",
+        "position": {
+          "x": 334.5703971119134,
+          "y": -116.014440433213
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "np1wt8mnnxe5wck9z3g7rf7e",
+        "position": {
+          "x": 325.5139399273933,
+          "y": 739.1568153582306
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "coap-client",
+          "label": "CoAP Client1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Sends CoAP requests to CoAP servers. Supports GET, POST, PUT, and DELETE methods over UDP.",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "GET",
+            "url": "coap://127.0.0.1:5683/sensor"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "uvg3k5y8xaq0n7xjvjawc492",
+        "position": {
+          "x": 72.82739666855754,
+          "y": 726.3625600033529
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "azxchoe04fdyefyfn2jl9o1w",
+        "position": {
+          "x": 543.0162809603154,
+          "y": 748.7525068743889
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "tzuv2fhqp2hex104vwdqr122",
+        "position": {
+          "x": 323.9146580080336,
+          "y": 993.4426405364261
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "coap-client",
+          "label": "CoAP Client2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Sends CoAP requests to CoAP servers. Supports GET, POST, PUT, and DELETE methods over UDP.",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "DELETE",
+            "url": "coap://127.0.0.1:5683/sensor"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "fkbvgt1lvo2rhpk1fc6wy0no",
+        "position": {
+          "x": 87.22093394279497,
+          "y": 999.8397682138649
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "jhpem5bkmgfi9ajsme5knvlf",
+        "position": {
+          "x": 538.218435202236,
+          "y": 998.2404862945051
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "x60ec5bat1klgn4zzlnuhlos",
+        "position": {
+          "x": 69.62883282983807,
+          "y": 1234.934210359744
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "wmaq1wy4cgymkkb61juja7il",
+        "position": {
+          "x": 304.72327497571695,
+          "y": 1223.739236924226
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "coap-client",
+          "label": "CoAP Client3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Sends CoAP requests to CoAP servers. Supports GET, POST, PUT, and DELETE methods over UDP.",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "PUT",
+            "url": "coap://127.0.0.1:5683/sensor",
+            "payload": "{\"temperature\":27}"
+          },
+          "_morphing": false
+        },
+        "selected": true,
+        "draggable": true
+      },
+      {
+        "id": "y3u7mt5c48hx7rup1ihywvoy",
+        "position": {
+          "x": 573.4026374281499,
+          "y": 1207.7464177306285
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "zt0514fohxmbfjljx93jpt59",
+        "sourceHandle": "success",
+        "target": "rap1mqjtkflzyaq90wy420uu",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__zt0514fohxmbfjljx93jpt59success-rap1mqjtkflzyaq90wy420uuinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "rap1mqjtkflzyaq90wy420uu",
+        "sourceHandle": "success",
+        "target": "zjzmf8qa7p2rxxouwp11jncm",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__rap1mqjtkflzyaq90wy420uusuccess-zjzmf8qa7p2rxxouwp11jncminput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "gisj5ehu6u4k5vdlqfker4e5",
+        "sourceHandle": "success",
+        "target": "lyhnid8c51wvlrp6saza6zpk",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__gisj5ehu6u4k5vdlqfker4e5success-lyhnid8c51wvlrp6saza6zpkinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "uvg3k5y8xaq0n7xjvjawc492",
+        "sourceHandle": "success",
+        "target": "np1wt8mnnxe5wck9z3g7rf7e",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__uvg3k5y8xaq0n7xjvjawc492success-np1wt8mnnxe5wck9z3g7rf7einput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "np1wt8mnnxe5wck9z3g7rf7e",
+        "sourceHandle": "success",
+        "target": "azxchoe04fdyefyfn2jl9o1w",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__np1wt8mnnxe5wck9z3g7rf7esuccess-azxchoe04fdyefyfn2jl9o1winput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "fkbvgt1lvo2rhpk1fc6wy0no",
+        "sourceHandle": "success",
+        "target": "tzuv2fhqp2hex104vwdqr122",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__fkbvgt1lvo2rhpk1fc6wy0nosuccess-tzuv2fhqp2hex104vwdqr122input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "tzuv2fhqp2hex104vwdqr122",
+        "sourceHandle": "success",
+        "target": "jhpem5bkmgfi9ajsme5knvlf",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__tzuv2fhqp2hex104vwdqr122success-jhpem5bkmgfi9ajsme5knvlfinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "x60ec5bat1klgn4zzlnuhlos",
+        "sourceHandle": "success",
+        "target": "wmaq1wy4cgymkkb61juja7il",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__x60ec5bat1klgn4zzlnuhlossuccess-wmaq1wy4cgymkkb61juja7ilinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "wmaq1wy4cgymkkb61juja7il",
+        "sourceHandle": "success",
+        "target": "y3u7mt5c48hx7rup1ihywvoy",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__wmaq1wy4cgymkkb61juja7ilsuccess-y3u7mt5c48hx7rup1ihywvoyinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1788256196121,
+    "updatedAt": 1788256727243,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
