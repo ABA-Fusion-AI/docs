@@ -6,7 +6,7 @@ category: "utilities"
 subcategory: "network"
 version: "1.0.0"
 language: "en"
-last_updated: "2026-08-05"
+last_updated: "2026-09-01"
 author: "Fusion Team"
 tags:
   - utility
@@ -21,6 +21,7 @@ related_nodes:
 ---
 
 <!-- SECTION: header -->
+
 # GraphQL
 
 > **Category:** Utilities | **Type:** Action Node
@@ -32,6 +33,7 @@ Execute GraphQL queries and mutations against compatible GraphQL API endpoints u
 ---
 
 <!-- SECTION: overview -->
+
 ## Overview
 
 The **GraphQL** node sends GraphQL queries and mutations to a GraphQL API endpoint. It supports JSON and GraphQL request formats, variables, operation names, API keys, custom headers, and configurable response formats.
@@ -44,9 +46,9 @@ The **GraphQL** node sends GraphQL queries and mutations to a GraphQL API endpoi
 - **Variables:** Pass GraphQL variables as valid JSON
 - **Operation Names:** Execute a specific named operation
 - **Authentication:** Add a bearer API key or custom headers
-- **Response Formats:** Return JSON data or a serialized string
+- **Response Formats:** Return structured JSON data or a serialized string
 - **Dynamic Input:** Read query information from incoming workflow data
-- **Error Handling:** Route request and GraphQL errors to the error output
+- **Error Handling:** Return structured error information for HTTP, network, and GraphQL execution failures
 
 ### Use Cases
 
@@ -75,6 +77,7 @@ A direct string input can also be used as the GraphQL query.
 ---
 
 <!-- SECTION: configuration -->
+
 ## Configuration
 
 ### Parameters
@@ -88,10 +91,10 @@ A direct string input can also be used as the GraphQL query.
 | `query` | `string` | ❌ No | — | GraphQL query or mutation |
 | `variables` | `string` | ❌ No | — | GraphQL variables as a valid JSON string |
 | `operationName` | `string` | ❌ No | — | Name of the GraphQL operation to execute |
-| `apiKey` | `string` | ❌ No | — | Bearer API key added to the authorization header |
+| `apiKey` | `string` | ❌ No | — | Bearer API key added to the Authorization header |
 | `headers` | `array` | ❌ No | `[]` | Additional custom request headers |
 
-> Although the `query` configuration parameter is optional, a GraphQL query is required at execution time. It can be provided through the node configuration, incoming data, or a direct string input.
+> Although the `query` configuration parameter is optional, a GraphQL query is required at execution time. It can be provided through the node configuration, incoming data, a direct string input, or the endpoint URL query parameter.
 
 ### JSON Request Format
 
@@ -115,7 +118,7 @@ Content-Type: application/json
 
 ### GraphQL Request Format
 
-When `requestFormat` is set to `graphql`, the query is sent as a plain GraphQL request body.
+When `requestFormat` is set to `graphql`, the query is sent directly as the request body.
 
 ```graphql
 query {
@@ -132,9 +135,25 @@ The request uses:
 Content-Type: application/graphql
 ```
 
+> The target GraphQL server must support the `application/graphql` content type. Some GraphQL endpoints only accept JSON-formatted requests.
+
+### GET Requests
+
+When `httpMethod` is set to `GET`, the query is URL-encoded and appended to the endpoint as the `query` parameter.
+
+For example:
+
+```text
+https://example.com/graphql?query=<encoded-query>
+```
+
+The node does not send a request body for GET requests.
+
+> For GET requests, the current implementation only appends the GraphQL `query` to the URL. Configured `variables` and `operationName` are not included in the GET request.
+
 ### Variables
 
-The `variables` parameter must contain valid JSON.
+The `variables` configuration parameter must contain valid JSON.
 
 ```json
 {
@@ -147,6 +166,8 @@ Invalid example:
 ```text
 { code: MA }
 ```
+
+Invalid JSON in the variables field is rejected before the HTTP request is executed.
 
 ### Custom Headers
 
@@ -165,6 +186,10 @@ Custom headers use a list of key-value pairs.
 ]
 ```
 
+Custom headers are added after the default `Content-Type` and API key headers.
+
+Incoming `headers` data can also add or override request headers at execution time.
+
 ### API Key Authentication
 
 When `apiKey` is configured, the node adds the following request header:
@@ -173,11 +198,14 @@ When `apiKey` is configured, the node adds the following request header:
 Authorization: Bearer <apiKey>
 ```
 
+Custom or incoming headers can also be used when the target API requires another authentication mechanism.
+
 <!-- /SECTION: configuration -->
 
 ---
 
 <!-- SECTION: inputs-outputs -->
+
 ## Inputs & Outputs
 
 ### Inputs
@@ -186,16 +214,20 @@ Authorization: Bearer <apiKey>
 |-------|------|-------------|
 | `input` | `any` | Optional incoming data containing a query, variables, operation name, or headers |
 
+The incoming data can override configured values for `query`, `variables`, `operationName`, and request headers.
+
+A direct string input can also be used as the GraphQL query.
+
 ### Outputs
 
 | Output | Type | Description |
 |--------|------|-------------|
-| `success` | `object` or `string` | Successful GraphQL response |
-| `error` | `object` | Request, validation, parsing, network, or GraphQL execution error |
+| `success` | `object` or `string` | Successful response or structured HTTP/GraphQL execution failure |
+| `error` | `object` | Node-level errors such as invalid variables JSON |
 
 ### JSON Success Output
 
-When `responseFormat` is set to `json`, the output contains the GraphQL response data.
+When `responseFormat` is set to `json`, a successful request returns an object containing the extracted GraphQL data and the raw server response.
 
 ```json
 {
@@ -207,22 +239,48 @@ When `responseFormat` is set to `json`, the output contains the GraphQL response
     }
   },
   "errors": null,
-  "extensions": null
+  "extensions": null,
+  "raw": {
+    "data": {
+      "country": {
+        "name": "Morocco",
+        "capital": "Rabat"
+      }
+    }
+  }
 }
 ```
 
 ### String Success Output
 
-When `responseFormat` is set to `string`, the GraphQL response is returned as a serialized string.
+When `responseFormat` is set to `string`, the complete GraphQL response is serialized using `JSON.stringify()`.
 
-### Error Output
+Example:
+
+```text
+{"data":{"country":{"name":"Germany","capital":"Berlin","currency":"EUR"}}}
+```
+
+### GraphQL or Request Failure Output
+
+HTTP request failures, network failures, and GraphQL errors handled during request execution return a structured result.
 
 ```json
 {
   "success": false,
   "error": "GraphQL errors: Cannot query field \"invalidField\" on type \"Country\".",
-  "query": "query { country(code: \"MA\") { invalidField } }"
+  "query": "{ country(code: \"MA\") { invalidField } }"
 }
+```
+
+### Node-Level Error
+
+Errors that occur before the request execution block, such as invalid JSON in the `variables` field, are raised as node errors.
+
+Example:
+
+```text
+Invalid JSON in variables field
 ```
 
 <!-- /SECTION: inputs-outputs -->
@@ -230,6 +288,7 @@ When `responseFormat` is set to `string`, the GraphQL response is returned as a 
 ---
 
 <!-- SECTION: examples -->
+
 ## Examples
 
 ### Basic Example: Query a Country
@@ -253,7 +312,6 @@ query {
     name
     capital
     currency
-    emoji
   }
 }
 ```
@@ -267,14 +325,51 @@ query {
     "country": {
       "name": "Morocco",
       "capital": "Rabat",
-      "currency": "MAD",
-      "emoji": "🇲🇦"
+      "currency": "MAD"
     }
   },
   "errors": null,
-  "extensions": null
+  "extensions": null,
+  "raw": {
+    "data": {
+      "country": {
+        "name": "Morocco",
+        "capital": "Rabat",
+        "currency": "MAD"
+      }
+    }
+  }
 }
 ```
+
+---
+
+### Example: GET Request
+
+Execute a GraphQL query using the GET method.
+
+**Configuration:**
+
+```text
+Endpoint URL: https://countries.trevorblades.com/
+HTTP Method: GET
+Request Format: json
+Response Format: json
+```
+
+**Query:**
+
+```graphql
+{
+  country(code: "FR") {
+    name
+    capital
+    currency
+  }
+}
+```
+
+The query is URL-encoded and sent through the `query` URL parameter.
 
 ---
 
@@ -298,7 +393,7 @@ query GetCountry($code: ID!) {
 
 ```json
 {
-  "code": "MA"
+  "code": "IT"
 }
 ```
 
@@ -306,6 +401,38 @@ query GetCountry($code: ID!) {
 
 ```text
 GetCountry
+```
+
+**Output Data:**
+
+```json
+{
+  "country": {
+    "name": "Italy",
+    "capital": "Rome",
+    "currency": "EUR"
+  }
+}
+```
+
+---
+
+### Example: String Response
+
+Return the GraphQL response as a serialized string.
+
+**Configuration:**
+
+```text
+HTTP Method: POST
+Request Format: json
+Response Format: string
+```
+
+Example output:
+
+```text
+{"data":{"country":{"name":"Germany","capital":"Berlin","currency":"EUR"}}}
 ```
 
 ---
@@ -342,6 +469,8 @@ A previous node can provide query variables dynamically.
 }
 ```
 
+Incoming variables can be provided either as an object or as a JSON string.
+
 ---
 
 ### Example: Custom Headers
@@ -353,11 +482,13 @@ Send additional request headers.
 ```json
 [
   {
-    "key": "X-Client-Id",
-    "value": "fusion-workflow"
+    "key": "X-Test-Source",
+    "value": "Fusion-GraphQL"
   }
 ]
 ```
+
+Custom headers are included in the GraphQL HTTP request.
 
 ---
 
@@ -396,6 +527,8 @@ mutation CreateUser($name: String!, $email: String!) {
 }
 ```
 
+The exact mutation fields depend on the schema exposed by the target GraphQL API.
+
 ---
 
 ### Example: Invalid Variables
@@ -403,17 +536,16 @@ mutation CreateUser($name: String!, $email: String!) {
 Invalid variables configuration:
 
 ```text
-{ code: MA }
+{"code":"MA"
 ```
 
-**Error Output:**
+**Error:**
 
-```json
-{
-  "success": false,
-  "error": "Invalid JSON in variables field"
-}
+```text
+Invalid JSON in variables field
 ```
+
+Invalid variables JSON is rejected before the HTTP request is executed.
 
 ---
 
@@ -422,19 +554,20 @@ Invalid variables configuration:
 **Query:**
 
 ```graphql
-query {
+{
   country(code: "MA") {
     invalidField
   }
 }
 ```
 
-**Error Output:**
+**Output:**
 
 ```json
 {
   "success": false,
-  "error": "GraphQL errors: Cannot query field \"invalidField\" on type \"Country\"."
+  "error": "GraphQL errors: Cannot query field \"invalidField\" on type \"Country\".",
+  "query": "{ country(code: \"MA\") { invalidField } }"
 }
 ```
 
@@ -443,6 +576,7 @@ query {
 ---
 
 <!-- SECTION: workflow-example -->
+
 ## Workflow Integration
 
 ### Example Workflow
@@ -452,33 +586,6 @@ src: example.workflow.json
 title: Execute a GraphQL request and inspect the response
 ```
 
-### Sample Workflow: GraphQL Country Query
-
-```json
-{
-  "nodes": [
-    {
-      "id": "trigger",
-      "type": "manual-trigger"
-    },
-    {
-      "id": "graphql-request",
-      "type": "graphql",
-      "config": {
-        "endpointUrl": "https://countries.trevorblades.com/",
-        "httpMethod": "POST",
-        "requestFormat": "json",
-        "responseFormat": "json",
-        "query": "query { country(code: \"MA\") { name capital currency } }"
-      }
-    },
-    {
-      "id": "show-result",
-      "type": "log"
-    }
-  ]
-}
-```
 
 ### Common Patterns
 
@@ -493,6 +600,7 @@ title: Execute a GraphQL request and inspect the response
 ---
 
 <!-- SECTION: troubleshooting -->
+
 ## Troubleshooting
 
 ### Common Issues
@@ -505,7 +613,7 @@ title: Execute a GraphQL request and inspect the response
 
 #### GraphQL query is required
 
-**Cause:** No query was provided through the node configuration or incoming data.
+**Cause:** No query was provided through the node configuration, incoming data, direct string input, or endpoint URL.
 
 **Solution:** Configure the `query` parameter or pass a query from the previous node.
 
@@ -521,29 +629,31 @@ title: Execute a GraphQL request and inspect the response
 }
 ```
 
+This validation occurs before the GraphQL HTTP request is executed.
+
 #### GraphQL request failed
 
 **Cause:** The endpoint returned a non-successful HTTP response.
 
-**Solution:** Verify the endpoint URL, method, authentication, headers, and request body.
+**Solution:** Verify the endpoint URL, HTTP method, authentication, headers, request format, and request body.
 
 #### GraphQL errors returned
 
-**Cause:** The server accepted the HTTP request but rejected the GraphQL query or mutation.
+**Cause:** The server accepted the HTTP request but returned one or more GraphQL errors.
 
 **Solution:** Verify field names, arguments, variables, operation names, and the target GraphQL schema.
 
+#### GraphQL request format rejected
+
+**Cause:** The target endpoint may not support requests using the `application/graphql` content type.
+
+**Solution:** If the endpoint does not support plain GraphQL request bodies, set `requestFormat` to `json`.
+
 #### Unauthorized request
 
-**Cause:** The endpoint requires authentication or the supplied API key is invalid.
+**Cause:** The endpoint requires authentication or the supplied credentials are invalid.
 
-**Solution:** Configure a valid API key or custom authorization header.
-
-#### Unexpected response format
-
-**Cause:** The endpoint returned content that does not match the selected response format.
-
-**Solution:** Verify the endpoint response and select the correct response format.
+**Solution:** Configure a valid API key or provide the required authentication headers.
 
 ### Error Codes
 
@@ -552,16 +662,17 @@ title: Execute a GraphQL request and inspect the response
 | `GraphQL query is required` | Missing query | Configure or pass a GraphQL query |
 | `Invalid JSON in variables field` | Invalid variables JSON | Correct the JSON syntax |
 | `GraphQL request failed` | HTTP request failure | Check endpoint and request settings |
-| `GraphQL errors` | Invalid GraphQL operation | Check the GraphQL schema |
+| `GraphQL errors` | GraphQL execution or validation error | Check the GraphQL schema and operation |
 | `HTTP 401` | Invalid or missing authentication | Configure valid credentials |
 | `HTTP 404` | Incorrect endpoint URL | Verify the API endpoint |
-| `Network error` | Endpoint unavailable | Check connectivity and endpoint status |
+| Network-related error | Endpoint unavailable or network failure | Check connectivity and endpoint availability |
 
 <!-- /SECTION: troubleshooting -->
 
 ---
 
 <!-- SECTION: related -->
+
 ## Related
 
 - [HTTP Request](./http-request.md) - Send generic HTTP requests
@@ -573,10 +684,11 @@ title: Execute a GraphQL request and inspect the response
 ---
 
 <!-- SECTION: changelog -->
+
 ## Changelog
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0.0 | 2026-08-05 | Initial release |
+| 1.0.0 | 2026-09-01 | Initial documentation and validated workflow example |
 
 <!-- /SECTION: changelog -->
