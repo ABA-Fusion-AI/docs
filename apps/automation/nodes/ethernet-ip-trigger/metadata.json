@@ -1,0 +1,4 @@
+{
+  "label": "EtherNet/IP Trigger",
+  "description": "Monitor EtherNet/IP tag values and trigger workflows when values change"
+}

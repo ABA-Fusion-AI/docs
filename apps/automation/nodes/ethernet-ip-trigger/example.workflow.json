@@ -1,0 +1,80 @@
+[
+  {
+    "name": "EtherNet/IP Trigger Example",
+    "nodes": [
+      {
+        "id": "rrq89syw0wpqn20n5zm6q1f1",
+        "position": {
+          "x": 658.5,
+          "y": 519.5
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "m0b58drr69bqcj9bpgzdoel1",
+        "position": {
+          "x": 350.5,
+          "y": 487.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "ethernet-ip-trigger",
+          "label": "EtherNet/IP Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Monitors EtherNet/IP tag values and triggers workflow on changes. EtherNet/IP is an industrial protocol that adapts CIP to standard Ethernet.",
+          "showRunningStatus": true,
+          "parameters": {
+            "deviceIp": "192.168.1.10",
+            "tag": "TestTag"
+          }
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "m0b58drr69bqcj9bpgzdoel1",
+        "sourceHandle": "success",
+        "target": "rrq89syw0wpqn20n5zm6q1f1",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__m0b58drr69bqcj9bpgzdoel1success-rrq89syw0wpqn20n5zm6q1f1input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "version": 1,
+    "secrets": {}
+  }
+]
