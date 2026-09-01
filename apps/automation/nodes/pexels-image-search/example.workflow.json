@@ -1,0 +1,889 @@
+[
+    {
+        "name": "pexels-image-search",
+        "variables": {},
+        "secrets": {},
+        "nodes": [
+            {
+                "id": "vu94q0kaycr6k7xavj9u58sk",
+                "position": {
+                    "x": 1002,
+                    "y": 337
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "pexels-image-search",
+                    "label": "Pexels Image Search",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Search for free stock images from Pexels.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "query": "mountains landscape",
+                        "perPage": 3,
+                        "apiKey": ""
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "egrt0irm6q58vmoblnps6xgy",
+                "position": {
+                    "x": 880.5,
+                    "y": 344
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "b3by9mgp17ugu6xkc9mxl02d",
+                "position": {
+                    "x": 1243,
+                    "y": 412.5
+                },
+                "type": "display",
+                "width": 256,
+                "height": 100,
+                "dragHandle": ".drag-handle__custom",
+                "data": {
+                    "name": "log",
+                    "label": "Log",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": false
+                        }
+                    },
+                    "description": "Logs the input data to the console.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "be0qqhjygxky4tw4q4qd1996",
+                "position": {
+                    "x": 982.2163484993855,
+                    "y": 499.49529750128846
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "pexels-image-search",
+                    "label": "Pexels Image Search1",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Search for free stock images from Pexels.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "query": "cyberpunk neon city",
+                        "perPage": 1,
+                        "apiKey": ""
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "pec6923khfgtxr3yiu3r43d3",
+                "position": {
+                    "x": 798.7163484993855,
+                    "y": 458.4952975012884
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger1",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "oxeb13d144kgqqfd2m87sbj6",
+                "position": {
+                    "x": 1247.2163484993855,
+                    "y": 598.9952975012884
+                },
+                "type": "display",
+                "width": 256,
+                "height": 100,
+                "dragHandle": ".drag-handle__custom",
+                "data": {
+                    "name": "log",
+                    "label": "Log1",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": false
+                        }
+                    },
+                    "description": "Logs the input data to the console.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "iwo2c59y2tb4tglu9bmhk471",
+                "position": {
+                    "x": 822.8027949569417,
+                    "y": 715.880713782771
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger2",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "yi4hekis3r0vcvjy0db354vw",
+                "position": {
+                    "x": 1197.3027949569419,
+                    "y": 796.380713782771
+                },
+                "type": "display",
+                "width": 256,
+                "height": 100,
+                "dragHandle": ".drag-handle__custom",
+                "data": {
+                    "name": "log",
+                    "label": "Log2",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": false
+                        }
+                    },
+                    "description": "Logs the input data to the console.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "bfm5tss7scameqmpiv9pymgz",
+                "position": {
+                    "x": 977.0797908123573,
+                    "y": 939.1047216109719
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "pexels-image-search",
+                    "label": "Pexels Image Search3",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Search for free stock images from Pexels.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "query": "nature animals",
+                        "perPage": 100,
+                        "apiKey": ""
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "ywr4pvqzopzfi3gfg63s9mp3",
+                "position": {
+                    "x": 716.9775754979379,
+                    "y": 983.1330902463619
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger3",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "a6asjqumf79r7p6eziktxpoo",
+                "position": {
+                    "x": 1366.884651545281,
+                    "y": 939.7766755536447
+                },
+                "type": "display",
+                "width": 256,
+                "height": 100,
+                "dragHandle": ".drag-handle__custom",
+                "data": {
+                    "name": "log",
+                    "label": "Log3",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": false
+                        }
+                    },
+                    "description": "Logs the input data to the console.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": true
+            },
+            {
+                "id": "tgig2s92rawkyjiditjfd9lc",
+                "position": {
+                    "x": 960.8810939030512,
+                    "y": 1099.8716024622827
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "pexels-image-search",
+                    "label": "Pexels Image Search4",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Search for free stock images from Pexels.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "query": "zxqjvkww9988zzxx",
+                        "apiKey": ""
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "qbehdsvmjy8906fzn1sai46h",
+                "position": {
+                    "x": 697.4679419395532,
+                    "y": 1178.8426531167822
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger4",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "s3od93owjkhxtsm1n3pzak7u",
+                "position": {
+                    "x": 1238.9847394527442,
+                    "y": 1156.4706023310944
+                },
+                "type": "display",
+                "width": 256,
+                "height": 100,
+                "dragHandle": ".drag-handle__custom",
+                "data": {
+                    "name": "log",
+                    "label": "Log4",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": false
+                        }
+                    },
+                    "description": "Logs the input data to the console.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "h9txqyhplbt9uo61yt710fgb",
+                "position": {
+                    "x": 932.3027949569417,
+                    "y": 696.880713782771
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "pexels-image-search",
+                    "label": "Pexels Image Search2",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Search for free stock images from Pexels.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "query": "coffee & croissant in paris",
+                        "apiKey": "",
+                        "perPage": 2
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "d08qszqyu5u34f46tfdpsm0x",
+                "position": {
+                    "x": 921.1249179197722,
+                    "y": 1280.5301917694612
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "pexels-image-search",
+                    "label": "Pexels Image Search5",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Search for free stock images from Pexels.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "query": " vintage cars",
+                        "apiKey": ""
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "vsi3k415pk1yabzbv0ygyd7i",
+                "position": {
+                    "x": 617.6249179197723,
+                    "y": 1311.5301917694612
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger5",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "k6pcf6xn3pqfyt5wcdhgfn9k",
+                "position": {
+                    "x": 1327.0489689678368,
+                    "y": 1309.7314069526924
+                },
+                "type": "display",
+                "width": 256,
+                "height": 100,
+                "dragHandle": ".drag-handle__custom",
+                "data": {
+                    "name": "log",
+                    "label": "Log5",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": false
+                        }
+                    },
+                    "description": "Logs the input data to the console.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "wkmrad4tpvmiai6e1a5yb8oh",
+                "position": {
+                    "x": 1014.6813863754999,
+                    "y": 1459.522685618033
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "pexels-image-search",
+                    "label": "Pexels Image Search6",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Search for free stock images from Pexels.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "query": {
+                            "$expr": "output",
+                            "node": "Function",
+                            "outputId": "success",
+                            "path": "Query"
+                        },
+                        "apiKey": ""
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "cvu6wex86n6cx12zzvd0j3wd",
+                "position": {
+                    "x": 626.1680174404065,
+                    "y": 1480.3732932096484
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger6",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "xze6qiqcai4vjpxhrbcdgh0u",
+                "position": {
+                    "x": 1323.1115133397195,
+                    "y": 1585.441913497686
+                },
+                "type": "display",
+                "width": 256,
+                "height": 100,
+                "dragHandle": ".drag-handle__custom",
+                "data": {
+                    "name": "log",
+                    "label": "Log6",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": false
+                        }
+                    },
+                    "description": "Logs the input data to the console.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            },
+            {
+                "id": "jlogjhjhw089h0bqy50w4fin",
+                "position": {
+                    "x": 862.9395234545497,
+                    "y": 1455.8997267531486
+                },
+                "type": "action",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "function",
+                    "label": "Function",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Executes custom JavaScript code on the input data.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "code": "// Write your code here\nreturn {\n    \"Query\":\"cyberpunk\"\n};"
+                    },
+                    "_morphing": false
+                },
+                "selected": false
+            }
+        ],
+        "connections": [
+            {
+                "source": "egrt0irm6q58vmoblnps6xgy",
+                "sourceHandle": "success",
+                "target": "vu94q0kaycr6k7xavj9u58sk",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__egrt0irm6q58vmoblnps6xgysuccess-vu94q0kaycr6k7xavj9u58skinput",
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "vu94q0kaycr6k7xavj9u58sk",
+                "sourceHandle": "success",
+                "target": "b3by9mgp17ugu6xkc9mxl02d",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__vu94q0kaycr6k7xavj9u58sksuccess-b3by9mgp17ugu6xkc9mxl02dinput",
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "pec6923khfgtxr3yiu3r43d3",
+                "sourceHandle": "success",
+                "target": "be0qqhjygxky4tw4q4qd1996",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "tbpihch0jqb4egosiwgezsnq",
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "be0qqhjygxky4tw4q4qd1996",
+                "sourceHandle": "success",
+                "target": "oxeb13d144kgqqfd2m87sbj6",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xkut5sd2jet7yrop78s3qwga",
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "ywr4pvqzopzfi3gfg63s9mp3",
+                "sourceHandle": "success",
+                "target": "bfm5tss7scameqmpiv9pymgz",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "vqx8qne64g7sr0a5f9ab61jw",
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "bfm5tss7scameqmpiv9pymgz",
+                "sourceHandle": "success",
+                "target": "a6asjqumf79r7p6eziktxpoo",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "su6swyodyusbmwlh1xpshqpx",
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "qbehdsvmjy8906fzn1sai46h",
+                "sourceHandle": "success",
+                "target": "tgig2s92rawkyjiditjfd9lc",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "j3c2nebjxz7mtx8f845idupu",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false
+            },
+            {
+                "source": "tgig2s92rawkyjiditjfd9lc",
+                "sourceHandle": "success",
+                "target": "s3od93owjkhxtsm1n3pzak7u",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "hgja3g1awfbo19p6o1in4ofe",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false
+            },
+            {
+                "source": "h9txqyhplbt9uo61yt710fgb",
+                "sourceHandle": "success",
+                "target": "yi4hekis3r0vcvjy0db354vw",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "d8mp5v7t1o9if1qkqlrks58j",
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "iwo2c59y2tb4tglu9bmhk471",
+                "sourceHandle": "success",
+                "target": "h9txqyhplbt9uo61yt710fgb",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "dyuwl8f1mpqzs7h9fyue5dni",
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "vsi3k415pk1yabzbv0ygyd7i",
+                "sourceHandle": "success",
+                "target": "d08qszqyu5u34f46tfdpsm0x",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "it9tvmh3kg2mchplfxu2ownl",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false
+            },
+            {
+                "source": "d08qszqyu5u34f46tfdpsm0x",
+                "sourceHandle": "success",
+                "target": "k6pcf6xn3pqfyt5wcdhgfn9k",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__d08qszqyu5u34f46tfdpsm0xsuccess-k6pcf6xn3pqfyt5wcdhgfn9kinput",
+                "selected": false,
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "wkmrad4tpvmiai6e1a5yb8oh",
+                "sourceHandle": "success",
+                "target": "xze6qiqcai4vjpxhrbcdgh0u",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__wkmrad4tpvmiai6e1a5yb8ohsuccess-xze6qiqcai4vjpxhrbcdgh0uinput",
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "cvu6wex86n6cx12zzvd0j3wd",
+                "sourceHandle": "success",
+                "target": "jlogjhjhw089h0bqy50w4fin",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__cvu6wex86n6cx12zzvd0j3wdsuccess-jlogjhjhw089h0bqy50w4fininput",
+                "data": {
+                    "isAnimated": false
+                }
+            },
+            {
+                "source": "jlogjhjhw089h0bqy50w4fin",
+                "sourceHandle": "success",
+                "target": "wkmrad4tpvmiai6e1a5yb8oh",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__jlogjhjhw089h0bqy50w4finsuccess-wkmrad4tpvmiai6e1a5yb8ohinput",
+                "data": {
+                    "isAnimated": false
+                }
+            }
+        ],
+        "status": "stopped",
+        "tracingEnabled": true,
+        "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+        "version": 1,
+        "createdAt": 1787129541646,
+        "updatedAt": 1788270741099,
+        "publishedNames": [],
+        "previousStatus": "running"
+    }
+]

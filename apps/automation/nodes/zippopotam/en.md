@@ -84,7 +84,7 @@ Because the underlying Zippopotam.us API is completely free, open, and requires 
 - **Accurate GPS Geocoordinates:** Returns latitude and longitude in decimal degrees for mapping, distance calculations, and proximity routing.
 - **Case-Insensitive Country Codes:** Automatically normalizes country inputs to lowercase (e.g. `US`, `us`, `Us` are all handled identically).
 - **Multi-Place Resolution:** Seamlessly provides all locations and neighborhoods associated with a single postal code inside an array of `places`.
-- **Dynamic Expression Support:** Effortlessly bind upstream form values, webhook payloads, or customer records using expression tokens (e.g., `{{$json.country}}`, `{{$json.zip}}`).
+- **Dynamic Expression Support:** Effortlessly bind upstream form values, webhook payloads, or customer records using expressions (e.g., `outputs.Function.success.country`, `outputs.Function.success.zip`).
 
 ### Supported Countries Reference
 
@@ -141,7 +141,7 @@ Configure the Zippopotam.us node in the workflow canvas by setting the target co
 The standard two-letter ISO 3166-1 alpha-2 country code corresponding to the postal code.
 - **Format:** 2 characters (e.g. `US`, `FR`, `DE`, `CA`, `GB`, `ES`, `IT`, `AU`).
 - **Case Sensitivity:** Completely case-insensitive. The node automatically normalizes values to lowercase before dispatching the request (`US` and `us` behave identically).
-- **Dynamic Expression:** Click the **Expression** button in the node modal to pass dynamic values from upstream nodes, such as `{{$json.country}}` or `{{outputs.Webhook.body.shippingAddress.countryCode}}`.
+- **Dynamic Expression:** Click the **Expression** button in the node modal to pass dynamic values from upstream nodes, such as `outputs.Function.success.country` or `outputs.Webhook.success.body.countryCode`.
 
 #### `zip` (Required)
 The postal or ZIP code to look up.
@@ -151,7 +151,7 @@ The postal or ZIP code to look up.
   - **Canada:** Use the 3-character Forward Sortation Area (FSA), e.g. `M5V`, `H3Z`, `V6B`.
   - **United Kingdom:** Use the outward code (first half of the postal code), e.g. `SW1A`, `EC1A`, `OX1`.
   - **Leading Zeros:** Ensure leading zeros are preserved as strings (e.g. `"00184"` for Rome, `"08001"` for Barcelona, `"01001"` for Agawam, MA).
-- **Dynamic Expression:** Supports dynamic expressions such as `{{$json.zip}}` or `{{outputs.FormTrigger.data.postal_code}}`.
+- **Dynamic Expression:** Supports dynamic expressions such as `outputs.Function.success.zip` or `outputs.FormTrigger.success.postal_code`.
 
 ---
 
@@ -165,18 +165,18 @@ The node supports both static text entries and dynamic expressions:
 │                                                             │
 │ Country                                         [Expression]│
 │ ┌─────────────────────────────────────────────────────────┐ │
-│ │ {{$json.country}}                                       │ │
+│ │ outputs.Function.success.country                        │ │
 │ └─────────────────────────────────────────────────────────┘ │
 │                                                             │
 │ Zip                                             [Expression]│
 │ ┌─────────────────────────────────────────────────────────┐ │
-│ │ {{$json.postalCode}}                                    │ │
+│ │ outputs.Function.success.zip                            │ │
 │ └─────────────────────────────────────────────────────────┘ │
 └─────────────────────────────────────────────────────────────┘
 ```
 
 - **Static Mode:** Type fixed strings directly (e.g., `FR` in Country and `75001` in Zip).
-- **Expression Mode:** Click **Expression** to bind incoming workflow attributes. The node resolves the expression at runtime before querying the API.
+- **Expression Mode:** Click **Expression** to bind incoming workflow attributes from upstream nodes using `outputs.<NodeLabel>.<outputPort>.<field>`.
 
 <!-- /SECTION: configuration -->
 
@@ -245,18 +245,18 @@ When querying `country: "FR"` and `zip: "75001"`:
 
 ### Consuming Output Data in Downstream Nodes
 
-You can directly access any field in subsequent workflow nodes using standard expression syntax:
+Downstream nodes can reference output fields from **Zippopotam.us** (assuming the node is labeled `Zippopotam` or `Zippopotam_us`) using standard expression syntax:
 
 | Desired Data | Expression Syntax | Result Example |
 |--------------|-------------------|----------------|
-| **City / Place Name** | `{{$json.places[0].place_name}}` | `"Paris 01 Louvre"` |
-| **State / Province** | `{{$json.places[0].state}}` | `"Île-de-France"` |
-| **State Abbreviation** | `{{$json.places[0].state_abbreviation}}` | `"11"` |
-| **Latitude** | `{{$json.places[0].latitude}}` | `"48.8604"` |
-| **Longitude** | `{{$json.places[0].longitude}}` | `"2.3417"` |
-| **Country Name** | `{{$json.country}}` | `"France"` |
-| **Numeric Latitude** | `{{parseFloat($json.places[0].latitude)}}` | `48.8604` |
-| **Numeric Longitude** | `{{parseFloat($json.places[0].longitude)}}` | `2.3417` |
+| **City / Place Name** | `outputs.Zippopotam.success.places[0].place_name` | `"Paris 01 Louvre"` |
+| **State / Province** | `outputs.Zippopotam.success.places[0].state` | `"Île-de-France"` |
+| **State Abbreviation** | `outputs.Zippopotam.success.places[0].state_abbreviation` | `"11"` |
+| **Latitude** | `outputs.Zippopotam.success.places[0].latitude` | `"48.8604"` |
+| **Longitude** | `outputs.Zippopotam.success.places[0].longitude` | `"2.3417"` |
+| **Country Name** | `outputs.Zippopotam.success.country` | `"France"` |
+| **Numeric Latitude** | `parseFloat(outputs.Zippopotam.success.places[0].latitude)` | `48.8604` |
+| **Numeric Longitude** | `parseFloat(outputs.Zippopotam.success.places[0].longitude)` | `2.3417` |
 
 > [!TIP]
 > **Handling Multiple Places:** Some postal codes cover multiple towns or districts. To get the primary location, access index `0` via `places[0]`. To process all returned locations, connect the node to a **For Each** or **Function** node.
@@ -422,7 +422,7 @@ Retrieve municipal district data for central Barcelona:
 
 Receive dynamic address payload from an upstream webhook or checkout form:
 
-**Upstream Webhook Payload:**
+**Upstream Webhook Payload (`Webhook`):**
 ```json
 {
   "orderId": "ORD-55421",
@@ -435,8 +435,8 @@ Receive dynamic address payload from an upstream webhook or checkout form:
 ```
 
 **Node Configuration:**
-- **Country:** `{{$json.customer.countryCode}}`
-- **Zip:** `{{$json.customer.zipCode}}`
+- **Country:** `outputs.Webhook.success.customer.countryCode`
+- **Zip:** `outputs.Webhook.success.customer.zipCode`
 
 **Downstream Usage in Function Node (Distance Calculation):**
 ```javascript
@@ -484,7 +484,7 @@ title: Lookup geographic location and coordinates using Zippopotam.us
 ```text
 [Form Submission Trigger]
           ↓
-[Zippopotam.us] (country: input.country, zip: input.postalCode)
+[Zippopotam.us] (country: outputs.FormTrigger.success.country, zip: outputs.FormTrigger.success.postalCode)
           ↓
 [Function: Verify State / City Match]
     ├── (Match) ──> [Database / Order Created]
@@ -510,7 +510,7 @@ title: Lookup geographic location and coordinates using Zippopotam.us
           ↓
 [Zippopotam.us] (Get Latitude & Longitude)
           ↓
-[HTTP Request / Open-Meteo API] (lat: places[0].latitude, lon: places[0].longitude)
+[HTTP Request / Open-Meteo API] (lat: outputs.Zippopotam.success.places[0].latitude, lon: outputs.Zippopotam.success.places[0].longitude)
           ↓
 [Slack / Discord / SMS] (Send Daily Local Weather Summary)
 ```
@@ -536,7 +536,7 @@ title: Lookup geographic location and coordinates using Zippopotam.us
 - **Cause:** One or both parameters (`country`, `zip`) were evaluated as empty strings, `null`, or `undefined`.
 - **Solutions:**
   - Check upstream node outputs to ensure the fields exist before triggering the Zippopotam node.
-  - Set default fallback values in expressions: `{{$json.country || 'US'}}` and `{{$json.zip || '90210'}}`.
+  - Set default fallback values in expressions: `outputs.Function.success.country || 'US'` and `outputs.Function.success.zip || '90210'`.
 
 #### 3. Leading Zeros Stripped from Postal Codes
 - **Cause:** Upstream JSON parsers or numerical conversions converted strings like `"00184"` or `"08001"` to numbers (`184` or `8001`).
@@ -585,7 +585,7 @@ title: Lookup geographic location and coordinates using Zippopotam.us
 
 | Version | Date | Changes |
 |:-------:|:----:|---------|
-| `1.0.0` | 2026-09-01 | Comprehensive documentation update with parameter guides, supported countries reference, expression usage, distance calculation patterns, and troubleshooting. |
+| `1.0.0` | 2026-09-01 | Comprehensive documentation update with parameter guides, supported countries reference, expression syntax (`outputs.<node>.<output>.<field>`), distance calculation patterns, and troubleshooting. |
 | `1.0.0` | 2026-08-26 | Initial release of Zippopotam.us Geocoding Action Node. |
 
 <!-- /SECTION: changelog -->
