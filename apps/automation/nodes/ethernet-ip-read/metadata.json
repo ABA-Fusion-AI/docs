@@ -1,0 +1,4 @@
+{
+  "label": "EtherNet/IP Read",
+  "description": "Read tag values from EtherNet/IP devices"
+}

@@ -1,0 +1,121 @@
+[
+  {
+    "name": "EtherNet/IP Read Example",
+    "nodes": [
+      {
+        "id": "rrq89syw0wpqn20n5zm6q1f1",
+        "position": {
+          "x": 658.5,
+          "y": 519.5
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "f48abt6z0z3cv9vi69qcxpqf",
+        "position": {
+          "x": 479.5,
+          "y": 522.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "ethernet-ip-read",
+          "label": "EtherNet/IP Read",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Reads tag values from EtherNet/IP devices. EtherNet/IP is an industrial protocol that adapts CIP to standard Ethernet.",
+          "showRunningStatus": true,
+          "parameters": {
+            "deviceIp": "192.168.1.10",
+            "tag": "TestTag"
+          }
+        }
+      },
+      {
+        "id": "ql69g91a0m4gvjjt8l008mo7",
+        "position": {
+          "x": 301.5,
+          "y": 495.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "ql69g91a0m4gvjjt8l008mo7",
+        "sourceHandle": "success",
+        "target": "f48abt6z0z3cv9vi69qcxpqf",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ql69g91a0m4gvjjt8l008mo7success-f48abt6z0z3cv9vi69qcxpqfinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "f48abt6z0z3cv9vi69qcxpqf",
+        "sourceHandle": "success",
+        "target": "rrq89syw0wpqn20n5zm6q1f1",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__f48abt6z0z3cv9vi69qcxpqfsuccess-rrq89syw0wpqn20n5zm6q1f1input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "version": 1,
+    "secrets": {}
+  }
+]
