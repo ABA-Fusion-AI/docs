@@ -1,0 +1,130 @@
+[
+  {
+    "name": "test-eleven-labs List Voices",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "k0vrm29u9bdacnnis1gpd78r",
+        "position": {
+          "x": 704.710683002037,
+          "y": 142.45697601086317
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "eleven-labs-list-voices",
+          "label": "Eleven Labs: List Voices",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "List all available voices from Eleven Labs API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "apiKey": "sk_c9367483a47c3002c918846a0c4b3da18ede021e17b180f5"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "gw3ibyw83jdpgtt7ql4yn1if",
+        "position": {
+          "x": 363.3100990400581,
+          "y": 185.13204900611052
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        }
+      },
+      {
+        "id": "kix8wzs64hdllcqrvxdwog6c",
+        "position": {
+          "x": 963.5234327625221,
+          "y": 130.55341501018424
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "gw3ibyw83jdpgtt7ql4yn1if",
+        "sourceHandle": "success",
+        "target": "k0vrm29u9bdacnnis1gpd78r",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__gw3ibyw83jdpgtt7ql4yn1ifsuccess-k0vrm29u9bdacnnis1gpd78rinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "k0vrm29u9bdacnnis1gpd78r",
+        "sourceHandle": "success",
+        "target": "kix8wzs64hdllcqrvxdwog6c",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__k0vrm29u9bdacnnis1gpd78rsuccess-kix8wzs64hdllcqrvxdwog6cinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1788259950114,
+    "updatedAt": 1788260195276
+  }
+]
