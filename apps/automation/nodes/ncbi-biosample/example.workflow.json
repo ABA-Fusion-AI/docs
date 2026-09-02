@@ -1,0 +1,253 @@
+[
+  {
+    "name": "test-NCBI BioSample",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "p82p6998jlyefrfnbawk8n2c",
+        "position": {
+          "x": 769,
+          "y": 234
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "ncbi-biosample",
+          "label": "NCBI BioSample",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve data from NCBI BioSample database.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "search",
+            "apiKey": "tap your NCBI API key here",
+            "query": "SAMN00000002[Accession]"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "bcwrsawpyupis4lxtsd8qwjf",
+        "position": {
+          "x": 419,
+          "y": 242
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "cg0yzxl91nqaj5eyylgdz2zh",
+        "position": {
+          "x": 977,
+          "y": 237
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "h3axrwd83nvhctthr75ijiaq",
+        "position": {
+          "x": 737.3949874933619,
+          "y": 822.8025035168175
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "ncbi-biosample",
+          "label": "NCBI BioSample1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve data from NCBI BioSample database.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getById",
+            "apiKey": "tap your NCBI API key here",
+            "id": "2"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "carjaiviey4kv0qjpckwiy1w",
+        "position": {
+          "x": 399.3949874933619,
+          "y": 842.8025035168175
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "fd5wsekfft24123p3rlv53yw",
+        "position": {
+          "x": 969.3949874933619,
+          "y": 849.8025035168175
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "bcwrsawpyupis4lxtsd8qwjf",
+        "sourceHandle": "success",
+        "target": "p82p6998jlyefrfnbawk8n2c",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__bcwrsawpyupis4lxtsd8qwjfsuccess-p82p6998jlyefrfnbawk8n2cinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "p82p6998jlyefrfnbawk8n2c",
+        "sourceHandle": "success",
+        "target": "cg0yzxl91nqaj5eyylgdz2zh",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__p82p6998jlyefrfnbawk8n2csuccess-cg0yzxl91nqaj5eyylgdz2zhinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "carjaiviey4kv0qjpckwiy1w",
+        "sourceHandle": "success",
+        "target": "h3axrwd83nvhctthr75ijiaq",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "z50xmsnzqlkuevcmv69sa4c3",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "h3axrwd83nvhctthr75ijiaq",
+        "sourceHandle": "success",
+        "target": "fd5wsekfft24123p3rlv53yw",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "foonatsicrq0lig8nw1getjg",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1788361156379,
+    "updatedAt": 1788362648994,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
