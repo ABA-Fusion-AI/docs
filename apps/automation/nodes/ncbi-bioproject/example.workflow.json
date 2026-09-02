@@ -128,7 +128,7 @@
           "showRunningStatus": true,
           "parameters": {
             "operation": "getById",
-            "apiKey": "put your NCBI API key here",
+            "apiKey": "put your NCBI API key here ",
             "id": "168"
           },
           "_morphing": false

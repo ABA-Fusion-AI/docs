@@ -1,7 +1,7 @@
 ---
 node_id: "ncbi-bioproject"
 title: "NCBI BioProject"
-description: "Search and retrieve study metadata from the NCBI BioProject database."
+description: "Search and retrieve study metadata from the NCBI BioProject database. "
 category: "Healthcare & Life Sciences"
 subcategory: "NCBI"
 version: "1.0.0"
