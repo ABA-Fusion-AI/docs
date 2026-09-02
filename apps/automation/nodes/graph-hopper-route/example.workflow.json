@@ -1,0 +1,137 @@
+[
+  {
+    "name": "test graphHopperRoute",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "lltcgg67hd8tpsk0gasoeo0x",
+        "position": {
+          "x": 357,
+          "y": 246
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "graph-hopper-route",
+          "label": "GraphHopper Route",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get a route between coordinates using GraphHopper routing API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "key": "da8149e0-ec5c-44c0-a566-3c40ec4dd143",
+            "points": [
+              "33.5731,-7.5898",
+              "34.0209,-6.8416"
+            ]
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "tqq77qvryy4a69bl9dkiwm34",
+        "position": {
+          "x": 167,
+          "y": 278
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "jajf17ai0783plgumkto9prv",
+        "position": {
+          "x": 677,
+          "y": 294
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "tqq77qvryy4a69bl9dkiwm34",
+        "sourceHandle": "success",
+        "target": "lltcgg67hd8tpsk0gasoeo0x",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__tqq77qvryy4a69bl9dkiwm34success-lltcgg67hd8tpsk0gasoeo0xinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "lltcgg67hd8tpsk0gasoeo0x",
+        "sourceHandle": "success",
+        "target": "jajf17ai0783plgumkto9prv",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__lltcgg67hd8tpsk0gasoeo0xsuccess-jajf17ai0783plgumkto9prvinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1788340050412,
+    "updatedAt": 1788340132370,
+    "publishedNames": []
+  }
+]

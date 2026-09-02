@@ -1,0 +1,4 @@
+{
+  "label": "GraphHopper Route",
+  "description": "Calculate a route between coordinate points using the GraphHopper Routing API."
+}
