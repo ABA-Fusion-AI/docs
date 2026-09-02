@@ -83,10 +83,12 @@ to an agent, not a step in a chain.
 <!-- SECTION: workflow-example -->
   ## Example
 
-```
-Chat Trigger ──▶ Agent V2 ──▶ Send Reply
-                   ▲  ▲
-        OpenAI LLM ┘  └ Memory
+```mermaid
+flowchart LR
+  trigger([Chat Trigger]) --> agent[Agent V2]
+  agent --> reply([Send Reply])
+  llm[OpenAI LLM] -- llm --> agent
+  mem[(Memory)] -- memory --> agent
 ```
 
 Nothing to configure. The agent now answers follow-up questions with the

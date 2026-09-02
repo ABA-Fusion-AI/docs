@@ -88,10 +88,12 @@ to an agent, not a step in a chain.
 <!-- SECTION: workflow-example -->
   ## Example
 
-```
-Chat Trigger ──▶ Agent V2 ──▶ Send Reply
-                   ▲  ▲
-        OpenAI LLM ┘  └ Postgres Memory
+```mermaid
+flowchart LR
+  trigger([Chat Trigger]) --> agent[Agent V2]
+  agent --> reply([Send Reply])
+  llm[OpenAI LLM] -- llm --> agent
+  mem[(Postgres Memory)] -- memory --> agent
 ```
 
 Configuration:
