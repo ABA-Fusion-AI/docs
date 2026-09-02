@@ -1,0 +1,85 @@
+[
+  {
+    "name": "WebSocket Trigger Example",
+    "nodes": [
+      {
+        "id": "jyb97hf58zxaqtd0hav1gyoy",
+        "position": {
+          "x": 722.5,
+          "y": 561.5
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "rab3cr6hft9je9qnewuixydm",
+        "position": {
+          "x": 416,
+          "y": 742
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "websocket-trigger",
+          "label": "WebSocket Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers workflow when messages are received from a WebSocket server or client. Supports both client (connect to server) and server (host server) modes with automatic reconnection.",
+          "showRunningStatus": true,
+          "parameters": {
+            "type": "client",
+            "url": "wss://ws.postman-echo.com/raw",
+            "reconnect": true,
+            "reconnectInterval": 1000,
+            "reconnectAttempts": 2,
+            "binaryType": "blob",
+            "perMessageDeflate": true
+          }
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "rab3cr6hft9je9qnewuixydm",
+        "sourceHandle": "success",
+        "target": "jyb97hf58zxaqtd0hav1gyoy",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__rab3cr6hft9je9qnewuixydmsuccess-jyb97hf58zxaqtd0hav1gyoyinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "version": 1,
+    "secrets": {}
+  }
+]

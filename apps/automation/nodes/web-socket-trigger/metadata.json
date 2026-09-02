@@ -1,0 +1,4 @@
+{
+  "label": "WebSocket Trigger",
+  "description": "Triggers workflow when messages are received from a WebSocket server or client. Supports both client (connect to server) and server (host server) modes with automatic reconnection."
+}
