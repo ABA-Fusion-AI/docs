@@ -1,0 +1,121 @@
+[
+  {
+    "name": "USGS Real-time Feed Example",
+    "nodes": [
+      {
+        "id": "rrq89syw0wpqn20n5zm6q1f1",
+        "position": {
+          "x": 770.5,
+          "y": 727.5
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "ql69g91a0m4gvjjt8l008mo7",
+        "position": {
+          "x": 345.5,
+          "y": 743.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "ym42kvtmoermzf0btqsye4se",
+        "position": {
+          "x": 539.5,
+          "y": 748.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "usgs-realtime",
+          "label": "USGS Real-time Feed",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get real-time earthquake feed from USGS. Static file updated every minute.",
+          "showRunningStatus": true,
+          "parameters": {
+            "magnitude": "4.5",
+            "period": "day"
+          }
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "ql69g91a0m4gvjjt8l008mo7",
+        "sourceHandle": "success",
+        "target": "ym42kvtmoermzf0btqsye4se",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ql69g91a0m4gvjjt8l008mo7success-ym42kvtmoermzf0btqsye4seinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ym42kvtmoermzf0btqsye4se",
+        "sourceHandle": "success",
+        "target": "rrq89syw0wpqn20n5zm6q1f1",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ym42kvtmoermzf0btqsye4sesuccess-rrq89syw0wpqn20n5zm6q1f1input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "version": 1,
+    "secrets": {}
+  }
+]

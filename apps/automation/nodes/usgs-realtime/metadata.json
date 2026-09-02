@@ -1,0 +1,4 @@
+{
+  "label": "USGS Real-time Feed",
+  "description": "Get real-time earthquake feed from USGS. Static file updated every minute."
+}
