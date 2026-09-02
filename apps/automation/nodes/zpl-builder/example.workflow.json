@@ -1,0 +1,149 @@
+[
+  {
+    "name": "ZPL Builder Example",
+    "nodes": [
+      {
+        "id": "rrq89syw0wpqn20n5zm6q1f1",
+        "position": {
+          "x": 770.5,
+          "y": 727.5
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "ql69g91a0m4gvjjt8l008mo7",
+        "position": {
+          "x": 345.5,
+          "y": 743.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "qa79cbh3onsz5l4ycn5ictea",
+        "position": {
+          "x": 543.5,
+          "y": 751.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "zpl-builder",
+          "label": "ZPL Builder",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Generates ZPL (Zebra Programming Language) commands for label printing.",
+          "showRunningStatus": true,
+          "parameters": {
+            "config": {
+              "darkness": 15,
+              "width": 800,
+              "speed": 3
+            },
+            "elements": [
+              {
+                "type": "text",
+                "x": 50,
+                "y": 40,
+                "fontSize": 30,
+                "text": "Product A"
+              },
+              {
+                "type": "barcode",
+                "x": 50,
+                "y": 100,
+                "data": "123456789",
+                "height": 80,
+                "showText": true
+              },
+              {
+                "type": "box",
+                "x": 20,
+                "y": 20,
+                "boxWidth": 500,
+                "boxHeight": 250,
+                "thickness": 3
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "ql69g91a0m4gvjjt8l008mo7",
+        "sourceHandle": "success",
+        "target": "qa79cbh3onsz5l4ycn5ictea",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ql69g91a0m4gvjjt8l008mo7success-qa79cbh3onsz5l4ycn5icteainput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "qa79cbh3onsz5l4ycn5ictea",
+        "sourceHandle": "success",
+        "target": "rrq89syw0wpqn20n5zm6q1f1",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__qa79cbh3onsz5l4ycn5icteasuccess-rrq89syw0wpqn20n5zm6q1f1input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "version": 1,
+    "secrets": {}
+  }
+]

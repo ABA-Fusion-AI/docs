@@ -1,0 +1,4 @@
+{
+  "label": "ZPL Builder",
+  "description": "Generates ZPL (Zebra Programming Language) commands for label printing."
+}
