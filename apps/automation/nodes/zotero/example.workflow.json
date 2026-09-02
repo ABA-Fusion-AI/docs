@@ -1,0 +1,328 @@
+[
+  {
+    "name": "tracktry",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "c880ltsd59f5jm46s8dzxbpu",
+        "position": {
+          "x": 1172.136968040152,
+          "y": 97.57047879404685
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "zotero",
+          "label": "Zotero Library",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve items from a Zotero User or Group library.",
+          "showRunningStatus": true,
+          "parameters": {
+            "libraryType": "user",
+            "operation": "search",
+            "searchMode": "titleCreatorYear",
+            "itemType": "all",
+            "libraryId": "21445848"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "rteq5o8hc1e904lncg53bcyl",
+        "position": {
+          "x": 1519.5797885441414,
+          "y": 102.05186170854971
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "zotero",
+          "label": "Zotero Library2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve items from a Zotero User or Group library.",
+          "showRunningStatus": true,
+          "parameters": {
+            "libraryType": "user",
+            "operation": "getItem",
+            "libraryId": "21445848",
+            "itemKey": "EK3VBNSZ"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "omrmbxanml5j4y0c574klc0z",
+        "position": {
+          "x": 1168.433969849412,
+          "y": 221.974905957781
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "zotero",
+          "label": "Zotero Library1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve items from a Zotero User or Group library.",
+          "showRunningStatus": true,
+          "parameters": {
+            "libraryType": "group",
+            "operation": "search",
+            "searchMode": "titleCreatorYear",
+            "itemType": "all",
+            "libraryId": "6656883"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "uru7k6lgzaixsrgy9174dm4g",
+        "position": {
+          "x": 1518.980513770501,
+          "y": 246.63049108343012
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "zotero",
+          "label": "Zotero Library2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve items from a Zotero User or Group library.",
+          "showRunningStatus": true,
+          "parameters": {
+            "libraryType": "group",
+            "operation": "collections",
+            "libraryId": "6656883"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "y4i08lz81g4rgpj5ql96uqt7",
+        "position": {
+          "x": 971,
+          "y": -29.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "am57ddf6uup36ll1hq2lvujg",
+        "position": {
+          "x": 1318.4428205039894,
+          "y": -25.01861708549714
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "hg62dguk7xy2cwvhf22k3a1j",
+        "position": {
+          "x": 956.433969849412,
+          "y": 111.974905957781
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "pgqo30r9qxseodyap71vcqib",
+        "position": {
+          "x": 1319.3954074388985,
+          "y": 135.07862937488042
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "y4i08lz81g4rgpj5ql96uqt7",
+        "sourceHandle": "success",
+        "target": "c880ltsd59f5jm46s8dzxbpu",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__y4i08lz81g4rgpj5ql96uqt7success-c880ltsd59f5jm46s8dzxbpuinput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "hg62dguk7xy2cwvhf22k3a1j",
+        "sourceHandle": "success",
+        "target": "omrmbxanml5j4y0c574klc0z",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ami1osd28l03b4pt4r4ep2dz",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "am57ddf6uup36ll1hq2lvujg",
+        "sourceHandle": "success",
+        "target": "rteq5o8hc1e904lncg53bcyl",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "yo3vrc645xascd9f8zb3o77r",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "pgqo30r9qxseodyap71vcqib",
+        "sourceHandle": "success",
+        "target": "uru7k6lgzaixsrgy9174dm4g",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "l17cdsu8l9oqfmo697an2n2b",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1788360774100,
+    "updatedAt": 1788363766760,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
