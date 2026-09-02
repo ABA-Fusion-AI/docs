@@ -1,0 +1,178 @@
+[
+  {
+    "name": "track123",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "u3klf02uw0molf1xjp9p53x2",
+        "position": {
+          "x": 788,
+          "y": 83
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "track123",
+          "label": "Track123",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Track packages using Track123 API. Supports 1,700+ carriers including Morocco Post.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "Get Tracking",
+            "trackNos": [
+              "771700723045"
+            ],
+            "apiKey": ""
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "pvt7wfgk2n8w5om7a25q4lma",
+        "position": {
+          "x": 787,
+          "y": 259
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "track123",
+          "label": "Track124",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Track packages using Track123 API. Supports 1,700+ carriers including Morocco Post.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "Register Tracking",
+            "apiKey": "",
+            "trackings": [
+              {
+                "trackNo": "771700723045",
+                "courierCode": "fedex"
+              }
+            ]
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "se6piibfy3kodrp8yj4r6cfq",
+        "position": {
+          "x": 497,
+          "y": 27.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "f14dw6eqm6pvr3tmj3pkl30b",
+        "position": {
+          "x": 496,
+          "y": 203.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "se6piibfy3kodrp8yj4r6cfq",
+        "sourceHandle": "success",
+        "target": "u3klf02uw0molf1xjp9p53x2",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__se6piibfy3kodrp8yj4r6cfqsuccess-u3klf02uw0molf1xjp9p53x2input",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "f14dw6eqm6pvr3tmj3pkl30b",
+        "sourceHandle": "success",
+        "target": "pvt7wfgk2n8w5om7a25q4lma",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "n00ug7y4nhe4kq373h5zcy13",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1788344702029,
+    "updatedAt": 1788346268921,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
