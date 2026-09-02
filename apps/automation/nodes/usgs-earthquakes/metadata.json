@@ -1,0 +1,4 @@
+{
+  "label": "USGS Earthquakes",
+  "description": "Query earthquake data from the USGS Earthquake API."
+}

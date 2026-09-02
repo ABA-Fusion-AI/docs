@@ -1,0 +1,123 @@
+[
+  {
+    "name": "USGS Earthquakes Example",
+    "nodes": [
+      {
+        "id": "rrq89syw0wpqn20n5zm6q1f1",
+        "position": {
+          "x": 770.5,
+          "y": 727.5
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "ql69g91a0m4gvjjt8l008mo7",
+        "position": {
+          "x": 345.5,
+          "y": 743.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "ixgbxb0218no0cl6s9u86fls",
+        "position": {
+          "x": 537.5,
+          "y": 752.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "usgs-earthquakes",
+          "label": "USGS Earthquakes",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Query earthquake data from the USGS Earthquake API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "starttime": "2026-08-01",
+            "endtime": "2026-08-02",
+            "minmagnitude": 5,
+            "limit": 10
+          }
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "ql69g91a0m4gvjjt8l008mo7",
+        "sourceHandle": "success",
+        "target": "ixgbxb0218no0cl6s9u86fls",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ql69g91a0m4gvjjt8l008mo7success-ixgbxb0218no0cl6s9u86flsinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ixgbxb0218no0cl6s9u86fls",
+        "sourceHandle": "success",
+        "target": "rrq89syw0wpqn20n5zm6q1f1",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ixgbxb0218no0cl6s9u86flssuccess-rrq89syw0wpqn20n5zm6q1f1input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "version": 1,
+    "secrets": {}
+  }
+]
