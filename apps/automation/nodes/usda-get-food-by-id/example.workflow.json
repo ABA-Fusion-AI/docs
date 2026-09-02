@@ -1,0 +1,121 @@
+[
+  {
+    "name": "USDA Get Food by ID Example",
+    "nodes": [
+      {
+        "id": "ql69g91a0m4gvjjt8l008mo7",
+        "position": {
+          "x": 345.5,
+          "y": 743.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "v7ghn4uvfcvy2g0bw58kok25",
+        "position": {
+          "x": 514.5,
+          "y": 793.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "usda-get-food-by-id",
+          "label": "USDA Get Food by ID",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get detailed food information by FoodData Central ID",
+          "showRunningStatus": true,
+          "parameters": {
+            "fdcId": 1750340,
+            "apiKey": "DEMO_KEY"
+          }
+        }
+      },
+      {
+        "id": "jyb97hf58zxaqtd0hav1gyoy",
+        "position": {
+          "x": 695.5,
+          "y": 712.5
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "ql69g91a0m4gvjjt8l008mo7",
+        "sourceHandle": "success",
+        "target": "v7ghn4uvfcvy2g0bw58kok25",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ql69g91a0m4gvjjt8l008mo7success-v7ghn4uvfcvy2g0bw58kok25input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "v7ghn4uvfcvy2g0bw58kok25",
+        "sourceHandle": "success",
+        "target": "jyb97hf58zxaqtd0hav1gyoy",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__v7ghn4uvfcvy2g0bw58kok25success-jyb97hf58zxaqtd0hav1gyoyinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "version": 1,
+    "secrets": {}
+  }
+]
