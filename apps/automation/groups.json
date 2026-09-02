@@ -516,6 +516,17 @@
         "subgroups": []
       },
       {
+        "name": "Memory",
+        "nodes": [
+          "memory",
+          "postgres-memory",
+          "redis-memory",
+          "mongodb-memory",
+          "sqlite-memory"
+        ],
+        "subgroups": []
+      },
+      {
         "name": "Multimodal AI",
         "nodes": [
           "recraft-ai",
