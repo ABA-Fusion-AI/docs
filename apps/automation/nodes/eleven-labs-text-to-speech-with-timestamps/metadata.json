@@ -1,0 +1,4 @@
+{
+  "label": "Eleven Labs: Text to Speech (with Timestamps)",
+  "description": "Convert text into speech and return character-level timing information using the ElevenLabs API."
+}

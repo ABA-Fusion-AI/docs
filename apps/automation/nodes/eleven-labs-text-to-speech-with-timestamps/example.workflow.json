@@ -1,0 +1,149 @@
+[
+  {
+    "name": "test : Eleven Labs: Text to Speech (with Timestamps)",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "jjy6nqg14h3pmsvjbzrcrxjt",
+        "position": {
+          "x": 284,
+          "y": 18
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "eleven-labs-text-to-speech-with-timestamps",
+          "label": "Eleven Labs: Text to Speech (with Timestamps)1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Convert text to speech with character-level timestamps using Eleven Labs API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "applyTextNormalization": "auto",
+            "apiKey": "tap your Eleven Labs API key here",
+            "voiceId": "JBFqnCBsd6RMkjVDRZzb",
+            "text": "Bonjour Meryem.",
+            "voiceSettings": {
+              "stability": 1,
+              "similarity_boost": 1,
+              "style": 0,
+              "use_speaker_boost": true,
+              "speed": 0.95
+            },
+            "seed": 1,
+            "enableLogging": true,
+            "optimizeStreamingLatency": 1
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "jrbm6a8ql130tgp5cc13r81y",
+        "position": {
+          "x": 0,
+          "y": 18
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "m9wqwlrzv6g271oigdfc6pyl",
+        "position": {
+          "x": 568,
+          "y": 0
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "jrbm6a8ql130tgp5cc13r81y",
+        "sourceHandle": "success",
+        "target": "jjy6nqg14h3pmsvjbzrcrxjt",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "pi7uuge0v2jjmkl2pwko020f",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "jjy6nqg14h3pmsvjbzrcrxjt",
+        "sourceHandle": "success",
+        "target": "m9wqwlrzv6g271oigdfc6pyl",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__jjy6nqg14h3pmsvjbzrcrxjtsuccess-m9wqwlrzv6g271oigdfc6pylinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1788341504441,
+    "updatedAt": 1788341625193,
+    "publishedNames": []
+  }
+]
