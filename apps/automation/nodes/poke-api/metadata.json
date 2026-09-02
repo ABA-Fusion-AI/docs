@@ -1,0 +1,4 @@
+{
+  "label": "PokéAPI",
+  "description": "Get Pokémon information using the PokéAPI with @sherwinski/pokeapi-ts library."
+}
