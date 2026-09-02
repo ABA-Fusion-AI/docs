@@ -103,7 +103,8 @@
           "parameters": {},
           "_morphing": false
         },
-        "draggable": true
+        "draggable": true,
+        "selected": false
       },
       {
         "id": "fmcnd2eg84hybfkmqey9rlcb",
@@ -163,7 +164,8 @@
           "parameters": {},
           "_morphing": false
         },
-        "draggable": true
+        "draggable": true,
+        "selected": false
       },
       {
         "id": "djp4xbcexoaov5prynkhd1ta",
@@ -194,7 +196,106 @@
           "parameters": {},
           "_morphing": false
         },
+        "draggable": true,
+        "selected": false
+      },
+      {
+        "id": "hepv865eolaqd5e70qudy383",
+        "position": {
+          "x": 313,
+          "y": 576.25
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "ncbi-assembly",
+          "label": "NCBI Assembly3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve data from NCBI Assembly database.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "search",
+            "apiKey": "tap your NCBI API key here",
+            "query": "Homo sapiens"
+          },
+          "_morphing": false
+        },
+        "selected": false,
         "draggable": true
+      },
+      {
+        "id": "q2o1pl2w0ho4dvgtvwhzuwd6",
+        "position": {
+          "x": 60,
+          "y": 567.25
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "yp05xfwxc86wkqfpkab31kvf",
+        "position": {
+          "x": 745,
+          "y": 490.625
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "draggable": true,
+        "selected": true
       }
     ],
     "connections": [
@@ -241,6 +342,28 @@
         "data": {
           "isAnimated": false
         }
+      },
+      {
+        "source": "q2o1pl2w0ho4dvgtvwhzuwd6",
+        "sourceHandle": "success",
+        "target": "hepv865eolaqd5e70qudy383",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__q2o1pl2w0ho4dvgtvwhzuwd6success-hepv865eolaqd5e70qudy383input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "hepv865eolaqd5e70qudy383",
+        "sourceHandle": "success",
+        "target": "yp05xfwxc86wkqfpkab31kvf",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__hepv865eolaqd5e70qudy383success-yp05xfwxc86wkqfpkab31kvfinput",
+        "data": {
+          "isAnimated": false
+        }
       }
     ],
     "status": "stopped",
@@ -248,7 +371,8 @@
     "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
     "version": 1,
     "createdAt": 1788345099160,
-    "updatedAt": 1788345166572,
-    "publishedNames": []
+    "updatedAt": 1788347006301,
+    "publishedNames": [],
+    "previousStatus": "running"
   }
 ]

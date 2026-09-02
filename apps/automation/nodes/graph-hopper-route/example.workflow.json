@@ -32,7 +32,7 @@
           "description": "Get a route between coordinates using GraphHopper routing API.",
           "showRunningStatus": true,
           "parameters": {
-            "key": "da8149e0-ec5c-44c0-a566-3c40ec4dd143",
+            "key": "tap your GraphHopper API key here",
             "points": [
               "33.5731,-7.5898",
               "34.0209,-6.8416"

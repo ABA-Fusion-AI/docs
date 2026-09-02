@@ -41,6 +41,7 @@ The **NCBI Assembly** node retrieves information about assembled genomes and rel
 ### Key Features
 
 - **Assembly Lookup:** Retrieve an assembly record by its NCBI identifier
+- **Assembly Search:** Search assembly records using a text query
 - **Genome Metadata:** Access assembly and genome information returned by NCBI
 - **NCBI Integration:** Work with NCBI’s public biological data services
 - **Optional API Key:** Use an NCBI API key to access enhanced request rates where supported
@@ -68,8 +69,9 @@ The **NCBI Assembly** node retrieves information about assembled genomes and rel
 
 | Parameter | Type | Required | Default | Description |
 |-----------|------|----------|---------|-------------|
-| `operation` | `enum` | Yes | `getById` | Assembly operation supported by the node. The example uses `getById`. |
-| `id` | `string` | Yes for `getById` | — | NCBI Assembly identifier, UID, or supported accession value |
+| `operation` | `enum` | Yes | `getById` | Assembly operation supported by the node: `getById` or `search`. |
+| `id` | `string` | Conditional | — | NCBI Assembly identifier, UID, or supported accession value; required for `getById` |
+| `query` | `string` | Conditional | — | Text used to search assembly records; required for `search` |
 | `apiKey` | `string` | No | — | Optional NCBI API key for enhanced request limits |
 
 ### Assembly Identifier
@@ -81,6 +83,17 @@ The `id` value identifies the assembly to retrieve. The example uses:
 ```
 
 Depending on the configured operation and NCBI endpoint, supported identifiers may include an NCBI UID or an assembly accession such as `GCF_000001405.40`.
+
+### Assembly Search
+
+Set `operation` to `search` and provide a text query such as an organism name or assembly name:
+
+```json
+{
+  "operation": "search",
+  "query": "Homo sapiens"
+}
+```
 
 ### API and Authentication
 
@@ -111,7 +124,7 @@ NCBI rate limits depend on the API service and whether an API key is supplied. R
 
 | Input | Type | Description |
 |-------|------|-------------|
-| `input` | `object` | Optional dynamic input containing `operation`, `id`, and `apiKey` overrides |
+| `input` | `object` | Optional dynamic input containing `operation`, `id`, `query`, and `apiKey` overrides |
 
 ### Success Output
 
@@ -172,6 +185,16 @@ Invalid identifiers, missing required fields, rate limits, unavailable NCBI serv
 }
 ```
 
+### Search Assembly Records
+
+```json
+{
+  "operation": "search",
+  "apiKey": "{{secrets.ncbiApiKey}}",
+  "query": "Homo sapiens"
+}
+```
+
 ### Retrieve by Accession
 
 When supported by the selected operation, use an NCBI assembly accession:
@@ -212,6 +235,7 @@ title: Retrieve an NCBI genome assembly record
 ### Common Patterns
 
 - **Assembly Lookup:** Manual Trigger → NCBI Assembly → Log
+- **Assembly Search:** Manual Trigger → NCBI Assembly → Log
 - **Research Enrichment:** PubMed or PMC → NCBI Assembly → Database
 - **Dynamic Identifier:** Input Data → NCBI Assembly → Function
 - **Genome Reporting:** NCBI Assembly → Function → Report
@@ -226,11 +250,11 @@ title: Retrieve an NCBI genome assembly record
 
 ### Common Issues
 
-#### Assembly ID is missing
+#### Required search value is missing
 
-**Cause:** The required `id` parameter was not provided for the selected operation.
+**Cause:** The required `id` parameter is missing for `getById`, or the required `query` parameter is missing for `search`.
 
-**Solution:** Provide an NCBI Assembly UID or supported accession value.
+**Solution:** Provide an NCBI Assembly UID or supported accession for `getById`, or a search term for `search`.
 
 #### Assembly ID is invalid
 
@@ -254,7 +278,7 @@ title: Retrieve an NCBI genome assembly record
 
 **Cause:** The requested UID or accession does not identify a record available through the selected service.
 
-**Solution:** Check the identifier and try a current assembly accession.
+**Solution:** Verify the identifier or search query and try again with a current assembly accession or valid term.
 
 #### NCBI service unavailable
 
@@ -266,7 +290,7 @@ title: Retrieve an NCBI genome assembly record
 
 | Error | Cause | Solution |
 |-------|-------|----------|
-| `HTTP 400` | Invalid operation or identifier | Verify `operation` and `id` |
+| `HTTP 400` | Invalid operation, identifier, or query | Verify `operation`, `id`, and `query` |
 | `HTTP 401` | Invalid API key | Configure a valid secret-backed key or remove it for public access |
 | `HTTP 403` | Access or policy restriction | Check NCBI service permissions and usage policy |
 | `HTTP 404` | Assembly record not found | Verify the UID or accession |

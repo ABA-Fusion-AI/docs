@@ -32,7 +32,7 @@
           "description": "List all available voices from Eleven Labs API.",
           "showRunningStatus": true,
           "parameters": {
-            "apiKey": "sk_c9367483a47c3002c918846a0c4b3da18ede021e17b180f5"
+            "apiKey": "tap your Eleven Labs API key here"
           },
           "_morphing": false
         },
