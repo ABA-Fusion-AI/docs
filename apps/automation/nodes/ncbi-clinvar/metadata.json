@@ -1,0 +1,4 @@
+{
+  "label": "NCBI ClinVar",
+  "description": "Search and retrieve clinical variant records from the NCBI ClinVar database."
+}
