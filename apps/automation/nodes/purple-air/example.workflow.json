@@ -1,0 +1,92 @@
+[
+  {
+    "name": "p",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "hf7c87c3aqf5x10g6j8app85",
+        "position": {
+          "x": 809,
+          "y": 131
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "purple-air",
+          "label": "PurpleAir",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get real-time air quality sensor data from PurpleAir API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "api_key": ""
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "cb2fkptidjaly2k54csos04a",
+        "position": {
+          "x": 641,
+          "y": 146.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "cb2fkptidjaly2k54csos04a",
+        "sourceHandle": "success",
+        "target": "hf7c87c3aqf5x10g6j8app85",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__cb2fkptidjaly2k54csos04asuccess-hf7c87c3aqf5x10g6j8app85input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1788429068838,
+    "updatedAt": 1788444816408,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
