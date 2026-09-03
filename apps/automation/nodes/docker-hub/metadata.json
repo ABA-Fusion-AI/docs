@@ -1,0 +1,4 @@
+{
+  "label": "Docker Hub",
+  "description": "Get repository information from Docker Hub API."
+}
