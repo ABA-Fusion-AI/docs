@@ -1,0 +1,841 @@
+﻿[
+  {
+    "name": "rymo",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "faz1vm56b54r0zr0qef0uomn",
+        "position": {
+          "x": 635.7163534235483,
+          "y": 106.00926474060991
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "t8eo7vexy7uy6glq20nyzx23",
+        "position": {
+          "x": 381.1481311790774,
+          "y": 58.716765369325344
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "rymo-cache",
+          "label": "Rymo Cache",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage query cache (invalidate, clear, stats)",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "set",
+            "redisUrl": "rediss://default:********@adapted-sunbird-140686.upstash.io:6379",
+            "cacheKey": "user_101",
+            "value": "{\"id\": 101, \"name\": \"Abdel\", \"role\": \"admin\"}"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "emjjtixqfl1lm5uih65xyc52",
+        "position": {
+          "x": 239.14813117907738,
+          "y": 9.216765369325344
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "gaq0wj3qibow93xfewnm4boe",
+        "position": {
+          "x": 601.03146556394,
+          "y": 236.34241752623166
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "v6w7e2tx83bix5qsrc7qyje2",
+        "position": {
+          "x": 358.46324331946903,
+          "y": 201.04991815494708
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "rymo-cache",
+          "label": "Rymo Cache1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage query cache (invalidate, clear, stats)",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "get",
+            "redisUrl": "rediss://default:********@adapted-sunbird-140686.upstash.io:6379",
+            "cacheKey": "user_101"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "cbwo3beys8hi6dbo13hot5gg",
+        "position": {
+          "x": 228.46324331946897,
+          "y": 163.54991815494708
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ugz08xznypgnm5rapd4phffy",
+        "position": {
+          "x": 470.9952347535558,
+          "y": 339.93038338521865
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "te5ugbgqtr763l3gzwv4mvcm",
+        "position": {
+          "x": 228.42701250908488,
+          "y": 304.637884013934
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "rymo-cache",
+          "label": "Rymo Cache2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage query cache (invalidate, clear, stats)",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getStats",
+            "redisUrl": "rediss://default:********@adapted-sunbird-140686.upstash.io:6379"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "rm7ykqfes1evo97218qxgs24",
+        "position": {
+          "x": 69.92627171265434,
+          "y": 277.63815693893474
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "empfx457obnl3w6c5e869fyw",
+        "position": {
+          "x": 472.31034689394744,
+          "y": 506.2635361708403
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "dxdvkas0qs0vuip33pwgdu0f",
+        "position": {
+          "x": 241.74212464947652,
+          "y": 482.9710367995558
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "rymo-cache",
+          "label": "Rymo Cache2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage query cache (invalidate, clear, stats)",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "invalidateTable",
+            "redisUrl": "rediss://default:********@adapted-sunbird-140686.upstash.io:6379",
+            "tableName": "users"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "uxr4cq570ma4ybzxo6aoiqzw",
+        "position": {
+          "x": 123.74212464947647,
+          "y": 457.4710367995558
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ac9j3wkpzv6ru3zy93xro31t",
+        "position": {
+          "x": 488.2294911965842,
+          "y": 661.7941199464278
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "okvgu1rvxmfza6ag7vmos94u",
+        "position": {
+          "x": 245.66126895211326,
+          "y": 626.5016205751432
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "rymo-cache",
+          "label": "Rymo Cache3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage query cache (invalidate, clear, stats)",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "invalidatePattern",
+            "redisUrl": "rediss://default:********@adapted-sunbird-140686.upstash.io:6379",
+            "pattern": "user_*"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "acgr51xu1r59rg5m9rjvv4am",
+        "position": {
+          "x": 115.66126895211326,
+          "y": 589.0016205751432
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ide5a48i7o8ir632nq2pqgua",
+        "position": {
+          "x": 489.54460333697585,
+          "y": 828.1272727320495
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "l40b1j8mpiqsg16xhsitjc7n",
+        "position": {
+          "x": 258.9763810925049,
+          "y": 804.834773360765
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "rymo-cache",
+          "label": "Rymo Cache3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage query cache (invalidate, clear, stats)",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "delete",
+            "redisUrl": "rediss://default:********@adapted-sunbird-140686.upstash.io:6379",
+            "cacheKey": "user_101"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "axiu2e69gl8okp9ym2rarkh7",
+        "position": {
+          "x": 140.97638109250485,
+          "y": 779.334773360765
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "fvw6rcix6r3eks2evehkiw55",
+        "position": {
+          "x": 395.50837252659164,
+          "y": 967.7152385910365
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "lmihd4vuqs6wv3evm0x0k60f",
+        "position": {
+          "x": 164.94015028212075,
+          "y": 944.4227392197519
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "rymo-cache",
+          "label": "Rymo Cache3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage query cache (invalidate, clear, stats)",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "clearAll",
+            "redisUrl": "rediss://default:********@adapted-sunbird-140686.upstash.io:6379"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "x5i1atjwy10h1b8wvfnd8akd",
+        "position": {
+          "x": 18.43940948569022,
+          "y": 929.4230121447526
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "t8eo7vexy7uy6glq20nyzx23",
+        "sourceHandle": "success",
+        "target": "faz1vm56b54r0zr0qef0uomn",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__t8eo7vexy7uy6glq20nyzx23success-faz1vm56b54r0zr0qef0uomninput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "emjjtixqfl1lm5uih65xyc52",
+        "sourceHandle": "success",
+        "target": "t8eo7vexy7uy6glq20nyzx23",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__emjjtixqfl1lm5uih65xyc52success-t8eo7vexy7uy6glq20nyzx23input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "v6w7e2tx83bix5qsrc7qyje2",
+        "sourceHandle": "success",
+        "target": "gaq0wj3qibow93xfewnm4boe",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "h8a7qnhmntg55ybu4dlk3eur",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "cbwo3beys8hi6dbo13hot5gg",
+        "sourceHandle": "success",
+        "target": "v6w7e2tx83bix5qsrc7qyje2",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "sr48v84wpe400weg4345rfwm",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "te5ugbgqtr763l3gzwv4mvcm",
+        "sourceHandle": "success",
+        "target": "ugz08xznypgnm5rapd4phffy",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "yqkgy9orki479mxuc3nctjpm",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "rm7ykqfes1evo97218qxgs24",
+        "sourceHandle": "success",
+        "target": "te5ugbgqtr763l3gzwv4mvcm",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "c8gfc0498bypd5w5ffc31gu9",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "dxdvkas0qs0vuip33pwgdu0f",
+        "sourceHandle": "success",
+        "target": "empfx457obnl3w6c5e869fyw",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "e4d1aj5cqw9edz7eetqdvnxv",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "uxr4cq570ma4ybzxo6aoiqzw",
+        "sourceHandle": "success",
+        "target": "dxdvkas0qs0vuip33pwgdu0f",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "qgrwe15dgyi4mk1yds7kuyvb",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "okvgu1rvxmfza6ag7vmos94u",
+        "sourceHandle": "success",
+        "target": "ac9j3wkpzv6ru3zy93xro31t",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "w0b2mi4m7w3or5sjql0nfp43",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "acgr51xu1r59rg5m9rjvv4am",
+        "sourceHandle": "success",
+        "target": "okvgu1rvxmfza6ag7vmos94u",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xcm6m8v9ot503jdh33mcv7tk",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "l40b1j8mpiqsg16xhsitjc7n",
+        "sourceHandle": "success",
+        "target": "ide5a48i7o8ir632nq2pqgua",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "d4g43wrqohrcb562pn4nawip",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "axiu2e69gl8okp9ym2rarkh7",
+        "sourceHandle": "success",
+        "target": "l40b1j8mpiqsg16xhsitjc7n",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "g4mebhgyc5nu2q1o3yjrbqrt",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "lmihd4vuqs6wv3evm0x0k60f",
+        "sourceHandle": "success",
+        "target": "fvw6rcix6r3eks2evehkiw55",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "uv9l7dyq53urk4ccnsh406h7",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "x5i1atjwy10h1b8wvfnd8akd",
+        "sourceHandle": "success",
+        "target": "lmihd4vuqs6wv3evm0x0k60f",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "lbn95olrdkhl6gv288ydxtzj",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1788361727701,
+    "updatedAt": 1788438051170,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
