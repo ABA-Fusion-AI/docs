@@ -1,0 +1,4 @@
+{
+  "label": "BioAPI",
+  "description": "A powerful abstraction of genomics databases. BioAPI is part of the Multiomix project. Access gene information, expression data, pathways, ontologies, and drug-gene interactions."
+}
