@@ -1,0 +1,480 @@
+[
+  {
+    "name": "ttt",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "j9f9urz3huqobo1i3bxhs1bc",
+        "position": {
+          "x": 470,
+          "y": 132
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ugw3cdihjty2rp05ojt9rt33",
+        "position": {
+          "x": 859.109739779378,
+          "y": 133.61522368914976
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "hcup71xiq8ca56dlu0bm4n6m",
+        "position": {
+          "x": 467,
+          "y": 294
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "z2gw3cgcn48vasuwfk7hsqlc",
+        "position": {
+          "x": 856.109739779378,
+          "y": 295.61522368914973
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "fl74c710ifdiqm5aqf46l1my",
+        "position": {
+          "x": 469.89949493661163,
+          "y": 467.8162338159264
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "c3dtdvab39cjpec1gr7yrr86",
+        "position": {
+          "x": 859.0092347159896,
+          "y": 469.4314575050762
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "iuz7rne88krj07g808n0p4vp",
+        "position": {
+          "x": 694,
+          "y": 61.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "qdrant",
+          "label": "Qdrant Vector DB",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage collections, upsert points, and perform semantic search in Qdrant.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "get_collection_info",
+            "qdrantUrl": "https://d13dc168-cb46-4a56-8b97-baeb486f2069.sa-east-1-0.aws.cloud.qdrant.io",
+            "collectionName": "FusionTestNodes"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "fxuyirajnq0c0l9dhg2fb6b6",
+        "position": {
+          "x": 1083.1097397793778,
+          "y": 63.11522368914976
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "qdrant",
+          "label": "Qdrant Vector DB3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage collections, upsert points, and perform semantic search in Qdrant.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "create_collection",
+            "qdrantUrl": "https://d13dc168-cb46-4a56-8b97-baeb486f2069.sa-east-1-0.aws.cloud.qdrant.io",
+            "collectionName": "araara",
+            "distance": "Cosine",
+            "vectorSize": 1
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "btx8suduzb2iwixblm12ztvx",
+        "position": {
+          "x": 691,
+          "y": 223.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "qdrant",
+          "label": "Qdrant Vector DB1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage collections, upsert points, and perform semantic search in Qdrant.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "delete_points",
+            "qdrantUrl": "https://d13dc168-cb46-4a56-8b97-baeb486f2069.sa-east-1-0.aws.cloud.qdrant.io",
+            "collectionName": "araara",
+            "filter": "{\"must\": [{\"key\": \"city\", \"match\": {\"value\": \"London\"}}]}"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "i1bmkivddl5jmlnp6s8kt0q6",
+        "position": {
+          "x": 1080.1097397793778,
+          "y": 225.11522368914976
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "qdrant",
+          "label": "Qdrant Vector DB3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage collections, upsert points, and perform semantic search in Qdrant.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "delete_collection",
+            "qdrantUrl": "https://d13dc168-cb46-4a56-8b97-baeb486f2069.sa-east-1-0.aws.cloud.qdrant.io",
+            "collectionName": "ara"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "t5bc4biixkqdilay5p9482jg",
+        "position": {
+          "x": 693.8994949366116,
+          "y": 397.3162338159264
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "qdrant",
+          "label": "Qdrant Vector DB2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage collections, upsert points, and perform semantic search in Qdrant.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "search_points",
+            "qdrantUrl": "https://d13dc168-cb46-4a56-8b97-baeb486f2069.sa-east-1-0.aws.cloud.qdrant.io",
+            "collectionName": "araara",
+            "vector": "[1]"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "kjob0r41r2pk4dqlewsb5574",
+        "position": {
+          "x": 1083.0092347159896,
+          "y": 398.9314575050762
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "qdrant",
+          "label": "Qdrant Vector DB3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage collections, upsert points, and perform semantic search in Qdrant.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "upsert_points",
+            "qdrantUrl": "https://d13dc168-cb46-4a56-8b97-baeb486f2069.sa-east-1-0.aws.cloud.qdrant.io",
+            "collectionName": "araara",
+            "points": "[{\"id\": 1,\"vector\":[1] ,\"payload\": {\"city\": \"London\"}}]"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "j9f9urz3huqobo1i3bxhs1bc",
+        "sourceHandle": "success",
+        "target": "iuz7rne88krj07g808n0p4vp",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__j9f9urz3huqobo1i3bxhs1bcsuccess-iuz7rne88krj07g808n0p4vpinput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "hcup71xiq8ca56dlu0bm4n6m",
+        "sourceHandle": "success",
+        "target": "btx8suduzb2iwixblm12ztvx",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "rrdagjuybhfg3z5ynp3ps39m",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "fl74c710ifdiqm5aqf46l1my",
+        "sourceHandle": "success",
+        "target": "t5bc4biixkqdilay5p9482jg",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "w8gqdnfulu3pn86m2fo3hjga",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "ugw3cdihjty2rp05ojt9rt33",
+        "sourceHandle": "success",
+        "target": "fxuyirajnq0c0l9dhg2fb6b6",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "opz0nt9zega8zpyrwnqjj26j",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "z2gw3cgcn48vasuwfk7hsqlc",
+        "sourceHandle": "success",
+        "target": "i1bmkivddl5jmlnp6s8kt0q6",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "vllmlj8uyx2kdrksuwpaqew6",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "c3dtdvab39cjpec1gr7yrr86",
+        "sourceHandle": "success",
+        "target": "kjob0r41r2pk4dqlewsb5574",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "q2lx059ym4b1ochir0pxqv7t",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1788426952977,
+    "updatedAt": 1788452372189,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
