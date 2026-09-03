@@ -1,0 +1,252 @@
+[
+  {
+    "name": "test ncbi clinvar",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "yqzft71lep1gi3ndr83e3ujh",
+        "position": {
+          "x": 501,
+          "y": -19
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "ncbi-clinvar",
+          "label": "NCBI ClinVar",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve data from NCBI ClinVar database.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getById",
+            "apiKey": "tap your NCBI API key here",
+            "id": "4886868"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "sk25iwkorff1y22xnaobt6mj",
+        "position": {
+          "x": 301,
+          "y": -10
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "r5nzztmonyigghf9gzpd9vmi",
+        "position": {
+          "x": 726,
+          "y": -14
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "j6jjzxxgtr091mj38t8s6g97",
+        "position": {
+          "x": 509.66666666666674,
+          "y": 221.33333333333334
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "ncbi-clinvar",
+          "label": "NCBI ClinVar1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve data from NCBI ClinVar database.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "search",
+            "apiKey": "tap your NCBI API key here",
+            "query": "BRCA1[gene]"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "ffm16dro333pu6tq9rt75wvr",
+        "position": {
+          "x": 321.6666666666667,
+          "y": 242.33333333333334
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "psn0oc7gfjxuzsvht5xmurex",
+        "position": {
+          "x": 758.6666666666667,
+          "y": 250.33333333333334
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "sk25iwkorff1y22xnaobt6mj",
+        "sourceHandle": "success",
+        "target": "yqzft71lep1gi3ndr83e3ujh",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__sk25iwkorff1y22xnaobt6mjsuccess-yqzft71lep1gi3ndr83e3ujhinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "yqzft71lep1gi3ndr83e3ujh",
+        "sourceHandle": "success",
+        "target": "r5nzztmonyigghf9gzpd9vmi",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__yqzft71lep1gi3ndr83e3ujhsuccess-r5nzztmonyigghf9gzpd9vmiinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ffm16dro333pu6tq9rt75wvr",
+        "sourceHandle": "success",
+        "target": "j6jjzxxgtr091mj38t8s6g97",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "hvwcb72ejk62abdje7dj0bbf",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "j6jjzxxgtr091mj38t8s6g97",
+        "sourceHandle": "success",
+        "target": "psn0oc7gfjxuzsvht5xmurex",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "rx3px1vprtz71n57s6295jz2",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1788430491613,
+    "updatedAt": 1788430623040,
+    "publishedNames": []
+  }
+]

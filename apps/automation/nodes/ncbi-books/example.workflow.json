@@ -1,0 +1,258 @@
+[
+  {
+    "name": "test ncbi books",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "bvnj5555qhmq0nm95c6nynwv",
+        "position": {
+          "x": 284,
+          "y": 18
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "ncbi-books",
+          "label": "NCBI Books",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve data from NCBI Books database.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getById",
+            "apiKey": "tap your NCBI API key here",
+            "id": "5909698"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "ujww3fi47pk2g953peiik7g1",
+        "position": {
+          "x": 0,
+          "y": 18
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "fqxdbub0a6iuywdl7ejmwzpf",
+        "position": {
+          "x": 568,
+          "y": 0
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "o8xr537yxn82xnsr5cdhmc3z",
+        "position": {
+          "x": 0,
+          "y": 358
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "ncbi-books",
+          "label": "NCBI Books1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve data from NCBI Books database.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "search",
+            "apiKey": "tap your NCBI API key here",
+            "query": "BRCA1"
+          },
+          "_morphing": false
+        },
+        "selected": true,
+        "draggable": true
+      },
+      {
+        "id": "at7pjdlxoxpctt8pptsp359w",
+        "position": {
+          "x": 284,
+          "y": 340
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "y5dx0wmg255s7hgzptrk7s24",
+        "position": {
+          "x": -199.30685920577616,
+          "y": 328.5776173285198
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "ujww3fi47pk2g953peiik7g1",
+        "sourceHandle": "success",
+        "target": "bvnj5555qhmq0nm95c6nynwv",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ujww3fi47pk2g953peiik7g1success-bvnj5555qhmq0nm95c6nynwvinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "bvnj5555qhmq0nm95c6nynwv",
+        "sourceHandle": "success",
+        "target": "fqxdbub0a6iuywdl7ejmwzpf",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__bvnj5555qhmq0nm95c6nynwvsuccess-fqxdbub0a6iuywdl7ejmwzpfinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "o8xr537yxn82xnsr5cdhmc3z",
+        "sourceHandle": "success",
+        "target": "at7pjdlxoxpctt8pptsp359w",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "c98kk6oxuqd1ia6vb4ke7h71",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "y5dx0wmg255s7hgzptrk7s24",
+        "sourceHandle": "success",
+        "target": "o8xr537yxn82xnsr5cdhmc3z",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__y5dx0wmg255s7hgzptrk7s24success-o8xr537yxn82xnsr5cdhmc3zinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1788425961375,
+    "updatedAt": 1788426055687,
+    "publishedNames": []
+  }
+]

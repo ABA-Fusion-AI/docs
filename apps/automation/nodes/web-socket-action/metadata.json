@@ -1,0 +1,4 @@
+{
+  "label": "WebSocket Send",
+  "description": "Sends messages to a WebSocket server. Supports text and binary messages, connection reuse, and response waiting."
+}

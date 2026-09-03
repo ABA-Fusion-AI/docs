@@ -1,0 +1,130 @@
+[
+  {
+    "name": "WebSocket Send Example",
+    "nodes": [
+      {
+        "id": "jyb97hf58zxaqtd0hav1gyoy",
+        "position": {
+          "x": 722.5,
+          "y": 561.5
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "urdujw500sp5vq4gsi4f6v1e",
+        "position": {
+          "x": 316,
+          "y": 577
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "ii6yyuwr9lp0kvw5llg2vd77",
+        "position": {
+          "x": 499,
+          "y": 622
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "websocket-send",
+          "label": "WebSocket Send",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Sends messages to a WebSocket server. Supports text and binary messages, connection reuse, and response waiting.",
+          "showRunningStatus": true,
+          "parameters": {
+            "url": "wss://ws.postman-echo.com/raw",
+            "message": "Hello Fusion",
+            "protocols": [],
+            "headers": {},
+            "binaryType": "blob",
+            "perMessageDeflate": true,
+            "closeAfterSend": false,
+            "reuseConnection": false,
+            "waitForResponse": true,
+            "responseTimeout": 30000,
+            "timeout": 30000
+          }
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "urdujw500sp5vq4gsi4f6v1e",
+        "sourceHandle": "success",
+        "target": "ii6yyuwr9lp0kvw5llg2vd77",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__urdujw500sp5vq4gsi4f6v1esuccess-ii6yyuwr9lp0kvw5llg2vd77input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ii6yyuwr9lp0kvw5llg2vd77",
+        "sourceHandle": "success",
+        "target": "jyb97hf58zxaqtd0hav1gyoy",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ii6yyuwr9lp0kvw5llg2vd77success-jyb97hf58zxaqtd0hav1gyoyinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "version": 1,
+    "secrets": {}
+  }
+]
