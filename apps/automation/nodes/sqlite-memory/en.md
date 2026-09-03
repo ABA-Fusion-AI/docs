@@ -87,12 +87,9 @@ to an agent, not a step in a chain.
 <!-- SECTION: workflow-example -->
   ## Example
 
-```mermaid
-flowchart LR
-  trigger([Chat Trigger]) --> agent[Agent V2]
-  agent --> reply([Send Reply])
-  llm[OpenAI LLM] -- llm --> agent
-  mem[(SQLite Memory)] -- memory --> agent
+```fusion-workflow
+src: example.workflow.json
+title: Chat assistant with memory in SQLite
 ```
 
 Configuration:
