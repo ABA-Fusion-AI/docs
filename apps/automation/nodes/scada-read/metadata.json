@@ -1,0 +1,4 @@
+{
+  "label": "SCADA Read",
+  "description": "Generic SCADA node for reading data points from various industrial protocols. Supports Modbus, DNP3, BACnet, OPC, IEC61850, and IEC104."
+}

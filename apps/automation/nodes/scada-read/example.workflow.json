@@ -1,0 +1,124 @@
+[
+  {
+    "name": "SCADA Read Example",
+    "nodes": [
+      {
+        "id": "jyb97hf58zxaqtd0hav1gyoy",
+        "position": {
+          "x": 722.5,
+          "y": 561.5
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "e5jagxqrtaz9d8p53dhcc89k",
+        "position": {
+          "x": 466.75,
+          "y": 636.25
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "scada-read",
+          "label": "SCADA Read",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Generic SCADA node for reading data points from various industrial protocols. Supports Modbus, DNP3, BACnet, OPC, IEC61850, and IEC104.",
+          "showRunningStatus": true,
+          "parameters": {
+            "protocol": "Modbus",
+            "dataType": "float",
+            "connectionString": "tcp://127.0.0.1:502",
+            "pointAddress": "holding-register:40001",
+            "timeout": 5000
+          }
+        }
+      },
+      {
+        "id": "tjkx5lvwa9wlrird5wn3gfep",
+        "position": {
+          "x": 289.75,
+          "y": 604.25
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "tjkx5lvwa9wlrird5wn3gfep",
+        "sourceHandle": "success",
+        "target": "e5jagxqrtaz9d8p53dhcc89k",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__tjkx5lvwa9wlrird5wn3gfepsuccess-e5jagxqrtaz9d8p53dhcc89kinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "e5jagxqrtaz9d8p53dhcc89k",
+        "sourceHandle": "success",
+        "target": "jyb97hf58zxaqtd0hav1gyoy",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__e5jagxqrtaz9d8p53dhcc89ksuccess-jyb97hf58zxaqtd0hav1gyoyinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "version": 1,
+    "secrets": {}
+  }
+]
