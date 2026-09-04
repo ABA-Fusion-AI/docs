@@ -1,0 +1,1894 @@
+[
+  {
+    "name": "Cactus NCI",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "rdfv0t156z17tscsladlrq8v",
+        "position": {
+          "x": 98.50642955507476,
+          "y": -50.28535344333767
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "rr19cduxubesc9qbh7lq6wdu",
+        "position": {
+          "x": 289.0032147775373,
+          "y": -52.64267672166886
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "cactus",
+          "label": "Cactus NCI",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Cactus NCI Chemical Structure API - Convert chemical structures between different formats and retrieve properties, names, and identifiers from the National Cancer Institute.",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "formula",
+            "structure": "aspirin"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "hjrczznnbgwupc27ggyjcjtw",
+        "position": {
+          "x": 91.75482216630604,
+          "y": 100.53598491749673
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "dnncs0b2ifukzq0ma92x5v6n",
+        "position": {
+          "x": 294.25160738876866,
+          "y": 110.17866163916554
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "cactus",
+          "label": "Cactus NCI1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Cactus NCI Chemical Structure API - Convert chemical structures between different formats and retrieve properties, names, and identifiers from the National Cancer Institute.",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "mw",
+            "structure": "aspirin"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "gjtodvza8hny27d4gubzuaht",
+        "position": {
+          "x": 101.13062586069037,
+          "y": 238.62531573707952
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ht6fxz2rq78o0ozhq2k5qg9y",
+        "position": {
+          "x": 303.627411083153,
+          "y": 248.26799245874832
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "cactus",
+          "label": "Cactus NCI2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Cactus NCI Chemical Structure API - Convert chemical structures between different formats and retrieve properties, names, and identifiers from the National Cancer Institute.",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "iupac_name",
+            "structure": "aspirin"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "qsqwxmdka6028kw5nyvr2i5u",
+        "position": {
+          "x": 118.37901847192165,
+          "y": 413.44665409791395
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "w53q89nr15qewbntavx9dn7c",
+        "position": {
+          "x": 332.87580369438433,
+          "y": 435.08933081958276
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "cactus",
+          "label": "Cactus NCI2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Cactus NCI Chemical Structure API - Convert chemical structures between different formats and retrieve properties, names, and identifiers from the National Cancer Institute.",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "smiles",
+            "structure": "caffeine"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "apvg7g72gavp43ldpk0wwscu",
+        "position": {
+          "x": 95.98746281218234,
+          "y": 564.1517612016529
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ke1b9vxlascsucuzqk336l5i",
+        "position": {
+          "x": 310.48424803464496,
+          "y": 585.7944379233218
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "cactus",
+          "label": "Cactus NCI3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Cactus NCI Chemical Structure API - Convert chemical structures between different formats and retrieve properties, names, and identifiers from the National Cancer Institute.",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "names",
+            "structure": "50-78-2\t"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "og323b11o51ovesmhunw5psg",
+        "position": {
+          "x": 137.23585542341362,
+          "y": 762.9730995624873
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "nmv94f7iqtq5vb4b7iwv8nz5",
+        "position": {
+          "x": 363.7326406458763,
+          "y": 796.6157762841561
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "cactus",
+          "label": "Cactus NCI3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Cactus NCI Chemical Structure API - Convert chemical structures between different formats and retrieve properties, names, and identifiers from the National Cancer Institute.",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "ring_count",
+            "structure": "paracetamol"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "svkqdel0ppzddiqykk37ad1b",
+        "position": {
+          "x": 97.18988260361473,
+          "y": 1017.0595860991093
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "oed5ct1g6jtfx3c2bmj41232",
+        "position": {
+          "x": 335.6866678260774,
+          "y": 1062.7022628207783
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "cactus",
+          "label": "Cactus NCI4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Cactus NCI Chemical Structure API - Convert chemical structures between different formats and retrieve properties, names, and identifiers from the National Cancer Institute.",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "iupac_name",
+            "structure": "CCO"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ia76nzcsdzjcy6j0y8bfjf6m",
+        "position": {
+          "x": 86.85494279816649,
+          "y": 1195.0126988481456
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "pq3lsvsknwzlu52ns30izz65",
+        "position": {
+          "x": 337.35172802062914,
+          "y": 1252.6553755698146
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "cactus",
+          "label": "Cactus NCI5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Cactus NCI Chemical Structure API - Convert chemical structures between different formats and retrieve properties, names, and identifiers from the National Cancer Institute.",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "formula",
+            "structure": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "g57gpltejon9p00b2zg1gbs2",
+        "position": {
+          "x": 79.95319143806285,
+          "y": 1364.68075311736
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger6",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "q8q4n5raqq73zchan8sqlkvu",
+        "position": {
+          "x": 330.4499766605255,
+          "y": 1422.323429839029
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "cactus",
+          "label": "Cactus NCI6",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Cactus NCI Chemical Structure API - Convert chemical structures between different formats and retrieve properties, names, and identifiers from the National Cancer Institute.",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "formula",
+            "structure": "glucose"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "e5j16h00shrfy7rxtfzshwjd",
+        "position": {
+          "x": 59.247937357751994,
+          "y": 1542.832210100035
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger7",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "yee95d1x4ituaq7yclbfxrkw",
+        "position": {
+          "x": 309.74472258021467,
+          "y": 1600.4748868217039
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "cactus",
+          "label": "Cactus NCI7",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Cactus NCI Chemical Structure API - Convert chemical structures between different formats and retrieve properties, names, and identifiers from the National Cancer Institute.",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "rule_of_5_violation_count",
+            "structure": "aspirin"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "k8759as1yvzhj07sjbu33h2b",
+        "position": {
+          "x": 44.28863867507113,
+          "y": 1738.8541382062856
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger8",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "acb8w77fypuc2xf11v0mn0tm",
+        "position": {
+          "x": 306.7854238975338,
+          "y": 1808.4968149279546
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "cactus",
+          "label": "Cactus NCI8",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Cactus NCI Chemical Structure API - Convert chemical structures between different formats and retrieve properties, names, and identifiers from the National Cancer Institute.",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "stdinchi",
+            "structure": "caffeine"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "zhv78cds3d1hsxv17dz3d3ig",
+        "position": {
+          "x": 15.7099374639051,
+          "y": 2068.9004745658062
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger9",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "kcn13gr7b1tubb9b1fpbdsan",
+        "position": {
+          "x": 290.20672268636775,
+          "y": 2150.543151287475
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "cactus",
+          "label": "Cactus NCI9",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Cactus NCI Chemical Structure API - Convert chemical structures between different formats and retrieve properties, names, and identifiers from the National Cancer Institute.",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "ringsys_count",
+            "structure": "benzene"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "vjw12ee019eah9ybehj1a8si",
+        "position": {
+          "x": 9.688950474260835,
+          "y": 2281.140265950767
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger10",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "spkpgs9g7t2hp9vo9lxpp17m",
+        "position": {
+          "x": 284.1857356967235,
+          "y": 2362.782942672436
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "cactus",
+          "label": "Cactus NCI10",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Cactus NCI Chemical Structure API - Convert chemical structures between different formats and retrieve properties, names, and identifiers from the National Cancer Institute.",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "rotor_count",
+            "structure": "ibuprofen"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "gcr3siscis5rd5lbj5ow3uht",
+        "position": {
+          "x": 64.95056078144216,
+          "y": 2663.44301830466
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger11",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "jory0t6nyfd1p4pyntzi0inb",
+        "position": {
+          "x": 351.44734600390484,
+          "y": 2757.085695026329
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "cactus",
+          "label": "Cactus NCI11",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Cactus NCI Chemical Structure API - Convert chemical structures between different formats and retrieve properties, names, and identifiers from the National Cancer Institute.",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "h_bond_donor_count",
+            "structure": "aspirin"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "gtsiopdyb7i8vbguwgu6uiw6",
+        "position": {
+          "x": 42.92957379179791,
+          "y": 2741.682809689621
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger11",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "s19kqpk41u3kiwhenxnwtt90",
+        "position": {
+          "x": 329.4263590142606,
+          "y": 2835.32548641129
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "cactus",
+          "label": "Cactus NCI11",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Cactus NCI Chemical Structure API - Convert chemical structures between different formats and retrieve properties, names, and identifiers from the National Cancer Institute.",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "h_bond_acceptor_count",
+            "structure": "aspirin"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "t6cwdv8ad2516nj2twli06zd",
+        "position": {
+          "x": 20.43482053920897,
+          "y": 2886.2704453996607
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger12",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "v7dgdka2ixlqo12vvcya7bm1",
+        "position": {
+          "x": 306.93160576167156,
+          "y": 2979.9131221213297
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "cactus",
+          "label": "Cactus NCI12",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Cactus NCI Chemical Structure API - Convert chemical structures between different formats and retrieve properties, names, and identifiers from the National Cancer Institute.",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "h_bond_center_count",
+            "structure": "aspirin"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "gqbatza88xr6maekptlfs2o0",
+        "position": {
+          "x": 38.413833549564686,
+          "y": 3122.5102367846216
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger12",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "oyl320272wj8ezlwfj1k65d5",
+        "position": {
+          "x": 324.9106187720273,
+          "y": 3216.1529135062906
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "cactus",
+          "label": "Cactus NCI12",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Cactus NCI Chemical Structure API - Convert chemical structures between different formats and retrieve properties, names, and identifiers from the National Cancer Institute.",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "effective_rotor_count",
+            "structure": "aspirin"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "cjg9smtm9bdam2ne1p310h7m",
+        "position": {
+          "x": 14.413833549564757,
+          "y": 3312.2552749169927
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger13",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ggqr3obqgarb85b87htiojzi",
+        "position": {
+          "x": 300.9106187720273,
+          "y": 3405.8979516386617
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "cactus",
+          "label": "Cactus NCI13",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Cactus NCI Chemical Structure API - Convert chemical structures between different formats and retrieve properties, names, and identifiers from the National Cancer Institute.",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "stdinchikey",
+            "structure": "aspirin"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "itdu7jxbcm5yke63mt3d5gde",
+        "position": {
+          "x": 32.39284655992044,
+          "y": 3548.4950663019536
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger13",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "f7vq2aex3109m10yl9xmxuao",
+        "position": {
+          "x": 318.88963178238316,
+          "y": 3642.1377430236225
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "cactus",
+          "label": "Cactus NCI13",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Cactus NCI Chemical Structure API - Convert chemical structures between different formats and retrieve properties, names, and identifiers from the National Cancer Institute.",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "uuuuu",
+            "structure": "aspirin"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "avjlsrpfp4z2jmznmp2ggoao",
+        "position": {
+          "x": 32.49778150814177,
+          "y": 3751.0556887769635
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger14",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "g6c91oy3k6qnkf05qh05sgpz",
+        "position": {
+          "x": 330.9945667306045,
+          "y": 3856.6983654986325
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "cactus",
+          "label": "Cactus NCI14",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Cactus NCI Chemical Structure API - Convert chemical structures between different formats and retrieve properties, names, and identifiers from the National Cancer Institute.",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "ficts",
+            "structure": "aspirin"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "oullsl8z8kjs9ksnxk8u2e7m",
+        "position": {
+          "x": 23.72246826891518,
+          "y": 3951.1981914776893
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger15",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ebehwybs5nx6it21gf2zj0fu",
+        "position": {
+          "x": 334.21925349137786,
+          "y": 4068.8408681993583
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "cactus",
+          "label": "Cactus NCI15",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Cactus NCI Chemical Structure API - Convert chemical structures between different formats and retrieve properties, names, and identifiers from the National Cancer Institute.",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "ficus",
+            "structure": "aspirin"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "yjz6ept11zl092b6xb1zel0h",
+        "position": {
+          "x": 9.053111222733842,
+          "y": 4156.152546268102
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger16",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "age0sjcukmbp3r35klkrr3w7",
+        "position": {
+          "x": 330.5866345511764,
+          "y": 4205.844485786099
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "cactus",
+          "label": "Cactus NCI16",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Cactus NCI Chemical Structure API - Convert chemical structures between different formats and retrieve properties, names, and identifiers from the National Cancer Institute.",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "hashisy",
+            "structure": "aspirin"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "vikkho0k8nz13ovhx1tyalwf",
+        "position": {
+          "x": -15.6375090360307,
+          "y": 4302.232861926119
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger17",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ujd9px0i77grtq7x1w5kk40m",
+        "position": {
+          "x": 306.85927618643206,
+          "y": 4431.875538647788
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "cactus",
+          "label": "Cactus NCI17",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Cactus NCI Chemical Structure API - Convert chemical structures between different formats and retrieve properties, names, and identifiers from the National Cancer Institute.",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "file?format=sdf",
+            "structure": "aspirin"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "bctg6cq5s6b6juko8whj0syw",
+        "position": {
+          "x": -6.306866082212046,
+          "y": 4531.187216716532
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger17",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "bsnk66tkeikerwv6ium89jtp",
+        "position": {
+          "x": 327.22665724623056,
+          "y": 4592.879156234529
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "cactus",
+          "label": "Cactus NCI17",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Cactus NCI Chemical Structure API - Convert chemical structures between different formats and retrieve properties, names, and identifiers from the National Cancer Institute.",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "twirl",
+            "structure": "aspirin"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "cth6v83nwd0y1p2v3keems1w",
+        "position": {
+          "x": -30.177226552081095,
+          "y": 4765.0329833614205
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger18",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "rk2s2qse0mqzyr9iu4qruyhv",
+        "position": {
+          "x": 315.3562967763616,
+          "y": 4838.724922879417
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "cactus",
+          "label": "Cactus NCI18",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Cactus NCI Chemical Structure API - Convert chemical structures between different formats and retrieve properties, names, and identifiers from the National Cancer Institute.",
+          "showRunningStatus": true,
+          "parameters": {
+            "method": "cas",
+            "structure": "aspirin"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "rdfv0t156z17tscsladlrq8v",
+        "sourceHandle": "success",
+        "target": "rr19cduxubesc9qbh7lq6wdu",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__rdfv0t156z17tscsladlrq8vsuccess-rr19cduxubesc9qbh7lq6wduinput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "hjrczznnbgwupc27ggyjcjtw",
+        "sourceHandle": "success",
+        "target": "dnncs0b2ifukzq0ma92x5v6n",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "m7uyrp68347zd3npbyppzm99",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "gjtodvza8hny27d4gubzuaht",
+        "sourceHandle": "success",
+        "target": "ht6fxz2rq78o0ozhq2k5qg9y",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "bgu79aqc5iyi0oikvz4w2pcb",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "qsqwxmdka6028kw5nyvr2i5u",
+        "sourceHandle": "success",
+        "target": "w53q89nr15qewbntavx9dn7c",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "tbnzt85x4m8cxtiexki9tp24",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "apvg7g72gavp43ldpk0wwscu",
+        "sourceHandle": "success",
+        "target": "ke1b9vxlascsucuzqk336l5i",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "vs67z0s67fb0p8gnwd1dqq61",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "og323b11o51ovesmhunw5psg",
+        "sourceHandle": "success",
+        "target": "nmv94f7iqtq5vb4b7iwv8nz5",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "v235xwl6eqqyn1ju6rxh9gh9",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "svkqdel0ppzddiqykk37ad1b",
+        "sourceHandle": "success",
+        "target": "oed5ct1g6jtfx3c2bmj41232",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "p6ondsq53y8i1cxj3j96bz1e",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "ia76nzcsdzjcy6j0y8bfjf6m",
+        "sourceHandle": "success",
+        "target": "pq3lsvsknwzlu52ns30izz65",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "m4ap6jp96qe2xk1nlbcx0pgv",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "g57gpltejon9p00b2zg1gbs2",
+        "sourceHandle": "success",
+        "target": "q8q4n5raqq73zchan8sqlkvu",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "gakl0qnezerfv7cb9dg0a6ox",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "e5j16h00shrfy7rxtfzshwjd",
+        "sourceHandle": "success",
+        "target": "yee95d1x4ituaq7yclbfxrkw",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "hldqs8oyxcxhoayq17yzn16e",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "k8759as1yvzhj07sjbu33h2b",
+        "sourceHandle": "success",
+        "target": "acb8w77fypuc2xf11v0mn0tm",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "lc1pa4f6ccsqpnguvhhms27q",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "zhv78cds3d1hsxv17dz3d3ig",
+        "sourceHandle": "success",
+        "target": "kcn13gr7b1tubb9b1fpbdsan",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "fn4mxenjophsv3eqtfjl2neu",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "vjw12ee019eah9ybehj1a8si",
+        "sourceHandle": "success",
+        "target": "spkpgs9g7t2hp9vo9lxpp17m",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "f9u6qpuryt786uosu8d01epa",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "gcr3siscis5rd5lbj5ow3uht",
+        "sourceHandle": "success",
+        "target": "jory0t6nyfd1p4pyntzi0inb",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "jjzgf594uo8mic283sn05gu2",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "gtsiopdyb7i8vbguwgu6uiw6",
+        "sourceHandle": "success",
+        "target": "s19kqpk41u3kiwhenxnwtt90",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "x3kf1ah7n04vl2ayiov174i8",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "t6cwdv8ad2516nj2twli06zd",
+        "sourceHandle": "success",
+        "target": "v7dgdka2ixlqo12vvcya7bm1",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "y254tsoj7sypcph1rtlpa8q3",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "gqbatza88xr6maekptlfs2o0",
+        "sourceHandle": "success",
+        "target": "oyl320272wj8ezlwfj1k65d5",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "l9rboe5h2dieilrohgp1dee6",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "cjg9smtm9bdam2ne1p310h7m",
+        "sourceHandle": "success",
+        "target": "ggqr3obqgarb85b87htiojzi",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "k3iew3q7zp9hyoximb2kv969",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "itdu7jxbcm5yke63mt3d5gde",
+        "sourceHandle": "success",
+        "target": "f7vq2aex3109m10yl9xmxuao",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "z2cb70ll57noxizjv6dvb1mx",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "avjlsrpfp4z2jmznmp2ggoao",
+        "sourceHandle": "success",
+        "target": "g6c91oy3k6qnkf05qh05sgpz",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ys58md0o6qbvfevgboj6usmd",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "oullsl8z8kjs9ksnxk8u2e7m",
+        "sourceHandle": "success",
+        "target": "ebehwybs5nx6it21gf2zj0fu",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "jbmrllnje2u3qyi2dy1hgpjl",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "yjz6ept11zl092b6xb1zel0h",
+        "sourceHandle": "success",
+        "target": "age0sjcukmbp3r35klkrr3w7",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "h3zd5auiwli5ywqt00eohcbp",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "vikkho0k8nz13ovhx1tyalwf",
+        "sourceHandle": "success",
+        "target": "ujd9px0i77grtq7x1w5kk40m",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ycswceaslywftdfi9219vdsw",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "bctg6cq5s6b6juko8whj0syw",
+        "sourceHandle": "success",
+        "target": "bsnk66tkeikerwv6ium89jtp",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "cg7xb86hze3ze21z0p6pjpdh",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "cth6v83nwd0y1p2v3keems1w",
+        "sourceHandle": "success",
+        "target": "rk2s2qse0mqzyr9iu4qruyhv",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "s86jr9fyzjvepyn4igck8ivb",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1788454520384,
+    "updatedAt": 1788511467173,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
