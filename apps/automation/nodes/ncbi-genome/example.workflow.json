@@ -1,0 +1,259 @@
+[
+  {
+    "name": "test Genome",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "vbxvztfvm35lwu2fcdauklmx",
+        "position": {
+          "x": 284,
+          "y": 18
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "ncbi-genome",
+          "label": "NCBI Genome",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve data from NCBI Genome database.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getById",
+            "apiKey": "tap your apikey here",
+            "id": "51"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "shn3h7yp6p9z8ucay09br623",
+        "position": {
+          "x": 0,
+          "y": 18
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "draggable": true,
+        "selected": false
+      },
+      {
+        "id": "jqzen4wvik2w56x06oyjz5eg",
+        "position": {
+          "x": 568,
+          "y": 0
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "draggable": true,
+        "selected": false
+      },
+      {
+        "id": "gz4qird07mialsbtawffjiyv",
+        "position": {
+          "x": 284,
+          "y": 358
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "ncbi-genome",
+          "label": "NCBI Genome1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve data from NCBI Genome database.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "search",
+            "apiKey": "tap your apikey here",
+            "query": "Escherichia coli[Organism]"
+          },
+          "_morphing": false
+        },
+        "selected": true,
+        "draggable": true
+      },
+      {
+        "id": "sh5kshqxrwl0m88sbw6kqsyb",
+        "position": {
+          "x": 0,
+          "y": 358
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "draggable": true,
+        "selected": false
+      },
+      {
+        "id": "jwz8dg9m4jv7gqbwxlsr3tz2",
+        "position": {
+          "x": 586.5310854246331,
+          "y": 474.35036932859015
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "draggable": true,
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "shn3h7yp6p9z8ucay09br623",
+        "sourceHandle": "success",
+        "target": "vbxvztfvm35lwu2fcdauklmx",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__shn3h7yp6p9z8ucay09br623success-vbxvztfvm35lwu2fcdauklmxinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "vbxvztfvm35lwu2fcdauklmx",
+        "sourceHandle": "success",
+        "target": "jqzen4wvik2w56x06oyjz5eg",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__vbxvztfvm35lwu2fcdauklmxsuccess-jqzen4wvik2w56x06oyjz5eginput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "sh5kshqxrwl0m88sbw6kqsyb",
+        "sourceHandle": "success",
+        "target": "gz4qird07mialsbtawffjiyv",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "hg3n6pa9fxusd0cabkh98bc0",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "gz4qird07mialsbtawffjiyv",
+        "sourceHandle": "success",
+        "target": "jwz8dg9m4jv7gqbwxlsr3tz2",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ufd58g485maaiv17zdre6puj",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1788452324362,
+    "updatedAt": 1788515413641,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
