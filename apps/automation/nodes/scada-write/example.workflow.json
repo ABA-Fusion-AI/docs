@@ -1,0 +1,125 @@
+[
+  {
+    "name": "SCADA Write Example",
+    "nodes": [
+      {
+        "id": "jyb97hf58zxaqtd0hav1gyoy",
+        "position": {
+          "x": 722.5,
+          "y": 561.5
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "tjkx5lvwa9wlrird5wn3gfep",
+        "position": {
+          "x": 289.75,
+          "y": 604.25
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "f3iy0xs8bmoz4vnunmxnjcct",
+        "position": {
+          "x": 470.75,
+          "y": 641.25
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "scada-write",
+          "label": "SCADA Write",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Generic SCADA node for writing data points to various industrial protocols. Supports Modbus, DNP3, BACnet, OPC, IEC61850, and IEC104.",
+          "showRunningStatus": true,
+          "parameters": {
+            "protocol": "Modbus",
+            "connectionString": "tcp://127.0.0.1:502",
+            "pointAddress": "holding-register:40001",
+            "value": 528,
+            "dataType": "integer",
+            "timeout": 5000
+          }
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "tjkx5lvwa9wlrird5wn3gfep",
+        "sourceHandle": "success",
+        "target": "f3iy0xs8bmoz4vnunmxnjcct",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__tjkx5lvwa9wlrird5wn3gfepsuccess-f3iy0xs8bmoz4vnunmxnjcctinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "f3iy0xs8bmoz4vnunmxnjcct",
+        "sourceHandle": "success",
+        "target": "jyb97hf58zxaqtd0hav1gyoy",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__f3iy0xs8bmoz4vnunmxnjcctsuccess-jyb97hf58zxaqtd0hav1gyoyinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "version": 1,
+    "secrets": {}
+  }
+]

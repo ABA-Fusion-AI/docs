@@ -1,0 +1,4 @@
+{
+  "label": "SCADA Write",
+  "description": "Generic SCADA node for writing data points to various industrial protocols. Supports Modbus, DNP3, BACnet, OPC, IEC61850, and IEC104."
+}
