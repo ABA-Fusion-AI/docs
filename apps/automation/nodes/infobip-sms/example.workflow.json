@@ -1,0 +1,178 @@
+[
+  {
+    "name": "infobip",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "l2a4fzvmcob2bsgefs7cbs36",
+        "position": {
+          "x": 720,
+          "y": 196
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "infobip-sms",
+          "label": "Infobip SMS/Email",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Send SMS or Email messages using Infobip API. Supports both SMS and Email channels. Phone numbers are automatically normalized to international format.",
+          "showRunningStatus": true,
+          "parameters": {
+            "channel": "sms",
+            "apiKey": "",
+            "sender": "0669032500",
+            "to": "0651773051",
+            "body": "cc",
+            "baseUrl": "https://y46d9p.api.infobip.com"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "waliigr7c0zxj5nnvfvbed65",
+        "position": {
+          "x": 1061,
+          "y": 185
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "infobip-sms",
+          "label": "Infobip SMS/Email1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Send SMS or Email messages using Infobip API. Supports both SMS and Email channels. Phone numbers are automatically normalized to international format.",
+          "showRunningStatus": true,
+          "parameters": {
+            "channel": "email",
+            "apiKey": "",
+            "sender": "karamyassine1210@gmail.com",
+            "to": "kaeamyassine43@gmail.com",
+            "body": "cc",
+            "subject": "test",
+            "baseUrl": "https://y46d9p.api.infobip.com"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ow0lbfkfa2x3dp3xnoxvopa6",
+        "position": {
+          "x": 562,
+          "y": 165
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "dg8oe3f0ykf8jpdv7aj51pra",
+        "position": {
+          "x": 903,
+          "y": 154
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "ow0lbfkfa2x3dp3xnoxvopa6",
+        "sourceHandle": "success",
+        "target": "l2a4fzvmcob2bsgefs7cbs36",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ow0lbfkfa2x3dp3xnoxvopa6success-l2a4fzvmcob2bsgefs7cbs36input",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "dg8oe3f0ykf8jpdv7aj51pra",
+        "sourceHandle": "success",
+        "target": "waliigr7c0zxj5nnvfvbed65",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "h51twpf4268ds71mn4rl3e8w",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1788533927780,
+    "updatedAt": 1788536003579,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
