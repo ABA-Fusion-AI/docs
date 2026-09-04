@@ -1,0 +1,258 @@
+[
+  {
+    "name": "teestdbVar",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "tecbwjdk2lohnjw5ox6m6fp4",
+        "position": {
+          "x": 0,
+          "y": 18
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "draggable": true,
+        "selected": false
+      },
+      {
+        "id": "d42kmvqq8p501gh6n18h3mit",
+        "position": {
+          "x": 284,
+          "y": 18
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "ncbi-dbvar",
+          "label": "NCBI dbVar",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve data from NCBI dbVar database.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "search",
+            "apiKey": "",
+            "query": "Homo sapiens[Organism]"
+          },
+          "_morphing": false
+        },
+        "draggable": true,
+        "selected": false
+      },
+      {
+        "id": "pq4yxitc8bcms88ql7svky42",
+        "position": {
+          "x": 568,
+          "y": 0
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "draggable": true,
+        "selected": false
+      },
+      {
+        "id": "v88ndmlz0fmedpqayxza8pfh",
+        "position": {
+          "x": 41.732851985559535,
+          "y": 368.3465703971119
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "draggable": true,
+        "selected": true
+      },
+      {
+        "id": "shtqk4bc8d266x0wmpkl4ssk",
+        "position": {
+          "x": 337.73285198555953,
+          "y": 380.3465703971119
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "ncbi-dbvar",
+          "label": "NCBI dbVar1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve data from NCBI dbVar database.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getById",
+            "apiKey": "",
+            "id": "57746192"
+          },
+          "_morphing": false
+        },
+        "draggable": true,
+        "selected": true
+      },
+      {
+        "id": "uygvbfo0jw71p13luqsk7fd8",
+        "position": {
+          "x": 633.7328519855596,
+          "y": 374.3465703971119
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "draggable": true,
+        "selected": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "tecbwjdk2lohnjw5ox6m6fp4",
+        "sourceHandle": "success",
+        "target": "d42kmvqq8p501gh6n18h3mit",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__tecbwjdk2lohnjw5ox6m6fp4success-d42kmvqq8p501gh6n18h3mitinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "d42kmvqq8p501gh6n18h3mit",
+        "sourceHandle": "success",
+        "target": "pq4yxitc8bcms88ql7svky42",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__d42kmvqq8p501gh6n18h3mitsuccess-pq4yxitc8bcms88ql7svky42input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "v88ndmlz0fmedpqayxza8pfh",
+        "sourceHandle": "success",
+        "target": "shtqk4bc8d266x0wmpkl4ssk",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ijacvsxnoc8glsmthvp2184d",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "shtqk4bc8d266x0wmpkl4ssk",
+        "sourceHandle": "success",
+        "target": "uygvbfo0jw71p13luqsk7fd8",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "iyqeubqzoaaezdvetcs51553",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1788433914311,
+    "updatedAt": 1788531271191,
+    "publishedNames": []
+  }
+]
