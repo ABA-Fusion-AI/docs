@@ -1,0 +1,121 @@
+[
+  {
+    "name": "OpenFDA Get Drugs by Manufacturer Example",
+    "nodes": [
+      {
+        "id": "jyb97hf58zxaqtd0hav1gyoy",
+        "position": {
+          "x": 722.5,
+          "y": 561.5
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "urdujw500sp5vq4gsi4f6v1e",
+        "position": {
+          "x": 316,
+          "y": 577
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "pizec0hbyrurgdx6028dkps5",
+        "position": {
+          "x": 491.75,
+          "y": 583.25
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "openfda-get-drugs-by-manufacturer",
+          "label": "OpenFDA Get Drugs by Manufacturer",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get all drugs manufactured by a specific company",
+          "showRunningStatus": true,
+          "parameters": {
+            "manufacturerName": "Pfizer",
+            "limit": 5
+          }
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "urdujw500sp5vq4gsi4f6v1e",
+        "sourceHandle": "success",
+        "target": "pizec0hbyrurgdx6028dkps5",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__urdujw500sp5vq4gsi4f6v1esuccess-pizec0hbyrurgdx6028dkps5input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "pizec0hbyrurgdx6028dkps5",
+        "sourceHandle": "success",
+        "target": "jyb97hf58zxaqtd0hav1gyoy",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__pizec0hbyrurgdx6028dkps5success-jyb97hf58zxaqtd0hav1gyoyinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "version": 1,
+    "secrets": {}
+  }
+]
