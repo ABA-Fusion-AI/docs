@@ -1,0 +1,583 @@
+[
+  {
+    "name": "rcsb",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "hn2i43uidmnoa78kg5585qgn",
+        "position": {
+          "x": 937,
+          "y": -109
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "rcsbpdb",
+          "label": "RCSB PDB",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search, retrieve metadata, and download protein structure files from RCSB Protein Data Bank.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "search",
+            "searchType": "text",
+            "returnType": "entry",
+            "format": "pdb",
+            "searchQuery": "hemoglobin",
+            "rows": 5
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "espry2trpa0fyfyoemh2neoi",
+        "position": {
+          "x": 941,
+          "y": 44
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "rcsbpdb",
+          "label": "RCSB PDB2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search, retrieve metadata, and download protein structure files from RCSB Protein Data Bank.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "search",
+            "searchType": "advanced",
+            "returnType": "entry",
+            "format": "pdb",
+            "searchQuery": "{   \"query\": {     \"type\": \"terminal\",     \"service\": \"full_text\",     \"parameters\": {       \"value\": \"hemoglobin\"     }   },   \"return_type\": \"entry\" }",
+            "rows": 5
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "t0wvc8xrskmxzio4kdp9nxpq",
+        "position": {
+          "x": 937,
+          "y": 173
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "rcsbpdb",
+          "label": "RCSB PDB3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search, retrieve metadata, and download protein structure files from RCSB Protein Data Bank.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "downloadFile",
+            "searchType": "advanced",
+            "returnType": "entry",
+            "format": "pdb",
+            "searchQuery": "{   \"query\": {     \"type\": \"terminal\",     \"service\": \"full_text\",     \"parameters\": {       \"value\": \"hemoglobin\"     }   },   \"return_type\": \"entry\" }",
+            "rows": 5,
+            "pdbId": "4HHB"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "v4ydjf0ammhcl2p0456qchbn",
+        "position": {
+          "x": 936.5524485360555,
+          "y": 297.691463495396
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "rcsbpdb",
+          "label": "RCSB PDB4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search, retrieve metadata, and download protein structure files from RCSB Protein Data Bank.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "downloadFile",
+            "searchType": "advanced",
+            "returnType": "entry",
+            "format": "mmcif",
+            "searchQuery": "{   \"query\": {     \"type\": \"terminal\",     \"service\": \"full_text\",     \"parameters\": {       \"value\": \"hemoglobin\"     }   },   \"return_type\": \"entry\" }",
+            "rows": 5,
+            "pdbId": "4HHB"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "fus3yddy2hte5vgvdt01gqmj",
+        "position": {
+          "x": 1300,
+          "y": -110
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "rcsbpdb",
+          "label": "RCSB PDB1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search, retrieve metadata, and download protein structure files from RCSB Protein Data Bank.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "search",
+            "searchType": "resolution",
+            "returnType": "entry",
+            "format": "pdb",
+            "searchQuery": "hemoglobin",
+            "rows": 5,
+            "maxResolution": 2
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "mili9u8rt3yyx7knzz12djhm",
+        "position": {
+          "x": 1304,
+          "y": 43
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "rcsbpdb",
+          "label": "RCSB PDB2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search, retrieve metadata, and download protein structure files from RCSB Protein Data Bank.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getMetadata",
+            "searchType": "resolution",
+            "returnType": "entry",
+            "format": "pdb",
+            "searchQuery": "hemoglobin",
+            "rows": 5,
+            "maxResolution": 2,
+            "pdbId": "4HHB"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "yz9ut55o58mzx7i1uqheblkz",
+        "position": {
+          "x": 1300,
+          "y": 172
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "rcsbpdb",
+          "label": "RCSB PDB3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search, retrieve metadata, and download protein structure files from RCSB Protein Data Bank.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getMetadata",
+            "searchType": "resolution",
+            "returnType": "entry",
+            "format": "pdb",
+            "searchQuery": "hemoglobin",
+            "rows": 5,
+            "maxResolution": 2,
+            "pdbIds": [
+              "4HHB",
+              "1CRN",
+              "1BNA"
+            ]
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "k2p4ji9t2tq5bk6ygfytas82",
+        "position": {
+          "x": 715,
+          "y": -139.625
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "r17hzv55n1jipye3p911moz2",
+        "position": {
+          "x": 719,
+          "y": 13.375
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "rl2vxcw92od48xvz3twgv6r6",
+        "position": {
+          "x": 715,
+          "y": 142.375
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "kzrcx501pa3z439fyoi2cghe",
+        "position": {
+          "x": 714.5524485360555,
+          "y": 267.066463495396
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "idjw3y1g8exnlkz2ic37v1w4",
+        "position": {
+          "x": 1078,
+          "y": -140.625
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "e4tse4o1eywb417lqucmjdt7",
+        "position": {
+          "x": 1082,
+          "y": 12.375
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "pnasfelvjciy4mxs0iyelhsw",
+        "position": {
+          "x": 1078,
+          "y": 141.375
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "k2p4ji9t2tq5bk6ygfytas82",
+        "sourceHandle": "success",
+        "target": "hn2i43uidmnoa78kg5585qgn",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__k2p4ji9t2tq5bk6ygfytas82success-hn2i43uidmnoa78kg5585qgninput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "idjw3y1g8exnlkz2ic37v1w4",
+        "sourceHandle": "success",
+        "target": "fus3yddy2hte5vgvdt01gqmj",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xui1gsdmz4b373wmnr5eyln8",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "r17hzv55n1jipye3p911moz2",
+        "sourceHandle": "success",
+        "target": "espry2trpa0fyfyoemh2neoi",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "qvv1ghsx9ax97951j393qf8x",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "e4tse4o1eywb417lqucmjdt7",
+        "sourceHandle": "success",
+        "target": "mili9u8rt3yyx7knzz12djhm",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "oqhrfaluq8yc4vsnyx0fcd2g",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "rl2vxcw92od48xvz3twgv6r6",
+        "sourceHandle": "success",
+        "target": "t0wvc8xrskmxzio4kdp9nxpq",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "k2bztjmyryovedn0ioeynwf4",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "pnasfelvjciy4mxs0iyelhsw",
+        "sourceHandle": "success",
+        "target": "yz9ut55o58mzx7i1uqheblkz",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "rdt1a3b0iiiriwszifuxradb",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "kzrcx501pa3z439fyoi2cghe",
+        "sourceHandle": "success",
+        "target": "v4ydjf0ammhcl2p0456qchbn",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xh8p1rymj8rdd46ztsju6x9i",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1788426469072,
+    "updatedAt": 1788533312620,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
