@@ -1,0 +1,120 @@
+[
+  {
+    "name": "OpenFDA Get Drug by Name Example",
+    "nodes": [
+      {
+        "id": "jyb97hf58zxaqtd0hav1gyoy",
+        "position": {
+          "x": 722.5,
+          "y": 561.5
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "urdujw500sp5vq4gsi4f6v1e",
+        "position": {
+          "x": 316,
+          "y": 577
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "vm0dpaekz7qnbx7vrf0jh8tt",
+        "position": {
+          "x": 475.75,
+          "y": 572.25
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "openfda-get-drug-by-name",
+          "label": "OpenFDA Get Drug by Name",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get drug information by brand name from OpenFDA",
+          "showRunningStatus": true,
+          "parameters": {
+            "drugName": "Advil"
+          }
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "urdujw500sp5vq4gsi4f6v1e",
+        "sourceHandle": "success",
+        "target": "vm0dpaekz7qnbx7vrf0jh8tt",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__urdujw500sp5vq4gsi4f6v1esuccess-vm0dpaekz7qnbx7vrf0jh8ttinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "vm0dpaekz7qnbx7vrf0jh8tt",
+        "sourceHandle": "success",
+        "target": "jyb97hf58zxaqtd0hav1gyoy",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__vm0dpaekz7qnbx7vrf0jh8ttsuccess-jyb97hf58zxaqtd0hav1gyoyinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "version": 1,
+    "secrets": {}
+  }
+]
