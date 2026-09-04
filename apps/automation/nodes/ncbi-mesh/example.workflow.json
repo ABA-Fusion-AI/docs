@@ -1,0 +1,258 @@
+[
+  {
+    "name": "test ncbi MeSH",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "b2rokdestvpa1mwhv6nhiqbf",
+        "position": {
+          "x": 284,
+          "y": 18
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "ncbi-mesh",
+          "label": "NCBI MeSH",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve data from NCBI MeSH database.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "search",
+            "query": "Breast Neoplasms[MeSH Terms]",
+            "apiKey": ""
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "tjpf6dqpyudc4w2qij1mv447",
+        "position": {
+          "x": 0,
+          "y": 18
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "krvjhmgltrnfmbko5vch6dxl",
+        "position": {
+          "x": 568,
+          "y": 0
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "vcqgqmogt112fvjpob7q6xfx",
+        "position": {
+          "x": 284,
+          "y": 358
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "ncbi-mesh",
+          "label": "NCBI MeSH1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve data from NCBI MeSH database.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getById",
+            "id": "68001943",
+            "apiKey": ""
+          },
+          "_morphing": false
+        },
+        "selected": true,
+        "draggable": true
+      },
+      {
+        "id": "nyx5dwzzvsu1chhxifnp8nqu",
+        "position": {
+          "x": 0,
+          "y": 358
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "kjo93io83pwv8dqvgdzxf6g9",
+        "position": {
+          "x": 568,
+          "y": 340
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "tjpf6dqpyudc4w2qij1mv447",
+        "sourceHandle": "success",
+        "target": "b2rokdestvpa1mwhv6nhiqbf",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__tjpf6dqpyudc4w2qij1mv447success-b2rokdestvpa1mwhv6nhiqbfinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "b2rokdestvpa1mwhv6nhiqbf",
+        "sourceHandle": "success",
+        "target": "krvjhmgltrnfmbko5vch6dxl",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__b2rokdestvpa1mwhv6nhiqbfsuccess-krvjhmgltrnfmbko5vch6dxlinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "nyx5dwzzvsu1chhxifnp8nqu",
+        "sourceHandle": "success",
+        "target": "vcqgqmogt112fvjpob7q6xfx",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "qx8g318ybnl0o3dv79x02iep",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "vcqgqmogt112fvjpob7q6xfx",
+        "sourceHandle": "success",
+        "target": "kjo93io83pwv8dqvgdzxf6g9",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "dvvz6vms3augdtbmx6qpi06c",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1788538027949,
+    "updatedAt": 1788538108345,
+    "publishedNames": []
+  }
+]
