@@ -1,0 +1,120 @@
+[
+  {
+    "name": "OpenFDA Get Safety Info Example",
+    "nodes": [
+      {
+        "id": "jyb97hf58zxaqtd0hav1gyoy",
+        "position": {
+          "x": 722.5,
+          "y": 561.5
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "urdujw500sp5vq4gsi4f6v1e",
+        "position": {
+          "x": 316,
+          "y": 577
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "spqv0rgknibua25kls7ohdfn",
+        "position": {
+          "x": 472.75,
+          "y": 580.25
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "openfda-get-safety-info",
+          "label": "OpenFDA Get Safety Info",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get comprehensive safety information including warnings and contraindications",
+          "showRunningStatus": true,
+          "parameters": {
+            "drugName": "Advil"
+          }
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "urdujw500sp5vq4gsi4f6v1e",
+        "sourceHandle": "success",
+        "target": "spqv0rgknibua25kls7ohdfn",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__urdujw500sp5vq4gsi4f6v1esuccess-spqv0rgknibua25kls7ohdfninput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "spqv0rgknibua25kls7ohdfn",
+        "sourceHandle": "success",
+        "target": "jyb97hf58zxaqtd0hav1gyoy",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__spqv0rgknibua25kls7ohdfnsuccess-jyb97hf58zxaqtd0hav1gyoyinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "version": 1,
+    "secrets": {}
+  }
+]
