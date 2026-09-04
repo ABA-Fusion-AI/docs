@@ -1,0 +1,259 @@
+[
+  {
+    "name": "test ncbi MedGen",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "snp1lgloyn3bibi6agtlpgu6",
+        "position": {
+          "x": 284,
+          "y": 18
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "ncbi-medgen",
+          "label": "NCBI MedGen",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve data from NCBI MedGen database.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getById",
+            "apiKey": "",
+            "id": "1850577"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "hksldk4mdr7zctnpde48krjf",
+        "position": {
+          "x": 0,
+          "y": 18
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "mc2w3s0427empk974o03quty",
+        "position": {
+          "x": 568,
+          "y": 0
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "orc0nfx4ispfk0cy8z2tunsc",
+        "position": {
+          "x": 284,
+          "y": 358
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "ncbi-medgen",
+          "label": "NCBI MedGen1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve data from NCBI MedGen database.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "search",
+            "apiKey": "",
+            "query": "BRCA1"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "tzyca4wq60so81x2cwkg9uwi",
+        "position": {
+          "x": 0,
+          "y": 358
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "ds6ubbqs9ghuna0vkvq7jgdo",
+        "position": {
+          "x": 604.8715953307393,
+          "y": 524.3579766536965
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": true,
+        "draggable": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "hksldk4mdr7zctnpde48krjf",
+        "sourceHandle": "success",
+        "target": "snp1lgloyn3bibi6agtlpgu6",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__hksldk4mdr7zctnpde48krjfsuccess-snp1lgloyn3bibi6agtlpgu6input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "snp1lgloyn3bibi6agtlpgu6",
+        "sourceHandle": "success",
+        "target": "mc2w3s0427empk974o03quty",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__snp1lgloyn3bibi6agtlpgu6success-mc2w3s0427empk974o03qutyinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "tzyca4wq60so81x2cwkg9uwi",
+        "sourceHandle": "success",
+        "target": "orc0nfx4ispfk0cy8z2tunsc",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "cys3kxj3chwlll9ksh0tn7uq",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "orc0nfx4ispfk0cy8z2tunsc",
+        "sourceHandle": "success",
+        "target": "ds6ubbqs9ghuna0vkvq7jgdo",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "cb0ip8x5e328kssr094ofkaq",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1788535856078,
+    "updatedAt": 1788535992664,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
