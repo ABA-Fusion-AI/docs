@@ -1,0 +1,121 @@
+[
+  {
+    "name": "OpenFDA Get Drug by Generic Name Example",
+    "nodes": [
+      {
+        "id": "jyb97hf58zxaqtd0hav1gyoy",
+        "position": {
+          "x": 722.5,
+          "y": 561.5
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "urdujw500sp5vq4gsi4f6v1e",
+        "position": {
+          "x": 316,
+          "y": 577
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "pplrywy37uaje6arijpek03t",
+        "position": {
+          "x": 487.75,
+          "y": 600.25
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "openfda-get-drug-by-generic-name",
+          "label": "OpenFDA Get Drug by Generic Name",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get drug information by generic (active ingredient) name",
+          "showRunningStatus": true,
+          "parameters": {
+            "genericName": "ibuprofen",
+            "limit": 5
+          }
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "urdujw500sp5vq4gsi4f6v1e",
+        "sourceHandle": "success",
+        "target": "pplrywy37uaje6arijpek03t",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__urdujw500sp5vq4gsi4f6v1esuccess-pplrywy37uaje6arijpek03tinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "pplrywy37uaje6arijpek03t",
+        "sourceHandle": "success",
+        "target": "jyb97hf58zxaqtd0hav1gyoy",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__pplrywy37uaje6arijpek03tsuccess-jyb97hf58zxaqtd0hav1gyoyinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "version": 1,
+    "secrets": {}
+  }
+]
