@@ -1,0 +1,299 @@
+---
+node_id: "ncbi-nlmcatalog"
+title: "NCBI NLM Catalog"
+description: "Search and retrieve biomedical catalog records from the NCBI NLM Catalog database."
+category: "Healthcare & Life Sciences"
+subcategory: "NCBI"
+version: "1.0.0"
+language: "en"
+last_updated: "2026-09-04"
+author: "Fusion Team"
+tags:
+  - ncbi
+  - nlm-catalog
+  - biomedical-literature
+  - journals
+  - publications
+  - bioinformatics
+  - research
+  - life-sciences
+related_nodes:
+  - pub-med-search
+  - pmc
+  - ncbi-mesh
+  - ncbi-books
+  - ncbi-bioproject
+---
+
+<!-- SECTION: header -->
+# NCBI NLM Catalog
+
+> **Category:** Healthcare & Life Sciences | **Subcategory:** NCBI | **Type:** Action Node
+
+Search and retrieve biomedical publication and catalog records from the National Library of Medicine (NLM) Catalog through NCBI.
+
+<!-- /SECTION: header -->
+
+---
+
+<!-- SECTION: overview -->
+## Overview
+
+The **NCBI NLM Catalog** node provides workflow access to catalog records for journals, books, serials, and other biomedical resources held by the National Library of Medicine. Use it to search by title, author, subject, ISSN, or research term, or retrieve a specific catalog record by identifier.
+
+### Key Features
+
+- **Catalog Search:** Find NLM catalog records using a title, author, subject, ISSN, or NCBI search expression
+- **Record Lookup:** Retrieve a specific NLM Catalog record by NCBI identifier
+- **Bibliographic Metadata:** Access titles, publication details, identifiers, subjects, and related metadata returned by NCBI
+- **Optional API Key:** Use an NCBI API key for enhanced request limits where supported
+- **Dynamic Input:** Override the operation, query, identifier, and API key from incoming workflow data
+- **Error Routing:** Route invalid requests, rate limits, network failures, and API errors to the error output
+
+### Use Cases
+
+- Verify journal and serial publication information
+- Find catalog records using ISSN or publication title
+- Enrich literature and research datasets with bibliographic metadata
+- Connect catalog records with PubMed, PMC, MeSH, or NCBI Books workflows
+- Build publication and biomedical-resource catalogs
+
+<!-- /SECTION: overview -->
+
+---
+
+<!-- SECTION: configuration -->
+## Configuration
+
+### Parameters
+
+| Parameter | Type | Required | Default | Description |
+|-----------|------|----------|---------|-------------|
+| `operation` | `enum` | Yes | `search` | Operation supported by the node: `search` or `getById` |
+| `query` | `string` | Conditional | — | Text or NCBI search expression used to find catalog records; required for `search` |
+| `id` | `string` | Conditional | — | NCBI NLM Catalog identifier required for `getById` |
+| `apiKey` | `string` | No | — | Optional NCBI API key for enhanced request limits |
+
+### Search Operation
+
+Set `operation` to `search` and provide a title, author, subject, ISSN, or catalog search expression:
+
+```json
+{
+  "operation": "search",
+  "query": "0028-0836[ISSN]"
+}
+```
+
+### Get-by-ID Operation
+
+Set `operation` to `getById` and provide the NCBI NLM Catalog identifier:
+
+```json
+{
+  "operation": "getById",
+  "id": "410462"
+}
+```
+
+### API and Authentication
+
+NCBI public services can generally be used without an API key, subject to rate limits. An NCBI API key can provide enhanced access for supported services.
+
+Store the key in Fusion’s secret system and reference it dynamically:
+
+```json
+{
+  "apiKey": "{{secrets.ncbiApiKey}}"
+}
+```
+
+The example workflow contains empty API-key values, not a real key. Do not commit an actual NCBI API key in workflow files.
+
+### Request Limits
+
+Limits depend on the NCBI service and whether an API key is supplied. Respect NCBI usage policies and avoid high-frequency requests without an appropriate request strategy.
+
+<!-- /SECTION: configuration -->
+
+---
+
+<!-- SECTION: inputs-outputs -->
+## Inputs & Outputs
+
+### Input
+
+| Input | Type | Description |
+|-------|------|-------------|
+| `input` | `object` | Optional dynamic input containing `operation`, `query`, `id`, and `apiKey` overrides |
+
+### Success Output
+
+| Output | Type | Description |
+|--------|------|-------------|
+| `success` | `object` or `array` | NLM Catalog record or search response returned by NCBI |
+
+### Success Output Example
+
+```json
+{
+  "results": [
+    {
+      "uid": "410462",
+      "title": "Biomedical journal catalog record",
+      "source": "NCBI NLM Catalog"
+    }
+  ]
+}
+```
+
+The exact fields depend on the selected operation and the response returned by NCBI.
+
+### Error Output
+
+Invalid operations, missing query or ID values, rate limits, network failures, and NCBI API errors are routed to the error output.
+
+```json
+{
+  "success": false,
+  "error": "NCBI NLM Catalog request failed"
+}
+```
+
+<!-- /SECTION: inputs-outputs -->
+
+---
+
+<!-- SECTION: examples -->
+## Examples
+
+### Search by ISSN
+
+```json
+{
+  "operation": "search",
+  "query": "0028-0836[ISSN]"
+}
+```
+
+### Retrieve a Catalog Record by ID
+
+```json
+{
+  "operation": "getById",
+  "id": "410462"
+}
+```
+
+### Search with an API Key
+
+```json
+{
+  "operation": "search",
+  "apiKey": "{{secrets.ncbiApiKey}}",
+  "query": "0028-0836[ISSN]"
+}
+```
+
+### Dynamic Catalog Search
+
+A previous node can provide the operation and query dynamically:
+
+```json
+{
+  "operation": "search",
+  "query": "Nature journal"
+}
+```
+
+Keep the API key in Fusion’s secret system even when the query comes from incoming data.
+
+<!-- /SECTION: examples -->
+
+---
+
+<!-- SECTION: workflow-example -->
+## Workflow Integration
+
+### Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Search and retrieve NCBI NLM Catalog records
+```
+
+### Common Patterns
+
+- **Catalog Search:** Manual Trigger → NCBI NLM Catalog → Log
+- **Record Lookup:** Manual Trigger → NCBI NLM Catalog → Log
+- **Literature Enrichment:** NCBI NLM Catalog → PubMed Search → Database
+- **Resource Discovery:** NCBI NLM Catalog → NCBI MeSH or NCBI Books → Function
+- **Dynamic Search:** Input Data → NCBI NLM Catalog → Function
+
+<!-- /SECTION: workflow-example -->
+
+---
+
+<!-- SECTION: troubleshooting -->
+## Troubleshooting
+
+### Common Issues
+
+#### Search query is missing
+
+**Cause:** The `query` parameter was not provided for the `search` operation.
+
+**Solution:** Provide a title, author, subject, ISSN, keyword, or supported NCBI search expression.
+
+#### Catalog ID is missing
+
+**Cause:** The `id` parameter was not provided for the `getById` operation.
+
+**Solution:** Provide a valid NCBI NLM Catalog identifier.
+
+#### API request is rate-limited
+
+**Cause:** Request volume exceeded the applicable NCBI limit.
+
+**Solution:** Reduce request frequency, use batching where appropriate, or configure an NCBI API key through Fusion’s secret system.
+
+#### NCBI request failed
+
+**Cause:** The NCBI service, network, or request parameters are unavailable or invalid.
+
+**Solution:** Verify the operation and required parameter, check the NCBI service status, and retry with a smaller request rate.
+
+### Error Codes
+
+| Error | Cause | Solution |
+|-------|------|----------|
+| Missing query | `search` was selected without `query` | Provide a search query |
+| Missing ID | `getById` was selected without `id` | Provide an NLM Catalog identifier |
+| Rate limit or HTTP 429 | Too many requests | Slow down requests or use an API key |
+| Network-related error | NCBI endpoint unavailable | Check connectivity and retry |
+
+<!-- /SECTION: troubleshooting -->
+
+---
+
+<!-- SECTION: related -->
+## Related
+
+- [PubMed Search](./pub-med-search.md) - Search biomedical literature
+- [PMC](./pmc.md) - Retrieve PubMed Central content
+- [NCBI MeSH](./ncbi-mesh.md) - Search controlled biomedical vocabulary
+- [NCBI Books](./ncbi-books.md) - Search biomedical books and records
+- [NCBI BioProject](./ncbi-bioproject.md) - Work with study and project records
+
+<!-- /SECTION: related -->
+
+---
+
+<!-- SECTION: changelog -->
+## Changelog
+
+| Version | Date | Changes |
+|---------|------|---------|
+| 1.0.0 | 2026-09-04 | Initial documentation and workflow examples for NLM Catalog search and lookup |
+
+<!-- /SECTION: changelog -->
