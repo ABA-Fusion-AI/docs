@@ -1,6 +1,13 @@
-<svg  height="800px" width="800px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 viewBox="0 0 60 60" xml:space="preserve">
-  <rect x="0.0" y="0.0" width="60.0" height="60.0" rx="9.0" fill="#EC4899" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-1955" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#bg-1955)"/>
+  <g transform="translate(16,16) scale(0.75)">
+    <rect x="0.0" y="0.0" width="60.0" height="60.0" rx="9.0" fill="#EC4899" />
   
 <g>
 	<path d="M31.634,37.989c1.041-0.081,1.99-0.612,2.606-1.459l9.363-12.944c0.287-0.397,0.244-0.945-0.104-1.293
@@ -36,5 +43,5 @@
 	<path d="M21.793,42h-13c-0.553,0-1,0.447-1,1s0.447,1,1,1h13c0.553,0,1-0.447,1-1S22.346,42,21.793,42z"/>
 	<path d="M21.793,49h-7c-0.553,0-1,0.447-1,1s0.447,1,1,1h7c0.553,0,1-0.447,1-1S22.346,49,21.793,49z"/>
 </g>
-
+  </g>
 </svg>

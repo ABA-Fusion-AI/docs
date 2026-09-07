@@ -1,10 +1,18 @@
-<svg width="2140" height="2496" viewBox="0 0 2140 2496" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0.0" y="0.0" width="2140.0" height="2496.0" rx="321.0" fill="#F97316" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-713" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#bg-713)"/>
+  <g transform="translate(16,16) scale(0.75)">
+    <rect x="0.0" y="0.0" width="2140.0" height="2496.0" rx="321.0" fill="#F97316" />
   
     <path d="M506.21 397.923L0 1203.83L506.21 2009.88L515.038 2003.58L508.559 399.578L506.21 397.923Z" fill="#FFFFFF" fill-opacity="0.8"/>
     <path d="M1071.56 1865.02L506.21 2009.88V397.923L1071.56 542.749V1865.02Z" fill="#FFFFFF"/>
     <path d="M2139.82 600.772L1867.31 645.837L1241.68 0L930.658 136.191L971.685 212.704L751.558 300.695V2335.6L1071.55 2495.71L1076.88 2491.54L1071.96 399.729L1750.25 1427.66L2139.82 600.772Z" fill="#FFFFFF" fill-opacity="0.8"/>
     <path d="M1241.68 0L2074.94 416.606L1745.44 1014.47L1241.68 0Z" fill="#FFFFFF"/>
     <path d="M2139.79 600.772L2140 1961.08L1071.56 2495.71L1071.42 172.897L1745.44 1395.8L2139.79 600.772Z" fill="#FFFFFF"/>
-    
+  </g>
 </svg>

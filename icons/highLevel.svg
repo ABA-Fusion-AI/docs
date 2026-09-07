@@ -1,5 +1,13 @@
-<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="5.77734" y="6.8042" width="5.29216" height="32.887" fill="#FDC400"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-1302" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#0E7490"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#bg-1302)"/>
+  <g transform="translate(16,16) scale(0.75)">
+    <rect x="5.77734" y="6.8042" width="5.29216" height="32.887" fill="#FDC400"/>
 <rect x="28.8359" y="6.8042" width="5.29216" height="32.887" fill="#4ACF27"/>
 <rect x="16.9287" y="18.9951" width="6.04819" height="20.6961" fill="#2896FB"/>
 <path d="M8.47064 0L16.9413 8.93053H0L8.47064 0Z" fill="#FDC400"/>
@@ -8,4 +16,5 @@
 <path d="M5.77734 8.93042H11.0695V14.2226L5.77734 8.93042Z" fill="#DAA900"/>
 <path d="M28.8359 8.93042H34.1281V14.2226L28.8359 8.93042Z" fill="#51B346"/>
 <path d="M16.9287 21.594H22.9769V27.6422L16.9287 21.594Z" fill="#1F81DB"/>
+  </g>
 </svg>
