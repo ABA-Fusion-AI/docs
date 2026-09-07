@@ -1,17 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
     aria-label="Remove duplicates">
+  <rect x="0.0" y="0.0" width="24.0" height="24.0" rx="3.5999999999999996" fill="#6366F1" />
+  
     <title>Remove duplicates</title>
     <!-- list -->
-    <circle cx="5" cy="7" r="1.4" fill="currentColor" />
-    <circle cx="5" cy="12" r="1.4" fill="currentColor" />
-    <circle cx="5" cy="17" r="1.4" fill="currentColor" />
-    <line x1="9" y1="7" x2="20" y2="7" stroke="currentColor" stroke-width="2"
+    <circle cx="5" cy="7" r="1.4" fill="#FFFFFF" />
+    <circle cx="5" cy="12" r="1.4" fill="#FFFFFF" />
+    <circle cx="5" cy="17" r="1.4" fill="#FFFFFF" />
+    <line x1="9" y1="7" x2="20" y2="7" stroke="#FFFFFF" stroke-width="2"
         stroke-linecap="round" />
-    <line x1="9" y1="12" x2="16" y2="12" stroke="currentColor" stroke-width="2"
+    <line x1="9" y1="12" x2="16" y2="12" stroke="#FFFFFF" stroke-width="2"
         stroke-linecap="round" />
-    <line x1="9" y1="17" x2="20" y2="17" stroke="currentColor" stroke-width="2"
+    <line x1="9" y1="17" x2="20" y2="17" stroke="#FFFFFF" stroke-width="2"
         stroke-linecap="round" />
     <!-- filtered/removed mark -->
-    <path d="M20 15l2.5 2.5M22.5 15l-2.5 2.5" stroke="currentColor" stroke-width="2"
+    <path d="M20 15l2.5 2.5M22.5 15l-2.5 2.5" stroke="#FFFFFF" stroke-width="2"
         stroke-linecap="round" />
+
 </svg>
