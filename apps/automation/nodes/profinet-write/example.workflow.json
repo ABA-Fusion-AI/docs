@@ -1,0 +1,129 @@
+[
+  {
+    "name": "PROFINET Write Example",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "s6kswaiy8ec0tepbrrncp5zs",
+        "position": {
+          "x": 571,
+          "y": 156
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "nnviuuqw3hg5mga43oq587fz",
+        "position": {
+          "x": 915,
+          "y": 133
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "qyympoyn5qiqkjaavb0mpfm0",
+        "position": {
+          "x": 707,
+          "y": 152
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "profinet-write",
+          "label": "PROFINET Write",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Writes data to PROFINET devices. PROFINET is an industrial Ethernet standard for real-time automation.",
+          "showRunningStatus": true,
+          "parameters": {
+            "deviceIp": "192.168.10.1",
+            "slot": 0,
+            "subslot": 0,
+            "index": 0,
+            "data": [
+              128
+            ],
+            "port": 34964
+          }
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "s6kswaiy8ec0tepbrrncp5zs",
+        "sourceHandle": "success",
+        "target": "qyympoyn5qiqkjaavb0mpfm0",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__s6kswaiy8ec0tepbrrncp5zssuccess-qyympoyn5qiqkjaavb0mpfm0input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "qyympoyn5qiqkjaavb0mpfm0",
+        "sourceHandle": "success",
+        "target": "nnviuuqw3hg5mga43oq587fz",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__qyympoyn5qiqkjaavb0mpfm0success-nnviuuqw3hg5mga43oq587fzinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "tracingEnabled": true,
+    "version": 1
+  }
+]
