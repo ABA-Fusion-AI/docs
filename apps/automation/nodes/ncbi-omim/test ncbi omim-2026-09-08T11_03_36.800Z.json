@@ -1,0 +1,278 @@
+[
+  {
+    "name": "test ncbi omim",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "w4ppshfpemhbquzsttfqx3ov",
+        "position": {
+          "x": 0,
+          "y": 18
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "zuvwpb2af2e6n3zvw1c39w1e",
+        "position": {
+          "x": 568,
+          "y": 0
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "zfs4kv2akdvk0m9xhx48758w",
+        "position": {
+          "x": 577.8294573643411,
+          "y": 319.2403100775194
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "daner648dfqhad1st5vfu8oh",
+        "position": {
+          "x": -33.534883720930225,
+          "y": 308.6279069767442
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "i2dqi3k6c6f9fzhygexg6p5l",
+        "position": {
+          "x": 263.95092117185146,
+          "y": 5.132928118393231
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "ncbi-omim",
+          "label": "NCBI OMIM",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve data from NCBI OMIM database.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "search",
+            "apiKey": "",
+            "query": "BRCA1[Title]"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ofx4dl5lznyjdph6xzftacqj",
+        "position": {
+          "x": 273.4219772475587,
+          "y": 300.43996023356493
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "ncbi-omim",
+          "label": "NCBI OMIM1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve data from NCBI OMIM database.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getById",
+            "apiKey": "",
+            "id": "113705"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "w4ppshfpemhbquzsttfqx3ov",
+        "sourceHandle": "success",
+        "target": "mg6k10zd91z2805neyq43tud",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__w4ppshfpemhbquzsttfqx3ovsuccess-mg6k10zd91z2805neyq43tudinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "mg6k10zd91z2805neyq43tud",
+        "sourceHandle": "success",
+        "target": "zuvwpb2af2e6n3zvw1c39w1e",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__mg6k10zd91z2805neyq43tudsuccess-zuvwpb2af2e6n3zvw1c39w1einput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "w4ppshfpemhbquzsttfqx3ov",
+        "sourceHandle": "success",
+        "target": "i2dqi3k6c6f9fzhygexg6p5l",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__w4ppshfpemhbquzsttfqx3ovsuccess-i2dqi3k6c6f9fzhygexg6p5linput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "i2dqi3k6c6f9fzhygexg6p5l",
+        "sourceHandle": "success",
+        "target": "zuvwpb2af2e6n3zvw1c39w1e",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__i2dqi3k6c6f9fzhygexg6p5lsuccess-zuvwpb2af2e6n3zvw1c39w1einput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "daner648dfqhad1st5vfu8oh",
+        "sourceHandle": "success",
+        "target": "ofx4dl5lznyjdph6xzftacqj",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__daner648dfqhad1st5vfu8ohsuccess-ofx4dl5lznyjdph6xzftacqjinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ofx4dl5lznyjdph6xzftacqj",
+        "sourceHandle": "success",
+        "target": "zfs4kv2akdvk0m9xhx48758w",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ofx4dl5lznyjdph6xzftacqjsuccess-zfs4kv2akdvk0m9xhx48758winput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1788864471322,
+    "updatedAt": 1788865406450,
+    "publishedNames": []
+  }
+]
