@@ -1,12 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
-  <defs>
-    <linearGradient id="bg-1340" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#EC4899"/>
-      <stop offset="100%" stop-color="#BE185D"/>
-    </linearGradient>
-  </defs>
-  <rect width="128" height="128" rx="28" fill="url(#bg-1340)"/>
-  <g transform="translate(16,16) scale(0.75)">
-    <path d="M18.8 18.8C8.4 18.8 0 27.1 0 37.5s8.4 18.8 18.8 18.8 18.8-8.4 18.8-18.8-8.5-18.7-18.8-18.7m0 62.4C8.4 81.2 0 89.6 0 100s8.4 18.8 18.8 18.8 18.8-8.4 18.8-18.8-8.5-18.8-18.8-18.8m0 62.6C8.4 143.8 0 152.1 0 162.5s8.4 18.8 18.8 18.8 18.8-8.4 18.8-18.8-8.5-18.7-18.8-18.7m175 6.2h-125c-3.5 0-6.2 2.8-6.2 6.2v12.5c0 3.5 2.8 6.2 6.2 6.2h125c3.5 0 6.2-2.8 6.2-6.2v-12.5c0-3.4-2.8-6.2-6.2-6.2m0-125h-125c-3.5 0-6.2 2.8-6.2 6.2v12.5c0 3.5 2.8 6.2 6.2 6.2h125c3.5 0 6.2-2.8 6.2-6.2V31.2c0-3.4-2.8-6.2-6.2-6.2m0 62.5h-125c-3.5 0-6.2 2.8-6.2 6.2v12.5c0 3.5 2.8 6.2 6.2 6.2h125c3.5 0 6.2-2.8 6.2-6.2V93.8c0-3.5-2.8-6.3-6.2-6.3" style="fill:#ff6d5a"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" color="#64748B"><title>itemLists</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7h3a1 1 0 0 0 1-1V5a2 2 0 0 1 4 0v1a1 1 0 0 0 1 1h3a1 1 0 0 1 1 1v3a1 1 0 0 0 1 1h1a2 2 0 0 1 0 4h-1a1 1 0 0 0-1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1v-1a2 2 0 0 0-4 0v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a2 2 0 0 0 0-4H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1"/></svg>

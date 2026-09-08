@@ -1,14 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
-  <defs>
-    <linearGradient id="bg-1141" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#8B5CF6"/>
-      <stop offset="100%" stop-color="#6D28D9"/>
-    </linearGradient>
-  </defs>
-  <rect width="128" height="128" rx="28" fill="url(#bg-1141)"/>
-  <g transform="translate(16,16) scale(0.75)">
-    <rect x="0.0" y="0.0" width="169.0" height="169.0" rx="25.349999999999998" fill="#8B5CF6" />
-  
-<path d="M169 147C169 159.15 159.15 169 147 169H0V0H169V147ZM27 44L50.8564 126H69.9092L84.6797 76.2715H85.3203L100.091 126H119.184L143 44H121.145L108.736 97.8525H108.056L93.9258 44H76.0742L61.9443 97.7324H61.2637L48.8955 44H27Z"  fill="#FFFFFF"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" color="#64748B"><title>whatcms</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7h3a1 1 0 0 0 1-1V5a2 2 0 0 1 4 0v1a1 1 0 0 0 1 1h3a1 1 0 0 1 1 1v3a1 1 0 0 0 1 1h1a2 2 0 0 1 0 4h-1a1 1 0 0 0-1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1v-1a2 2 0 0 0-4 0v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a2 2 0 0 0 0-4H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1"/></svg>

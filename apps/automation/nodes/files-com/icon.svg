@@ -1,11 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
-  <defs>
-    <linearGradient id="def-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#4F46E5" />
-      <stop offset="100%" stop-color="#EC4899" />
-    </linearGradient>
-  </defs>
-  <rect width="48" height="48" rx="10" fill="url(#def-bg)" />
-  <path d="M18 12h12v6a3 3 0 006 0v-6h6v12a3 3 0 000 6h-6v6a3 3 0 00-6 0v-6H18a3 3 0 000-6h6v-6h-6z" fill="#FFFFFF" opacity="0.9" />
-  <circle cx="24" cy="24" r="4" fill="#F59E0B" />
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" fill="#4285F4"><title>files-com</title><path d="M12.367 2.453a.822.822 0 0 0-.576.238L.241 14.213a.822.822 0 0 0-.241.584v.066c0-.323.209-.608.516-.709l7.275-2.318a2.437 2.437 0 0 0 1.584-1.592l2.318-7.267a.757.757 0 0 1 .719-.524zM0 14.863v5.047c0 .904.733 1.637 1.637 1.637h20.726c.904 0 1.637-.733 1.637-1.637V4.09c0-.904-.733-1.637-1.637-1.637h-9.951v.5l.088 9.861c.01 1.175-.962 2.14-2.137 2.14L0 14.862zM12 3.66l-2.148 6.735v.001a2.94 2.94 0 0 1-1.909 1.916l-6.716 2.141h9.136c.905 0 1.638-.734 1.637-1.639zm-10.363.975c-.905 0-1.638.734-1.637 1.638v7.473l9.135-9.111Z"/></svg>

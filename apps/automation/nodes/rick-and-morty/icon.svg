@@ -1,11 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
-  <defs>
-    <linearGradient id="def-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#4F46E5" />
-      <stop offset="100%" stop-color="#EC4899" />
-    </linearGradient>
-  </defs>
-  <rect width="48" height="48" rx="10" fill="url(#def-bg)" />
-  <path d="M18 12h12v6a3 3 0 006 0v-6h6v12a3 3 0 000 6h-6v6a3 3 0 00-6 0v-6H18a3 3 0 000-6h6v-6h-6z" fill="#FFFFFF" opacity="0.9" />
-  <circle cx="24" cy="24" r="4" fill="#F59E0B" />
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" color="#64748B"><title>rick-and-morty</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7h3a1 1 0 0 0 1-1V5a2 2 0 0 1 4 0v1a1 1 0 0 0 1 1h3a1 1 0 0 1 1 1v3a1 1 0 0 0 1 1h1a2 2 0 0 1 0 4h-1a1 1 0 0 0-1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1v-1a2 2 0 0 0-4 0v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a2 2 0 0 0 0-4H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1"/></svg>

@@ -1,12 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
-  <defs>
-    <linearGradient id="bg-964" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#EC4899"/>
-      <stop offset="100%" stop-color="#BE185D"/>
-    </linearGradient>
-  </defs>
-  <rect width="128" height="128" rx="28" fill="url(#bg-964)"/>
-  <g transform="translate(16,16) scale(0.75)">
-    <path fill="#F04E98" d="M256 0H0v294.79z"/><path fill="#343741" d="M0 122.88v171.91l122.194-140.71C85.862 134.277 44.288 122.88 0 122.88"/><path fill="#00BFB3" d="M148.59 170.54 23.2 314.945l-11.069 12.738h238.736C237.77 263.13 200.302 207.496 148.59 170.54"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 328" width="100%" height="100%" preserveAspectRatio="xMidYMid meet"><title>Kibana</title><path fill="#f04e98" d="M256 0H0v294.789z"/><path fill="#343741" d="M0 122.88v171.91l122.194-140.71C85.862 134.277 44.288 122.88 0 122.88"/><path fill="#00bfb3" d="M148.59 170.54L23.2 314.945l-11.069 12.738h238.736C237.77 263.13 200.302 207.496 148.59 170.54"/></svg>

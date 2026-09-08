@@ -1,12 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
-  <defs>
-    <linearGradient id="bg-1129" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#3B82F6"/>
-      <stop offset="100%" stop-color="#1D4ED8"/>
-    </linearGradient>
-  </defs>
-  <rect width="128" height="128" rx="28" fill="url(#bg-1129)"/>
-  <g transform="translate(16,16) scale(0.75)">
-    <defs><linearGradient id="a" x1="0%" y1="68.01%" y2="68.01%"><stop offset="0%" stop-color="#8930FD"/><stop offset="100%" stop-color="#49CCF9"/></linearGradient><linearGradient id="b" x1="0%" y1="68.01%" y2="68.01%"><stop offset="0%" stop-color="#FF02F0"/><stop offset="100%" stop-color="#FFC800"/></linearGradient></defs><g fill="none"><path fill="url(#a)" d="m.4 119.12 23.81-18.24C36.86 117.39 50.3 125 65.26 125c14.88 0 27.94-7.52 40.02-23.9l24.15 17.8C112 142.52 90.34 155 65.26 155c-25 0-46.87-12.4-64.86-35.88"/><path fill="url(#b)" d="M65.18 39.84 22.8 76.36 3.21 53.64 65.27.16l61.57 53.52-19.68 22.64z"/></g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 311" width="100%" height="100%" preserveAspectRatio="xMidYMid meet"><title>clickup</title><defs><linearGradient id="SVGEobEabCc" x1="0%" x2="100%" y1="118.01%" y2="118.01%"><stop offset="0%" stop-color="#7612fa"/><stop offset="100%" stop-color="#40ddff"/></linearGradient><linearGradient id="SVGMrRN4bVF" x1="0%" x2="100%" y1="118.01%" y2="118.01%"><stop offset="0%" stop-color="#fa12e3"/><stop offset="100%" stop-color="gold"/></linearGradient></defs><path fill="url(#SVGEobEabCc)" d="m0 238.388l47.24-36.553c25.098 33.087 51.764 48.337 81.444 48.337c29.523 0 55.435-15.07 79.401-47.896L256 237.947c-34.582 47.336-77.556 72.346-127.316 72.346c-49.6 0-92.991-24.85-128.684-71.905"/><path fill="url(#SVGMrRN4bVF)" d="M128.534 79.52L44.45 152.707L5.583 107.176L128.712 0l122.157 107.255l-39.046 45.372z"/></svg>

@@ -1,17 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
-  <defs>
-    <linearGradient id="bg-1139" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#F59E0B"/>
-      <stop offset="100%" stop-color="#D97706"/>
-    </linearGradient>
-  </defs>
-  <rect width="128" height="128" rx="28" fill="url(#bg-1139)"/>
-  <g transform="translate(16,16) scale(0.75)">
-    <rect x="0.0" y="0.0" width="24.0" height="24.0" rx="3.5999999999999996" fill="#EC4899" />
-  
-    <path d="M6.657 15.9999C4.085 15.9999 2 13.9929 2 11.5169C2 9.04188 4.085 7.03488 6.657 7.03488C7.05 5.27288 8.451 3.83488 10.332 3.26188C12.212 2.68988 14.288 3.06888 15.776 4.26188C17.264 5.45188 17.938 7.26888 17.546 9.03088H18.536C20.449 9.03088 22 10.5909 22 12.5169C22 14.4439 20.449 16.0039 18.535 16.0039H6.657" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M12 16V21" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M16 16V20C16 20.2652 16.1054 20.5196 16.2929 20.7071C16.4804 20.8946 16.7348 21 17 21H21" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M8 16V20C8 20.2652 7.89464 20.5196 7.70711 20.7071C7.51957 20.8946 7.26522 21 7 21H3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" color="#64748B"><title>storage</title><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4 6a8 3 0 1 0 16 0A8 3 0 1 0 4 6"/><path d="M4 6v6a8 3 0 0 0 16 0V6"/><path d="M4 12v6a8 3 0 0 0 16 0v-6"/></g></svg>

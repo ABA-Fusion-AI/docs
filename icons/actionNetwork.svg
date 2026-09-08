@@ -1,16 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
-  <defs>
-    <linearGradient id="bg-1766" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#06B6D4"/>
-      <stop offset="100%" stop-color="#0E7490"/>
-    </linearGradient>
-  </defs>
-  <rect width="128" height="128" rx="28" fill="url(#bg-1766)"/>
-  <g transform="translate(16,16) scale(0.75)">
-    <rect width="48" height="48" rx="10" fill="#4F46E5" />
-  <circle cx="24" cy="14" r="4" fill="#38BDF8" />
-  <circle cx="14" cy="32" r="4" fill="#F59E0B" />
-  <circle cx="34" cy="32" r="4" fill="#10B981" />
-  <path d="M24 18l-8 11M24 18l8 11M18 32h12" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" color="#64748B"><title>actionNetwork</title><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0-18 0m.6-3h16.8M3.6 15h16.8"/><path d="M11.5 3a17 17 0 0 0 0 18m1-18a17 17 0 0 1 0 18"/></g></svg>

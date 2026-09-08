@@ -1,14 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
-  <defs>
-    <linearGradient id="bg-1130" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10B981"/>
-      <stop offset="100%" stop-color="#047857"/>
-    </linearGradient>
-  </defs>
-  <rect width="128" height="128" rx="28" fill="url(#bg-1130)"/>
-  <g transform="translate(16,16) scale(0.75)">
-    <rect width="24" height="24" rx="5" fill="#C62828" />
-  <path d="M12 4v4M12 16v4M4 12h4M16 12h4" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
-  <circle cx="12" cy="12" r="3" fill="#FFFFFF" />
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" fill="#F73F39"><title>rundeck</title><path d="M19.35 4.8 16.325 0H.115L3.14 4.8h16.21zM.115 24h16.21l3.025-4.8H3.14L.115 24zM6.163 9.6h16.21l1.512 2.4-1.512 2.4H6.163L7.675 12 6.163 9.6z"/></svg>

@@ -1,11 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
-  <defs>
-    <linearGradient id="bg-clean-850" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#EC4899"/>
-      <stop offset="100%" stop-color="#BE185D"/>
-    </linearGradient>
-  </defs>
-  <rect width="128" height="128" rx="28" fill="url(#bg-clean-850)"/>
-  <circle cx="64" cy="64" r="32" fill="#FFFFFF" opacity="0.18"/>
-  <text x="64" y="74" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="30" font-weight="900" fill="#FFFFFF" text-anchor="middle">RA</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 257" width="100%" height="100%" preserveAspectRatio="xMidYMid meet"><title>rabbitmq</title><path fill="#f60" d="M245.734 102.437h-81.911a10.2 10.2 0 0 1-10.263-10.263v-81.91a10.2 10.2 0 0 0-10.263-10.2h-30.66a10.2 10.2 0 0 0-10.264 10.2v81.91a10.2 10.2 0 0 1-10.263 10.263H61.45a10.2 10.2 0 0 1-10.263-10.263v-81.91A10.2 10.2 0 0 0 40.924 0H10.199A10.2 10.2 0 0 0 0 10.263v235.535a10.2 10.2 0 0 0 10.263 10.263h235.47a10.2 10.2 0 0 0 10.264-10.263V112.893a10.2 10.2 0 0 0-10.263-10.456m-41.18 86.979a15.33 15.33 0 0 1-15.33 15.394h-20.526a15.33 15.33 0 0 1-15.33-15.394v-20.462a15.33 15.33 0 0 1 15.33-15.394h20.525a15.33 15.33 0 0 1 15.33 15.394z"/></svg>

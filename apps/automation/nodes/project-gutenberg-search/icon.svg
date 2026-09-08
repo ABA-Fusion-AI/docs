@@ -1,11 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
-  <defs>
-    <linearGradient id="def-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#4F46E5" />
-      <stop offset="100%" stop-color="#EC4899" />
-    </linearGradient>
-  </defs>
-  <rect width="48" height="48" rx="10" fill="url(#def-bg)" />
-  <path d="M18 12h12v6a3 3 0 006 0v-6h6v12a3 3 0 000 6h-6v6a3 3 0 00-6 0v-6H18a3 3 0 000-6h6v-6h-6z" fill="#FFFFFF" opacity="0.9" />
-  <circle cx="24" cy="24" r="4" fill="#F59E0B" />
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" color="#64748B"><title>project-gutenberg-search</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0-14 0m18 11l-6-6"/></svg>
