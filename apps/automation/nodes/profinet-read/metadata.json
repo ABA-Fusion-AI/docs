@@ -1,0 +1,4 @@
+{
+  "label": "PROFINET Read",
+  "description": "Reads data from PROFINET devices. PROFINET is an industrial Ethernet standard for real-time automation."
+}
