@@ -1,1 +1,460 @@
-{"name":"Query SQL Server safely","nodes":[{"id":"trigger","type":"trigger","position":{"x":80,"y":160},"data":{"name":"manual-trigger","label":"Run","inputs":{},"outputs":{"success":{"label":"Success"},"error":{"label":"Error"}}}},{"id":"node","type":"action","position":{"x":300,"y":160},"data":{"name":"mssql","label":"SQL Server","inputs":{"input":{"label":"Input"}},"outputs":{"success":{"label":"Success"},"error":{"label":"Error"}}}},{"id":"output","type":"display","position":{"x":520,"y":160},"data":{"name":"log","label":"Result","inputs":{"input":{"label":"Input"}},"outputs":{"success":{"label":"Success"}}}}],"connections":[{"id":"trigger-node","type":"directed","source":"trigger","target":"node","sourceHandle":"success","targetHandle":"input"},{"id":"node-output","type":"directed","source":"node","target":"output","sourceHandle":"success","targetHandle":"input"}]}
+[
+  {
+    "name": "sqlserver",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "l7ddxhov3gc7pm3cbf82h6ju",
+        "position": {
+          "x": 783.578779589253,
+          "y": 57.09311391989317
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "mssql",
+          "label": "SQL Server",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Node for Microsoft SQL Server actions",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "Select",
+            "user": "fusion_user",
+            "password": "FusionTest@2026!",
+            "server": "rccbd-197-230-172-128.run.pinggy-free.link",
+            "database": "FusionTest",
+            "schemaName": "dbo",
+            "table": "Users",
+            "port": 32885
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "o5bhaouu6byvw4ehwfal3twp",
+        "position": {
+          "x": 934.6243702569024,
+          "y": -80.34360264610228
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "mssql",
+          "label": "SQL Server4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Node for Microsoft SQL Server actions",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "SQL Query",
+            "user": "fusion_user",
+            "password": "FusionTest@2026!",
+            "server": "rccbd-197-230-172-128.run.pinggy-free.link",
+            "database": "FusionTest",
+            "schemaName": "dbo",
+            "port": 32885,
+            "sqlQueryParams": {
+              "outFormat": "object",
+              "acknowledgeRisk": true,
+              "statement": "SELECT * FROM dbo.Users WHERE name = @name;",
+              "binds": {
+                "name": "test"
+              }
+            }
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "laxqjxaemaig9xxg7mz31396",
+        "position": {
+          "x": 1112.0819409526775,
+          "y": 53.43210449378981
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "mssql",
+          "label": "SQL Server1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Node for Microsoft SQL Server actions",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "Insert",
+            "user": "fusion_user",
+            "password": "FusionTest@2026!",
+            "server": "rccbd-197-230-172-128.run.pinggy-free.link",
+            "database": "FusionTest",
+            "schemaName": "dbo",
+            "table": "Users",
+            "port": 32885,
+            "insertData": {
+              "name": "test",
+              "email": "test@test.com"
+            }
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "rqe6vgk96b6hziprj0nailsk",
+        "position": {
+          "x": 781.7169936815316,
+          "y": 208.11785045776278
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "mssql",
+          "label": "SQL Server2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Node for Microsoft SQL Server actions",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "Update",
+            "user": "fusion_user",
+            "password": "FusionTest@2026!",
+            "server": "rccbd-197-230-172-128.run.pinggy-free.link",
+            "database": "FusionTest",
+            "schemaName": "dbo",
+            "table": "Users",
+            "port": 32885,
+            "updateParams": {
+              "data": {
+                "name": "newyassine"
+              },
+              "where": {
+                "name": "Yassine"
+              }
+            }
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "op6gxom7okrofbc3rtkw21al",
+        "position": {
+          "x": 1114.7703491653606,
+          "y": 219.92750104103467
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "mssql",
+          "label": "SQL Server3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Node for Microsoft SQL Server actions",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "Delete",
+            "user": "fusion_user",
+            "password": "FusionTest@2026!",
+            "server": "rccbd-197-230-172-128.run.pinggy-free.link",
+            "database": "FusionTest",
+            "schemaName": "dbo",
+            "table": "Users",
+            "port": 32885,
+            "deleteParams": {
+              "where": {
+                "name": "newyassine"
+              }
+            }
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "zul60cnorbbdzpfs5i80d2s4",
+        "position": {
+          "x": 606.5884258955699,
+          "y": 46.80875619715894
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "mdvj9llhw4xbaujri724mkrn",
+        "position": {
+          "x": 757.6340165632192,
+          "y": -90.62796036883651
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "thvc8tt7rkpzpvbhtdlxg1jj",
+        "position": {
+          "x": 935.0915872589945,
+          "y": 43.14774677105558
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ac7h789p1tc17i7kvfc8b5rb",
+        "position": {
+          "x": 604.7266399878486,
+          "y": 197.83349273502856
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "plmbibqp5tm27gue05knrxxw",
+        "position": {
+          "x": 937.7799954716775,
+          "y": 209.64314331830045
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "zul60cnorbbdzpfs5i80d2s4",
+        "sourceHandle": "success",
+        "target": "l7ddxhov3gc7pm3cbf82h6ju",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__zul60cnorbbdzpfs5i80d2s4success-l7ddxhov3gc7pm3cbf82h6juinput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "zul60cnorbbdzpfs5i80d2s4",
+        "sourceHandle": "success",
+        "target": "hauxa1af27rqd9c0nt362qq3",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__zul60cnorbbdzpfs5i80d2s4success-hauxa1af27rqd9c0nt362qq3input",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "thvc8tt7rkpzpvbhtdlxg1jj",
+        "sourceHandle": "success",
+        "target": "laxqjxaemaig9xxg7mz31396",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ycj90c9a9vaqe3hlbl7rrw11",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "ac7h789p1tc17i7kvfc8b5rb",
+        "sourceHandle": "success",
+        "target": "rqe6vgk96b6hziprj0nailsk",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "n6ff3pk8mb3h97kvzvqq8k20",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "plmbibqp5tm27gue05knrxxw",
+        "sourceHandle": "success",
+        "target": "op6gxom7okrofbc3rtkw21al",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "agcqu3qrv2frpw6zil76jti5",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "mdvj9llhw4xbaujri724mkrn",
+        "sourceHandle": "success",
+        "target": "o5bhaouu6byvw4ehwfal3twp",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "s9n47oaz6a2szsws3h2af8jc",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1788857520248,
+    "updatedAt": 1788867322231,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
