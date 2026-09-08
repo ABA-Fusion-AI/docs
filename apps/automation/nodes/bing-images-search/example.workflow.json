@@ -1,0 +1,124 @@
+[
+  {
+    "name": "Bing Images Search Example",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "fp7g4e9u4r9ehu41mjooxzzv",
+        "position": {
+          "x": 577,
+          "y": 234
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "hlsl9ijyw9mjq4nr3wtmeod3",
+        "position": {
+          "x": 928.5,
+          "y": 205
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "yggi8a5qj9la8w7fxiqnqpsc",
+        "position": {
+          "x": 720.25,
+          "y": 235
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bing-images-search",
+          "label": "Bing Images Search",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search Bing Images by scraping results (official API retired). Returns image URLs, titles, and metadata.",
+          "showRunningStatus": true,
+          "parameters": {
+            "query": "cat",
+            "count": 5,
+            "size": "all"
+          }
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "fp7g4e9u4r9ehu41mjooxzzv",
+        "sourceHandle": "success",
+        "target": "yggi8a5qj9la8w7fxiqnqpsc",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__fp7g4e9u4r9ehu41mjooxzzvsuccess-yggi8a5qj9la8w7fxiqnqpscinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "yggi8a5qj9la8w7fxiqnqpsc",
+        "sourceHandle": "success",
+        "target": "hlsl9ijyw9mjq4nr3wtmeod3",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__yggi8a5qj9la8w7fxiqnqpscsuccess-hlsl9ijyw9mjq4nr3wtmeod3input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "tracingEnabled": true,
+    "version": 1
+  }
+]

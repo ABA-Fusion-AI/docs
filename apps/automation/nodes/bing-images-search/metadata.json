@@ -1,0 +1,4 @@
+{
+  "label": "Bing Images Search",
+  "description": "Search Bing Images by scraping results (official API retired). Returns image URLs, titles, and metadata."
+}
