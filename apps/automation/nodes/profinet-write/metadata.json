@@ -1,0 +1,4 @@
+{
+  "label": "PROFINET Write",
+  "description": "Writes data to PROFINET devices. PROFINET is an industrial Ethernet standard for real-time automation."
+}
