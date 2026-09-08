@@ -1,0 +1,127 @@
+[
+  {
+    "name": "PROFINET Read Example",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "s6kswaiy8ec0tepbrrncp5zs",
+        "position": {
+          "x": 571,
+          "y": 156
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "zadrbec1kpb1zgc4n8mqaoaa",
+        "position": {
+          "x": 741,
+          "y": 161
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "profinet-read",
+          "label": "PROFINET Read",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Reads data from PROFINET devices. PROFINET is an industrial Ethernet standard for real-time automation.",
+          "showRunningStatus": true,
+          "parameters": {
+            "deviceIp": "192.168.10.1",
+            "slot": 0,
+            "subslot": 0,
+            "index": 0,
+            "length": 1,
+            "ioDataType": "input",
+            "port": 34964
+          }
+        }
+      },
+      {
+        "id": "nnviuuqw3hg5mga43oq587fz",
+        "position": {
+          "x": 915,
+          "y": 133
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "s6kswaiy8ec0tepbrrncp5zs",
+        "sourceHandle": "success",
+        "target": "zadrbec1kpb1zgc4n8mqaoaa",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__s6kswaiy8ec0tepbrrncp5zssuccess-zadrbec1kpb1zgc4n8mqaoaainput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "zadrbec1kpb1zgc4n8mqaoaa",
+        "sourceHandle": "success",
+        "target": "nnviuuqw3hg5mga43oq587fz",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__zadrbec1kpb1zgc4n8mqaoaasuccess-nnviuuqw3hg5mga43oq587fzinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "version": 1
+  }
+]
