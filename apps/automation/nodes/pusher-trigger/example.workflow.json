@@ -1,0 +1,93 @@
+[
+    {
+        "name": "pusher-trigger",
+        "variables": {},
+        "secrets": {},
+        "nodes": [
+            {
+                "id": "yanicux8jj22y6pv9t6kzh0i",
+                "position": {
+                    "x": 570,
+                    "y": 177.0078125
+                },
+                "type": "trigger",
+                "width": 64,
+                "height": 64,
+                "data": {
+                    "name": "pusher-trigger",
+                    "label": "Pusher Trigger",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success"
+                        },
+                        "error": {
+                            "label": "Error"
+                        }
+                    },
+                    "description": "Triggers workflow when events are received from Pusher channels.",
+                    "showRunningStatus": true,
+                    "parameters": {
+                        "channel": "test_fusion",
+                        "event": "user-registered",
+                        "appKey": "",
+                        "cluster": "eu"
+                    },
+                    "_morphing": false
+                },
+                "selected": true
+            },
+            {
+                "id": "n3zbdp00detoavg5z8w94w1x",
+                "position": {
+                    "x": 819.5,
+                    "y": 224.015625
+                },
+                "type": "display",
+                "width": 256,
+                "height": 100,
+                "dragHandle": ".drag-handle__custom",
+                "data": {
+                    "name": "log",
+                    "label": "Log",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": false
+                        }
+                    },
+                    "description": "Logs the input data to the console.",
+                    "showRunningStatus": false,
+                    "parameters": {},
+                    "_morphing": false
+                },
+                "selected": false
+            }
+        ],
+        "connections": [
+            {
+                "source": "yanicux8jj22y6pv9t6kzh0i",
+                "sourceHandle": "success",
+                "target": "n3zbdp00detoavg5z8w94w1x",
+                "targetHandle": "input",
+                "type": "directed",
+                "id": "xy-edge__yanicux8jj22y6pv9t6kzh0isuccess-n3zbdp00detoavg5z8w94w1xinput",
+                "data": {
+                    "isAnimated": false
+                }
+            }
+        ],
+        "status": "stopped",
+        "tracingEnabled": true,
+        "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+        "version": 1,
+        "createdAt": 1788861472033,
+        "updatedAt": 1788861538436,
+        "publishedNames": []
+    }
+]
