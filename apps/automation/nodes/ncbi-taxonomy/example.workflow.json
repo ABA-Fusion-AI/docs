@@ -1,0 +1,259 @@
+[
+  {
+    "name": "test nbci taxonomy",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "mgf6znz0nbuht5d4oqm8q5gn",
+        "position": {
+          "x": 284,
+          "y": 18
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "ncbi-taxonomy",
+          "label": "NCBI Taxonomy",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve data from NCBI Taxonomy database.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "search",
+            "apiKey": "",
+            "query": "Homo sapiens[Scientific Name]"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "utgrybg9cpnuz95f2xpet4jy",
+        "position": {
+          "x": 0,
+          "y": 18
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "ghgqwaygu3hdr3v7f0w3o828",
+        "position": {
+          "x": 568,
+          "y": 0
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "n1jzo8sj0lnix8f50e4dp6rb",
+        "position": {
+          "x": 284,
+          "y": 358
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "ncbi-taxonomy",
+          "label": "NCBI Taxonomy1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search and retrieve data from NCBI Taxonomy database.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getById",
+            "apiKey": "",
+            "id": "9606"
+          },
+          "_morphing": false
+        },
+        "selected": true,
+        "draggable": true
+      },
+      {
+        "id": "s7ovijk81kmo01mcldmo8h3b",
+        "position": {
+          "x": 0,
+          "y": 358
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "xr4cr8iuc34is3jwtlyxb5ut",
+        "position": {
+          "x": 568,
+          "y": 340
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "utgrybg9cpnuz95f2xpet4jy",
+        "sourceHandle": "success",
+        "target": "mgf6znz0nbuht5d4oqm8q5gn",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__utgrybg9cpnuz95f2xpet4jysuccess-mgf6znz0nbuht5d4oqm8q5gninput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "mgf6znz0nbuht5d4oqm8q5gn",
+        "sourceHandle": "success",
+        "target": "ghgqwaygu3hdr3v7f0w3o828",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__mgf6znz0nbuht5d4oqm8q5gnsuccess-ghgqwaygu3hdr3v7f0w3o828input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "s7ovijk81kmo01mcldmo8h3b",
+        "sourceHandle": "success",
+        "target": "n1jzo8sj0lnix8f50e4dp6rb",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "f92ijdvfenbvcicx8rjyq7er",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "n1jzo8sj0lnix8f50e4dp6rb",
+        "sourceHandle": "success",
+        "target": "xr4cr8iuc34is3jwtlyxb5ut",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "oicp5l3sr6l0bwdbikxvsaw6",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1788882975994,
+    "updatedAt": 1788883419533,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
