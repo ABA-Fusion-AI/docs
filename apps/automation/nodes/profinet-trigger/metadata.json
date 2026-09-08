@@ -1,0 +1,4 @@
+{
+  "label": "PROFINET Trigger",
+  "description": "Monitors PROFINET IO data and triggers workflow on value changes. PROFINET is an industrial Ethernet standard for real-time automation."
+}

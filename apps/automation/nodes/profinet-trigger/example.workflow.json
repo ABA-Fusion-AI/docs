@@ -1,0 +1,89 @@
+[
+  {
+    "name": "PROFINET Trigger Example",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "nnviuuqw3hg5mga43oq587fz",
+        "position": {
+          "x": 915,
+          "y": 133
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "ea09l730gg38lr1ur1qenvai",
+        "position": {
+          "x": 566,
+          "y": 283
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "profinet-trigger",
+          "label": "PROFINET Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Monitors PROFINET IO data and triggers workflow on value changes. PROFINET is an industrial Ethernet standard for real-time automation.",
+          "showRunningStatus": true,
+          "parameters": {
+            "deviceIp": "192.168.10.1",
+            "slot": 0,
+            "subslot": 0,
+            "index": 0,
+            "length": 1,
+            "ioDataType": "input",
+            "port": 34964,
+            "pollInterval": 1000,
+            "triggerOnFirstRead": true
+          }
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "ea09l730gg38lr1ur1qenvai",
+        "sourceHandle": "success",
+        "target": "nnviuuqw3hg5mga43oq587fz",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ea09l730gg38lr1ur1qenvaisuccess-nnviuuqw3hg5mga43oq587fzinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "tracingEnabled": true,
+    "version": 1
+  }
+]
