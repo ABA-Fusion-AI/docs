@@ -1,0 +1,126 @@
+{
+  "name": "Validate Email Example",
+  "nodes": [
+    {
+      "id": "trigger-manual-1",
+      "position": {
+        "x": 360,
+        "y": 220
+      },
+      "type": "trigger",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Triggers the workflow manually.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      },
+      "selected": false
+    },
+    {
+      "id": "action-validate-email-1",
+      "position": {
+        "x": 580,
+        "y": 220
+      },
+      "type": "action",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "validate-email",
+        "label": "Validate Email",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Validate email format.",
+        "showRunningStatus": false,
+        "parameters": {
+          "data": "user@example.com"
+        },
+        "_morphing": false
+      },
+      "selected": false
+    },
+    {
+      "id": "display-log-1",
+      "position": {
+        "x": 820,
+        "y": 200
+      },
+      "type": "display",
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "data": {
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      },
+      "selected": false
+    }
+  ],
+  "connections": [
+    {
+      "id": "edge-trigger-to-validate-email",
+      "source": "trigger-manual-1",
+      "sourceHandle": "success",
+      "target": "action-validate-email-1",
+      "targetHandle": "input",
+      "type": "directed",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "id": "edge-validate-email-to-log",
+      "source": "action-validate-email-1",
+      "sourceHandle": "success",
+      "target": "display-log-1",
+      "targetHandle": "input",
+      "type": "directed",
+      "data": {
+        "isAnimated": false
+      }
+    }
+  ],
+  "version": 1,
+  "secrets": {},
+  "variables": {},
+  "status": "stopped"
+}
