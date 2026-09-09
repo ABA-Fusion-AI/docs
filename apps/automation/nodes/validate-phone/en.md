@@ -18,48 +18,76 @@ tags:
   - data-cleaning
   - data-transformation
 related_nodes:
-  - schema-validate
+  - validate-email
   - validate-url
+  - schema-validate
   - regex-match
   - to-string
   - html-sanitize
 ---
 
-<!-- SECTION: overview -->
+<!-- SECTION: header -->
 # Validate Phone
 
-> **Category:** Data Transformation (ETL) &nbsp;&nbsp;|&nbsp;&nbsp;**Type:** Action Node
+> **Category:** Data Transformation (ETL) | **Subcategory:** Date & Time | **Type:** Action Node
 
-The **Validate Phone** node verifies whether a given phone number conforms to standard telephone numbering formats and returns both the original and sanitized versions along with the matched format.
+Verify phone number syntax, clean common formatting characters (spaces, dashes, parentheses, dots), and validate against **US**, **International**, and strict **E.164** standards with automatic format detection.
 
-It supports targeted validation against specific standards (such as **US**, **International**, or **E.164**) as well as automatic format detection. Before applying regex validation, the node cleans standard formatting artifacts—such as spaces, dashes, dots, and parentheses—allowing users and webhooks to submit formatted numbers seamlessly.
+<!-- /SECTION: header -->
+
+---
+
+<!-- SECTION: overview -->
+## Overview
+
+The **Validate Phone** node acts as an automated validation and sanitization gatekeeper for telephone numbers in your automation pipelines. Before forwarding customer contact numbers to messaging providers (Twilio, WhatsApp, MessageBird), saving them into CRMs (HubSpot, Salesforce), or running SMS marketing campaigns, this node ensures that the number is well-structured and conforms to telecommunication standards.
+
+When a phone number is processed, the node cleans visual formatting artifacts (` `, `-`, `(`, `)`, `.`) and returns a structured output payload containing `valid: true`, the original `phone`, the sanitized `cleaned` string, and the `format` identifier that matched.
 
 ```
-Input Phone ("+1 (555) 234-5678")
-  ↓
-Clean Formatting (remove spaces, -, (, ), .) → "+15552345678"
-  ↓
-Validate against Format (US / International / E.164 / Auto-detect)
-  ↓
-Validation Successful?
-  ├─ Yes → Return { valid: true, phone, cleaned, format }
-  └─ No  → Throw Error ("Invalid phone number format: ...")
+┌────────────────────────────────────────────────────────┐
+│ Inbound Contact Data: "+1 (555) 234-5678"              │
+└───────────────────────────┬────────────────────────────┘
+                            │
+                            ▼
+┌────────────────────────────────────────────────────────┐
+│ Strip Formatting: [\s\-\(\)\.] ➔ "+15552345678"       │
+└───────────────────────────┬────────────────────────────┘
+                            │
+                            ▼
+┌────────────────────────────────────────────────────────┐
+│ Validate against Format (US, International, E.164, or Auto) │
+└───────────────────────────┬────────────────────────────┘
+                            │
+                  ┌─────────┴─────────┐
+                  │                   │
+              [success]            [error]
+                  │                   │
+                  ▼                   ▼
+┌───────────────────────────┐ ┌───────────────────────────┐
+│ { valid: true,            │ │ Reject / Route to Error   │
+│   phone: "+1 (555) 234..",│ │ Notification Flow         │
+│   cleaned: "+15552345678",│ │ ("Invalid phone number")  │
+│   format: "us" }          │ └───────────────────────────┘
+└───────────────────────────┘
 ```
 
 ### Key Features
 
-- **Multi-Format Support:** Validates against `us`, `international`, and `e164` standards.
-- **Auto-Detection Mode:** When no format is explicitly configured, automatically tests against all supported patterns in sequence.
-- **Automatic Sanitization:** Automatically removes common formatting characters (` `, `-`, `(`, `)`, `.`) while preserving the raw input.
-- **Flexible Input Resolution:** Accepts direct configuration strings, upstream workflow strings, numbers, or objects with a `data` property.
-- **Structured Output:** Produces clean attributes ready for CRM updates, SMS gateways, and downstream branching.
+- **Multi-Format Standards:** Supports dedicated validation rules for `us`, `international`, and `e164` phone standards.
+- **Smart Auto-Detection:** When no specific format is selected, the node sequentially evaluates `us`, `international`, and `e164` patterns, tagging the output with the matched format.
+- **Automated Sanitization:** Strips spaces, hyphens, periods, and parentheses while preserving the original input string for reporting.
+- **Flexible Input Resolution:** Accepts direct configuration strings, upstream workflow strings, numbers, or objects containing a `data` property.
+- **Fail-Fast Error Handling:** Throws clear, descriptive errors when numbers are missing, empty, or fail format validation.
+
+---
 
 ### Common Use Cases
 
-- **Form Submission Sanitization:** Validate and normalize phone numbers captured from lead generation forms or webhooks before saving to a database or CRM (HubSpot, Salesforce).
-- **Messaging Pipelines:** Ensure phone numbers match the strict E.164 format required by SMS and messaging APIs (Twilio, WhatsApp, MessageBird) before attempting to dispatch notifications.
-- **Workflow Branching:** Gate automated workflows to ensure downstream communication nodes are only executed for valid, reachable contact numbers.
-- **Data Migration & ETL:** Clean and standardize legacy customer phone records during bulk data import or synchronization routines.
+- **Lead Intake & Webhooks:** Sanitize and validate incoming phone numbers submitted through website contact forms or lead generation funnels before database insertion.
+- **SMS & Messaging Gateways:** Ensure customer numbers are sanitized into E.164 format prior to dispatching notifications via Twilio, Vonage, or WhatsApp Business API.
+- **CRM Sync & Deduplication:** Clean and normalize phone numbers across customer databases to prevent duplicate entries and invalid dial records.
+- **Conditional Workflow Branching:** Route valid numbers directly to automated dialers or messaging nodes while routing invalid numbers to manual review queues.
 
 <!-- /SECTION: overview -->
 
@@ -68,55 +96,54 @@ Validation Successful?
 <!-- SECTION: configuration -->
 ## Configuration
 
+Add the **Validate Phone** node to your workflow canvas and click it to configure its parameters.
+
 ### Parameters
 
 | Parameter | Type | Required | Default | Description |
-|-----------|------|:--------:|---------|-------------|
-| `data` | `string` | No | — | The phone number string to validate. If empty or omitted, the node uses incoming data from upstream nodes. |
-| `format` | `string` | No | — | Target validation pattern (`us`, `international`, `e164`). If omitted, the node tests all formats automatically. |
+|-----------|:----:|:--------:|:-------:|-------------|
+| `data` | `string` | ❌ No | — | The phone number string to validate. If empty or omitted, the node validates the incoming payload from the `input` connection. |
+| `format` | `string` | ❌ No | — | Specific validation pattern to enforce (`us`, `international`, `e164`). If left blank, the node tests all formats automatically. |
 
 ---
 
-### Supported Formats & Patterns
+### Parameter Details & Configuration Options
 
-The node validates cleaned numbers against regular expression patterns:
+#### 1. `data` (Optional)
+The target telephone number to validate.
+- **Static Entry:** Enter a fixed number directly (e.g. `+1 (555) 234-5678` or `+212 612 345 678`).
+- **Dynamic Expression:** Enter expressions like `outputs.Webhook.success.body.phone` or `outputs.FormTrigger.success.phone` to validate inbound payload fields dynamically.
+- **Fallback:** If omitted or empty, the node automatically reads the payload passed into the `input` port from the previous node.
 
-| Format Name | Regex Pattern | Description | Examples |
-|-------------|---------------|-------------|----------|
-| `us` | `^\+?1?[2-9]\d{2}[2-9]\d{2}\d{4}$` | North American Numbering Plan (NANP). Supports optional `+1` prefix, with area code and exchange code starting with digits 2–9. | `(555) 234-5678`<br>`+1-555-234-5678`<br>`5552345678` |
-| `international` | `^\+?[1-9]\d{1,14}$` | ITU-T international numbering format. Allows 1 to 15 digits (excluding leading zeros), with an optional leading `+`. | `+212 612-345678`<br>`+44 20 7183 8750`<br>`33123456789` |
-| `e164` | `^\+[1-9]\d{1,14}$` | Strict ITU-T E.164 standard. Requires a leading `+` followed by the country code and subscriber number (up to 15 digits total). | `+15552345678`<br>`+212612345678`<br>`+33612345678` |
+#### 2. `format` (Optional)
+Specifies which standard to enforce during validation:
 
-> **Auto-Detection:** When the `format` parameter is left blank, the node tries `us`, `international`, and `e164` in order. The first pattern that matches is recorded as the `format` in the output.
+| Format Option | Regular Expression Pattern | Description | Accepted Examples |
+|---------------|----------------------------|-------------|-------------------|
+| `us` | `^\+?1?[2-9]\d{2}[2-9]\d{2}\d{4}$` | North American Numbering Plan (NANP). Supports 10 digits with optional `+1` prefix. Area code and exchange code must start with digits 2–9. | `(555) 234-5678`<br>`+1-555-234-5678`<br>`5552345678`<br>`15552345678` |
+| `international` | `^\+?[1-9]\d{1,14}$` | ITU-T international numbering plan. Allows 1 to 15 digits (excluding leading zeros), with an optional leading `+`. | `+212 612-345678`<br>`+44 20 7183 8750`<br>`33123456789`<br>`+15552345678` |
+| `e164` | `^\+[1-9]\d{1,14}$` | Strict ITU-T E.164 recommendation. Requires a leading `+` followed by the country code and subscriber number (max 15 digits). | `+15552345678`<br>`+212612345678`<br>`+33612345678`<br>`+442071838750` |
+
+> [!TIP]
+> **Auto-Detection Behavior:** If `format` is not specified, the node checks `us` first, then `international`, and finally `e164`. The first matching format is assigned to the `format` output property.
 
 ---
 
-### Input Resolution
+### Input Resolution & Coercion Rules
 
-The node resolves the phone number value in the following order:
+The node resolves and processes input data using the following logic:
 
-1. **Config Parameter:** If `config.data` is provided and contains a non-empty, non-whitespace string, it is used.
-2. **Upstream Workflow Data:** If `config.data` is empty, undefined, or whitespace-only, the incoming tick payload `data` is used.
-3. **Type Coercion:**
-   - **String:** Direct string value, trimmed.
-   - **Object with `data` property:** If the input is an object containing a string property named `data` (e.g. `{ "data": "+1 (555) 000-1122" }`), it extracts that property.
+1. **Config Precedence:** If `config.data` is provided as a non-empty string (after trimming), it is used as the source value.
+2. **Workflow Input Fallback:** If `config.data` is `undefined`, `null`, or whitespace-only, the incoming tick payload `data` is used.
+3. **Data Type Handling:**
+   - **String:** Trimmed directly (`phoneString = inputData.trim()`).
+   - **Object with `data` Property:** If the input is an object containing a string property named `data` (e.g. `{ "data": "+1 (555) 234-5678" }`), it extracts and trims `data`.
    - **Other Objects:** JSON-stringified and trimmed.
-   - **Primitives (Numbers, etc.):** Converted to string and trimmed.
-
----
-
-### Sanitization Process
-
-Before pattern matching, the node strips all whitespace, dashes, parentheses, and dots:
-
-```javascript
-cleaned = phoneString.replace(/[\s\-\(\)\.]/g, "");
-```
-
-For example:
-- `"+1 (555) 234-5678"` → `"+15552345678"`
-- `"+212 6.12.34.56.78"` → `"+212612345678"`
-- `"555-234-5678"` → `"5552345678"`
+   - **Primitives (Numbers):** Converted to string and trimmed (`String(inputData).trim()`).
+4. **Sanitization:** All occurrences of whitespace (`\s`), hyphens (`-`), parentheses (`(` and `)`), and dots (`.`) are stripped:
+   ```javascript
+   const cleaned = phoneString.replace(/[\s\-\(\)\.]/g, "");
+   ```
 
 <!-- /SECTION: configuration -->
 
@@ -125,22 +152,24 @@ For example:
 <!-- SECTION: inputs-outputs -->
 ## Inputs & Outputs
 
-### Inputs
+### Input Port
 
-| Input | Type | Description |
-|-------|------|-------------|
-| `input` | `string` \| `number` \| `object` | Raw phone number string, numeric representation, or payload object containing a `data` field. |
+| Port | Description |
+|------|-------------|
+| `input` | Receives data from upstream triggers or action nodes. Sourced as the phone number when `data` is not defined in the configuration panel. |
 
-### Outputs
+### Output Ports
 
-| Output | Type | Description |
-|--------|------|-------------|
-| `success` | `object` | Emitted when validation succeeds, containing validation details and cleaned numbers. |
-| `error` | `object` | Emitted if the number is missing, empty, or fails pattern validation. |
+| Port | Color | Description |
+|------|:-----:|-------------|
+| `success` | 🟢 Green | Emitted when the phone number is valid and matches the target format. Returns validation status, original string, cleaned string, and matched format. |
+| `error` | 🔴 Red | Emitted when input data is missing, empty, or fails regular expression pattern validation. |
+
+---
 
 ### Output Schema (`success`)
 
-When validation succeeds, the node returns an object with the following structure:
+When validation succeeds, the node outputs a structured JSON object:
 
 ```json
 {
@@ -151,33 +180,101 @@ When validation succeeds, the node returns an object with the following structur
 }
 ```
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `valid` | `boolean` | Always `true` upon successful execution. |
-| `phone` | `string` | The original, trimmed input string before character cleaning. |
-| `cleaned` | `string` | The sanitized phone number without spaces, hyphens, periods, or parentheses. |
-| `format` | `string` | The matched format identifier (`"us"`, `"international"`, or `"e164"`). |
+| Field | Type | Description | Example |
+|-------|:----:|-------------|---------|
+| `valid` | `boolean` | Confirms validation was successful. Always `true` on the `success` output port. | `true` |
+| `phone` | `string` | The original trimmed phone string before removing formatting characters. | `"+1 (555) 234-5678"` |
+| `cleaned` | `string` | The sanitized number stripped of spaces, dashes, parentheses, and dots. Ready for SMS/API payloads. | `"+15552345678"` |
+| `format` | `string` | The format identifier that validated the number (`"us"`, `"international"`, or `"e164"`). | `"us"` |
 
 ---
 
-### Accessing Output in Expressions
+### How to Use Output Data in Downstream Nodes
 
-Downstream nodes can reference output values using Fusion expressions:
+Reference output values in downstream workflow steps using Fusion expression syntax:
 
-- **Sanitized Number (for SMS / WhatsApp API):**
-  ```
-  {{ outputs["Validate Phone"].cleaned }}
-  ```
-- **Original Phone Number:**
-  ```
-  {{ outputs["Validate Phone"].phone }}
-  ```
-- **Matched Format:**
-  ```
-  {{ outputs["Validate Phone"].format }}
-  ```
+| Desired Value | Expression Syntax | Typical Downstream Use Case |
+|---------------|-------------------|-----------------------------|
+| **Sanitized Number** | `{{ outputs["Validate Phone"].cleaned }}` | Pass to Twilio, WhatsApp, or SMS marketing nodes |
+| **Original Phone** | `{{ outputs["Validate Phone"].phone }}` | Save formatted string to CRM contact notes |
+| **Matched Format** | `{{ outputs["Validate Phone"].format }}` | Route by regional format using Switch or If-Else nodes |
+| **Validation Flag** | `{{ outputs["Validate Phone"].valid }}` | Conditional checks in branching logic |
 
 <!-- /SECTION: inputs-outputs -->
+
+---
+
+<!-- SECTION: examples -->
+## Step-by-Step Usage Examples
+
+### Example 1: Validating a US Phone Number with Auto-Sanitization
+
+Clean and validate a formatted US phone number:
+
+**Configuration:**
+- **data:** `"(415) 555-2671"`
+- **format:** `"us"`
+
+**Output (`success`):**
+```json
+{
+  "valid": true,
+  "phone": "(415) 555-2671",
+  "cleaned": "4155552671",
+  "format": "us"
+}
+```
+
+---
+
+### Example 2: Strict E.164 Validation for Global SMS Delivery
+
+Ensure an international number conforms to the strict E.164 standard (requires `+` prefix):
+
+**Configuration:**
+- **data:** `"+212 612 345 678"`
+- **format:** `"e164"`
+
+**Output (`success`):**
+```json
+{
+  "valid": true,
+  "phone": "+212 612 345 678",
+  "cleaned": "+212612345678",
+  "format": "e164"
+}
+```
+
+---
+
+### Example 3: Automatic Format Detection
+
+When incoming contact lists have mixed domestic and international formats:
+
+**Configuration:**
+- **data:** `"+44 20 7183 8750"`
+- **format:** `""` *(Leave empty for auto-detection)*
+
+**Output (`success`):**
+```json
+{
+  "valid": true,
+  "phone": "+44 20 7183 8750",
+  "cleaned": "+442071838750",
+  "format": "international"
+}
+```
+
+---
+
+### Example 4: Extracting from Nested Object Payloads
+
+When receiving form payloads wrapped in an object like `{ "data": "+1 (555) 000-1122" }`:
+
+- The node automatically extracts the string value under `data`.
+- Returns `{ "valid": true, "phone": "+1 (555) 000-1122", "cleaned": "+15550001122", "format": "us" }`.
+
+<!-- /SECTION: examples -->
 
 ---
 
@@ -193,37 +290,37 @@ title: Validate and Clean Phone Number
 
 ### How It Works
 
-1. **Manual Trigger (`manual-trigger`):** Initiates execution with sample or form payload data.
-2. **Validate Phone (`validate-phone`):** Receives the phone string, sanitizes formatting artifacts, and checks validity against the configured format (e.g. `us`).
+1. **Manual Trigger (`manual-trigger`):** Triggers the workflow execution manually with sample contact payloads.
+2. **Validate Phone (`validate-phone`):** Receives the phone string, strips visual delimiters (` `, `-`, `(`, `)`, `.`), and tests against the configured format standard.
 3. **Log (`log`):** Displays the output object containing `valid: true`, the original `phone`, `cleaned` string, and matched `format`.
 
 ---
 
-### Practical Automation Scenarios
+### Real-World Automation Scenarios
 
-#### Scenario 1: Lead Capture Form to CRM & SMS Dispatch
+#### Scenario 1: Webhook Lead Capture to CRM and SMS Welcome Message
 
 ```
-Webhook (New Form Lead)
+Webhook (New Lead Form)
   ↓
 Validate Phone (Format: e164)
-  ├─ [success] → Twilio Node (Send Welcome SMS to {{ outputs["Validate Phone"].cleaned }})
+  ├─ [success] ➔ Twilio (Send SMS to {{ outputs["Validate Phone"].cleaned }})
   │               ↓
   │             HubSpot (Create Contact with normalized phone)
   │
-  └─ [error]   → Log / Error Handler (Flag record for manual review)
+  └─ [error]   ➔ Slack / Notification (Alert team of invalid lead submission)
 ```
 
-#### Scenario 2: Auto-Detect and Normalize Contact Lists
+#### Scenario 2: Batch Cleansing Customer Phone Records
 
 ```
-Google Sheets (Read Rows)
+Database / Google Sheets (Fetch Contacts)
   ↓
 Loop / Iterator
   ↓
 Validate Phone (Format: auto-detect)
-  ↓
-Database / CRM (Update record with standardized .cleaned format)
+  ├─ [success] ➔ Database Update (Store .cleaned phone)
+  └─ [error]   ➔ Flag Record for Manual Review
 ```
 
 <!-- /SECTION: workflow-example -->
@@ -236,19 +333,19 @@ Database / CRM (Update record with standardized .cleaned format)
 ### Common Errors and Solutions
 
 #### `Data is required for phone validation`
-- **Cause:** Both the `data` configuration field and the incoming workflow payload are `undefined` or `null`.
-- **Solution:** Verify that an upstream node feeds data into the `Validate Phone` node's input port, or provide a default fallback value in the configuration.
+- **Cause:** Both `config.data` and incoming payload data are `undefined` or `null`.
+- **Solution:** Verify that an upstream node is connected and passing data to the input port, or provide a default fallback value in the configuration.
 
 #### `Cannot validate empty phone number`
-- **Cause:** The resolved input evaluates to an empty string `""` or whitespace only.
-- **Solution:** Check form inputs or webhook mappings to ensure phone fields are not blank before calling validation.
+- **Cause:** The input string contains only whitespace or is an empty string `""`.
+- **Solution:** Check your form or webhook mapping to ensure phone fields are not blank before executing validation.
 
 #### `Invalid phone number format: <value>`
-- **Cause:** The cleaned phone number does not conform to the selected `format` rule or fails all auto-detection patterns.
-  - For `us`: Must be 10 digits (or 11 with leading `1`), with area/exchange codes between 2–9.
-  - For `e164`: Must explicitly start with `+` and country code.
-  - For `international`: Must not start with `0` after removing any leading `+`.
-- **Solution:** If numbers come in mixed formats without leading `+`, consider using the default auto-detect mode or preprocessing national numbers to add the appropriate international country code.
+- **Cause:** The sanitized number fails regular expression matching:
+  - **For `us`:** Must be 10 digits (or 11 digits starting with `1`). Area code and central office code cannot start with `0` or `1`.
+  - **For `e164`:** Must explicitly begin with a `+` symbol followed by 1 to 14 digits (total max 15 digits).
+  - **For `international`:** Must not start with `0` after stripping characters.
+- **Solution:** If numbers arrive without a leading `+` for international destinations, use auto-detection or a **Function** node upstream to prepend the appropriate country code.
 
 <!-- /SECTION: troubleshooting -->
 
@@ -257,9 +354,10 @@ Database / CRM (Update record with standardized .cleaned format)
 <!-- SECTION: related -->
 ## Related Nodes
 
-- [Schema Validate](../schema-validate/en.md) – Validate complex JSON objects, structures, and business rules.
-- [Validate URL](../validate-url/en.md) – Validate web URLs, hostnames, and protocols.
-- [Regex Match](../regex-match/en.md) – Perform custom regular expression matching on text.
+- [Validate Email](../validate-email/en.md) – Validate email address structure and syntax.
+- [Validate URL](../validate-url/en.md) – Validate web addresses, protocols, hostnames, and URLs.
+- [Schema Validate](../schema-validate/en.md) – Validate structured JSON objects using JSON Schema or Laravel rules.
+- [Regex Match](../regex-match/en.md) – Test and match custom regular expression patterns against strings.
 - [To String](../to-string/en.md) – Convert arbitrary data types into strings.
 - [HTML Sanitize](../html-sanitize/en.md) – Clean and sanitize HTML input.
 
@@ -272,6 +370,6 @@ Database / CRM (Update record with standardized .cleaned format)
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0.0 | 2026-09-09 | Initial release with support for US, International, and E.164 formats, automatic sanitization, and auto-detection. |
+| 1.0.0 | 2026-09-09 | Initial release with support for US, International, and E.164 formats, automated sanitization, and auto-detection. |
 
 <!-- /SECTION: changelog -->
