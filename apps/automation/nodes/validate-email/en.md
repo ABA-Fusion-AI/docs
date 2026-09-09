@@ -25,40 +25,66 @@ related_nodes:
   - gmail
 ---
 
-<!-- SECTION: overview -->
+<!-- SECTION: header -->
 # Validate Email
 
-> **Category:** Communication & Messaging &nbsp;&nbsp;|&nbsp;&nbsp;**Subcategory:** Email &nbsp;&nbsp;|&nbsp;&nbsp;**Type:** Action Node
+> **Category:** Communication & Messaging | **Subcategory:** Email | **Type:** Action Node
 
-The **Validate Email** node verifies whether a given email address conforms to standard email format syntax (`username@domain.tld`) using regular expression pattern matching.
+Verify the structural syntax of email addresses using standard regex pattern matching — ensuring only correctly formatted addresses reach downstream communication nodes, CRM systems, and marketing platforms.
 
-It provides a lightweight and reliable validation step in automation workflows, ensuring downstream communication nodes (such as SMTP, SendGrid, Mailchimp, or CRM integrations) only receive properly structured email addresses, preventing delivery errors and bouncebacks.
+<!-- /SECTION: header -->
+
+---
+
+<!-- SECTION: overview -->
+## Overview
+
+The **Validate Email** node acts as an automated quality gate for email addresses within your automation pipelines. Before forwarding contact addresses to transactional email services (SMTP, SendGrid, Mailchimp, Brevo), saving them to databases, or adding them to CRM contact lists, this node confirms that the address conforms to the standard `username@domain.tld` structure.
+
+When validation succeeds, the node returns a structured payload containing `valid: true` and the trimmed, normalized email string — ready to be referenced by downstream nodes. When it fails, it emits on the `error` port so invalid submissions can be gracefully handled without crashing the workflow.
 
 ```
-Input Email ("  user@example.com  ")
-  ↓
-Extract & Trim String ("user@example.com")
-  ↓
-Pattern Validation (/^[^\s@]+@[^\s@]+\.[^\s@]+$/)
-  ↓
-Validation Successful?
-  ├─ Yes → Return { valid: true, email: "user@example.com" }
-  └─ No  → Throw Error ("Invalid email format: ...")
+┌────────────────────────────────────────────────────────┐
+│ Inbound Email: "  user@example.com  "                  │
+└───────────────────────────┬────────────────────────────┘
+                            │
+                            ▼
+┌────────────────────────────────────────────────────────┐
+│ Extract & Trim: "user@example.com"                     │
+└───────────────────────────┬────────────────────────────┘
+                            │
+                            ▼
+┌────────────────────────────────────────────────────────┐
+│ Regex Test: /^[^\s@]+@[^\s@]+\.[^\s@]+$/              │
+└───────────────────────────┬────────────────────────────┘
+                            │
+                  ┌─────────┴─────────┐
+                  │                   │
+              [success]            [error]
+                  │                   │
+                  ▼                   ▼
+┌───────────────────────────┐ ┌───────────────────────────┐
+│ { valid: true,            │ │ Reject / Route to Error   │
+│   email: "user@example"   │ │ Handler / Alert Flow      │
+│   "@example.com" }        │ │ ("Invalid email format")  │
+└───────────────────────────┘ └───────────────────────────┘
 ```
 
 ### Key Features
 
-- **Regex Format Verification:** Validates against the universal email pattern `/^[^\s@]+@[^\s@]+\.[^\s@]+$/`.
-- **Automatic Trimming:** Strips leading and trailing whitespace automatically before evaluation.
-- **Flexible Input Resolution:** Sourced from node configuration or dynamically from incoming workflow payloads (strings, numbers, or objects with a `data` key).
-- **Error Guarding:** Blocks malformed email strings from propagating to critical transactional email or marketing services.
+- **RFC-Aligned Regex Check:** Validates the `local@domain.tld` format using a universal pattern that handles subdomains, plus-addressing, and multi-level TLDs.
+- **Automatic Whitespace Trimming:** Leading and trailing spaces are stripped automatically before evaluation (e.g. `" user@example.com "` becomes `"user@example.com"`).
+- **Flexible Input Resolution:** Accepts email strings from node configuration, upstream payload strings, numbers, or objects containing a `data` property — resolved in a clear precedence order.
+- **Fail-Fast Error Branching:** Emits on the red `error` port with a clear message when data is missing or invalid, enabling graceful fallback routing.
+
+---
 
 ### Common Use Cases
 
-- **Form Submission Verification:** Validate email addresses submitted through contact forms, lead funnels, or webhooks before saving them to a database or marketing list.
-- **Pre-Send Verification:** Gate automated email pipelines (SMTP, Gmail, SendGrid) to prevent attempts to send messages to invalid email addresses.
-- **Data Cleansing & Enrichment:** Filter or flag invalid customer contact records during CRM migrations and automated synchronization routines.
-- **Conditional Branching:** Pair with an `if-else` or error-handling route to prompt users to correct their email address when invalid.
+- **Lead Form & Webhook Validation:** Screen email addresses submitted through contact forms or webhooks before inserting them into a CRM or marketing list.
+- **Pre-Send Email Gating:** Prevent transactional email dispatch to malformed addresses — protecting your sender reputation and reducing bounce rates.
+- **Data Migration & Cleansing:** Validate and flag invalid email records during bulk import jobs or CRM synchronization routines.
+- **Conditional Branching:** Route invalid submissions to alert channels (Slack, Discord) or a manual review queue while valid ones continue downstream.
 
 <!-- /SECTION: overview -->
 
@@ -67,55 +93,82 @@ Validation Successful?
 <!-- SECTION: configuration -->
 ## Configuration
 
+Add the **Validate Email** node to your workflow canvas and click it to open the configuration panel.
+
 ### Parameters
 
 | Parameter | Type | Required | Default | Description |
-|-----------|------|:--------:|---------|-------------|
-| `data` | `string` | No | — | The email address to validate. If empty or omitted, the node falls back to incoming data from upstream nodes. |
+|-----------|:----:|:--------:|:-------:|-------------|
+| `data` | `string` | ❌ No | — | The email address to validate. If empty or omitted, the node validates the incoming payload from the `input` connection. |
 
 ---
 
-### Validation Rule & Regex
+### Parameter Details
 
-The node validates the trimmed string against the standard email regular expression:
+#### `data` (Optional)
+The target email address you want to validate.
+- **Static Entry:** Enter a complete email directly (e.g. `user@example.com`).
+- **Dynamic Expression:** Click **Expression** and type an expression like `outputs.Webhook.success.body.email` or `outputs.FormTrigger.success.email` to validate email addresses from upstream nodes dynamically.
+- **Fallback:** If left empty, the node automatically reads the incoming data payload from the `input` port connection.
+
+> [!IMPORTANT]
+> **Full Email Format Required:** A valid email must include a local username, an `@` symbol, a domain name, a dot, and a top-level domain (e.g. `user@example.com`). Strings like `user@domain` without a TLD or `user.example.com` without an `@` will fail validation.
+
+---
+
+### Validation Rule & Regex Pattern
+
+The node validates the trimmed input against the following regular expression:
 
 ```javascript
 /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 ```
 
-#### Rule Breakdown:
+#### Pattern Breakdown
 
-- `^[^\s@]+`: Begins with one or more characters that are **not** whitespace and **not** `@` (the local/user part).
-- `@`: Exactly one `@` symbol separating user and domain.
-- `[^\s@]+`: One or more domain name characters (excluding whitespace and `@`).
-- `\.`: A literal dot `.` separating domain name and extension.
-- `[^\s@]+$`: One or more characters representing the top-level domain (TLD) ending the string.
+| Segment | Meaning |
+|---------|---------|
+| `^[^\s@]+` | Local username: one or more characters that are **not** a space (`\s`) or `@`. |
+| `@` | Exactly **one** `@` symbol separating username and domain. |
+| `[^\s@]+` | Domain name: one or more characters that are **not** a space or `@`. |
+| `\.` | A literal **dot** (`.`) separating domain name from TLD. |
+| `[^\s@]+$` | Top-level domain: one or more characters that are **not** a space or `@`. |
 
-#### Examples:
+#### Validation Examples
 
 | Input Value | Evaluation | Result |
 |-------------|:----------:|--------|
-| `user@example.com` | Match | Valid (`true`) |
-| `john.doe+newsletter@company.co.uk` | Match | Valid (`true`) |
-| `contact@subdomain.domain.org` | Match | Valid (`true`) |
-| `plainaddress` | No `@` symbol | Error (`Invalid email format`) |
-| `@missing-local.com` | Missing local username | Error (`Invalid email format`) |
-| `user@.missingdomain` | Missing domain name | Error (`Invalid email format`) |
-| `user@domain` | Missing top-level domain (`.com`) | Error (`Invalid email format`) |
-| `user with space@domain.com` | Contains space inside | Error (`Invalid email format`) |
+| `user@gmail.com` | ✅ Match | Valid (`true`) |
+| `contact@entreprise.ma` | ✅ Match | Valid (`true`) |
+| `ahmed.benali.dev@domain.com` | ✅ Match | Valid (`true`) |
+| `john.doe+newsletter@gmail.com` | ✅ Match — plus-addressing supported | Valid (`true`) |
+| `support@billing.cloud.aws.com` | ✅ Match — multi-level subdomain | Valid (`true`) |
+| `info@company.co.uk` | ✅ Match — multi-part TLD | Valid (`true`) |
+| `plainaddress` | ❌ No `@` or dot | Error: Invalid email format |
+| `@missing-local.com` | ❌ Empty local username | Error: Invalid email format |
+| `user@domain` | ❌ Missing TLD | Error: Invalid email format |
+| `user with space@domain.com` | ❌ Space in local part | Error: Invalid email format |
+| `user@.missingdomain.com` | ❌ Empty domain segment | Error: Invalid email format |
 
 ---
 
-### Input Resolution
+### Input Resolution & Coercion Rules
 
-The node resolves the target email value in the following precedence:
+The node determines the email source using the following precedence order:
 
-1. **Config Parameter:** If `config.data` is provided as a non-empty string (`trimmed !== ""`) or non-string value, it is used directly.
-2. **Upstream Workflow Data:** If `config.data` is empty string, `undefined`, or `null`, the incoming tick payload `data` is used.
-3. **Object Extraction:**
-   - If the input is an object containing a `data` key (e.g. `{ "data": "user@example.com" }`), it extracts that property.
-   - If the `data` property is a string, it trims it directly. Otherwise, other objects are JSON-stringified.
-4. **Primitives:** Numbers or other primitive types are converted to strings via `String(inputData).trim()`.
+1. **Config Precedence:** If `config.data` is a non-empty string (after trimming), it is used directly.
+2. **Non-String Config Fallback:** If `config.data` exists but is not a string, it is used as-is.
+3. **Workflow Input Fallback:** If `config.data` is `undefined`, `null`, or whitespace-only:
+   - If the incoming `data` payload is an **object with a `data` property** (e.g. `{ "data": "user@example.com" }`), that property is extracted.
+   - Otherwise, the raw `data` payload is used directly.
+4. **Type Coercion:**
+   - **String:** Trimmed and used directly.
+   - **Object with `data` string property:** Extracted and trimmed.
+   - **Other objects:** JSON-stringified and trimmed.
+   - **Primitives (numbers, booleans):** Converted via `String(inputData).trim()`.
+
+> [!TIP]
+> To pass an email address from a **Function** node into **Validate Email** using an expression, have the Function return `{ "test": "info@company.co.uk" }` and set `data` in configuration to the expression `outputs.Function.success.test`.
 
 <!-- /SECTION: configuration -->
 
@@ -124,22 +177,24 @@ The node resolves the target email value in the following precedence:
 <!-- SECTION: inputs-outputs -->
 ## Inputs & Outputs
 
-### Inputs
+### Input Port
 
-| Input | Type | Description |
-|-------|------|-------------|
-| `input` | `string` \| `object` \| `number` | Incoming email address string or payload object containing a `data` property. |
+| Port | Description |
+|------|-------------|
+| `input` | Receives data from upstream triggers or action nodes. Sourced as the email address when `data` is not defined in the configuration panel. |
 
-### Outputs
+### Output Ports
 
-| Output | Type | Description |
-|--------|------|-------------|
-| `success` | `object` | Emitted when validation succeeds, containing confirmation and the trimmed email address. |
-| `error` | `object` | Emitted when input data is missing or fails email format validation. |
+| Port | Color | Description |
+|------|:-----:|-------------|
+| `success` | 🟢 Green | Emitted when the email address passes format validation. Returns `valid: true` and the trimmed email string. |
+| `error` | 🔴 Red | Emitted when input data is missing, empty, or fails the email format regex. |
+
+---
 
 ### Output Schema (`success`)
 
-When validation succeeds, the node outputs an object:
+When validation succeeds, the node returns:
 
 ```json
 {
@@ -148,27 +203,120 @@ When validation succeeds, the node outputs an object:
 }
 ```
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `valid` | `boolean` | `true` when the email matches the valid format. |
-| `email` | `string` | The validated and trimmed email address. |
+| Field | Type | Description | Example |
+|-------|:----:|-------------|---------|
+| `valid` | `boolean` | Always `true` on the `success` output port. | `true` |
+| `email` | `string` | The validated, trimmed email address ready for downstream use. | `"user@example.com"` |
 
 ---
 
-### Accessing Output in Expressions
+### How to Use Output Data in Downstream Nodes
 
-Downstream workflow nodes can access the validated email via Fusion expressions:
+Reference the validated email in downstream workflow steps using Fusion expressions:
 
-- **Email Address:**
-  ```
-  {{ outputs["Validate Email"].email }}
-  ```
-- **Validation Flag:**
-  ```
-  {{ outputs["Validate Email"].valid }}
-  ```
+| Desired Value | Expression Syntax | Typical Downstream Use Case |
+|---------------|-------------------|-----------------------------|
+| **Email Address** | `{{ outputs["Validate Email"].email }}` | Pass to SMTP, SendGrid, Gmail, or CRM nodes |
+| **Validation Flag** | `{{ outputs["Validate Email"].valid }}` | Conditional checks in branching logic |
 
 <!-- /SECTION: inputs-outputs -->
+
+---
+
+<!-- SECTION: examples -->
+## Step-by-Step Usage Examples
+
+### Example 1: Simple Email Address Validation
+
+Validate a standard email address entered in the configuration panel:
+
+**Configuration:**
+- **data:** `"user@gmail.com"`
+
+**Output (`success`):**
+```json
+{
+  "valid": true,
+  "email": "user@gmail.com"
+}
+```
+
+---
+
+### Example 2: Plus-Addressed Email (Tag Routing)
+
+Validate an email with a plus-tag commonly used by Gmail for inbox filtering:
+
+**Configuration:**
+- **data:** `"john.doe+newsletter@gmail.com"`
+
+**Output (`success`):**
+```json
+{
+  "valid": true,
+  "email": "john.doe+newsletter@gmail.com"
+}
+```
+
+---
+
+### Example 3: Multi-Level Subdomain & Multi-Part TLD
+
+Validate an enterprise email with a subdomain and a country-code TLD:
+
+**Configuration:**
+- **data:** `"support@billing.cloud.aws.com"` or `"info@company.co.uk"`
+
+**Output (`success`):**
+```json
+{
+  "valid": true,
+  "email": "support@billing.cloud.aws.com"
+}
+```
+
+---
+
+### Example 4: Automatic Whitespace Trimming
+
+Validate an email with accidental leading spaces (e.g. copy-pasted from a spreadsheet):
+
+**Configuration:**
+- **data:** `" info@company.co.uk"` *(note leading space)*
+
+**Output (`success`):**
+```json
+{
+  "valid": true,
+  "email": "info@company.co.uk"
+}
+```
+> The node trims whitespace before applying regex validation.
+
+---
+
+### Example 5: Validating Upstream Function Output (Dynamic Expression)
+
+When a **Function** node returns a structured object, use an expression to extract the email:
+
+**Function Node Code:**
+```javascript
+const test = "info@company.co.uk";
+return { test };
+```
+
+**Validate Email Configuration:**
+- **data:** *(Expression mode)* `outputs.Function.success.test`
+
+**Output (`success`):**
+```json
+{
+  "valid": true,
+  "email": "info@company.co.uk"
+}
+```
+
+<!-- /SECTION: examples -->
 
 ---
 
@@ -179,42 +327,52 @@ Downstream workflow nodes can access the validated email via Fusion expressions:
 
 ```fusion-workflow
 src: example.workflow.json
-title: Validate Email Address
+title: Validate Email Address — Multiple Scenarios
 ```
 
-### How It Works
+### What the Workflow Demonstrates
 
-1. **Manual Trigger (`manual-trigger`):** Starts workflow execution with sample data or form parameters.
-2. **Validate Email (`validate-email`):** Resolves the email string, trims whitespace, and applies the email regex pattern.
-3. **Log (`log`):** Receives the `success` output and outputs `{ "valid": true, "email": "user@example.com" }` to the execution log.
+The included example workflow showcases **7 real-world validation scenarios** arranged vertically on the canvas:
+
+| Scenario | Email Tested | Validates |
+|----------|-------------|-----------|
+| 1 | `user@gmail.com` | Basic standard email |
+| 2 | `contact@entreprise.ma` | Moroccan domain TLD |
+| 3 | `ahmed.benali.dev@domain.com` | Dotted local name |
+| 4 | `john.doe+newsletter@gmail.com` | Plus-addressed email |
+| 5 | `support@billing.cloud.aws.com` | Multi-level subdomain |
+| 6 | `info@company.co.uk` | Leading space (auto-trimmed) |
+| 7 | Dynamic from **Function** node | Expression-bound input (`outputs.Function.success.test`) |
+
+Each scenario consists of a **Manual Trigger** → **Validate Email** pair, making each independently executable for rapid testing.
 
 ---
 
 ### Common Automation Patterns
 
-#### 1. Form Webhook to Marketing CRM & Confirmation Email
+#### 1. Webhook Lead Capture to CRM & Confirmation Email
 
 ```
-Webhook (New Lead)
+Webhook (New Lead Form Submission)
   ↓
 Validate Email
-  ├─ [success] → SendGrid / SMTP (Send Confirmation Email to {{ outputs["Validate Email"].email }})
+  ├─ [success] ➔ SendGrid / SMTP (Send confirmation to {{ outputs["Validate Email"].email }})
   │               ↓
-  │             Mailchimp / Brevo (Add subscriber)
+  │             Mailchimp / Brevo (Add to subscriber list)
   │
-  └─ [error]   → Slack / Discord (Alert team about invalid submission)
+  └─ [error]   ➔ Slack / Discord (Alert: invalid email submitted)
 ```
 
-#### 2. Batch Validation in Array Loops
+#### 2. Batch Contact List Cleansing
 
 ```
-Fetch Leads (Database / Google Sheets)
+Google Sheets / Database (Fetch Contact Records)
   ↓
 Loop / Iterator
   ↓
 Validate Email
-  ├─ [success] → CRM Add Contact
-  └─ [error]   → Log Invalid Record
+  ├─ [success] ➔ CRM (Add or update valid contact)
+  └─ [error]   ➔ Flagging System (Mark record for manual review)
 ```
 
 <!-- /SECTION: workflow-example -->
@@ -227,15 +385,16 @@ Validate Email
 ### Common Errors and Solutions
 
 #### `Data is required for email validation`
-- **Cause:** Both the `data` configuration field and the incoming workflow payload are `undefined` or `null`.
-- **Solution:** Verify that an upstream node feeds data into the `Validate Email` node's input port, or provide a default value in the configuration panel.
+- **Cause:** Both `config.data` and the incoming workflow payload are `undefined` or `null`.
+- **Solution:** Ensure an upstream node is connected to the `input` port and is passing data, or set a default email value directly in the configuration panel.
 
 #### `Invalid email format: <value>`
-- **Cause:** The input string does not conform to `username@domain.extension`.
-  - Missing `@` symbol or domain dot (e.g. `user@com` or `user.example.com`).
-  - Contains unescaped internal spaces (e.g. `user name@example.com`).
-  - Empty string `""` provided as input.
-- **Solution:** Ensure the source field mapped into the node contains a complete email address. Use a fallback or conditional check if optional form fields may be empty.
+- **Cause:** The trimmed input string fails the regex `/^[^\s@]+@[^\s@]+\.[^\s@]+$/`:
+  - Missing `@` symbol entirely (e.g. `userexample.com`).
+  - Missing TLD or domain dot (e.g. `user@domain`).
+  - Contains internal whitespace (e.g. `user name@domain.com`).
+  - Empty string `""` after trimming.
+- **Solution:** Check that the source field holds a complete email address. If the value may be empty, add a conditional check or default upstream, or handle the `error` port gracefully to avoid blocking your workflow.
 
 <!-- /SECTION: troubleshooting -->
 
@@ -245,11 +404,11 @@ Validate Email
 ## Related Nodes
 
 - [Validate Phone](../validate-phone/en.md) – Validate and clean telephone numbers across US, International, and E.164 formats.
-- [Validate URL](../validate-url/en.md) – Validate web addresses, URLs, hostnames, and protocols.
+- [Validate URL](../validate-url/en.md) – Validate web addresses, URLs, hostnames, and enforce protocol allowlists.
 - [Schema Validate](../schema-validate/en.md) – Validate complex JSON payloads with JSON Schema or Laravel-style rules.
-- [SMTP: Send Email](../smtp/en.md) – Send transactional emails using custom SMTP credentials.
-- [SendGrid](../sendgrid/en.md) – Deliver marketing and transactional emails via SendGrid API.
-- [Gmail](../gmail/en.md) – Send and receive emails through Google Workspace / Gmail.
+- [SMTP: Send Email](../smtp/en.md) – Send transactional emails using custom SMTP server credentials.
+- [SendGrid](../sendgrid/en.md) – Deliver marketing and transactional emails via the SendGrid API.
+- [Gmail](../gmail/en.md) – Send and receive emails through Google Workspace or Gmail.
 
 <!-- /SECTION: related -->
 
@@ -260,6 +419,6 @@ Validate Email
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0.0 | 2026-09-09 | Initial release with regex-based email format validation and flexible input resolution. |
+| 1.0.0 | 2026-09-09 | Initial release with regex-based email format validation, automatic whitespace trimming, flexible input resolution, and multi-scenario example workflow. |
 
 <!-- /SECTION: changelog -->
