@@ -1,0 +1,844 @@
+[
+  {
+    "name": "Validate Phone",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "n49j1783mxaggxaukqpuee1b",
+        "position": {
+          "x": 545.0780987001777,
+          "y": 267.31409142980425
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "validate-phone",
+          "label": "Validate Phone",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Validate phone number format.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "4155552671",
+            "format": "us"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ap9tpn0l9t33ceskvsnthahx",
+        "position": {
+          "x": 324.21434904431777,
+          "y": 259.6820517669475
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "j56iwqqq6pjv3mz0xr0glb3u",
+        "position": {
+          "x": 535.5681251720698,
+          "y": 395.4348284831179
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "validate-phone",
+          "label": "Validate Phone1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Validate phone number format.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "+14155552671",
+            "format": "us"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ruap4d2r8608nntim5pbkwlb",
+        "position": {
+          "x": 326.70437551620984,
+          "y": 399.8027888202611
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "irzb9it6b0iyzgs11xjcntfd",
+        "position": {
+          "x": 533.8770168711328,
+          "y": 532.8427671459333
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "validate-phone",
+          "label": "Validate Phone2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Validate phone number format.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "14155552671",
+            "format": "us"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "jnv00nm0o49nzs9vfhzo4k2o",
+        "position": {
+          "x": 325.0132672152727,
+          "y": 537.2107274830764
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "pq5d2uylbkfsu6eyey61vsm1",
+        "position": {
+          "x": 548.3670433430248,
+          "y": 684.9635041992469
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "validate-phone",
+          "label": "Validate Phone2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Validate phone number format.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "(415) 555-2671",
+            "format": "us"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "rw5s97l2lr1x573jgpwdptsl",
+        "position": {
+          "x": 351.5032936871648,
+          "y": 701.3314645363901
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "sbso2a1ft99mi9ry2o81su7y",
+        "position": {
+          "x": 526.2153020661062,
+          "y": 828.4374180601237
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "validate-phone",
+          "label": "Validate Phone3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Validate phone number format.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "+212612345678",
+            "format": "international"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "d77mtm49vvqkkmfq7lox2iei",
+        "position": {
+          "x": 329.35155241024603,
+          "y": 844.8053783972668
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "i6n8zjstgo8me7vq0hpkkvdc",
+        "position": {
+          "x": 564.7053285379982,
+          "y": 1004.5581551134374
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "validate-phone",
+          "label": "Validate Phone3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Validate phone number format.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "+447911123456",
+            "format": "international"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "r4b94tkn7lrrgpujmbd8q36z",
+        "position": {
+          "x": 379.8415788821381,
+          "y": 1032.9261154505805
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "g6i4fu5rbubuoyy39wy6gles",
+        "position": {
+          "x": 563.4553467461334,
+          "y": 1183.3484786282972
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "validate-phone",
+          "label": "Validate Phone4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Validate phone number format.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "+33612345678",
+            "format": "international"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "uujtdg0nbdggbw46n4v5ykni",
+        "position": {
+          "x": 390.59159709027335,
+          "y": 1223.7164389654401
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "bkv51a4cb49lz4n3cy46ucur",
+        "position": {
+          "x": 578.8668980890952,
+          "y": 1355.7780731529804
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "validate-phone",
+          "label": "Validate Phone",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Validate phone number format.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "+212612345678",
+            "format": "e164"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "simmf2crhjzoc6cp1annk23s",
+        "position": {
+          "x": 418.0031484332353,
+          "y": 1408.1460334901233
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "eq88630anq7hwncii1fiqjsg",
+        "position": {
+          "x": 618.7487938240138,
+          "y": 1513.9333001156892
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "validate-phone",
+          "label": "Validate Phone6",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Validate phone number format.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "+447911123456",
+            "format": "e164"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "cb9pay7yi50ie85u8zpoi3nl",
+        "position": {
+          "x": 469.88504416815385,
+          "y": 1578.3012604528321
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger6",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "b1sgub7tots7wcp276zdzwoj",
+        "position": {
+          "x": 627.0231613859885,
+          "y": 1683.3041015913777
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "validate-phone",
+          "label": "Validate Phone7",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Validate phone number format.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "+212 612 345 678",
+            "format": "international"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "xfj6eij6ehykxenc1rv51vnc",
+        "position": {
+          "x": 490.15941173012857,
+          "y": 1759.6720619285206
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger7",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "h3fmqd7xgbpebtjyl6ufg31s",
+        "position": {
+          "x": 651.8203748928897,
+          "y": 1850.2620749456069
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "validate-phone",
+          "label": "Validate Phone8",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Validate phone number format.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "+212-612-345-678",
+            "format": "international"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ankg0cwe1gkaa9ak9yollhwy",
+        "position": {
+          "x": 526.9566252370298,
+          "y": 1938.6300352827498
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger8",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "ap9tpn0l9t33ceskvsnthahx",
+        "sourceHandle": "success",
+        "target": "n49j1783mxaggxaukqpuee1b",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ap9tpn0l9t33ceskvsnthahxsuccess-n49j1783mxaggxaukqpuee1binput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "ruap4d2r8608nntim5pbkwlb",
+        "sourceHandle": "success",
+        "target": "j56iwqqq6pjv3mz0xr0glb3u",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "i9w6h000kohx6z1xikgfbp94",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "jnv00nm0o49nzs9vfhzo4k2o",
+        "sourceHandle": "success",
+        "target": "irzb9it6b0iyzgs11xjcntfd",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xbyzn54bk6fpm7sau8j62p6k",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "rw5s97l2lr1x573jgpwdptsl",
+        "sourceHandle": "success",
+        "target": "pq5d2uylbkfsu6eyey61vsm1",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xz14x1itthvdih8kkqvsd1ju",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "d77mtm49vvqkkmfq7lox2iei",
+        "sourceHandle": "success",
+        "target": "sbso2a1ft99mi9ry2o81su7y",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "tde77xwxwy0wsv2gnd8wzohk",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "r4b94tkn7lrrgpujmbd8q36z",
+        "sourceHandle": "success",
+        "target": "i6n8zjstgo8me7vq0hpkkvdc",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "fwsjsxrbll4v36hs1ajmi3ra",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "uujtdg0nbdggbw46n4v5ykni",
+        "sourceHandle": "success",
+        "target": "g6i4fu5rbubuoyy39wy6gles",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "fgcdyv4kxiuh85k2rzol31n2",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "simmf2crhjzoc6cp1annk23s",
+        "sourceHandle": "success",
+        "target": "bkv51a4cb49lz4n3cy46ucur",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "cawuilsnen8mlrt8c101jot8",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "cb9pay7yi50ie85u8zpoi3nl",
+        "sourceHandle": "success",
+        "target": "eq88630anq7hwncii1fiqjsg",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "jnballjv93k89alewmw6pufk",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "xfj6eij6ehykxenc1rv51vnc",
+        "sourceHandle": "success",
+        "target": "b1sgub7tots7wcp276zdzwoj",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "bwe135smuh6scqxsfdgc88hb",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "ankg0cwe1gkaa9ak9yollhwy",
+        "sourceHandle": "success",
+        "target": "h3fmqd7xgbpebtjyl6ufg31s",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "tfqyi4wwb1qi871bv9mr5qr2",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1788963340303,
+    "updatedAt": 1788969300882,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
