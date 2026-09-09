@@ -1,0 +1,573 @@
+[
+  {
+    "name": "did",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "lzi7m2ljj429tecvm1b70g5g",
+        "position": {
+          "x": 602,
+          "y": -69
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "d5tn0auealjsg80v76cs3pz0",
+        "position": {
+          "x": 941,
+          "y": -64
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "q57yvjd699pmntj2so2pimxf",
+        "position": {
+          "x": 949,
+          "y": 107
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "rdnjutjseizacmlfr190yjvi",
+        "position": {
+          "x": 944,
+          "y": 295.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "deva2x0g10v8i4p2fe75wnc3",
+        "position": {
+          "x": 628,
+          "y": 120
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ht1aml2n4nl9n8ndh0omomyt",
+        "position": {
+          "x": 623,
+          "y": 308.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "jhd52d8f2cgzz3k0demtd176",
+        "position": {
+          "x": 776,
+          "y": -87
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "did",
+          "label": "D-ID: Generate Avatar Video",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Generate avatar videos using D-ID API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "script": {
+              "type": "text",
+              "input": "Hello, this is a D-ID API test."
+            },
+            "config": {
+              "resultFormat": "mp4"
+            },
+            "apiKey": "",
+            "sourceUrl": "https://d-id-public-bucket.s3.us-west-2.amazonaws.com/alice.jpg"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "afb22ondwqvlxgig70mra641",
+        "position": {
+          "x": 1115,
+          "y": -82
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "did",
+          "label": "D-ID: Generate Avatar Video1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Generate avatar videos using D-ID API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "script": {
+              "type": "text",
+              "input": "Hello, this is a D-ID API test."
+            },
+            "config": {
+              "resultFormat": "webm"
+            },
+            "apiKey": "",
+            "sourceUrl": "https://d-id-public-bucket.s3.us-west-2.amazonaws.com/alice.jpg"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "uiau7ctfd8g72pf0erjuzcfx",
+        "position": {
+          "x": 1130,
+          "y": 107
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "did",
+          "label": "D-ID: Generate Avatar Video2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Generate avatar videos using D-ID API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "script": {
+              "type": "text",
+              "input": "Hello, this is a D-ID API test."
+            },
+            "config": {
+              "resultFormat": "mp4",
+              "stitch": true
+            },
+            "apiKey": "",
+            "sourceUrl": "https://d-id-public-bucket.s3.us-west-2.amazonaws.com/alice.jpg"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "kfgm3hjpfdjuofw8s65af299",
+        "position": {
+          "x": 1125,
+          "y": 295.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "did",
+          "label": "D-ID: Generate Avatar Video4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Generate avatar videos using D-ID API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "script": {
+              "type": "audio",
+              "audioUrl": "https://samplelib.com/mp3/sample-30s.mp3"
+            },
+            "config": {
+              "resultFormat": "mp4",
+              "stitch": true
+            },
+            "apiKey": "",
+            "sourceUrl": "https://d-id-public-bucket.s3.us-west-2.amazonaws.com/alice.jpg"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "a3mja6stohvhn125nnaw0utf",
+        "position": {
+          "x": 802,
+          "y": 102
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "did",
+          "label": "D-ID: Generate Avatar Video3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Generate avatar videos using D-ID API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "script": {
+              "type": "text",
+              "input": "Hello, this is a D-ID API test."
+            },
+            "config": {
+              "resultFormat": "mp4",
+              "fluent": true
+            },
+            "apiKey": "",
+            "sourceUrl": "https://d-id-public-bucket.s3.us-west-2.amazonaws.com/alice.jpg"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "gneklq7d4ps6a3irr05ii1jt",
+        "position": {
+          "x": 797,
+          "y": 290.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "did",
+          "label": "D-ID: Generate Avatar Video4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Generate avatar videos using D-ID API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "script": {
+              "type": "text",
+              "input": "Hello, this is a D-ID API test."
+            },
+            "config": {
+              "resultFormat": "mp4",
+              "fluent": false,
+              "padAudio": 1
+            },
+            "apiKey": "",
+            "sourceUrl": "https://d-id-public-bucket.s3.us-west-2.amazonaws.com/alice.jpg"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "lzi7m2ljj429tecvm1b70g5g",
+        "sourceHandle": "success",
+        "target": "pz2njrl5zgkkyrzxw2e8bnxc",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__lzi7m2ljj429tecvm1b70g5gsuccess-pz2njrl5zgkkyrzxw2e8bnxcinput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "l1pqasda7striqoo2m4iq6dx",
+        "sourceHandle": "tool",
+        "target": "cnbmi2fezrydxwrz0rti9c28",
+        "targetHandle": "tool",
+        "type": "agentConnection",
+        "id": "xy-edge__l1pqasda7striqoo2m4iq6dxtool-cnbmi2fezrydxwrz0rti9c28tool",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ctdrneal2tn2ojbpc9evrl31",
+        "sourceHandle": "success",
+        "target": "cnbmi2fezrydxwrz0rti9c28",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ctdrneal2tn2ojbpc9evrl31success-cnbmi2fezrydxwrz0rti9c28input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "w2r8g6trav2mh9jancclth2q",
+        "sourceHandle": "llm",
+        "target": "cnbmi2fezrydxwrz0rti9c28",
+        "targetHandle": "llm",
+        "type": "agentConnection",
+        "id": "xy-edge__w2r8g6trav2mh9jancclth2qllm-cnbmi2fezrydxwrz0rti9c28llm",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "lzi7m2ljj429tecvm1b70g5g",
+        "sourceHandle": "success",
+        "target": "y25fivksnd90ii34wjoj0fge",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__lzi7m2ljj429tecvm1b70g5gsuccess-y25fivksnd90ii34wjoj0fgeinput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "lzi7m2ljj429tecvm1b70g5g",
+        "sourceHandle": "success",
+        "target": "jhd52d8f2cgzz3k0demtd176",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__lzi7m2ljj429tecvm1b70g5gsuccess-jhd52d8f2cgzz3k0demtd176input",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "d5tn0auealjsg80v76cs3pz0",
+        "sourceHandle": "success",
+        "target": "afb22ondwqvlxgig70mra641",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "rrclnkrnpjozub9k7ir35h5g",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "q57yvjd699pmntj2so2pimxf",
+        "sourceHandle": "success",
+        "target": "uiau7ctfd8g72pf0erjuzcfx",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "h3cs49ggkmduoaw5g21vdzcr",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "deva2x0g10v8i4p2fe75wnc3",
+        "sourceHandle": "success",
+        "target": "a3mja6stohvhn125nnaw0utf",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "m8yuiauub9t60qm6hocwcxhk",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "rdnjutjseizacmlfr190yjvi",
+        "sourceHandle": "success",
+        "target": "kfgm3hjpfdjuofw8s65af299",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ri8uk1ht7i6wf0uj2y54fda7",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "ht1aml2n4nl9n8ndh0omomyt",
+        "sourceHandle": "success",
+        "target": "gneklq7d4ps6a3irr05ii1jt",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "x9lkwprdv7ktb8zrrvrny98t",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1788876646008,
+    "updatedAt": 1788951955871,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
