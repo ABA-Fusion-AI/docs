@@ -32,7 +32,7 @@
           "description": "Generate DNA/RNA sequences using Evo2 foundation model. Trained on 9.3T nucleotides.",
           "showRunningStatus": true,
           "parameters": {
-            "apiKey": "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",
+            "apiKey": "",
             "sequence": "ATGCGTACGTTAGCTA",
             "num_tokens": 10,
             "temperature": 1,

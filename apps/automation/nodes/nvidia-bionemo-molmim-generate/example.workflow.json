@@ -34,7 +34,7 @@
           "parameters": {
             "algorithm": "CMA-ES",
             "property_name": "QED",
-            "apiKey": "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",
+            "apiKey": "",
             "smi": "CC(=O)OC1=CC=CC=C1C(=O)O",
             "num_molecules": 3,
             "iterations": 5,
