@@ -1,91 +1,868 @@
-{
-  "name": "Use Raindrop.io",
-  "nodes": [
-    {
-      "id": "trigger",
-      "type": "trigger",
-      "position": {
-        "x": 80,
-        "y": 160
-      },
-      "data": {
-        "name": "manual-trigger",
-        "label": "Run",
-        "inputs": {},
-        "outputs": {
-          "success": {
-            "label": "Success"
-          },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "integration",
-      "type": "action",
-      "position": {
-        "x": 300,
-        "y": 160
-      },
-      "data": {
-        "name": "raindrop",
-        "label": "Raindrop.io",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+[
+  {
+    "name": "test Raindrop.io",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "fspy2hm78ln8ela461mb5hki",
+        "position": {
+          "x": 284,
+          "y": 18
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "raindrop",
+          "label": "Raindrop.io",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
           },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "output",
-      "type": "display",
-      "position": {
-        "x": 520,
-        "y": 160
-      },
-      "data": {
-        "name": "log",
-        "label": "Result",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage bookmarks and collections in Raindrop.io.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "listBookmarks",
+            "accessToken": "fa61d0d9-9f10-4f96-a971-1b6e83592dd9"
+          },
+          "_morphing": false
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
-          }
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "hfula63ahj3n3oy1f45pqcdl",
+        "position": {
+          "x": 0,
+          "y": 18
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "a3148xdij5pa56ht92jy0ksz",
+        "position": {
+          "x": 568,
+          "y": 0
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "mpeguu74lqrb330ajvse1qwx",
+        "position": {
+          "x": 284,
+          "y": 358
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "raindrop",
+          "label": "Raindrop.io1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage bookmarks and collections in Raindrop.io.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "createBookmark",
+            "accessToken": "fa61d0d9-9f10-4f96-a971-1b6e83592dd9",
+            "link": "https://www.wikipedia.org/",
+            "bookmarkTitle": "Documentation MDN",
+            "tags": "test,fusion,wikipedia",
+            "collectionId": "-1",
+            "bookmarkId": "https://developer.mozilla.org/",
+            "limit": 13
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "wu66yq5hnt3vs96qlpy6lmiv",
+        "position": {
+          "x": 0,
+          "y": 358
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "fvuc2st3mr35i2sy21a389mu",
+        "position": {
+          "x": 568,
+          "y": 340
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "ai9ndv3esg0t6bodybf3v087",
+        "position": {
+          "x": 284,
+          "y": 698
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "raindrop",
+          "label": "Raindrop.io2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage bookmarks and collections in Raindrop.io.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getBookmark",
+            "accessToken": "fa61d0d9-9f10-4f96-a971-1b6e83592dd9",
+            "bookmarkId": "1848640574"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "tfjsajfkljy4dt4nnglxmg6y",
+        "position": {
+          "x": 0,
+          "y": 698
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "rlwkk1rr6pceql0ck3l8y3bk",
+        "position": {
+          "x": 568,
+          "y": 680
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "w67naylii605rhh41qhx7yha",
+        "position": {
+          "x": 284,
+          "y": 1038
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "raindrop",
+          "label": "Raindrop.io2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage bookmarks and collections in Raindrop.io.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "updateBookmark",
+            "accessToken": "fa61d0d9-9f10-4f96-a971-1b6e83592dd9",
+            "link": "https://www.wikipedia.org/",
+            "bookmarkTitle": "Test Wikipedia FusionAI",
+            "tags": "test,fusion,wikipedia",
+            "bookmarkId": "1848640574"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "nhrlc8cyifweqkwnaypudy1v",
+        "position": {
+          "x": 0,
+          "y": 1038
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "t7g1tz77ur2q00mm13de6ymd",
+        "position": {
+          "x": 568,
+          "y": 1020
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "ae8mkhh3h3l0hgl54ffol82d",
+        "position": {
+          "x": 330.00000000000006,
+          "y": 1659
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "raindrop",
+          "label": "Raindrop.io3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage bookmarks and collections in Raindrop.io.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "deleteBookmark",
+            "accessToken": "fa61d0d9-9f10-4f96-a971-1b6e83592dd9",
+            "bookmarkId": " 1848655576"
+          },
+          "_morphing": false
+        },
+        "selected": true,
+        "draggable": true
+      },
+      {
+        "id": "huwqc7b4u8vu861zo61dpwfq",
+        "position": {
+          "x": -49.99999999999994,
+          "y": 1633
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "s5kiy2e3x7hezm10nn01gr41",
+        "position": {
+          "x": 776,
+          "y": 1653
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "y1jgmq6ey4w0bn731nzy58rf",
+        "position": {
+          "x": 300.00000000000006,
+          "y": 2077
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "raindrop",
+          "label": "Raindrop.io4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage bookmarks and collections in Raindrop.io.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "listCollections",
+            "accessToken": "fa61d0d9-9f10-4f96-a971-1b6e83592dd9",
+            "link": "https://www.wikipedia.org/",
+            "bookmarkTitle": "Test Wikipedia FusionAI",
+            "tags": "test,fusion,wikipedia"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "y4v92dganxe2oaibdk45nujo",
+        "position": {
+          "x": 19.500000000000057,
+          "y": 2045
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "tehk9tam5j9j7nosplvbq06q",
+        "position": {
+          "x": 642.5,
+          "y": 2091
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "lkzox60k1q2szfx1p441okxr",
+        "position": {
+          "x": 326.5912377640941,
+          "y": 2338.0460742972614
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "raindrop",
+          "label": "Raindrop.io5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage bookmarks and collections in Raindrop.io.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "createCollection",
+            "accessToken": "fa61d0d9-9f10-4f96-a971-1b6e83592dd9",
+            "collectionTitle": "Test Fusion Collection"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "c60c1zdfn1dbv7hjyrk13912",
+        "position": {
+          "x": -15.408762235905897,
+          "y": 2348.0460742972614
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "up96lsgk2if8xregjsn9eot9",
+        "position": {
+          "x": 626.5912377640941,
+          "y": 2352.0460742972614
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "hfula63ahj3n3oy1f45pqcdl",
+        "sourceHandle": "success",
+        "target": "fspy2hm78ln8ela461mb5hki",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__hfula63ahj3n3oy1f45pqcdlsuccess-fspy2hm78ln8ela461mb5hkiinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "fspy2hm78ln8ela461mb5hki",
+        "sourceHandle": "success",
+        "target": "a3148xdij5pa56ht92jy0ksz",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__fspy2hm78ln8ela461mb5hkisuccess-a3148xdij5pa56ht92jy0kszinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "wu66yq5hnt3vs96qlpy6lmiv",
+        "sourceHandle": "success",
+        "target": "mpeguu74lqrb330ajvse1qwx",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xdx92yffpjl838xmpu9p3uqm",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "mpeguu74lqrb330ajvse1qwx",
+        "sourceHandle": "success",
+        "target": "fvuc2st3mr35i2sy21a389mu",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "qgwy11n8l1tf3u6abr4w8rgi",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "tfjsajfkljy4dt4nnglxmg6y",
+        "sourceHandle": "success",
+        "target": "ai9ndv3esg0t6bodybf3v087",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "z6c40cas2x5hv34deflf2c78",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ai9ndv3esg0t6bodybf3v087",
+        "sourceHandle": "success",
+        "target": "rlwkk1rr6pceql0ck3l8y3bk",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "kbr4pkbejp2ntjz2oyode4i6",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "nhrlc8cyifweqkwnaypudy1v",
+        "sourceHandle": "success",
+        "target": "w67naylii605rhh41qhx7yha",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "dulhaw88w5un546h7mqtqjxf",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "w67naylii605rhh41qhx7yha",
+        "sourceHandle": "success",
+        "target": "t7g1tz77ur2q00mm13de6ymd",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "m4l7yosuap2c9cn7b2fb6ow7",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "huwqc7b4u8vu861zo61dpwfq",
+        "sourceHandle": "success",
+        "target": "ae8mkhh3h3l0hgl54ffol82d",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__huwqc7b4u8vu861zo61dpwfqsuccess-ae8mkhh3h3l0hgl54ffol82dinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ae8mkhh3h3l0hgl54ffol82d",
+        "sourceHandle": "success",
+        "target": "s5kiy2e3x7hezm10nn01gr41",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ae8mkhh3h3l0hgl54ffol82dsuccess-s5kiy2e3x7hezm10nn01gr41input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "y4v92dganxe2oaibdk45nujo",
+        "sourceHandle": "success",
+        "target": "y1jgmq6ey4w0bn731nzy58rf",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__y4v92dganxe2oaibdk45nujosuccess-y1jgmq6ey4w0bn731nzy58rfinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "y1jgmq6ey4w0bn731nzy58rf",
+        "sourceHandle": "success",
+        "target": "tehk9tam5j9j7nosplvbq06q",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__y1jgmq6ey4w0bn731nzy58rfsuccess-tehk9tam5j9j7nosplvbq06qinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "c60c1zdfn1dbv7hjyrk13912",
+        "sourceHandle": "success",
+        "target": "lkzox60k1q2szfx1p441okxr",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__c60c1zdfn1dbv7hjyrk13912success-lkzox60k1q2szfx1p441okxrinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "lkzox60k1q2szfx1p441okxr",
+        "sourceHandle": "success",
+        "target": "up96lsgk2if8xregjsn9eot9",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__lkzox60k1q2szfx1p441okxrsuccess-up96lsgk2if8xregjsn9eot9input",
+        "data": {
+          "isAnimated": false
         }
       }
-    }
-  ],
-  "connections": [
-    {
-      "id": "trigger-integration",
-      "type": "directed",
-      "source": "trigger",
-      "target": "integration",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    },
-    {
-      "id": "integration-output",
-      "type": "directed",
-      "source": "integration",
-      "target": "output",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    }
-  ]
-}
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1788944251448,
+    "updatedAt": 1788947808668,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
