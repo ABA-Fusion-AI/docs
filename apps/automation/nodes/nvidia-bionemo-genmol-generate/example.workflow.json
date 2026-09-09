@@ -33,7 +33,7 @@
           "showRunningStatus": true,
           "parameters": {
             "scoring": "QED",
-            "apiKey": "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",
+            "apiKey": "",
             "smiles": "c1ccccc1.[*{5-15}]",
             "num_molecules": 5,
             "temperature": 1.5,
