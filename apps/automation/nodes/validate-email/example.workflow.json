@@ -1,126 +1,699 @@
-{
-  "name": "Validate Email Example",
-  "nodes": [
-    {
-      "id": "trigger-manual-1",
-      "position": {
-        "x": 360,
-        "y": 220
-      },
-      "type": "trigger",
-      "width": 64,
-      "height": 64,
-      "data": {
-        "name": "manual-trigger",
-        "label": "Manual Trigger",
-        "inputs": {},
-        "outputs": {
-          "success": {
-            "label": "Success"
+[
+  {
+    "name": "Validate Email",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "pgdpiscokrig19wkipv5o2ye",
+        "position": {
+          "x": 449,
+          "y": 156
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "validate-email",
+          "label": "Validate Email",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
           },
-          "error": {
-            "label": "Error"
-          }
-        },
-        "description": "Triggers the workflow manually.",
-        "showRunningStatus": false,
-        "parameters": {},
-        "_morphing": false
-      },
-      "selected": false
-    },
-    {
-      "id": "action-validate-email-1",
-      "position": {
-        "x": 580,
-        "y": 220
-      },
-      "type": "action",
-      "width": 64,
-      "height": 64,
-      "data": {
-        "name": "validate-email",
-        "label": "Validate Email",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
-        },
-        "outputs": {
-          "success": {
-            "label": "Success"
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
           },
-          "error": {
-            "label": "Error"
-          }
+          "description": "Validate email format.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "user@gmail.com"
+          },
+          "_morphing": false
         },
-        "description": "Validate email format.",
-        "showRunningStatus": false,
-        "parameters": {
-          "data": "user@example.com"
-        },
-        "_morphing": false
+        "selected": false
       },
-      "selected": false
-    },
-    {
-      "id": "display-log-1",
-      "position": {
-        "x": 820,
-        "y": 200
-      },
-      "type": "display",
-      "width": 256,
-      "height": 100,
-      "dragHandle": ".drag-handle__custom",
-      "data": {
-        "name": "log",
-        "label": "Log",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+      {
+        "id": "n6kvhv5wglzgohtm9ymy8g2j",
+        "position": {
+          "x": 242,
+          "y": 197
         },
-        "outputs": {
-          "success": {
-            "label": "Success",
-            "isConnectable": false
-          }
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
         },
-        "description": "Logs the input data to the console.",
-        "showRunningStatus": false,
-        "parameters": {},
-        "_morphing": false
+        "selected": false
       },
-      "selected": false
-    }
-  ],
-  "connections": [
-    {
-      "id": "edge-trigger-to-validate-email",
-      "source": "trigger-manual-1",
-      "sourceHandle": "success",
-      "target": "action-validate-email-1",
-      "targetHandle": "input",
-      "type": "directed",
-      "data": {
-        "isAnimated": false
+      {
+        "id": "b0pzmvlh895truhitx0jcdtp",
+        "position": {
+          "x": 444.60697929651667,
+          "y": 291.2432666401579
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "validate-email",
+          "label": "Validate Email1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Validate email format.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "contact@entreprise.ma"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "llha0wp8jn09mpren7vr5njt",
+        "position": {
+          "x": 249.60697929651667,
+          "y": 344.24326664015786
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "powdtgqzlvqa8ljxluzg05yg",
+        "position": {
+          "x": 430.95653129589914,
+          "y": 436.6111206191165
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "validate-email",
+          "label": "Validate Email2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Validate email format.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "ahmed.benali.dev@domain.com"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "j3o2t18zs7r8kmtb17nd4pu0",
+        "position": {
+          "x": 235.95653129589917,
+          "y": 489.6111206191165
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "if7t9h57mqi4f1aktphk8ish",
+        "position": {
+          "x": 450.5635105924158,
+          "y": 595.8543872592744
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "validate-email",
+          "label": "Validate Email2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Validate email format.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "john.doe+newsletter@gmail.com"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "va2xslmnp26j6g1jlxlxhfyd",
+        "position": {
+          "x": 267.5635105924158,
+          "y": 660.8543872592743
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "yoh43ka02nzt7crfs5h30y3o",
+        "position": {
+          "x": 447.4957835295543,
+          "y": 738.8990873920388
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "validate-email",
+          "label": "Validate Email3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Validate email format.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": "support@billing.cloud.aws.com"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "sx5818vv8elxgekdd5mkvu43",
+        "position": {
+          "x": 252.49578352955425,
+          "y": 791.8990873920388
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "b05htgpzt8ifhccno6kio1tk",
+        "position": {
+          "x": 467.10276282607094,
+          "y": 898.1423540321969
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "validate-email",
+          "label": "Validate Email3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Validate email format.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": " info@company.co.uk"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "hidd48vlqjnccvxcqc2jhalh",
+        "position": {
+          "x": 284.10276282607094,
+          "y": 963.1423540321969
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "spdvexx7sgqj5mynstfwhv0z",
+        "position": {
+          "x": 477.4523148254534,
+          "y": 1067.5102080111553
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "validate-email",
+          "label": "Validate Email3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Validate email format.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "wkket083wb1cqiuklxqxvrsr",
+        "position": {
+          "x": 209.425263451985,
+          "y": 1115.7147410731864
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "tgbnmsdh0lwg7g1bkmnm2j65",
+        "position": {
+          "x": 357.84506574031525,
+          "y": 1114.3360619001587
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "function",
+          "label": "Function",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Executes custom JavaScript code on the input data.",
+          "showRunningStatus": true,
+          "parameters": {
+            "code": "// Write your code here\nreturn \" info@company.co.uk\";"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "oca9llx9kyue2cl0h4zc88s1",
+        "position": {
+          "x": 492.81358213594075,
+          "y": 1247.973285069943
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "validate-email",
+          "label": "Validate Email4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Validate email format.",
+          "showRunningStatus": false,
+          "parameters": {
+            "data": {
+              "$expr": "output",
+              "node": "Function1",
+              "outputId": "success",
+              "path": "test"
+            }
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "e88kdrr8ay2b3wjazyycxx8e",
+        "position": {
+          "x": 236.78653076247232,
+          "y": 1308.177818131974
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "vps8yhsfqb3xi1qqj18toxxt",
+        "position": {
+          "x": 397.2063330508026,
+          "y": 1318.7991389589463
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "function",
+          "label": "Function1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Executes custom JavaScript code on the input data.",
+          "showRunningStatus": true,
+          "parameters": {
+            "code": "const test= \"info@company.co.uk\"\nreturn {test};"
+          },
+          "_morphing": false
+        },
+        "selected": false
       }
-    },
-    {
-      "id": "edge-validate-email-to-log",
-      "source": "action-validate-email-1",
-      "sourceHandle": "success",
-      "target": "display-log-1",
-      "targetHandle": "input",
-      "type": "directed",
-      "data": {
-        "isAnimated": false
+    ],
+    "connections": [
+      {
+        "source": "n6kvhv5wglzgohtm9ymy8g2j",
+        "sourceHandle": "success",
+        "target": "pgdpiscokrig19wkipv5o2ye",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__n6kvhv5wglzgohtm9ymy8g2jsuccess-pgdpiscokrig19wkipv5o2yeinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "llha0wp8jn09mpren7vr5njt",
+        "sourceHandle": "success",
+        "target": "b0pzmvlh895truhitx0jcdtp",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "o2ovatfgp6pxeyiqwff39i2s",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "j3o2t18zs7r8kmtb17nd4pu0",
+        "sourceHandle": "success",
+        "target": "powdtgqzlvqa8ljxluzg05yg",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "f9agyja2fbogfeori3i4ty6n",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "va2xslmnp26j6g1jlxlxhfyd",
+        "sourceHandle": "success",
+        "target": "if7t9h57mqi4f1aktphk8ish",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "j7zf7o3gpuipy4jjhe6keddx",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "sx5818vv8elxgekdd5mkvu43",
+        "sourceHandle": "success",
+        "target": "yoh43ka02nzt7crfs5h30y3o",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "git5zeautx89ex8vw7se0y8n",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "hidd48vlqjnccvxcqc2jhalh",
+        "sourceHandle": "success",
+        "target": "b05htgpzt8ifhccno6kio1tk",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "qc8c01dp4nh9fwh3l1by7nn3",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "wkket083wb1cqiuklxqxvrsr",
+        "sourceHandle": "success",
+        "target": "tgbnmsdh0lwg7g1bkmnm2j65",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__wkket083wb1cqiuklxqxvrsrsuccess-tgbnmsdh0lwg7g1bkmnm2j65input",
+        "selected": false,
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "tgbnmsdh0lwg7g1bkmnm2j65",
+        "sourceHandle": "success",
+        "target": "spdvexx7sgqj5mynstfwhv0z",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__tgbnmsdh0lwg7g1bkmnm2j65success-spdvexx7sgqj5mynstfwhv0zinput",
+        "selected": false,
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "e88kdrr8ay2b3wjazyycxx8e",
+        "sourceHandle": "success",
+        "target": "vps8yhsfqb3xi1qqj18toxxt",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "pflg02yg96qa4s76jjtp6sdj",
+        "selected": false,
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "vps8yhsfqb3xi1qqj18toxxt",
+        "sourceHandle": "success",
+        "target": "oca9llx9kyue2cl0h4zc88s1",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "btc5z9p22quqwrnbx4dw17ft",
+        "selected": false,
+        "data": {
+          "isAnimated": false
+        }
       }
-    }
-  ],
-  "version": 1,
-  "secrets": {},
-  "variables": {},
-  "status": "stopped"
-}
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "version": 1,
+    "createdAt": 1788988373128,
+    "updatedAt": 1788989100497,
+    "publishedNames": []
+  }
+]
