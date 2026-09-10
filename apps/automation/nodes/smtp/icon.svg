@@ -1,7 +1,7 @@
-<svg  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg fill="currentColor" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 	 viewBox="0 0 512 512" xml:space="preserve">
-  <rect x="0.0" y="0.0" width="512.0" height="512.0" rx="76.8" fill="#D97706" />
-  
 <g>
 	<g>
 		<path d="M487.016,152.896H248.704c-13.776,0-24.984,11.44-24.984,25.488v155.232c0,14.056,11.208,25.488,24.984,25.488h238.312
@@ -24,5 +24,4 @@
 		<rect x="95.592" y="312.144" width="80.08" height="32"/>
 	</g>
 </g>
-
 </svg>

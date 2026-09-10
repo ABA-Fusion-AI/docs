@@ -1,8 +1,6 @@
 <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0.0" y="0.0" width="29.0" height="29.0" rx="4.35" fill="#EC4899" />
-  
     <rect x="27.4058" y="1" width="26.4057" height="26.4057" rx="12.8704"
-        transform="rotate(90 27.4058 1)" fill="#FFFFFF" />
+        transform="rotate(90 27.4058 1)" fill="currentColor" />
     <rect x="27.4058" y="1" width="26.4057" height="26.4057" rx="12.8704"
         transform="rotate(90 27.4058 1)" stroke="white" stroke-width="2" />
     <g clip-path="url(#clip0_43_17)">
@@ -15,5 +13,4 @@
             <rect width="12" height="12" fill="white" transform="translate(8.20312 8.20264)" />
         </clipPath>
     </defs>
-
 </svg>
