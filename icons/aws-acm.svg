@@ -1,12 +1,1 @@
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
-  <defs>
-    <linearGradient id="bg-1063" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#E11D48"/>
-      <stop offset="100%" stop-color="#9F1239"/>
-    </linearGradient>
-  </defs>
-  <rect width="128" height="128" rx="28" fill="url(#bg-1063)"/>
-  <g transform="translate(16,16) scale(0.75)">
-    <use xlink:href="#a" x="2.5" y="2.5"/><symbol id="a" overflow="visible"><g stroke="none"><path fill="#759c3e" d="m80 47.005-40.012 4.962V27.99L80 32.952z"/><path fill="#4b612c" d="m0 47.005 39.988 4.962V27.99L0 32.952z"/><path fill="#648339" d="M10 0h60v15H10z"/><path fill="#3c4929" d="m65 20-48.976.212L10 15h60z"/><path fill="#648339" d="M10 65h60v15H10z"/><path fill="#b7ca9d" d="M65 60H15l-5 5h60z"/></g></symbol>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#fff" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 85 85"><use xlink:href="#a" x="2.5" y="2.5"/><symbol id="a" overflow="visible"><g stroke="none"><path fill="#759c3e" d="m80 47.005-40.012 4.962V27.99L80 32.952z"/><path fill="#4b612c" d="m0 47.005 39.988 4.962V27.99L0 32.952z"/><path fill="#648339" d="M10 0h60v15H10z"/><path fill="#3c4929" d="m65 20-48.976.212L10 15h60z"/><path fill="#648339" d="M10 65h60v15H10z"/><path fill="#b7ca9d" d="M65 60H15l-5 5h60z"/></g></symbol></svg>

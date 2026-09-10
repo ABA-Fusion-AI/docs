@@ -1,13 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
-  <defs>
-    <linearGradient id="bg-1028" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#EC4899"/>
-      <stop offset="100%" stop-color="#BE185D"/>
-    </linearGradient>
-  </defs>
-  <rect width="128" height="128" rx="28" fill="url(#bg-1028)"/>
-  <g transform="translate(16,16) scale(0.75)">
-    <rect x="0.0" y="0.0" width="73.0" height="73.0" rx="10.95" fill="#F59E0B" />
+<svg width="73" height="73" viewBox="0 0 73 73"  xmlns="http://www.w3.org/2000/svg">
+  <rect x="0.0" y="0.0" width="73.0" height="73.0" rx="10.95" fill="#F59E0B" />
   
     <g clip-path="url(#clip0_4017_927)">
     <path d="M21.1535 21.1464H8.19312V60.0417H21.1535V21.1464ZM21.1535 73.0021H73.0091V60.0417H21.1535V73.0021ZM21.1535 21.1464H73.0091V8.18604H21.1535V21.1464Z" fill="#FFFFFF" fill-opacity="0.302"/>
@@ -19,5 +11,5 @@
     <rect width="73" height="73" fill="#FFFFFF"/>
     </clipPath>
     </defs>
-  </g>
+    
 </svg>

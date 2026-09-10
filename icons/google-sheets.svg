@@ -1,13 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
-  <defs>
-    <linearGradient id="bg-1716" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#EC4899"/>
-      <stop offset="100%" stop-color="#BE185D"/>
-    </linearGradient>
-  </defs>
-  <rect width="128" height="128" rx="28" fill="url(#bg-1716)"/>
-  <g transform="translate(16,16) scale(0.75)">
-    <rect x="0.0" y="0.0" width="219.0" height="300.0" rx="32.85" fill="#F59E0B" />
+<svg width="219" height="300" viewBox="0 0 219 300"  xmlns="http://www.w3.org/2000/svg">
+  <rect x="0.0" y="0.0" width="219.0" height="300.0" rx="32.85" fill="#F59E0B" />
   
     <path opacity="0.8" d="M136.363 0L170.454 47.7275L218.182 81.8184V279.546C218.181 290.796 208.977 300 197.728 300H20.4541C9.20446 300 0.000249683 290.796 0 279.546V20.4541C0.000241374 9.20445 9.20445 0.0002424 20.4541 0H136.363ZM54.5449 245.454H163.636V146.591H54.5449V245.454ZM102.272 231.818H68.1816V214.772H102.272V231.818ZM149.999 231.818H115.908V214.772H149.999V231.818ZM102.272 204.545H68.1816V187.5H102.272V204.545ZM149.999 204.545H115.908V187.5H149.999V204.545ZM102.272 177.272H68.1816V160.228H102.272V177.272ZM149.999 177.272H115.908V160.228H149.999V177.272Z" fill="#FFFFFF"/>
     <g opacity="0.6">
@@ -19,5 +11,5 @@
     <defs>
    
     </defs>
-  </g>
+    
 </svg>

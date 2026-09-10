@@ -1,15 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
-  <defs>
-    <linearGradient id="bg-797" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#8B5CF6"/>
-      <stop offset="100%" stop-color="#6D28D9"/>
-    </linearGradient>
-  </defs>
-  <rect width="128" height="128" rx="28" fill="url(#bg-797)"/>
-  <g transform="translate(16,16) scale(0.75)">
-    <rect x="0.0" y="0.0" width="21.0" height="21.0" rx="3.15" fill="#D97706" />
+<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0.0" y="0.0" width="21.0" height="21.0" rx="3.15" fill="#D97706" />
   
 <path d="M15.375 6.83334C15.375 5.4741 14.835 4.17054 13.8739 3.20941C12.9128 2.24829 11.6092 1.70834 10.25 1.70834C8.89077 1.70834 7.5872 2.24829 6.62608 3.20941C5.66495 4.17054 5.125 5.4741 5.125 6.83334C5.125 12.8125 2.5625 14.5208 2.5625 14.5208H17.9375C17.9375 14.5208 15.375 12.8125 15.375 6.83334Z" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M11.7278 17.9375C11.5776 18.1964 11.362 18.4113 11.1027 18.5606C10.8434 18.71 10.5493 18.7886 10.25 18.7886C9.95076 18.7886 9.65673 18.71 9.3974 18.5606C9.13806 18.4113 8.92251 18.1964 8.77234 17.9375" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  </g>
+
 </svg>

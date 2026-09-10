@@ -1,13 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
-  <defs>
-    <linearGradient id="bg-910" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#06B6D4"/>
-      <stop offset="100%" stop-color="#0E7490"/>
-    </linearGradient>
-  </defs>
-  <rect width="128" height="128" rx="28" fill="url(#bg-910)"/>
-  <g transform="translate(16,16) scale(0.75)">
-    <rect x="0.0" y="0.0" width="32.0" height="32.0" rx="4.8" fill="#7C3AED" />
+<svg version="1.1" id="Uploaded to svgrepo.com" xmlns="http://www.w3.org/2000/svg"
+	width="800px" height="800px" viewBox="0 0 32 32" xml:space="preserve">
+  <rect x="0.0" y="0.0" width="32.0" height="32.0" rx="4.8" fill="#7C3AED" />
   
 
 <path fill="#FFFFFF" class="stone_een" d="M20.293,27.707l-3.586,3.586c-0.391,0.391-1.024,0.391-1.414,0l-3.586-3.586
@@ -17,5 +10,5 @@
 	C20.477,26,20.923,27.077,20.293,27.707z M28,0h-4c-0.552,0-1,0.448-1,1v3.686c0,1.326-0.527,2.598-1.465,3.536l-4.837,4.837
 	c1.53,1.612,2.565,3.571,3.024,5.702c0.21-0.352,0.448-0.688,0.743-0.983l5.313-5.313C27.841,10.402,29,7.605,29,4.688V1
 	C29,0.448,28.552,0,28,0z"/>
-  </g>
+
 </svg>

@@ -1,12 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
-  <defs>
-    <linearGradient id="bg-1040" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#6366F1"/>
-      <stop offset="100%" stop-color="#4F46E5"/>
-    </linearGradient>
-  </defs>
-  <rect width="128" height="128" rx="28" fill="url(#bg-1040)"/>
-  <g transform="translate(16,16) scale(0.75)">
-    <g fill="none" fill-rule="evenodd"><rect width="200" height="200" fill="#0079BF" rx="25"/><rect width="61" height="87.5" x="113" y="26" fill="#FFF" rx="12"/><rect width="61" height="137.5" x="26" y="26" fill="#FFF" rx="12"/></g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><g fill="none" fill-rule="evenodd"><rect width="200" height="200" fill="#0079BF" rx="25"/><rect width="61" height="87.5" x="113" y="26" fill="#FFF" rx="12"/><rect width="61" height="137.5" x="26" y="26" fill="#FFF" rx="12"/></g></svg>

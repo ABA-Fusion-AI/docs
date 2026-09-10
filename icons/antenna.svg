@@ -1,13 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
-  <defs>
-    <linearGradient id="bg-1123" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#F59E0B"/>
-      <stop offset="100%" stop-color="#D97706"/>
-    </linearGradient>
-  </defs>
-  <rect width="128" height="128" rx="28" fill="url(#bg-1123)"/>
-  <g transform="translate(16,16) scale(0.75)">
-    <rect x="0.0" y="0.0" width="16.0" height="16.0" rx="2.4" fill="#EC4899" />
+<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 16 16" viewBox="0 0 16 16"
+  id="antenna">
+  <rect x="0.0" y="0.0" width="16.0" height="16.0" rx="2.4" fill="#EC4899" />
   
   <g id="line" display="none">
     <circle cx="8" cy="6" r="1.5" fill="none" stroke="#FFFFFF" stroke-linecap="round"
@@ -37,5 +30,5 @@
     <path fill="#FFFFFF"
       d="M10.8 3.2c-.2-.2-.5-.2-.7 0-.2.2-.2.5 0 .7C10.7 4.4 11 5.2 11 6s-.3 1.6-.9 2.1c-.2.2-.2.5 0 .7C10.2 8.9 10.3 9 10.5 9c.1 0 .3 0 .4-.1C11.6 8.1 12 7.1 12 6S11.6 3.9 10.8 3.2zM5 6c0-.8.3-1.6.9-2.1.2-.2.2-.5 0-.7C5.7 3 5.4 3 5.2 3.2 4.4 3.9 4 4.9 4 6s.4 2.1 1.2 2.8C5.3 8.9 5.4 9 5.5 9c.1 0 .3 0 .4-.1.2-.2.2-.5 0-.7C5.3 7.6 5 6.8 5 6z"></path>
   </g>
-  </g>
+
 </svg>

@@ -1433,7 +1433,7 @@
     "type": "tool",
     "description": "Advice Slip API - get random life advice quotes and wisdom",
     "slogan": "advice-slip",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "advice-slip"
@@ -1446,7 +1446,7 @@
     "type": "tool",
     "description": "Adyen API - Payment processing platform. Accept payments, manage transactions, and process refunds.",
     "slogan": "adyen",
-    "icon": "icons/adyen.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "adyen"
@@ -1472,7 +1472,7 @@
     "type": "tool",
     "description": "Agify API - predict a person's age based on their first name",
     "slogan": "agify",
-    "icon": "icons/agify.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "agify"
@@ -1838,7 +1838,7 @@
     "type": "tool",
     "description": "Amtraker train tracker - real-time Amtrak train schedules, delays, and station data",
     "slogan": "amtraker",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "amtraker"
@@ -1933,7 +1933,7 @@
     "type": "tool",
     "description": "Bar chart generator - create bar chart visualizations from data",
     "slogan": "bar",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "bar"
@@ -2011,7 +2011,7 @@
     "type": "tool",
     "description": "Beeceptor mock API - create mock REST endpoints for testing and prototyping",
     "slogan": "beeceptor",
-    "icon": "icons/beeceptor.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "beeceptor"
@@ -2116,7 +2116,7 @@
     "type": "tool",
     "description": "A powerful abstraction of genomics databases. BioAPI is part of the Multiomix project. Access gene information, expression data, pathways, ontologies, and drug-gene interactions.",
     "slogan": "bioapi",
-    "icon": "icons/code.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "bio-api"
@@ -3459,7 +3459,7 @@
     "type": "tool",
     "description": "Chemical Identifier Resolver - convert between chemical names, SMILES, InChI, and other formats",
     "slogan": "cactus",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "cactus"
@@ -3550,7 +3550,7 @@
     "type": "tool",
     "description": "ChEBI chemical database - search for chemical entities and their biological roles",
     "slogan": "chebi",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "ch-ebi"
@@ -3576,7 +3576,7 @@
     "type": "tool",
     "description": "ChEMBL bioactivity database - search drug targets, compounds, and pharmacological data",
     "slogan": "chembl",
-    "icon": "icons/medical.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "ch-embl"
@@ -3733,7 +3733,7 @@
     "type": "tool",
     "description": "Company information search - find business details, registration, and corporate data",
     "slogan": "company-search",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "company-search"
@@ -3772,7 +3772,7 @@
     "type": "tool",
     "description": "Copernicus Emergency Management - access satellite imagery and disaster monitoring data",
     "slogan": "copernicus-ems",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "copernicus-ems"
@@ -3854,7 +3854,7 @@
     "type": "tool",
     "description": "Crossref scholarly search - find academic publications by DOI, title, or author",
     "slogan": "crossref-search",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "crossref-search"
@@ -3893,7 +3893,7 @@
     "type": "tool",
     "description": "Dad jokes API - get random dad jokes for fun and entertainment",
     "slogan": "dad-jokes",
-    "icon": "icons/entertainment.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "dad-jokes"
@@ -3948,7 +3948,7 @@
     "type": "tool",
     "description": "Datamuse word finder API - find rhymes, synonyms, related words, and word completions",
     "slogan": "datamuse",
-    "icon": "icons/data.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "datamuse"
@@ -4039,7 +4039,7 @@
     "type": "tool",
     "description": "Deck of Cards API - draw, shuffle, and manage virtual playing card decks",
     "slogan": "deck-of-cards",
-    "icon": "icons/entertainment.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "deck-of-cards"
@@ -4169,7 +4169,7 @@
     "type": "tool",
     "description": "D&D 5th Edition API - access spells, monsters, classes, and game rules data",
     "slogan": "dnd5e",
-    "icon": "icons/entertainment.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "dn-d5e"
@@ -4234,7 +4234,7 @@
     "type": "tool",
     "description": "Directory of Open Access Journals - search and access free scholarly articles",
     "slogan": "doaj",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "doaj"
@@ -4273,7 +4273,7 @@
     "type": "tool",
     "description": "DocuSign e-signature platform - send, sign, and manage electronic documents",
     "slogan": "docusign",
-    "icon": "icons/docusign.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "docu-sign"
@@ -4325,7 +4325,7 @@
     "type": "tool",
     "description": "EBSCO academic database - search scholarly articles and research publications",
     "slogan": "ebsco",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "ebsco"
@@ -4351,7 +4351,7 @@
     "type": "tool",
     "description": "Electricity Maps - real-time carbon intensity and energy grid data worldwide",
     "slogan": "electricity-maps",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "electricity-maps"
@@ -4364,7 +4364,7 @@
     "type": "tool",
     "description": "European-Mediterranean Seismological Centre - real-time earthquake data and alerts",
     "slogan": "emsc-seismic",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "emsc-seismic"
@@ -4390,7 +4390,7 @@
     "type": "tool",
     "description": "Ensembl genome browser - access gene sequences, variants, and comparative genomics data",
     "slogan": "ensembl",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "ensembl"
@@ -4481,7 +4481,7 @@
     "type": "tool",
     "description": "FaceCheck.ID face recognition - search the internet by face to find social profiles",
     "slogan": "facecheck",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "face-check"
@@ -4520,7 +4520,7 @@
     "type": "tool",
     "description": "U.S. Federal Register - search federal regulations, rules, and public notices",
     "slogan": "federal-register",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "federal-register"
@@ -4533,7 +4533,7 @@
     "type": "tool",
     "description": "Final Fantasy XIV API - access game data including characters, items, and servers",
     "slogan": "ffxiv",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "ffxiv"
@@ -4559,7 +4559,7 @@
     "type": "tool",
     "description": "Files.com managed file transfer - secure file sharing and workflow automation",
     "slogan": "files-com",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "files-com"
@@ -4637,7 +4637,7 @@
     "type": "tool",
     "description": "Flickr oEmbed - get embeddable photo information from Flickr URLs",
     "slogan": "flickr-oembed",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "flickr-o-embed"
@@ -4689,7 +4689,7 @@
     "type": "tool",
     "description": "Free Dictionary API - get word definitions, phonetics, and usage examples",
     "slogan": "free-dictionary",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "free-dictionary"
@@ -4728,7 +4728,7 @@
     "type": "tool",
     "description": "Grapheme-to-phoneme converter - convert text to phonetic pronunciation",
     "slogan": "g2p",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "g2-p"
@@ -4767,7 +4767,7 @@
     "type": "tool",
     "description": "Global Disaster Alert System - real-time natural disaster alerts and impact estimates",
     "slogan": "gdacs",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "gdacs"
@@ -4793,7 +4793,7 @@
     "type": "tool",
     "description": "Genderize API - predict gender based on first name with probability scores",
     "slogan": "genderize",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "genderize"
@@ -4871,7 +4871,7 @@
     "type": "tool",
     "description": "Getty Images - search and license professional stock photos and editorial images",
     "slogan": "gettyimages",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "getty-images"
@@ -4884,7 +4884,7 @@
     "type": "tool",
     "description": "Giphy GIF search - find animated GIFs by keyword, trending, or random",
     "slogan": "giphy-gif-search",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "giphy-gif-search"
@@ -4910,7 +4910,7 @@
     "type": "tool",
     "description": "Global Solar Atlas - access solar energy potential and irradiation data worldwide",
     "slogan": "global-solar-atlas",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "global-solar-atlas"
@@ -5014,7 +5014,7 @@
     "type": "tool",
     "description": "Have I Been Pwned - check if email addresses appear in data breaches",
     "slogan": "haveibeenpwned",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "have-i-been-pwned"
@@ -5261,7 +5261,7 @@
     "type": "tool",
     "description": "Icon Horse - get website favicons and brand icons by domain name",
     "slogan": "iconhorse",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "icon-horse"
@@ -5287,7 +5287,7 @@
     "type": "tool",
     "description": "Conditional router - route data to different outputs based on true/false conditions",
     "slogan": "if-else",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "if-else"
@@ -5327,7 +5327,7 @@
     "type": "tool",
     "description": "Imgflip meme generator - create memes from popular templates with custom text",
     "slogan": "imgflip",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "img-flip"
@@ -5379,7 +5379,7 @@
     "type": "tool",
     "description": "INGV Italian seismic data - real-time earthquake monitoring for Italy",
     "slogan": "ingv-seismic",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "ingv-seismic"
@@ -5487,7 +5487,7 @@
     "type": "tool",
     "description": "Jikan MyAnimeList API - search anime, manga, characters, and seasonal listings",
     "slogan": "jikan",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "jikan"
@@ -5585,7 +5585,7 @@
     "type": "tool",
     "description": "Kanye REST API - get random Kanye West quotes",
     "slogan": "kanye-rest",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "kanye-rest"
@@ -5598,7 +5598,7 @@
     "type": "tool",
     "description": "Keycloak identity management - user authentication, SSO, and access management",
     "slogan": "keycloak",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "keycloak"
@@ -5637,7 +5637,7 @@
     "type": "tool",
     "description": "LanguageTool grammar checker - check spelling, grammar, and writing style",
     "slogan": "languagetool",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "language-tool"
@@ -5650,7 +5650,7 @@
     "type": "tool",
     "description": "Launch Library 2 - upcoming and past space launch data from worldwide agencies",
     "slogan": "launch-library-2",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "launch-library2"
@@ -5726,7 +5726,7 @@
     "id": "liberation",
     "name": "Liberation",
     "type": "tool",
-    "description": "Lib\u00e9ration news - French national daily newspaper RSS feed",
+    "description": "Libération news - French national daily newspaper RSS feed",
     "slogan": "liberation",
     "icon": "icons/news.svg",
     "integrations": {
@@ -5741,7 +5741,7 @@
     "type": "tool",
     "description": "LibreTranslate - free and open-source machine translation between languages",
     "slogan": "libretranslate",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "libre-translate"
@@ -5793,7 +5793,7 @@
     "type": "tool",
     "description": "Listen Notes podcast search - find podcasts and episodes across all platforms",
     "slogan": "listennotes",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "listen-notes"
@@ -5861,7 +5861,7 @@
     "type": "tool",
     "description": "Lorem Picsum - generate random placeholder images with custom dimensions",
     "slogan": "lorem-picsum",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "lorem-picsum"
@@ -5874,7 +5874,7 @@
     "type": "tool",
     "description": "Loripsum API - generate Lorem Ipsum text with formatting options",
     "slogan": "loripsum-api",
-    "icon": "icons/code.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "loripsum-api"
@@ -5913,7 +5913,7 @@
     "type": "tool",
     "description": "Mahakim court dossier - search Moroccan court case files and judicial records",
     "slogan": "mahakim-dossier",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "mahakim-dossier"
@@ -5976,7 +5976,7 @@
     "id": "marches-publics",
     "name": "Marches Publics",
     "type": "tool",
-    "description": "March\u00e9s Publics - Moroccan government public procurement and tender data",
+    "description": "Marchés Publics - Moroccan government public procurement and tender data",
     "slogan": "marches-publics",
     "icon": "icons/marches-publics.svg",
     "integrations": {
@@ -6082,7 +6082,7 @@
     "type": "tool",
     "description": "Medium publishing platform - read and interact with Medium articles and publications",
     "slogan": "medium",
-    "icon": "icons/medical.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "medium"
@@ -6108,7 +6108,7 @@
     "type": "tool",
     "description": "Mendeley academic reference manager - search and manage research papers",
     "slogan": "mendeley",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "mendeley"
@@ -6297,7 +6297,7 @@
     "type": "tool",
     "description": "USGS Mineral Resources - search mineral deposit and commodity data",
     "slogan": "mrds",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "mrds"
@@ -6323,7 +6323,7 @@
     "type": "tool",
     "description": "MyGene.info - query gene annotations, symbols, and functional information",
     "slogan": "mygene",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "my-gene"
@@ -6336,7 +6336,7 @@
     "type": "tool",
     "description": "MyVariant.info - query genetic variant annotations and clinical significance",
     "slogan": "myvariant",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "my-variant"
@@ -6349,7 +6349,7 @@
     "type": "tool",
     "description": "NASA open APIs - access space data, Mars rover photos, and asteroid tracking",
     "slogan": "nasa",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "nasa"
@@ -6362,7 +6362,7 @@
     "type": "tool",
     "description": "NASA Astronomy Picture of the Day - daily space images with explanations",
     "slogan": "nasa-apod",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "nasa-apod"
@@ -6375,7 +6375,7 @@
     "type": "tool",
     "description": "NASA media library - search photos, videos, and audio from NASA missions",
     "slogan": "nasa-media-search",
-    "icon": "icons/medical.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "nasa-media-search"
@@ -6388,7 +6388,7 @@
     "type": "tool",
     "description": "Nationalize API - predict nationality based on a person's name",
     "slogan": "nationalize",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "nationalize"
@@ -6453,7 +6453,7 @@
     "type": "tool",
     "description": "NewsAPI - search worldwide news articles from 80,000+ sources in real time",
     "slogan": "newsapi",
-    "icon": "icons/news.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "news-api"
@@ -6495,7 +6495,7 @@
     "type": "tool",
     "description": "NHTSA vehicle safety - search recalls, complaints, and crash test ratings",
     "slogan": "nhtsa",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "nhtsa"
@@ -6508,7 +6508,7 @@
     "type": "tool",
     "description": "Nobel Prize API - search laureates, prizes, and award history",
     "slogan": "nobel-prize",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "nobel-prize"
@@ -6606,7 +6606,7 @@
     "type": "tool",
     "description": "OMDb movie database - search movies, TV shows, and get detailed film information",
     "slogan": "omdb",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "om-db"
@@ -6619,7 +6619,7 @@
     "type": "tool",
     "description": "Execute once filter - pass data through only on the first execution",
     "slogan": "once",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "once"
@@ -6684,7 +6684,7 @@
     "type": "tool",
     "description": "Open Library search - find books, authors, and editions from the Internet Archive",
     "slogan": "open-library-search",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "open-library-search"
@@ -6710,7 +6710,7 @@
     "type": "tool",
     "description": "Open Trivia Database - get random trivia questions across multiple categories",
     "slogan": "open-trivia",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "open-trivia"
@@ -6736,7 +6736,7 @@
     "type": "tool",
     "description": "OpenAlex scholarly search - access 250M+ academic works, authors, and institutions",
     "slogan": "openalex",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "openalex"
@@ -6749,7 +6749,7 @@
     "type": "tool",
     "description": "OpenAQ air quality - real-time and historical air pollution data worldwide",
     "slogan": "openaq",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "open-aq"
@@ -6762,7 +6762,7 @@
     "type": "tool",
     "description": "OpenCorporates company search - access data on 200M+ companies globally",
     "slogan": "opencorporates",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "open-corporates"
@@ -6775,7 +6775,7 @@
     "type": "tool",
     "description": "Open Food Facts - product nutrition data, ingredients, and food labeling information",
     "slogan": "openfoodfacts",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "open-food-facts"
@@ -6788,7 +6788,7 @@
     "type": "tool",
     "description": "OpenSky Network - real-time aircraft tracking and flight position data",
     "slogan": "opensky",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "open-sky"
@@ -6827,7 +6827,7 @@
     "type": "tool",
     "description": "Open Topo Data - get elevation data for any location on Earth",
     "slogan": "opentopodata",
-    "icon": "icons/data.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "open-topo-data"
@@ -6853,7 +6853,7 @@
     "type": "tool",
     "description": "ORCID researcher search - find researchers and their scholarly works by ORCID ID",
     "slogan": "orcid-search",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "orcid-search"
@@ -6879,7 +6879,7 @@
     "type": "tool",
     "description": "OSF research platform - access Open Science Framework projects and preprints",
     "slogan": "osf-nodes",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "osf-nodes"
@@ -6931,7 +6931,7 @@
     "type": "tool",
     "description": "Oxford Dictionaries API - word definitions, translations, and language data",
     "slogan": "oxforddictionaries",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "oxford-dictionaries"
@@ -6944,7 +6944,7 @@
     "type": "tool",
     "description": "Moroccan Parliament - access parliamentary proceedings and legislative data",
     "slogan": "parlement-maroc",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "parlement-maroc"
@@ -7009,7 +7009,7 @@
     "type": "tool",
     "description": "PatientView health records - access UK patient kidney and rare disease data",
     "slogan": "patientview",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "patient-view"
@@ -7100,7 +7100,7 @@
     "type": "tool",
     "description": "Pinecone vector database - store and search embeddings for AI applications",
     "slogan": "pinecone-vector-store",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "pinecone-vector-store"
@@ -7139,7 +7139,7 @@
     "type": "tool",
     "description": "PlayHT text-to-speech - convert text to natural human-like speech audio",
     "slogan": "play-ht",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "play-ht"
@@ -7163,9 +7163,9 @@
     "id": "pokeapi",
     "name": "Pokeapi",
     "type": "tool",
-    "description": "Pok\u00e9API - access Pok\u00e9mon data including species, abilities, and moves",
+    "description": "PokéAPI - access Pokémon data including species, abilities, and moves",
     "slogan": "pokeapi",
-    "icon": "icons/code.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "pokeapi"
@@ -7204,7 +7204,7 @@
     "type": "tool",
     "description": "Postcodes.io UK - lookup UK postcodes, coordinates, and administrative areas",
     "slogan": "postcode-io",
-    "icon": "icons/code.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "postcode-io"
@@ -7348,7 +7348,7 @@
     "type": "tool",
     "description": "Project Gutenberg - search and access free public domain eBooks",
     "slogan": "project-gutenberg-search",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "project-gutenberg-search"
@@ -7361,7 +7361,7 @@
     "type": "tool",
     "description": "PurpleAir air quality - real-time air quality sensor data from community monitors",
     "slogan": "purpleair",
-    "icon": "icons/aichat.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "purple-air"
@@ -7413,7 +7413,7 @@
     "type": "tool",
     "description": "QuickChart chart generator - create chart images from Chart.js configurations",
     "slogan": "quickchart",
-    "icon": "icons/quickchart.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "quick-chart"
@@ -7426,7 +7426,7 @@
     "type": "tool",
     "description": "Quotable quotes API - get random inspirational and famous quotes",
     "slogan": "quotable",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "quotable"
@@ -7452,7 +7452,7 @@
     "type": "tool",
     "description": "Random User Generator - create realistic fake user profiles for testing",
     "slogan": "randomuser",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "random-user"
@@ -7570,7 +7570,7 @@
     "type": "tool",
     "description": "Remove.bg background remover - remove image backgrounds using AI",
     "slogan": "remove-bg",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "remove-bg"
@@ -7596,7 +7596,7 @@
     "type": "tool",
     "description": "Replicate ML platform - run open-source machine learning models via API",
     "slogan": "replicate",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "replicate"
@@ -7622,7 +7622,7 @@
     "type": "tool",
     "description": "REST Countries API - get country data including population, currencies, and languages",
     "slogan": "rest-countries",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "rest-countries"
@@ -7661,7 +7661,7 @@
     "type": "tool",
     "description": "Rick and Morty API - access character, episode, and location data from the show",
     "slogan": "rick-and-morty",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "rick-and-morty"
@@ -7713,7 +7713,7 @@
     "type": "tool",
     "description": "Runway ML - AI-powered video editing, generation, and visual effects",
     "slogan": "runwayml",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "runway-ml"
@@ -7866,7 +7866,7 @@
     "type": "tool",
     "description": "Semantic Scholar - AI-powered academic paper search with citation analysis",
     "slogan": "semantic-scholar",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "semantic-scholar"
@@ -8055,7 +8055,7 @@
     "type": "tool",
     "description": "OpenAlex research search - find scholarly works with reconstructed abstracts, authors, year, DOI, venue, citations, and concepts",
     "slogan": "scientific-openalex",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "scientific-openalex"
@@ -8068,7 +8068,7 @@
     "type": "tool",
     "description": "Crossref research metadata - search DOI records with titles, authors, abstracts when deposited, dates, venues, and citations",
     "slogan": "scientific-crossref",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "scientific-crossref"
@@ -8081,7 +8081,7 @@
     "type": "tool",
     "description": "Semantic Scholar research search - find papers with abstracts, authors, year, DOI, venue, citations, fields of study, and open-access links",
     "slogan": "scientific-semantic-scholar",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "scientific-semantic-scholar"
@@ -8094,7 +8094,7 @@
     "type": "tool",
     "description": "Europe PMC biomedical search - find literature with abstracts, authors, journal, DOI, PMID, PMCID, citations, and full-text links",
     "slogan": "scientific-europe-pmc",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "scientific-europe-pmc"
@@ -8107,7 +8107,7 @@
     "type": "tool",
     "description": "arXiv research search - find preprints with abstracts, authors, categories, dates, and PDF links",
     "slogan": "scientific-arxiv",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "scientific-arxiv"
@@ -8120,7 +8120,7 @@
     "type": "tool",
     "description": "PubMed research search - find biomedical articles and fetch abstracts, authors, journal, DOI, PMID, MeSH terms, and dates",
     "slogan": "scientific-pubmed",
-    "icon": "icons/medical.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "scientific-pubmed"
@@ -8133,7 +8133,7 @@
     "type": "tool",
     "description": "Elsevier Scopus and ScienceDirect search - query official Elsevier APIs with normalized scholarly metadata",
     "slogan": "scientific-elsevier",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "scientific-elsevier"
@@ -8146,7 +8146,7 @@
     "type": "tool",
     "description": "Web of Science search - query Clarivate Web of Science API with normalized academic metadata",
     "slogan": "scientific-web-of-science",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "scientific-web-of-science"
@@ -8159,7 +8159,7 @@
     "type": "tool",
     "description": "Lens scholarly and patent search - query Lens APIs for papers or patents with normalized metadata",
     "slogan": "scientific-lens",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "scientific-lens"
@@ -8172,7 +8172,7 @@
     "type": "tool",
     "description": "Espacenet OPS patent search - search EPO patent publications with titles, abstracts, inventors, applicants, classifications, and dates",
     "slogan": "scientific-espacenet",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "scientific-espacenet"
@@ -8185,7 +8185,7 @@
     "type": "tool",
     "description": "OPTIMADE materials database search - query compatible materials databases for structures or references",
     "slogan": "scientific-optimade",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "scientific-optimade"
@@ -8198,7 +8198,7 @@
     "type": "tool",
     "description": "Google Scholar access connector - final user must provide an authorized Google Scholar-compatible API endpoint and credentials; this node does not scrape Google Scholar",
     "slogan": "Requires final user authorized API access",
-    "icon": "icons/Google.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "scientific-google-scholar-access"
@@ -8211,7 +8211,7 @@
     "type": "tool",
     "description": "Google Patents access connector - final user must provide an authorized Google Patents-compatible API endpoint and credentials; this node does not scrape Google Patents",
     "slogan": "Requires final user authorized API access",
-    "icon": "icons/Google.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "scientific-google-patents-access"
@@ -8224,7 +8224,7 @@
     "type": "tool",
     "description": "Patsnap access connector - final user must provide their own Patsnap Open Platform/API base URL and key or token",
     "slogan": "Requires final user's Patsnap API access",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "scientific-patsnap-access"
@@ -8237,7 +8237,7 @@
     "type": "tool",
     "description": "Crayon access connector - final user must provide their own Crayon API or partner endpoint and key or token",
     "slogan": "Requires final user's Crayon API access",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "scientific-crayon-access"
@@ -8250,7 +8250,7 @@
     "type": "tool",
     "description": "AlphaSense access connector - final user must provide their own AlphaSense enterprise API endpoint and key or token",
     "slogan": "Requires final user's AlphaSense API access",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "scientific-alpha-sense-access"
@@ -8263,7 +8263,7 @@
     "type": "tool",
     "description": "Klue access connector - final user must provide their own Klue API or integration endpoint and key or token",
     "slogan": "Requires final user's Klue API access",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "scientific-klue-access"
@@ -8276,7 +8276,7 @@
     "type": "tool",
     "description": "Kompyte access connector - final user must provide their own Kompyte/Semrush API or integration endpoint and key or token",
     "slogan": "Requires final user's Kompyte API access",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "scientific-kompyte-access"
@@ -8289,7 +8289,7 @@
     "type": "tool",
     "description": "Contify access connector - final user must provide their own Contify API endpoint and key or token",
     "slogan": "Requires final user's Contify API access",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "scientific-contify-access"
@@ -8302,7 +8302,7 @@
     "type": "tool",
     "description": "Seismic access connector - final user must provide their own Seismic tenant API endpoint and key or token",
     "slogan": "Requires final user's Seismic API access",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "scientific-seismic-access"
@@ -8315,7 +8315,7 @@
     "type": "tool",
     "description": "OneMine access connector - final user must provide their own OneMine or subscription API endpoint and credentials",
     "slogan": "Requires final user OneMine API access",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "scientific-onemine-access"
@@ -8328,7 +8328,7 @@
     "type": "tool",
     "description": "GeoScienceWorld access connector - final user must provide their own GeoScienceWorld or subscription API endpoint and credentials",
     "slogan": "Requires final user GeoScienceWorld API access",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "scientific-geoscienceworld-access"
@@ -8367,7 +8367,7 @@
     "type": "tool",
     "description": "SerpAPI search engine scraper - structured results from Google, Bing, Yahoo, and more",
     "slogan": "serpapi",
-    "icon": "icons/code.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "serp-api"
@@ -8393,7 +8393,7 @@
     "type": "tool",
     "description": "Variable setter - store values for reuse across workflow nodes",
     "slogan": "set-variable",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "set-variable"
@@ -8419,7 +8419,7 @@
     "type": "tool",
     "description": "Shields.io badge generator - create status badges for projects and documentation",
     "slogan": "shields-io",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "shields-io"
@@ -8471,7 +8471,7 @@
     "type": "tool",
     "description": "Shutterstock stock media - search and license photos, videos, and music",
     "slogan": "shutterstock",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "shutterstock"
@@ -8536,7 +8536,7 @@
     "type": "tool",
     "description": "SoundCloud music platform - search tracks, playlists, and artist profiles",
     "slogan": "soundcloud",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "sound-cloud"
@@ -8549,7 +8549,7 @@
     "type": "tool",
     "description": "SpaceX launches API - past and upcoming rocket launch data and mission details",
     "slogan": "spacex-launches",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "space-x-launches"
@@ -8588,7 +8588,7 @@
     "type": "tool",
     "description": "Square payment platform - process payments, manage inventory, and track sales",
     "slogan": "square",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "square"
@@ -8627,7 +8627,7 @@
     "type": "tool",
     "description": "SSL Labs analyzer - deep analysis of SSL/TLS server configuration and security",
     "slogan": "ssl-labs",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "ssl-labs"
@@ -8653,7 +8653,7 @@
     "type": "tool",
     "description": "Stack Exchange Q&A - search questions and answers across Stack Overflow and more",
     "slogan": "stackexchange",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "stack-exchange"
@@ -8731,7 +8731,7 @@
     "type": "tool",
     "description": "Sunrise/Sunset times - get daily sunrise, sunset, and twilight times by location",
     "slogan": "sunrise-sunset",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "sunrise-sunset"
@@ -8861,7 +8861,7 @@
     "type": "tool",
     "description": "TheMealDB recipe database - search meals, recipes, and cooking instructions",
     "slogan": "themealdb",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "the-meal-db"
@@ -9082,7 +9082,7 @@
     "type": "tool",
     "description": "TVmaze show database - search TV shows, episodes, schedules, and cast info",
     "slogan": "tvmaze",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "tv-maze"
@@ -9121,7 +9121,7 @@
     "type": "tool",
     "description": "UniProtKB protein database - search protein sequences and functional annotations",
     "slogan": "uniprotkb",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "uni-prot-kb"
@@ -9173,7 +9173,7 @@
     "type": "tool",
     "description": "Urban Dictionary - look up slang definitions and modern word meanings",
     "slogan": "urban-dictionary",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "urban-dictionary"
@@ -9212,7 +9212,7 @@
     "type": "tool",
     "description": "User agent parser - extract browser, OS, and device info from user agent strings",
     "slogan": "user-agent-string",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "user-agent-string"
@@ -9225,7 +9225,7 @@
     "type": "tool",
     "description": "USGS earthquake data - real-time and historical seismic event information",
     "slogan": "usgs-earthquakes",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "usgs-earthquakes"
@@ -9238,7 +9238,7 @@
     "type": "tool",
     "description": "USGS real-time water data - streamflow, water levels, and gauging station readings",
     "slogan": "usgs-realtime",
-    "icon": "icons/utils.svg",
+    "icon": "icons/default-fill.svg",
     "integrations": {
       "automation": [
         "usgs-realtime"
@@ -9924,7 +9924,7 @@
     "id": "brevo",
     "name": "Brevo",
     "type": "tool",
-    "description": "Brevo (ex-Sendinblue) \u2014 manage contacts, send emails, and campaigns",
+    "description": "Brevo (ex-Sendinblue) — manage contacts, send emails, and campaigns",
     "slogan": "brevo",
     "icon": "icons/brevo.svg",
     "integrations": {
@@ -9992,7 +9992,7 @@
     "id": "drift",
     "name": "Drift",
     "type": "tool",
-    "description": "Drift \u2014 manage contacts, conversations, and accounts",
+    "description": "Drift — manage contacts, conversations, and accounts",
     "slogan": "drift",
     "icon": "icons/drift.svg",
     "integrations": {
@@ -10018,7 +10018,7 @@
     "id": "emelia",
     "name": "Emelia",
     "type": "tool",
-    "description": "Emelia cold email \u2014 manage campaigns, stats, and contacts via GraphQL",
+    "description": "Emelia cold email — manage campaigns, stats, and contacts via GraphQL",
     "slogan": "emelia",
     "icon": "icons/emelia.svg",
     "integrations": {
@@ -10161,7 +10161,7 @@
     "id": "mailjet",
     "name": "Mailjet",
     "type": "tool",
-    "description": "Mailjet transactional email \u2014 send emails, manage contacts, campaigns",
+    "description": "Mailjet transactional email — send emails, manage contacts, campaigns",
     "slogan": "mailjet",
     "icon": "icons/mailjet.svg",
     "integrations": {
@@ -10356,7 +10356,7 @@
     "id": "twake",
     "name": "Twake",
     "type": "tool",
-    "description": "Twake collaboration \u2014 manage workspaces, channels, and messages",
+    "description": "Twake collaboration — manage workspaces, channels, and messages",
     "slogan": "twake",
     "icon": "icons/twake.svg",
     "integrations": {
@@ -10369,7 +10369,7 @@
     "id": "twist",
     "name": "Twist",
     "type": "tool",
-    "description": "Twist team messaging \u2014 manage channels, threads, messages, and conversations",
+    "description": "Twist team messaging — manage channels, threads, messages, and conversations",
     "slogan": "twist",
     "icon": "icons/twist.svg",
     "integrations": {
@@ -10395,7 +10395,7 @@
     "id": "vonage",
     "name": "Vonage",
     "type": "tool",
-    "description": "Vonage (Nexmo) \u2014 send SMS, make calls, check balance, and verify phone numbers",
+    "description": "Vonage (Nexmo) — send SMS, make calls, check balance, and verify phone numbers",
     "slogan": "vonage",
     "icon": "icons/vonage.svg",
     "integrations": {
@@ -10408,7 +10408,7 @@
     "id": "x-twitter",
     "name": "X/Twitter",
     "type": "tool",
-    "description": "X/Twitter API v2 \u2014 post tweets, search, get user timelines, and user profiles",
+    "description": "X/Twitter API v2 — post tweets, search, get user timelines, and user profiles",
     "slogan": "x-twitter",
     "icon": "icons/x-twitter.svg",
     "integrations": {
@@ -10486,7 +10486,7 @@
     "id": "chargebee",
     "name": "Chargebee",
     "type": "tool",
-    "description": "Chargebee subscription billing \u2014 manage subscriptions, customers, invoices, and plans",
+    "description": "Chargebee subscription billing — manage subscriptions, customers, invoices, and plans",
     "slogan": "chargebee",
     "icon": "icons/chargebee.svg",
     "integrations": {
@@ -10551,7 +10551,7 @@
     "id": "crowddev",
     "name": "crowd.dev",
     "type": "tool",
-    "description": "crowd.dev \u2014 get members, activities, organizations, and conversations",
+    "description": "crowd.dev — get members, activities, organizations, and conversations",
     "slogan": "crowddev",
     "icon": "icons/crowddev.svg",
     "integrations": {
@@ -10629,7 +10629,7 @@
     "id": "freshservice",
     "name": "Freshservice",
     "type": "tool",
-    "description": "Freshservice ITSM \u2014 manage tickets, agents, and assets",
+    "description": "Freshservice ITSM — manage tickets, agents, and assets",
     "slogan": "freshservice",
     "icon": "icons/freshservice.svg",
     "integrations": {
@@ -10642,7 +10642,7 @@
     "id": "freshworks-crm",
     "name": "Freshworks CRM",
     "type": "tool",
-    "description": "Freshworks CRM \u2014 manage contacts, deals, and accounts",
+    "description": "Freshworks CRM — manage contacts, deals, and accounts",
     "slogan": "freshworks-crm",
     "icon": "icons/freshworks-crm.svg",
     "integrations": {
@@ -10759,7 +10759,7 @@
     "id": "monica-crm",
     "name": "Monica CRM",
     "type": "tool",
-    "description": "Monica personal CRM \u2014 manage contacts, activities, notes, and tasks",
+    "description": "Monica personal CRM — manage contacts, activities, notes, and tasks",
     "slogan": "monica-crm",
     "icon": "icons/monica-crm.svg",
     "integrations": {
@@ -10772,7 +10772,7 @@
     "id": "ms-dynamics-crm",
     "name": "Microsoft Dynamics CRM",
     "type": "tool",
-    "description": "Microsoft Dynamics 365 CRM \u2014 manage accounts, contacts, and opportunities",
+    "description": "Microsoft Dynamics 365 CRM — manage accounts, contacts, and opportunities",
     "slogan": "ms-dynamics-crm",
     "icon": "icons/ms-dynamics-crm.svg",
     "integrations": {
@@ -10967,7 +10967,7 @@
     "id": "taiga",
     "name": "Taiga",
     "type": "tool",
-    "description": "Taiga \u2014 manage projects, user stories, tasks, issues, and sprints",
+    "description": "Taiga — manage projects, user stories, tasks, issues, and sprints",
     "slogan": "taiga",
     "icon": "icons/taiga.svg",
     "integrations": {
@@ -11078,7 +11078,7 @@
     "id": "zammad",
     "name": "Zammad",
     "type": "tool",
-    "description": "Zammad helpdesk \u2014 manage tickets, users, and organizations",
+    "description": "Zammad helpdesk — manage tickets, users, and organizations",
     "slogan": "zammad",
     "icon": "icons/zammad.svg",
     "integrations": {
@@ -11416,7 +11416,7 @@
     "id": "misp",
     "name": "MISP",
     "type": "tool",
-    "description": "Interact with MISP threat intelligence \u2014 manage events and attributes",
+    "description": "Interact with MISP threat intelligence — manage events and attributes",
     "slogan": "misp",
     "icon": "icons/misp.svg",
     "integrations": {
@@ -11429,7 +11429,7 @@
     "id": "ms-entra-id",
     "name": "Microsoft Entra ID",
     "type": "tool",
-    "description": "Microsoft Entra ID (Azure AD) \u2014 manage users, groups, and applications via Graph",
+    "description": "Microsoft Entra ID (Azure AD) — manage users, groups, and applications via Graph",
     "slogan": "ms-entra-id",
     "icon": "icons/ms-entra-id.svg",
     "integrations": {
@@ -11515,7 +11515,7 @@
     "id": "thehive",
     "name": "TheHive",
     "type": "tool",
-    "description": "TheHive security incident response \u2014 manage cases, alerts, and observables",
+    "description": "TheHive security incident response — manage cases, alerts, and observables",
     "slogan": "thehive",
     "icon": "icons/thehive.svg",
     "integrations": {
@@ -11528,7 +11528,7 @@
     "id": "thehive5",
     "name": "TheHive 5",
     "type": "tool",
-    "description": "TheHive 5 \u2014 manage cases, alerts, observables, and tasks",
+    "description": "TheHive 5 — manage cases, alerts, observables, and tasks",
     "slogan": "thehive5",
     "icon": "icons/thehive5.svg",
     "integrations": {
@@ -11658,7 +11658,7 @@
     "id": "rundeck",
     "name": "Rundeck",
     "type": "tool",
-    "description": "Rundeck job scheduler \u2014 list and run jobs, manage executions and projects",
+    "description": "Rundeck job scheduler — list and run jobs, manage executions and projects",
     "slogan": "rundeck",
     "icon": "icons/rundeck.svg",
     "integrations": {
@@ -11893,7 +11893,7 @@
     "id": "airtop",
     "name": "Airtop",
     "type": "tool",
-    "description": "Airtop browser automation \u2014 create sessions, navigate, and extract web content",
+    "description": "Airtop browser automation — create sessions, navigate, and extract web content",
     "slogan": "airtop",
     "icon": "icons/airtop.svg",
     "integrations": {
@@ -12036,7 +12036,7 @@
     "id": "philips-hue",
     "name": "Philips Hue",
     "type": "tool",
-    "description": "Philips Hue smart lighting \u2014 control lights, groups, and scenes",
+    "description": "Philips Hue smart lighting — control lights, groups, and scenes",
     "slogan": "philips-hue",
     "icon": "icons/philips-hue.svg",
     "integrations": {
@@ -12049,7 +12049,7 @@
     "id": "spotify",
     "name": "Spotify",
     "type": "tool",
-    "description": "Spotify music \u2014 search tracks, get track/artist/album info, and user playlists",
+    "description": "Spotify music — search tracks, get track/artist/album info, and user playlists",
     "slogan": "spotify",
     "icon": "icons/spotify.svg",
     "integrations": {
@@ -12101,7 +12101,7 @@
     "id": "grist",
     "name": "Grist",
     "type": "tool",
-    "description": "Grist spreadsheet database \u2014 list documents, get, add, and update records",
+    "description": "Grist spreadsheet database — list documents, get, add, and update records",
     "slogan": "grist",
     "icon": "icons/grist.svg",
     "integrations": {
@@ -12114,7 +12114,7 @@
     "id": "kobotoolbox",
     "name": "KoboToolbox",
     "type": "tool",
-    "description": "KoboToolbox data collection \u2014 manage forms, submissions, and export data",
+    "description": "KoboToolbox data collection — manage forms, submissions, and export data",
     "slogan": "kobotoolbox",
     "icon": "icons/kobotoolbox.svg",
     "integrations": {
@@ -12364,7 +12364,7 @@
     "id": "one-simple-api",
     "name": "One Simple API",
     "type": "tool",
-    "description": "Web utility \u2014 social info, PDF generation, screenshots, and exchange rates",
+    "description": "Web utility — social info, PDF generation, screenshots, and exchange rates",
     "slogan": "one-simple-api",
     "icon": "icons/one-simple-api.svg",
     "integrations": {

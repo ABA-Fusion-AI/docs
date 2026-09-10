@@ -1,16 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <rect width="48" height="48" rx="10" fill="#0F172A" />
   <defs>
-    <linearGradient id="gem-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0F172A"/>
-      <stop offset="100%" stop-color="#1E293B"/>
-    </linearGradient>
-    <linearGradient id="gem-star" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#4285F4"/>
-      <stop offset="30%" stop-color="#9B51E0"/>
-      <stop offset="70%" stop-color="#E91E63"/>
-      <stop offset="100%" stop-color="#FBBC05"/>
+    <linearGradient id="gemini-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4285F4" />
+      <stop offset="50%" stop-color="#9333EA" />
+      <stop offset="100%" stop-color="#06B6D4" />
     </linearGradient>
   </defs>
-  <rect width="128" height="128" rx="28" fill="url(#gem-bg)"/>
-  <path d="M 64 24 C 64 46.09 46.09 64 24 64 C 46.09 64 64 81.91 64 104 C 64 81.91 81.91 64 104 64 C 81.91 64 64 46.09 64 24 Z" fill="url(#gem-star)"/>
+  <path d="M24 8c0 8.8-7.2 16-16 16 8.8 0 16 7.2 16 16 0-8.8 7.2-16 16-16-8.8 0-16-7.2-16-16z" fill="url(#gemini-grad)" />
 </svg>
