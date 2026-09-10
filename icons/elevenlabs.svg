@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 416" width="100%" height="100%" preserveAspectRatio="xMidYMid meet"><title>elevenlabs</title><path d="M170.667 0H256v415.289h-85.333zM0 0h85.333v415.289H0z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-1439" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E11D48"/>
+      <stop offset="100%" stop-color="#9F1239"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#bg-1439)"/>
+  <g transform="translate(16,16) scale(0.75)">
+    <rect x="0.0" y="0.0" width="180.0" height="292.0" rx="27.0" fill="#059669" />
+  
+    <path d="M120 0H180V292H120V0Z" fill="#FFFFFF"/>
+    <path d="M0 0H60V292H0V0Z" fill="#FFFFFF"/>
+  </g>
+</svg>

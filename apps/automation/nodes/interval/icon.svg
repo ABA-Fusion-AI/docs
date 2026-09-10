@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" color="#64748B"><title>interval</title><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M11.795 21H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"/><path d="M14 18a4 4 0 1 0 8 0a4 4 0 1 0-8 0m1-15v4M7 3v4m-4 4h16"/><path d="M18 16.496V18l1 1"/></g></svg>
+<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo
+Mixer Tools -->
+<svg fill="currentColor" width="800px" height="800px" viewBox="0 0 24 24" id="timer-3-second"
+    data-name="Line Color" xmlns="http://www.w3.org/2000/svg" class="icon line-color">
+    <path id="secondary" d="M17.3,8.2l1.5-1.5M6.7,8.2,5.2,6.7M12,6V3M9,3h6"
+    stroke="currentColor" style="fill: none;  stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path>
+    <polyline id="secondary-2" data-name="secondary" points="12 10 12 14 14 14"
+    stroke="currentColor" style="fill: none;  stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></polyline>
+    <circle id="primary" cx="12" cy="13.5" r="7.5"
+    stroke="currentColor" style="fill: none;  stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></circle>
+</svg>

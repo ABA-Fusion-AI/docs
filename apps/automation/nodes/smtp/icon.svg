@@ -1,1 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" color="#64748B"><title>smtp</title><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="m3 7l9 6l9-6"/></g></svg>
+<svg  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 512 512" xml:space="preserve">
+  <rect x="0.0" y="0.0" width="512.0" height="512.0" rx="76.8" fill="#D97706" />
+  
+<g>
+	<g>
+		<path d="M487.016,152.896H248.704c-13.776,0-24.984,11.44-24.984,25.488v155.232c0,14.056,11.208,25.488,24.984,25.488h238.312
+			c13.776,0,24.984-11.44,24.984-25.488V178.384C512,164.336,500.792,152.896,487.016,152.896z M464.152,184.896l-96.296,75.664
+			l-96.296-75.664H464.152z M480,327.112H255.72V213.144l112.136,88.12L480,213.144V327.112z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<rect y="170.136" width="175.672" height="32"/>
+	</g>
+</g>
+<g>
+	<g>
+		<rect x="47.544" y="236.768" width="128.16" height="32"/>
+	</g>
+</g>
+<g>
+	<g>
+		<rect x="95.592" y="312.144" width="80.08" height="32"/>
+	</g>
+</g>
+
+</svg>

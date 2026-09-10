@@ -1,1 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" color="#64748B"><title>chat-respond</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3 20l1.3-3.9C1.976 12.663 2.874 8.228 6.4 5.726c3.526-2.501 8.59-2.296 11.845.48c3.255 2.777 3.695 7.266 1.029 10.501S11.659 20.922 7.7 19z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M12 3.5c5.05 0 9 3.46 9 7.75 0 1.85-.73 3.55-1.95 4.9l1.15 4.05-4.78-1.22A11.4 11.4 0 0 1 12 19.5c-5.05 0-9-3.46-9-7.75S6.95 3.5 12 3.5Z"/>
+  <path d="M15.5 11.75h-7"/>
+  <path d="m11.7 8.55-3.2 3.2 3.2 3.2"/>
+</svg>

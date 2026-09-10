@@ -1,1 +1,14 @@
-<svg fill="#EB5424" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="xMidYMid meet"><title>Auth0.dark</title><path d="M21.98 7.448L19.62 0H4.347L2.02 7.448c-1.352 4.312.03 9.206 3.815 12.015L12.007 24l6.157-4.552c3.755-2.81 5.182-7.688 3.815-12.015l-6.16 4.58 2.343 7.45-6.157-4.597-6.158 4.58 2.358-7.433-6.188-4.55 7.63-.045L12.008 0l2.356 7.404 7.615.044z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-1296" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#bg-1296)"/>
+  <g transform="translate(16,16) scale(0.75)">
+    <rect x="0.0" y="0.0" width="40.0" height="40.0" rx="6.0" fill="#6366F1" />
+  
+<path d="M32.9826 0H19.9921L24.007 12.5112H36.9975L26.4874 19.9721L30.5034 32.5542C37.2686 27.6261 39.479 20.1675 36.9987 12.5112L32.9826 0ZM2.98669 12.5112H15.9772L19.9921 0H7.00274L2.98669 12.5112C0.505157 20.1675 2.71678 27.6261 9.48195 32.5542L13.4968 19.9721L2.98669 12.5112ZM9.48195 32.5542L19.9921 40L30.5022 32.5542L19.9921 24.9852L9.48195 32.5542Z" fill="white"/>
+  </g>
+</svg>
