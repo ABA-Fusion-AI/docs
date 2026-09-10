@@ -1,0 +1,129 @@
+[
+  {
+    "name": "USDA Search Foods Example",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "fp7g4e9u4r9ehu41mjooxzzv",
+        "position": {
+          "x": 512,
+          "y": 205
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "hlsl9ijyw9mjq4nr3wtmeod3",
+        "position": {
+          "x": 928.5,
+          "y": 205
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "odnpx3sgtkylxmazrngek6ly",
+        "position": {
+          "x": 680.25,
+          "y": 248.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "usda-search-foods",
+          "label": "USDA Search Foods",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search for foods in FoodData Central database with filters",
+          "showRunningStatus": true,
+          "parameters": {
+            "sortBy": "dataType.keyword",
+            "sortOrder": "asc",
+            "query": "apple",
+            "pageSize": 200,
+            "dataType": [
+              "Branded",
+              "Foundation"
+            ]
+          }
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "fp7g4e9u4r9ehu41mjooxzzv",
+        "sourceHandle": "success",
+        "target": "odnpx3sgtkylxmazrngek6ly",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__fp7g4e9u4r9ehu41mjooxzzvsuccess-odnpx3sgtkylxmazrngek6lyinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "odnpx3sgtkylxmazrngek6ly",
+        "sourceHandle": "success",
+        "target": "hlsl9ijyw9mjq4nr3wtmeod3",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__odnpx3sgtkylxmazrngek6lysuccess-hlsl9ijyw9mjq4nr3wtmeod3input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "tracingEnabled": true,
+    "version": 1
+  }
+]
