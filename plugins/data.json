@@ -221,7 +221,7 @@
     "type": "tool",
     "description": "Azure Service Bus - reliable cloud messaging with queues and publish-subscribe topics",
     "slogan": "azure-service-bus",
-    "icon": "icons/azure-service-bus.svg",
+    "icon": "icons/servicebus.svg",
     "integrations": {
       "automation": [
         "service-bus-topic",
@@ -238,7 +238,7 @@
     "type": "tool",
     "description": "Azure SQL Database - query, bulk insert, backup/restore, and schema management",
     "slogan": "azure-sql",
-    "icon": "icons/azure-sql.svg",
+    "icon": "icons/azuresql.svg",
     "integrations": {
       "automation": [
         "azure-sql-query",
@@ -256,7 +256,7 @@
     "type": "tool",
     "description": "Azure Cosmos DB - globally distributed multi-model database with SQL API",
     "slogan": "cosmos-db",
-    "icon": "icons/azure-cosmos-db.svg",
+    "icon": "icons/AzureCosmosDb.svg",
     "integrations": {
       "automation": [
         "cosmos-query",
@@ -273,7 +273,7 @@
     "type": "tool",
     "description": "Azure IoT Hub - device management, telemetry ingestion, and cloud-to-device messaging",
     "slogan": "azure-iot-hub",
-    "icon": "icons/azure-iot-hub.svg",
+    "icon": "icons/iot.svg",
     "integrations": {
       "automation": [
         "io-t-hub-device-manager",
@@ -290,7 +290,7 @@
     "type": "tool",
     "description": "Azure SignalR Service - real-time web communication with WebSocket support",
     "slogan": "azure-signalr",
-    "icon": "icons/azure-signalr.svg",
+    "icon": "icons/signalr.svg",
     "integrations": {
       "automation": [
         "signal-r-action",
@@ -304,7 +304,7 @@
     "type": "tool",
     "description": "Azure Communication Services - SMS, email, chat, and voice calling capabilities",
     "slogan": "azure-communication-services",
-    "icon": "icons/azure-communication-services.svg",
+    "icon": "icons/Azure.svg",
     "integrations": {
       "automation": [
         "azure-communication-auth",
@@ -335,7 +335,7 @@
     "type": "tool",
     "description": "Azure Blockchain Service - deploy and manage blockchain networks and smart contracts",
     "slogan": "azure-blockchain",
-    "icon": "icons/azure-blockchain.svg",
+    "icon": "icons/Azure.svg",
     "integrations": {
       "automation": [
         "azure-blockchain"
@@ -348,7 +348,7 @@
     "type": "tool",
     "description": "Azure Communication - SMS, email, chat messaging, and video calling features",
     "slogan": "azure-communication",
-    "icon": "icons/azure-communication-services.svg",
+    "icon": "icons/Azure.svg",
     "integrations": {
       "automation": [
         "azure-communication-auth",
@@ -379,7 +379,7 @@
     "type": "tool",
     "description": "Azure DevOps - CI/CD pipelines, work items, repos, and project management",
     "slogan": "azure-devops",
-    "icon": "icons/azure-devops.svg",
+    "icon": "icons/Azure.svg",
     "integrations": {
       "automation": [
         "azure-dev-ops"
@@ -392,7 +392,7 @@
     "type": "tool",
     "description": "Azure IoT Hub - manage devices, send commands, and receive IoT telemetry data",
     "slogan": "azure-iothub",
-    "icon": "icons/azure-iot-hub.svg",
+    "icon": "icons/iot.svg",
     "integrations": {
       "automation": [
         "azure-io-t-hub"
@@ -405,7 +405,7 @@
     "type": "tool",
     "description": "Azure Database for MariaDB - managed MariaDB with high availability and scaling",
     "slogan": "azure-mariadb",
-    "icon": "icons/azure-mariadb.svg",
+    "icon": "icons/Azure.svg",
     "integrations": {
       "automation": [
         "azure-maria-db"
@@ -418,7 +418,7 @@
     "type": "tool",
     "description": "Azure SQL administration - manage server settings, logins, and permissions",
     "slogan": "azure-sql-admin",
-    "icon": "icons/azure-sql.svg",
+    "icon": "icons/azuresql.svg",
     "integrations": {
       "automation": [
         "azure-sql-database-admin"
@@ -431,7 +431,7 @@
     "type": "tool",
     "description": "Azure SQL backup and restore - create backups and restore databases",
     "slogan": "azure-sql-backup-restore",
-    "icon": "icons/azure-sql.svg",
+    "icon": "icons/azuresql.svg",
     "integrations": {
       "automation": [
         "azure-sql-backup-restore"
@@ -444,7 +444,7 @@
     "type": "tool",
     "description": "Azure SQL bulk insert - import large datasets efficiently into SQL tables",
     "slogan": "azure-sql-bulk-insert",
-    "icon": "icons/azure-sql.svg",
+    "icon": "icons/azuresql.svg",
     "integrations": {
       "automation": [
         "azure-sql-bulk-insert"
@@ -457,7 +457,7 @@
     "type": "tool",
     "description": "Azure SQL database admin - manage databases, firewall rules, and configurations",
     "slogan": "azure-sql-database-admin",
-    "icon": "icons/azure-sql.svg",
+    "icon": "icons/azuresql.svg",
     "integrations": {
       "automation": [
         "azure-sql-database-admin"
@@ -470,7 +470,7 @@
     "type": "tool",
     "description": "Azure SQL query executor - run SQL queries and stored procedures",
     "slogan": "azure-sql-query",
-    "icon": "icons/azure-sql.svg",
+    "icon": "icons/azuresql.svg",
     "integrations": {
       "automation": [
         "azure-sql-query"
@@ -483,7 +483,7 @@
     "type": "tool",
     "description": "Azure SQL schema manager - create, alter, and drop tables and indexes",
     "slogan": "azure-sql-schema-manage",
-    "icon": "icons/azure-sql.svg",
+    "icon": "icons/azuresql.svg",
     "integrations": {
       "automation": [
         "azure-sql-schema-manage"
@@ -496,7 +496,7 @@
     "type": "tool",
     "description": "Azure SQL stored procedures - execute and manage stored procedures",
     "slogan": "azure-sql-stored-procedure",
-    "icon": "icons/azure-sql.svg",
+    "icon": "icons/azuresql.svg",
     "integrations": {
       "automation": [
         "azure-sql-stored-procedure"
@@ -522,7 +522,7 @@
     "type": "tool",
     "description": "AWS DynamoDB - serverless NoSQL database operations and polling trigger.",
     "slogan": "aws-dynamo-db",
-    "icon": "icons/aws-dynamodb.svg",
+    "icon": "icons/dynamodb.svg",
     "integrations": {
       "automation": [
         "aws-dynamo-db",
@@ -605,7 +605,7 @@
     "type": "tool",
     "description": "Azure Event Hub - high-throughput event streaming and real-time data ingestion",
     "slogan": "azure-event-hub",
-    "icon": "icons/azure-event-hubs.svg",
+    "icon": "icons/eventhub.svg",
     "integrations": {
       "automation": [
         "event-hub-admin",
@@ -660,7 +660,7 @@
     "type": "tool",
     "description": "Microsoft Teams - chat messaging, channel management, and planner integration",
     "slogan": "microsoft-teams",
-    "icon": "icons/microsoft-teams.svg",
+    "icon": "icons/teams.svg",
     "integrations": {
       "automation": [
         "teams-chat",
@@ -800,7 +800,7 @@
     "type": "tool",
     "description": "Google Analytics - website traffic analysis, user behavior, and conversion tracking",
     "slogan": "google-analytics",
-    "icon": "icons/google-analytics.svg",
+    "icon": "icons/analytics.svg",
     "integrations": {
       "automation": [
         "google-analytics"
@@ -1512,7 +1512,7 @@
     "type": "tool",
     "description": "Anthropic chat node supporting Claude 3.5, Claude 3 Opus, and other Anthropic model.",
     "slogan": "ai-chat-anthropic",
-    "icon": "icons/anthropic.svg",
+    "icon": "icons/claude.svg",
     "integrations": {
       "automation": [
         "ai-chat-anthropic"
@@ -1525,7 +1525,7 @@
     "type": "tool",
     "description": "Cohere chat node supporting Command R Plus, Command R, and other Cohere model.",
     "slogan": "ai-chat-cohere",
-    "icon": "icons/cohere.svg",
+    "icon": "icons/aichat.svg",
     "integrations": {
       "automation": [
         "ai-chat-cohere"
@@ -1538,7 +1538,7 @@
     "type": "tool",
     "description": "Deepseek chat node supporting Deepseek Chat, Deepseek Coder, and other Deepseek model.",
     "slogan": "ai-chat-deepseek",
-    "icon": "icons/deepseek.svg",
+    "icon": "icons/aichat.svg",
     "integrations": {
       "automation": [
         "ai-chat-deepseek"
@@ -1564,7 +1564,7 @@
     "type": "tool",
     "description": "Google chat node supporting Gemini Pro, Gemini 1.5 Flash, and other Google model.",
     "slogan": "ai-chat-google",
-    "icon": "icons/google.svg",
+    "icon": "icons/gemini.svg",
     "integrations": {
       "automation": [
         "ai-chat-google"
@@ -1577,7 +1577,7 @@
     "type": "tool",
     "description": "Groq chat node supporting Llama 3.1, Llama 3.3, and other Groq model with fast inference.",
     "slogan": "ai-chat-groq",
-    "icon": "icons/groq.svg",
+    "icon": "icons/aichat.svg",
     "integrations": {
       "automation": [
         "ai-chat-groq"
@@ -1590,7 +1590,7 @@
     "type": "tool",
     "description": "HuggingFace chat node supporting various open-source model from HuggingFace Hub.",
     "slogan": "ai-chat-huggingface",
-    "icon": "icons/hugging-face.svg",
+    "icon": "icons/huggingface.svg",
     "integrations": {
       "automation": [
         "ai-chat-huggingface"
@@ -1616,7 +1616,7 @@
     "type": "tool",
     "description": "LMStudio chat node supporting local model running in LMStudio with OpenAI-compatible API.",
     "slogan": "ai-chat-lmstudio",
-    "icon": "icons/lmstudio.svg",
+    "icon": "icons/aichat.svg",
     "integrations": {
       "automation": [
         "ai-chat-lmstudio"
@@ -1629,7 +1629,7 @@
     "type": "tool",
     "description": "Mistral chat node supporting Mistral Small, Mistral Large, Codestral, and other Mistral model.",
     "slogan": "ai-chat-mistral",
-    "icon": "icons/mistral-ai.svg",
+    "icon": "icons/mistralAi.svg",
     "integrations": {
       "automation": [
         "ai-chat-mistral"
@@ -1668,7 +1668,7 @@
     "type": "tool",
     "description": "OpenAI chat node supporting GPT-4, GPT-3.5, and other OpenAI model with OpenAI-specific parameters.",
     "slogan": "ai-chat-openai",
-    "icon": "icons/openai.svg",
+    "icon": "icons/openAi.svg",
     "integrations": {
       "automation": [
         "ai-chat-openai"
@@ -1681,7 +1681,7 @@
     "type": "tool",
     "description": "OpenRouter chat node supporting multiple AI model from various providers through a unified API.",
     "slogan": "ai-chat-openrouter",
-    "icon": "icons/openrouter.svg",
+    "icon": "icons/aichat.svg",
     "integrations": {
       "automation": [
         "ai-chat-openrouter"
@@ -1694,7 +1694,7 @@
     "type": "tool",
     "description": "Perplexity chat node supporting Sonar model with real-time web search capabilities.",
     "slogan": "ai-chat-perplexity",
-    "icon": "icons/perplexity-ai.svg",
+    "icon": "icons/perplexity.svg",
     "integrations": {
       "automation": [
         "ai-chat-perplexity"
@@ -1707,7 +1707,7 @@
     "type": "tool",
     "description": "Together AI chat node supporting various open-source model like Llama, Mistral, and more.",
     "slogan": "ai-chat-together",
-    "icon": "icons/together-ai.svg",
+    "icon": "icons/aichat.svg",
     "integrations": {
       "automation": [
         "ai-chat-together"
@@ -1720,7 +1720,7 @@
     "type": "tool",
     "description": "XAI chat node supporting Grok model with real-time capabilities.",
     "slogan": "ai-chat-xai",
-    "icon": "icons/xai-grok.svg",
+    "icon": "icons/x.svg",
     "integrations": {
       "automation": [
         "ai-chat-xai"
@@ -2821,7 +2821,7 @@
     "type": "tool",
     "description": "Azure Cosmos DB Cassandra API for distributed NoSQL database operations",
     "slogan": "Cosmos DB Cassandra",
-    "icon": "icons/azure-cosmos-db.svg",
+    "icon": "icons/cosmosdb.svg",
     "integrations": {
       "automation": [
         "cosmos-cassandra-manage",
@@ -2835,7 +2835,7 @@
     "type": "tool",
     "description": "Azure Cosmos DB Gremlin API for graph database queries and management",
     "slogan": "Cosmos DB Graph",
-    "icon": "icons/azure-cosmos-db.svg",
+    "icon": "icons/cosmosdb.svg",
     "integrations": {
       "automation": [
         "cosmos-gremlin-manage",
@@ -2849,7 +2849,7 @@
     "type": "tool",
     "description": "Azure Cosmos DB with MongoDB API for document database operations",
     "slogan": "Cosmos DB Mongo",
-    "icon": "icons/azure-cosmos-db.svg",
+    "icon": "icons/cosmosdb.svg",
     "integrations": {
       "automation": [
         "cosmos-mongo-manage"
@@ -2862,7 +2862,7 @@
     "type": "tool",
     "description": "Azure Cosmos DB with MongoDB API for advanced database management",
     "slogan": "Cosmos DB MongoDB",
-    "icon": "icons/azure-cosmos-db.svg",
+    "icon": "icons/cosmosdb.svg",
     "integrations": {
       "automation": [
         "cosmos-mongo-manage",
@@ -2876,7 +2876,7 @@
     "type": "tool",
     "description": "Azure Cosmos DB Table API for key-value storage operations",
     "slogan": "Cosmos DB Table",
-    "icon": "icons/azure-cosmos-db.svg",
+    "icon": "icons/cosmosdb.svg",
     "integrations": {
       "automation": [
         "cosmos-table-manage",
@@ -3024,7 +3024,7 @@
     "type": "tool",
     "description": "Microsoft Excel integration - read, write spreadsheets and handle webhook events",
     "slogan": "Microsoft Excel",
-    "icon": "icons/microsoft-excel.svg",
+    "icon": "icons/excel.svg",
     "integrations": {
       "automation": [
         "microsoft-excel-webhook",
@@ -3224,7 +3224,7 @@
     "type": "tool",
     "description": "Azure Service Bus advanced messaging - queues, topics, subscriptions, and message routing",
     "slogan": "Service Bus Messaging",
-    "icon": "icons/azure-service-bus.svg",
+    "icon": "icons/servicebus.svg",
     "integrations": {
       "automation": [
         "service-bus-queue",
@@ -3785,7 +3785,7 @@
     "type": "tool",
     "description": "Azure Cosmos DB core operations including queries, upserts, and change feeds",
     "slogan": "Azure Cosmos DB",
-    "icon": "icons/azure-cosmos-db.svg",
+    "icon": "icons/cosmosdb.svg",
     "integrations": {
       "automation": [
         "cosmos-query",
@@ -3802,7 +3802,7 @@
     "type": "tool",
     "description": "Azure Cosmos DB delete operations - remove documents and containers",
     "slogan": "cosmos-delete",
-    "icon": "icons/azure-cosmos-db.svg",
+    "icon": "icons/cosmosdb.svg",
     "integrations": {
       "automation": [
         "cosmos-delete"
@@ -4247,7 +4247,7 @@
     "type": "tool",
     "description": "Docker container management - create, start, stop, and manage Docker containers",
     "slogan": "docker",
-    "icon": "icons/docker.svg",
+    "icon": "icons/code.svg",
     "integrations": {
       "automation": [
         "docker"
@@ -4260,7 +4260,7 @@
     "type": "tool",
     "description": "Docker Hub - search repositories, get image tags, and manage container images",
     "slogan": "docker-hub",
-    "icon": "icons/docker.svg",
+    "icon": "icons/code.svg",
     "integrations": {
       "automation": [
         "docker-hub"
@@ -5014,7 +5014,7 @@
     "type": "tool",
     "description": "Have I Been Pwned - check if email addresses appear in data breaches",
     "slogan": "haveibeenpwned",
-    "icon": "icons/haveibeenpwned.svg",
+    "icon": "icons/utils.svg",
     "integrations": {
       "automation": [
         "have-i-been-pwned"
@@ -5353,7 +5353,7 @@
     "type": "tool",
     "description": "InfluxDB time-series database - write and query time-series metrics and events",
     "slogan": "influxdb",
-    "icon": "icons/influxdb.svg",
+    "icon": "icons/data.svg",
     "integrations": {
       "automation": [
         "influxdb"
@@ -5598,7 +5598,7 @@
     "type": "tool",
     "description": "Keycloak identity management - user authentication, SSO, and access management",
     "slogan": "keycloak",
-    "icon": "icons/keycloak.svg",
+    "icon": "icons/utils.svg",
     "integrations": {
       "automation": [
         "keycloak"
@@ -5637,7 +5637,7 @@
     "type": "tool",
     "description": "LanguageTool grammar checker - check spelling, grammar, and writing style",
     "slogan": "languagetool",
-    "icon": "icons/languagetool.svg",
+    "icon": "icons/utils.svg",
     "integrations": {
       "automation": [
         "language-tool"
@@ -5726,7 +5726,7 @@
     "id": "liberation",
     "name": "Liberation",
     "type": "tool",
-    "description": "Libération news - French national daily newspaper RSS feed",
+    "description": "Lib\u00e9ration news - French national daily newspaper RSS feed",
     "slogan": "liberation",
     "icon": "icons/news.svg",
     "integrations": {
@@ -5741,7 +5741,7 @@
     "type": "tool",
     "description": "LibreTranslate - free and open-source machine translation between languages",
     "slogan": "libretranslate",
-    "icon": "icons/libretranslate.svg",
+    "icon": "icons/utils.svg",
     "integrations": {
       "automation": [
         "libre-translate"
@@ -5976,7 +5976,7 @@
     "id": "marches-publics",
     "name": "Marches Publics",
     "type": "tool",
-    "description": "Marchés Publics - Moroccan government public procurement and tender data",
+    "description": "March\u00e9s Publics - Moroccan government public procurement and tender data",
     "slogan": "marches-publics",
     "icon": "icons/marches-publics.svg",
     "integrations": {
@@ -6082,7 +6082,7 @@
     "type": "tool",
     "description": "Medium publishing platform - read and interact with Medium articles and publications",
     "slogan": "medium",
-    "icon": "icons/medium.svg",
+    "icon": "icons/medical.svg",
     "integrations": {
       "automation": [
         "medium"
@@ -6108,7 +6108,7 @@
     "type": "tool",
     "description": "Mendeley academic reference manager - search and manage research papers",
     "slogan": "mendeley",
-    "icon": "icons/mendeley.svg",
+    "icon": "icons/utils.svg",
     "integrations": {
       "automation": [
         "mendeley"
@@ -6134,7 +6134,7 @@
     "type": "tool",
     "description": "Microsoft 365 Excel - read and write Excel files in OneDrive and SharePoint",
     "slogan": "microsoft-365-excel",
-    "icon": "icons/microsoft-excel.svg",
+    "icon": "icons/excel.svg",
     "integrations": {
       "automation": [
         "excel-add-rows",
@@ -6349,7 +6349,7 @@
     "type": "tool",
     "description": "NASA open APIs - access space data, Mars rover photos, and asteroid tracking",
     "slogan": "nasa",
-    "icon": "icons/nasa.svg",
+    "icon": "icons/utils.svg",
     "integrations": {
       "automation": [
         "nasa"
@@ -6362,7 +6362,7 @@
     "type": "tool",
     "description": "NASA Astronomy Picture of the Day - daily space images with explanations",
     "slogan": "nasa-apod",
-    "icon": "icons/nasa.svg",
+    "icon": "icons/utils.svg",
     "integrations": {
       "automation": [
         "nasa-apod"
@@ -6375,7 +6375,7 @@
     "type": "tool",
     "description": "NASA media library - search photos, videos, and audio from NASA missions",
     "slogan": "nasa-media-search",
-    "icon": "icons/nasa.svg",
+    "icon": "icons/medical.svg",
     "integrations": {
       "automation": [
         "nasa-media-search"
@@ -6879,7 +6879,7 @@
     "type": "tool",
     "description": "OSF research platform - access Open Science Framework projects and preprints",
     "slogan": "osf-nodes",
-    "icon": "icons/osf.svg",
+    "icon": "icons/utils.svg",
     "integrations": {
       "automation": [
         "osf-nodes"
@@ -7163,7 +7163,7 @@
     "id": "pokeapi",
     "name": "Pokeapi",
     "type": "tool",
-    "description": "PokéAPI - access Pokémon data including species, abilities, and moves",
+    "description": "Pok\u00e9API - access Pok\u00e9mon data including species, abilities, and moves",
     "slogan": "pokeapi",
     "icon": "icons/code.svg",
     "integrations": {
@@ -7596,7 +7596,7 @@
     "type": "tool",
     "description": "Replicate ML platform - run open-source machine learning models via API",
     "slogan": "replicate",
-    "icon": "icons/replicate.svg",
+    "icon": "icons/utils.svg",
     "integrations": {
       "automation": [
         "replicate"
@@ -7866,7 +7866,7 @@
     "type": "tool",
     "description": "Semantic Scholar - AI-powered academic paper search with citation analysis",
     "slogan": "semantic-scholar",
-    "icon": "icons/semantic-scholar.svg",
+    "icon": "icons/utils.svg",
     "integrations": {
       "automation": [
         "semantic-scholar"
@@ -8081,7 +8081,7 @@
     "type": "tool",
     "description": "Semantic Scholar research search - find papers with abstracts, authors, year, DOI, venue, citations, fields of study, and open-access links",
     "slogan": "scientific-semantic-scholar",
-    "icon": "icons/semantic-scholar.svg",
+    "icon": "icons/utils.svg",
     "integrations": {
       "automation": [
         "scientific-semantic-scholar"
@@ -8341,7 +8341,7 @@
     "type": "tool",
     "description": "SendGrid email delivery - send transactional and marketing emails at scale",
     "slogan": "sendgrid",
-    "icon": "icons/sendgrid.svg",
+    "icon": "icons/email-send.svg",
     "integrations": {
       "automation": [
         "sendgrid"
@@ -8536,7 +8536,7 @@
     "type": "tool",
     "description": "SoundCloud music platform - search tracks, playlists, and artist profiles",
     "slogan": "soundcloud",
-    "icon": "icons/soundcloud.svg",
+    "icon": "icons/utils.svg",
     "integrations": {
       "automation": [
         "sound-cloud"
@@ -8588,7 +8588,7 @@
     "type": "tool",
     "description": "Square payment platform - process payments, manage inventory, and track sales",
     "slogan": "square",
-    "icon": "icons/square.svg",
+    "icon": "icons/utils.svg",
     "integrations": {
       "automation": [
         "square"
@@ -8653,7 +8653,7 @@
     "type": "tool",
     "description": "Stack Exchange Q&A - search questions and answers across Stack Overflow and more",
     "slogan": "stackexchange",
-    "icon": "icons/stackexchange.svg",
+    "icon": "icons/utils.svg",
     "integrations": {
       "automation": [
         "stack-exchange"
@@ -9913,7 +9913,7 @@
     "type": "tool",
     "description": "Amazon SES email service - send transactional emails via AWS Simple Email Service.",
     "slogan": "aws-ses",
-    "icon": "icons/aws-ses.svg",
+    "icon": "icons/ses.svg",
     "integrations": {
       "automation": [
         "aws-ses"
@@ -9924,7 +9924,7 @@
     "id": "brevo",
     "name": "Brevo",
     "type": "tool",
-    "description": "Brevo (ex-Sendinblue) — manage contacts, send emails, and campaigns",
+    "description": "Brevo (ex-Sendinblue) \u2014 manage contacts, send emails, and campaigns",
     "slogan": "brevo",
     "icon": "icons/brevo.svg",
     "integrations": {
@@ -9992,7 +9992,7 @@
     "id": "drift",
     "name": "Drift",
     "type": "tool",
-    "description": "Drift — manage contacts, conversations, and accounts",
+    "description": "Drift \u2014 manage contacts, conversations, and accounts",
     "slogan": "drift",
     "icon": "icons/drift.svg",
     "integrations": {
@@ -10018,7 +10018,7 @@
     "id": "emelia",
     "name": "Emelia",
     "type": "tool",
-    "description": "Emelia cold email — manage campaigns, stats, and contacts via GraphQL",
+    "description": "Emelia cold email \u2014 manage campaigns, stats, and contacts via GraphQL",
     "slogan": "emelia",
     "icon": "icons/emelia.svg",
     "integrations": {
@@ -10161,7 +10161,7 @@
     "id": "mailjet",
     "name": "Mailjet",
     "type": "tool",
-    "description": "Mailjet transactional email — send emails, manage contacts, campaigns",
+    "description": "Mailjet transactional email \u2014 send emails, manage contacts, campaigns",
     "slogan": "mailjet",
     "icon": "icons/mailjet.svg",
     "integrations": {
@@ -10356,7 +10356,7 @@
     "id": "twake",
     "name": "Twake",
     "type": "tool",
-    "description": "Twake collaboration — manage workspaces, channels, and messages",
+    "description": "Twake collaboration \u2014 manage workspaces, channels, and messages",
     "slogan": "twake",
     "icon": "icons/twake.svg",
     "integrations": {
@@ -10369,7 +10369,7 @@
     "id": "twist",
     "name": "Twist",
     "type": "tool",
-    "description": "Twist team messaging — manage channels, threads, messages, and conversations",
+    "description": "Twist team messaging \u2014 manage channels, threads, messages, and conversations",
     "slogan": "twist",
     "icon": "icons/twist.svg",
     "integrations": {
@@ -10395,7 +10395,7 @@
     "id": "vonage",
     "name": "Vonage",
     "type": "tool",
-    "description": "Vonage (Nexmo) — send SMS, make calls, check balance, and verify phone numbers",
+    "description": "Vonage (Nexmo) \u2014 send SMS, make calls, check balance, and verify phone numbers",
     "slogan": "vonage",
     "icon": "icons/vonage.svg",
     "integrations": {
@@ -10408,7 +10408,7 @@
     "id": "x-twitter",
     "name": "X/Twitter",
     "type": "tool",
-    "description": "X/Twitter API v2 — post tweets, search, get user timelines, and user profiles",
+    "description": "X/Twitter API v2 \u2014 post tweets, search, get user timelines, and user profiles",
     "slogan": "x-twitter",
     "icon": "icons/x-twitter.svg",
     "integrations": {
@@ -10486,7 +10486,7 @@
     "id": "chargebee",
     "name": "Chargebee",
     "type": "tool",
-    "description": "Chargebee subscription billing — manage subscriptions, customers, invoices, and plans",
+    "description": "Chargebee subscription billing \u2014 manage subscriptions, customers, invoices, and plans",
     "slogan": "chargebee",
     "icon": "icons/chargebee.svg",
     "integrations": {
@@ -10551,7 +10551,7 @@
     "id": "crowddev",
     "name": "crowd.dev",
     "type": "tool",
-    "description": "crowd.dev — get members, activities, organizations, and conversations",
+    "description": "crowd.dev \u2014 get members, activities, organizations, and conversations",
     "slogan": "crowddev",
     "icon": "icons/crowddev.svg",
     "integrations": {
@@ -10629,7 +10629,7 @@
     "id": "freshservice",
     "name": "Freshservice",
     "type": "tool",
-    "description": "Freshservice ITSM — manage tickets, agents, and assets",
+    "description": "Freshservice ITSM \u2014 manage tickets, agents, and assets",
     "slogan": "freshservice",
     "icon": "icons/freshservice.svg",
     "integrations": {
@@ -10642,7 +10642,7 @@
     "id": "freshworks-crm",
     "name": "Freshworks CRM",
     "type": "tool",
-    "description": "Freshworks CRM — manage contacts, deals, and accounts",
+    "description": "Freshworks CRM \u2014 manage contacts, deals, and accounts",
     "slogan": "freshworks-crm",
     "icon": "icons/freshworks-crm.svg",
     "integrations": {
@@ -10759,7 +10759,7 @@
     "id": "monica-crm",
     "name": "Monica CRM",
     "type": "tool",
-    "description": "Monica personal CRM — manage contacts, activities, notes, and tasks",
+    "description": "Monica personal CRM \u2014 manage contacts, activities, notes, and tasks",
     "slogan": "monica-crm",
     "icon": "icons/monica-crm.svg",
     "integrations": {
@@ -10772,7 +10772,7 @@
     "id": "ms-dynamics-crm",
     "name": "Microsoft Dynamics CRM",
     "type": "tool",
-    "description": "Microsoft Dynamics 365 CRM — manage accounts, contacts, and opportunities",
+    "description": "Microsoft Dynamics 365 CRM \u2014 manage accounts, contacts, and opportunities",
     "slogan": "ms-dynamics-crm",
     "icon": "icons/ms-dynamics-crm.svg",
     "integrations": {
@@ -10967,7 +10967,7 @@
     "id": "taiga",
     "name": "Taiga",
     "type": "tool",
-    "description": "Taiga — manage projects, user stories, tasks, issues, and sprints",
+    "description": "Taiga \u2014 manage projects, user stories, tasks, issues, and sprints",
     "slogan": "taiga",
     "icon": "icons/taiga.svg",
     "integrations": {
@@ -11078,7 +11078,7 @@
     "id": "zammad",
     "name": "Zammad",
     "type": "tool",
-    "description": "Zammad helpdesk — manage tickets, users, and organizations",
+    "description": "Zammad helpdesk \u2014 manage tickets, users, and organizations",
     "slogan": "zammad",
     "icon": "icons/zammad.svg",
     "integrations": {
@@ -11416,7 +11416,7 @@
     "id": "misp",
     "name": "MISP",
     "type": "tool",
-    "description": "Interact with MISP threat intelligence — manage events and attributes",
+    "description": "Interact with MISP threat intelligence \u2014 manage events and attributes",
     "slogan": "misp",
     "icon": "icons/misp.svg",
     "integrations": {
@@ -11429,7 +11429,7 @@
     "id": "ms-entra-id",
     "name": "Microsoft Entra ID",
     "type": "tool",
-    "description": "Microsoft Entra ID (Azure AD) — manage users, groups, and applications via Graph",
+    "description": "Microsoft Entra ID (Azure AD) \u2014 manage users, groups, and applications via Graph",
     "slogan": "ms-entra-id",
     "icon": "icons/ms-entra-id.svg",
     "integrations": {
@@ -11515,7 +11515,7 @@
     "id": "thehive",
     "name": "TheHive",
     "type": "tool",
-    "description": "TheHive security incident response — manage cases, alerts, and observables",
+    "description": "TheHive security incident response \u2014 manage cases, alerts, and observables",
     "slogan": "thehive",
     "icon": "icons/thehive.svg",
     "integrations": {
@@ -11528,7 +11528,7 @@
     "id": "thehive5",
     "name": "TheHive 5",
     "type": "tool",
-    "description": "TheHive 5 — manage cases, alerts, observables, and tasks",
+    "description": "TheHive 5 \u2014 manage cases, alerts, observables, and tasks",
     "slogan": "thehive5",
     "icon": "icons/thehive5.svg",
     "integrations": {
@@ -11658,7 +11658,7 @@
     "id": "rundeck",
     "name": "Rundeck",
     "type": "tool",
-    "description": "Rundeck job scheduler — list and run jobs, manage executions and projects",
+    "description": "Rundeck job scheduler \u2014 list and run jobs, manage executions and projects",
     "slogan": "rundeck",
     "icon": "icons/rundeck.svg",
     "integrations": {
@@ -11893,7 +11893,7 @@
     "id": "airtop",
     "name": "Airtop",
     "type": "tool",
-    "description": "Airtop browser automation — create sessions, navigate, and extract web content",
+    "description": "Airtop browser automation \u2014 create sessions, navigate, and extract web content",
     "slogan": "airtop",
     "icon": "icons/airtop.svg",
     "integrations": {
@@ -12036,7 +12036,7 @@
     "id": "philips-hue",
     "name": "Philips Hue",
     "type": "tool",
-    "description": "Philips Hue smart lighting — control lights, groups, and scenes",
+    "description": "Philips Hue smart lighting \u2014 control lights, groups, and scenes",
     "slogan": "philips-hue",
     "icon": "icons/philips-hue.svg",
     "integrations": {
@@ -12049,7 +12049,7 @@
     "id": "spotify",
     "name": "Spotify",
     "type": "tool",
-    "description": "Spotify music — search tracks, get track/artist/album info, and user playlists",
+    "description": "Spotify music \u2014 search tracks, get track/artist/album info, and user playlists",
     "slogan": "spotify",
     "icon": "icons/spotify.svg",
     "integrations": {
@@ -12101,7 +12101,7 @@
     "id": "grist",
     "name": "Grist",
     "type": "tool",
-    "description": "Grist spreadsheet database — list documents, get, add, and update records",
+    "description": "Grist spreadsheet database \u2014 list documents, get, add, and update records",
     "slogan": "grist",
     "icon": "icons/grist.svg",
     "integrations": {
@@ -12114,7 +12114,7 @@
     "id": "kobotoolbox",
     "name": "KoboToolbox",
     "type": "tool",
-    "description": "KoboToolbox data collection — manage forms, submissions, and export data",
+    "description": "KoboToolbox data collection \u2014 manage forms, submissions, and export data",
     "slogan": "kobotoolbox",
     "icon": "icons/kobotoolbox.svg",
     "integrations": {
@@ -12157,7 +12157,7 @@
     "type": "tool",
     "description": "Execute queries and manage data in Microsoft SQL Server",
     "slogan": "mssql",
-    "icon": "icons/microsoft-sql-server.svg",
+    "icon": "icons/mssql.svg",
     "integrations": {
       "automation": [
         "mssql",
@@ -12275,7 +12275,7 @@
     "type": "tool",
     "description": "Manage files and list items in Microsoft SharePoint via Graph API",
     "slogan": "ms-sharepoint",
-    "icon": "icons/microsoft-sharepoint.svg",
+    "icon": "icons/ms-sharepoint.svg",
     "integrations": {
       "automation": [
         "ms-sharepoint"
@@ -12288,7 +12288,7 @@
     "type": "tool",
     "description": "Manage bookmarks and collections in Raindrop.io",
     "slogan": "raindrop",
-    "icon": "icons/raindrop-io.svg",
+    "icon": "icons/raindrop.svg",
     "integrations": {
       "automation": [
         "raindrop"
@@ -12364,7 +12364,7 @@
     "id": "one-simple-api",
     "name": "One Simple API",
     "type": "tool",
-    "description": "Web utility — social info, PDF generation, screenshots, and exchange rates",
+    "description": "Web utility \u2014 social info, PDF generation, screenshots, and exchange rates",
     "slogan": "one-simple-api",
     "icon": "icons/one-simple-api.svg",
     "integrations": {
@@ -12566,7 +12566,7 @@
     "type": "tool",
     "description": "Manage SSL/TLS certificates with AWS Certificate Manager.",
     "slogan": "aws-acm",
-    "icon": "icons/aws-certificate-manager.svg",
+    "icon": "icons/aws-acm.svg",
     "integrations": {
       "automation": [
         "aws-acm"
@@ -12579,7 +12579,7 @@
     "type": "tool",
     "description": "Manage users in AWS Cognito user pools.",
     "slogan": "aws-cognito",
-    "icon": "icons/aws-cognito.svg",
+    "icon": "icons/cognito.svg",
     "integrations": {
       "automation": [
         "aws-cognito"
