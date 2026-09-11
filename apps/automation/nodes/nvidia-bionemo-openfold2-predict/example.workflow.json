@@ -1,0 +1,138 @@
+[
+  {
+    "name": "test-nvidia-bionemo-boltz2-predict",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "vfrp391gjm27lfepb3mlxyty",
+        "position": {
+          "x": 248,
+          "y": 206
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "iweceq8lahv7x07i4syjpd5e",
+        "position": {
+          "x": 530,
+          "y": 198
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "v47esj14nx3v5pi3a277hrdr",
+        "position": {
+          "x": 414,
+          "y": 35.00347137451172
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "nvidia-bionemo-openfold2-predict",
+          "label": "BioNeMo: OpenFold2 Predict",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Fast, accurate protein structure prediction using OpenFold2. Supports MSA and template inputs.",
+          "showRunningStatus": true,
+          "parameters": {
+            "apiKey": "<OPENFOLD2_API_KEY>",
+            "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG",
+            "selected_models": [
+              1
+            ]
+          },
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "vfrp391gjm27lfepb3mlxyty",
+        "sourceHandle": "success",
+        "target": "v47esj14nx3v5pi3a277hrdr",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__vfrp391gjm27lfepb3mlxytysuccess-v47esj14nx3v5pi3a277hrdrinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "v47esj14nx3v5pi3a277hrdr",
+        "sourceHandle": "success",
+        "target": "iweceq8lahv7x07i4syjpd5e",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__v47esj14nx3v5pi3a277hrdrsuccess-iweceq8lahv7x07i4syjpd5einput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1789118318286,
+    "updatedAt": 1789125087120,
+    "publishedNames": [],
+    "previousStatus": "stopped"
+  }
+]
