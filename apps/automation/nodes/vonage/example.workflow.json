@@ -1,91 +1,416 @@
-{
-  "name": "Use Vonage",
-  "nodes": [
-    {
-      "id": "trigger",
-      "type": "trigger",
-      "position": {
-        "x": 80,
-        "y": 160
-      },
-      "data": {
-        "name": "manual-trigger",
-        "label": "Run",
-        "inputs": {},
-        "outputs": {
-          "success": {
-            "label": "Success"
-          },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "integration",
-      "type": "action",
-      "position": {
-        "x": 300,
-        "y": 160
-      },
-      "data": {
-        "name": "vonage",
-        "label": "Vonage",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+[
+  {
+    "name": "vonage",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "wll87xk2bu9sjea4il90banv",
+        "position": {
+          "x": 863,
+          "y": 90
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "vonage",
+          "label": "Vonage",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
           },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "output",
-      "type": "display",
-      "position": {
-        "x": 520,
-        "y": 160
-      },
-      "data": {
-        "name": "log",
-        "label": "Result",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Vonage (Nexmo) - Send SMS, make calls, check balance, and verify phone numbers.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "sendSms",
+            "apiKey": "",
+            "apiSecret": "",
+            "from": "Vonage APIs",
+            "to": "212669032500",
+            "text": "This is an SMS text message sent using the Vonage Messages API"
+          },
+          "_morphing": false
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
-          }
-        }
+        "selected": true
+      },
+      {
+        "id": "d8busmyasvucsarqu1e4xopt",
+        "position": {
+          "x": 856.8284385708998,
+          "y": 274.8808370033314
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "vonage",
+          "label": "Vonage1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Vonage (Nexmo) - Send SMS, make calls, check balance, and verify phone numbers.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getBalance",
+            "apiKey": "",
+            "apiSecret": "",
+            "from": "Vonage APIs",
+            "to": "212669032500",
+            "text": "This is an SMS text message sent using the Vonage Messages API"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "gdigz9vls9kpbgwze6w5m84l",
+        "position": {
+          "x": 1213.1330029348378,
+          "y": 59.33678414142939
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "vonage",
+          "label": "Vonage2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Vonage (Nexmo) - Send SMS, make calls, check balance, and verify phone numbers.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "makeCall",
+            "apiKey": "",
+            "apiSecret": "",
+            "from": "Vonage APIs",
+            "to": "212669032500",
+            "text": "This is an SMS text message sent using the Vonage Messages API"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ttajc87p95sjbcy2y2w698zh",
+        "position": {
+          "x": 1220.0472222202877,
+          "y": 283.4749632884111
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "vonage",
+          "label": "Vonage3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Vonage (Nexmo) - Send SMS, make calls, check balance, and verify phone numbers.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "verifyNumber",
+            "apiKey": "",
+            "apiSecret": "",
+            "from": "Vonage APIs",
+            "to": "212669032500",
+            "text": "This is an SMS text message sent using the Vonage Messages API"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "w8apahf1ycu8gyqdi6y8ws0g",
+        "position": {
+          "x": 987.4916544294706,
+          "y": 463.1214880059225
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "vonage",
+          "label": "Vonage4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Vonage (Nexmo) - Send SMS, make calls, check balance, and verify phone numbers.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "checkVerification",
+            "apiKey": "",
+            "apiSecret": "",
+            "from": "Vonage APIs",
+            "to": "212669032500",
+            "text": "This is an SMS text message sent using the Vonage Messages API",
+            "requestId": "aafe150dc72f4f479831e5ac82c14d49",
+            "code": "3723"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "gjhyzev8rayrdsvz96agidec",
+        "position": {
+          "x": 642,
+          "y": 23
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "qcn60qbxzs1xczvkrmwslvw9",
+        "position": {
+          "x": 635.8284385708998,
+          "y": 207.88083700333144
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "abmmre8t6530yekatosorc0y",
+        "position": {
+          "x": 992.1330029348378,
+          "y": -7.663215858570581
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "e5hd9v2a9am53egtdjnvg29k",
+        "position": {
+          "x": 999.0472222202877,
+          "y": 216.47496328841115
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "zan8oil0fti5hkmmd8auy9qk",
+        "position": {
+          "x": 766.4916544294706,
+          "y": 396.1214880059225
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
       }
-    }
-  ],
-  "connections": [
-    {
-      "id": "trigger-integration",
-      "type": "directed",
-      "source": "trigger",
-      "target": "integration",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    },
-    {
-      "id": "integration-output",
-      "type": "directed",
-      "source": "integration",
-      "target": "output",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    }
-  ]
-}
+    ],
+    "connections": [
+      {
+        "source": "gjhyzev8rayrdsvz96agidec",
+        "sourceHandle": "success",
+        "target": "wll87xk2bu9sjea4il90banv",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__gjhyzev8rayrdsvz96agidecsuccess-wll87xk2bu9sjea4il90banvinput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "qcn60qbxzs1xczvkrmwslvw9",
+        "sourceHandle": "success",
+        "target": "d8busmyasvucsarqu1e4xopt",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "l6s16vbsir13x6vzlfa5sces",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "abmmre8t6530yekatosorc0y",
+        "sourceHandle": "success",
+        "target": "gdigz9vls9kpbgwze6w5m84l",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "bxpabvrf6rkmqwvcgeqiz7k8",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "e5hd9v2a9am53egtdjnvg29k",
+        "sourceHandle": "success",
+        "target": "ttajc87p95sjbcy2y2w698zh",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "zw2p6jyco9gm9yovtg8c5kir",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "zan8oil0fti5hkmmd8auy9qk",
+        "sourceHandle": "success",
+        "target": "w8apahf1ycu8gyqdi6y8ws0g",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "hdz7005s7q9d0f1istoxokx0",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1789375765809,
+    "updatedAt": 1789380296615,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
