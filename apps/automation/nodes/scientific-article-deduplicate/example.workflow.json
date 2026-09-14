@@ -1,0 +1,165 @@
+[
+  {
+    "name": "Scientific Article Deduplicate Example",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "fp7g4e9u4r9ehu41mjooxzzv",
+        "position": {
+          "x": 699,
+          "y": 437
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "hlsl9ijyw9mjq4nr3wtmeod3",
+        "position": {
+          "x": 1218.5,
+          "y": 242
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "hacccp6qwqy0i02mga03bhuh",
+        "position": {
+          "x": 854.75,
+          "y": 316.75
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "function",
+          "label": "Function",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Executes custom JavaScript code on the input data.",
+          "showRunningStatus": true,
+          "parameters": {
+            "code": "// Write your code here\nreturn {\n  \"results\": [\n    {\n      \"source\": \"crossref\",\n      \"id\": \"article-001\",\n      \"title\": \"Artificial Intelligence in Healthcare\",\n      \"doi\": \"10.1234/test.001\"\n    },\n    {\n      \"source\": \"crossref\",\n      \"id\": \"article-001-duplicate\",\n      \"title\": \"Artificial Intelligence in Healthcare\",\n      \"doi\": \"10.1234/test.001\"\n    }\n  ]\n}"
+          }
+        }
+      },
+      {
+        "id": "uchw4lsz53ljci3fwwdbirj1",
+        "position": {
+          "x": 1039.75,
+          "y": 431.75
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "scientific-article-deduplicate",
+          "label": "Scientific Article Deduplicate",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Generate stable article keys and exclude records already stored or repeated across providers.",
+          "showRunningStatus": false,
+          "parameters": {
+            "includeDuplicates": true
+          }
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "fp7g4e9u4r9ehu41mjooxzzv",
+        "sourceHandle": "success",
+        "target": "hacccp6qwqy0i02mga03bhuh",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__fp7g4e9u4r9ehu41mjooxzzvsuccess-hacccp6qwqy0i02mga03bhuhinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "hacccp6qwqy0i02mga03bhuh",
+        "sourceHandle": "success",
+        "target": "uchw4lsz53ljci3fwwdbirj1",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__hacccp6qwqy0i02mga03bhuhsuccess-uchw4lsz53ljci3fwwdbirj1input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "uchw4lsz53ljci3fwwdbirj1",
+        "sourceHandle": "success",
+        "target": "hlsl9ijyw9mjq4nr3wtmeod3",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__uchw4lsz53ljci3fwwdbirj1success-hlsl9ijyw9mjq4nr3wtmeod3input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "tracingEnabled": true,
+    "version": 1
+  }
+]
