@@ -1,0 +1,672 @@
+[
+  {
+    "name": "discord",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "psyq2hgnarjazyycer9e04y9",
+        "position": {
+          "x": 662,
+          "y": 15
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "discord-trigger",
+          "label": "Discord Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers on Discord message events (create, update, delete)",
+          "showRunningStatus": true,
+          "parameters": {
+            "token": "",
+            "channelIds": [
+              "1549063670649331755"
+            ]
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "vvrhf3luhgh1fmxo0xno6jtk",
+        "position": {
+          "x": 970,
+          "y": 20
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "discord-api",
+          "label": "Discord API",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Get Discord user information using the Discord API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "botToken": ""
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "p2nw8fnthc1y5ks2bj4qqk80",
+        "position": {
+          "x": 809,
+          "y": -49
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "c2e1njjpyxvdslsordnw10cq",
+        "position": {
+          "x": 748,
+          "y": 115
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "l90rjwc2mlsuu39c7sy5beop",
+        "position": {
+          "x": 1003,
+          "y": 141
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "j0via23c5u5y6r8q0smz16jq",
+        "position": {
+          "x": 747,
+          "y": 250
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "w98nuxnjm69t6dqlm34istx9",
+        "position": {
+          "x": 743.5167211087346,
+          "y": 418.0467582275431
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "yyogrfsagqam826ecptwxaa7",
+        "position": {
+          "x": 755.3486241030771,
+          "y": 582.0094679522573
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger6",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "uay2m70w7hai3ix3zaqfjpxm",
+        "position": {
+          "x": 1002,
+          "y": 274
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "sort3edzcpsbnkp7kgq00sky",
+        "position": {
+          "x": 998.5167211087346,
+          "y": 442.0467582275431
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ifchlgsazkhos2figaz33bs8",
+        "position": {
+          "x": 888,
+          "y": 165
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "discord-action",
+          "label": "Discord Action",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Perform actions on Discord (send messages, moderate, etc.)",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "sendMessage",
+            "token": "",
+            "channelId": "1549063670649331755",
+            "content": "hello"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "oy3h9vjstthmxzep35cqr5kg",
+        "position": {
+          "x": 1143,
+          "y": 191
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "discord-action",
+          "label": "Discord Action1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Perform actions on Discord (send messages, moderate, etc.)",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "sendEmbed",
+            "token": "",
+            "channelId": "1549063670649331755",
+            "embed": {
+              "color": "blue",
+              "title": "test",
+              "description": "testing",
+              "timestamp": "2026-09-14T15:30:00Z"
+            }
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "sba8iuqtxnapkm3prx7k9txr",
+        "position": {
+          "x": 887,
+          "y": 300
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "discord-action",
+          "label": "Discord Action2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Perform actions on Discord (send messages, moderate, etc.)",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "editMessage",
+            "token": "",
+            "channelId": "1549063670649331755",
+            "content": "hello1",
+            "messageId": "1549068143136342030"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "qp3qv3viu8so8xiv3ofoyj4l",
+        "position": {
+          "x": 883.5167211087346,
+          "y": 468.0467582275431
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "discord-action",
+          "label": "Discord Action4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Perform actions on Discord (send messages, moderate, etc.)",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "deleteMessage",
+            "token": "test-token",
+            "channelId": "1549063670649331755",
+            "messageId": "1549066800657080471"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "tvr6y69hd0807pwnyn92oarz",
+        "position": {
+          "x": 895.3486241030771,
+          "y": 632.0094679522573
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "discord-action",
+          "label": "Discord Action5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Perform actions on Discord (send messages, moderate, etc.)",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "sendDM",
+            "token": "",
+            "content": "hello",
+            "userId": "477048291196928002"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "l91k21sjysh8oliiqntv9fc2",
+        "position": {
+          "x": 1142,
+          "y": 324
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "discord-action",
+          "label": "Discord Action3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Perform actions on Discord (send messages, moderate, etc.)",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "replyToMessage",
+            "token": "",
+            "channelId": "1549063670649331755",
+            "content": "hello",
+            "messageId": "1549066800657080471"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "azmix5bo2qw3wn34k73xeuke",
+        "position": {
+          "x": 1138.5167211087346,
+          "y": 492.0467582275431
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "discord-action",
+          "label": "Discord Action4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Perform actions on Discord (send messages, moderate, etc.)",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "addReaction",
+            "token": "",
+            "channelId": "1549063670649331755",
+            "messageId": "1549066800657080471",
+            "emoji": "💯"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "p2nw8fnthc1y5ks2bj4qqk80",
+        "sourceHandle": "success",
+        "target": "vvrhf3luhgh1fmxo0xno6jtk",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__p2nw8fnthc1y5ks2bj4qqk80success-vvrhf3luhgh1fmxo0xno6jtkinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "c2e1njjpyxvdslsordnw10cq",
+        "sourceHandle": "success",
+        "target": "ifchlgsazkhos2figaz33bs8",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__c2e1njjpyxvdslsordnw10cqsuccess-ifchlgsazkhos2figaz33bs8input",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "l90rjwc2mlsuu39c7sy5beop",
+        "sourceHandle": "success",
+        "target": "oy3h9vjstthmxzep35cqr5kg",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ecaeiexza6wf12cedo54doce",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "j0via23c5u5y6r8q0smz16jq",
+        "sourceHandle": "success",
+        "target": "sba8iuqtxnapkm3prx7k9txr",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "kzgggtdhmh903swt8w193mc2",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "uay2m70w7hai3ix3zaqfjpxm",
+        "sourceHandle": "success",
+        "target": "l91k21sjysh8oliiqntv9fc2",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "mr7aq7ai1whcbpihf6zf0tq1",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "w98nuxnjm69t6dqlm34istx9",
+        "sourceHandle": "success",
+        "target": "qp3qv3viu8so8xiv3ofoyj4l",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "yl1272yu5t4y7mu0d2fp3iv2",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "sort3edzcpsbnkp7kgq00sky",
+        "sourceHandle": "success",
+        "target": "azmix5bo2qw3wn34k73xeuke",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "dxbw776pls493e2zf5xvddpd",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "yyogrfsagqam826ecptwxaa7",
+        "sourceHandle": "success",
+        "target": "tvr6y69hd0807pwnyn92oarz",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "zduzdpzq4olukmex36gx43zd",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1789394869950,
+    "updatedAt": 1789399197886,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
