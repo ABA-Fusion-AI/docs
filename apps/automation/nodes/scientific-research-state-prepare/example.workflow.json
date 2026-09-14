@@ -1,0 +1,129 @@
+[
+  {
+    "name": "Scientific Research State Prepare Example",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "fp7g4e9u4r9ehu41mjooxzzv",
+        "position": {
+          "x": 512,
+          "y": 205
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "hlsl9ijyw9mjq4nr3wtmeod3",
+        "position": {
+          "x": 928.5,
+          "y": 205
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "dcmsc7agol97semiptsxb0uc",
+        "position": {
+          "x": 699.75,
+          "y": 246.75
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "scientific-research-state-prepare",
+          "label": "Scientific Research State Prepare",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Prepare a query, load saved article keys, and resume provider pagination without custom code.",
+          "showRunningStatus": true,
+          "parameters": {
+            "resumeMode": "resume",
+            "query": "climate change",
+            "keywords": "climate, environment",
+            "specificFilters": {
+              "year": 2025,
+              "language": "en"
+            },
+            "limit": 10
+          }
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "fp7g4e9u4r9ehu41mjooxzzv",
+        "sourceHandle": "success",
+        "target": "dcmsc7agol97semiptsxb0uc",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__fp7g4e9u4r9ehu41mjooxzzvsuccess-dcmsc7agol97semiptsxb0ucinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "dcmsc7agol97semiptsxb0uc",
+        "sourceHandle": "success",
+        "target": "hlsl9ijyw9mjq4nr3wtmeod3",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__dcmsc7agol97semiptsxb0ucsuccess-hlsl9ijyw9mjq4nr3wtmeod3input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "tracingEnabled": true,
+    "version": 1
+  }
+]

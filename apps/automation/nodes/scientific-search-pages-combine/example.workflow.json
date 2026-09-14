@@ -1,0 +1,171 @@
+[
+  {
+    "name": "Scientific Search Pages Combine Example",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "fp7g4e9u4r9ehu41mjooxzzv",
+        "position": {
+          "x": 699,
+          "y": 437
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "hlsl9ijyw9mjq4nr3wtmeod3",
+        "position": {
+          "x": 1218.5,
+          "y": 242
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {}
+        }
+      },
+      {
+        "id": "g7ierq6u55ygcwo25492lpfk",
+        "position": {
+          "x": 1035.75,
+          "y": 414.75
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "scientific-search-pages-combine",
+          "label": "Scientific Search Pages Combine",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Combine normalized provider pages and keep their pagination metadata.",
+          "showRunningStatus": true,
+          "parameters": {
+            "specificFilters": {
+              "year": 2025
+            },
+            "keywords": [
+              "artificial intelligence",
+              "healthcare"
+            ]
+          }
+        }
+      },
+      {
+        "id": "hacccp6qwqy0i02mga03bhuh",
+        "position": {
+          "x": 854.75,
+          "y": 316.75
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "function",
+          "label": "Function",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Executes custom JavaScript code on the input data.",
+          "showRunningStatus": true,
+          "parameters": {
+            "code": "// Write your code here\nreturn [\n  {\n    \"provider\": \"arxiv\",\n    \"pagination\": {\n      \"offset\": 0,\n      \"limit\": 2,\n      \"returned\": 2,\n      \"hasMore\": true,\n      \"nextOffset\": 2\n    },\n    \"results\": [\n      {\"id\": \"arxiv-001\", \"title\": \"AI Healthcare\"},\n      {\"id\": \"arxiv-002\", \"title\": \"Machine Learning Medicine\"}\n    ]\n  },\n  {\n    \"provider\": \"crossref\",\n    \"pagination\": {\n      \"offset\": 10,\n      \"limit\": 2,\n      \"returned\": 2,\n      \"hasMore\": true,\n      \"nextOffset\": 12\n    },\n    \"results\": [\n      {\"id\": \"crossref-001\", \"title\": \"AI in Clinical Practice\"},\n      {\"id\": \"crossref-002\", \"title\": \"Healthcare AI Review\"}\n    ]\n  }\n]"
+          }
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "fp7g4e9u4r9ehu41mjooxzzv",
+        "sourceHandle": "success",
+        "target": "hacccp6qwqy0i02mga03bhuh",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__fp7g4e9u4r9ehu41mjooxzzvsuccess-hacccp6qwqy0i02mga03bhuhinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "hacccp6qwqy0i02mga03bhuh",
+        "sourceHandle": "success",
+        "target": "g7ierq6u55ygcwo25492lpfk",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__hacccp6qwqy0i02mga03bhuhsuccess-g7ierq6u55ygcwo25492lpfkinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "g7ierq6u55ygcwo25492lpfk",
+        "sourceHandle": "success",
+        "target": "hlsl9ijyw9mjq4nr3wtmeod3",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__g7ierq6u55ygcwo25492lpfksuccess-hlsl9ijyw9mjq4nr3wtmeod3input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "tracingEnabled": true,
+    "version": 1
+  }
+]

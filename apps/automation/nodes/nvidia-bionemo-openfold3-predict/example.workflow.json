@@ -1,0 +1,530 @@
+[
+  {
+    "name": "test-nvidia-bionemo-openfold3-predict",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "vfrp391gjm27lfepb3mlxyty",
+        "position": {
+          "x": 0,
+          "y": 18
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "iweceq8lahv7x07i4syjpd5e",
+        "position": {
+          "x": 568,
+          "y": 0
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "pjhvjtekrjcxv1wk01810mfb",
+        "position": {
+          "x": 284,
+          "y": 18
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "nvidia-bionemo-openfold3-predict",
+          "label": "BioNeMo: OpenFold3 Predict",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Latest OpenFold model with improved accuracy. Supports MSA and template inputs.",
+          "showRunningStatus": true,
+          "parameters": {
+            "molecule_type": "protein",
+            "output_format": "cif",
+            "apiKey": "",
+            "sequence": "MKTIIALSYIFCLVFA",
+            "diffusion_samples": 1,
+            "pollSeconds": 5,
+            "timeout": 1800
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "z8rz04x04b71c9nm3x4vjjna",
+        "position": {
+          "x": 0,
+          "y": 358
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "qmyx66y42rvodqm18ktz2g6q",
+        "position": {
+          "x": 568,
+          "y": 340
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "krpr4mibc2dej2rp0l5fbjvg",
+        "position": {
+          "x": 284,
+          "y": 358
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "nvidia-bionemo-openfold3-predict",
+          "label": "BioNeMo: OpenFold3 Predict1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Latest OpenFold model with improved accuracy. Supports MSA and template inputs.",
+          "showRunningStatus": true,
+          "parameters": {
+            "molecule_type": "dna",
+            "output_format": "cif",
+            "apiKey": "",
+            "sequence": "ATGCGTACGTTAGC",
+            "diffusion_samples": 1,
+            "pollSeconds": 5,
+            "timeout": 1200,
+            "molecule_id": "B"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "wcseoh62iy3iuwxpn1zkoqqa",
+        "position": {
+          "x": 0,
+          "y": 698
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "a3alydh5kwl0bfwexzxb70iq",
+        "position": {
+          "x": 0,
+          "y": 1038
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "kqn7wb3sitfc31b9nnp4mg4q",
+        "position": {
+          "x": 568,
+          "y": 1020
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "p2m0cyz023v30ij0m0ygpql5",
+        "position": {
+          "x": 284,
+          "y": 1038
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "nvidia-bionemo-openfold3-predict",
+          "label": "BioNeMo: OpenFold3 Predict3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Latest OpenFold model with improved accuracy. Supports MSA and template inputs.",
+          "showRunningStatus": true,
+          "parameters": {
+            "molecule_type": "ligand",
+            "output_format": "pdb",
+            "apiKey": "",
+            "sequence": "CCO",
+            "diffusion_samples": 1,
+            "pollSeconds": 5,
+            "timeout": 2000,
+            "molecule_id": "L",
+            "molecules": []
+          },
+          "_morphing": false
+        },
+        "selected": true,
+        "draggable": true
+      },
+      {
+        "id": "ljzquzsbxnfshqssnmdzj7gg",
+        "position": {
+          "x": 284,
+          "y": 698
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "nvidia-bionemo-openfold3-predict",
+          "label": "BioNeMo: OpenFold3 Predict2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Latest OpenFold model with improved accuracy. Supports MSA and template inputs.",
+          "showRunningStatus": true,
+          "parameters": {
+            "molecule_type": "rna",
+            "output_format": "cif",
+            "apiKey": "",
+            "sequence": "AUGCGUACGU",
+            "diffusion_samples": 1,
+            "pollSeconds": 5,
+            "timeout": 1800,
+            "molecule_id": "A"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "n08sgvaw5osyc38u1uunepmv",
+        "position": {
+          "x": 523.1882919163562,
+          "y": 705.3236108796982
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "vfrp391gjm27lfepb3mlxyty",
+        "sourceHandle": "success",
+        "target": "pjhvjtekrjcxv1wk01810mfb",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__vfrp391gjm27lfepb3mlxytysuccess-pjhvjtekrjcxv1wk01810mfbinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "pjhvjtekrjcxv1wk01810mfb",
+        "sourceHandle": "success",
+        "target": "iweceq8lahv7x07i4syjpd5e",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__pjhvjtekrjcxv1wk01810mfbsuccess-iweceq8lahv7x07i4syjpd5einput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "z8rz04x04b71c9nm3x4vjjna",
+        "sourceHandle": "success",
+        "target": "krpr4mibc2dej2rp0l5fbjvg",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ujbf26gy5f48if5y19j5zndg",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "krpr4mibc2dej2rp0l5fbjvg",
+        "sourceHandle": "success",
+        "target": "qmyx66y42rvodqm18ktz2g6q",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "hcnnktvok378c4br6ihd7558",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "wcseoh62iy3iuwxpn1zkoqqa",
+        "sourceHandle": "success",
+        "target": "ljzquzsbxnfshqssnmdzj7gg",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "n622joj166rhmi4r5530r0q1",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "a3alydh5kwl0bfwexzxb70iq",
+        "sourceHandle": "success",
+        "target": "p2m0cyz023v30ij0m0ygpql5",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "mlun9is6epwc3zn49c2fdnl9",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "p2m0cyz023v30ij0m0ygpql5",
+        "sourceHandle": "success",
+        "target": "kqn7wb3sitfc31b9nnp4mg4q",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "z692zqugemac3iizofdt42ll",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "wcseoh62iy3iuwxpn1zkoqqa",
+        "sourceHandle": "success",
+        "target": "ljzquzsbxnfshqssnmdzj7gg",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "n622joj166rhmi4r5530r0q1",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ljzquzsbxnfshqssnmdzj7gg",
+        "sourceHandle": "success",
+        "target": "n08sgvaw5osyc38u1uunepmv",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ljzquzsbxnfshqssnmdzj7ggsuccess-n08sgvaw5osyc38u1uunepmvinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1789118318286,
+    "updatedAt": 1789136983989,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]

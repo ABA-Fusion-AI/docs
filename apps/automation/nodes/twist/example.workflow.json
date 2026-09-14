@@ -1,91 +1,325 @@
-{
-  "name": "Use Twist",
-  "nodes": [
-    {
-      "id": "trigger",
-      "type": "trigger",
-      "position": {
-        "x": 80,
-        "y": 160
-      },
-      "data": {
-        "name": "manual-trigger",
-        "label": "Run",
-        "inputs": {},
-        "outputs": {
-          "success": {
-            "label": "Success"
-          },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "integration",
-      "type": "action",
-      "position": {
-        "x": 300,
-        "y": 160
-      },
-      "data": {
-        "name": "twist",
-        "label": "Twist",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+[
+  {
+    "name": "twist",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "ws3f03b8hh3ko44oml41s8dn",
+        "position": {
+          "x": 832,
+          "y": 17
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "twist",
+          "label": "Twist",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
           },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "output",
-      "type": "display",
-      "position": {
-        "x": 520,
-        "y": 160
-      },
-      "data": {
-        "name": "log",
-        "label": "Result",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Twist team messaging API. Manage channels, threads, messages, and conversations.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getChannels",
+            "workspaceId": "253357"
+          },
+          "_morphing": false
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
-          }
-        }
+        "selected": false
+      },
+      {
+        "id": "si6j0scmub4sb3gi5yt6ihn2",
+        "position": {
+          "x": 1172,
+          "y": -13
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "twist",
+          "label": "Twist1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Twist team messaging API. Manage channels, threads, messages, and conversations.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "postMessage",
+            "workspaceId": "253357",
+            "channelId": "1801493",
+            "content": "hello",
+            "threadId": "8046649"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "y3g68qp8ieafd4a4ozu9sjrr",
+        "position": {
+          "x": 1189,
+          "y": 210
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "twist",
+          "label": "Twist2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Twist team messaging API. Manage channels, threads, messages, and conversations.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getThreads",
+            "workspaceId": "253357",
+            "channelId": "847582",
+            "content": "hello",
+            "threadId": "8046649"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "o4y7uz9fsbcccdleke80m076",
+        "position": {
+          "x": 825,
+          "y": 201
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "twist",
+          "label": "Twist3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Twist team messaging API. Manage channels, threads, messages, and conversations.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getConversations",
+            "workspaceId": "253357"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "uqynza4fgpf7rol2lf8g0jci",
+        "position": {
+          "x": 637,
+          "y": -76
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "l4twhys4qg0jgbxsvx07ql9g",
+        "position": {
+          "x": 977,
+          "y": -106
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "z27laaz1ho2mg685wqqyb193",
+        "position": {
+          "x": 994,
+          "y": 117
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "rcxnwsqqczpjd4fms8qd6xkr",
+        "position": {
+          "x": 630,
+          "y": 108
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
       }
-    }
-  ],
-  "connections": [
-    {
-      "id": "trigger-integration",
-      "type": "directed",
-      "source": "trigger",
-      "target": "integration",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    },
-    {
-      "id": "integration-output",
-      "type": "directed",
-      "source": "integration",
-      "target": "output",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    }
-  ]
-}
+    ],
+    "connections": [
+      {
+        "source": "uqynza4fgpf7rol2lf8g0jci",
+        "sourceHandle": "success",
+        "target": "ws3f03b8hh3ko44oml41s8dn",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__uqynza4fgpf7rol2lf8g0jcisuccess-ws3f03b8hh3ko44oml41s8dninput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "l4twhys4qg0jgbxsvx07ql9g",
+        "sourceHandle": "success",
+        "target": "si6j0scmub4sb3gi5yt6ihn2",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "znkp7azcfe6627szfad1o7md",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "z27laaz1ho2mg685wqqyb193",
+        "sourceHandle": "success",
+        "target": "y3g68qp8ieafd4a4ozu9sjrr",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "abkzo8l3720czm8gs96r3ky7",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "rcxnwsqqczpjd4fms8qd6xkr",
+        "sourceHandle": "success",
+        "target": "o4y7uz9fsbcccdleke80m076",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "y3fqbwn0l5kw6gfh09b04t39",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1789380305877,
+    "updatedAt": 1789384970490,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]

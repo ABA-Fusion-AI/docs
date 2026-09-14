@@ -1,1 +1,394 @@
-{"name":"Discover authorized subdomains","nodes":[{"id":"trigger","type":"trigger","position":{"x":80,"y":160},"data":{"name":"manual-trigger","label":"Run","inputs":{},"outputs":{"success":{"label":"Success"},"error":{"label":"Error"}}}},{"id":"node","type":"action","position":{"x":300,"y":160},"data":{"name":"subdomain-discovery","label":"Subdomain Discovery","inputs":{"input":{"label":"Input"}},"outputs":{"success":{"label":"Success"},"error":{"label":"Error"}}}},{"id":"output","type":"display","position":{"x":520,"y":160},"data":{"name":"log","label":"Result","inputs":{"input":{"label":"Input"}},"outputs":{"success":{"label":"Success"}}}}],"connections":[{"id":"trigger-node","type":"directed","source":"trigger","target":"node","sourceHandle":"success","targetHandle":"input"},{"id":"node-output","type":"directed","source":"node","target":"output","sourceHandle":"success","targetHandle":"input"}]}
+[
+  {
+    "name": "test Subdomain Discovery",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "tzz8syyfjr2mfgmcqt1us89v",
+        "position": {
+          "x": 227,
+          "y": 207.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "z3lxqkzl1u9f0hhb3z2smycr",
+        "position": {
+          "x": 654,
+          "y": 171.5
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ep39ahl6fi0bwrouqok1mrtj",
+        "position": {
+          "x": 400,
+          "y": 376
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "subdomain-discovery",
+          "label": "Subdomain Discovery",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Discovers subdomains using Certificate Transparency logs (crt.sh), DNS brute-forcing, and SecurityTrails API. Includes wildcard detection.",
+          "showRunningStatus": true,
+          "parameters": {
+            "methods": [
+              "dns-brute-force"
+            ],
+            "domain": "openai.com",
+            "wordlist": [
+              "www",
+              "api",
+              "mail",
+              "dev",
+              "staging"
+            ],
+            "maxConcurrent": 5
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "kndmsfknxsuyo94v5i1zkrw2",
+        "position": {
+          "x": 64.3488579117784,
+          "y": 1013.5970532681757
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "uk1c4ob09oeaxvx32omzu9er",
+        "position": {
+          "x": 503.3488579117784,
+          "y": 989.5970532681757
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ydndnhzdbbvdcnpq3u85uqtz",
+        "position": {
+          "x": 261.3488579117784,
+          "y": 1206.0970532681756
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "subdomain-discovery",
+          "label": "Subdomain Discovery1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Discovers subdomains using Certificate Transparency logs (crt.sh), DNS brute-forcing, and SecurityTrails API. Includes wildcard detection.",
+          "showRunningStatus": true,
+          "parameters": {
+            "methods": [
+              "certificate-transparency"
+            ],
+            "domain": "github.com",
+            "wordlist": [],
+            "maxConcurrent": 5,
+            "timeout": 4997
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "o6t5or6n083bziksg5z53s2z",
+        "position": {
+          "x": 261.74799762656653,
+          "y": 1474.7041431408597
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "lfgicpqpipwa2aba11pdvhpx",
+        "position": {
+          "x": 700.7479976265665,
+          "y": 1450.7041431408597
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "u3b0lp6avvoysszorwbbtrsw",
+        "position": {
+          "x": 458.74799762656653,
+          "y": 1667.2041431408597
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "subdomain-discovery",
+          "label": "Subdomain Discovery2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Discovers subdomains using Certificate Transparency logs (crt.sh), DNS brute-forcing, and SecurityTrails API. Includes wildcard detection.",
+          "showRunningStatus": true,
+          "parameters": {
+            "methods": [
+              "dns-brute-force"
+            ],
+            "domain": "google.com",
+            "wordlist": [
+              "www",
+              "api",
+              "mail",
+              "accounts",
+              "maps",
+              "drive"
+            ],
+            "maxConcurrent": 5,
+            "timeout": 10000
+          },
+          "_morphing": false
+        },
+        "selected": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "tzz8syyfjr2mfgmcqt1us89v",
+        "sourceHandle": "success",
+        "target": "ep39ahl6fi0bwrouqok1mrtj",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__tzz8syyfjr2mfgmcqt1us89vsuccess-ep39ahl6fi0bwrouqok1mrtjinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ep39ahl6fi0bwrouqok1mrtj",
+        "sourceHandle": "success",
+        "target": "z3lxqkzl1u9f0hhb3z2smycr",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ep39ahl6fi0bwrouqok1mrtjsuccess-z3lxqkzl1u9f0hhb3z2smycrinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "kndmsfknxsuyo94v5i1zkrw2",
+        "sourceHandle": "success",
+        "target": "ydndnhzdbbvdcnpq3u85uqtz",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "udbt2jeteo5e0ti91782m506",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ydndnhzdbbvdcnpq3u85uqtz",
+        "sourceHandle": "success",
+        "target": "uk1c4ob09oeaxvx32omzu9er",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ys34nrmto3chv18y80zp7hs4",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "o6t5or6n083bziksg5z53s2z",
+        "sourceHandle": "success",
+        "target": "u3b0lp6avvoysszorwbbtrsw",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ktao860wh9pdiue8302c4y02",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "u3b0lp6avvoysszorwbbtrsw",
+        "sourceHandle": "success",
+        "target": "lfgicpqpipwa2aba11pdvhpx",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "y50ocp4ypajwrm3d3rfmqgrl",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1789046096414,
+    "updatedAt": 1789046412298,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
