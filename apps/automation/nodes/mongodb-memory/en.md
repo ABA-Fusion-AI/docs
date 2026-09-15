@@ -89,10 +89,9 @@ to an agent, not a step in a chain.
 <!-- SECTION: workflow-example -->
   ## Example
 
-```
-Chat Trigger ──▶ Agent V2 ──▶ Send Reply
-                   ▲  ▲
-        OpenAI LLM ┘  └ MongoDB Memory
+```fusion-workflow
+src: example.workflow.json
+title: Chat assistant with memory in MongoDB
 ```
 
 Configuration:

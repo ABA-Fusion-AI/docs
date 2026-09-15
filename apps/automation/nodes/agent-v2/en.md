@@ -60,7 +60,6 @@ one history. Agent V2 works out conversation identity when the turn runs.
 |---|---|---|---|
 | **System Prompt** | No | — | Instructions given to the agent at the start of every turn. |
 | **Max Iterations** | Yes | `10` | Upper bound on model and tool round trips within a single turn. |
-| **Concurrent Turns** | Yes | `Queue` | How a message arriving mid-turn is handled. |
 
 ### System Prompt
 
@@ -73,11 +72,12 @@ A ceiling on the round trips one turn may make, so a model that keeps calling
 itself cannot run up an unbounded bill. Reaching the limit ends the turn on the
 **Error** output.
 
-### Concurrent Turns
+### Concurrent turns are queued, and this is not adjustable
 
-Currently one option, **Queue**: a message that arrives while a turn is still
-running waits and then runs in order. Replies always match the order the
-messages were sent in.
+A message that arrives while a turn is still running waits, then runs in order,
+so replies always match the order the messages were sent in. There is no setting
+for it: queueing is the only behaviour this node has, and a field offering one
+option would suggest a choice that does not exist.
 
 <!-- /SECTION: configuration -->
 
@@ -89,8 +89,8 @@ messages were sent in.
 | Handle | Direction | Required | Description |
 |---|---|---|---|
 | **LLM** | In | **Yes** | The language model that answers. Connect exactly one. |
-| **Memory** | In | No | Supplies conversation history, checkpoints, or long-term recall. |
-| **Tools** | In | No | Reserved. Tool calling arrives in a later release. |
+| **Memory** | In | No | Supplies conversation history, checkpoints, or long-term recall. Connect at most one. |
+| **Tool** | In | No | Drawn, but not yet executable — connecting one fails the turn. See below. |
 | **Input** | In | Yes | The user's message. |
 | **Success** | Out | — | The agent's reply, as text. |
 | **Error** | Out | — | A typed failure. |
@@ -124,17 +124,17 @@ something it never saw.
 
 A support assistant that remembers the conversation.
 
-```
-Chat Trigger ──▶ Agent V2 ──▶ Send Reply
-                   ▲  ▲
-        OpenAI LLM ┘  └ Memory
+```fusion-workflow
+src: example.workflow.json
+title: Support assistant with memory
 ```
 
 1. **Chat Trigger** receives the user's message.
 2. **OpenAI LLM** is connected to the agent's **LLM** handle.
 3. **Memory** is connected to the **Memory** handle, so the agent can see the
    conversation so far.
-4. **Agent V2** replies on **Success**.
+4. **Agent V2** answers on **Success**, and **Chat Response** sends that
+   answer back to the chat box.
 
 Configuration:
 
@@ -174,6 +174,14 @@ transcript.
 ### `AGENT_CAPABILITY_UNSUPPORTED` on an attachment
 
 Expected. This release is text-only — see **Attachments** above.
+
+### "Agent V2 does not support tools yet"
+
+A Tool node is wired to this agent. The socket **is** drawn on the canvas — it
+is there ahead of the runtime that will use it — but tool execution has not
+landed yet. Running anyway would answer with the tools silently missing, so the
+node fails the turn instead of quietly ignoring them. Disconnect the tool, or
+use **Agent** (V1), which supports tools today.
 
 ### The turn ends without a reply
 
