@@ -1,0 +1,167 @@
+{
+  "name": "Scientific Articles Route Example",
+  "variables": {},
+  "secrets": {},
+  "nodes": [
+    {
+      "id": "wie46apeeq59rkuiz9jf9zsw",
+      "position": {
+        "x": 586,
+        "y": 214
+      },
+      "type": "trigger",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Triggers the workflow manually.",
+        "showRunningStatus": false,
+        "parameters": {}
+      }
+    },
+    {
+      "id": "veany4vu7m4noujxvxkivbfp",
+      "position": {
+        "x": 722.5,
+        "y": 132
+      },
+      "type": "action",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "function",
+        "label": "Function",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Executes custom JavaScript code on the input data.",
+        "showRunningStatus": true,
+        "parameters": {
+          "code": "return {\n  results: [\n    {\n      id: \"article-001\",\n      title: \"Artificial Intelligence in Healthcare\"\n    },\n    {\n      id: \"article-002\",\n      title: \"Climate Change Research\"\n    }\n  ]\n};"
+        }
+      }
+    },
+    {
+      "id": "zqwqw9vy41yotsro9vuhoetf",
+      "position": {
+        "x": 1183.5,
+        "y": 96
+      },
+      "type": "display",
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "data": {
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "parameters": {}
+      }
+    },
+    {
+      "id": "dm4jnao3fec5wnk7om0ptzxc",
+      "position": {
+        "x": 857.5,
+        "y": 209
+      },
+      "type": "utility",
+      "width": 64,
+      "height": 68,
+      "data": {
+        "name": "scientific-articles-route",
+        "label": "Scientific Articles Route",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "hasArticles": {
+            "label": "Has Articles"
+          },
+          "empty": {
+            "label": "Empty"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Send non-empty article results to processing and empty pages directly to checkpointing.",
+        "showRunningStatus": true,
+        "parameters": {
+          "resultsField": "results",
+          "minimumArticles": 1
+        }
+      }
+    }
+  ],
+  "connections": [
+    {
+      "source": "wie46apeeq59rkuiz9jf9zsw",
+      "sourceHandle": "success",
+      "target": "veany4vu7m4noujxvxkivbfp",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__wie46apeeq59rkuiz9jf9zswsuccess-veany4vu7m4noujxvxkivbfpinput",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "source": "veany4vu7m4noujxvxkivbfp",
+      "sourceHandle": "success",
+      "target": "dm4jnao3fec5wnk7om0ptzxc",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__veany4vu7m4noujxvxkivbfpsuccess-dm4jnao3fec5wnk7om0ptzxcinput",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "source": "dm4jnao3fec5wnk7om0ptzxc",
+      "sourceHandle": "hasArticles",
+      "target": "zqwqw9vy41yotsro9vuhoetf",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__dm4jnao3fec5wnk7om0ptzxchasArticles-zqwqw9vy41yotsro9vuhoetfinput",
+      "data": {
+        "isAnimated": false
+      }
+    }
+  ],
+  "tracingEnabled": true,
+  "version": 1
+}
