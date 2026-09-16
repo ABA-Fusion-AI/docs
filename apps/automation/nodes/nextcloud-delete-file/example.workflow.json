@@ -1,0 +1,136 @@
+[
+  {
+    "name": "TEST-Nextcloud - Delete File",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "fsxbrsvcldrpyzm9tx0oklmd",
+        "position": {
+          "x": 916,
+          "y": 156
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "nextcloud-delete-file",
+          "label": "Nextcloud - Delete File",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Delete a file using WebDAV DELETE",
+          "showRunningStatus": true,
+          "parameters": {
+            "connection": {
+              "baseUrl": "https://translate-giveaway-anymore.ngrok-free.dev",
+              "username": "admin",
+              "password": "TestNextcloud123!"
+            },
+            "path": "Documents/copied.txt"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "f37ruvkk5vganqwt93rpd6pq",
+        "position": {
+          "x": 622,
+          "y": 169
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        }
+      },
+      {
+        "id": "t1we58dxuszu9m9qcxr1gai5",
+        "position": {
+          "x": 1169,
+          "y": 132
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "f37ruvkk5vganqwt93rpd6pq",
+        "sourceHandle": "success",
+        "target": "fsxbrsvcldrpyzm9tx0oklmd",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__f37ruvkk5vganqwt93rpd6pqsuccess-fsxbrsvcldrpyzm9tx0oklmdinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "fsxbrsvcldrpyzm9tx0oklmd",
+        "sourceHandle": "success",
+        "target": "t1we58dxuszu9m9qcxr1gai5",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__fsxbrsvcldrpyzm9tx0oklmdsuccess-t1we58dxuszu9m9qcxr1gai5input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1789568427497,
+    "updatedAt": 1789568553407,
+    "publishedNames": []
+  }
+]

@@ -1,1 +1,94 @@
-[{"name":"Discord Bot Send example","secrets":{},"variables":{},"nodes":[{"id":"manual","type":"trigger","position":{"x":0,"y":0},"data":{"name":"manual-trigger","label":"Manual Trigger","inputs":{},"outputs":{"success":{"label":"Success"}},"parameters":{}}},{"id":"bot","type":"action","position":{"x":280,"y":0},"data":{"name":"discord-bot-send","label":"Discord Bot Send","inputs":{"input":{"label":"Input"}},"outputs":{"success":{"label":"Success"},"error":{"label":"Error"}},"parameters":{"botToken":"","channelId":"","content":"Deployment complete"}}}],"connections":[{"id":"manual-bot","type":"directed","source":"manual","sourceHandle":"success","target":"bot","targetHandle":"input"}]}]
+[
+  {
+    "name": "discord test",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "z4exvbp9sjrppngfadjwvbqw",
+        "position": {
+          "x": 723.0666850491978,
+          "y": 220.36183561558553
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "discord-bot-send",
+          "label": "Discord Bot Send Message",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Sends a message to a Discord channel through the Bot API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "botToken": "",
+            "channelId": "1549063670649331755",
+            "content": "hello"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "bnpqg9ga9rvbs4x8wv07py7p",
+        "position": {
+          "x": 558.9333149508022,
+          "y": 233.6381643844145
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger7",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "bnpqg9ga9rvbs4x8wv07py7p",
+        "sourceHandle": "success",
+        "target": "z4exvbp9sjrppngfadjwvbqw",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "l9qz8cud11jcr7yst7eeme4m",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": true
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1789463560776,
+    "updatedAt": 1789463594623,
+    "publishedNames": []
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "name": "linkedin",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "mneeousxjzfdc4nzf895fb79",
+        "position": {
+          "x": 677.5,
+          "y": 185.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "uekpwxe1fdsqgf99qfguslkb",
+        "position": {
+          "x": 836.5,
+          "y": 220.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "linkedin-job-scraper",
+          "label": "LinkedIn Job Scraper",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Scrape job postings from LinkedIn search results",
+          "showRunningStatus": true,
+          "parameters": {
+            "searchUrl": "https://www.linkedin.com/jobs/search/?keywords=software%20engineer&location=United%20States"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "mneeousxjzfdc4nzf895fb79",
+        "sourceHandle": "success",
+        "target": "uekpwxe1fdsqgf99qfguslkb",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "tlpxbc6fnzvh2mob9ga6qyhv",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1789567763780,
+    "updatedAt": 1789567777519,
+    "publishedNames": []
+  }
+]

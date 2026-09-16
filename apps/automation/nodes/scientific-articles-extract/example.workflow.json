@@ -1,0 +1,164 @@
+{
+  "name": "Scientific Articles Extract Example",
+  "variables": {},
+  "secrets": {},
+  "nodes": [
+    {
+      "id": "wie46apeeq59rkuiz9jf9zsw",
+      "position": {
+        "x": 586,
+        "y": 214
+      },
+      "type": "trigger",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Triggers the workflow manually.",
+        "showRunningStatus": false,
+        "parameters": {}
+      }
+    },
+    {
+      "id": "veany4vu7m4noujxvxkivbfp",
+      "position": {
+        "x": 722.5,
+        "y": 132
+      },
+      "type": "action",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "function",
+        "label": "Function",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Executes custom JavaScript code on the input data.",
+        "showRunningStatus": true,
+        "parameters": {
+          "code": "return {\n  results: [\n    {\n      id: \"article-001\",\n      title: \"Artificial Intelligence in Healthcare\"\n    },\n    {\n      id: \"article-002\",\n      title: \"Climate Change Research\"\n    }\n  ]\n};"
+        }
+      }
+    },
+    {
+      "id": "zqwqw9vy41yotsro9vuhoetf",
+      "position": {
+        "x": 1183.5,
+        "y": 96
+      },
+      "type": "display",
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "data": {
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "parameters": {}
+      }
+    },
+    {
+      "id": "ph5obcl0imjjdk6aktdb6pnl",
+      "position": {
+        "x": 929.5,
+        "y": 210
+      },
+      "type": "action",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "scientific-articles-extract",
+        "label": "Scientific Articles Extract",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Extract the accepted article list for batch or PDF processing.",
+        "showRunningStatus": true,
+        "parameters": {
+          "resultsField": "results",
+          "allowEmpty": false
+        }
+      }
+    }
+  ],
+  "connections": [
+    {
+      "source": "wie46apeeq59rkuiz9jf9zsw",
+      "sourceHandle": "success",
+      "target": "veany4vu7m4noujxvxkivbfp",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__wie46apeeq59rkuiz9jf9zswsuccess-veany4vu7m4noujxvxkivbfpinput",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "source": "veany4vu7m4noujxvxkivbfp",
+      "sourceHandle": "success",
+      "target": "ph5obcl0imjjdk6aktdb6pnl",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__veany4vu7m4noujxvxkivbfpsuccess-ph5obcl0imjjdk6aktdb6pnlinput",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "source": "ph5obcl0imjjdk6aktdb6pnl",
+      "sourceHandle": "success",
+      "target": "zqwqw9vy41yotsro9vuhoetf",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__ph5obcl0imjjdk6aktdb6pnlsuccess-zqwqw9vy41yotsro9vuhoetfinput",
+      "data": {
+        "isAnimated": false
+      }
+    }
+  ],
+  "tracingEnabled": true,
+  "version": 1
+}

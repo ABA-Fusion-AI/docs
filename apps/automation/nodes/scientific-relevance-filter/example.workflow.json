@@ -1,0 +1,171 @@
+{
+  "name": "Scientific Relevance Filter Example",
+  "variables": {},
+  "secrets": {},
+  "nodes": [
+    {
+      "id": "wie46apeeq59rkuiz9jf9zsw",
+      "position": {
+        "x": 586,
+        "y": 214
+      },
+      "type": "trigger",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Triggers the workflow manually.",
+        "showRunningStatus": false,
+        "parameters": {}
+      }
+    },
+    {
+      "id": "veany4vu7m4noujxvxkivbfp",
+      "position": {
+        "x": 722.5,
+        "y": 132
+      },
+      "type": "action",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "function",
+        "label": "Function",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Executes custom JavaScript code on the input data.",
+        "showRunningStatus": true,
+        "parameters": {
+          "code": "return {\n  results: [\n    {\n      id: \"article-001\",\n      title: \"Artificial Intelligence in Healthcare\",\n      abstract: \"Machine learning improves medical diagnosis.\",\n      year: 2025\n    },\n    {\n      id: \"article-002\",\n      title: \"Climate Change Research\",\n      abstract: \"Environmental impacts of global warming.\",\n      year: 2024\n    },\n    {\n      id: \"article-003\",\n      title: \"Machine Learning for Biology\",\n      abstract: \"AI methods are applied to biological research.\",\n      year: 2023\n    }\n  ]\n};"
+        }
+      }
+    },
+    {
+      "id": "cjdefy1sx7xxzjw82hfe2vue",
+      "position": {
+        "x": 878.5,
+        "y": 207
+      },
+      "type": "action",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "scientific-relevance-filter",
+        "label": "Scientific Relevance Filter",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Filter scientific results by title/abstract keywords and query-derived metadata criteria such as journal, date, citations, or author.",
+        "showRunningStatus": false,
+        "parameters": {
+          "matchMode": "any",
+          "searchFields": "titleAndAbstract",
+          "openAccess": "any",
+          "pdfAvailability": "any",
+          "abstractAvailability": "any",
+          "doiAvailability": "any",
+          "specificMatchMode": "all",
+          "includeRejected": false,
+          "keywords": "artificial intelligence, climate change"
+        }
+      }
+    },
+    {
+      "id": "zqwqw9vy41yotsro9vuhoetf",
+      "position": {
+        "x": 1047.5,
+        "y": 102
+      },
+      "type": "display",
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "data": {
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "parameters": {}
+      }
+    }
+  ],
+  "connections": [
+    {
+      "source": "veany4vu7m4noujxvxkivbfp",
+      "sourceHandle": "success",
+      "target": "cjdefy1sx7xxzjw82hfe2vue",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__veany4vu7m4noujxvxkivbfpsuccess-cjdefy1sx7xxzjw82hfe2vueinput",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "source": "wie46apeeq59rkuiz9jf9zsw",
+      "sourceHandle": "success",
+      "target": "veany4vu7m4noujxvxkivbfp",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__wie46apeeq59rkuiz9jf9zswsuccess-veany4vu7m4noujxvxkivbfpinput",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "source": "cjdefy1sx7xxzjw82hfe2vue",
+      "sourceHandle": "success",
+      "target": "zqwqw9vy41yotsro9vuhoetf",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__cjdefy1sx7xxzjw82hfe2vuesuccess-zqwqw9vy41yotsro9vuhoetfinput",
+      "data": {
+        "isAnimated": false
+      }
+    }
+  ],
+  "tracingEnabled": true,
+  "version": 1
+}

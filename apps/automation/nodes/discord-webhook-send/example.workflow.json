@@ -1,47 +1,170 @@
 [
   {
-    "name": "Discord Webhook Send example",
-    "secrets": {},
+    "name": "discordwebhook",
     "variables": {},
+    "secrets": {},
     "nodes": [
       {
-        "id": "manual",
+        "id": "b56i36a3a4yudttmo08tvkfg",
+        "position": {
+          "x": 827,
+          "y": 42
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "discord-webhook-send",
+          "label": "Discord Webhook Send",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Sends a message to a Discord channel using an incoming webhook URL.",
+          "showRunningStatus": true,
+          "parameters": {
+            "avatarPreset": "BOT",
+            "webhookUrl": "https://stg-orch-api.abafusion.ai/webhook/webhook-md1c22s0qjh20xi07z3gcnz8/test",
+            "content": "testing",
+            "username": "Fusion test #3921"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "md1c22s0qjh20xi07z3gcnz8",
+        "position": {
+          "x": 1094,
+          "y": 27
+        },
         "type": "trigger",
-        "position": { "x": 0, "y": 0 },
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "webhook",
+          "label": "Webhook Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers workflow on incoming HTTP requests",
+          "showRunningStatus": false,
+          "parameters": {
+            "method": "all",
+            "auth": {
+              "type": "none"
+            },
+            "respondType": "immediate",
+            "path": "/test"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "virk5k9k00ebzqry89sqsw50",
+        "position": {
+          "x": 1207,
+          "y": 5
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        }
+      },
+      {
+        "id": "uombvrdyphujn0jcxluim4fl",
+        "position": {
+          "x": 671,
+          "y": -14
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
         "data": {
           "name": "manual-trigger",
           "label": "Manual Trigger",
           "inputs": {},
-          "outputs": { "success": { "label": "Success" } },
-          "parameters": {}
-        }
-      },
-      {
-        "id": "webhook",
-        "type": "action",
-        "position": { "x": 280, "y": 0 },
-        "data": {
-          "name": "discord-webhook-send",
-          "label": "Discord Webhook Send",
-          "inputs": { "input": { "label": "Input" } },
-          "outputs": { "success": { "label": "Success" }, "error": { "label": "Error" } },
-          "parameters": {
-            "webhookUrl": "",
-            "content": "Workflow completed",
-            "username": "Fusion Automation"
-          }
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
         }
       }
     ],
     "connections": [
       {
-        "id": "manual-webhook",
-        "type": "directed",
-        "source": "manual",
+        "source": "md1c22s0qjh20xi07z3gcnz8",
         "sourceHandle": "success",
-        "target": "webhook",
-        "targetHandle": "input"
+        "target": "virk5k9k00ebzqry89sqsw50",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__md1c22s0qjh20xi07z3gcnz8success-virk5k9k00ebzqry89sqsw50input",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "uombvrdyphujn0jcxluim4fl",
+        "sourceHandle": "success",
+        "target": "b56i36a3a4yudttmo08tvkfg",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__uombvrdyphujn0jcxluim4flsuccess-b56i36a3a4yudttmo08tvkfginput",
+        "data": {
+          "isAnimated": false
+        }
       }
-    ]
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1789463886940,
+    "updatedAt": 1789464693349,
+    "publishedNames": [],
+    "previousStatus": "stopped"
   }
 ]

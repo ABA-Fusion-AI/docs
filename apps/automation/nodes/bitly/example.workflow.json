@@ -1,91 +1,437 @@
-{
-  "name": "Use Bitly",
-  "nodes": [
-    {
-      "id": "trigger",
-      "type": "trigger",
-      "position": {
-        "x": 80,
-        "y": 160
-      },
-      "data": {
-        "name": "manual-trigger",
-        "label": "Run",
-        "inputs": {},
-        "outputs": {
-          "success": {
-            "label": "Success"
-          },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "integration",
-      "type": "action",
-      "position": {
-        "x": 300,
-        "y": 160
-      },
-      "data": {
-        "name": "bitly",
-        "label": "Bitly",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+[
+  {
+    "name": "test",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "njz1z8ysdk2s5a3i25fni02t",
+        "position": {
+          "x": 597,
+          "y": 16
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
           },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "output",
-      "type": "display",
-      "position": {
-        "x": 520,
-        "y": 160
-      },
-      "data": {
-        "name": "log",
-        "label": "Result",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
-          }
-        }
+        "selected": false
+      },
+      {
+        "id": "eehskknh9075z03mnnsdudwd",
+        "position": {
+          "x": 600,
+          "y": 133
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "a3pge66ua66e31510f2av8vg",
+        "position": {
+          "x": 944,
+          "y": 82
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "b2odp8uk5lc7lglqc8q1gu3u",
+        "position": {
+          "x": 607,
+          "y": 252
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "gwydl2dembbfeixv0pbnxfd0",
+        "position": {
+          "x": 951,
+          "y": 201
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "hcxiu1z264no3p07ljwzxeh1",
+        "position": {
+          "x": 815,
+          "y": 20
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bitly",
+          "label": "Bitly",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Shorten URLs, track clicks and manage links with Bitly",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "shorten",
+            "accessToken": "",
+            "longUrl": "https://portal.azure.com/#home"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "ictgk053hug4ehnewox57y78",
+        "position": {
+          "x": 813,
+          "y": 131
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bitly",
+          "label": "Bitly1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Shorten URLs, track clicks and manage links with Bitly",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "expand",
+            "accessToken": "",
+            "bitlink": "bit.ly/4iuSxb8"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "svvoen8kikz5d7v0ostduj0z",
+        "position": {
+          "x": 1157,
+          "y": 80
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bitly",
+          "label": "Bitly3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Shorten URLs, track clicks and manage links with Bitly",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getBitlinks",
+            "accessToken": "",
+            "groupGuid": "Bq9faqMKj7P"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "x3nkxrd603zozvpj6dc39wu6",
+        "position": {
+          "x": 823,
+          "y": 252
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bitly",
+          "label": "Bitly2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Shorten URLs, track clicks and manage links with Bitly",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getGroups",
+            "accessToken": "",
+            "longUrl": "https://portal.azure.com/#home",
+            "bitlink": "bit.ly/4iuSxb8"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "lurt2k8gvp1y4ev0k4u9r3xu",
+        "position": {
+          "x": 1167,
+          "y": 201
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "bitly",
+          "label": "Bitly3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Shorten URLs, track clicks and manage links with Bitly",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getClicks",
+            "accessToken": "",
+            "longUrl": "https://portal.azure.com/#home",
+            "bitlink": "bit.ly/4iuSxb8"
+          },
+          "_morphing": false
+        },
+        "selected": false
       }
-    }
-  ],
-  "connections": [
-    {
-      "id": "trigger-integration",
-      "type": "directed",
-      "source": "trigger",
-      "target": "integration",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    },
-    {
-      "id": "integration-output",
-      "type": "directed",
-      "source": "integration",
-      "target": "output",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    }
-  ]
-}
+    ],
+    "connections": [
+      {
+        "source": "njz1z8ysdk2s5a3i25fni02t",
+        "sourceHandle": "success",
+        "target": "uwadanjebcir95nscv8aegk0",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__njz1z8ysdk2s5a3i25fni02tsuccess-uwadanjebcir95nscv8aegk0input",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "njz1z8ysdk2s5a3i25fni02t",
+        "sourceHandle": "success",
+        "target": "eop4w4f3iv505qed6jj8s07u",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__njz1z8ysdk2s5a3i25fni02tsuccess-eop4w4f3iv505qed6jj8s07uinput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "njz1z8ysdk2s5a3i25fni02t",
+        "sourceHandle": "success",
+        "target": "nly3bakqxon89dawth0o6zs2",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__njz1z8ysdk2s5a3i25fni02tsuccess-nly3bakqxon89dawth0o6zs2input",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "njz1z8ysdk2s5a3i25fni02t",
+        "sourceHandle": "success",
+        "target": "hcxiu1z264no3p07ljwzxeh1",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__njz1z8ysdk2s5a3i25fni02tsuccess-hcxiu1z264no3p07ljwzxeh1input",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "eehskknh9075z03mnnsdudwd",
+        "sourceHandle": "success",
+        "target": "ictgk053hug4ehnewox57y78",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "f3e8frqkhzbfb79bxd0qc5jp",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "b2odp8uk5lc7lglqc8q1gu3u",
+        "sourceHandle": "success",
+        "target": "x3nkxrd603zozvpj6dc39wu6",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "rsjivzy3198wn319ljxqh1ap",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "a3pge66ua66e31510f2av8vg",
+        "sourceHandle": "success",
+        "target": "svvoen8kikz5d7v0ostduj0z",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "txoumdjv0xdbwyxpiscuy0o6",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "gwydl2dembbfeixv0pbnxfd0",
+        "sourceHandle": "success",
+        "target": "lurt2k8gvp1y4ev0k4u9r3xu",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ifhwopdczyullg7ofndlpwiv",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1789465540898,
+    "updatedAt": 1789469350973,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]

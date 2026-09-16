@@ -1,0 +1,139 @@
+[
+  {
+    "name": "TEST Nextcloud - Copy File",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "nxg6qjd769nnuncag2wfaq9s",
+        "position": {
+          "x": 329,
+          "y": 246
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "nextcloud-copy-file",
+          "label": "Nextcloud - Copy File",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Copy a file using WebDAV COPY",
+          "showRunningStatus": true,
+          "parameters": {
+            "connection": {
+              "baseUrl": "https://YOUR-NGROK-DOMAIN.ngrok-free.app",
+              "username": "YOUR USERNAME",
+              "password": "YOUR PASSWORD"
+            },
+            "sourcePath": "Documents/test.txt",
+            "destinationPath": "Documents/test-copy.txt"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "lnzh85iwuva0imznm4h22lh1",
+        "position": {
+          "x": 169,
+          "y": 386
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "y9w5p28z63m023n5so0gnsn8",
+        "position": {
+          "x": 409,
+          "y": 362
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "lnzh85iwuva0imznm4h22lh1",
+        "sourceHandle": "success",
+        "target": "nxg6qjd769nnuncag2wfaq9s",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__lnzh85iwuva0imznm4h22lh1success-nxg6qjd769nnuncag2wfaq9sinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "nxg6qjd769nnuncag2wfaq9s",
+        "sourceHandle": "success",
+        "target": "y9w5p28z63m023n5so0gnsn8",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__nxg6qjd769nnuncag2wfaq9ssuccess-y9w5p28z63m023n5so0gnsn8input",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1789554098470,
+    "updatedAt": 1789554906433,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
