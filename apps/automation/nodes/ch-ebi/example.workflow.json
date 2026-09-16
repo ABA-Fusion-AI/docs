@@ -1,0 +1,135 @@
+[
+  {
+    "name": "test-ch-ebi",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "w0w1mcgy2qrefqautfts8x2h",
+        "position": {
+          "x": 370,
+          "y": 11
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "ch-ebi",
+          "label": "ChEBI",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "ChEBI 2.0 WebServices - Chemical Entities of Biological Interest. Access chemical compound information, structures, ontologies, and perform advanced searches.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "esSearch",
+            "term": "glucose"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "q2ou3vy369supt5wa9v0ejru",
+        "position": {
+          "x": 174,
+          "y": 56
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "o6phpff23z80xeqjyzctr7fn",
+        "position": {
+          "x": 631,
+          "y": -243
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "q2ou3vy369supt5wa9v0ejru",
+        "sourceHandle": "success",
+        "target": "w0w1mcgy2qrefqautfts8x2h",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__q2ou3vy369supt5wa9v0ejrusuccess-w0w1mcgy2qrefqautfts8x2hinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "w0w1mcgy2qrefqautfts8x2h",
+        "sourceHandle": "success",
+        "target": "o6phpff23z80xeqjyzctr7fn",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__w0w1mcgy2qrefqautfts8x2hsuccess-o6phpff23z80xeqjyzctr7fninput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1786965421778,
+    "updatedAt": 1789465556526,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
