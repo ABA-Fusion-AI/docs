@@ -1,0 +1,95 @@
+[
+  {
+    "name": "aichatllm",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "yzy3kk8xumt6ivx3j36ti47p",
+        "position": {
+          "x": 794,
+          "y": 79
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "ai-chat-lmstudio",
+          "label": "AI Chat (LM Studio)",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Locally served LM Studio models through its OpenAI-compatible API.",
+          "showRunningStatus": true,
+          "parameters": {
+            "systemMessage": "I would be happy to say hello! What is your name?",
+            "baseUrl": "https://gap-turf-context.ngrok-free.dev/v1",
+            "model": "google/functiongemma-270m",
+            "streaming": true
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "s1qvsqljsi7xenxiuk19nlrm",
+        "position": {
+          "x": 563,
+          "y": 74
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "s1qvsqljsi7xenxiuk19nlrm",
+        "sourceHandle": "success",
+        "target": "yzy3kk8xumt6ivx3j36ti47p",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__s1qvsqljsi7xenxiuk19nlrmsuccess-yzy3kk8xumt6ivx3j36ti47pinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1789571332539,
+    "updatedAt": 1789629780935,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
