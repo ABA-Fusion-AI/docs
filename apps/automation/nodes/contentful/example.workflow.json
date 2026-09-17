@@ -1,91 +1,403 @@
-{
-  "name": "Use Contentful",
-  "nodes": [
-    {
-      "id": "trigger",
-      "type": "trigger",
-      "position": {
-        "x": 80,
-        "y": 160
-      },
-      "data": {
-        "name": "manual-trigger",
-        "label": "Run",
-        "inputs": {},
-        "outputs": {
-          "success": {
-            "label": "Success"
-          },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "integration",
-      "type": "action",
-      "position": {
-        "x": 300,
-        "y": 160
-      },
-      "data": {
-        "name": "contentful",
-        "label": "Contentful",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+[
+  {
+    "name": "contentful",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "eql9n3ws4rf41bifkk74ue51",
+        "position": {
+          "x": 874,
+          "y": 76
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "contentful",
+          "label": "Contentful",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
           },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "output",
-      "type": "display",
-      "position": {
-        "x": 520,
-        "y": 160
-      },
-      "data": {
-        "name": "log",
-        "label": "Result",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Content management with Contentful",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getEntries",
+            "accessToken": "",
+            "spaceId": "hjyi7vbrrei6"
+          },
+          "_morphing": false
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
-          }
-        }
+        "selected": false
+      },
+      {
+        "id": "fnpqp1gxqvldr75su2z5sxo6",
+        "position": {
+          "x": 1246,
+          "y": 103
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "contentful",
+          "label": "Contentful2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Content management with Contentful",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getContentTypes",
+            "accessToken": "",
+            "spaceId": "hjyi7vbrrei6",
+            "entryId": "25Jz59SEpHzVS6QcJEkypY"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "tdczg0pzcbjuwmsi82ziddk6",
+        "position": {
+          "x": 1052,
+          "y": -40
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "contentful",
+          "label": "Contentful3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Content management with Contentful",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getSpaces",
+            "accessToken": "",
+            "spaceId": "hjyi7vbrrei6",
+            "entryId": "25Jz59SEpHzVS6QcJEkypY"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "yieczfkmcvvlwdk2pkkyvw2y",
+        "position": {
+          "x": 875,
+          "y": 224
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "contentful",
+          "label": "Contentful1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Content management with Contentful",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getEntry",
+            "accessToken": "",
+            "spaceId": "hjyi7vbrrei6",
+            "entryId": "25Jz59SEpHzVS6QcJEkypY"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ed1scjc3tdb2foc43mtz5dc9",
+        "position": {
+          "x": 1247,
+          "y": 251
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "contentful",
+          "label": "Contentful2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Content management with Contentful",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getAssets",
+            "accessToken": "",
+            "spaceId": "hjyi7vbrrei6",
+            "entryId": "25Jz59SEpHzVS6QcJEkypY"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "lhcq4ohngkuirjt6v4wldh5x",
+        "position": {
+          "x": 629,
+          "y": 44
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "wc0qpdwleq6kc2ylalcdvpvg",
+        "position": {
+          "x": 1001,
+          "y": 71
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "j79zz3boiur3hhht6ywf4r9r",
+        "position": {
+          "x": 807,
+          "y": -72
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "moug5vx5u5hd73976sf0kh2e",
+        "position": {
+          "x": 630,
+          "y": 192
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "yaca659xqh26qy3we3jrpoot",
+        "position": {
+          "x": 1002,
+          "y": 219
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
       }
-    }
-  ],
-  "connections": [
-    {
-      "id": "trigger-integration",
-      "type": "directed",
-      "source": "trigger",
-      "target": "integration",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    },
-    {
-      "id": "integration-output",
-      "type": "directed",
-      "source": "integration",
-      "target": "output",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    }
-  ]
-}
+    ],
+    "connections": [
+      {
+        "source": "lhcq4ohngkuirjt6v4wldh5x",
+        "sourceHandle": "success",
+        "target": "eql9n3ws4rf41bifkk74ue51",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__lhcq4ohngkuirjt6v4wldh5xsuccess-eql9n3ws4rf41bifkk74ue51input",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "moug5vx5u5hd73976sf0kh2e",
+        "sourceHandle": "success",
+        "target": "yieczfkmcvvlwdk2pkkyvw2y",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "owb99iww6pqcf65ut9cye6uc",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "wc0qpdwleq6kc2ylalcdvpvg",
+        "sourceHandle": "success",
+        "target": "fnpqp1gxqvldr75su2z5sxo6",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "gqpcf5hzl173ddqgt1t46rdw",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "yaca659xqh26qy3we3jrpoot",
+        "sourceHandle": "success",
+        "target": "ed1scjc3tdb2foc43mtz5dc9",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ikxawor82x68bm6a5rlneov8",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "j79zz3boiur3hhht6ywf4r9r",
+        "sourceHandle": "success",
+        "target": "tdczg0pzcbjuwmsi82ziddk6",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "j3zmaxxt0wxb5rq5fo6r1gz5",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1789630208187,
+    "updatedAt": 1789631140969,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
