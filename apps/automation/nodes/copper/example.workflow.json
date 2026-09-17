@@ -1,91 +1,1063 @@
-{
-  "name": "Use Copper CRM",
-  "nodes": [
-    {
-      "id": "trigger",
-      "type": "trigger",
-      "position": {
-        "x": 80,
-        "y": 160
-      },
-      "data": {
-        "name": "manual-trigger",
-        "label": "Run",
-        "inputs": {},
-        "outputs": {
-          "success": {
-            "label": "Success"
-          },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "integration",
-      "type": "action",
-      "position": {
-        "x": 300,
-        "y": 160
-      },
-      "data": {
-        "name": "copper",
-        "label": "Copper CRM",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+[
+  {
+    "name": "copper",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "um4ngyk13cv5yz41zv1mzthz",
+        "position": {
+          "x": 741,
+          "y": 125
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "copper",
+          "label": "Copper CRM",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
           },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "output",
-      "type": "display",
-      "position": {
-        "x": 520,
-        "y": 160
-      },
-      "data": {
-        "name": "log",
-        "label": "Result",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage people, companies, opportunities, and activities in Copper CRM.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "createCompany",
+            "apiKey": "",
+            "userEmail": "karamyassine1210@gmail.com",
+            "personId": "185360939",
+            "companyId": "77558080",
+            "opportunityId": "39181145",
+            "contactId": "185360939",
+            "pipelineId": "1159702",
+            "stageId": "5211920",
+            "name": "Fusion Copper Test",
+            "email": "fusion.copper.test@example.com",
+            "phoneNumber": "+15555550123",
+            "website": "https://example.com",
+            "value": 100
+          },
+          "_morphing": false
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
-          }
-        }
+        "selected": false
+      },
+      {
+        "id": "mhirolatngd8sltkufa5n4t6",
+        "position": {
+          "x": 1444.773827572053,
+          "y": 166.16127899642717
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "copper",
+          "label": "Copper CRM4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage people, companies, opportunities, and activities in Copper CRM.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "listCompanies",
+            "apiKey": "",
+            "userEmail": "karamyassine1210@gmail.com",
+            "personId": "185360939",
+            "companyId": "77558080",
+            "opportunityId": "39181145",
+            "contactId": "185360939",
+            "pipelineId": "1159702",
+            "stageId": "5211920",
+            "name": "Fusion Copper Test",
+            "email": "fusion.copper.test@example.com",
+            "phoneNumber": "+15555550123",
+            "website": "https://example.com",
+            "value": 100
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ub9vual12aehe7mj6vji3pv8",
+        "position": {
+          "x": 739,
+          "y": -21
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "copper",
+          "label": "Copper CRM2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage people, companies, opportunities, and activities in Copper CRM.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "listPeople",
+            "apiKey": "",
+            "userEmail": "karamyassine1210@gmail.com",
+            "personId": "185360939",
+            "companyId": "77558080",
+            "opportunityId": "39181145",
+            "contactId": "185360939",
+            "pipelineId": "1159702",
+            "stageId": "5211920",
+            "name": "Fusion Copper Test",
+            "email": "fusion.copper.test@example.com",
+            "phoneNumber": "+15555550123",
+            "website": "https://example.com",
+            "value": 100
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "xm9hwft8mllrrx42zvqnabdy",
+        "position": {
+          "x": 1442.773827572053,
+          "y": 20.16127899642717
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "copper",
+          "label": "Copper CRM4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage people, companies, opportunities, and activities in Copper CRM.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "createPerson",
+            "apiKey": "",
+            "userEmail": "karamyassine1210@gmail.com",
+            "personId": "185360939",
+            "companyId": "77558080",
+            "opportunityId": "39181145",
+            "contactId": "185360939",
+            "pipelineId": "1159702",
+            "stageId": "5211920",
+            "name": "Fusion Copper Test",
+            "email": "fusion.copper.test@example.com",
+            "phoneNumber": "+15555550123",
+            "website": "https://example.com",
+            "value": 100
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "pmufqwpfdvlqa64lxp4q89x5",
+        "position": {
+          "x": 741,
+          "y": 275
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "copper",
+          "label": "Copper CRM3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage people, companies, opportunities, and activities in Copper CRM.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "listActivities",
+            "apiKey": "",
+            "userEmail": "karamyassine1210@gmail.com",
+            "personId": "185360939",
+            "companyId": "77558080",
+            "opportunityId": "39181145",
+            "contactId": "185360939",
+            "pipelineId": "1159702",
+            "stageId": "5211920",
+            "name": "Fusion Copper Test",
+            "email": "fusion.copper.test@example.com",
+            "phoneNumber": "+15555550123",
+            "website": "https://example.com",
+            "value": 100
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "hob332xvoi7i3ia49habyk4x",
+        "position": {
+          "x": 1444.773827572053,
+          "y": 316.1612789964272
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "copper",
+          "label": "Copper CRM4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage people, companies, opportunities, and activities in Copper CRM.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getOpportunity",
+            "apiKey": "",
+            "userEmail": "karamyassine1210@gmail.com",
+            "personId": "185360939",
+            "companyId": "77558080",
+            "opportunityId": "39181145",
+            "contactId": "185360939",
+            "pipelineId": "1159702",
+            "stageId": "5211920",
+            "name": "Fusion Copper Test",
+            "email": "fusion.copper.test@example.com",
+            "phoneNumber": "+15555550123",
+            "website": "https://example.com",
+            "value": 100
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "q20vq60n12eb4vfncfjqlgad",
+        "position": {
+          "x": 1084,
+          "y": 131
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "copper",
+          "label": "Copper CRM1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage people, companies, opportunities, and activities in Copper CRM.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getCompany",
+            "apiKey": "",
+            "userEmail": "karamyassine1210@gmail.com",
+            "personId": "185360939",
+            "companyId": "77558080",
+            "opportunityId": "39181145",
+            "contactId": "185360939",
+            "pipelineId": "1159702",
+            "stageId": "5211920",
+            "name": "Fusion Copper Test",
+            "email": "fusion.copper.test@example.com",
+            "phoneNumber": "+15555550123",
+            "website": "https://example.com",
+            "value": 100
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "kc1xg0qg02u5yfw75om781bw",
+        "position": {
+          "x": 1787.773827572053,
+          "y": 172.16127899642717
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "copper",
+          "label": "Copper CRM4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage people, companies, opportunities, and activities in Copper CRM.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "deletePerson",
+            "apiKey": "",
+            "userEmail": "karamyassine1210@gmail.com",
+            "personId": "185360939",
+            "companyId": "77558080",
+            "opportunityId": "39181145",
+            "contactId": "185360939",
+            "pipelineId": "1159702",
+            "stageId": "5211920",
+            "name": "Fusion Copper Test",
+            "email": "fusion.copper.test@example.com",
+            "phoneNumber": "+15555550123",
+            "website": "https://example.com",
+            "value": 100
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "d6zvqnkwh4i3k9m6t8t01hmz",
+        "position": {
+          "x": 1082,
+          "y": -15
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "copper",
+          "label": "Copper CRM2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage people, companies, opportunities, and activities in Copper CRM.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getPerson",
+            "apiKey": "",
+            "userEmail": "karamyassine1210@gmail.com",
+            "personId": "185360939",
+            "companyId": "77558080",
+            "opportunityId": "39181145",
+            "contactId": "185360939",
+            "pipelineId": "1159702",
+            "stageId": "5211920",
+            "name": "Fusion Copper Test",
+            "email": "fusion.copper.test@example.com",
+            "phoneNumber": "+15555550123",
+            "website": "https://example.com",
+            "value": 100
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "n0b601zmioyn6e0bfx1eadh6",
+        "position": {
+          "x": 1785.773827572053,
+          "y": 26.16127899642717
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "copper",
+          "label": "Copper CRM4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage people, companies, opportunities, and activities in Copper CRM.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "updatePerson",
+            "apiKey": "",
+            "userEmail": "karamyassine1210@gmail.com",
+            "personId": "185360939",
+            "companyId": "77558080",
+            "opportunityId": "39181145",
+            "contactId": "185360939",
+            "pipelineId": "1159702",
+            "stageId": "5211920",
+            "name": "Fusion Copper Test",
+            "email": "fusion.cooopper.test@example.com",
+            "phoneNumber": "+15555550123",
+            "website": "https://example.com",
+            "value": 100
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "kiv4sxn0c1je0fahq15xeqsi",
+        "position": {
+          "x": 1084,
+          "y": 281
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "copper",
+          "label": "Copper CRM3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage people, companies, opportunities, and activities in Copper CRM.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "listOpportunities",
+            "apiKey": "",
+            "userEmail": "karamyassine1210@gmail.com",
+            "personId": "185360939",
+            "companyId": "77558080",
+            "opportunityId": "39181145",
+            "contactId": "185360939",
+            "pipelineId": "1159702",
+            "stageId": "5211920",
+            "name": "Fusion Copper Test",
+            "email": "fusion.copper.test@example.com",
+            "phoneNumber": "+15555550123",
+            "website": "https://example.com",
+            "value": 100
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "a4uwe6f3p0qocdkddc3sgvg9",
+        "position": {
+          "x": 1787.773827572053,
+          "y": 322.1612789964272
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "copper",
+          "label": "Copper CRM4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage people, companies, opportunities, and activities in Copper CRM.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "createOpportunity",
+            "apiKey": "",
+            "userEmail": "karamyassine1210@gmail.com",
+            "personId": "185360939",
+            "companyId": "77558080",
+            "opportunityId": "39181145",
+            "contactId": "185360939",
+            "pipelineId": "1159702",
+            "stageId": "5211920",
+            "name": "Fusion Copper Test",
+            "email": "fusion.copper.test@example.com",
+            "phoneNumber": "+15555550123",
+            "website": "https://example.com",
+            "value": 100
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "uabhdb0alndwc8kkj03hfngi",
+        "position": {
+          "x": 515,
+          "y": 73
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "bn5bqec57dai6ay1exehtxvh",
+        "position": {
+          "x": 1218.773827572053,
+          "y": 114.16127899642717
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "vkoppt0l66mg47qm0kh4pndh",
+        "position": {
+          "x": 513,
+          "y": -73
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "wuhn4pmildqkdspwnpvuikri",
+        "position": {
+          "x": 1216.773827572053,
+          "y": -31.838721003572857
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "oq6xofk9mkh9utpq8r2no3do",
+        "position": {
+          "x": 515,
+          "y": 223
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "i7j6yaq2tm31d3vs0jobr6ia",
+        "position": {
+          "x": 1218.773827572053,
+          "y": 264.1612789964272
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "pivj6y3hoclid6loyrivb7oo",
+        "position": {
+          "x": 858,
+          "y": 79
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "s9j1toux1uglvscnwal0dva0",
+        "position": {
+          "x": 1561.773827572053,
+          "y": 120.16127899642717
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ahvwph25sr6mz2cl8w9wtrk4",
+        "position": {
+          "x": 856,
+          "y": -67
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "rhxux888hp5ehr7g5atiahw6",
+        "position": {
+          "x": 1559.773827572053,
+          "y": -25.838721003572857
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "thsagja84f9ogvnnafcnm0uc",
+        "position": {
+          "x": 858,
+          "y": 229
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "eo3o2uqt1rr3rfkqztw6ppzo",
+        "position": {
+          "x": 1561.773827572053,
+          "y": 270.1612789964272
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
       }
-    }
-  ],
-  "connections": [
-    {
-      "id": "trigger-integration",
-      "type": "directed",
-      "source": "trigger",
-      "target": "integration",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    },
-    {
-      "id": "integration-output",
-      "type": "directed",
-      "source": "integration",
-      "target": "output",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    }
-  ]
-}
+    ],
+    "connections": [
+      {
+        "source": "uabhdb0alndwc8kkj03hfngi",
+        "sourceHandle": "success",
+        "target": "um4ngyk13cv5yz41zv1mzthz",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__uabhdb0alndwc8kkj03hfngisuccess-um4ngyk13cv5yz41zv1mzthzinput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "pivj6y3hoclid6loyrivb7oo",
+        "sourceHandle": "success",
+        "target": "q20vq60n12eb4vfncfjqlgad",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ry4j8c9exrxl30335phe9kqe",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "vkoppt0l66mg47qm0kh4pndh",
+        "sourceHandle": "success",
+        "target": "ub9vual12aehe7mj6vji3pv8",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "a621qt514h2rnvc0k0uirej8",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "ahvwph25sr6mz2cl8w9wtrk4",
+        "sourceHandle": "success",
+        "target": "d6zvqnkwh4i3k9m6t8t01hmz",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "lf2bzdwcmq3c5dfbghuve14s",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "oq6xofk9mkh9utpq8r2no3do",
+        "sourceHandle": "success",
+        "target": "pmufqwpfdvlqa64lxp4q89x5",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "n9o1ygdcwe9nvt9kh83e34z1",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "thsagja84f9ogvnnafcnm0uc",
+        "sourceHandle": "success",
+        "target": "kiv4sxn0c1je0fahq15xeqsi",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "uqsdcbzdm4t734fx32aod7m0",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "bn5bqec57dai6ay1exehtxvh",
+        "sourceHandle": "success",
+        "target": "mhirolatngd8sltkufa5n4t6",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "x36inrilz22hhgrmx133o83c",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "s9j1toux1uglvscnwal0dva0",
+        "sourceHandle": "success",
+        "target": "kc1xg0qg02u5yfw75om781bw",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "kwkfadt6e4frqy9kv7t662kv",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "wuhn4pmildqkdspwnpvuikri",
+        "sourceHandle": "success",
+        "target": "xm9hwft8mllrrx42zvqnabdy",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "v75lyssdubep35hkee1tkw8j",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "rhxux888hp5ehr7g5atiahw6",
+        "sourceHandle": "success",
+        "target": "n0b601zmioyn6e0bfx1eadh6",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "vq2tw3gga7aqxw3nv4d6x5k1",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "i7j6yaq2tm31d3vs0jobr6ia",
+        "sourceHandle": "success",
+        "target": "hob332xvoi7i3ia49habyk4x",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "spxhupfyyb6xq45pj4ppawkx",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "eo3o2uqt1rr3rfkqztw6ppzo",
+        "sourceHandle": "success",
+        "target": "a4uwe6f3p0qocdkddc3sgvg9",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "sjg60tldmwzo7zq2h857ezk2",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1789631785577,
+    "updatedAt": 1789657431139,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
