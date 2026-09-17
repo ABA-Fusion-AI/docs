@@ -1,0 +1,260 @@
+[
+  {
+    "name": "test-Nextcloud - Download File",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "bany7qjgedrz6ca868lvkofj",
+        "position": {
+          "x": 513,
+          "y": 135.5
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "nextcloud-download-file",
+          "label": "Nextcloud - Download File",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Download a file from Nextcloud via WebDAV GET",
+          "showRunningStatus": true,
+          "parameters": {
+            "connection": {
+              "baseUrl": "your-nextcloud-url",
+              "username": "your-username",
+              "password": "your-password"
+            },
+            "path": "Documents/test.txt"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "xcm3hmhb2uqxxrvjg38tsp98",
+        "position": {
+          "x": 355,
+          "y": 198
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ceg4gfewtms02ik301yhnpev",
+        "position": {
+          "x": 613,
+          "y": 203
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "furv8vttdwq2xlpp651445ix",
+        "position": {
+          "x": 482.3333333333333,
+          "y": 861.6666666666666
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "nextcloud-download-file",
+          "label": "Nextcloud - Download File1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Download a file from Nextcloud via WebDAV GET",
+          "showRunningStatus": true,
+          "parameters": {
+            "connection": {
+              "baseUrl": "https://translate-giveaway-anymore.ngrok-free.dev",
+              "username": "admin",
+              "password": "TestNextcloud123!"
+            },
+            "path": "Documents/test.txt",
+            "asBase64": true
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "v8b871nd24v19xwlcmuc05io",
+        "position": {
+          "x": 336.3333333333333,
+          "y": 936.1666666666666
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "x64h1ep96bslmenisuhmbzpn",
+        "position": {
+          "x": 606.3333333333333,
+          "y": 953.1666666666666
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "xcm3hmhb2uqxxrvjg38tsp98",
+        "sourceHandle": "success",
+        "target": "bany7qjgedrz6ca868lvkofj",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__xcm3hmhb2uqxxrvjg38tsp98success-bany7qjgedrz6ca868lvkofjinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "bany7qjgedrz6ca868lvkofj",
+        "sourceHandle": "success",
+        "target": "ceg4gfewtms02ik301yhnpev",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__bany7qjgedrz6ca868lvkofjsuccess-ceg4gfewtms02ik301yhnpevinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "v8b871nd24v19xwlcmuc05io",
+        "sourceHandle": "success",
+        "target": "furv8vttdwq2xlpp651445ix",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "w449emjay2tlrfzr6eva3cpk",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "furv8vttdwq2xlpp651445ix",
+        "sourceHandle": "success",
+        "target": "x64h1ep96bslmenisuhmbzpn",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ydujczq3i0jdx313bgz05hqq",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1789656396750,
+    "updatedAt": 1789656474161,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
