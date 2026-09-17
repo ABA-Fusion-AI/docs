@@ -1,0 +1,138 @@
+[
+  {
+    "name": "TEST-Nextcloud - Delete User",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "bn2v10c5lhuzz4y06xbyvjjp",
+        "position": {
+          "x": 638,
+          "y": 146
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "nextcloud-delete-user",
+          "label": "Nextcloud - Delete User",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Delete a user via Nextcloud OCS Users API",
+          "showRunningStatus": true,
+          "parameters": {
+            "connection": {
+              "baseUrl": "your-nextcloud-url",
+              "username": "your-username",
+              "password": "your-password"
+            },
+            "userId": "1"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "aw1s8ixyes7xiaihkbw4ddju",
+        "position": {
+          "x": 377,
+          "y": 151.5
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "hkiywkcmzykv8nk87j9leenx",
+        "position": {
+          "x": 890,
+          "y": 143.5
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "aw1s8ixyes7xiaihkbw4ddju",
+        "sourceHandle": "success",
+        "target": "bn2v10c5lhuzz4y06xbyvjjp",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__aw1s8ixyes7xiaihkbw4ddjusuccess-bn2v10c5lhuzz4y06xbyvjjpinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "bn2v10c5lhuzz4y06xbyvjjp",
+        "sourceHandle": "success",
+        "target": "hkiywkcmzykv8nk87j9leenx",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__bn2v10c5lhuzz4y06xbyvjjpsuccess-hkiywkcmzykv8nk87j9leenxinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1789655873629,
+    "updatedAt": 1789655954984,
+    "publishedNames": []
+  }
+]
