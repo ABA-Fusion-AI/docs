@@ -131,9 +131,9 @@
           "showRunningStatus": true,
           "parameters": {
             "connection": {
-              "baseUrl": "https://translate-giveaway-anymore.ngrok-free.dev",
-              "username": "admin",
-              "password": "TestNextcloud123!"
+              "baseUrl": "your-nextcloud-url",
+              "username": "your-username",
+              "password": "your-password"
             },
             "path": "Documents/test.txt",
             "asBase64": true
