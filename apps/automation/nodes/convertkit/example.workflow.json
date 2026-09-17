@@ -1,91 +1,954 @@
-{
-  "name": "Use ConvertKit",
-  "nodes": [
-    {
-      "id": "trigger",
-      "type": "trigger",
-      "position": {
-        "x": 80,
-        "y": 160
-      },
-      "data": {
-        "name": "manual-trigger",
-        "label": "Run",
-        "inputs": {},
-        "outputs": {
-          "success": {
-            "label": "Success"
-          },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "integration",
-      "type": "action",
-      "position": {
-        "x": 300,
-        "y": 160
-      },
-      "data": {
-        "name": "convertkit",
-        "label": "ConvertKit",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+[
+  {
+    "name": "convertkill",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "svywmg9aeuirszxgyef241wp",
+        "position": {
+          "x": 761,
+          "y": 130
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "convertkit",
+          "label": "ConvertKit",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
           },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "output",
-      "type": "display",
-      "position": {
-        "x": 520,
-        "y": 160
-      },
-      "data": {
-        "name": "log",
-        "label": "Result",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage subscribers, forms, sequences, and broadcasts in ConvertKit.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "createSubscriber",
+            "apiKey": "",
+            "apiSecret": "",
+            "email": "kaeamyassine43@gmail.com",
+            "firstName": "testingtestingfusion",
+            "formId": "9928949"
+          },
+          "_morphing": false
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
-          }
-        }
+        "selected": false
+      },
+      {
+        "id": "h6rjhmw3xitt4fezsolf8wj0",
+        "position": {
+          "x": 746,
+          "y": 353.25
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "convertkit",
+          "label": "ConvertKit3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage subscribers, forms, sequences, and broadcasts in ConvertKit.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "listSequences",
+            "apiKey": "",
+            "apiSecret": "",
+            "email": "kaeamyassine43@gmail.com"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "h6m2qc4a55slnp2pqsbr8hmg",
+        "position": {
+          "x": 746.0267112175743,
+          "y": 590.4595155088805
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "convertkit",
+          "label": "ConvertKit4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage subscribers, forms, sequences, and broadcasts in ConvertKit.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "tagSubscriber",
+            "apiKey": "",
+            "apiSecret": "",
+            "email": "kaeamyassine43@gmail.com",
+            "subscriberId": "4299072912",
+            "tagId": "23510978"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "am1ay0o4mwoa12o74h6ahm7z",
+        "position": {
+          "x": 755,
+          "y": 24
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "convertkit",
+          "label": "ConvertKit2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage subscribers, forms, sequences, and broadcasts in ConvertKit.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "listSubscribers",
+            "apiKey": "",
+            "apiSecret": "",
+            "email": "kaeamyassine43@gmail.com"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "t4cbnmd6qr4sg4zb7ow81a0g",
+        "position": {
+          "x": 740,
+          "y": 247.25
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "convertkit",
+          "label": "ConvertKit3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage subscribers, forms, sequences, and broadcasts in ConvertKit.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "unsubscribe",
+            "apiKey": "",
+            "apiSecret": "",
+            "email": "kaeamyassine43@gmail.com",
+            "subscriberId": "4299072912"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "f5585kjhz2d7u6035ijr77mz",
+        "position": {
+          "x": 740.0267112175743,
+          "y": 484.45951550888043
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "convertkit",
+          "label": "ConvertKit4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage subscribers, forms, sequences, and broadcasts in ConvertKit.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "addSubscriberToSequence",
+            "apiKey": "",
+            "apiSecret": "",
+            "email": "kaeamyassine43@gmail.com",
+            "formId": "9928949",
+            "sequenceId": "2896685"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "lkrmbpwqhnr8r9ymxozfzmsn",
+        "position": {
+          "x": 1123,
+          "y": 134
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "convertkit",
+          "label": "ConvertKit1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage subscribers, forms, sequences, and broadcasts in ConvertKit.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "updateSubscriber",
+            "apiKey": "",
+            "apiSecret": "",
+            "email": "kaeamyassine43@gmail.com",
+            "firstName": "testingtestingfusion2",
+            "subscriberId": "4299072912"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "g55gl01fsrae9eycolo4nskq",
+        "position": {
+          "x": 1108,
+          "y": 357.25
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "convertkit",
+          "label": "ConvertKit3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage subscribers, forms, sequences, and broadcasts in ConvertKit.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "addSubscriberToForm",
+            "apiKey": "",
+            "apiSecret": "",
+            "email": "kaeamyassine43@gmail.com",
+            "subscriberId": "4299072912",
+            "formId": "9928949"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ixguwdxz006221kq1uarrc91",
+        "position": {
+          "x": 1108.0267112175743,
+          "y": 594.4595155088805
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "convertkit",
+          "label": "ConvertKit4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage subscribers, forms, sequences, and broadcasts in ConvertKit.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "listBroadcasts",
+            "apiKey": "",
+            "apiSecret": "",
+            "email": "kaeamyassine43@gmail.com"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "tl11nk079louox0dsm71lpj9",
+        "position": {
+          "x": 1117,
+          "y": 28
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "convertkit",
+          "label": "ConvertKit2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage subscribers, forms, sequences, and broadcasts in ConvertKit.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "getSubscriber",
+            "apiKey": "",
+            "apiSecret": "",
+            "subscriberId": "4299072912"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ugkgofndwfqdrnk4iu79udrl",
+        "position": {
+          "x": 1102,
+          "y": 251.25
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "convertkit",
+          "label": "ConvertKit3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage subscribers, forms, sequences, and broadcasts in ConvertKit.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "listForms",
+            "apiKey": "",
+            "apiSecret": "",
+            "email": "kaeamyassine43@gmail.com"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "lomp4brmaeuvrw72fxeiwj6b",
+        "position": {
+          "x": 1102.0267112175743,
+          "y": 488.45951550888043
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "convertkit",
+          "label": "ConvertKit4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Manage subscribers, forms, sequences, and broadcasts in ConvertKit.",
+          "showRunningStatus": true,
+          "parameters": {
+            "operation": "listTags",
+            "apiKey": "",
+            "apiSecret": "",
+            "email": "kaeamyassine43@gmail.com"
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "y029qgnctlgh86cw9gll68tl",
+        "position": {
+          "x": 519,
+          "y": 135
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "mcyz4cw19p8gq8vse59c24ps",
+        "position": {
+          "x": 504,
+          "y": 358.25
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ncjk2jufsz9qk4979jlmk6md",
+        "position": {
+          "x": 504.0267112175743,
+          "y": 595.4595155088805
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "m6967hs5yb409yfuzstay721",
+        "position": {
+          "x": 513,
+          "y": 29
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "jj37o92rvc0wocs414ktnfsa",
+        "position": {
+          "x": 498,
+          "y": 252.25
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "fr6rrsc4ndck52t4yx4hlghk",
+        "position": {
+          "x": 498.0267112175743,
+          "y": 489.45951550888043
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ufjmuy6rwngjmh2bsitppu3r",
+        "position": {
+          "x": 881,
+          "y": 139
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "xr89pf4lt6zckiyhbiw9xpyz",
+        "position": {
+          "x": 866,
+          "y": 362.25
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "pzh54tt3167tsarqbwhjvfor",
+        "position": {
+          "x": 866.0267112175743,
+          "y": 599.4595155088805
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "kkx6tc50sdwjklyib6fqm9hc",
+        "position": {
+          "x": 875,
+          "y": 33
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "fmt924ej3nbhzzdutqyo07ed",
+        "position": {
+          "x": 860,
+          "y": 256.25
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ztxk1154r330fzh65yte8l9i",
+        "position": {
+          "x": 860.0267112175743,
+          "y": 493.45951550888043
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
       }
-    }
-  ],
-  "connections": [
-    {
-      "id": "trigger-integration",
-      "type": "directed",
-      "source": "trigger",
-      "target": "integration",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    },
-    {
-      "id": "integration-output",
-      "type": "directed",
-      "source": "integration",
-      "target": "output",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    }
-  ]
-}
+    ],
+    "connections": [
+      {
+        "source": "y029qgnctlgh86cw9gll68tl",
+        "sourceHandle": "success",
+        "target": "svywmg9aeuirszxgyef241wp",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__y029qgnctlgh86cw9gll68tlsuccess-svywmg9aeuirszxgyef241wpinput",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "ufjmuy6rwngjmh2bsitppu3r",
+        "sourceHandle": "success",
+        "target": "lkrmbpwqhnr8r9ymxozfzmsn",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "aazsr5sey8bfzbpj7nttb0u4",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "m6967hs5yb409yfuzstay721",
+        "sourceHandle": "success",
+        "target": "am1ay0o4mwoa12o74h6ahm7z",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "ftknj2l7puhnmqoanqj7j40e",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "kkx6tc50sdwjklyib6fqm9hc",
+        "sourceHandle": "success",
+        "target": "tl11nk079louox0dsm71lpj9",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "htc5wuwl99erwro2huz1qxg0",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "mcyz4cw19p8gq8vse59c24ps",
+        "sourceHandle": "success",
+        "target": "h6rjhmw3xitt4fezsolf8wj0",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "puqjutv2qy4gtggtflucl4rr",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "xr89pf4lt6zckiyhbiw9xpyz",
+        "sourceHandle": "success",
+        "target": "g55gl01fsrae9eycolo4nskq",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "b9vhj07p9now6oh8z26asxdh",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "jj37o92rvc0wocs414ktnfsa",
+        "sourceHandle": "success",
+        "target": "t4cbnmd6qr4sg4zb7ow81a0g",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "w73hif6c7gp74o86uxpu5lql",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "fmt924ej3nbhzzdutqyo07ed",
+        "sourceHandle": "success",
+        "target": "ugkgofndwfqdrnk4iu79udrl",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "wvm18c8u38o10sqlyhk1svnj",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "ncjk2jufsz9qk4979jlmk6md",
+        "sourceHandle": "success",
+        "target": "h6m2qc4a55slnp2pqsbr8hmg",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "djfxighzg6efmdcste7eytd4",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "pzh54tt3167tsarqbwhjvfor",
+        "sourceHandle": "success",
+        "target": "ixguwdxz006221kq1uarrc91",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "atu83m27ztuwovr1n6ksjuid",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "fr6rrsc4ndck52t4yx4hlghk",
+        "sourceHandle": "success",
+        "target": "f5585kjhz2d7u6035ijr77mz",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "cyk3gn9j9ppfr52orq1ziipe",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      },
+      {
+        "source": "ztxk1154r330fzh65yte8l9i",
+        "sourceHandle": "success",
+        "target": "lomp4brmaeuvrw72fxeiwj6b",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "a1cbbcbon6slva7bwv6ezmjb",
+        "data": {
+          "isAnimated": false
+        },
+        "selected": false
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1789631147937,
+    "updatedAt": 1789640458196,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
