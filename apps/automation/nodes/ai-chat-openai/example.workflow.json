@@ -1,0 +1,92 @@
+[
+  {
+    "name": "aichatopenai",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "i89ndn0kkg4kfkdujda38vtu",
+        "position": {
+          "x": 842,
+          "y": 225
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "ai-chat-openai",
+          "label": "AI Chat (OpenAI)",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "OpenAI chat models.",
+          "showRunningStatus": true,
+          "parameters": {
+            "systemMessage": "I would be happy to say hello! What is your name?"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "jmjcl8swm33q3rlm5auptz0q",
+        "position": {
+          "x": 632,
+          "y": 180
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "jmjcl8swm33q3rlm5auptz0q",
+        "sourceHandle": "success",
+        "target": "i89ndn0kkg4kfkdujda38vtu",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__jmjcl8swm33q3rlm5auptz0qsuccess-i89ndn0kkg4kfkdujda38vtuinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1789737254866,
+    "updatedAt": 1789737346928,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
