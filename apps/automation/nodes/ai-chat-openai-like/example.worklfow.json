@@ -1,0 +1,93 @@
+[
+  {
+    "name": "aiopenchatlike",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "m6qeadv2u1flb3y3dfln7nhh",
+        "position": {
+          "x": 761,
+          "y": 99
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "ai-chat-openai-like",
+          "label": "AI Chat (OpenAI-compatible)",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Any OpenAI-compatible chat-completions endpoint.",
+          "showRunningStatus": true,
+          "parameters": {
+            "apiKey": "sk...pqFyedS4A",
+            "systemMessage": "I would be happy to say hello! What is your name?"
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "hvttwfbkmoy3ykftnerpye4a",
+        "position": {
+          "x": 556,
+          "y": 81
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "hvttwfbkmoy3ykftnerpye4a",
+        "sourceHandle": "success",
+        "target": "m6qeadv2u1flb3y3dfln7nhh",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__hvttwfbkmoy3ykftnerpye4asuccess-m6qeadv2u1flb3y3dfln7nhhinput",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "version": 1,
+    "createdAt": 1789629799066,
+    "updatedAt": 1789731192343,
+    "publishedNames": [],
+    "previousStatus": "stopped"
+  }
+]
