@@ -1,0 +1,268 @@
+[
+  {
+    "name": "TEST-Nextcloud - Move File",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "eitgm7y2vxmd0nr2p8zqfpdy",
+        "position": {
+          "x": 284,
+          "y": 18
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "nextcloud-move-file",
+          "label": "Nextcloud - Move File",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Move or rename a file using WebDAV MOVE",
+          "showRunningStatus": true,
+          "parameters": {
+            "connection": {
+              "baseUrl": "your nextCloud URL",
+              "username": "your usernamee",
+              "password": "your password"
+            },
+            "sourcePath": "Readme.md",
+            "destinationPath": "Documents/Readme-copy.md"
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "bbtg10243fn1py02sd11p5uf",
+        "position": {
+          "x": 568,
+          "y": 0
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "xu0sm8nnlxj74w4qqd5yzd1h",
+        "position": {
+          "x": 0,
+          "y": 18
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "hotw2o5xhh3z5o4bmbmva6vp",
+        "position": {
+          "x": 196.3321299638989,
+          "y": 194.32490974729242
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "nextcloud-move-file",
+          "label": "Nextcloud - Move File1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Move or rename a file using WebDAV MOVE",
+          "showRunningStatus": true,
+          "parameters": {
+            "connection": {
+              "baseUrl": "your nextCloud URL",
+              "username": "your usernamee",
+              "password": "your password"
+            },
+            "sourcePath": "Readme1.md",
+            "destinationPath": "Documents/Readme--copy.png",
+            "overwrite": true
+          },
+          "_morphing": false
+        },
+        "selected": true,
+        "draggable": true
+      },
+      {
+        "id": "sm8l8o8zql2b1qnsyru39219",
+        "position": {
+          "x": 492.33212996389886,
+          "y": 188.32490974729242
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "kwe1y05i7olngmx8r0v6lxgq",
+        "position": {
+          "x": -63.66787003610111,
+          "y": 218.32490974729242
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "xu0sm8nnlxj74w4qqd5yzd1h",
+        "sourceHandle": "success",
+        "target": "eitgm7y2vxmd0nr2p8zqfpdy",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__xu0sm8nnlxj74w4qqd5yzd1hsuccess-eitgm7y2vxmd0nr2p8zqfpdyinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "eitgm7y2vxmd0nr2p8zqfpdy",
+        "sourceHandle": "success",
+        "target": "bbtg10243fn1py02sd11p5uf",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__eitgm7y2vxmd0nr2p8zqfpdysuccess-bbtg10243fn1py02sd11p5ufinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "kwe1y05i7olngmx8r0v6lxgq",
+        "sourceHandle": "success",
+        "target": "hotw2o5xhh3z5o4bmbmva6vp",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "nt97aphm9d7ocboafxrf0rhm",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "hotw2o5xhh3z5o4bmbmva6vp",
+        "sourceHandle": "success",
+        "target": "sm8l8o8zql2b1qnsyru39219",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "c7h15tsk4fjcaamamho42f5t",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1789741748380,
+    "updatedAt": 1789742439734,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
