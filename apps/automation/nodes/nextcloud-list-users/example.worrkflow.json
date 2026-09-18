@@ -1,0 +1,266 @@
+[
+  {
+    "name": "test-Nextcloud - List Users",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "t3aswnvafb62aag1s2mmy9jc",
+        "position": {
+          "x": 284,
+          "y": 18
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "nextcloud-list-users",
+          "label": "Nextcloud - List Users",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "List users via Nextcloud OCS Users API",
+          "showRunningStatus": true,
+          "parameters": {
+            "connection": {
+              "baseUrl": "your nextcloud url",
+              "username": "your username",
+              "password": "your password"
+            },
+            "limit": 10
+          },
+          "_morphing": false
+        },
+        "selected": true,
+        "draggable": true
+      },
+      {
+        "id": "mxrd9k540d5o3uhnkppkauuj",
+        "position": {
+          "x": 0,
+          "y": 18
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "dw86r8uuwobflllivakmdgvt",
+        "position": {
+          "x": 568,
+          "y": 0
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "gmkoe4kwpcgxzjmn3uoi064p",
+        "position": {
+          "x": 284,
+          "y": 358
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "nextcloud-list-users",
+          "label": "Nextcloud - List Users1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "List users via Nextcloud OCS Users API",
+          "showRunningStatus": true,
+          "parameters": {
+            "connection": {
+              "baseUrl": "your nextcloud url",
+              "username": "your username",
+              "password": "your password"
+            },
+            "search": "user1",
+            "limit": 5
+          },
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "fjoi2uysx7on9zoff4v7k76h",
+        "position": {
+          "x": 0,
+          "y": 358
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      },
+      {
+        "id": "mxkwugsmmnubxzymmpzqh28c",
+        "position": {
+          "x": 619.26213592233,
+          "y": 490.5825242718447
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false,
+        "draggable": true
+      }
+    ],
+    "connections": [
+      {
+        "source": "mxrd9k540d5o3uhnkppkauuj",
+        "sourceHandle": "success",
+        "target": "t3aswnvafb62aag1s2mmy9jc",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__mxrd9k540d5o3uhnkppkauujsuccess-t3aswnvafb62aag1s2mmy9jcinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "t3aswnvafb62aag1s2mmy9jc",
+        "sourceHandle": "success",
+        "target": "dw86r8uuwobflllivakmdgvt",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__t3aswnvafb62aag1s2mmy9jcsuccess-dw86r8uuwobflllivakmdgvtinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "fjoi2uysx7on9zoff4v7k76h",
+        "sourceHandle": "success",
+        "target": "gmkoe4kwpcgxzjmn3uoi064p",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "sx9eu8je314lvd3zgvl3r99i",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "gmkoe4kwpcgxzjmn3uoi064p",
+        "sourceHandle": "success",
+        "target": "mxkwugsmmnubxzymmpzqh28c",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "cq284c6yz9ri0l29ril9qdc4",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1789722522087,
+    "updatedAt": 1789722848127,
+    "publishedNames": [],
+    "previousStatus": "running"
+  }
+]
