@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "Validate Email",
     "variables": {},
     "secrets": {},
@@ -696,4 +695,3 @@
     "updatedAt": 1788989100497,
     "publishedNames": []
   }
-]
