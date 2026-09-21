@@ -1,91 +1,167 @@
-{
-  "name": "Use Harvest",
-  "nodes": [
-    {
-      "id": "trigger",
-      "type": "trigger",
-      "position": {
-        "x": 80,
-        "y": 160
-      },
-      "data": {
-        "name": "manual-trigger",
-        "label": "Run",
-        "inputs": {},
-        "outputs": {
-          "success": {
-            "label": "Success"
-          },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "integration",
-      "type": "action",
-      "position": {
-        "x": 300,
-        "y": 160
-      },
-      "data": {
-        "name": "harvest",
-        "label": "Harvest",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+[
+  {
+    "name": "harvest",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "position": {
+          "x": 483,
+          "y": 135
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "c15tnw2dz548r1ubdl2ck2md",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
           },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "output",
-      "type": "display",
-      "position": {
-        "x": 520,
-        "y": 160
-      },
-      "data": {
-        "name": "log",
-        "label": "Result",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+          "parameters": {},
+          "defaultOutput": null
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
-          }
-        }
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 780,
+          "y": 122
+        },
+        "width": 72,
+        "height": 72,
+        "selected": true,
+        "id": "pciapftv37489si3vuwj8d49",
+        "type": "action",
+        "data": {
+          "description": "Track time, manage projects, and handle invoices with Harvest.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "harvest",
+          "label": "Harvest",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "listProjects",
+            "accessToken": "4424882.pt.",
+            "accountId": ""
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 978,
+          "y": 88
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "id": "iuxq9drflha7kbkng7gtmaiv",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
       }
+    ],
+    "connections": [
+      {
+        "type": "directed",
+        "id": "xy-edge__c15tnw2dz548r1ubdl2ck2mdsuccess-vynxlh2087jo2dekrbvz557sinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "c15tnw2dz548r1ubdl2ck2md",
+        "target": "vynxlh2087jo2dekrbvz557s",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__c15tnw2dz548r1ubdl2ck2mdsuccess-pciapftv37489si3vuwj8d49input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "c15tnw2dz548r1ubdl2ck2md",
+        "target": "pciapftv37489si3vuwj8d49",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__pciapftv37489si3vuwj8d49success-iuxq9drflha7kbkng7gtmaivinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "pciapftv37489si3vuwj8d49",
+        "target": "iuxq9drflha7kbkng7gtmaiv",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "tenantId": "92a6f943-3901-43c7-bea6-f8ad59e2d1b7",
+    "workspaceId": "f7a19ef3-e4ca-4f40-a1c2-cfd5db0f7712",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1789993779070,
+    "updatedAt": 1790005343292,
+    "desiredStatus": "stopped",
+    "lastError": null,
+    "statusInfo": {
+      "type": "info",
+      "message": "Workflow stopped.",
+      "at": 1790003232143
     }
-  ],
-  "connections": [
-    {
-      "id": "trigger-integration",
-      "type": "directed",
-      "source": "trigger",
-      "target": "integration",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    },
-    {
-      "id": "integration-output",
-      "type": "directed",
-      "source": "integration",
-      "target": "output",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    }
-  ]
-}
+  }
+]
