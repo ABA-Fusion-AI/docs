@@ -173,31 +173,11 @@ Deepgram provides several high-quality Aura voice models optimized for low-laten
 <!-- SECTION: workflow-example -->
 ## Workflow Integration
 
-### Sample Workflow: Convert Text to MP3 Audio File
+### Example Workflow
 
-```json
-{
-  "nodes": [
-    {
-      "id": "manual-trigger",
-      "type": "manual-trigger"
-    },
-    {
-      "id": "generate-speech",
-      "type": "deepgram",
-      "config": {
-        "apiKey": "{{secrets.deepgramApiKey}}",
-        "text": "Hello, welcome to our hotel. How can I help you today?",
-        "model": "aura-asteria-en",
-        "encoding": "mp3"
-      }
-    },
-    {
-      "id": "log-output",
-      "type": "log"
-    }
-  ]
-}
+```fusion-workflow
+src: example.workflow.json
+title: Convert Text to MP3 Audio File
 ```
 
 ### Common Patterns

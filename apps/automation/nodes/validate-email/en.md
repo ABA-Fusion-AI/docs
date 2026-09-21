@@ -327,7 +327,7 @@ return { test };
 
 ```fusion-workflow
 src: example.workflow.json
-title: Validate Email Address — Multiple Scenarios
+title: Validate Email Address - Multiple Scenarios
 ```
 
 ### What the Workflow Demonstrates

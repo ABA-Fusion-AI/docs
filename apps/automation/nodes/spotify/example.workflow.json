@@ -1,131 +1,124 @@
-[
-  {
-    "name": "Jjj",
-    "variables": {},
-    "secrets": {},
-    "nodes": [
-      {
-        "id": "dofapq0ake3hmq65161349kt",
-        "position": {
-          "x": 64,
-          "y": 212
-        },
-        "type": "trigger",
-        "width": 64,
-        "height": 64,
-        "data": {
-          "name": "manual-trigger",
-          "label": "Manual Trigger",
-          "inputs": {},
-          "outputs": {
-            "success": {
-              "label": "Success"
-            },
-            "error": {
-              "label": "Error"
-            }
-          },
-          "description": "Triggers the workflow manually.",
-          "showRunningStatus": false,
-          "parameters": {},
-          "_morphing": false
-        },
-        "selected": false
+﻿{
+  "name": "Jjj",
+  "variables": {},
+  "secrets": {},
+  "nodes": [
+    {
+      "id": "dofapq0ake3hmq65161349kt",
+      "position": {
+        "x": 64,
+        "y": 212
       },
-      {
-        "id": "opzrdnub096fwwjjofwkikcu",
-        "position": {
-          "x": 227,
-          "y": 241.5
-        },
-        "type": "action",
-        "width": 64,
-        "height": 64,
-        "data": {
-          "name": "spotify",
-          "label": "Spotify",
-          "inputs": {
-            "input": {
-              "label": "Input"
-            }
+      "type": "trigger",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
           },
-          "outputs": {
-            "success": {
-              "label": "Success"
-            },
-            "error": {
-              "label": "Error"
-            }
-          },
-          "description": "Spotify Web API: search tracks, get track/artist/album info, and user playlists.",
-          "showRunningStatus": true,
-          "parameters": {},
-          "_morphing": false
+          "error": {
+            "label": "Error"
+          }
         },
-        "selected": false
+        "description": "Triggers the workflow manually.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
       },
-      {
-        "id": "x32i6bd225v2hfb0fgc2f7u1",
-        "position": {
-          "x": 323.15975395538646,
-          "y": 216.5
+      "selected": false
+    },
+    {
+      "id": "opzrdnub096fwwjjofwkikcu",
+      "position": {
+        "x": 227,
+        "y": 241.5
+      },
+      "type": "action",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "spotify",
+        "label": "Spotify",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
         },
-        "type": "display",
-        "width": 256,
-        "height": 100,
-        "dragHandle": ".drag-handle__custom",
-        "data": {
-          "name": "log",
-          "label": "Log",
-          "inputs": {
-            "input": {
-              "label": "Input"
-            }
+        "outputs": {
+          "success": {
+            "label": "Success"
           },
-          "outputs": {
-            "success": {
-              "label": "Success",
-              "isConnectable": false
-            }
-          },
-          "description": "Logs the input data to the console.",
-          "showRunningStatus": false,
-          "parameters": {},
-          "_morphing": false
-        }
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Spotify Web API: search tracks, get track/artist/album info, and user playlists.",
+        "showRunningStatus": true,
+        "parameters": {},
+        "_morphing": false
+      },
+      "selected": false
+    },
+    {
+      "id": "x32i6bd225v2hfb0fgc2f7u1",
+      "position": {
+        "x": 323.15975395538646,
+        "y": 216.5
+      },
+      "type": "display",
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "data": {
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
       }
-    ],
-    "connections": [
-      {
-        "source": "dofapq0ake3hmq65161349kt",
-        "sourceHandle": "success",
-        "target": "opzrdnub096fwwjjofwkikcu",
-        "targetHandle": "input",
-        "type": "directed",
-        "id": "xy-edge__dofapq0ake3hmq65161349ktsuccess-opzrdnub096fwwjjofwkikcuinput",
-        "data": {
-          "isAnimated": false
-        }
-      },
-      {
-        "source": "opzrdnub096fwwjjofwkikcu",
-        "sourceHandle": "success",
-        "target": "x32i6bd225v2hfb0fgc2f7u1",
-        "targetHandle": "input",
-        "type": "directed",
-        "id": "xy-edge__opzrdnub096fwwjjofwkikcusuccess-x32i6bd225v2hfb0fgc2f7u1input",
-        "data": {
-          "isAnimated": false
-        }
+    }
+  ],
+  "connections": [
+    {
+      "source": "dofapq0ake3hmq65161349kt",
+      "sourceHandle": "success",
+      "target": "opzrdnub096fwwjjofwkikcu",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__dofapq0ake3hmq65161349ktsuccess-opzrdnub096fwwjjofwkikcuinput",
+      "data": {
+        "isAnimated": false
       }
-    ],
-    "status": "error",
-    "tracingEnabled": true,
-    "userId": "8cbba20b-1e6c-40f3-b57b-2d44f4b9fe12",
-    "version": 1,
-    "createdAt": 1786122867846,
-    "updatedAt": 1786122912472,
-    "publishedNames": [],
-    "previousStatus": "stopped"
-  }
-]
+    },
+    {
+      "source": "opzrdnub096fwwjjofwkikcu",
+      "sourceHandle": "success",
+      "target": "x32i6bd225v2hfb0fgc2f7u1",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__opzrdnub096fwwjjofwkikcusuccess-x32i6bd225v2hfb0fgc2f7u1input",
+      "data": {
+        "isAnimated": false
+      }
+    }
+  ],
+  "status": "error",
+  "version": 1,
+  "previousStatus": "stopped"
+}

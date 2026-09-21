@@ -287,37 +287,11 @@ Formats a valid or raw IBAN string into a human-readable format separated into 4
 <!-- SECTION: workflow-example -->
 ## Workflow Integration
 
-### Sample Workflow: Validate Banking Details Before Payout
+### Example Workflow
 
-```json
-{
-  "nodes": [
-    {
-      "id": "webhook-trigger",
-      "type": "webhook-trigger"
-    },
-    {
-      "id": "validate-iban",
-      "type": "banking-validator",
-      "config": {
-        "operation": "validateIBAN",
-        "iban": "{{input.body.iban}}"
-      }
-    },
-    {
-      "id": "validate-swift",
-      "type": "banking-validator",
-      "config": {
-        "operation": "validateSWIFT",
-        "swift": "{{input.body.swift}}"
-      }
-    },
-    {
-      "id": "process-payout",
-      "type": "http-request"
-    }
-  ]
-}
+```fusion-workflow
+src: example.workflow.json
+title: Validate Banking Details (IBAN and SWIFT)
 ```
 
 ### Common Patterns

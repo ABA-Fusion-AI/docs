@@ -273,36 +273,11 @@ PID|1||123456^^^HOSPITAL||DOE^JOHN||19900101|M
 <!-- SECTION: workflow-example -->
 ## Workflow Integration
 
-### Sample Workflow: Receive HL7 Message and Parse to Flat JSON
+### Example Workflow
 
-```json
-{
-  "nodes": [
-    {
-      "id": "manual-trigger",
-      "type": "manual-trigger"
-    },
-    {
-      "id": "get-hl7-message",
-      "type": "function",
-      "config": {
-        "code": "return 'MSH|^~\\\\&|HIS|HOSPITAL|LAB|HOSPITAL|20260806200000||ADT^A01|123456|P|2.5\\rEVN|A01|20260806200000\\rPID|1||123456^^^HOSPITAL||DOE^JOHN||19900101|M\\rPV1|1|I|WARD^101^1||||1234^SMITH^JANE';"
-      }
-    },
-    {
-      "id": "parse-hl7",
-      "type": "edi-parse-hl7",
-      "config": {
-        "outputFormat": "flat",
-        "inputData": "{{output.node.get-hl7-message.success}}"
-      }
-    },
-    {
-      "id": "log-output",
-      "type": "log"
-    }
-  ]
-}
+```fusion-workflow
+src: example.workflow.json
+title: Receive HL7 Message and Parse to Flat JSON
 ```
 
 ### Common Patterns

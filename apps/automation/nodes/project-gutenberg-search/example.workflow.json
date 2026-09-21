@@ -1,20 +1,20 @@
 ﻿{
-  "name": "rest-countries",
+  "name": "project-gutenberg-search",
   "variables": {},
   "secrets": {},
   "nodes": [
     {
-      "id": "ojbybbak85iagsij9ev9mvau",
+      "id": "cfkxu3ja1kkuhuulweoc9baj",
       "position": {
-        "x": 1108.584072672622,
-        "y": 135.0669670084632
+        "x": 799,
+        "y": 336
       },
       "type": "action",
       "width": 64,
       "height": 64,
       "data": {
-        "name": "rest-countries",
-        "label": "REST Countries",
+        "name": "project-gutenberg-search",
+        "label": "Project Gutenberg Search",
         "inputs": {
           "input": {
             "label": "Input"
@@ -28,21 +28,18 @@
             "label": "Error"
           }
         },
-        "description": "Get country information using the REST Countries API.",
+        "description": "Search for free books from Project Gutenberg via Gutendex API.",
         "showRunningStatus": true,
-        "parameters": {
-          "name": "Morocco",
-          "apiKey": " "
-        },
+        "parameters": {},
         "_morphing": false
       },
       "selected": false
     },
     {
-      "id": "je9d972ut31aboqrtjs8taa0",
+      "id": "bu836qdry8ksu9olqdm8ip0q",
       "position": {
-        "x": 875.084072672622,
-        "y": 90.5669670084632
+        "x": 636.5,
+        "y": 318.5
       },
       "type": "trigger",
       "width": 64,
@@ -67,17 +64,48 @@
       "selected": false
     },
     {
-      "id": "j556s60810vw0csealmpt50m",
+      "id": "s3mcujsusvg02oa22zbj0yn9",
       "position": {
-        "x": 1087.2046455930197,
-        "y": 293.14744577701765
+        "x": 916.3350655676584,
+        "y": 360.3060017371241
+      },
+      "type": "display",
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "data": {
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      },
+      "selected": false
+    },
+    {
+      "id": "ri721e8h1yt8cbgnrzllmzbi",
+      "position": {
+        "x": 750.6190122377135,
+        "y": 575.155976536206
       },
       "type": "action",
       "width": 64,
       "height": 64,
       "data": {
-        "name": "rest-countries",
-        "label": "REST Countries1",
+        "name": "project-gutenberg-search",
+        "label": "Project Gutenberg Search1",
         "inputs": {
           "input": {
             "label": "Input"
@@ -91,21 +119,21 @@
             "label": "Error"
           }
         },
-        "description": "Get country information using the REST Countries API.",
+        "description": "Search for free books from Project Gutenberg via Gutendex API.",
         "showRunningStatus": true,
         "parameters": {
-          "name": "Japan",
-          "apiKey": " "
+          "ids": "victor hugo",
+          "languages": "fr"
         },
         "_morphing": false
       },
       "selected": false
     },
     {
-      "id": "ep6hdt2xauuubg9cvxft41n8",
+      "id": "zfk6x09vxh6qmmclztuyhfdu",
       "position": {
-        "x": 865.7046455930197,
-        "y": 260.64744577701765
+        "x": 600.1190122377134,
+        "y": 569.655976536206
       },
       "type": "trigger",
       "width": 64,
@@ -130,17 +158,48 @@
       "selected": false
     },
     {
-      "id": "fdyjixbnc3tghy6x0norb4wo",
+      "id": "h1i3xznxsbtyxwaqtfqgq8ts",
       "position": {
-        "x": 1080.898864259769,
-        "y": 458.3609491499943
+        "x": 891.9540778053716,
+        "y": 623.4619782733303
+      },
+      "type": "display",
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "data": {
+        "name": "log",
+        "label": "Log1",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      },
+      "selected": false
+    },
+    {
+      "id": "h5prnlkrs7zllpeppoou8yiy",
+      "position": {
+        "x": 756.3070859399847,
+        "y": 793.6445115203684
       },
       "type": "action",
       "width": 64,
       "height": 64,
       "data": {
-        "name": "rest-countries",
-        "label": "REST Countries2",
+        "name": "project-gutenberg-search",
+        "label": "Project Gutenberg Search2",
         "inputs": {
           "input": {
             "label": "Input"
@@ -154,21 +213,20 @@
             "label": "Error"
           }
         },
-        "description": "Get country information using the REST Countries API.",
+        "description": "Search for free books from Project Gutenberg via Gutendex API.",
         "showRunningStatus": true,
         "parameters": {
-          "name": "Saudi Arabia",
-          "apiKey": " "
+          "ids": "1342,11,84"
         },
         "_morphing": false
       },
       "selected": false
     },
     {
-      "id": "yv7300kg9wriz7h1eqvgqwxy",
+      "id": "uq10dv7hygsa5ep6b88y6gqb",
       "position": {
-        "x": 859.398864259769,
-        "y": 425.8609491499943
+        "x": 605.8070859399847,
+        "y": 788.1445115203684
       },
       "type": "trigger",
       "width": 64,
@@ -193,17 +251,48 @@
       "selected": false
     },
     {
-      "id": "h1jfrxoelmj81tthy8ad7sjc",
+      "id": "pw2j353kru503bysabcn3zpc",
       "position": {
-        "x": 1083.5194371801667,
-        "y": 640.4414279185487
+        "x": 897.6421515076431,
+        "y": 841.9505132574924
+      },
+      "type": "display",
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "data": {
+        "name": "log",
+        "label": "Log2",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      },
+      "selected": false
+    },
+    {
+      "id": "ogqbna340s81sdvfq2f5x13z",
+      "position": {
+        "x": 743.9260981776982,
+        "y": 1068.8004880565745
       },
       "type": "action",
       "width": 64,
       "height": 64,
       "data": {
-        "name": "rest-countries",
-        "label": "REST Countries2",
+        "name": "project-gutenberg-search",
+        "label": "Project Gutenberg Search2",
         "inputs": {
           "input": {
             "label": "Input"
@@ -217,21 +306,20 @@
             "label": "Error"
           }
         },
-        "description": "Get country information using the REST Countries API.",
+        "description": "Search for free books from Project Gutenberg via Gutendex API.",
         "showRunningStatus": true,
         "parameters": {
-          "name": "France",
-          "apiKey": " "
+          "languages": "en"
         },
         "_morphing": false
       },
       "selected": false
     },
     {
-      "id": "x7xh1oiogypdrvw6pxg93m6s",
+      "id": "w28pubwb4aguwyjte6dnij5o",
       "position": {
-        "x": 874.0194371801667,
-        "y": 619.9414279185487
+        "x": 605.4260981776981,
+        "y": 1075.3004880565745
       },
       "type": "trigger",
       "width": 64,
@@ -256,17 +344,48 @@
       "selected": false
     },
     {
-      "id": "wrknb1tzgg9m3u83svaoq7w1",
+      "id": "ipt8nda6eoyz4b85wmdsv65u",
       "position": {
-        "x": 1067.245256125168,
-        "y": 797.9792124265415
+        "x": 909.2611637453564,
+        "y": 1141.1064897936985
+      },
+      "type": "display",
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "data": {
+        "name": "log",
+        "label": "Log2",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
+      },
+      "selected": false
+    },
+    {
+      "id": "q1d0dzad750hqa61t9avl549",
+      "position": {
+        "x": 680.5587092129344,
+        "y": 1303.7511872806344
       },
       "type": "action",
       "width": 64,
       "height": 64,
       "data": {
-        "name": "rest-countries",
-        "label": "REST Countries3",
+        "name": "project-gutenberg-search",
+        "label": "Project Gutenberg Search3",
         "inputs": {
           "input": {
             "label": "Input"
@@ -280,21 +399,20 @@
             "label": "Error"
           }
         },
-        "description": "Get country information using the REST Countries API.",
+        "description": "Search for free books from Project Gutenberg via Gutendex API.",
         "showRunningStatus": true,
         "parameters": {
-          "name": "Canada",
-          "apiKey": " "
+          "search": "xyzbooktitle999999"
         },
         "_morphing": false
       },
-      "selected": false
+      "selected": true
     },
     {
-      "id": "qk7buj3sr9wpqy2uy1ievdlk",
+      "id": "b58aq4xefpbi5szwv28ivbor",
       "position": {
-        "x": 857.745256125168,
-        "y": 777.4792124265415
+        "x": 554.0587092129343,
+        "y": 1322.2511872806344
       },
       "type": "trigger",
       "width": 64,
@@ -319,17 +437,18 @@
       "selected": false
     },
     {
-      "id": "dret5wrmemct0t2xhux9eg3d",
+      "id": "zza212b070ywqycwc0y3akc0",
       "position": {
-        "x": 1171.678329045566,
-        "y": 1007.0596911950959
+        "x": 887.3158832415246,
+        "y": 1330.2517916145646
       },
-      "type": "action",
-      "width": 64,
-      "height": 64,
+      "type": "display",
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
       "data": {
-        "name": "rest-countries",
-        "label": "REST Countries3",
+        "name": "log",
+        "label": "Log3",
         "inputs": {
           "input": {
             "label": "Input"
@@ -337,146 +456,11 @@
         },
         "outputs": {
           "success": {
-            "label": "Success"
-          },
-          "error": {
-            "label": "Error"
+            "label": "Success",
+            "isConnectable": false
           }
         },
-        "description": "Get country information using the REST Countries API.",
-        "showRunningStatus": true,
-        "parameters": {
-          "name": {
-            "$expr": "output",
-            "node": "Function",
-            "outputId": "success",
-            "path": "countryName"
-          },
-          "apiKey": " "
-        },
-        "_morphing": false
-      },
-      "selected": false
-    },
-    {
-      "id": "a0cd0h91t63053iou873n963",
-      "position": {
-        "x": 860.365829045566,
-        "y": 997.5596911950959
-      },
-      "type": "trigger",
-      "width": 64,
-      "height": 64,
-      "data": {
-        "name": "manual-trigger",
-        "label": "Manual Trigger3",
-        "inputs": {},
-        "outputs": {
-          "success": {
-            "label": "Success"
-          },
-          "error": {
-            "label": "Error"
-          }
-        },
-        "description": "Triggers the workflow manually.",
-        "showRunningStatus": false,
-        "parameters": {},
-        "_morphing": false
-      },
-      "selected": false
-    },
-    {
-      "id": "soomh5x785llovu6ue8iaha1",
-      "position": {
-        "x": 1013.8505478196703,
-        "y": 1024.1587798156795
-      },
-      "type": "action",
-      "width": 64,
-      "height": 64,
-      "data": {
-        "name": "function",
-        "label": "Function",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
-        },
-        "outputs": {
-          "success": {
-            "label": "Success"
-          },
-          "error": {
-            "label": "Error"
-          }
-        },
-        "description": "Executes custom JavaScript code on the input data.",
-        "showRunningStatus": true,
-        "parameters": {
-          "code": "// Write your code here\nreturn {\"countryName\":\"Germany\"};"
-        },
-        "_morphing": false
-      },
-      "selected": false
-    },
-    {
-      "id": "b9q0ofqu0epc6218x5h7ww8p",
-      "position": {
-        "x": 1081.502540462873,
-        "y": 1212.6313820626267
-      },
-      "type": "action",
-      "width": 64,
-      "height": 64,
-      "data": {
-        "name": "rest-countries",
-        "label": "REST Countries4",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
-        },
-        "outputs": {
-          "success": {
-            "label": "Success"
-          },
-          "error": {
-            "label": "Error"
-          }
-        },
-        "description": "Get country information using the REST Countries API.",
-        "showRunningStatus": true,
-        "parameters": {
-          "name": "Morocco",
-          "apiKey": ""
-        },
-        "_morphing": false
-      },
-      "selected": false
-    },
-    {
-      "id": "lnm8azk80milzajbqtj9nmk1",
-      "position": {
-        "x": 882.771396049528,
-        "y": 1203.515809855954
-      },
-      "type": "trigger",
-      "width": 64,
-      "height": 64,
-      "data": {
-        "name": "manual-trigger",
-        "label": "Manual Trigger4",
-        "inputs": {},
-        "outputs": {
-          "success": {
-            "label": "Success"
-          },
-          "error": {
-            "label": "Error"
-          }
-        },
-        "description": "Triggers the workflow manually.",
+        "description": "Logs the input data to the console.",
         "showRunningStatus": false,
         "parameters": {},
         "_morphing": false
@@ -486,98 +470,117 @@
   ],
   "connections": [
     {
-      "source": "je9d972ut31aboqrtjs8taa0",
+      "source": "bu836qdry8ksu9olqdm8ip0q",
       "sourceHandle": "success",
-      "target": "ojbybbak85iagsij9ev9mvau",
+      "target": "cfkxu3ja1kkuhuulweoc9baj",
       "targetHandle": "input",
       "type": "directed",
-      "id": "xy-edge__je9d972ut31aboqrtjs8taa0success-ojbybbak85iagsij9ev9mvauinput",
-      "data": {
-        "isAnimated": false
-      },
-      "selected": false
-    },
-    {
-      "source": "ep6hdt2xauuubg9cvxft41n8",
-      "sourceHandle": "success",
-      "target": "j556s60810vw0csealmpt50m",
-      "targetHandle": "input",
-      "type": "directed",
-      "id": "mq0xdxafq84zi1a8fnmllnvr",
-      "data": {
-        "isAnimated": false
-      },
-      "selected": false
-    },
-    {
-      "source": "yv7300kg9wriz7h1eqvgqwxy",
-      "sourceHandle": "success",
-      "target": "fdyjixbnc3tghy6x0norb4wo",
-      "targetHandle": "input",
-      "type": "directed",
-      "id": "wacwf1sydq6mymhpe73yix5o",
-      "data": {
-        "isAnimated": false
-      },
-      "selected": false
-    },
-    {
-      "source": "x7xh1oiogypdrvw6pxg93m6s",
-      "sourceHandle": "success",
-      "target": "h1jfrxoelmj81tthy8ad7sjc",
-      "targetHandle": "input",
-      "type": "directed",
-      "id": "ux2c29laxgzvpoy0cy1vpeer",
-      "data": {
-        "isAnimated": false
-      },
-      "selected": false
-    },
-    {
-      "source": "qk7buj3sr9wpqy2uy1ievdlk",
-      "sourceHandle": "success",
-      "target": "wrknb1tzgg9m3u83svaoq7w1",
-      "targetHandle": "input",
-      "type": "directed",
-      "id": "skyuolmez08oor927i8ac9xa",
-      "data": {
-        "isAnimated": false
-      },
-      "selected": false
-    },
-    {
-      "source": "a0cd0h91t63053iou873n963",
-      "sourceHandle": "success",
-      "target": "soomh5x785llovu6ue8iaha1",
-      "targetHandle": "input",
-      "type": "directed",
-      "id": "xy-edge__a0cd0h91t63053iou873n963success-soomh5x785llovu6ue8iaha1input",
+      "id": "xy-edge__bu836qdry8ksu9olqdm8ip0qsuccess-cfkxu3ja1kkuhuulweoc9bajinput",
       "data": {
         "isAnimated": false
       }
     },
     {
-      "source": "soomh5x785llovu6ue8iaha1",
+      "source": "cfkxu3ja1kkuhuulweoc9baj",
       "sourceHandle": "success",
-      "target": "dret5wrmemct0t2xhux9eg3d",
+      "target": "s3mcujsusvg02oa22zbj0yn9",
       "targetHandle": "input",
       "type": "directed",
-      "id": "xy-edge__soomh5x785llovu6ue8iaha1success-dret5wrmemct0t2xhux9eg3dinput",
+      "id": "xy-edge__cfkxu3ja1kkuhuulweoc9bajsuccess-s3mcujsusvg02oa22zbj0yn9input",
       "data": {
         "isAnimated": false
       }
     },
     {
-      "source": "lnm8azk80milzajbqtj9nmk1",
+      "source": "zfk6x09vxh6qmmclztuyhfdu",
       "sourceHandle": "success",
-      "target": "b9q0ofqu0epc6218x5h7ww8p",
+      "target": "ri721e8h1yt8cbgnrzllmzbi",
       "targetHandle": "input",
       "type": "directed",
-      "id": "v96ybgkgqarvw9qw1oj73xir",
+      "id": "hhc7iqefu2tbp0bx7tktzxx8",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "source": "ri721e8h1yt8cbgnrzllmzbi",
+      "sourceHandle": "success",
+      "target": "h1i3xznxsbtyxwaqtfqgq8ts",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "fqspxvsgnlybxwosn8b1evro",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "source": "uq10dv7hygsa5ep6b88y6gqb",
+      "sourceHandle": "success",
+      "target": "h5prnlkrs7zllpeppoou8yiy",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "hovzmroj0nggxl0oq3vz7sic",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "source": "h5prnlkrs7zllpeppoou8yiy",
+      "sourceHandle": "success",
+      "target": "pw2j353kru503bysabcn3zpc",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "x8lrf6xpivszplbz6y0sodvk",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "source": "w28pubwb4aguwyjte6dnij5o",
+      "sourceHandle": "success",
+      "target": "ogqbna340s81sdvfq2f5x13z",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "v9gwcjo597ksn1r4b6vq4w4u",
       "data": {
         "isAnimated": false
       },
       "selected": false
+    },
+    {
+      "source": "ogqbna340s81sdvfq2f5x13z",
+      "sourceHandle": "success",
+      "target": "ipt8nda6eoyz4b85wmdsv65u",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "femvxidn62r98mo1ydfvpk3q",
+      "data": {
+        "isAnimated": false
+      },
+      "selected": false
+    },
+    {
+      "source": "b58aq4xefpbi5szwv28ivbor",
+      "sourceHandle": "success",
+      "target": "q1d0dzad750hqa61t9avl549",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "td6w4cz4gu7vjikwz5uh7zaf",
+      "data": {
+        "isAnimated": false
+      },
+      "selected": false
+    },
+    {
+      "source": "q1d0dzad750hqa61t9avl549",
+      "sourceHandle": "success",
+      "target": "zza212b070ywqycwc0y3akc0",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__q1d0dzad750hqa61t9avl549success-zza212b070ywqycwc0y3akc0input",
+      "data": {
+        "isAnimated": false
+      }
     }
   ],
   "status": "stopped",

@@ -353,7 +353,7 @@ Manual Trigger
 ### Example Workflow
 
 ```fusion-workflow
-src: exampl.workflow.json
+src: example.workflow.json
 title: Search for free books from Project Gutenberg via Gutendex API
 ```
 

@@ -1,141 +1,134 @@
-[
-  {
-    "name": "botstrap",
-    "variables": {},
-    "secrets": {},
-    "nodes": [
-      {
-        "id": "uy75kf4rg1kju4l3s5fyfbt5",
-        "position": {
-          "x": 463,
-          "y": 122
-        },
-        "type": "action",
-        "width": 64,
-        "height": 64,
-        "data": {
-          "name": "bootstrap",
-          "label": "Bootstrap CI",
-          "inputs": {
-            "input": {
-              "label": "Input"
-            }
-          },
-          "outputs": {
-            "success": {
-              "label": "Success"
-            },
-            "error": {
-              "label": "Error"
-            }
-          },
-          "description": "Calculates bootstrap confidence intervals for mean or median using resampling.",
-          "showRunningStatus": true,
-          "parameters": {
-            "stat": "mean",
-            "series": [
-              10,
-              12,
-              11,
-              14,
-              15,
-              16,
-              7
-            ]
-          },
-          "_morphing": false
-        },
-        "selected": true
+﻿{
+  "name": "botstrap",
+  "variables": {},
+  "secrets": {},
+  "nodes": [
+    {
+      "id": "uy75kf4rg1kju4l3s5fyfbt5",
+      "position": {
+        "x": 463,
+        "y": 122
       },
-      {
-        "id": "odqnihh29yfpnkpqtv8wlrfw",
-        "position": {
-          "x": 92,
-          "y": 94.5078125
+      "type": "action",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "bootstrap",
+        "label": "Bootstrap CI",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
         },
-        "type": "trigger",
-        "width": 64,
-        "height": 64,
-        "data": {
-          "name": "manual-trigger",
-          "label": "Manual Trigger",
-          "inputs": {},
-          "outputs": {
-            "success": {
-              "label": "Success"
-            },
-            "error": {
-              "label": "Error"
-            }
+        "outputs": {
+          "success": {
+            "label": "Success"
           },
-          "description": "Triggers the workflow manually.",
-          "showRunningStatus": false,
-          "parameters": {},
-          "_morphing": false
-        }
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Calculates bootstrap confidence intervals for mean or median using resampling.",
+        "showRunningStatus": true,
+        "parameters": {
+          "stat": "mean",
+          "series": [
+            10,
+            12,
+            11,
+            14,
+            15,
+            16,
+            7
+          ]
+        },
+        "_morphing": false
       },
-      {
-        "id": "bff1hvk3jkdyxwk71kvw15j0",
-        "position": {
-          "x": 697.494369170545,
-          "y": 93.07187785492872
+      "selected": true
+    },
+    {
+      "id": "odqnihh29yfpnkpqtv8wlrfw",
+      "position": {
+        "x": 92,
+        "y": 94.5078125
+      },
+      "type": "trigger",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
         },
-        "type": "display",
-        "width": 256,
-        "height": 100,
-        "dragHandle": ".drag-handle__custom",
-        "data": {
-          "name": "log",
-          "label": "Log",
-          "inputs": {
-            "input": {
-              "label": "Input"
-            }
-          },
-          "outputs": {
-            "success": {
-              "label": "Success",
-              "isConnectable": false
-            }
-          },
-          "description": "Logs the input data to the console.",
-          "showRunningStatus": false,
-          "parameters": {},
-          "_morphing": false
-        }
+        "description": "Triggers the workflow manually.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
       }
-    ],
-    "connections": [
-      {
-        "source": "odqnihh29yfpnkpqtv8wlrfw",
-        "sourceHandle": "success",
-        "target": "uy75kf4rg1kju4l3s5fyfbt5",
-        "targetHandle": "input",
-        "type": "directed",
-        "id": "xy-edge__odqnihh29yfpnkpqtv8wlrfwsuccess-uy75kf4rg1kju4l3s5fyfbt5input",
-        "data": {
-          "isAnimated": false
-        }
+    },
+    {
+      "id": "bff1hvk3jkdyxwk71kvw15j0",
+      "position": {
+        "x": 697.494369170545,
+        "y": 93.07187785492872
       },
-      {
-        "source": "uy75kf4rg1kju4l3s5fyfbt5",
-        "sourceHandle": "success",
-        "target": "bff1hvk3jkdyxwk71kvw15j0",
-        "targetHandle": "input",
-        "type": "directed",
-        "id": "xy-edge__uy75kf4rg1kju4l3s5fyfbt5success-bff1hvk3jkdyxwk71kvw15j0input",
-        "data": {
-          "isAnimated": false
-        }
+      "type": "display",
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "data": {
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "parameters": {},
+        "_morphing": false
       }
-    ],
-    "status": "stopped",
-    "tracingEnabled": true,
-    "userId": "8da742e6-3e39-4e2c-8bf9-40e1117bcaa2",
-    "version": 1,
-    "createdAt": 1786139253443,
-    "updatedAt": 1786139757300,
-    "publishedNames": [],
-    "previousStatus": "stopped"
-  }
-]
+    }
+  ],
+  "connections": [
+    {
+      "source": "odqnihh29yfpnkpqtv8wlrfw",
+      "sourceHandle": "success",
+      "target": "uy75kf4rg1kju4l3s5fyfbt5",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__odqnihh29yfpnkpqtv8wlrfwsuccess-uy75kf4rg1kju4l3s5fyfbt5input",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "source": "uy75kf4rg1kju4l3s5fyfbt5",
+      "sourceHandle": "success",
+      "target": "bff1hvk3jkdyxwk71kvw15j0",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__uy75kf4rg1kju4l3s5fyfbt5success-bff1hvk3jkdyxwk71kvw15j0input",
+      "data": {
+        "isAnimated": false
+      }
+    }
+  ],
+  "status": "stopped",
+  "version": 1,
+  "previousStatus": "stopped"
+}
