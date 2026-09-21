@@ -520,6 +520,17 @@ The node does not:
 
 ---
 
+**---**
+
+<!-- SECTION: examples -->
+## Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Use WHO GHO OData in a workflow
+```
+<!-- /SECTION: examples -->
+
 ## Changelog
 
 | Version | Date | Changes |

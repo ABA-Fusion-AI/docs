@@ -451,6 +451,17 @@ It is intended to retrieve and structure TelQuel RSS content for downstream work
 
 ---
 
+**---**
+
+<!-- SECTION: examples -->
+## Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Use TelQuel in a workflow
+```
+<!-- /SECTION: examples -->
+
 ## Changelog
 
 | Version | Date | Changes |

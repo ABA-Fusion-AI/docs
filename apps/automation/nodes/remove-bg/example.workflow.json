@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "removebg",
     "variables": {},
     "secrets": {},
@@ -328,4 +327,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

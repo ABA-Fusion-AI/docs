@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "p",
     "variables": {},
     "secrets": {},
@@ -89,4 +88,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

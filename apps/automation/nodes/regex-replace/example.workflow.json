@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "replicate",
     "variables": {},
     "secrets": {},
@@ -137,4 +136,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

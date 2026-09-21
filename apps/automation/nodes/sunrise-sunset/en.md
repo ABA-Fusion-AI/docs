@@ -327,6 +327,17 @@ It is intended to provide a straightforward solar-event lookup for a single loca
 
 ---
 
+**---**
+
+<!-- SECTION: examples -->
+## Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Use Sunrise-Sunset in a workflow
+```
+<!-- /SECTION: examples -->
+
 ## Changelog
 
 | Version | Date | Changes |

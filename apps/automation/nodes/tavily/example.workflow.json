@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "tavily",
     "variables": {},
     "secrets": {},
@@ -772,4 +771,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

@@ -365,3 +365,14 @@ supplied implementation.
 |Version |  Date  |  Changes|
 |--- |--- |---|
 |1.0.0 |  2026-09-17 |  Initial release|
+
+**---**
+
+<!-- SECTION: examples -->
+## Example Workflow
+
+```fusion-workflow
+src: example.worklfow.json
+title: Use AI Chat (LM Studio) in a workflow
+```
+<!-- /SECTION: examples -->

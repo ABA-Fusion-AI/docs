@@ -103,7 +103,7 @@ The **\*\*Copper CRM\*\*** node supports retrieving, creating, updating, and del
 
 ```fusion-workflow
 src: example.workflow.json
-title: Use Cortex in a workflow
+title: Use Copper CRM in a workflow
 ```
 <!-- /SECTION: examples -->
 

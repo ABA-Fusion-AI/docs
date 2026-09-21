@@ -330,6 +330,17 @@ The node does not:
 ---
 
 
+**---**
+
+<!-- SECTION: examples -->
+## Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Use Prefix & Suffix in a workflow
+```
+<!-- /SECTION: examples -->
+
 ## Changelog
 
 | Version | Date | Changes |

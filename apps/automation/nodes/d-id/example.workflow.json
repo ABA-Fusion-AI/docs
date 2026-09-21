@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "did",
     "variables": {},
     "secrets": {},
@@ -570,4 +569,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

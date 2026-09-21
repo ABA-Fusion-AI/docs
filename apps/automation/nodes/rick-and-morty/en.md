@@ -320,6 +320,17 @@ It is intended to provide simple, filtered access to Rick and Morty character da
 
 ---
 
+**---**
+
+<!-- SECTION: examples -->
+## Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Use Rick and Morty API in a workflow
+```
+<!-- /SECTION: examples -->
+
 ## Changelog
 
 | Version | Date | Changes |

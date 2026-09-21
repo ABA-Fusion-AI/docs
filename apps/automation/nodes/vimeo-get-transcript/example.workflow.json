@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "xmps",
     "variables": {},
     "secrets": {},
@@ -181,4 +180,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

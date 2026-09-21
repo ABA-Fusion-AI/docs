@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "test ncbi clinvar",
     "variables": {},
     "secrets": {},
@@ -249,4 +248,3 @@
     "updatedAt": 1788430623040,
     "publishedNames": []
   }
-]

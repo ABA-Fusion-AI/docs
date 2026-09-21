@@ -486,6 +486,17 @@ It is intended to provide unified, multi-carrier package tracking — including 
 
 ---
 
+**---**
+
+<!-- SECTION: examples -->
+## Example Workflow
+
+```fusion-workflow
+src: example.worklfow.json
+title: Use Track123 in a workflow
+```
+<!-- /SECTION: examples -->
+
 ## Changelog
 
 | Version | Date | Changes |

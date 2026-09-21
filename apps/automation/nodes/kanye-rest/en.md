@@ -221,6 +221,17 @@ It is intended to provide a simple, low-effort source of fun content for downstr
 ---
 
 
+**---**
+
+<!-- SECTION: examples -->
+## Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Use Kanye Rest in a workflow
+```
+<!-- /SECTION: examples -->
+
 ## Changelog
 
 | Version | Date | Changes |

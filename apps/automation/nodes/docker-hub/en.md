@@ -128,27 +128,12 @@ On success, the node returns repository information including:
 ---
 
 <!-- SECTION: examples -->
-
-## Examples
-
-### Retrieve Repository Information
-
-Use the following configuration to retrieve information about the official Nginx repository:
-
-```json
-{
-  "user": "library",
-  "repo": "nginx"
-}
-```
-
-### Workflow Example
+## Example Workflow
 
 ```fusion-workflow
 src: example.workflow.json
-title: Docker Hub Example
+title: Use Docker Hub in a workflow
 ```
-
 <!-- /SECTION: examples -->
 
 ---

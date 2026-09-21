@@ -165,49 +165,12 @@ Invalid operations, missing query or ID values, rate limits, network failures, a
 ---
 
 <!-- SECTION: examples -->
-## Examples
+## Example Workflow
 
-### Search NCBI Books
-
-```json
-{
-  "operation": "search",
-  "query": "BRCA1"
-}
+```fusion-workflow
+src: example.workflow.json
+title: Use NCBI Books in a workflow
 ```
-
-### Retrieve an NCBI Books Record by ID
-
-```json
-{
-  "operation": "getById",
-  "id": "5909698"
-}
-```
-
-### Search with an API Key
-
-```json
-{
-  "operation": "search",
-  "apiKey": "{{secrets.ncbiApiKey}}",
-  "query": "cancer genetics"
-}
-```
-
-### Dynamic Books Search
-
-A previous node can provide the operation and query dynamically:
-
-```json
-{
-  "operation": "search",
-  "query": "genomic medicine"
-}
-```
-
-Keep the API key in Fusion’s secret system even when the query comes from incoming data.
-
 <!-- /SECTION: examples -->
 
 ---

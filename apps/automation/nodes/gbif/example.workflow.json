@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "gbif",
     "variables": {},
     "secrets": {},
@@ -241,4 +240,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

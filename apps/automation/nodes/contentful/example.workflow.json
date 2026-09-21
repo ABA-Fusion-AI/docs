@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "contentful",
     "variables": {},
     "secrets": {},
@@ -400,4 +399,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

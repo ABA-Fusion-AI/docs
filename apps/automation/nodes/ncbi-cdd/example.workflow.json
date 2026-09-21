@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "test ncbi conserved domains",
     "variables": {},
     "secrets": {},
@@ -255,4 +254,3 @@
     "updatedAt": 1788429996395,
     "publishedNames": []
   }
-]

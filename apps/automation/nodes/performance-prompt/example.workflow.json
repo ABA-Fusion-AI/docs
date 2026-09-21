@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "pincone-vector-store",
     "variables": {},
     "secrets": {},
@@ -243,4 +242,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

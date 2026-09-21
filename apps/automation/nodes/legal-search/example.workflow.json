@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "legal search",
     "variables": {},
     "secrets": {},
@@ -87,4 +86,3 @@
     "updatedAt": 1787564108141,
     "publishedNames": []
   }
-]

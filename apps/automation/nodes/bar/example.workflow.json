@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "alpha vantage",
     "variables": {},
     "secrets": {},
@@ -1601,4 +1600,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

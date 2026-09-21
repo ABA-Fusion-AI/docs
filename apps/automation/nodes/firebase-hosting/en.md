@@ -373,6 +373,17 @@ It is intended to provide simple, read-only visibility into Firebase Hosting sit
 
 ---
 
+**---**
+
+<!-- SECTION: examples -->
+## Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Use Firebase Hosting in a workflow
+```
+<!-- /SECTION: examples -->
+
 ## Changelog
 
 | Version | Date | Changes |

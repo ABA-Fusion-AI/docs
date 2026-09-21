@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "tip calculator",
     "variables": {},
     "secrets": {},
@@ -124,4 +123,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

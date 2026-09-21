@@ -442,6 +442,17 @@ Verify your Firebase project configuration and credentials.
 ---
 
 <!-- SECTION: changelog -->
+**---**
+
+<!-- SECTION: examples -->
+## Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Use Firestore in a workflow
+```
+<!-- /SECTION: examples -->
+
 ## Changelog
 
 | Version | Date | Changes |

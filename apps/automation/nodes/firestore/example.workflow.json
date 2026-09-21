@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "firestore",
     "variables": {},
     "secrets": {},
@@ -630,4 +629,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

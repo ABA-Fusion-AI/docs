@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "test ncbi books",
     "variables": {},
     "secrets": {},
@@ -255,4 +254,3 @@
     "updatedAt": 1788426055687,
     "publishedNames": []
   }
-]

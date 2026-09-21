@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "bunny",
     "variables": {},
     "secrets": {},
@@ -335,4 +334,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

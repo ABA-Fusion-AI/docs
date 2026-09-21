@@ -362,3 +362,14 @@ mmcif
 | Version | Date | Changes |
 | --- | --- | --- |
 | 1.0.0 | 2026-09-04 | Initial release. |
+
+**---**
+
+<!-- SECTION: examples -->
+## Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Use RCSB PDB in a workflow
+```
+<!-- /SECTION: examples -->

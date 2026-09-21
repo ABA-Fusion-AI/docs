@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "wearther search",
     "variables": {},
     "secrets": {},
@@ -250,4 +249,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

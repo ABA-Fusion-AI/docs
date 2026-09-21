@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "infobip",
     "variables": {},
     "secrets": {},
@@ -175,4 +174,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

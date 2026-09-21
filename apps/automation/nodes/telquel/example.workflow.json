@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "to-xml",
     "variables": {},
     "secrets": {},
@@ -87,4 +86,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

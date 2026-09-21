@@ -429,3 +429,14 @@ The response also contains the `messageId`, which can be used to identify the me
 - Added automatic Moroccan phone number normalization.
 - Added retry handling for temporary API errors.
 - Added message ID and Infobip API response to node outputs.
+
+**---**
+
+<!-- SECTION: examples -->
+## Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Use Infobip SMS/Email in a workflow
+```
+<!-- /SECTION: examples -->

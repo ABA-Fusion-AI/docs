@@ -612,6 +612,17 @@ The `stop()` method performs no cleanup or cancellation logic.
 
 **---**
 
+**---**
+
+<!-- SECTION: examples -->
+## Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Use PurpleAir in a workflow
+```
+<!-- /SECTION: examples -->
+
 **## Changelog**
 
 | Version | Date | Changes |

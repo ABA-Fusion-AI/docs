@@ -405,6 +405,17 @@ http://localhost:6333
 
 **---**
 
+**---**
+
+<!-- SECTION: examples -->
+## Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Use Qdrant Vector DB in a workflow
+```
+<!-- /SECTION: examples -->
+
 **## Changelog**
 
 | Version | Date | Changes |

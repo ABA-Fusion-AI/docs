@@ -401,6 +401,17 @@ The `createModel()` method removes `baseUrl`, `systemMessage`, and `streaming` b
 
 **---**
 
+**---**
+
+<!-- SECTION: examples -->
+## Example Workflow
+
+```fusion-workflow
+src: example.worklfow.json
+title: Use AI Chat (OpenAI-compatible) in a workflow
+```
+<!-- /SECTION: examples -->
+
 **## Changelog**
 
 | Version | Date | Changes |

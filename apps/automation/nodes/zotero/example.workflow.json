@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "tracktry",
     "variables": {},
     "secrets": {},
@@ -325,4 +324,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

@@ -507,6 +507,17 @@ It is intended to provide direct, low-level access to ChromaDB collection and qu
 
 ---
 
+**---**
+
+<!-- SECTION: examples -->
+## Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Use ChromaDB Manager in a workflow
+```
+<!-- /SECTION: examples -->
+
 ## Changelog
 
 | Version | Date | Changes |

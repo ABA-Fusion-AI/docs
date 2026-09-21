@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "patient",
     "variables": {},
     "secrets": {},
@@ -204,4 +203,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

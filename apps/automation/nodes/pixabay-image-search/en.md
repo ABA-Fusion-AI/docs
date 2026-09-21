@@ -399,6 +399,17 @@ It is intended to provide a fast, straightforward stock-photo search step for do
 - [HTTP Request](./http-request.md) – Make additional custom Pixabay API calls
 ---
 
+**---**
+
+<!-- SECTION: examples -->
+## Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Use Pixabay Image Search in a workflow
+```
+<!-- /SECTION: examples -->
+
 ## Changelog
 
 | Version | Date | Changes |

@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "sound-cloud",
     "variables": {},
     "secrets": {},
@@ -89,4 +88,3 @@
     "updatedAt": 1787138286712,
     "publishedNames": []
   }
-]

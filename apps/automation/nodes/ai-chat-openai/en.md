@@ -388,6 +388,17 @@ The `createModel()` method removes `systemMessage` and `streaming` before passin
 
 **---**
 
+**---**
+
+<!-- SECTION: examples -->
+## Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Use AI Chat (OpenAI) in a workflow
+```
+<!-- /SECTION: examples -->
+
 **## Changelog**
 
 | Version | Date | Changes |

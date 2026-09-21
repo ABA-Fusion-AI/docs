@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "test GEO Profiles",
     "variables": {},
     "secrets": {},
@@ -255,4 +254,3 @@
     "updatedAt": 1788452734165,
     "publishedNames": []
   }
-]

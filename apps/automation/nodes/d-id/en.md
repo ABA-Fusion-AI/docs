@@ -451,6 +451,17 @@ This documentation intentionally excludes WebM usage as requested.
 
 **---**
 
+**---**
+
+<!-- SECTION: examples -->
+## Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Use D-ID: Generate Avatar Video in a workflow
+```
+<!-- /SECTION: examples -->
+
 **## Changelog**
 
 | Version | Date | Changes |

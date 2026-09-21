@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "liberation",
     "variables": {},
     "secrets": {},
@@ -87,4 +86,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

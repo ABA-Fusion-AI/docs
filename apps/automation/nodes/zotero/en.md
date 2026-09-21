@@ -661,6 +661,17 @@ For libraries with more than 100 collections, extend the node to follow Zotero p
 
 ---
 
+**---**
+
+<!-- SECTION: examples -->
+## Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Use Zotero Library in a workflow
+```
+<!-- /SECTION: examples -->
+
 ## Changelog
 
 ### 1.0.0 — 2026-09-02

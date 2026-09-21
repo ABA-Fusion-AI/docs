@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "rcsb",
     "variables": {},
     "secrets": {},
@@ -580,4 +579,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

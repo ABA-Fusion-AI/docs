@@ -308,6 +308,17 @@ It is intended to retrieve the current Amtrak trains snapshot for downstream wor
 - [HTTP Request](./http-request.md) – Make additional Amtraker API calls (e.g. per-station or per-train endpoints)
 ---
 
+**---**
+
+<!-- SECTION: examples -->
+## Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Use Amtraker in a workflow
+```
+<!-- /SECTION: examples -->
+
 ## Changelog
 
 | Version | Date | Changes |

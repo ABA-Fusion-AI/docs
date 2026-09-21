@@ -1,5 +1,4 @@
-﻿[
-  {
+{
     "name": "rymo",
     "variables": {},
     "secrets": {},
@@ -838,4 +837,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

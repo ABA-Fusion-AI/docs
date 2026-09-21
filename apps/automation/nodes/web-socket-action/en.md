@@ -214,44 +214,12 @@ WebSocket connection and send failures are returned as structured data:
 ---
 
 <!-- SECTION: examples -->
-
-## Examples
-
-### Send a Message and Wait for a Response
-
-Configure the node with:
-
-```json
-{
-  "url": "wss://ws.postman-echo.com/raw",
-  "message": "Hello Fusion",
-  "protocols": [],
-  "headers": {},
-  "binaryType": "blob",
-  "perMessageDeflate": true,
-  "closeAfterSend": false,
-  "reuseConnection": false,
-  "waitForResponse": true,
-  "responseTimeout": 30000,
-  "timeout": 30000
-}
-```
-
-The message is sent to the WebSocket server and the node waits for one response before completing.
-
-### Send Incoming Workflow Data
-
-Leave `message` empty to use data received from the previous node.
-
-For object input, the node serializes the value as JSON before sending it to the WebSocket server.
-
-### Example Workflow
+## Example Workflow
 
 ```fusion-workflow
 src: example.workflow.json
-title: WebSocket Send Example
+title: Use WebSocket Send in a workflow
 ```
-
 <!-- /SECTION: examples -->
 
 ---

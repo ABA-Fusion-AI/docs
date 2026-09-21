@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "perenual",
     "variables": {},
     "secrets": {},
@@ -168,4 +167,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

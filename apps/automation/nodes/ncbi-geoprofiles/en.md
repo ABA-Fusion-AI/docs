@@ -162,49 +162,12 @@ Invalid operations, missing query or ID values, rate limits, network failures, a
 ---
 
 <!-- SECTION: examples -->
-## Examples
+## Example Workflow
 
-### Search GEO Profiles by Gene
-
-```json
-{
-  "operation": "search",
-  "query": "BRCA1"
-}
+```fusion-workflow
+src: example.workflow.json
+title: Use NCBI GEO Profiles in a workflow
 ```
-
-### Retrieve a GEO Profile by ID
-
-```json
-{
-  "operation": "getById",
-  "id": "132766449"
-}
-```
-
-### Search with an API Key
-
-```json
-{
-  "operation": "search",
-  "apiKey": "{{secrets.ncbiApiKey}}",
-  "query": "BRCA1"
-}
-```
-
-### Dynamic GEO Profile Search
-
-A previous node can provide the operation and query dynamically:
-
-```json
-{
-  "operation": "search",
-  "query": "Homo sapiens gene expression"
-}
-```
-
-Keep the API key in Fusion’s secret system even when the query comes from incoming data.
-
 <!-- /SECTION: examples -->
 
 ---

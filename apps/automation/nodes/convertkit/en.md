@@ -734,6 +734,17 @@ The `stop()` method performs no cleanup logic.
 
 **---**
 
+<!-- SECTION: examples -->
+## Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Use ConvertKit in a workflow
+```
+<!-- /SECTION: examples -->
+
+**---**
+
 **## Changelog**
 
 | Version | Date | Changes |

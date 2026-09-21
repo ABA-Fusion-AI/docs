@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "velo payment",
     "variables": {},
     "secrets": {},
@@ -91,4 +90,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

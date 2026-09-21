@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "convertkill",
     "variables": {},
     "secrets": {},
@@ -951,4 +950,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

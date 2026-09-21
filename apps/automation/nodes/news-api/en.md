@@ -402,6 +402,17 @@ It is intended to provide straightforward, filtered news search access for downs
 ---
 
 
+**---**
+
+<!-- SECTION: examples -->
+## Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Use NewsAPI in a workflow
+```
+<!-- /SECTION: examples -->
+
 ## Changelog
 
 | Version | Date | Changes |

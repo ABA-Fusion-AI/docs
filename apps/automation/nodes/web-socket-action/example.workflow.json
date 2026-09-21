@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "WebSocket Send Example",
     "nodes": [
       {
@@ -127,4 +126,3 @@
     "version": 1,
     "secrets": {}
   }
-]

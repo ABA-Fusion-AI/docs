@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "Docker Hub Example",
     "nodes": [
       {
@@ -118,4 +117,3 @@
     "version": 1,
     "secrets": {}
   }
-]

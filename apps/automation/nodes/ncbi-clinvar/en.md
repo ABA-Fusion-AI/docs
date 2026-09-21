@@ -167,49 +167,12 @@ Invalid operations, missing query or ID values, rate limits, network failures, a
 ---
 
 <!-- SECTION: examples -->
-## Examples
+## Example Workflow
 
-### Search ClinVar Records by Gene
-
-```json
-{
-  "operation": "search",
-  "query": "BRCA1[gene]"
-}
+```fusion-workflow
+src: example.workflow.json
+title: Use NCBI ClinVar in a workflow
 ```
-
-### Retrieve a ClinVar Record by ID
-
-```json
-{
-  "operation": "getById",
-  "id": "4886868"
-}
-```
-
-### Search with an API Key
-
-```json
-{
-  "operation": "search",
-  "apiKey": "{{secrets.ncbiApiKey}}",
-  "query": "BRCA1[gene] AND pathogenic"
-}
-```
-
-### Dynamic ClinVar Search
-
-A previous node can provide the operation and query dynamically:
-
-```json
-{
-  "operation": "search",
-  "query": "cystic fibrosis[condition]"
-}
-```
-
-Keep the API key in Fusion’s secret system even when the query comes from incoming data.
-
 <!-- /SECTION: examples -->
 
 ---

@@ -511,6 +511,17 @@ It is intended to provide fast, rate-limit-safe search and lookup access to PMC 
 
 ---
 
+**---**
+
+<!-- SECTION: examples -->
+## Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Use PMC (PubMed Central) in a workflow
+```
+<!-- /SECTION: examples -->
+
 ## Changelog
 
 | Version | Date | Changes |

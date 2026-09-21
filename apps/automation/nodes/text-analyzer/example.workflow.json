@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "text to binary",
     "variables": {},
     "secrets": {},
@@ -166,4 +165,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]
