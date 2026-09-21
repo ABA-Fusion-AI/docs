@@ -1,0 +1,153 @@
+  {
+    "name": "open ai",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "position": {
+          "x": 1011,
+          "y": 46
+        },
+        "width": 72,
+        "height": 72,
+        "selected": true,
+        "id": "p2i2jugh4f5eww4jsrva05ea",
+        "type": "agent-llm",
+        "data": {
+          "description": "A node that uses OpenAI's LLM models.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "openai-llm",
+          "label": "OpenAI LLM",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "apiKey": "sk-proj---pqFyedS4A",
+            "systemPrompt": "respond to the user"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 757,
+          "y": -4
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "xuz44ecchswy9ew3folsexba",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 1188,
+          "y": 23
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "id": "a4tpxfbs6rybtqdo3qbj70mi",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      }
+    ],
+    "connections": [
+      {
+        "type": "directed",
+        "id": "xy-edge__xuz44ecchswy9ew3folsexbasuccess-p2i2jugh4f5eww4jsrva05eainput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "xuz44ecchswy9ew3folsexba",
+        "target": "p2i2jugh4f5eww4jsrva05ea",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__p2i2jugh4f5eww4jsrva05easuccess-a4tpxfbs6rybtqdo3qbj70miinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "p2i2jugh4f5eww4jsrva05ea",
+        "target": "a4tpxfbs6rybtqdo3qbj70mi",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "tenantId": "92a6f943-3901-43c7-bea6-f8ad59e2d1b7",
+    "workspaceId": "f7a19ef3-e4ca-4f40-a1c2-cfd5db0f7712",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1789987354453,
+    "updatedAt": 1789990850602,
+    "desiredStatus": "stopped",
+    "lastError": null,
+    "statusInfo": {
+      "type": "info",
+      "message": "Workflow stopped.",
+      "at": 1789990844523
+    }
+  }
