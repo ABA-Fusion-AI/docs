@@ -98,6 +98,16 @@ The **\*\*Copper CRM\*\*** node supports retrieving, creating, updating, and del
 \- Connect Copper CRM to automated sales workflows
 
 **---**
+<!-- SECTION: examples -->
+## Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Use Cortex in a workflow
+```
+<!-- /SECTION: examples -->
+
+**---**
 
 **## Configuration**
 
