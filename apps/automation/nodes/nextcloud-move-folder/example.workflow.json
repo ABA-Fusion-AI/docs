@@ -1,0 +1,160 @@
+[
+  {
+    "name": "test-nextcloud-move-folder",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "position": {
+          "x": 778,
+          "y": 110
+        },
+        "width": 72,
+        "height": 72,
+        "selected": true,
+        "id": "vtuxynu2h5vciv30pilo6e75",
+        "type": "action",
+        "data": {
+          "description": "Move or rename a folder using WebDAV MOVE",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "nextcloud-move-folder",
+          "label": "Nextcloud - Move/Move Folder",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "connection": {
+              "baseUrl": "https://translate-giveaway-anymore.ngrok-free.dev",
+              "username": "admin",
+              "password": "TestNextcloud123!"
+            },
+            "sourcePath": "Documents-copy",
+            "destinationPath": "Documents-moved"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 529.5,
+          "y": 162.5
+        },
+        "width": 72,
+        "height": 72,
+        "id": "jnbou5wene3y8ped263tmf8o",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 940.5,
+          "y": 159.5
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "id": "evy8w16mh73r61jp1dnwte40",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      }
+    ],
+    "connections": [
+      {
+        "type": "directed",
+        "id": "xy-edge__jnbou5wene3y8ped263tmf8osuccess-vtuxynu2h5vciv30pilo6e75input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "jnbou5wene3y8ped263tmf8o",
+        "target": "vtuxynu2h5vciv30pilo6e75",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__vtuxynu2h5vciv30pilo6e75success-evy8w16mh73r61jp1dnwte40input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "vtuxynu2h5vciv30pilo6e75",
+        "target": "evy8w16mh73r61jp1dnwte40",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "tenantId": "a530d869-882f-41ff-93db-cac990044c8e",
+    "workspaceId": "1e4b86de-68d6-44cb-856d-e5d1e1a7f57b",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1790088952334,
+    "updatedAt": 1790090303505,
+    "desiredStatus": "stopped",
+    "lastError": null,
+    "statusInfo": {
+      "type": "info",
+      "message": "Workflow stopped.",
+      "at": 1790090303505
+    }
+  }
+]
