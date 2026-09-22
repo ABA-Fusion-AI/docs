@@ -1,4 +1,4 @@
-[
+
   {
     "name": "test nvidia-bionemo-genmol-generate",
     "variables": {},
@@ -134,4 +134,3 @@
     "updatedAt": 1788964536774,
     "publishedNames": []
   }
-]

@@ -1,4 +1,4 @@
-[
+
   {
     "name": "testExchangeRateApi",
     "variables": {},
@@ -130,4 +130,3 @@
     "publishedNames": [],
     "previousStatus": "stopped"
   }
-]

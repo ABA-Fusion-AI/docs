@@ -1,4 +1,4 @@
-[
+
   {
     "name": "tes coap server",
     "variables": {},
@@ -566,4 +566,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

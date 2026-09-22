@@ -1,4 +1,4 @@
-[
+
   {
     "name": "ncbi-NCBI Assembly",
     "variables": {},
@@ -375,4 +375,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

@@ -1,4 +1,4 @@
-[
+
   {
     "name": "test-Nextcloud - Download File",
     "variables": {},
@@ -257,4 +257,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

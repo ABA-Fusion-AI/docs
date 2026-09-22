@@ -1,4 +1,4 @@
-[
+
   {
     "name": "test ncbi MedGen",
     "variables": {},
@@ -256,4 +256,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

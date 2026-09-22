@@ -1,4 +1,4 @@
-[
+
   {
     "name": "stg",
     "variables": {},
@@ -283,4 +283,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

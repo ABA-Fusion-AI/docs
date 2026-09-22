@@ -1,4 +1,4 @@
-[
+
   {
     "name": "test ncbi NLM Catalog",
     "variables": {},
@@ -256,4 +256,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

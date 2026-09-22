@@ -1,4 +1,4 @@
-[
+
   {
     "name": "test nvidia-bionemo-molmim-generate",
     "variables": {},
@@ -136,4 +136,3 @@
     "updatedAt": 1788963832158,
     "publishedNames": []
   }
-]

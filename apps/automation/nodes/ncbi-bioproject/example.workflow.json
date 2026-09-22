@@ -1,4 +1,4 @@
-[
+
   {
     "name": "test-NCBI BioProject",
     "variables": {},
@@ -250,4 +250,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

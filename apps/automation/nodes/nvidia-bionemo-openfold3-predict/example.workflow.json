@@ -1,4 +1,4 @@
-[
+
   {
     "name": "test-nvidia-bionemo-openfold3-predict",
     "variables": {},
@@ -527,4 +527,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

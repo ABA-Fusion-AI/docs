@@ -1,4 +1,4 @@
-[
+
   {
     "name": "test-nvidia-bionemo-smiles-to-sdf",
     "variables": {},
@@ -129,4 +129,3 @@
     "updatedAt": 1788951811917,
     "publishedNames": []
   }
-]

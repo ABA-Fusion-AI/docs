@@ -1,4 +1,4 @@
-[
+
   {
     "name": "test Shodan IP Lookup",
     "variables": {},
@@ -254,4 +254,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

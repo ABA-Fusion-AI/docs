@@ -1,4 +1,4 @@
-[
+
   {
     "name": "TEST-Nextcloud - Delete File",
     "variables": {},
@@ -133,4 +133,3 @@
     "updatedAt": 1789568553407,
     "publishedNames": []
   }
-]

@@ -1,4 +1,4 @@
-[
+
   {
     "name": "TEST Nextcloud - Copy File",
     "variables": {},
@@ -136,4 +136,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]

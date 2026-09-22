@@ -1,4 +1,4 @@
-[
+
   {
     "name": "TestSSH",
     "variables": {},
@@ -283,4 +283,3 @@
     "publishedNames": [],
     "previousStatus": "error"
   }
-]

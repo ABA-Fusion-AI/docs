@@ -1,4 +1,4 @@
-[
+
   {
     "name": "TEST-Nextcloud - List Folders",
     "variables": {},
@@ -132,4 +132,3 @@
     "updatedAt": 1789720286215,
     "publishedNames": []
   }
-]

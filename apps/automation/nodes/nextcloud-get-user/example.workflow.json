@@ -1,4 +1,4 @@
-[
+
   {
     "name": "test- Nextcloud - Get User",
     "variables": {},
@@ -135,4 +135,3 @@
     "publishedNames": [],
     "previousStatus": "running"
   }
-]
