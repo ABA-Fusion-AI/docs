@@ -1,0 +1,160 @@
+[
+  {
+    "name": "test-nextcloud-share-folder",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "position": {
+          "x": 587,
+          "y": 248
+        },
+        "width": 72,
+        "height": 72,
+        "selected": true,
+        "id": "sda929wcgzmlkoj0zdumvuhu",
+        "type": "action",
+        "data": {
+          "description": "Create a share for a path using Nextcloud OCS Share API",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "nextcloud-share-folder",
+          "label": "Nextcloud - Share Folder",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "shareType": "public",
+            "connection": {
+              "baseUrl": "https://translate-giveaway-anymore.ngrok-free.dev",
+              "username": "admin",
+              "password": "TestNextcloud123!"
+            },
+            "path": "Documents"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 330.5,
+          "y": 268.5
+        },
+        "width": 72,
+        "height": 72,
+        "id": "smo1fpfe3ryfd0zq1e413v4n",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 790,
+          "y": 283.5
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "id": "zatzkgrdrg3nbspkcsaabgo7",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      }
+    ],
+    "connections": [
+      {
+        "type": "directed",
+        "id": "xy-edge__smo1fpfe3ryfd0zq1e413v4nsuccess-sda929wcgzmlkoj0zdumvuhuinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "smo1fpfe3ryfd0zq1e413v4n",
+        "target": "sda929wcgzmlkoj0zdumvuhu",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__sda929wcgzmlkoj0zdumvuhusuccess-zatzkgrdrg3nbspkcsaabgo7input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "sda929wcgzmlkoj0zdumvuhu",
+        "target": "zatzkgrdrg3nbspkcsaabgo7",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "tenantId": "a530d869-882f-41ff-93db-cac990044c8e",
+    "workspaceId": "1e4b86de-68d6-44cb-856d-e5d1e1a7f57b",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1790091984155,
+    "updatedAt": 1790092381652,
+    "desiredStatus": "stopped",
+    "lastError": null,
+    "statusInfo": {
+      "type": "info",
+      "message": "Workflow stopped.",
+      "at": 1790092381652
+    }
+  }
+]
