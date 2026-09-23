@@ -1,91 +1,428 @@
-{
-  "name": "Use SIGNL4",
-  "nodes": [
-    {
-      "id": "trigger",
-      "type": "trigger",
-      "position": {
-        "x": 80,
-        "y": 160
-      },
-      "data": {
-        "name": "manual-trigger",
-        "label": "Run",
-        "inputs": {},
-        "outputs": {
-          "success": {
-            "label": "Success"
-          },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "integration",
-      "type": "action",
-      "position": {
-        "x": 300,
-        "y": 160
-      },
-      "data": {
-        "name": "signl4",
-        "label": "SIGNL4",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+[
+  {
+    "name": "test-SIGNL4",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "position": {
+          "x": 292,
+          "y": 124
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "dazaegqk6x4grqu8u4otxpon",
+        "type": "action",
+        "data": {
+          "description": "Send alerts, resolve or acknowledge incidents via SIGNL4",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "signl4",
+          "label": "SIGNL4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
           },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "output",
-      "type": "display",
-      "position": {
-        "x": 520,
-        "y": 160
-      },
-      "data": {
-        "name": "log",
-        "label": "Result",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "sendAlert",
+            "severity": "major",
+            "teamSecret": "pdq3xmyfh8",
+            "title": "test fusion",
+            "message": "Test du node SIGNL4 depuis ABA Fusion",
+            "service": "ABA Fusion",
+            "externalId": "fusion-test-001"
+          },
+          "defaultOutput": null
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
-          }
-        }
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 124
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "gq8kzy0abazpx9wf1629i04y",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 0
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "ei4ywhqi6kgpdxr5p7ox5wdh",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 292,
+          "y": 684
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "nh56xk68nv0k4sxzkste4yr6",
+        "type": "action",
+        "data": {
+          "description": "Send alerts, resolve or acknowledge incidents via SIGNL4",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "signl4",
+          "label": "SIGNL5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "resolveAlert",
+            "severity": "minor",
+            "teamSecret": "pdq3xmyfh8",
+            "title": "test fusion",
+            "message": "Test du node SIGNL4 depuis ABA Fusion",
+            "service": "ABA Fusion",
+            "externalId": "fusion-test-001"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 684
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "fa8hl85f83me7d6nriwpqpz9",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 560
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "n3ovi849n53bugks66r4kspy",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 169.5994525547446,
+          "y": 1205.1630170316303
+        },
+        "width": 72,
+        "height": 72,
+        "selected": true,
+        "id": "icegqyoc8nhlgfh8bl6llqyk",
+        "type": "action",
+        "data": {
+          "description": "Send alerts, resolve or acknowledge incidents via SIGNL4",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "signl4",
+          "label": "SIGNL6",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "acknowledgeAlert",
+            "severity": "informational",
+            "teamSecret": "pdq3xmyfh8",
+            "title": "test fusion",
+            "message": "Test du node SIGNL4 depuis ABA Fusion",
+            "service": "ABA Fusion",
+            "externalId": "fusion-test-001"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": -48.9005474452554,
+          "y": 1251.6630170316303
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "yh4j8mbl90nn4acgffszdh6q",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 471.72445255474463,
+          "y": 1204.6630170316303
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "id": "psw4j7bw0qv7dr0q3kyple0p",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
       }
-    }
-  ],
-  "connections": [
-    {
-      "id": "trigger-integration",
-      "type": "directed",
-      "source": "trigger",
-      "target": "integration",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    },
-    {
-      "id": "integration-output",
-      "type": "directed",
-      "source": "integration",
-      "target": "output",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    }
-  ]
-}
+    ],
+    "connections": [
+      {
+        "type": "directed",
+        "id": "xy-edge__gq8kzy0abazpx9wf1629i04ysuccess-dazaegqk6x4grqu8u4otxponinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "gq8kzy0abazpx9wf1629i04y",
+        "target": "dazaegqk6x4grqu8u4otxpon",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__dazaegqk6x4grqu8u4otxponsuccess-ei4ywhqi6kgpdxr5p7ox5wdhinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "dazaegqk6x4grqu8u4otxpon",
+        "target": "ei4ywhqi6kgpdxr5p7ox5wdh",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "o2j9xewax7c73hyzlpneo6s2",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "fa8hl85f83me7d6nriwpqpz9",
+        "target": "nh56xk68nv0k4sxzkste4yr6",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "jl1qdkn3v2b6680ce0hm5uu8",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "nh56xk68nv0k4sxzkste4yr6",
+        "target": "n3ovi849n53bugks66r4kspy",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "whigw0vfi28cmdmr9xcrdfbc",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "yh4j8mbl90nn4acgffszdh6q",
+        "target": "icegqyoc8nhlgfh8bl6llqyk",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "abcmtcsi49dfvx75x7gotewr",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "icegqyoc8nhlgfh8bl6llqyk",
+        "target": "psw4j7bw0qv7dr0q3kyple0p",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "tenantId": "a530d869-882f-41ff-93db-cac990044c8e",
+    "workspaceId": "1e4b86de-68d6-44cb-856d-e5d1e1a7f57b",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1790178190381,
+    "updatedAt": 1790178304850
+  }
+]
