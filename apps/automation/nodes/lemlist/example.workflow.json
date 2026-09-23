@@ -1,91 +1,693 @@
-{
-  "name": "Use Lemlist",
-  "nodes": [
-    {
-      "id": "trigger",
-      "type": "trigger",
-      "position": {
-        "x": 80,
-        "y": 160
-      },
-      "data": {
-        "name": "manual-trigger",
-        "label": "Run",
-        "inputs": {},
-        "outputs": {
-          "success": {
-            "label": "Success"
-          },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "integration",
-      "type": "action",
-      "position": {
-        "x": 300,
-        "y": 160
-      },
-      "data": {
-        "name": "lemlist",
-        "label": "Lemlist",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+[
+  {
+    "name": "test - Lemlist",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "position": {
+          "x": -82.3300970873786,
+          "y": 133.1747572815534
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "bksftziaswexw96ahs41tn4h",
+        "type": "action",
+        "data": {
+          "description": "Cold email outreach with Lemlist",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "lemlist",
+          "label": "Lemlist",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
           },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "output",
-      "type": "display",
-      "position": {
-        "x": 520,
-        "y": 160
-      },
-      "data": {
-        "name": "log",
-        "label": "Result",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "getCampaigns",
+            "apiKey": "66fd8ec6df82dc03fccca241834fb5e5",
+            "campaignId": "cam_o8twg7uzCRQkwXfHS"
+          },
+          "defaultOutput": null
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
-          }
-        }
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": -286.252427184466,
+          "y": 118.49514563106794
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "m7txr3bezhrelu300e3isnss",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 128.93203883495147,
+          "y": 117.4368932038835
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "n9yd38h391245yywhx2q4dzb",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": -286.252427184466,
+          "y": 294.99029126213594
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "yv9hbilp4090ofc00up45hly",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": -51.135922330097074,
+          "y": 309.6699029126214
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "ulgdq4pmp96rchkvn9l9sibv",
+        "type": "action",
+        "data": {
+          "description": "Cold email outreach with Lemlist",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "lemlist",
+          "label": "Lemlist1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "getLeads",
+            "apiKey": "66fd8ec6df82dc03fccca241834fb5e5",
+            "campaignId": "cam_o8twg7uzCRQkwXfHS"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 273.8932038834951,
+          "y": 286.5922330097087
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "r1xojmrqvhbp3ojcqm0ipkwq",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 1122.7864077669904,
+          "y": 50.00242718446606
+        },
+        "width": 72,
+        "height": 72,
+        "selected": true,
+        "draggable": true,
+        "id": "nlu2smr8ngl5rzebeizo7q66",
+        "type": "action",
+        "data": {
+          "description": "Cold email outreach with Lemlist",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "lemlist",
+          "label": "Lemlist2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "addLead",
+            "apiKey": "66fd8ec6df82dc03fccca241834fb5e5",
+            "campaignId": "cam_o8twg7uzCRQkwXfHS",
+            "email": "ghanem.meryem1@gmail.com"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 1153.980582524272,
+          "y": 275.70145631067953
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "cj0c1fcx53m9woiybp23zeag",
+        "type": "action",
+        "data": {
+          "description": "Cold email outreach with Lemlist",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "lemlist",
+          "label": "Lemlist3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "getTeam",
+            "apiKey": "66fd8ec6df82dc03fccca241834fb5e5",
+            "campaignId": "cam_o8twg7uzCRQkwXfHS"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 1421.3106796116504,
+          "y": 60.78276699029128
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "hgsefij7pmtdwbwrhwj5zbnn",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 1445.7378640776699,
+          "y": 264.69174757281553
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "uxbpl4uppruv650yulhrysq6",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 675.0582524271845,
+          "y": 81.19660194174757
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "yh529chs4inswd5popirpnnm",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 764.9708737864078,
+          "y": 295.88592233009706
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "hllvwkeyvhxco3lpb3pggvxf",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 550.2815533980582,
+          "y": 600.4878640776699
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "uyvze7tt235q47ramtxo7e21",
+        "type": "action",
+        "data": {
+          "description": "Cold email outreach with Lemlist",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "lemlist",
+          "label": "Lemlist4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "getActivities",
+            "apiKey": "66fd8ec6df82dc03fccca241834fb5e5",
+            "campaignId": "cam_o8twg7uzCRQkwXfHS"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 227.33009708737865,
+          "y": 640.8567961165048
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "qsqt2l5mh2limxze9qea233p",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 854.8834951456311,
+          "y": 587.6432038834951
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "mbedw1uqg9c1c5xjw746n7q5",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
       }
+    ],
+    "connections": [
+      {
+        "type": "directed",
+        "id": "xy-edge__m7txr3bezhrelu300e3isnsssuccess-bksftziaswexw96ahs41tn4hinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "m7txr3bezhrelu300e3isnss",
+        "target": "bksftziaswexw96ahs41tn4h",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__bksftziaswexw96ahs41tn4hsuccess-n9yd38h391245yywhx2q4dzbinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "bksftziaswexw96ahs41tn4h",
+        "target": "n9yd38h391245yywhx2q4dzb",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__yv9hbilp4090ofc00up45hlysuccess-ulgdq4pmp96rchkvn9l9sibvinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "yv9hbilp4090ofc00up45hly",
+        "target": "ulgdq4pmp96rchkvn9l9sibv",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__ulgdq4pmp96rchkvn9l9sibvsuccess-r1xojmrqvhbp3ojcqm0ipkwqinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "ulgdq4pmp96rchkvn9l9sibv",
+        "target": "r1xojmrqvhbp3ojcqm0ipkwq",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__nlu2smr8ngl5rzebeizo7q66success-hgsefij7pmtdwbwrhwj5zbnninput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "nlu2smr8ngl5rzebeizo7q66",
+        "target": "hgsefij7pmtdwbwrhwj5zbnn",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__cj0c1fcx53m9woiybp23zeagsuccess-uxbpl4uppruv650yulhrysq6input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "cj0c1fcx53m9woiybp23zeag",
+        "target": "uxbpl4uppruv650yulhrysq6",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__yh529chs4inswd5popirpnnmsuccess-nlu2smr8ngl5rzebeizo7q66input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "yh529chs4inswd5popirpnnm",
+        "target": "nlu2smr8ngl5rzebeizo7q66",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__hllvwkeyvhxco3lpb3pggvxfsuccess-cj0c1fcx53m9woiybp23zeaginput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "hllvwkeyvhxco3lpb3pggvxf",
+        "target": "cj0c1fcx53m9woiybp23zeag",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__qsqt2l5mh2limxze9qea233psuccess-uyvze7tt235q47ramtxo7e21input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "qsqt2l5mh2limxze9qea233p",
+        "target": "uyvze7tt235q47ramtxo7e21",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__uyvze7tt235q47ramtxo7e21success-mbedw1uqg9c1c5xjw746n7q5input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "uyvze7tt235q47ramtxo7e21",
+        "target": "mbedw1uqg9c1c5xjw746n7q5",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "tenantId": "a530d869-882f-41ff-93db-cac990044c8e",
+    "workspaceId": "1e4b86de-68d6-44cb-856d-e5d1e1a7f57b",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1790159292740,
+    "updatedAt": 1790160383313,
+    "desiredStatus": "stopped",
+    "lastError": null,
+    "statusInfo": {
+      "type": "info",
+      "message": "Workflow stopped.",
+      "at": 1790160383313
     }
-  ],
-  "connections": [
-    {
-      "id": "trigger-integration",
-      "type": "directed",
-      "source": "trigger",
-      "target": "integration",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    },
-    {
-      "id": "integration-output",
-      "type": "directed",
-      "source": "integration",
-      "target": "output",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    }
-  ]
-}
+  }
+]
