@@ -1,0 +1,184 @@
+[
+  {
+    "name": "test  -nextcloud-upload-file",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "position": {
+          "x": 0,
+          "y": 124
+        },
+        "width": 72,
+        "height": 72,
+        "draggable": true,
+        "selected": false,
+        "id": "ixd62zfrlibboko3h663cbc5",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 0
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "draggable": true,
+        "id": "mxb47sf0vbuuqcw9vfxwgfdy",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 377.28596802841923,
+          "y": 208.96269982238013
+        },
+        "width": 72,
+        "height": 72,
+        "selected": true,
+        "id": "cnjqblmso3fpsc9jo4logukp",
+        "type": "action",
+        "data": {
+          "description": "Upload a file to Nextcloud via WebDAV PUT. Provide `contentBase64` or pass data into the node.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "nextcloud-upload-file",
+          "label": "Nextcloud - Upload File",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "connection": {
+              "password": "TestNextcloud123!",
+              "baseUrl": "https://translate-giveaway-anymore.ngrok-free.dev",
+              "username": "admin"
+            },
+            "path": "Documents/upload-test.txt",
+            "contentBase64": "SGVsbG8gZnJvbSBGdXNpb24="
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      }
+    ],
+    "connections": [
+      {
+        "type": "directed",
+        "id": "xy-edge__ixd62zfrlibboko3h663cbc5success-uytbc9z3trwmrik6me0t7xjuinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "ixd62zfrlibboko3h663cbc5",
+        "target": "uytbc9z3trwmrik6me0t7xju",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__uytbc9z3trwmrik6me0t7xjusuccess-mxb47sf0vbuuqcw9vfxwgfdyinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "uytbc9z3trwmrik6me0t7xju",
+        "target": "mxb47sf0vbuuqcw9vfxwgfdy",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__ixd62zfrlibboko3h663cbc5success-cnjqblmso3fpsc9jo4logukpinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "ixd62zfrlibboko3h663cbc5",
+        "target": "cnjqblmso3fpsc9jo4logukp",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__cnjqblmso3fpsc9jo4logukpsuccess-mxb47sf0vbuuqcw9vfxwgfdyinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "cnjqblmso3fpsc9jo4logukp",
+        "target": "mxb47sf0vbuuqcw9vfxwgfdy",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "tenantId": "a530d869-882f-41ff-93db-cac990044c8e",
+    "workspaceId": "1e4b86de-68d6-44cb-856d-e5d1e1a7f57b",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1790092762685,
+    "updatedAt": 1790093386913,
+    "desiredStatus": "stopped",
+    "lastError": null,
+    "statusInfo": {
+      "type": "info",
+      "message": "Workflow stopped.",
+      "at": 1790093386913
+    }
+  }
+]
