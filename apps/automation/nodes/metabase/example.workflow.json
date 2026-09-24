@@ -39,7 +39,7 @@
           "parameters": {
             "operation": "getDashboard",
             "host": "https://translate-giveaway-anymore.ngrok-free.dev",
-            "username": "ghanem.meryem1@gmail.com",
+            "username": "",
             "password": "fusionautomation1",
             "dashboardId": "2"
           },
@@ -152,7 +152,7 @@
           "parameters": {
             "operation": "getCard",
             "host": "https://translate-giveaway-anymore.ngrok-free.dev",
-            "username": "ghanem.meryem1@gmail.com",
+            "username": "",
             "password": "fusionautomation1",
             "cardId": "22"
           },
@@ -265,7 +265,7 @@
           "parameters": {
             "operation": "listDashboards",
             "host": "https://translate-giveaway-anymore.ngrok-free.dev",
-            "username": "ghanem.meryem1@gmail.com",
+            "username": "",
             "password": "fusionautomation1"
           },
           "defaultOutput": null
@@ -377,7 +377,7 @@
           "parameters": {
             "operation": "listCards",
             "host": "https://translate-giveaway-anymore.ngrok-free.dev",
-            "username": "ghanem.meryem1@gmail.com",
+            "username": "",
             "password": "fusionautomation1"
           },
           "defaultOutput": null
@@ -489,7 +489,7 @@
           "parameters": {
             "operation": "listDatabases",
             "host": "https://translate-giveaway-anymore.ngrok-free.dev",
-            "username": "ghanem.meryem1@gmail.com",
+            "username": "",
             "password": "fusionautomation1"
           },
           "defaultOutput": null
@@ -601,7 +601,7 @@
           "parameters": {
             "operation": "runQuery",
             "host": "https://translate-giveaway-anymore.ngrok-free.dev",
-            "username": "ghanem.meryem1@gmail.com",
+            "username": "",
             "password": "fusionautomation1",
             "cardId": "22"
           },
