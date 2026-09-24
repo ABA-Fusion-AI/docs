@@ -1,0 +1,4 @@
+﻿{
+    "label":  "Ensembl VEP",
+    "description":  "Predict functional consequences and variant effects using Ensembl Variant Effect Predictor (VEP)."
+}

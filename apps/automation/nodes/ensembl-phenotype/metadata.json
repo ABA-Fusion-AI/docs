@@ -1,0 +1,4 @@
+﻿{
+    "label":  "Ensembl Phenotype",
+    "description":  "Retrieve phenotype, disease, and trait annotations linked to genes and genomic regions."
+}

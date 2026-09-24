@@ -1,0 +1,4 @@
+﻿{
+    "label":  "Ensembl Linkage Disequilibrium",
+    "description":  "Compute and retrieve Linkage Disequilibrium (LD) values (r2, D\u0027) between genomic variants."
+}

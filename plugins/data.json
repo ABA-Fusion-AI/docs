@@ -4389,11 +4389,26 @@
     "name": "Ensembl",
     "type": "tool",
     "description": "Ensembl genome browser - access gene sequences, variants, and comparative genomics data",
-    "slogan": "ensembl",
-    "icon": "icons/default-fill.svg",
+    "slogan": "Ensembl Genomic Data",
+    "icon": "icons/ensembl.svg",
     "integrations": {
       "automation": [
-        "ensembl"
+        "ensembl-archive",
+        "ensembl-compara",
+        "ensembl-eqtl",
+        "ensembl-info",
+        "ensembl-ld",
+        "ensembl-lookup",
+        "ensembl-mapping",
+        "ensembl-ontology-taxonomy",
+        "ensembl-overlap",
+        "ensembl-phenotype",
+        "ensembl-regulation",
+        "ensembl-sequence",
+        "ensembl-transcript-haplotypes",
+        "ensembl-variation",
+        "ensembl-vep",
+        "ensembl-xref"
       ]
     }
   },

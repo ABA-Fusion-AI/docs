@@ -1,0 +1,4 @@
+﻿{
+    "label":  "Ensembl Cross References",
+    "description":  "Retrieve external database cross-references (UniProt, HGNC, RefSeq, PDB) for Ensembl entities."
+}

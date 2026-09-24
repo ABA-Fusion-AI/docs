@@ -1,0 +1,4 @@
+﻿{
+    "label":  "Ensembl Sequence",
+    "description":  "Retrieve genomic, cDNA, CDS, and protein sequences by stable ID or chromosomal region."
+}

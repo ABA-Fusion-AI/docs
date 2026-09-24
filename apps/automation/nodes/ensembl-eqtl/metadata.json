@@ -1,0 +1,4 @@
+﻿{
+    "label":  "Ensembl eQTL",
+    "description":  "Query expression Quantitative Trait Loci (eQTL) associations by gene ID, variant, or tissue."
+}

@@ -1,0 +1,4 @@
+﻿{
+    "label":  "Ensembl Mapping",
+    "description":  "Convert coordinates between cDNA, CDS, protein translation, and genomic assembly coordinates."
+}

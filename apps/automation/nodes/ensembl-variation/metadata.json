@@ -1,0 +1,4 @@
+﻿{
+    "label":  "Ensembl Variation",
+    "description":  "Retrieve genetic variation data, alleles, minor allele frequency (MAF), and clinical significance for rsIDs."
+}

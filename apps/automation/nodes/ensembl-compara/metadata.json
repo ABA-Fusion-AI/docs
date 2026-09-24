@@ -1,0 +1,4 @@
+﻿{
+    "label":  "Ensembl Compara",
+    "description":  "Retrieve comparative genomics data including gene trees, alignments, and orthology/paralogy homologies."
+}

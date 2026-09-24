@@ -1,0 +1,4 @@
+﻿{
+    "label":  "Ensembl Transcript Haplotypes",
+    "description":  "Computes observed transcript haplotypes combining 1000 Genomes Phase 3 genotypes into full cDNA \u0026 protein haplotype sequences."
+}

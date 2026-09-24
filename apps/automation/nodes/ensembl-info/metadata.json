@@ -1,0 +1,4 @@
+﻿{
+    "label":  "Ensembl Information",
+    "description":  "Query Ensembl database metadata, assembly releases, software versions, biotypes, and service status."
+}
