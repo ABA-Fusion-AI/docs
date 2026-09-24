@@ -1,0 +1,1377 @@
+[
+  {
+    "name": "test-langConnect",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "position": {
+          "x": 292,
+          "y": 5164
+        },
+        "width": 72,
+        "height": 72,
+        "selected": true,
+        "draggable": true,
+        "id": "qkc7zczqyhg9ye5bfzwdo3mr",
+        "type": "action",
+        "data": {
+          "description": "Manage vector collections and index documents using LangConnect API.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "lang-connect",
+          "label": "LangConnect Client",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "bulk_delete_documents",
+            "apiKey": "",
+            "baseUrl": "your base url",
+            "deleteBy": "document_id",
+            "collectionId": "304bda3e-bd1f-487b-9f03-03849944e12b",
+            "targetIds": "[\"7e9cf2f4-6c66-4f95-b0b5-5af22d66c1f3\",\"92d7415e-0e54-4df7-a7a5-9c55c63079d2\"]"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 5164
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "sd1ei5kmdn2j21xbux9i7x7n",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 5040
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "uma3dk69u65mtfvfp52362cc",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 292,
+          "y": 3484
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "wadrpoi8by1t2q5ln5ht46bx",
+        "type": "action",
+        "data": {
+          "description": "Manage vector collections and index documents using LangConnect API.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "lang-connect",
+          "label": "LangConnect Client list_ocument",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "list_documents",
+            "apiKey": "",
+            "baseUrl": "your base url",
+            "collectionId": "304bda3e-bd1f-487b-9f03-03849944e12b"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 3484
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "i16bsx3hf7g3scxgui2of5bn",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 3360
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "lsgoimmta31x8g1p1w1wsjms",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 292,
+          "y": 2364
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "zmw1c0xxcr1tjkxlisr7wxx1",
+        "type": "action",
+        "data": {
+          "description": "Manage vector collections and index documents using LangConnect API.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "lang-connect",
+          "label": "LangConnect Client delete_collection",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "delete_collection",
+            "apiKey": "",
+            "baseUrl": "your base url",
+            "collectionId": "db05124c-c5c4-4b91-a922-792c1bdcef8f"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 2364
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "hiqp4vzoa77j8akpeh145vm1",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 2240
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "gwgwab84ufqvl29mpi22tkcp",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 292,
+          "y": 1804
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "n7h9m6moinmks3jyhs9vlbls",
+        "type": "action",
+        "data": {
+          "description": "Manage vector collections and index documents using LangConnect API.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "lang-connect",
+          "label": "LangConnect Client create_collection",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "create_collection",
+            "apiKey": "",
+            "baseUrl": "your base url",
+            "collectionName": "test-collection-1",
+            "metadata": "{\"description\":\"collection de test 1\",\"source\":\"fusion\"}"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 1804
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "szvle8e1nxn5ad14c306lvyi",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 1680
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "f37zeve1twqfw0ynj0q0y972",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 292,
+          "y": 4044
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "qottryylvmrgbdsyzb2rxy7b",
+        "type": "action",
+        "data": {
+          "description": "Manage vector collections and index documents using LangConnect API.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "lang-connect",
+          "label": "LangConnect Client4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "search_documents",
+            "apiKey": "",
+            "baseUrl": "your base url",
+            "collectionId": "304bda3e-bd1f-487b-9f03-03849944e12b",
+            "searchType": "similarity",
+            "query": "What is this document about?"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 4044
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "yz5bzl6w6e20whkpjcwm1sym",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 3920
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "m2k0ln2umdoynh1glm3m1l6s",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 292,
+          "y": 4604
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "vun8mr3x63g945hzdomz63jz",
+        "type": "action",
+        "data": {
+          "description": "Manage vector collections and index documents using LangConnect API.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "lang-connect",
+          "label": "LangConnect Client5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "delete_document",
+            "apiKey": "",
+            "baseUrl": "your base url",
+            "deleteBy": "document_id",
+            "collectionId": "304bda3e-bd1f-487b-9f03-03849944e12b",
+            "documentId": "00949f94-10ff-4fe7-9a3c-9cd24d095b45"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 4604
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "n4ap02lr8ltpvrok6n4w1a16",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 4480
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "mkrbgrgknqzzpnsu57fm1wmh",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 292,
+          "y": 684
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "mymo24yg8hpdyoald52yokg9",
+        "type": "action",
+        "data": {
+          "description": "Manage vector collections and index documents using LangConnect API.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "lang-connect",
+          "label": "LangConnect Client get_collection",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "get_collection",
+            "apiKey": "",
+            "baseUrl": "your base url",
+            "collectionId": "ef32fb26-d469-4bb6-9303-cdd9749daa44"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 684
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "ck163xop7v728ygatjpr75pb",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 560
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "kjdmwg255s475d4odfqz8l0v",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 292,
+          "y": 124
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "aqov1mxhyp3jezcxtijw4vuu",
+        "type": "action",
+        "data": {
+          "description": "Manage vector collections and index documents using LangConnect API.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "lang-connect",
+          "label": "LangConnect Client list_collections",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "list_collections",
+            "apiKey": "",
+            "baseUrl": "your base url"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 124
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "ionhj7katzg7o98ekz0z1pc7",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 0
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "l4wcem2nwcdmw89ye23q3ype",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 292,
+          "y": 2924
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "qbfkrgdfguh2paw9rjcya4v1",
+        "type": "action",
+        "data": {
+          "description": "Manage vector collections and index documents using LangConnect API.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "lang-connect",
+          "label": "LangConnect Client upload document",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "upload_document",
+            "apiKey": "",
+            "baseUrl": "your base url",
+            "collectionId": "304bda3e-bd1f-487b-9f03-03849944e12b",
+            "metadata": "{\"source\":\"test\",\"type\":\"document\"}",
+            "fileUrl": "https://www.w3.org/TR/REC-html40-971218/html40.txt"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 2924
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "ootf9agw3qpu9by2sj9wip3f",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 2800
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "h2vmdh9ly3qegonzsjw5vkkb",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 292,
+          "y": 1244
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "es0cahmap96pq1rddhpddtgl",
+        "type": "action",
+        "data": {
+          "description": "Manage vector collections and index documents using LangConnect API.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "lang-connect",
+          "label": "LangConnect Client update_collection",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "update_collection",
+            "apiKey": "",
+            "baseUrl": "your base url",
+            "collectionName": "test-collection-updated",
+            "metadata": "{\"description\":\"collection de test updated\",\"source\":\"fusion\"}",
+            "collectionId": "ef32fb26-d469-4bb6-9303-cdd9749daa44"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 1244
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "uhi6r0tkkcl43so2t4ajsesy",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 1120
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "mxq9fia51xy4l8y11ipedt41",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      }
+    ],
+    "connections": [
+      {
+        "type": "directed",
+        "id": "xy-edge__sd1ei5kmdn2j21xbux9i7x7nsuccess-qkc7zczqyhg9ye5bfzwdo3mrinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "sd1ei5kmdn2j21xbux9i7x7n",
+        "target": "qkc7zczqyhg9ye5bfzwdo3mr",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__qkc7zczqyhg9ye5bfzwdo3mrsuccess-uma3dk69u65mtfvfp52362ccinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "qkc7zczqyhg9ye5bfzwdo3mr",
+        "target": "uma3dk69u65mtfvfp52362cc",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "oae0wqcswim57apjf8qu52g4",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "i16bsx3hf7g3scxgui2of5bn",
+        "target": "wadrpoi8by1t2q5ln5ht46bx",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "zygfbrr6hwtj74xpvrmpwzsa",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "wadrpoi8by1t2q5ln5ht46bx",
+        "target": "lsgoimmta31x8g1p1w1wsjms",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "cc0oswvr6e07bn4ajr03d1us",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "hiqp4vzoa77j8akpeh145vm1",
+        "target": "zmw1c0xxcr1tjkxlisr7wxx1",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "b0ag7ul0z531qaaj3ebqf8tp",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "zmw1c0xxcr1tjkxlisr7wxx1",
+        "target": "gwgwab84ufqvl29mpi22tkcp",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "zorpuh5it0u8otf130yi0oyv",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "szvle8e1nxn5ad14c306lvyi",
+        "target": "n7h9m6moinmks3jyhs9vlbls",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "apduqi64cziwi2u4dwtgxlb1",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "n7h9m6moinmks3jyhs9vlbls",
+        "target": "f37zeve1twqfw0ynj0q0y972",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "w45rzc02747pz6nkho8njcpi",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "yz5bzl6w6e20whkpjcwm1sym",
+        "target": "qottryylvmrgbdsyzb2rxy7b",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "aks0fwx5827mlq8xf9x06jpk",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "qottryylvmrgbdsyzb2rxy7b",
+        "target": "m2k0ln2umdoynh1glm3m1l6s",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "gs2lp696gcsebmaeiw5hzsst",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "n4ap02lr8ltpvrok6n4w1a16",
+        "target": "vun8mr3x63g945hzdomz63jz",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "hh8xylghbtqs4060gnllla2l",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "vun8mr3x63g945hzdomz63jz",
+        "target": "mkrbgrgknqzzpnsu57fm1wmh",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "if5kumg8lvne2ho1bqj0ibkc",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "ck163xop7v728ygatjpr75pb",
+        "target": "mymo24yg8hpdyoald52yokg9",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "ozc5sne4wvi5slx182mu0obq",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "mymo24yg8hpdyoald52yokg9",
+        "target": "kjdmwg255s475d4odfqz8l0v",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "j0os8rbdmhuox33py9689qmm",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "ionhj7katzg7o98ekz0z1pc7",
+        "target": "aqov1mxhyp3jezcxtijw4vuu",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "lt3hdv72mddnkkrusiwz4tss",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "aqov1mxhyp3jezcxtijw4vuu",
+        "target": "l4wcem2nwcdmw89ye23q3ype",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "f9ebtlc4zuqg7joqk9mnl391",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "ootf9agw3qpu9by2sj9wip3f",
+        "target": "qbfkrgdfguh2paw9rjcya4v1",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "c0u7xi9s5j7ex90dudnxuif1",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "qbfkrgdfguh2paw9rjcya4v1",
+        "target": "h2vmdh9ly3qegonzsjw5vkkb",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "cl48qr2woxmnglhk77i31pue",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "uhi6r0tkkcl43so2t4ajsesy",
+        "target": "es0cahmap96pq1rddhpddtgl",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "niobthcyox1md6vj1biv6ojb",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "es0cahmap96pq1rddhpddtgl",
+        "target": "mxq9fia51xy4l8y11ipedt41",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "tenantId": "a530d869-882f-41ff-93db-cac990044c8e",
+    "workspaceId": "1e4b86de-68d6-44cb-856d-e5d1e1a7f57b",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1790244447325,
+    "updatedAt": 1790257578634,
+    "desiredStatus": "stopped",
+    "lastError": null,
+    "statusInfo": {
+      "type": "info",
+      "message": "Workflow stopped.",
+      "at": 1790257578634
+    }
+  }
+]
