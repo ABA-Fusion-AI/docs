@@ -8,7 +8,7 @@ version: "1.0.0"
 language: "en"
 last_updated: "2026-09-25"
 author: "Fusion Team"
-tags: [integration, peer-only, nvidia, bionemo, boltz2, structure-prediction]
+tags: [integration, peer-only,nvidia, bionemo, boltz2, structure-prediction]
 related_nodes: []
 ---
 
