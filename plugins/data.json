@@ -4393,6 +4393,7 @@
     "icon": "icons/ensembl.svg",
     "integrations": {
       "automation": [
+        "ensembl",
         "ensembl-archive",
         "ensembl-compara",
         "ensembl-eqtl",
