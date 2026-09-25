@@ -8602,12 +8602,18 @@
     "id": "square",
     "name": "Square",
     "type": "tool",
-    "description": "Square payment platform - process payments, manage inventory, and track sales",
-    "slogan": "square",
-    "icon": "icons/default-fill.svg",
+    "description": "Square payment platform - process payments, manage refunds, orders, customers, and catalog",
+    "slogan": "Square Payments & Commerce",
+    "icon": "icons/square.svg",
     "integrations": {
       "automation": [
-        "square"
+        "square",
+        "square-catalog",
+        "square-customers",
+        "square-locations",
+        "square-orders",
+        "square-payments",
+        "square-refunds"
       ]
     }
   },

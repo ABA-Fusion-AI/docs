@@ -1968,6 +1968,12 @@
           "cmi-generate-payment-form",
           "now-payments",
           "square",
+          "square-catalog",
+          "square-customers",
+          "square-locations",
+          "square-orders",
+          "square-payments",
+          "square-refunds",
           "velo-payments",
           "adyen",
           "stripe-charges",
@@ -1978,6 +1984,19 @@
           "paddle",
           "paypal",
           "stripe"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "Square",
+        "nodes": [
+          "square",
+          "square-catalog",
+          "square-customers",
+          "square-locations",
+          "square-orders",
+          "square-payments",
+          "square-refunds"
         ],
         "subgroups": []
       },
