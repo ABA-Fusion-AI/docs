@@ -1,0 +1,172 @@
+[
+  {
+    "name": "test-nvidia-bionemo-boltz2-predict",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "position": {
+          "x": 913,
+          "y": 107
+        },
+        "width": 72,
+        "height": 72,
+        "selected": true,
+        "id": "swgmrr4k56o0wc7kungm99u0",
+        "type": "action",
+        "data": {
+          "description": "Predict structures using Boltz2. Supports proteins, DNA, RNA, ligands with MSA, modifications, bonds, and binding affinity.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "nvidia-bionemo-boltz2-predict",
+          "label": "BioNeMo: Boltz2 Predict",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "output_format": "mmcif",
+            "apiKey": "your api ke",
+            "polymers": [
+              {
+                "molecule_type": "protein",
+                "id": "A",
+                "sequence": "MALWMRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAEDLQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN"
+              }
+            ]
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 538.7813163243067,
+          "y": 106.57302615065257
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "mv7xt15erewvluj41c4c5rcg",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 1140.669810826187,
+          "y": 82.54573576767743
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "id": "c4bgnjllarq4hcvxyqpqx7s2",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      }
+    ],
+    "connections": [
+      {
+        "type": "directed",
+        "id": "xy-edge__mv7xt15erewvluj41c4c5rcgsuccess-swgmrr4k56o0wc7kungm99u0input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "mv7xt15erewvluj41c4c5rcg",
+        "target": "swgmrr4k56o0wc7kungm99u0",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__swgmrr4k56o0wc7kungm99u0success-c4bgnjllarq4hcvxyqpqx7s2input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "swgmrr4k56o0wc7kungm99u0",
+        "target": "c4bgnjllarq4hcvxyqpqx7s2",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "tenantId": "a530d869-882f-41ff-93db-cac990044c8e",
+    "workspaceId": "1e4b86de-68d6-44cb-856d-e5d1e1a7f57b",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1789992171652,
+    "updatedAt": 1790355621241,
+    "desiredStatus": "stopped",
+    "lastError": {
+      "message": "Failed to set up nodes",
+      "issues": [
+        {
+          "nodeId": "kufbbk530qoqkulo4acfo5ch",
+          "error": "_ValidationAggregateError: Validation failed with 2 error(s)\n- databases: Expected an array\n- output_alignment_formats: Expected an array"
+        }
+      ],
+      "at": 1790072259142
+    },
+    "statusInfo": {
+      "type": "info",
+      "message": "Requested by user: stopped.",
+      "at": 1790072274638
+    }
+  }
+]
