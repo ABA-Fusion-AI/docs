@@ -1985,21 +1985,7 @@
           "chargebee",
           "paddle"
         ],
-        "subgroups": [
-          {
-            "name": "Square",
-            "nodes": [
-              "square",
-              "square-catalog",
-              "square-customers",
-              "square-locations",
-              "square-orders",
-              "square-payments",
-              "square-refunds"
-            ],
-            "subgroups": []
-          }
-        ]
+        "subgroups": []
       },
       {
         "name": "Square",
