@@ -1976,16 +1976,30 @@
           "square-refunds",
           "velo-payments",
           "adyen",
+          "stripe",
           "stripe-charges",
+          "stripe-create-payment-link",
+          "paypal",
           "paypal-capture-payment",
           "paypal-create-order",
-          "stripe-create-payment-link",
           "chargebee",
-          "paddle",
-          "paypal",
-          "stripe"
+          "paddle"
         ],
-        "subgroups": []
+        "subgroups": [
+          {
+            "name": "Square",
+            "nodes": [
+              "square",
+              "square-catalog",
+              "square-customers",
+              "square-locations",
+              "square-orders",
+              "square-payments",
+              "square-refunds"
+            ],
+            "subgroups": []
+          }
+        ]
       },
       {
         "name": "Square",
