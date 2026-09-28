@@ -1,16 +1,16 @@
 {
-  "name": "Use crowd.dev",
+  "name": "Sync and Track Community Member",
   "nodes": [
     {
       "id": "trigger",
       "type": "trigger",
       "position": {
-        "x": 80,
-        "y": 160
+        "x": 100,
+        "y": 180
       },
       "data": {
         "name": "manual-trigger",
-        "label": "Run",
+        "label": "Member Event",
         "inputs": {},
         "outputs": {
           "success": {
@@ -23,11 +23,11 @@
       }
     },
     {
-      "id": "integration",
+      "id": "crowddev-action",
       "type": "action",
       "position": {
-        "x": 300,
-        "y": 160
+        "x": 340,
+        "y": 180
       },
       "data": {
         "name": "crowddev",
@@ -48,15 +48,15 @@
       }
     },
     {
-      "id": "output",
+      "id": "log-output",
       "type": "display",
       "position": {
-        "x": 520,
-        "y": 160
+        "x": 580,
+        "y": 180
       },
       "data": {
         "name": "log",
-        "label": "Result",
+        "label": "Log Result",
         "inputs": {
           "input": {
             "label": "Input"
@@ -72,18 +72,18 @@
   ],
   "connections": [
     {
-      "id": "trigger-integration",
+      "id": "trigger-to-crowddev",
       "type": "directed",
       "source": "trigger",
-      "target": "integration",
+      "target": "crowddev-action",
       "sourceHandle": "success",
       "targetHandle": "input"
     },
     {
-      "id": "integration-output",
+      "id": "crowddev-to-output",
       "type": "directed",
-      "source": "integration",
-      "target": "output",
+      "source": "crowddev-action",
+      "target": "log-output",
       "sourceHandle": "success",
       "targetHandle": "input"
     }
