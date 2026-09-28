@@ -43,7 +43,7 @@
           "parameters": {
             "operation": "write",
             "url": "https://translate-giveaway-anymore.ngrok-free.dev ",
-            "token": "HvnIMTBbWT0t8i_3EqMclRg9gJqlPdMOKlS5lBHGQazDV184C0yJwA1p9Vdes0u3CZbc6QxNBM7G2Qd-FHetig==",
+            "token": "",
             "org": "aba",
             "bucket": "fusion",
             "timestamp": "2026-09-28T14:46:00Z",
@@ -184,7 +184,7 @@
           "parameters": {
             "operation": "query",
             "url": "https://translate-giveaway-anymore.ngrok-free.dev ",
-            "token": "HvnIMTBbWT0t8i_3EqMclRg9gJqlPdMOKlS5lBHGQazDV184C0yJwA1p9Vdes0u3CZbc6QxNBM7G2Qd-FHetig==",
+            "token": "",
             "org": "aba",
             "bucket": "fusion",
             "measurement_query": "temperature_test",
@@ -307,7 +307,7 @@
           "parameters": {
             "operation": "queryFlux",
             "url": "https://translate-giveaway-anymore.ngrok-free.dev ",
-            "token": "HvnIMTBbWT0t8i_3EqMclRg9gJqlPdMOKlS5lBHGQazDV184C0yJwA1p9Vdes0u3CZbc6QxNBM7G2Qd-FHetig==",
+            "token": "",
             "org": "aba",
             "bucket": "fusion",
             "fluxQuery": "from(bucket: \"fusion\")   |> range(start: -24h)   |> filter(fn: (r) => r._measurement == \"temperature_test\")   |> limit(n: 20)",
