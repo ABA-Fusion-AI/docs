@@ -1,0 +1,477 @@
+[
+  {
+    "name": "test-InfluxDB",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "position": {
+          "x": 292,
+          "y": 124
+        },
+        "width": 72,
+        "height": 72,
+        "selected": true,
+        "draggable": true,
+        "id": "d9dvpupp6vjeni4hpwco0u3c",
+        "type": "action",
+        "data": {
+          "description": "Read, write, and query time-series data from InfluxDB using Flux",
+          "showRunningStatus": true,
+          "metadata": {
+            "fields": "text",
+            "timestamp": "text"
+          },
+          "_morphing": false,
+          "name": "influxdb",
+          "label": "InfluxDB",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "write",
+            "url": "https://translate-giveaway-anymore.ngrok-free.dev ",
+            "token": "HvnIMTBbWT0t8i_3EqMclRg9gJqlPdMOKlS5lBHGQazDV184C0yJwA1p9Vdes0u3CZbc6QxNBM7G2Qd-FHetig==",
+            "org": "aba",
+            "bucket": "fusion",
+            "timestamp": "2026-09-28T14:46:00Z",
+            "measurement": "temperature_test",
+            "tags": [
+              {
+                "name": "name",
+                "value": "capteur"
+              },
+              {
+                "name": "value",
+                "value": "capteur-01"
+              }
+            ],
+            "fields": [
+              {
+                "type": "string",
+                "name": "name",
+                "value": "celsius"
+              },
+              {
+                "type": "number",
+                "name": "value",
+                "value": "23.5"
+              }
+            ]
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 124
+        },
+        "width": 72,
+        "height": 72,
+        "draggable": true,
+        "selected": false,
+        "id": "adixgtclw2vovndjw8n5dg1h",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 0
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "draggable": true,
+        "selected": false,
+        "id": "akt7ppaqk1byjdvjftwr3vdx",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 292,
+          "y": 684
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "d8rmce8cszh9zmygent5b7pl",
+        "type": "action",
+        "data": {
+          "description": "Read, write, and query time-series data from InfluxDB using Flux",
+          "showRunningStatus": true,
+          "metadata": {
+            "fields": "text",
+            "timestamp": "number"
+          },
+          "_morphing": false,
+          "name": "influxdb",
+          "label": "InfluxDB1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "query",
+            "url": "https://translate-giveaway-anymore.ngrok-free.dev ",
+            "token": "HvnIMTBbWT0t8i_3EqMclRg9gJqlPdMOKlS5lBHGQazDV184C0yJwA1p9Vdes0u3CZbc6QxNBM7G2Qd-FHetig==",
+            "org": "aba",
+            "bucket": "fusion",
+            "measurement_query": "temperature_test",
+            "range": {
+              "start": "-24h"
+            },
+            "debug": true,
+            "fluxQuery": "from(bucket: \"fusion\")   |> range(start: -1h)   |> filter(fn: (r) => r._measurement == \"temperature_test\")"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 684
+        },
+        "width": 72,
+        "height": 72,
+        "draggable": true,
+        "selected": false,
+        "id": "isn4sy1zul8hqdhzbjuhtsub",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 560
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "draggable": true,
+        "selected": false,
+        "id": "h4851nb0l7fv8985pbnh7ewj",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 292,
+          "y": 1244
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "v4d97as2k875xeth1kn7tv8z",
+        "type": "action",
+        "data": {
+          "description": "Read, write, and query time-series data from InfluxDB using Flux",
+          "showRunningStatus": true,
+          "metadata": {
+            "fields": "text",
+            "timestamp": "number"
+          },
+          "_morphing": false,
+          "name": "influxdb",
+          "label": "InfluxDB2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "queryFlux",
+            "url": "https://translate-giveaway-anymore.ngrok-free.dev ",
+            "token": "HvnIMTBbWT0t8i_3EqMclRg9gJqlPdMOKlS5lBHGQazDV184C0yJwA1p9Vdes0u3CZbc6QxNBM7G2Qd-FHetig==",
+            "org": "aba",
+            "bucket": "fusion",
+            "fluxQuery": "from(bucket: \"fusion\")   |> range(start: -24h)   |> filter(fn: (r) => r._measurement == \"temperature_test\")   |> limit(n: 20)",
+            "debug": true,
+            "acknowledgeRisk": true
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 1244
+        },
+        "width": 72,
+        "height": 72,
+        "draggable": true,
+        "selected": false,
+        "id": "d44tfrh9mm9yvqygk0bqlr62",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 1120
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "draggable": true,
+        "selected": false,
+        "id": "h9slgllu4i9pjzxroic36cm5",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      }
+    ],
+    "connections": [
+      {
+        "type": "directed",
+        "id": "xy-edge__adixgtclw2vovndjw8n5dg1hsuccess-d9dvpupp6vjeni4hpwco0u3cinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "adixgtclw2vovndjw8n5dg1h",
+        "target": "d9dvpupp6vjeni4hpwco0u3c",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__d9dvpupp6vjeni4hpwco0u3csuccess-akt7ppaqk1byjdvjftwr3vdxinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "d9dvpupp6vjeni4hpwco0u3c",
+        "target": "akt7ppaqk1byjdvjftwr3vdx",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "yyd6i9l9yobrhtqg0e1xk76m",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "isn4sy1zul8hqdhzbjuhtsub",
+        "target": "d8rmce8cszh9zmygent5b7pl",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xowyranftydfapvswc6eohfq",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "d8rmce8cszh9zmygent5b7pl",
+        "target": "h4851nb0l7fv8985pbnh7ewj",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "c3sebedrpoczgslc48wy4192",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "d44tfrh9mm9yvqygk0bqlr62",
+        "target": "v4d97as2k875xeth1kn7tv8z",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "bqsgzbi5oa5d87ax3cacrvuy",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "v4d97as2k875xeth1kn7tv8z",
+        "target": "h9slgllu4i9pjzxroic36cm5",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "tenantId": "a530d869-882f-41ff-93db-cac990044c8e",
+    "workspaceId": "1e4b86de-68d6-44cb-856d-e5d1e1a7f57b",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1790597544075,
+    "updatedAt": 1790606995580,
+    "desiredStatus": "stopped",
+    "lastError": null,
+    "statusInfo": {
+      "type": "info",
+      "message": "Workflow stopped.",
+      "at": 1790606995580
+    }
+  }
+]
