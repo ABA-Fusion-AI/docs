@@ -1,0 +1,293 @@
+[
+  {
+    "name": "TEST-ICD11 Search",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "position": {
+          "x": 292,
+          "y": 124
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "acsa48ojylcn7cnll52u0fch",
+        "type": "action",
+        "data": {
+          "description": "Search ICD-11 (International Classification of Diseases, 11th Revision) medical codes and terms.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "icd11-search",
+          "label": "ICD11 Search",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "q": "diabetes",
+            "baseUrl": "https://id.who.int/icd/release/11/2024-01/mms/search",
+            "apiKey": ""
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 124
+        },
+        "width": 72,
+        "height": 72,
+        "draggable": true,
+        "selected": false,
+        "id": "i65xn30ybqezyecs3zvb0dos",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 0
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "draggable": true,
+        "selected": false,
+        "id": "py3v7po5a881ru7z5itatd3b",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 292,
+          "y": 684
+        },
+        "width": 72,
+        "height": 72,
+        "selected": true,
+        "draggable": true,
+        "id": "htdos5hn73xbvbh40j76s0kf",
+        "type": "action",
+        "data": {
+          "description": "Search ICD-11 (International Classification of Diseases, 11th Revision) medical codes and terms.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "icd11-search",
+          "label": "ICD11 Search1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "q": "1A00",
+            "baseUrl": "https://id.who.int/icd/release/11/2024-01/mms/search",
+            "apiKey": ""
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 684
+        },
+        "width": 72,
+        "height": 72,
+        "draggable": true,
+        "selected": true,
+        "id": "ymy9vl9uen4q4fjp37bm96gz",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 560
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "draggable": true,
+        "selected": true,
+        "id": "esrlwf4uwi0pdek9ju0rohaj",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      }
+    ],
+    "connections": [
+      {
+        "type": "directed",
+        "id": "xy-edge__i65xn30ybqezyecs3zvb0dossuccess-acsa48ojylcn7cnll52u0fchinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "i65xn30ybqezyecs3zvb0dos",
+        "target": "acsa48ojylcn7cnll52u0fch",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__acsa48ojylcn7cnll52u0fchsuccess-py3v7po5a881ru7z5itatd3binput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "acsa48ojylcn7cnll52u0fch",
+        "target": "py3v7po5a881ru7z5itatd3b",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "o1cmybrqhpb9lvqbuf2acqn4",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "ymy9vl9uen4q4fjp37bm96gz",
+        "target": "htdos5hn73xbvbh40j76s0kf",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "ff5grzmg8socyhzzqw6gbk7q",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "htdos5hn73xbvbh40j76s0kf",
+        "target": "esrlwf4uwi0pdek9ju0rohaj",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "tenantId": "a530d869-882f-41ff-93db-cac990044c8e",
+    "workspaceId": "1e4b86de-68d6-44cb-856d-e5d1e1a7f57b",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1790590025534,
+    "updatedAt": 1790596274748,
+    "desiredStatus": "stopped",
+    "lastError": null,
+    "statusInfo": {
+      "type": "info",
+      "message": "Workflow stopped.",
+      "at": 1790596243784
+    }
+  }
+]
