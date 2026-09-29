@@ -1,91 +1,980 @@
-{
-  "name": "Use Splunk",
-  "nodes": [
-    {
-      "id": "trigger",
-      "type": "trigger",
-      "position": {
-        "x": 80,
-        "y": 160
-      },
-      "data": {
-        "name": "manual-trigger",
-        "label": "Run",
-        "inputs": {},
-        "outputs": {
-          "success": {
-            "label": "Success"
-          },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "integration",
-      "type": "action",
-      "position": {
-        "x": 300,
-        "y": 160
-      },
-      "data": {
-        "name": "splunk",
-        "label": "Splunk",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+[
+  {
+    "name": "test-Splunk",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "position": {
+          "x": 292,
+          "y": 124
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "aengncildwnfyox33am9r4at",
+        "type": "action",
+        "data": {
+          "description": "Run searches, manage indexes, and interact with Splunk Enterprise/Cloud.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "splunk",
+          "label": "Splunk-listIndexes",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
           },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "output",
-      "type": "display",
-      "position": {
-        "x": 520,
-        "y": 160
-      },
-      "data": {
-        "name": "log",
-        "label": "Result",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "listIndexes",
+            "host": " https://translate-giveaway-anymore.ngrok-free.dev",
+            "username": "admin",
+            "password": "ChoisisUnMotDePasseFort123!",
+            "token": "eyJraWQiOiJzcGx1bmsuc2VjcmV0IiwiYWxnIjoiSFM1MTIiLCJ2ZXIiOiJ2MiIsInR0eXAiOiJzdGF0aWMifQ.eyJpc3MiOiJhZG1pbiBmcm9tIDQ0OWVjMzE3NGRlNSIsInN1YiI6ImFkbWluIiwiYXVkIjoiZnVzaW9uLXRlc3QiLCJpZHAiOiJTcGx1bmsiLCJqdGkiOiIxNjdhMGIzYmM0MzdlNTBhNzQwZmI4NDk1NjJhZGViOTMzMTMwYzZmYTAxOGUzNDU2YjUyOWIyNDBiY2ViODAxIiwiaWF0IjoxNzkwNjgyNDg3LCJleHAiOjE3OTEyODcyODcsIm5iciI6MTc5MDY4MjQ4N30.iV601_ICXOmW535En-eM9znD_3fxixKmOb0e74B-CTn0AlDVEaH1WFBD2x3hCMZSbW52ut-db_XdZ5ZandYFZw"
+          },
+          "defaultOutput": null
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
-          }
-        }
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 124
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "bn09wkpb2oktwhjsyn01cwfs",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 0
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "c25dhml0c03vy3vopkim1e8o",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 292,
+          "y": 3484
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "so7o25gr3gis1ols6f8005d5",
+        "type": "action",
+        "data": {
+          "description": "Run searches, manage indexes, and interact with Splunk Enterprise/Cloud.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "splunk",
+          "label": "Splunk-listSavedSearch",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "listSavedSearches",
+            "host": " https://translate-giveaway-anymore.ngrok-free.dev",
+            "username": "admin",
+            "password": "ChoisisUnMotDePasseFort123!",
+            "token": "eyJraWQiOiJzcGx1bmsuc2VjcmV0IiwiYWxnIjoiSFM1MTIiLCJ2ZXIiOiJ2MiIsInR0eXAiOiJzdGF0aWMifQ.eyJpc3MiOiJhZG1pbiBmcm9tIDQ0OWVjMzE3NGRlNSIsInN1YiI6ImFkbWluIiwiYXVkIjoiZnVzaW9uLXRlc3QiLCJpZHAiOiJTcGx1bmsiLCJqdGkiOiIxNjdhMGIzYmM0MzdlNTBhNzQwZmI4NDk1NjJhZGViOTMzMTMwYzZmYTAxOGUzNDU2YjUyOWIyNDBiY2ViODAxIiwiaWF0IjoxNzkwNjgyNDg3LCJleHAiOjE3OTEyODcyODcsIm5iciI6MTc5MDY4MjQ4N30.iV601_ICXOmW535En-eM9znD_3fxixKmOb0e74B-CTn0AlDVEaH1WFBD2x3hCMZSbW52ut-db_XdZ5ZandYFZw"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 3484
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "v9jfvtlkju1exbc803abmwh1",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 3360
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "q164dr20ieadiqjik632g5f7",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 292,
+          "y": 2364
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "ikpih0wlry7lxuf4l0jgdwtp",
+        "type": "action",
+        "data": {
+          "description": "Run searches, manage indexes, and interact with Splunk Enterprise/Cloud.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "splunk",
+          "label": "Splunk-createIndex",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "createIndex",
+            "host": " https://translate-giveaway-anymore.ngrok-free.dev",
+            "username": "admin",
+            "password": "ChoisisUnMotDePasseFort123!",
+            "token": "eyJraWQiOiJzcGx1bmsuc2VjcmV0IiwiYWxnIjoiSFM1MTIiLCJ2ZXIiOiJ2MiIsInR0eXAiOiJzdGF0aWMifQ.eyJpc3MiOiJhZG1pbiBmcm9tIDQ0OWVjMzE3NGRlNSIsInN1YiI6ImFkbWluIiwiYXVkIjoiZnVzaW9uLXRlc3QiLCJpZHAiOiJTcGx1bmsiLCJqdGkiOiIxNjdhMGIzYmM0MzdlNTBhNzQwZmI4NDk1NjJhZGViOTMzMTMwYzZmYTAxOGUzNDU2YjUyOWIyNDBiY2ViODAxIiwiaWF0IjoxNzkwNjgyNDg3LCJleHAiOjE3OTEyODcyODcsIm5iciI6MTc5MDY4MjQ4N30.iV601_ICXOmW535En-eM9znD_3fxixKmOb0e74B-CTn0AlDVEaH1WFBD2x3hCMZSbW52ut-db_XdZ5ZandYFZw",
+            "indexName": "fusion_test",
+            "datatype": "event"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 2364
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "n1sjuvc1duk6ho12txo7xp46",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 2240
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "pc6vxnqqakr1d0uwbqlsiwti",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 292,
+          "y": 1804
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "p0dzka1rv1g10b4poch7zv4d",
+        "type": "action",
+        "data": {
+          "description": "Run searches, manage indexes, and interact with Splunk Enterprise/Cloud.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "splunk",
+          "label": "Splunk-getSearchResults",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "getSearchResults",
+            "host": " https://translate-giveaway-anymore.ngrok-free.dev",
+            "username": "admin",
+            "password": "ChoisisUnMotDePasseFort123!",
+            "token": "eyJraWQiOiJzcGx1bmsuc2VjcmV0IiwiYWxnIjoiSFM1MTIiLCJ2ZXIiOiJ2MiIsInR0eXAiOiJzdGF0aWMifQ.eyJpc3MiOiJhZG1pbiBmcm9tIDQ0OWVjMzE3NGRlNSIsInN1YiI6ImFkbWluIiwiYXVkIjoiZnVzaW9uLXRlc3QiLCJpZHAiOiJTcGx1bmsiLCJqdGkiOiIxNjdhMGIzYmM0MzdlNTBhNzQwZmI4NDk1NjJhZGViOTMzMTMwYzZmYTAxOGUzNDU2YjUyOWIyNDBiY2ViODAxIiwiaWF0IjoxNzkwNjgyNDg3LCJleHAiOjE3OTEyODcyODcsIm5iciI6MTc5MDY4MjQ4N30.iV601_ICXOmW535En-eM9znD_3fxixKmOb0e74B-CTn0AlDVEaH1WFBD2x3hCMZSbW52ut-db_XdZ5ZandYFZw",
+            "sid": "1790691234.8",
+            "limit": 10
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 1804
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "gpx31hq1b35mwep7ilao1vh8",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 1680
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "kdm605c0nwr9zmxdlh4v1fxc",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 292,
+          "y": 2924
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "qerspx3n6umphvxad2y27h35",
+        "type": "action",
+        "data": {
+          "description": "Run searches, manage indexes, and interact with Splunk Enterprise/Cloud.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "splunk",
+          "label": "Splunk-addData",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "addData",
+            "host": " https://translate-giveaway-anymore.ngrok-free.dev",
+            "username": "admin",
+            "password": "ChoisisUnMotDePasseFort123!",
+            "token": "eyJraWQiOiJzcGx1bmsuc2VjcmV0IiwiYWxnIjoiSFM1MTIiLCJ2ZXIiOiJ2MiIsInR0eXAiOiJzdGF0aWMifQ.eyJpc3MiOiJhZG1pbiBmcm9tIDQ0OWVjMzE3NGRlNSIsInN1YiI6ImFkbWluIiwiYXVkIjoiZnVzaW9uLXRlc3QiLCJpZHAiOiJTcGx1bmsiLCJqdGkiOiIxNjdhMGIzYmM0MzdlNTBhNzQwZmI4NDk1NjJhZGViOTMzMTMwYzZmYTAxOGUzNDU2YjUyOWIyNDBiY2ViODAxIiwiaWF0IjoxNzkwNjgyNDg3LCJleHAiOjE3OTEyODcyODcsIm5iciI6MTc5MDY4MjQ4N30.iV601_ICXOmW535En-eM9znD_3fxixKmOb0e74B-CTn0AlDVEaH1WFBD2x3hCMZSbW52ut-db_XdZ5ZandYFZw",
+            "indexName": "fusion_test",
+            "sourcetype": "fusion_test",
+            "rawData": "fusion_node_test"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 2924
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "qonqa6ao02c8ughg1auhkyeb",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 2800
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "ix9cghywphgi7p403o5tuz1e",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 292,
+          "y": 684
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "c8hnkir3jqkiipbvnx6aatvy",
+        "type": "action",
+        "data": {
+          "description": "Run searches, manage indexes, and interact with Splunk Enterprise/Cloud.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "splunk",
+          "label": "Splunk-runsearch",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "runSearch",
+            "host": " https://translate-giveaway-anymore.ngrok-free.dev",
+            "username": "admin",
+            "password": "ChoisisUnMotDePasseFort123!",
+            "token": "eyJraWQiOiJzcGx1bmsuc2VjcmV0IiwiYWxnIjoiSFM1MTIiLCJ2ZXIiOiJ2MiIsInR0eXAiOiJzdGF0aWMifQ.eyJpc3MiOiJhZG1pbiBmcm9tIDQ0OWVjMzE3NGRlNSIsInN1YiI6ImFkbWluIiwiYXVkIjoiZnVzaW9uLXRlc3QiLCJpZHAiOiJTcGx1bmsiLCJqdGkiOiIxNjdhMGIzYmM0MzdlNTBhNzQwZmI4NDk1NjJhZGViOTMzMTMwYzZmYTAxOGUzNDU2YjUyOWIyNDBiY2ViODAxIiwiaWF0IjoxNzkwNjgyNDg3LCJleHAiOjE3OTEyODcyODcsIm5iciI6MTc5MDY4MjQ4N30.iV601_ICXOmW535En-eM9znD_3fxixKmOb0e74B-CTn0AlDVEaH1WFBD2x3hCMZSbW52ut-db_XdZ5ZandYFZw",
+            "searchQuery": "| makeresults | eval message=\"test_fusion\""
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 684
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "l28oc0x4j36n809bl2bbmqkp",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 560
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "posswtrzqpid4ddqtjflaizq",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 292,
+          "y": 1244
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "x7pvocxsdogaw7i00izltelk",
+        "type": "action",
+        "data": {
+          "description": "Run searches, manage indexes, and interact with Splunk Enterprise/Cloud.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "splunk",
+          "label": "Splunk-runSavedSearch",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "runSavedSearch",
+            "host": " https://translate-giveaway-anymore.ngrok-free.dev",
+            "username": "admin",
+            "password": "ChoisisUnMotDePasseFort123!",
+            "token": "eyJraWQiOiJzcGx1bmsuc2VjcmV0IiwiYWxnIjoiSFM1MTIiLCJ2ZXIiOiJ2MiIsInR0eXAiOiJzdGF0aWMifQ.eyJpc3MiOiJhZG1pbiBmcm9tIDQ0OWVjMzE3NGRlNSIsInN1YiI6ImFkbWluIiwiYXVkIjoiZnVzaW9uLXRlc3QiLCJpZHAiOiJTcGx1bmsiLCJqdGkiOiIxNjdhMGIzYmM0MzdlNTBhNzQwZmI4NDk1NjJhZGViOTMzMTMwYzZmYTAxOGUzNDU2YjUyOWIyNDBiY2ViODAxIiwiaWF0IjoxNzkwNjgyNDg3LCJleHAiOjE3OTEyODcyODcsIm5iciI6MTc5MDY4MjQ4N30.iV601_ICXOmW535En-eM9znD_3fxixKmOb0e74B-CTn0AlDVEaH1WFBD2x3hCMZSbW52ut-db_XdZ5ZandYFZw"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 1244
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "dxu2spgxt782qlv595nxszgq",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger6",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 1120
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "vmpzd5jrtoz6gjmykiq1u42g",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log6",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
       }
+    ],
+    "connections": [
+      {
+        "type": "directed",
+        "id": "xy-edge__bn09wkpb2oktwhjsyn01cwfssuccess-aengncildwnfyox33am9r4atinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "bn09wkpb2oktwhjsyn01cwfs",
+        "target": "aengncildwnfyox33am9r4at",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__aengncildwnfyox33am9r4atsuccess-c25dhml0c03vy3vopkim1e8oinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "aengncildwnfyox33am9r4at",
+        "target": "c25dhml0c03vy3vopkim1e8o",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "qw6q60g9feixpxj092imdglm",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "v9jfvtlkju1exbc803abmwh1",
+        "target": "so7o25gr3gis1ols6f8005d5",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "m4ufaa8sgizxejdtcxr7xj1f",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "so7o25gr3gis1ols6f8005d5",
+        "target": "q164dr20ieadiqjik632g5f7",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "x6j7ij3o374xbckztqpvaiu9",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "n1sjuvc1duk6ho12txo7xp46",
+        "target": "ikpih0wlry7lxuf4l0jgdwtp",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "hmlpoztbn74xekumqikl8w0z",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "ikpih0wlry7lxuf4l0jgdwtp",
+        "target": "pc6vxnqqakr1d0uwbqlsiwti",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "us69j4usl76xmez1odku5gw6",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "gpx31hq1b35mwep7ilao1vh8",
+        "target": "p0dzka1rv1g10b4poch7zv4d",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "kfqsjxbpiimfey9u544nush7",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "p0dzka1rv1g10b4poch7zv4d",
+        "target": "kdm605c0nwr9zmxdlh4v1fxc",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "baq2wjh4o3q5sopxjk6rp1gj",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "qonqa6ao02c8ughg1auhkyeb",
+        "target": "qerspx3n6umphvxad2y27h35",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "haisoq1meojfj6c9e5tkcm7p",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "qerspx3n6umphvxad2y27h35",
+        "target": "ix9cghywphgi7p403o5tuz1e",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "l2wjgr9m8m9ihmb0f6cpbg9i",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "l28oc0x4j36n809bl2bbmqkp",
+        "target": "c8hnkir3jqkiipbvnx6aatvy",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "wajmmx2jbjla0no1q8qhnet2",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "c8hnkir3jqkiipbvnx6aatvy",
+        "target": "posswtrzqpid4ddqtjflaizq",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__dxu2spgxt782qlv595nxszgqsuccess-x7pvocxsdogaw7i00izltelkinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "dxu2spgxt782qlv595nxszgq",
+        "target": "x7pvocxsdogaw7i00izltelk",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__x7pvocxsdogaw7i00izltelksuccess-vmpzd5jrtoz6gjmykiq1u42ginput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "x7pvocxsdogaw7i00izltelk",
+        "target": "vmpzd5jrtoz6gjmykiq1u42g",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "tenantId": "a530d869-882f-41ff-93db-cac990044c8e",
+    "workspaceId": "1e4b86de-68d6-44cb-856d-e5d1e1a7f57b",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1790694109795,
+    "updatedAt": 1790697885224,
+    "desiredStatus": "stopped",
+    "lastError": null,
+    "statusInfo": {
+      "type": "info",
+      "message": "Workflow stopped.",
+      "at": 1790697885224
     }
-  ],
-  "connections": [
-    {
-      "id": "trigger-integration",
-      "type": "directed",
-      "source": "trigger",
-      "target": "integration",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    },
-    {
-      "id": "integration-output",
-      "type": "directed",
-      "source": "integration",
-      "target": "output",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    }
-  ]
-}
+  }
+]
