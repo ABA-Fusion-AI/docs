@@ -1,91 +1,543 @@
-{
-  "name": "Use ProfitWell",
-  "nodes": [
-    {
-      "id": "trigger",
-      "type": "trigger",
-      "position": {
-        "x": 80,
-        "y": 160
-      },
-      "data": {
-        "name": "manual-trigger",
-        "label": "Run",
-        "inputs": {},
-        "outputs": {
-          "success": {
-            "label": "Success"
-          },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "integration",
-      "type": "action",
-      "position": {
-        "x": 300,
-        "y": 160
-      },
-      "data": {
-        "name": "profitwell",
-        "label": "ProfitWell",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+[
+  {
+    "name": "TEST-profitWELL",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "position": {
+          "x": 757.7779387032554,
+          "y": -31.559879562564674
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "fa4z7j2lgrwchwu84p2vj62x",
+        "type": "action",
+        "data": {
+          "description": "Access subscription metrics, plans and churn data from ProfitWell",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "profitwell",
+          "label": "ProfitWell",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
           },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "output",
-      "type": "display",
-      "position": {
-        "x": 520,
-        "y": 160
-      },
-      "data": {
-        "name": "log",
-        "label": "Result",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "getFinancialMetrics",
+            "apiKey": ""
+          },
+          "defaultOutput": null
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
-          }
-        }
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 481.77793870325536,
+          "y": -16.559879562564674
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "uc2x1tvv224928d9s9xr25gz",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 1081.7779387032554,
+          "y": -84.55987956256467
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "id": "simy8ze032mzddk4sx0ocpri",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 807.6789740587858,
+          "y": 293.4887066107829
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "arpy7snm1mijir2iyybngl0n",
+        "type": "action",
+        "data": {
+          "description": "Access subscription metrics, plans and churn data from ProfitWell",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "profitwell",
+          "label": "ProfitWell1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "getPlans",
+            "apiKey": ""
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 543.6789740587858,
+          "y": 320.4887066107829
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "e0f9z54gv3u875cskq2t8rx1",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 1155.6789740587858,
+          "y": 264.48870661078286
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "id": "pl373bumai019cbfff5zsit9",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 842.9661106423565,
+          "y": 753.4817370751844
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "lvcxfnzj9im5knldl8imnvx5",
+        "type": "action",
+        "data": {
+          "description": "Access subscription metrics, plans and churn data from ProfitWell",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "profitwell",
+          "label": "ProfitWell2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "getSubscriptions",
+            "apiKey": ""
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 578.9661106423565,
+          "y": 780.4817370751844
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "p5r8xqbhwuz419mmhzn3j99b",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 1190.9661106423564,
+          "y": 724.4817370751844
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "id": "f5ku4zzwhcxqxbrgy7ryz6rr",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 777.4328569871541,
+          "y": 1071.0659663273193
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "s43w9x5nezc2qmmg8ogl6j0d",
+        "type": "action",
+        "data": {
+          "description": "Access subscription metrics, plans and churn data from ProfitWell",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "profitwell",
+          "label": "ProfitWell3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "getChurnRate",
+            "apiKey": ""
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 513.4328569871541,
+          "y": 1098.0659663273193
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "pal49jgz1uyi919oil8pjq6u",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 1125.432856987154,
+          "y": 1042.065966327319
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "id": "j6pa0kp5wzj6wa7ucy9xjhud",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
       }
+    ],
+    "connections": [
+      {
+        "type": "directed",
+        "id": "xy-edge__uc2x1tvv224928d9s9xr25gzsuccess-fa4z7j2lgrwchwu84p2vj62xinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "uc2x1tvv224928d9s9xr25gz",
+        "target": "fa4z7j2lgrwchwu84p2vj62x",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__fa4z7j2lgrwchwu84p2vj62xsuccess-simy8ze032mzddk4sx0ocpriinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "fa4z7j2lgrwchwu84p2vj62x",
+        "target": "simy8ze032mzddk4sx0ocpri",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "yjb2yxt4h3ik2etkccbovvm7",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "e0f9z54gv3u875cskq2t8rx1",
+        "target": "arpy7snm1mijir2iyybngl0n",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "temjye9qh594z2cis20dnusg",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "arpy7snm1mijir2iyybngl0n",
+        "target": "pl373bumai019cbfff5zsit9",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "c093wwcvglhsg3k5imp1ucr9",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "p5r8xqbhwuz419mmhzn3j99b",
+        "target": "lvcxfnzj9im5knldl8imnvx5",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "ajxsk8oc2djly7hrsq7tfoun",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "lvcxfnzj9im5knldl8imnvx5",
+        "target": "f5ku4zzwhcxqxbrgy7ryz6rr",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "wi7whkd3ajqffxei77v96unv",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "pal49jgz1uyi919oil8pjq6u",
+        "target": "s43w9x5nezc2qmmg8ogl6j0d",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "yer86vza71alzmct3q4xfqvp",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "s43w9x5nezc2qmmg8ogl6j0d",
+        "target": "j6pa0kp5wzj6wa7ucy9xjhud",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "tenantId": "a530d869-882f-41ff-93db-cac990044c8e",
+    "workspaceId": "1e4b86de-68d6-44cb-856d-e5d1e1a7f57b",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1790674747743,
+    "updatedAt": 1790678936427,
+    "desiredStatus": "stopped",
+    "lastError": null,
+    "statusInfo": {
+      "type": "info",
+      "message": "Workflow stopped.",
+      "at": 1790678722276
     }
-  ],
-  "connections": [
-    {
-      "id": "trigger-integration",
-      "type": "directed",
-      "source": "trigger",
-      "target": "integration",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    },
-    {
-      "id": "integration-output",
-      "type": "directed",
-      "source": "integration",
-      "target": "output",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    }
-  ]
-}
+  }
+]
