@@ -41,7 +41,7 @@
             "host": " https://translate-giveaway-anymore.ngrok-free.dev",
             "username": "admin",
             "password": "ChoisisUnMotDePasseFort123!",
-            "token": "eyJraWQiOiJzcGx1bmsuc2VjcmV0IiwiYWxnIjoiSFM1MTIiLCJ2ZXIiOiJ2MiIsInR0eXAiOiJzdGF0aWMifQ.eyJpc3MiOiJhZG1pbiBmcm9tIDQ0OWVjMzE3NGRlNSIsInN1YiI6ImFkbWluIiwiYXVkIjoiZnVzaW9uLXRlc3QiLCJpZHAiOiJTcGx1bmsiLCJqdGkiOiIxNjdhMGIzYmM0MzdlNTBhNzQwZmI4NDk1NjJhZGViOTMzMTMwYzZmYTAxOGUzNDU2YjUyOWIyNDBiY2ViODAxIiwiaWF0IjoxNzkwNjgyNDg3LCJleHAiOjE3OTEyODcyODcsIm5iciI6MTc5MDY4MjQ4N30.iV601_ICXOmW535En-eM9znD_3fxixKmOb0e74B-CTn0AlDVEaH1WFBD2x3hCMZSbW52ut-db_XdZ5ZandYFZw"
+            "token": ""
           },
           "defaultOutput": null
         },
@@ -154,7 +154,7 @@
             "host": " https://translate-giveaway-anymore.ngrok-free.dev",
             "username": "admin",
             "password": "ChoisisUnMotDePasseFort123!",
-            "token": "eyJraWQiOiJzcGx1bmsuc2VjcmV0IiwiYWxnIjoiSFM1MTIiLCJ2ZXIiOiJ2MiIsInR0eXAiOiJzdGF0aWMifQ.eyJpc3MiOiJhZG1pbiBmcm9tIDQ0OWVjMzE3NGRlNSIsInN1YiI6ImFkbWluIiwiYXVkIjoiZnVzaW9uLXRlc3QiLCJpZHAiOiJTcGx1bmsiLCJqdGkiOiIxNjdhMGIzYmM0MzdlNTBhNzQwZmI4NDk1NjJhZGViOTMzMTMwYzZmYTAxOGUzNDU2YjUyOWIyNDBiY2ViODAxIiwiaWF0IjoxNzkwNjgyNDg3LCJleHAiOjE3OTEyODcyODcsIm5iciI6MTc5MDY4MjQ4N30.iV601_ICXOmW535En-eM9znD_3fxixKmOb0e74B-CTn0AlDVEaH1WFBD2x3hCMZSbW52ut-db_XdZ5ZandYFZw"
+            "token": ""
           },
           "defaultOutput": null
         },
@@ -267,7 +267,7 @@
             "host": " https://translate-giveaway-anymore.ngrok-free.dev",
             "username": "admin",
             "password": "ChoisisUnMotDePasseFort123!",
-            "token": "eyJraWQiOiJzcGx1bmsuc2VjcmV0IiwiYWxnIjoiSFM1MTIiLCJ2ZXIiOiJ2MiIsInR0eXAiOiJzdGF0aWMifQ.eyJpc3MiOiJhZG1pbiBmcm9tIDQ0OWVjMzE3NGRlNSIsInN1YiI6ImFkbWluIiwiYXVkIjoiZnVzaW9uLXRlc3QiLCJpZHAiOiJTcGx1bmsiLCJqdGkiOiIxNjdhMGIzYmM0MzdlNTBhNzQwZmI4NDk1NjJhZGViOTMzMTMwYzZmYTAxOGUzNDU2YjUyOWIyNDBiY2ViODAxIiwiaWF0IjoxNzkwNjgyNDg3LCJleHAiOjE3OTEyODcyODcsIm5iciI6MTc5MDY4MjQ4N30.iV601_ICXOmW535En-eM9znD_3fxixKmOb0e74B-CTn0AlDVEaH1WFBD2x3hCMZSbW52ut-db_XdZ5ZandYFZw",
+            "token": "",
             "indexName": "fusion_test",
             "datatype": "event"
           },
@@ -382,7 +382,7 @@
             "host": " https://translate-giveaway-anymore.ngrok-free.dev",
             "username": "admin",
             "password": "ChoisisUnMotDePasseFort123!",
-            "token": "eyJraWQiOiJzcGx1bmsuc2VjcmV0IiwiYWxnIjoiSFM1MTIiLCJ2ZXIiOiJ2MiIsInR0eXAiOiJzdGF0aWMifQ.eyJpc3MiOiJhZG1pbiBmcm9tIDQ0OWVjMzE3NGRlNSIsInN1YiI6ImFkbWluIiwiYXVkIjoiZnVzaW9uLXRlc3QiLCJpZHAiOiJTcGx1bmsiLCJqdGkiOiIxNjdhMGIzYmM0MzdlNTBhNzQwZmI4NDk1NjJhZGViOTMzMTMwYzZmYTAxOGUzNDU2YjUyOWIyNDBiY2ViODAxIiwiaWF0IjoxNzkwNjgyNDg3LCJleHAiOjE3OTEyODcyODcsIm5iciI6MTc5MDY4MjQ4N30.iV601_ICXOmW535En-eM9znD_3fxixKmOb0e74B-CTn0AlDVEaH1WFBD2x3hCMZSbW52ut-db_XdZ5ZandYFZw",
+            "token": "",
             "sid": "1790691234.8",
             "limit": 10
           },
@@ -497,7 +497,7 @@
             "host": " https://translate-giveaway-anymore.ngrok-free.dev",
             "username": "admin",
             "password": "ChoisisUnMotDePasseFort123!",
-            "token": "eyJraWQiOiJzcGx1bmsuc2VjcmV0IiwiYWxnIjoiSFM1MTIiLCJ2ZXIiOiJ2MiIsInR0eXAiOiJzdGF0aWMifQ.eyJpc3MiOiJhZG1pbiBmcm9tIDQ0OWVjMzE3NGRlNSIsInN1YiI6ImFkbWluIiwiYXVkIjoiZnVzaW9uLXRlc3QiLCJpZHAiOiJTcGx1bmsiLCJqdGkiOiIxNjdhMGIzYmM0MzdlNTBhNzQwZmI4NDk1NjJhZGViOTMzMTMwYzZmYTAxOGUzNDU2YjUyOWIyNDBiY2ViODAxIiwiaWF0IjoxNzkwNjgyNDg3LCJleHAiOjE3OTEyODcyODcsIm5iciI6MTc5MDY4MjQ4N30.iV601_ICXOmW535En-eM9znD_3fxixKmOb0e74B-CTn0AlDVEaH1WFBD2x3hCMZSbW52ut-db_XdZ5ZandYFZw",
+            "token": "",
             "indexName": "fusion_test",
             "sourcetype": "fusion_test",
             "rawData": "fusion_node_test"
@@ -613,7 +613,7 @@
             "host": " https://translate-giveaway-anymore.ngrok-free.dev",
             "username": "admin",
             "password": "ChoisisUnMotDePasseFort123!",
-            "token": "eyJraWQiOiJzcGx1bmsuc2VjcmV0IiwiYWxnIjoiSFM1MTIiLCJ2ZXIiOiJ2MiIsInR0eXAiOiJzdGF0aWMifQ.eyJpc3MiOiJhZG1pbiBmcm9tIDQ0OWVjMzE3NGRlNSIsInN1YiI6ImFkbWluIiwiYXVkIjoiZnVzaW9uLXRlc3QiLCJpZHAiOiJTcGx1bmsiLCJqdGkiOiIxNjdhMGIzYmM0MzdlNTBhNzQwZmI4NDk1NjJhZGViOTMzMTMwYzZmYTAxOGUzNDU2YjUyOWIyNDBiY2ViODAxIiwiaWF0IjoxNzkwNjgyNDg3LCJleHAiOjE3OTEyODcyODcsIm5iciI6MTc5MDY4MjQ4N30.iV601_ICXOmW535En-eM9znD_3fxixKmOb0e74B-CTn0AlDVEaH1WFBD2x3hCMZSbW52ut-db_XdZ5ZandYFZw",
+            "token": "",
             "searchQuery": "| makeresults | eval message=\"test_fusion\""
           },
           "defaultOutput": null
@@ -727,7 +727,7 @@
             "host": " https://translate-giveaway-anymore.ngrok-free.dev",
             "username": "admin",
             "password": "ChoisisUnMotDePasseFort123!",
-            "token": "eyJraWQiOiJzcGx1bmsuc2VjcmV0IiwiYWxnIjoiSFM1MTIiLCJ2ZXIiOiJ2MiIsInR0eXAiOiJzdGF0aWMifQ.eyJpc3MiOiJhZG1pbiBmcm9tIDQ0OWVjMzE3NGRlNSIsInN1YiI6ImFkbWluIiwiYXVkIjoiZnVzaW9uLXRlc3QiLCJpZHAiOiJTcGx1bmsiLCJqdGkiOiIxNjdhMGIzYmM0MzdlNTBhNzQwZmI4NDk1NjJhZGViOTMzMTMwYzZmYTAxOGUzNDU2YjUyOWIyNDBiY2ViODAxIiwiaWF0IjoxNzkwNjgyNDg3LCJleHAiOjE3OTEyODcyODcsIm5iciI6MTc5MDY4MjQ4N30.iV601_ICXOmW535En-eM9znD_3fxixKmOb0e74B-CTn0AlDVEaH1WFBD2x3hCMZSbW52ut-db_XdZ5ZandYFZw"
+            "token": ""
           },
           "defaultOutput": null
         },
