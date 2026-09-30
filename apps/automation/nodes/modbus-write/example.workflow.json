@@ -1,123 +1,156 @@
-{
-    "name":  "Write Modbus values",
-    "nodes":  [
-                  {
-                      "position":  {
-                                       "y":  160,
-                                       "x":  80
-                                   },
-                      "data":  {
-                                   "label":  "Run",
-                                   "inputs":  {
-
-                                              },
-                                   "name":  "manual-trigger",
-                                   "outputs":  {
-                                                   "error":  {
-                                                                 "label":  "Error"
-                                                             },
-                                                   "success":  {
-                                                                   "label":  "Success"
-                                                               }
-                                               }
-                               },
-                      "id":  "trigger",
-                      "type":  "trigger"
-                  },
-                  {
-                      "position":  {
-                                       "y":  160,
-                                       "x":  300
-                                   },
-                      "data":  {
-                                   "label":  "Modbus Write",
-                                   "inputs":  {
-                                                  "input":  {
-                                                                "label":  "Input"
-                                                            }
-                                              },
-                                   "name":  "modbus-write",
-                                   "outputs":  {
-                                                   "error":  {
-                                                                 "label":  "Error"
-                                                             },
-                                                   "success":  {
-                                                                   "label":  "Success"
-                                                               }
-                                               }
-                               },
-                      "id":  "write",
-                      "type":  "action"
-                  },
-                  {
-                      "position":  {
-                                       "y":  80,
-                                       "x":  560
-                                   },
-                      "data":  {
-                                   "label":  "Write result",
-                                   "inputs":  {
-                                                  "input":  {
-                                                                "label":  "Input"
-                                                            }
-                                              },
-                                   "name":  "log",
-                                   "outputs":  {
-                                                   "success":  {
-                                                                   "label":  "Success"
-                                                               }
-                                               }
-                               },
-                      "id":  "result",
-                      "type":  "display"
-                  },
-                  {
-                      "position":  {
-                                       "y":  280,
-                                       "x":  560
-                                   },
-                      "data":  {
-                                   "label":  "Write errors",
-                                   "inputs":  {
-                                                  "input":  {
-                                                                "label":  "Input"
-                                                            }
-                                              },
-                                   "name":  "log",
-                                   "outputs":  {
-                                                   "success":  {
-                                                                   "label":  "Success"
-                                                               }
-                                               }
-                               },
-                      "id":  "errors",
-                      "type":  "display"
-                  }
-              ],
-    "connections":  [
-                        {
-                            "id":  "trigger-write",
-                            "sourceHandle":  "success",
-                            "source":  "trigger",
-                            "targetHandle":  "input",
-                            "type":  "directed",
-                            "target":  "write"
-                        },
-                        {
-                            "id":  "write-result",
-                            "sourceHandle":  "success",
-                            "source":  "write",
-                            "targetHandle":  "input",
-                            "type":  "directed",
-                            "target":  "result"
-                        },
-                        {
-                            "id":  "write-errors",
-                            "sourceHandle":  "error",
-                            "source":  "write",
-                            "targetHandle":  "input",
-                            "type":  "directed",
-                            "target":  "errors"
-                        }
-                    ]
-}
+[
+  {
+    "name": "test-Modbus Write",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "position": {
+          "x": 481.25239140718253,
+          "y": 337.3851316993302
+        },
+        "width": 72,
+        "height": 72,
+        "selected": true,
+        "draggable": true,
+        "id": "a2i7qawzdlqc9ekfqv90clty",
+        "type": "action",
+        "data": {
+          "description": "Writes data to Modbus devices using TCP or RTU transport. Supports writing coils and registers.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "modbus-write",
+          "label": "Modbus Write",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "transport": "TCP",
+            "functionCode": "16",
+            "host": "xwtma-197-230-172-128.run.pinggy-free.link",
+            "port": 38045,
+            "address": 0,
+            "values": [
+              111,
+              222,
+              333
+            ]
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 192.25239140718259,
+          "y": 321.3851316993302
+        },
+        "width": 72,
+        "height": 72,
+        "id": "ros53p8x70al2a0wgjy97xfw",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 712.2523914071826,
+          "y": 318.3851316993302
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "id": "mmypvh876du03l7po1vrgsqe",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      }
+    ],
+    "connections": [
+      {
+        "type": "directed",
+        "id": "xy-edge__ros53p8x70al2a0wgjy97xfwsuccess-a2i7qawzdlqc9ekfqv90cltyinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "ros53p8x70al2a0wgjy97xfw",
+        "target": "a2i7qawzdlqc9ekfqv90clty",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__a2i7qawzdlqc9ekfqv90cltysuccess-mmypvh876du03l7po1vrgsqeinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "a2i7qawzdlqc9ekfqv90clty",
+        "target": "mmypvh876du03l7po1vrgsqe",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "tenantId": "a530d869-882f-41ff-93db-cac990044c8e",
+    "workspaceId": "1e4b86de-68d6-44cb-856d-e5d1e1a7f57b",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1790783396608,
+    "updatedAt": 1790784063503
+  }
+]
