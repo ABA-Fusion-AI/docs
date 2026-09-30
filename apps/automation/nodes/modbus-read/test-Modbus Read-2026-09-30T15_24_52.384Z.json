@@ -1,0 +1,156 @@
+[
+  {
+    "name": "test-Modbus Read",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "position": {
+          "x": 232,
+          "y": 205
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "gctbr68ubux7n81b9r4l7ihi",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 1072,
+          "y": 158
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "n063cemkdjb5gr8hlcz76w8a",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 486.69637914875267,
+          "y": 85.44758692130405
+        },
+        "width": 72,
+        "height": 72,
+        "selected": true,
+        "draggable": true,
+        "id": "oo8ykmqm5702diefk8hoo5ep",
+        "type": "action",
+        "data": {
+          "description": "Reads data from Modbus devices using TCP or RTU transport. Supports reading coils, discrete inputs, holding registers, and input registers.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "modbus-read",
+          "label": "Modbus Read",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "transport": "TCP",
+            "functionCode": "3",
+            "host": "xwtma-197-230-172-128.run.pinggy-free.link",
+            "port": 38045,
+            "address": 0,
+            "retries": 0
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      }
+    ],
+    "connections": [
+      {
+        "type": "directed",
+        "id": "xy-edge__gctbr68ubux7n81b9r4l7ihisuccess-oo8ykmqm5702diefk8hoo5epinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "gctbr68ubux7n81b9r4l7ihi",
+        "target": "oo8ykmqm5702diefk8hoo5ep",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__oo8ykmqm5702diefk8hoo5epsuccess-n063cemkdjb5gr8hlcz76w8ainput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "oo8ykmqm5702diefk8hoo5ep",
+        "target": "n063cemkdjb5gr8hlcz76w8a",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "tenantId": "a530d869-882f-41ff-93db-cac990044c8e",
+    "workspaceId": "1e4b86de-68d6-44cb-856d-e5d1e1a7f57b",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1790783356690,
+    "updatedAt": 1790785472741
+  }
+]
