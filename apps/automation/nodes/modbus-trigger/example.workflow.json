@@ -1,0 +1,389 @@
+[
+  {
+    "name": "TEST-Modbus Trigger",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "position": {
+          "x": 0,
+          "y": 1244
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "vz93loia0ihgnefzfwxe5skr",
+        "type": "trigger",
+        "data": {
+          "description": "Monitors Modbus registers or coils and triggers workflow on value changes. Supports TCP and RTU transport.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "modbus-trigger",
+          "label": "Modbus Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "transport": "TCP",
+            "functionCode": "3",
+            "host": "xwtma-197-230-172-128.run.pinggy-free.link",
+            "address": 0,
+            "port": 38045
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 292,
+          "y": 1120
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "t5qphgn3ox53oor0286v8iw1",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 292,
+          "y": 124
+        },
+        "width": 72,
+        "height": 72,
+        "selected": true,
+        "draggable": true,
+        "id": "zhhsfzohoon5h5c3ptzq6p6o",
+        "type": "action",
+        "data": {
+          "description": "Reads data from Modbus devices using TCP or RTU transport. Supports reading coils, discrete inputs, holding registers, and input registers.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "modbus-read",
+          "label": "Modbus Read",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "transport": "TCP",
+            "functionCode": "3",
+            "host": "xwtma-197-230-172-128.run.pinggy-free.link",
+            "port": 38045,
+            "address": 0,
+            "retries": 0
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 292,
+          "y": 684
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "ih6x9lj6z5bfipobx4twaul6",
+        "type": "action",
+        "data": {
+          "description": "Writes data to Modbus devices using TCP or RTU transport. Supports writing coils and registers.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "modbus-write",
+          "label": "Modbus Write",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "transport": "TCP",
+            "functionCode": "16",
+            "host": "xwtma-197-230-172-128.run.pinggy-free.link",
+            "port": 38045,
+            "address": 0,
+            "values": [
+              111,
+              222,
+              333
+            ]
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 124
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "i88koehy2af5nsulojjbl7dl",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 0
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "l29x228tmhgi1si80npvqap7",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 560
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "o37zywyy8ml80orm9mfchc60",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 684
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "njjw11njwmitxkiba2598vpx",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      }
+    ],
+    "connections": [
+      {
+        "type": "directed",
+        "id": "xy-edge__vz93loia0ihgnefzfwxe5skrsuccess-t5qphgn3ox53oor0286v8iw1input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "vz93loia0ihgnefzfwxe5skr",
+        "target": "t5qphgn3ox53oor0286v8iw1",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__i88koehy2af5nsulojjbl7dlsuccess-zhhsfzohoon5h5c3ptzq6p6oinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "i88koehy2af5nsulojjbl7dl",
+        "target": "zhhsfzohoon5h5c3ptzq6p6o",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__zhhsfzohoon5h5c3ptzq6p6osuccess-l29x228tmhgi1si80npvqap7input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "zhhsfzohoon5h5c3ptzq6p6o",
+        "target": "l29x228tmhgi1si80npvqap7",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__ih6x9lj6z5bfipobx4twaul6success-o37zywyy8ml80orm9mfchc60input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "ih6x9lj6z5bfipobx4twaul6",
+        "target": "o37zywyy8ml80orm9mfchc60",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__njjw11njwmitxkiba2598vpxsuccess-ih6x9lj6z5bfipobx4twaul6input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "njjw11njwmitxkiba2598vpx",
+        "target": "ih6x9lj6z5bfipobx4twaul6",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "tenantId": "a530d869-882f-41ff-93db-cac990044c8e",
+    "workspaceId": "1e4b86de-68d6-44cb-856d-e5d1e1a7f57b",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1790781394114,
+    "updatedAt": 1790783185609,
+    "desiredStatus": "stopped",
+    "lastError": null,
+    "statusInfo": {
+      "type": "info",
+      "message": "Workflow stopped.",
+      "at": 1790783185609
+    }
+  }
+]
