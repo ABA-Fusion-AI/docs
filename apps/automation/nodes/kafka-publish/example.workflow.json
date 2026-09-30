@@ -1,0 +1,172 @@
+[
+  {
+    "name": "kafka",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "position": {
+          "x": 805.8037456684758,
+          "y": -8.126591696640773
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "yj81tc5n7wuh4u79yb666sxl",
+        "type": "action",
+        "data": {
+          "description": "Publish messages to Apache Kafka topics",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "kafka-publish",
+          "label": "Kafka Publish",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "clientId": "fusion-kafka-test",
+            "ssl": false,
+            "saslEnabled": true,
+            "brokers": "wbdwi-197-230-172-128.run.pinggy-free.link:40875",
+            "topic": "fusion-test",
+            "message": "sasl-no-creds",
+            "acks": "-1"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 564,
+          "y": -12
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "kkmxfhjektrynai7f7yns48i",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 1013,
+          "y": -23
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "id": "tucoam86bpevyg0uvtzto1lu",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      }
+    ],
+    "connections": [
+      {
+        "type": "directed",
+        "id": "xy-edge__kkmxfhjektrynai7f7yns48isuccess-yj81tc5n7wuh4u79yb666sxlinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "kkmxfhjektrynai7f7yns48i",
+        "target": "yj81tc5n7wuh4u79yb666sxl",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__yj81tc5n7wuh4u79yb666sxlsuccess-tucoam86bpevyg0uvtzto1luinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "yj81tc5n7wuh4u79yb666sxl",
+        "target": "tucoam86bpevyg0uvtzto1lu",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__yj81tc5n7wuh4u79yb666sxlerror-tucoam86bpevyg0uvtzto1luinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "yj81tc5n7wuh4u79yb666sxl",
+        "target": "tucoam86bpevyg0uvtzto1lu",
+        "sourceHandle": "error",
+        "targetHandle": "input"
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "tenantId": "92a6f943-3901-43c7-bea6-f8ad59e2d1b7",
+    "workspaceId": "f7a19ef3-e4ca-4f40-a1c2-cfd5db0f7712",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1790778528517,
+    "updatedAt": 1790781212947,
+    "desiredStatus": "stopped",
+    "lastError": null,
+    "statusInfo": {
+      "type": "info",
+      "message": "Workflow stopped.",
+      "at": 1790781202678
+    }
+  }
+]

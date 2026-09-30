@@ -1,0 +1,18 @@
+[
+  {
+    "name": "kafkatrigger",
+    "variables": {},
+    "secrets": {},
+    "nodes": [],
+    "connections": [],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "tenantId": "92a6f943-3901-43c7-bea6-f8ad59e2d1b7",
+    "workspaceId": "f7a19ef3-e4ca-4f40-a1c2-cfd5db0f7712",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1790781369389,
+    "updatedAt": 1790781369389
+  }
+]
