@@ -37,7 +37,7 @@
           },
           "parameters": {
             "operation": "listTemplates",
-            "apiKey": "bb_ak_v5_371d11b58ce439d07d155cc72cd476b42bb9b32c"
+            "apiKey": ""
           },
           "defaultOutput": null
         },
