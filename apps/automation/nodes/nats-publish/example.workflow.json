@@ -1,0 +1,148 @@
+{
+    "name": "NATS Publish",
+    "nodes": [
+        {
+            "position": {
+                "x": 125.95202896744217,
+                "y": -55.32761799116417
+            },
+            "width": 72,
+            "height": 72,
+            "selected": true,
+            "id": "tkixjsv44yf1e930yha5p0cn",
+            "type": "action",
+            "data": {
+                "description": "Publish messages to NATS subjects. Supports headers, reply subjects, and automatic connection management.",
+                "showRunningStatus": true,
+                "_morphing": false,
+                "name": "nats-publish",
+                "label": "NATS Publish",
+                "inputs": {
+                    "input": {
+                        "label": "Input"
+                    }
+                },
+                "outputs": {
+                    "success": {
+                        "label": "Success",
+                        "isConnectable": null
+                    },
+                    "error": {
+                        "label": "Error",
+                        "isConnectable": null
+                    }
+                },
+                "parameters": {},
+                "defaultOutput": null
+            },
+            "inputs": null,
+            "outputs": null
+        },
+        {
+            "position": {
+                "x": -23.5477975430369,
+                "y": -7.440954812026355
+            },
+            "width": 72,
+            "height": 72,
+            "id": "fydohfffxnzil2892mx6pw0d",
+            "type": "trigger",
+            "data": {
+                "description": "Triggers the workflow manually.",
+                "showRunningStatus": false,
+                "_morphing": false,
+                "name": "manual-trigger",
+                "label": "Manual Trigger",
+                "inputs": {},
+                "outputs": {
+                    "success": {
+                        "label": "Success",
+                        "isConnectable": null
+                    },
+                    "error": {
+                        "label": "Error",
+                        "isConnectable": null
+                    }
+                },
+                "parameters": {},
+                "defaultOutput": null
+            },
+            "inputs": null,
+            "outputs": null
+        },
+        {
+            "position": {
+                "x": 338.79151896146584,
+                "y": 61.484730205505
+            },
+            "width": 256,
+            "height": 100,
+            "dragHandle": ".drag-handle__custom",
+            "id": "gsc95usq4h0bgigrxfq8bj0k",
+            "type": "display",
+            "data": {
+                "description": "Logs the input data to the console.",
+                "showRunningStatus": false,
+                "_morphing": false,
+                "name": "log",
+                "label": "Log",
+                "inputs": {
+                    "input": {
+                        "label": "Input"
+                    }
+                },
+                "outputs": {
+                    "success": {
+                        "label": "Success",
+                        "isConnectable": false
+                    }
+                },
+                "parameters": {},
+                "defaultOutput": null
+            },
+            "inputs": null,
+            "outputs": null
+        }
+    ],
+    "connections": [
+        {
+            "type": "directed",
+            "id": "xy-edge__fydohfffxnzil2892mx6pw0dsuccess-tkixjsv44yf1e930yha5p0cninput",
+            "data": {
+                "isAnimated": false
+            },
+            "source": "fydohfffxnzil2892mx6pw0d",
+            "target": "tkixjsv44yf1e930yha5p0cn",
+            "sourceHandle": "success",
+            "targetHandle": "input"
+        },
+        {
+            "type": "directed",
+            "id": "xy-edge__tkixjsv44yf1e930yha5p0cnsuccess-gsc95usq4h0bgigrxfq8bj0kinput",
+            "data": {
+                "isAnimated": false
+            },
+            "source": "tkixjsv44yf1e930yha5p0cn",
+            "target": "gsc95usq4h0bgigrxfq8bj0k",
+            "sourceHandle": "success",
+            "targetHandle": "input"
+        }
+    ],
+    "status": "stopped",
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "tenantId": "c4e72c92-6d3f-4ac3-b029-b722160d1088",
+    "workspaceId": "9aae95bf-7bb8-4ec9-b268-e9337a62381f",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1790615756228,
+    "updatedAt": 1790782812193,
+    "desiredStatus": "stopped",
+    "lastError": null,
+    "statusInfo": {
+        "type": "info",
+        "message": "Workflow stopped.",
+        "at": 1790782342165
+    },
+    "tracingEnabled": true,
+    "variables": {}
+}
