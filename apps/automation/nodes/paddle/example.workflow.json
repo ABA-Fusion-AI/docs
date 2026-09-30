@@ -1,91 +1,145 @@
-{
-  "name": "Use Paddle",
-  "nodes": [
-    {
-      "id": "trigger",
-      "type": "trigger",
-      "position": {
-        "x": 80,
-        "y": 160
-      },
-      "data": {
-        "name": "manual-trigger",
-        "label": "Run",
-        "inputs": {},
-        "outputs": {
-          "success": {
-            "label": "Success"
-          },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "integration",
-      "type": "action",
-      "position": {
-        "x": 300,
-        "y": 160
-      },
-      "data": {
-        "name": "paddle",
-        "label": "Paddle",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+[
+  {
+    "name": "Paddle",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "position": {
+          "x": 506.612996293725,
+          "y": -534.8839933694719
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
+        "width": 72,
+        "height": 72,
+        "selected": true,
+        "id": "zi5pxhsep7tgi783lptmex3a",
+        "type": "action",
+        "data": {
+          "description": "Manage products, subscriptions, customers and transactions via Paddle billing.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "paddle",
+          "label": "Paddle",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
           },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "output",
-      "type": "display",
-      "position": {
-        "x": 520,
-        "y": 160
-      },
-      "data": {
-        "name": "log",
-        "label": "Result",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
-          }
-        }
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 331.232276656533,
+          "y": -540.4290026270828
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "yn35ftnta8zrdgdni0bt2gc2",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 659.849675910495,
+          "y": -518.4787975626416
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "id": "ul5049vkqkn1qt2l6805w2ny",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
       }
-    }
-  ],
-  "connections": [
-    {
-      "id": "trigger-integration",
-      "type": "directed",
-      "source": "trigger",
-      "target": "integration",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    },
-    {
-      "id": "integration-output",
-      "type": "directed",
-      "source": "integration",
-      "target": "output",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    }
-  ]
-}
+    ],
+    "connections": [
+      {
+        "type": "directed",
+        "id": "xy-edge__yn35ftnta8zrdgdni0bt2gc2success-zi5pxhsep7tgi783lptmex3ainput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "yn35ftnta8zrdgdni0bt2gc2",
+        "target": "zi5pxhsep7tgi783lptmex3a",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__zi5pxhsep7tgi783lptmex3asuccess-ul5049vkqkn1qt2l6805w2nyinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "zi5pxhsep7tgi783lptmex3a",
+        "target": "ul5049vkqkn1qt2l6805w2ny",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "tenantId": "c4e72c92-6d3f-4ac3-b029-b722160d1088",
+    "workspaceId": "9aae95bf-7bb8-4ec9-b268-e9337a62381f",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1790628522962,
+    "updatedAt": 1790784678135
+  }
+]
