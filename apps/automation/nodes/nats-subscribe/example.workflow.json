@@ -1,0 +1,109 @@
+{
+    "name": "NATS Subscribe",
+    "nodes": [
+        {
+            "position": {
+                "x": -88.91470407614611,
+                "y": -82.45369080180642
+            },
+            "width": 72,
+            "height": 72,
+            "selected": false,
+            "id": "m7b0ug4c8zbv3htq5fkhqvqf",
+            "type": "trigger",
+            "data": {
+                "description": "Subscribe to NATS subjects and trigger workflow on incoming messages. Supports max message count and timeout.",
+                "showRunningStatus": false,
+                "_morphing": false,
+                "metadata": {
+                    "servers": "text"
+                },
+                "name": "nats-subscribe",
+                "label": "NATS Subscribe",
+                "inputs": {},
+                "outputs": {
+                    "success": {
+                        "label": "Success",
+                        "isConnectable": null
+                    },
+                    "error": {
+                        "label": "Error",
+                        "isConnectable": null
+                    }
+                },
+                "parameters": {
+                    "servers": "serveur-ghalat-123.com:4222",
+                    "subject": "abdelkhalek.orders.*",
+                    "max": 2
+                },
+                "defaultOutput": null
+            },
+            "inputs": null,
+            "outputs": null
+        },
+        {
+            "position": {
+                "x": 344.2363885433507,
+                "y": -68.38281899445496
+            },
+            "width": 256,
+            "height": 100,
+            "dragHandle": ".drag-handle__custom",
+            "selected": false,
+            "id": "x3gszf0qz26g8zri3gledlmz",
+            "type": "display",
+            "data": {
+                "description": "Logs the input data to the console.",
+                "showRunningStatus": false,
+                "_morphing": false,
+                "name": "log",
+                "label": "Log",
+                "inputs": {
+                    "input": {
+                        "label": "Input"
+                    }
+                },
+                "outputs": {
+                    "success": {
+                        "label": "Success",
+                        "isConnectable": false
+                    }
+                },
+                "parameters": {},
+                "defaultOutput": null
+            },
+            "inputs": null,
+            "outputs": null
+        }
+    ],
+    "connections": [
+        {
+            "type": "directed",
+            "id": "xy-edge__m7b0ug4c8zbv3htq5fkhqvqfsuccess-x3gszf0qz26g8zri3gledlmzinput",
+            "data": {
+                "isAnimated": false
+            },
+            "source": "m7b0ug4c8zbv3htq5fkhqvqf",
+            "target": "x3gszf0qz26g8zri3gledlmz",
+            "sourceHandle": "success",
+            "targetHandle": "input"
+        }
+    ],
+    "status": "stopped",
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "tenantId": "c4e72c92-6d3f-4ac3-b029-b722160d1088",
+    "workspaceId": "9aae95bf-7bb8-4ec9-b268-e9337a62381f",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1790615756228,
+    "updatedAt": 1790782568134,
+    "desiredStatus": "stopped",
+    "lastError": null,
+    "statusInfo": {
+        "type": "info",
+        "message": "Workflow stopped.",
+        "at": 1790782342165
+    },
+    "tracingEnabled": true,
+    "variables": {}
+}
