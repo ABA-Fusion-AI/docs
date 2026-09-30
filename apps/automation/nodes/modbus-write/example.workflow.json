@@ -1,0 +1,123 @@
+{
+    "name":  "Write Modbus values",
+    "nodes":  [
+                  {
+                      "position":  {
+                                       "y":  160,
+                                       "x":  80
+                                   },
+                      "data":  {
+                                   "label":  "Run",
+                                   "inputs":  {
+
+                                              },
+                                   "name":  "manual-trigger",
+                                   "outputs":  {
+                                                   "error":  {
+                                                                 "label":  "Error"
+                                                             },
+                                                   "success":  {
+                                                                   "label":  "Success"
+                                                               }
+                                               }
+                               },
+                      "id":  "trigger",
+                      "type":  "trigger"
+                  },
+                  {
+                      "position":  {
+                                       "y":  160,
+                                       "x":  300
+                                   },
+                      "data":  {
+                                   "label":  "Modbus Write",
+                                   "inputs":  {
+                                                  "input":  {
+                                                                "label":  "Input"
+                                                            }
+                                              },
+                                   "name":  "modbus-write",
+                                   "outputs":  {
+                                                   "error":  {
+                                                                 "label":  "Error"
+                                                             },
+                                                   "success":  {
+                                                                   "label":  "Success"
+                                                               }
+                                               }
+                               },
+                      "id":  "write",
+                      "type":  "action"
+                  },
+                  {
+                      "position":  {
+                                       "y":  80,
+                                       "x":  560
+                                   },
+                      "data":  {
+                                   "label":  "Write result",
+                                   "inputs":  {
+                                                  "input":  {
+                                                                "label":  "Input"
+                                                            }
+                                              },
+                                   "name":  "log",
+                                   "outputs":  {
+                                                   "success":  {
+                                                                   "label":  "Success"
+                                                               }
+                                               }
+                               },
+                      "id":  "result",
+                      "type":  "display"
+                  },
+                  {
+                      "position":  {
+                                       "y":  280,
+                                       "x":  560
+                                   },
+                      "data":  {
+                                   "label":  "Write errors",
+                                   "inputs":  {
+                                                  "input":  {
+                                                                "label":  "Input"
+                                                            }
+                                              },
+                                   "name":  "log",
+                                   "outputs":  {
+                                                   "success":  {
+                                                                   "label":  "Success"
+                                                               }
+                                               }
+                               },
+                      "id":  "errors",
+                      "type":  "display"
+                  }
+              ],
+    "connections":  [
+                        {
+                            "id":  "trigger-write",
+                            "sourceHandle":  "success",
+                            "source":  "trigger",
+                            "targetHandle":  "input",
+                            "type":  "directed",
+                            "target":  "write"
+                        },
+                        {
+                            "id":  "write-result",
+                            "sourceHandle":  "success",
+                            "source":  "write",
+                            "targetHandle":  "input",
+                            "type":  "directed",
+                            "target":  "result"
+                        },
+                        {
+                            "id":  "write-errors",
+                            "sourceHandle":  "error",
+                            "source":  "write",
+                            "targetHandle":  "input",
+                            "type":  "directed",
+                            "target":  "errors"
+                        }
+                    ]
+}
