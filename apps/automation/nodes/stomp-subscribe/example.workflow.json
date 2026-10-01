@@ -1,0 +1,119 @@
+{
+    "name": "STOMP Subscribe",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+        {
+            "position": {
+                "x": 26.377625861868694,
+                "y": -82.28392939777132
+            },
+            "width": 72,
+            "height": 72,
+            "selected": false,
+            "id": "kdkgafnyjfsgebo2bigf2lqp",
+            "type": "trigger",
+            "data": {
+                "description": "Subscribe to STOMP destinations and trigger workflow on incoming messages. Supports WebSocket-based STOMP brokers with authentication.",
+                "showRunningStatus": false,
+                "_morphing": false,
+                "name": "stomp-subscribe",
+                "label": "STOMP Subscribe",
+                "inputs": {},
+                "outputs": {
+                    "success": {
+                        "label": "Success",
+                        "isConnectable": null
+                    },
+                    "error": {
+                        "label": "Error",
+                        "isConnectable": null
+                    }
+                },
+                "parameters": {
+                    "brokerURL": "wss://7766-2c0e-6042-40-979f-707e-810c-3656-c8a3.ngrok-free.app/ws",
+                    "topic": "/topic/chat.room-505",
+                    "login": "guest",
+                    "passcode": "guest"
+                },
+                "defaultOutput": null
+            },
+            "inputs": null,
+            "outputs": null
+        },
+        {
+            "position": {
+                "x": 358.64850393188965,
+                "y": -307.47421629213636
+            },
+            "width": 256,
+            "height": 100,
+            "dragHandle": ".drag-handle__custom",
+            "selected": false,
+            "id": "gu8fbatbo14bl0ieihde8qgb",
+            "type": "display",
+            "data": {
+                "description": "Logs the input data to the console.",
+                "showRunningStatus": false,
+                "_morphing": false,
+                "name": "log",
+                "label": "Log",
+                "inputs": {
+                    "input": {
+                        "label": "Input"
+                    }
+                },
+                "outputs": {
+                    "success": {
+                        "label": "Success",
+                        "isConnectable": false
+                    }
+                },
+                "parameters": {},
+                "defaultOutput": null
+            },
+            "inputs": null,
+            "outputs": null
+        }
+    ],
+    "connections": [
+        {
+            "type": "directed",
+            "id": "xy-edge__kdkgafnyjfsgebo2bigf2lqpsuccess-gu8fbatbo14bl0ieihde8qgbinput",
+            "data": {
+                "isAnimated": false
+            },
+            "source": "kdkgafnyjfsgebo2bigf2lqp",
+            "target": "gu8fbatbo14bl0ieihde8qgb",
+            "sourceHandle": "success",
+            "targetHandle": "input"
+        },
+        {
+            "type": "directed",
+            "id": "xy-edge__kdkgafnyjfsgebo2bigf2lqperror-gu8fbatbo14bl0ieihde8qgbinput",
+            "data": {
+                "isAnimated": false
+            },
+            "source": "kdkgafnyjfsgebo2bigf2lqp",
+            "target": "gu8fbatbo14bl0ieihde8qgb",
+            "sourceHandle": "error",
+            "targetHandle": "input"
+        }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "tenantId": "c4e72c92-6d3f-4ac3-b029-b722160d1088",
+    "workspaceId": "9aae95bf-7bb8-4ec9-b268-e9337a62381f",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1790789448405,
+    "updatedAt": 1790846563052,
+    "desiredStatus": "stopped",
+    "lastError": null,
+    "statusInfo": {
+        "type": "info",
+        "message": "Workflow stopped.",
+        "at": 1790846210871
+    }
+}
