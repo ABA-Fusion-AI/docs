@@ -1,0 +1,142 @@
+{
+    "name": "Shotstack: Video Editing",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+        {
+            "position": {
+                "x": 778,
+                "y": 41
+            },
+            "width": 72,
+            "height": 72,
+            "selected": true,
+            "id": "y66rhbm1uued5vc53ppflryf",
+            "type": "action",
+            "data": {
+                "description": "Edit and render videos using Shotstack API.",
+                "showRunningStatus": true,
+                "_morphing": false,
+                "name": "shotstack",
+                "label": "Shotstack: Video Editing",
+                "inputs": {
+                    "input": {
+                        "label": "Input"
+                    }
+                },
+                "outputs": {
+                    "success": {
+                        "label": "Success",
+                        "isConnectable": null
+                    },
+                    "error": {
+                        "label": "Error",
+                        "isConnectable": null
+                    }
+                },
+                "parameters": {},
+                "defaultOutput": null
+            },
+            "inputs": null,
+            "outputs": null
+        },
+        {
+            "position": {
+                "x": 596.5,
+                "y": 23.5
+            },
+            "width": 72,
+            "height": 72,
+            "id": "uzvbfawp071u4vkedxrkw8xs",
+            "type": "trigger",
+            "data": {
+                "description": "Triggers the workflow manually.",
+                "showRunningStatus": false,
+                "_morphing": false,
+                "name": "manual-trigger",
+                "label": "Manual Trigger",
+                "inputs": {},
+                "outputs": {
+                    "success": {
+                        "label": "Success",
+                        "isConnectable": null
+                    },
+                    "error": {
+                        "label": "Error",
+                        "isConnectable": null
+                    }
+                },
+                "parameters": {},
+                "defaultOutput": null
+            },
+            "inputs": null,
+            "outputs": null
+        },
+        {
+            "position": {
+                "x": 933.5,
+                "y": 23.5
+            },
+            "width": 256,
+            "height": 100,
+            "dragHandle": ".drag-handle__custom",
+            "id": "wkf7oabdw2etow42mo3q0fv4",
+            "type": "display",
+            "data": {
+                "description": "Logs the input data to the console.",
+                "showRunningStatus": false,
+                "_morphing": false,
+                "name": "log",
+                "label": "Log",
+                "inputs": {
+                    "input": {
+                        "label": "Input"
+                    }
+                },
+                "outputs": {
+                    "success": {
+                        "label": "Success",
+                        "isConnectable": false
+                    }
+                },
+                "parameters": {},
+                "defaultOutput": null
+            },
+            "inputs": null,
+            "outputs": null
+        }
+    ],
+    "connections": [
+        {
+            "type": "directed",
+            "id": "xy-edge__y66rhbm1uued5vc53ppflryfsuccess-wkf7oabdw2etow42mo3q0fv4input",
+            "data": {
+                "isAnimated": false
+            },
+            "source": "y66rhbm1uued5vc53ppflryf",
+            "target": "wkf7oabdw2etow42mo3q0fv4",
+            "sourceHandle": "success",
+            "targetHandle": "input"
+        },
+        {
+            "type": "directed",
+            "id": "xy-edge__uzvbfawp071u4vkedxrkw8xssuccess-y66rhbm1uued5vc53ppflryfinput",
+            "data": {
+                "isAnimated": false
+            },
+            "source": "uzvbfawp071u4vkedxrkw8xs",
+            "target": "y66rhbm1uued5vc53ppflryf",
+            "sourceHandle": "success",
+            "targetHandle": "input"
+        }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "tenantId": "c4e72c92-6d3f-4ac3-b029-b722160d1088",
+    "workspaceId": "9aae95bf-7bb8-4ec9-b268-e9337a62381f",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1790839855006,
+    "updatedAt": 1790839906005
+}
