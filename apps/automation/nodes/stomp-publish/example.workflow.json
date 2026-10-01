@@ -1,0 +1,372 @@
+{
+    "name": "STOMP Publish1",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+        {
+            "position": {
+                "x": 437.37762586186864,
+                "y": 34.21607060222868
+            },
+            "width": 256,
+            "height": 100,
+            "dragHandle": ".drag-handle__custom",
+            "selected": false,
+            "id": "r24fdkibi9nqk5jbg9pfoyq4",
+            "type": "display",
+            "data": {
+                "description": "Logs the input data to the console.",
+                "showRunningStatus": false,
+                "_morphing": false,
+                "name": "log",
+                "label": "Log1",
+                "inputs": {
+                    "input": {
+                        "label": "Input"
+                    }
+                },
+                "outputs": {
+                    "success": {
+                        "label": "Success",
+                        "isConnectable": false
+                    }
+                },
+                "parameters": {},
+                "defaultOutput": null
+            },
+            "inputs": null,
+            "outputs": null
+        },
+        {
+            "position": {
+                "x": 250.3776258618687,
+                "y": 77.71607060222868
+            },
+            "width": 72,
+            "height": 72,
+            "selected": false,
+            "id": "ae1k5lvtmm65pee4cgn9nxhr",
+            "type": "action",
+            "data": {
+                "description": "Publish messages to STOMP destinations. Supports WebSocket-based STOMP brokers with authentication.",
+                "showRunningStatus": true,
+                "_morphing": false,
+                "name": "stomp-publish",
+                "label": "STOMP Publish",
+                "inputs": {
+                    "input": {
+                        "label": "Input"
+                    }
+                },
+                "outputs": {
+                    "success": {
+                        "label": "Success",
+                        "isConnectable": null
+                    },
+                    "error": {
+                        "label": "Error",
+                        "isConnectable": null
+                    }
+                },
+                "parameters": {
+                    "brokerURL": "wss://7766-2c0e-6042-40-979f-707e-810c-3656-c8a3.ngrok-free.app/ws",
+                    "topic": {
+                        "$expr": "output",
+                        "node": "Function",
+                        "outputId": "success",
+                        "path": "topic"
+                    },
+                    "login": "guest",
+                    "passcode": "guest",
+                    "message": {
+                        "$expr": "output",
+                        "node": "Function",
+                        "outputId": "success",
+                        "path": "message"
+                    }
+                },
+                "defaultOutput": null
+            },
+            "inputs": null,
+            "outputs": null
+        },
+        {
+            "position": {
+                "x": 97.75632983048038,
+                "y": 30.645944367457332
+            },
+            "width": 72,
+            "height": 72,
+            "selected": false,
+            "id": "no292swu9b13zid496zympv9",
+            "type": "action",
+            "data": {
+                "description": "Executes custom JavaScript code on the input data.",
+                "showRunningStatus": true,
+                "_morphing": false,
+                "name": "function",
+                "label": "Function",
+                "inputs": {
+                    "input": {
+                        "label": "Input"
+                    }
+                },
+                "outputs": {
+                    "success": {
+                        "label": "Success",
+                        "isConnectable": null
+                    },
+                    "error": {
+                        "label": "Error",
+                        "isConnectable": null
+                    }
+                },
+                "parameters": {
+                    "code": "const roomId = \"room-505\";\nreturn {\n  topic: `/topic/chat.${roomId}`,\n  message: `Hello people in ${roomId}!`\n};"
+                },
+                "defaultOutput": null
+            },
+            "inputs": null,
+            "outputs": null
+        },
+        {
+            "position": {
+                "x": -41.622374138131306,
+                "y": 77.71607060222868
+            },
+            "width": 72,
+            "height": 72,
+            "selected": false,
+            "id": "o7ib440y2jzg025jtc2gunp7",
+            "type": "trigger",
+            "data": {
+                "description": "Triggers the workflow manually.",
+                "showRunningStatus": false,
+                "_morphing": false,
+                "name": "manual-trigger",
+                "label": "Manual Trigger",
+                "inputs": {},
+                "outputs": {
+                    "success": {
+                        "label": "Success",
+                        "isConnectable": null
+                    },
+                    "error": {
+                        "label": "Error",
+                        "isConnectable": null
+                    }
+                },
+                "parameters": {},
+                "defaultOutput": null
+            },
+            "inputs": null,
+            "outputs": null
+        },
+        {
+            "position": {
+                "x": 316.86078371025064,
+                "y": 193.80364327389265
+            },
+            "width": 256,
+            "height": 100,
+            "dragHandle": ".drag-handle__custom",
+            "selected": false,
+            "id": "ljukzz9v9mg61n7bc4e4sivo",
+            "type": "display",
+            "data": {
+                "description": "Logs the input data to the console.",
+                "showRunningStatus": false,
+                "_morphing": false,
+                "name": "log",
+                "label": "Log2",
+                "inputs": {
+                    "input": {
+                        "label": "Input"
+                    }
+                },
+                "outputs": {
+                    "success": {
+                        "label": "Success",
+                        "isConnectable": false
+                    }
+                },
+                "parameters": {},
+                "defaultOutput": null
+            },
+            "inputs": null,
+            "outputs": null
+        },
+        {
+            "position": {
+                "x": 141.8607837102507,
+                "y": 249.30364327389265
+            },
+            "width": 72,
+            "height": 72,
+            "selected": true,
+            "id": "ma0w1bujnjnexrhuot01j8rf",
+            "type": "action",
+            "data": {
+                "description": "Publish messages to STOMP destinations. Supports WebSocket-based STOMP brokers with authentication.",
+                "showRunningStatus": true,
+                "_morphing": false,
+                "name": "stomp-publish",
+                "label": "STOMP Publish1",
+                "inputs": {
+                    "input": {
+                        "label": "Input"
+                    }
+                },
+                "outputs": {
+                    "success": {
+                        "label": "Success",
+                        "isConnectable": null
+                    },
+                    "error": {
+                        "label": "Error",
+                        "isConnectable": null
+                    }
+                },
+                "parameters": {
+                    "brokerURL": "wss://7766-2c0e-6042-40-979f-707e-810c-3656-c8a3.ngrok-free.app/ws",
+                    "topic": "/topic/cloud-test",
+                    "login": "guest",
+                    "passcode": "guest",
+                    "message": "{\"message\": \"salam STOMP \", \"test\": true}"
+                },
+                "defaultOutput": null
+            },
+            "inputs": null,
+            "outputs": null
+        },
+        {
+            "position": {
+                "x": -33.1392162897493,
+                "y": 241.30364327389265
+            },
+            "width": 72,
+            "height": 72,
+            "selected": false,
+            "id": "r6w80w6nhhyeyl9a97kn22iv",
+            "type": "trigger",
+            "data": {
+                "description": "Triggers the workflow manually.",
+                "showRunningStatus": false,
+                "_morphing": false,
+                "name": "manual-trigger",
+                "label": "Manual Trigger1",
+                "inputs": {},
+                "outputs": {
+                    "success": {
+                        "label": "Success",
+                        "isConnectable": null
+                    },
+                    "error": {
+                        "label": "Error",
+                        "isConnectable": null
+                    }
+                },
+                "parameters": {},
+                "defaultOutput": null
+            },
+            "inputs": null,
+            "outputs": null
+        }
+    ],
+    "connections": [
+        {
+            "type": "directed",
+            "id": "xy-edge__ae1k5lvtmm65pee4cgn9nxhrsuccess-r24fdkibi9nqk5jbg9pfoyq4input",
+            "data": {
+                "isAnimated": false
+            },
+            "source": "ae1k5lvtmm65pee4cgn9nxhr",
+            "target": "r24fdkibi9nqk5jbg9pfoyq4",
+            "sourceHandle": "success",
+            "targetHandle": "input"
+        },
+        {
+            "type": "directed",
+            "id": "xy-edge__ae1k5lvtmm65pee4cgn9nxhrerror-r24fdkibi9nqk5jbg9pfoyq4input",
+            "data": {
+                "isAnimated": false
+            },
+            "source": "ae1k5lvtmm65pee4cgn9nxhr",
+            "target": "r24fdkibi9nqk5jbg9pfoyq4",
+            "sourceHandle": "error",
+            "targetHandle": "input"
+        },
+        {
+            "type": "directed",
+            "id": "xy-edge__no292swu9b13zid496zympv9success-ae1k5lvtmm65pee4cgn9nxhrinput",
+            "data": {
+                "isAnimated": false
+            },
+            "source": "no292swu9b13zid496zympv9",
+            "target": "ae1k5lvtmm65pee4cgn9nxhr",
+            "sourceHandle": "success",
+            "targetHandle": "input"
+        },
+        {
+            "type": "directed",
+            "id": "xy-edge__o7ib440y2jzg025jtc2gunp7success-no292swu9b13zid496zympv9input",
+            "data": {
+                "isAnimated": false
+            },
+            "source": "o7ib440y2jzg025jtc2gunp7",
+            "target": "no292swu9b13zid496zympv9",
+            "sourceHandle": "success",
+            "targetHandle": "input"
+        },
+        {
+            "type": "directed",
+            "id": "zij2nsca0dhtznzl273k9zmh",
+            "data": {
+                "isAnimated": false
+            },
+            "source": "ma0w1bujnjnexrhuot01j8rf",
+            "target": "ljukzz9v9mg61n7bc4e4sivo",
+            "sourceHandle": "success",
+            "targetHandle": "input"
+        },
+        {
+            "type": "directed",
+            "id": "pqsubfm31sx6xa0gjour7eva",
+            "data": {
+                "isAnimated": false
+            },
+            "source": "ma0w1bujnjnexrhuot01j8rf",
+            "target": "ljukzz9v9mg61n7bc4e4sivo",
+            "sourceHandle": "error",
+            "targetHandle": "input"
+        },
+        {
+            "id": "r6w80w6nhhyeyl9a97kn22iv-ma0w1bujnjnexrhuot01j8rf-4f3e5c43-5dd3-451b-8710-ec6f91282991",
+            "type": "directed",
+            "animated": false,
+            "data": {
+                "isAnimated": false
+            },
+            "source": "r6w80w6nhhyeyl9a97kn22iv",
+            "target": "ma0w1bujnjnexrhuot01j8rf",
+            "sourceHandle": "success",
+            "targetHandle": "input"
+        }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "tenantId": "c4e72c92-6d3f-4ac3-b029-b722160d1088",
+    "workspaceId": "9aae95bf-7bb8-4ec9-b268-e9337a62381f",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1790789448405,
+    "updatedAt": 1790846681498,
+    "desiredStatus": "stopped",
+    "lastError": null,
+    "statusInfo": {
+        "type": "info",
+        "message": "Workflow stopped.",
+        "at": 1790846210871
+    }
+}
