@@ -88,10 +88,9 @@ to an agent, not a step in a chain.
 <!-- SECTION: workflow-example -->
   ## Example
 
-```
-Chat Trigger ──▶ Agent V2 ──▶ Send Reply
-                   ▲  ▲
-        OpenAI LLM ┘  └ Redis Memory
+```fusion-workflow
+src: example.workflow.json
+title: Chat assistant with memory in Redis
 ```
 
 Configuration:
