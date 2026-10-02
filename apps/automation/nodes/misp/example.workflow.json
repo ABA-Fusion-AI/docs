@@ -1,91 +1,946 @@
-{
-  "name": "Use MISP",
-  "nodes": [
-    {
-      "id": "trigger",
-      "type": "trigger",
-      "position": {
-        "x": 80,
-        "y": 160
-      },
-      "data": {
-        "name": "manual-trigger",
-        "label": "Run",
-        "inputs": {},
-        "outputs": {
-          "success": {
-            "label": "Success"
-          },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "integration",
-      "type": "action",
-      "position": {
-        "x": 300,
-        "y": 160
-      },
-      "data": {
-        "name": "misp",
-        "label": "MISP",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+[
+  {
+    "name": "test-MISP",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "position": {
+          "x": 856,
+          "y": 5
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "bdiqpfyj373tzij9q5mlmy06",
+        "type": "action",
+        "data": {
+          "description": "Interact with MISP threat intelligence platform — events, attributes, taxonomies.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "misp",
+          "label": "MISP-getEvents",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
           },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "output",
-      "type": "display",
-      "position": {
-        "x": 520,
-        "y": 160
-      },
-      "data": {
-        "name": "log",
-        "label": "Result",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "getEvents",
+            "host": "",
+            "apiKey": ""
+          },
+          "defaultOutput": null
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
-          }
-        }
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 424,
+          "y": 26.5
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "d92vn2qe7xefuevuy14xv3pm",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 1197,
+          "y": 25.5
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "id": "lp0nhiksrrhjg00zyljwkeds",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 858.3333333333334,
+          "y": 219.5
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "a1mgd49v6cqzjao9of7hicap",
+        "type": "action",
+        "data": {
+          "description": "Interact with MISP threat intelligence platform — events, attributes, taxonomies.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "misp",
+          "label": "MISP-getEvent",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "getEvent",
+            "host": "",
+            "apiKey": "",
+            "eventId": "1"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 438.33333333333337,
+          "y": 253
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "zmlx6jggj7ke2kd0c7m37g8r",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 1223.3333333333335,
+          "y": 264
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "id": "rikhtwfwg82xzofhyfzacb0a",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 851.3333333333334,
+          "y": 464.5
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "q8435g9ohwwcgzou113a9obt",
+        "type": "action",
+        "data": {
+          "description": "Interact with MISP threat intelligence platform — events, attributes, taxonomies.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "misp",
+          "label": "MISP-createEvent",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "createEvent",
+            "host": "",
+            "apiKey": "",
+            "info": "Test MISP depuis Fusion",
+            "threatLevel": 4
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 431.33333333333337,
+          "y": 498
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "gk7mmto36vk1usxoz7eeolyw",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 1216.3333333333335,
+          "y": 509
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "id": "k7kdpp7o1g3vz2q8xzwk58kk",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 855.3333333333334,
+          "y": 693.5
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "a1t57utvzjlf57n4ea1vvg20",
+        "type": "action",
+        "data": {
+          "description": "Interact with MISP threat intelligence platform — events, attributes, taxonomies.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "misp",
+          "label": "MISP-addAttribute",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "addAttribute",
+            "host": "",
+            "apiKey": "",
+            "eventId": "1",
+            "attributeType": "domain",
+            "attributeValue": "fusion-test.example",
+            "category": "Network activity"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 435.33333333333337,
+          "y": 727
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "z5ybgjbohsrr2wwqzdab9j2l",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 1220.3333333333335,
+          "y": 738
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "id": "ixowh9jj76yphjyep0zw6om4",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 872.3333333333334,
+          "y": 969.5
+        },
+        "width": 72,
+        "height": 72,
+        "selected": true,
+        "id": "fwzx30yw3bp3ediujr4uvan1",
+        "type": "action",
+        "data": {
+          "description": "Interact with MISP threat intelligence platform — events, attributes, taxonomies.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "misp",
+          "label": "MISP-searchEvents",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "searchEvents",
+            "host": "",
+            "apiKey": "",
+            "searchValue": "fusion-test.example",
+            "searchType": "domain"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 452.33333333333337,
+          "y": 1003
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "ip5xoam1rk9vpct3kfy9bg6n",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 1237.3333333333335,
+          "y": 1014
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "id": "chijkko89ic0m0lgkxng0n3k",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 880.3333333333334,
+          "y": 1242.5
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "ds2ugfhoxhogtjwybwtj78k0",
+        "type": "action",
+        "data": {
+          "description": "Interact with MISP threat intelligence platform — events, attributes, taxonomies.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "misp",
+          "label": "MISP-getTaxonomies",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "getTaxonomies",
+            "host": "",
+            "apiKey": ""
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 460.33333333333337,
+          "y": 1276
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "f4k1ywkpqicrmr8ic8chj29t",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 1245.3333333333335,
+          "y": 1287
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "id": "s38sktznxod9rxxhzyr8ki51",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 851,
+          "y": 1521.5
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "gsqdqeow8snhn76mbjz28f83",
+        "type": "action",
+        "data": {
+          "description": "Interact with MISP threat intelligence platform — events, attributes, taxonomies.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "misp",
+          "label": "MISP-getWarningLists",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "getWarningLists",
+            "host": "",
+            "apiKey": ""
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 451,
+          "y": 1559.5
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "lr08kphyzafqvjr6r9s7d29d",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger6",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 1240.5,
+          "y": 1519.5
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "id": "r02ggele897wcunm9o4ejhqf",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log6",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
       }
+    ],
+    "connections": [
+      {
+        "type": "directed",
+        "id": "xy-edge__d92vn2qe7xefuevuy14xv3pmsuccess-bdiqpfyj373tzij9q5mlmy06input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "d92vn2qe7xefuevuy14xv3pm",
+        "target": "bdiqpfyj373tzij9q5mlmy06",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__bdiqpfyj373tzij9q5mlmy06success-lp0nhiksrrhjg00zyljwkedsinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "bdiqpfyj373tzij9q5mlmy06",
+        "target": "lp0nhiksrrhjg00zyljwkeds",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "dzf9kweb0wb4qixv5hdr84lk",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "zmlx6jggj7ke2kd0c7m37g8r",
+        "target": "a1mgd49v6cqzjao9of7hicap",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "u78uaqiqqpnxzbbbkgpy0l0e",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "a1mgd49v6cqzjao9of7hicap",
+        "target": "rikhtwfwg82xzofhyfzacb0a",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "gqe5z0a5xcin4wp56w05xcej",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "gk7mmto36vk1usxoz7eeolyw",
+        "target": "q8435g9ohwwcgzou113a9obt",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "fqhfru4liorpcvo1zux0gix8",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "q8435g9ohwwcgzou113a9obt",
+        "target": "k7kdpp7o1g3vz2q8xzwk58kk",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "ngn9u60jqd4b24rzltz6lgaj",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "z5ybgjbohsrr2wwqzdab9j2l",
+        "target": "a1t57utvzjlf57n4ea1vvg20",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "mkqmt8pcgosl7rp7pvrlpfhd",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "a1t57utvzjlf57n4ea1vvg20",
+        "target": "ixowh9jj76yphjyep0zw6om4",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "yigarb7hbqo0c40wt29lll1g",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "ip5xoam1rk9vpct3kfy9bg6n",
+        "target": "fwzx30yw3bp3ediujr4uvan1",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "uwcn1dr9ysv8rih5ktk3oo2n",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "fwzx30yw3bp3ediujr4uvan1",
+        "target": "chijkko89ic0m0lgkxng0n3k",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "twq3fv5i5pn5enyevwd1q4qx",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "f4k1ywkpqicrmr8ic8chj29t",
+        "target": "ds2ugfhoxhogtjwybwtj78k0",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "g5dztkn2wbjyrrfymq0ikeqr",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "ds2ugfhoxhogtjwybwtj78k0",
+        "target": "s38sktznxod9rxxhzyr8ki51",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__lr08kphyzafqvjr6r9s7d29dsuccess-gsqdqeow8snhn76mbjz28f83input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "lr08kphyzafqvjr6r9s7d29d",
+        "target": "gsqdqeow8snhn76mbjz28f83",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__gsqdqeow8snhn76mbjz28f83success-r02ggele897wcunm9o4ejhqfinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "gsqdqeow8snhn76mbjz28f83",
+        "target": "r02ggele897wcunm9o4ejhqf",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "tenantId": "a530d869-882f-41ff-93db-cac990044c8e",
+    "workspaceId": "1e4b86de-68d6-44cb-856d-e5d1e1a7f57b",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1790954980700,
+    "updatedAt": 1790955482373,
+    "desiredStatus": "stopped",
+    "lastError": null,
+    "statusInfo": {
+      "type": "info",
+      "message": "Workflow stopped.",
+      "at": 1790955482372
     }
-  ],
-  "connections": [
-    {
-      "id": "trigger-integration",
-      "type": "directed",
-      "source": "trigger",
-      "target": "integration",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    },
-    {
-      "id": "integration-output",
-      "type": "directed",
-      "source": "integration",
-      "target": "output",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    }
-  ]
-}
+  }
+]
