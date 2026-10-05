@@ -1,0 +1,266 @@
+---
+node_id: "walmart-search"
+title: "Walmart Search"
+description: "Search Walmart products using SerpAPI. Requires SerpAPI API key."
+category: "web-search"
+subcategory: "search-reference"
+version: "1.0.0"
+language: "en"
+last_updated: "2026-10-05"
+author: "Fusion Team"
+tags: [walmart, search, products, marketplace, serpapi]
+related_nodes: [amazon-product-search, http-request, function]
+---
+
+<!-- SECTION: overview -->
+# Walmart Search
+
+> **Category:** Web Search | **Type:** Action Node
+
+Search Walmart products through SerpAPI and return structured product information for downstream workflow steps. The node requests `https://serpapi.com/search` with the `walmart` engine and extracts products from `organic_results`.
+
+### Use Cases
+
+- Search products by keyword and inspect prices, ratings, and sellers.
+- Collect product information for reporting or comparison workflows.
+- Retrieve a selected search-results page and process its products.
+
+<!-- /SECTION: overview -->
+
+---
+
+<!-- SECTION: configuration -->
+## Configuration
+
+| Parameter | Type | Required | Default | Description |
+|-----------|------|----------|---------|-------------|
+| `apiKey` | `string` | Optional in schema; key required at runtime | `""` | SerpAPI API key. Falls back to `SERPAPI_API_KEY` in the process environment when the configured value is falsy. |
+| `query` | `string` | Optional in schema; non-blank resolved query required at runtime | None | Search text. A truthy configured query takes precedence over incoming data. |
+| `maxResults` | `number` | No | `10` | Maximum number of result entries examined on the selected page. Applied locally after the request. |
+| `sort` | `enum` | No | `relevance` | `relevance`, `price_low`, `price_high`, `rating`, or `best_seller`. |
+| `page` | `number` | No | `1` | Search-results page sent to SerpAPI. |
+
+The supplied schema declares no expression metadata for these parameters. It imposes no integer, minimum, or maximum constraints on `maxResults` or `page`; use positive integers for predictable behavior.
+
+### API Key Resolution
+
+The node uses `config.apiKey || process.env.SERPAPI_API_KEY`. An empty configured key allows the environment fallback. A whitespace-only configured key is truthy, so it prevents fallback and then fails validation. The selected key is checked with `trim()` but is sent without trimming.
+
+### Query Resolution
+
+The node uses a truthy configured `query`; otherwise, it uses string input directly or converts other input with `String(data)`. It checks the resolved query for blank text but sends the original value without trimming.
+
+Pass search text as a string when using workflow input. Objects are not inspected for a query field: an ordinary object becomes `[object Object]`. Values such as `null` and `undefined` become the literal strings `null` and `undefined`. A whitespace-only configured query prevents input fallback and raises a validation error.
+
+### Sort Mapping
+
+| Node value | SerpAPI `sort_by` |
+|------------|------------------|
+| `relevance` | `best_match` |
+| `price_low` | `price_low` |
+| `price_high` | `price_high` |
+| `rating` | `rating_high` |
+| `best_seller` | `best_seller` |
+
+An unrecognized sort value reaching the handler maps to `best_match`, although the schema restricts the supported values.
+
+### Request and Result Limits
+
+The node makes one GET request with `Accept: application/json`. Query parameters are encoded with `URLSearchParams`:
+
+| Query parameter | Value |
+|-----------------|-------|
+| `engine` | `walmart` |
+| `query` | Resolved search query |
+| `api_key` | Resolved API key |
+| `sort_by` | Mapped sort value |
+| `page` | `String(page || 1)` |
+
+`maxResults` is not sent to SerpAPI. The parser examines entries while the index is less than `Math.min(organic_results.length, maxResults || 10)`. Setting `maxResults` to zero therefore selects the fallback limit of 10; a negative value yields no items. A fractional limit can examine more entries than its rounded-down value. A zero `page` falls back to 1.
+
+The node does not retrieve additional pages automatically or retry failed requests. No custom timeout or request cancellation is implemented; `stop()` performs no cleanup.
+
+<!-- /SECTION: configuration -->
+
+---
+
+<!-- SECTION: inputs-outputs -->
+## Inputs & Outputs
+
+### Inputs
+
+Incoming data has type `unknown`. It supplies the search query when the configured query is falsy, using the conversion rules described above.
+
+### Output Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `success` | `boolean` | Always `true` in a returned result. Failures are thrown as errors. |
+| `query` | `string` | Resolved search text. |
+| `totalResults` | API value or `number` | `search_information.total_results` when truthy; otherwise, the returned item count. It is not necessarily the number of items returned. |
+| `items` | `array` | Normalized products from the selected page's `organic_results`. |
+| `scrapedAt` | `string` | ISO timestamp generated by the node after processing the response. |
+| `page` | `number` | Configured page or the fallback value 1. |
+| `searchMetadata` | `object` | `serpapi_id`, `status`, and `created_at`, copied from `search_metadata.id`, `.status`, and `.created_at`. Values can be undefined when absent. |
+
+### Product Fields
+
+| Field | Mapping and fallback |
+|-------|----------------------|
+| `position` | `item.position || index + 1` |
+| `title` | `item.title || "Unknown Product"` |
+| `price` | `item.primary_offer.offer_price || item.price || "N/A"` |
+| `rating` | `item.rating` |
+| `reviewCount` | `item.reviews` |
+| `url` | `item.product_page_url || item.link || ""` |
+| `thumbnail` | `item.thumbnail` |
+| `primaryOffer` | `item.primary_offer.offer_id` |
+| `seller` | `item.seller_name || item.primary_offer.store_name` |
+
+The primary offer is accessed optionally. Fields copied from SerpAPI are not coerced or validated at runtime. Although the product interface declares `price` as a string, the returned price can retain another type supplied by the API. Missing optional fields remain undefined and may be omitted when the result is serialized as JSON.
+
+If `organic_results` is not an array, the parser returns an empty item list. Individual entries that throw during parsing are logged and skipped; replacement entries beyond the configured limit are not examined. Other parser errors are logged and the accumulated items are returned.
+
+<!-- /SECTION: inputs-outputs -->
+
+---
+
+<!-- SECTION: examples -->
+## Examples
+
+### Search with a Configured Query
+
+These JSON objects represent node parameters. Replace the credential placeholder with your protected API key.
+
+```json
+{
+  "apiKey": "YOUR_SERPAPI_API_KEY",
+  "query": "wireless headphones",
+  "maxResults": 5,
+  "sort": "price_low",
+  "page": 1
+}
+```
+
+### Use Workflow Input and an Environment Key
+
+With `SERPAPI_API_KEY` configured in the node's runtime environment, supply these parameters and pass the string `coffee maker` as input:
+
+```json
+{
+  "maxResults": 10,
+  "sort": "rating",
+  "page": 2
+}
+```
+
+### Illustrative Output
+
+The following shows the output shape rather than a live API response:
+
+```json
+{
+  "success": true,
+  "query": "wireless headphones",
+  "totalResults": 120,
+  "items": [
+    {
+      "position": 1,
+      "title": "Example Wireless Headphones",
+      "price": "29.99",
+      "rating": 4.5,
+      "reviewCount": 42,
+      "url": "https://www.walmart.com/ip/example-product"
+    }
+  ],
+  "scrapedAt": "2026-10-05T12:00:00.000Z",
+  "page": 1,
+  "searchMetadata": {
+    "serpapi_id": "EXAMPLE_SEARCH_ID",
+    "status": "Success",
+    "created_at": "EXAMPLE_API_TIMESTAMP"
+  }
+}
+```
+
+### Workflow Patterns
+
+- String-producing step → Walmart Search → product processing.
+- Scheduled trigger → Walmart Search with a configured query → reporting.
+- Walmart Search → Function to filter or compare returned items.
+
+<!-- /SECTION: examples -->
+
+---
+
+<!-- SECTION: troubleshooting -->
+## Troubleshooting
+
+### Missing Query
+
+```text
+Search query is required. Provide a query in the configuration or pass it as input data.
+```
+
+Supply a non-blank configured query or string input. A whitespace-only configured query must be cleared or replaced before input fallback can occur.
+
+### Missing API Key
+
+```text
+SerpAPI API key is required. Either provide it in the node configuration or set SERPAPI_API_KEY environment variable. Get an API key from https://serpapi.com/users/sign_up
+```
+
+Supply a non-blank configured key or set `SERPAPI_API_KEY` in the process environment. Clear a whitespace-only configured key to allow environment fallback.
+
+Query and key validation happen before the request's `try` block, so these errors are not wrapped with the request failure prefix.
+
+### Request or Response Failure
+
+```text
+Walmart search via SerpAPI failed: <message>
+```
+
+For non-success HTTP responses, the node attempts to read the JSON body's `error` field. Otherwise, it uses `HTTP <status>: <statusText>`. The resulting HTTP error has this form:
+
+```text
+Walmart search via SerpAPI failed: SerpAPI error: <API error or HTTP status>
+```
+
+Network failures and JSON parsing failures inside the request block also receive the failure prefix. Check the key, request parameters, connectivity, and returned error details.
+
+### Empty Results or Unexpected Success
+
+Missing or non-array `organic_results` produces an empty item list. The node checks HTTP status but does not explicitly reject an `error` field or unsuccessful search metadata inside a successful HTTP response. Inspect `items` and `searchMetadata` downstream when checking search completion.
+
+<!-- /SECTION: troubleshooting -->
+
+---
+
+<!-- SECTION: security -->
+## Security
+
+Keep the SerpAPI API key in protected configuration or the runtime environment. Avoid placing real keys in exported examples. The node sends the key as an `api_key` query parameter over HTTPS, so avoid logging full request URLs.
+
+<!-- /SECTION: security -->
+
+---
+
+<!-- SECTION: related -->
+## Related
+
+- [Amazon Product Search](../amazon-product-search/en.md) – Search another product marketplace.
+- [HTTP Request](../http-request/en.md) – Make custom API requests.
+- [Function](../function/en.md) – Prepare search text or process returned products.
+
+<!-- /SECTION: related -->
+
+---
+
+<!-- SECTION: changelog -->
+## Changelog
+
+| Version | Date | Changes |
+|---------|------|---------|
+| 1.0.0 | 2026-10-05 | Documentation generated from the supplied Walmart Search implementation. |
+
+<!-- /SECTION: changelog -->

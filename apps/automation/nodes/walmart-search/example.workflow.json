@@ -1,0 +1,614 @@
+
+  {
+    "name": "testWalmart",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "ftwqvn0nclm0fj02zndeuvfp",
+        "position": {
+          "x": 912,
+          "y": 145
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "walmart-search",
+          "label": "Walmart Search",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search Walmart products using SerpAPI. Requires SerpAPI API key.",
+          "showRunningStatus": true,
+          "parameters": {
+            "sort": "relevance",
+            "apiKey": "",
+            "query": "wireless headphones",
+            "maxResults": 10,
+            "page": 10
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "cizbco5zscz36yhl0edc5syf",
+        "position": {
+          "x": 592,
+          "y": 132
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "wj5gsjy31zcxx9sx3tnwx0gl",
+        "position": {
+          "x": 1143,
+          "y": 110
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ws2r3st9jopt7k4t3fknh4bm",
+        "position": {
+          "x": 1011.5280164779316,
+          "y": 856.3604744806335
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "walmart-search",
+          "label": "Walmart Search1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search Walmart products using SerpAPI. Requires SerpAPI API key.",
+          "showRunningStatus": true,
+          "parameters": {
+            "sort": "price_low",
+            "apiKey": "",
+            "query": "wireless headphones",
+            "maxResults": 10,
+            "page": 10
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "sljlc6xfsm27p55lfchc52vw",
+        "position": {
+          "x": 703.5280164779316,
+          "y": 855.3604744806335
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "djywt3d6yusbf838r1kwa2za",
+        "position": {
+          "x": 1266.5280164779315,
+          "y": 845.3604744806335
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "th9s48pei5zlnlil4kx9lc74",
+        "position": {
+          "x": 878.1915512304877,
+          "y": 1481.9516887862508
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "walmart-search",
+          "label": "Walmart Search2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search Walmart products using SerpAPI. Requires SerpAPI API key.",
+          "showRunningStatus": true,
+          "parameters": {
+            "sort": "price_high",
+            "apiKey": "",
+            "query": "wireless headphones",
+            "maxResults": 10,
+            "page": 10
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "wpliupnplmyihabmx60i46if",
+        "position": {
+          "x": 570.1915512304877,
+          "y": 1480.9516887862508
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "rdp768pcb1fvwfbcuikp7w1w",
+        "position": {
+          "x": 1133.1915512304877,
+          "y": 1470.9516887862508
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "bw12iliqusbv6anl08dc6jya",
+        "position": {
+          "x": 967.082528062117,
+          "y": 2127.6691619971425
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "walmart-search",
+          "label": "Walmart Search3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search Walmart products using SerpAPI. Requires SerpAPI API key.",
+          "showRunningStatus": true,
+          "parameters": {
+            "sort": "rating",
+            "apiKey": "",
+            "query": "wireless headphones",
+            "maxResults": 10,
+            "page": 10
+          },
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "sowxu0r7in2n0e2ko4c96blc",
+        "position": {
+          "x": 659.082528062117,
+          "y": 2126.6691619971425
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "qa9ocmx0lek66j7tbpfte1w8",
+        "position": {
+          "x": 1222.082528062117,
+          "y": 2116.6691619971425
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "mirif9lhquzmv22hguzwh1ld",
+        "position": {
+          "x": 1050.9419401674277,
+          "y": 2813.6391530185833
+        },
+        "type": "action",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "walmart-search",
+          "label": "Walmart Search4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Search Walmart products using SerpAPI. Requires SerpAPI API key.",
+          "showRunningStatus": true,
+          "parameters": {
+            "sort": "best_seller",
+            "apiKey": "",
+            "query": "wireless headphones",
+            "maxResults": 10,
+            "page": 10
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "ganv92wtoctv6tmkmfrcw8xp",
+        "position": {
+          "x": 742.9419401674277,
+          "y": 2812.6391530185833
+        },
+        "type": "trigger",
+        "width": 64,
+        "height": 64,
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "ezlfccjo8zbaf44ld3n93gn1",
+        "position": {
+          "x": 1305.9419401674277,
+          "y": 2802.6391530185833
+        },
+        "type": "display",
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "data": {
+          "name": "log",
+          "label": "Log4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "source": "cizbco5zscz36yhl0edc5syf",
+        "sourceHandle": "success",
+        "target": "ftwqvn0nclm0fj02zndeuvfp",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__cizbco5zscz36yhl0edc5syfsuccess-ftwqvn0nclm0fj02zndeuvfpinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ftwqvn0nclm0fj02zndeuvfp",
+        "sourceHandle": "success",
+        "target": "wj5gsjy31zcxx9sx3tnwx0gl",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xy-edge__ftwqvn0nclm0fj02zndeuvfpsuccess-wj5gsjy31zcxx9sx3tnwx0glinput",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "sljlc6xfsm27p55lfchc52vw",
+        "sourceHandle": "success",
+        "target": "ws2r3st9jopt7k4t3fknh4bm",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "u4pb559i7r4gj23qgypnop38",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ws2r3st9jopt7k4t3fknh4bm",
+        "sourceHandle": "success",
+        "target": "djywt3d6yusbf838r1kwa2za",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "wboccrb5x843cnacjafu24pg",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "wpliupnplmyihabmx60i46if",
+        "sourceHandle": "success",
+        "target": "th9s48pei5zlnlil4kx9lc74",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "pl3cvs6r1rh91twibgo0tw66",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "th9s48pei5zlnlil4kx9lc74",
+        "sourceHandle": "success",
+        "target": "rdp768pcb1fvwfbcuikp7w1w",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "evijzq66rycj5r3h9tsiai4u",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "sowxu0r7in2n0e2ko4c96blc",
+        "sourceHandle": "success",
+        "target": "bw12iliqusbv6anl08dc6jya",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "xxusznkfv9s2n09bp9ey2ggg",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "bw12iliqusbv6anl08dc6jya",
+        "sourceHandle": "success",
+        "target": "qa9ocmx0lek66j7tbpfte1w8",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "u7rg4lmrsw251onevfo66kbt",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "ganv92wtoctv6tmkmfrcw8xp",
+        "sourceHandle": "success",
+        "target": "mirif9lhquzmv22hguzwh1ld",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "afrj9at0cr4xyzers7e030re",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "source": "mirif9lhquzmv22hguzwh1ld",
+        "sourceHandle": "success",
+        "target": "ezlfccjo8zbaf44ld3n93gn1",
+        "targetHandle": "input",
+        "type": "directed",
+        "id": "v6ym58d396inop9y4lvn8kgh",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "version": 1,
+    "createdAt": 1787827332378,
+    "updatedAt": 1788172327171,
+    "publishedNames": [],
+    "previousStatus": "running",
+    "tenantId": "a530d869-882f-41ff-93db-cac990044c8e"
+  }
