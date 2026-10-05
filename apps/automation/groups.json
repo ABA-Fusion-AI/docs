@@ -1955,6 +1955,12 @@
           "erpnext",
           "harvest",
           "invoice-ninja",
+          "invoice-ninja-clients",
+          "invoice-ninja-invoices",
+          "invoice-ninja-payments",
+          "invoice-ninja-expenses",
+          "invoice-ninja-quotes",
+          "invoice-ninja-tasks",
           "profitwell",
           "quickbooks",
           "wise"
