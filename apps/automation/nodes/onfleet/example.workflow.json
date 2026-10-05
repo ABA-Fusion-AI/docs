@@ -1,91 +1,672 @@
-{
-  "name": "Use Onfleet",
-  "nodes": [
-    {
-      "id": "trigger",
-      "type": "trigger",
-      "position": {
-        "x": 80,
-        "y": 160
-      },
-      "data": {
-        "name": "manual-trigger",
-        "label": "Run",
-        "inputs": {},
-        "outputs": {
-          "success": {
-            "label": "Success"
-          },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "integration",
-      "type": "action",
-      "position": {
-        "x": 300,
-        "y": 160
-      },
-      "data": {
-        "name": "onfleet",
-        "label": "Onfleet",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+[
+  {
+    "name": "testOnfleet",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "position": {
+          "x": 440.5,
+          "y": 282.5
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "w1rapb0zs6unqpubrcvi3e62",
+        "type": "action",
+        "data": {
+          "description": "Delivery management with Onfleet",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "onfleet",
+          "label": "Onfleet-getOrganization",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
           },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "output",
-      "type": "display",
-      "position": {
-        "x": 520,
-        "y": 160
-      },
-      "data": {
-        "name": "log",
-        "label": "Result",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "getOrganization",
+            "apiKey": "d42b28aae62adc9a527f7be3121e0fe6"
+          },
+          "defaultOutput": null
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
-          }
-        }
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 246,
+          "y": 295
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "npgso1mkyr0ud0ro6rpmnvt4",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 473.69221845957964,
+          "y": 496.9602516511775
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "dc5eodtalnpgpmh6ya5utwvj",
+        "type": "action",
+        "data": {
+          "description": "Delivery management with Onfleet",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "onfleet",
+          "label": "Onfleet-getTasks",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "getTasks",
+            "apiKey": "d42b28aae62adc9a527f7be3121e0fe6"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 158.75,
+          "y": 502.25
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "fp2sz1vxpqhie0tiwdbsd4m0",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 748.75,
+          "y": 296
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "id": "sachcyjvkmtgxdcbo47aad6h",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 770.75,
+          "y": 459
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "id": "eo0fqs81dp4qhy236hp923by",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 554.9628609649906,
+          "y": 662.4994636740932
+        },
+        "width": 72,
+        "height": 72,
+        "selected": true,
+        "id": "ome81kcs0yz9erjvgepnyk0l",
+        "type": "action",
+        "data": {
+          "description": "Delivery management with Onfleet",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "onfleet",
+          "label": "Onfleet-creaeTask",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "createTask",
+            "destination": "350 5th Avenue, New York, NY 10118, USA",
+            "recipientName": "Ons salmani",
+            "recipientPhone": "0666301568",
+            "notes": "test",
+            "apiKey": "d42b28aae62adc9a527f7be3121e0fe6"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 559.3051722266074,
+          "y": 850.6662850108219
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "ox8s3cu43qp27k9b7p9irq3t",
+        "type": "action",
+        "data": {
+          "description": "Delivery management with Onfleet",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "onfleet",
+          "label": "Onfleet-getWorkers",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "getWorkers",
+            "apiKey": "d42b28aae62adc9a527f7be3121e0fe6"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 605.5726727251639,
+          "y": 1088.045967312541
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "n7lfb418vimd9bj9w2h9fo2k",
+        "type": "action",
+        "data": {
+          "description": "Delivery management with Onfleet",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "onfleet",
+          "label": "Onfleet-getTeams",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "getTeams",
+            "apiKey": "d42b28aae62adc9a527f7be3121e0fe6"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 165.60228450668296,
+          "y": 691.4482054182052
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "c4tl4uo58ym3mdhnh0rx5uc6",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 235.079264692552,
+          "y": 823.1649803539154
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "zsqhp70ngxp3w3deg9f6l6yu",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 248.10619847740242,
+          "y": 1135.811391190326
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "i8xnrgqmdzu467di6m9ob2lg",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 874.0349937313822,
+          "y": 667.3161458077661
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "id": "l32li1tsguuhy7rj5bagzuqc",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 1026.0158878879706,
+          "y": 901.8009539350741
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "id": "dcuqdbj7hu773q3w85gyawqi",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 1050.77010104882,
+          "y": 1050.655864331609
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "id": "pzqn8idejef085vcswi7g4ds",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
       }
+    ],
+    "connections": [
+      {
+        "type": "directed",
+        "id": "xy-edge__npgso1mkyr0ud0ro6rpmnvt4success-w1rapb0zs6unqpubrcvi3e62input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "npgso1mkyr0ud0ro6rpmnvt4",
+        "target": "w1rapb0zs6unqpubrcvi3e62",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "bj8zb0tfytvxafsd6ejd4dkl",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "fp2sz1vxpqhie0tiwdbsd4m0",
+        "target": "dc5eodtalnpgpmh6ya5utwvj",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__w1rapb0zs6unqpubrcvi3e62success-sachcyjvkmtgxdcbo47aad6hinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "w1rapb0zs6unqpubrcvi3e62",
+        "target": "sachcyjvkmtgxdcbo47aad6h",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__dc5eodtalnpgpmh6ya5utwvjsuccess-eo0fqs81dp4qhy236hp923byinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "dc5eodtalnpgpmh6ya5utwvj",
+        "target": "eo0fqs81dp4qhy236hp923by",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__c4tl4uo58ym3mdhnh0rx5uc6success-ome81kcs0yz9erjvgepnyk0linput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "c4tl4uo58ym3mdhnh0rx5uc6",
+        "target": "ome81kcs0yz9erjvgepnyk0l",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__zsqhp70ngxp3w3deg9f6l6yusuccess-ox8s3cu43qp27k9b7p9irq3tinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "zsqhp70ngxp3w3deg9f6l6yu",
+        "target": "ox8s3cu43qp27k9b7p9irq3t",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__i8xnrgqmdzu467di6m9ob2lgsuccess-n7lfb418vimd9bj9w2h9fo2kinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "i8xnrgqmdzu467di6m9ob2lg",
+        "target": "n7lfb418vimd9bj9w2h9fo2k",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__ome81kcs0yz9erjvgepnyk0lsuccess-l32li1tsguuhy7rj5bagzuqcinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "ome81kcs0yz9erjvgepnyk0l",
+        "target": "l32li1tsguuhy7rj5bagzuqc",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__ox8s3cu43qp27k9b7p9irq3tsuccess-dcuqdbj7hu773q3w85gyawqiinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "ox8s3cu43qp27k9b7p9irq3t",
+        "target": "dcuqdbj7hu773q3w85gyawqi",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__n7lfb418vimd9bj9w2h9fo2ksuccess-pzqn8idejef085vcswi7g4dsinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "n7lfb418vimd9bj9w2h9fo2k",
+        "target": "pzqn8idejef085vcswi7g4ds",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "tenantId": "a530d869-882f-41ff-93db-cac990044c8e",
+    "workspaceId": "1e4b86de-68d6-44cb-856d-e5d1e1a7f57b",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1791212760166,
+    "updatedAt": 1791214680393,
+    "desiredStatus": "stopped",
+    "lastError": null,
+    "statusInfo": {
+      "type": "info",
+      "message": "Workflow stopped.",
+      "at": 1791214680393
     }
-  ],
-  "connections": [
-    {
-      "id": "trigger-integration",
-      "type": "directed",
-      "source": "trigger",
-      "target": "integration",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    },
-    {
-      "id": "integration-output",
-      "type": "directed",
-      "source": "integration",
-      "target": "output",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    }
-  ]
-}
+  }
+]
