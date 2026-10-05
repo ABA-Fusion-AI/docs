@@ -6,7 +6,7 @@ category: "peer-only"
 subcategory: "Integrations"
 version: "1.0.0"
 language: "en"
-last_updated: "2026-08-07"
+last_updated: "2026-10-05"
 author: "Fusion Team"
 tags:
   - rocketchat
@@ -15,7 +15,7 @@ tags:
   - chat
   - peer-only
 related_nodes:
-  - slack
+  - slack-action
   - http-request
   - function
 ---
@@ -25,15 +25,14 @@ related_nodes:
 
 > **Category:** Peer-Only Integrations &nbsp;&nbsp;|&nbsp;&nbsp;**Type:** Action Node
 
-Interact with your [Rocket.Chat](https://www.rocket.chat) instance via its REST API. Send messages to channels, list channels, retrieve message history, create new channels, and fetch user lists — all from within a Fusion workflow.
+Use the Rocket.Chat REST API from a Fusion workflow to send a channel message, list channels, retrieve channel history, create a channel, or list users. The node calls the `/api/v1` API on the configured Rocket.Chat server.
 
 ### Use Cases
 
-- **Automated Notifications:** Post alerts, reports, or system events to a Rocket.Chat channel automatically.
-- **Team Communication Bots:** Build bots that send dynamic messages based on workflow triggers (new orders, errors, approvals).
-- **Channel Management:** Programmatically create channels and organize teams as part of an onboarding or provisioning workflow.
-- **Audit & Monitoring:** Retrieve message history from channels to audit activity or feed it into an analysis pipeline.
-- **User Lookup:** Fetch the user list to validate Rocket.Chat accounts before sending targeted notifications.
+- **Automated notifications:** Post workflow alerts or reports to a Rocket.Chat channel.
+- **Channel management:** Create a channel as part of a provisioning workflow.
+- **Message history:** Retrieve a channel's history for downstream processing.
+- **User listing:** Retrieve the instance's user list for downstream workflow steps.
 
 <!-- /SECTION: overview -->
 
@@ -44,36 +43,93 @@ Interact with your [Rocket.Chat](https://www.rocket.chat) instance via its REST 
 
 ### Parameters
 
-| Parameter | Type | Required | Default | Description |
-|-----------|------|----------|---------|-------------|
-| `operation` | `enum` | Yes | `getChannels` | The action to perform against the Rocket.Chat API. See operations below. |
-| `host` | `string` | No | — | The base URL of your Rocket.Chat instance (e.g., `https://chat.mycompany.com`). |
-| `userId` | `string` | No | — | The Rocket.Chat User ID used for authentication. Found in your account settings. |
-| `authToken` | `string` | No | — | The Rocket.Chat Auth Token for the authenticated user. Used as the `X-Auth-Token` header. |
-| `channelId` | `string` | No | — | The Rocket.Chat channel ID. Required for `sendMessage`, `getMessages`. |
-| `message` | `string` | No | — | The message text to send. Only used with `sendMessage`. |
-| `channelName` | `string` | No | — | The channel name (without `#`). Used with `createChannel`. |
+The six string parameters are optional in the schema and support expressions. At runtime, every operation requires non-empty `host`, `userId`, and `authToken` values. The `operation` enum defaults to `getChannels` and has no expression metadata.
 
-### Available Operations
+| Parameter | Type | Required at runtime | Default | Description |
+|-----------|------|---------------------|---------|-------------|
+| `operation` | `enum` | No | `getChannels` | Operation to perform: `sendMessage`, `getChannels`, `getMessages`, `createChannel`, or `getUsers`. |
+| `host` | `string` | Yes | — | Rocket.Chat server URL, for example `https://chat.example.com`. |
+| `userId` | `string` | Yes | — | Rocket.Chat user ID used in the `X-User-Id` authentication header. |
+| `authToken` | `string` | Yes | — | Rocket.Chat auth token used in the `X-Auth-Token` authentication header. |
+| `channelId` | `string` | For `sendMessage` and `getMessages` | — | Channel ID. |
+| `message` | `string` | For `sendMessage` | — | Message text to send. Must not be empty. |
+| `channelName` | `string` | For `createChannel` | — | Name of the channel to create. Must not be empty. |
 
-| Operation | Description | Required Parameters |
-|-----------|-------------|---------------------|
-| `sendMessage` | Post a text message to a channel. | `channelId`, `message` |
-| `getChannels` | List all public channels in the Rocket.Chat instance. | — |
-| `getMessages` | Retrieve recent messages from a specific channel. | `channelId` |
-| `createChannel` | Create a new public channel. | `channelName` |
-| `getUsers` | Retrieve the list of all users in the instance. | — |
+### Operations
 
-### Parameter Visibility by Operation
+| Operation | Request | Required operation parameters |
+|-----------|---------|--------------------------------|
+| `getChannels` | `GET /api/v1/channels.list` | — |
+| `sendMessage` | `POST /api/v1/chat.sendMessage` | `channelId`, `message` |
+| `getMessages` | `GET /api/v1/channels.history?roomId=<channelId>` | `channelId` |
+| `createChannel` | `POST /api/v1/channels.create` | `channelName` |
+| `getUsers` | `GET /api/v1/users.list` | — |
 
-| Parameter | `sendMessage` | `getChannels` | `getMessages` | `createChannel` | `getUsers` |
-|-----------|:---:|:---:|:---:|:---:|:---:|
-| `host` | ✅ | ✅ | ✅ | ✅ | ✅ |
-| `userId` | ✅ | ✅ | ✅ | ✅ | ✅ |
-| `authToken` | ✅ | ✅ | ✅ | ✅ | ✅ |
-| `channelId` | ✅ | — | ✅ | — | — |
-| `message` | ✅ | — | — | — | — |
-| `channelName` | — | — | — | ✅ | — |
+The node sends `X-User-Id`, `X-Auth-Token`, and `Content-Type: application/json` headers. For `sendMessage`, the JSON body is `{ "message": { "rid": "<channelId>", "msg": "<message>" } }`. For `createChannel`, the body is `{ "name": "<channelName>" }`.
+
+The node removes one trailing slash from `host` before appending `/api/v1`. Supply the server URL without the API path. For `getMessages`, `channelId` is URL-encoded in the `roomId` query parameter.
+
+### Configuration Examples
+
+Replace credential placeholders with protected values or expressions.
+
+#### List Channels (Default Operation)
+
+```json
+{
+  "host": "https://chat.example.com",
+  "userId": "YOUR_USER_ID",
+  "authToken": "YOUR_AUTH_TOKEN"
+}
+```
+
+#### Send a Message
+
+```json
+{
+  "operation": "sendMessage",
+  "host": "https://chat.example.com",
+  "userId": "YOUR_USER_ID",
+  "authToken": "YOUR_AUTH_TOKEN",
+  "channelId": "YOUR_CHANNEL_ID",
+  "message": "Workflow completed successfully."
+}
+```
+
+#### Retrieve Channel History
+
+```json
+{
+  "operation": "getMessages",
+  "host": "https://chat.example.com",
+  "userId": "YOUR_USER_ID",
+  "authToken": "YOUR_AUTH_TOKEN",
+  "channelId": "YOUR_CHANNEL_ID"
+}
+```
+
+#### Create a Channel
+
+```json
+{
+  "operation": "createChannel",
+  "host": "https://chat.example.com",
+  "userId": "YOUR_USER_ID",
+  "authToken": "YOUR_AUTH_TOKEN",
+  "channelName": "workflow-alerts"
+}
+```
+
+#### List Users
+
+```json
+{
+  "operation": "getUsers",
+  "host": "https://chat.example.com",
+  "userId": "YOUR_USER_ID",
+  "authToken": "YOUR_AUTH_TOKEN"
+}
+```
 
 <!-- /SECTION: configuration -->
 
@@ -86,60 +142,18 @@ Interact with your [Rocket.Chat](https://www.rocket.chat) instance via its REST 
 
 | Input | Type | Description |
 |-------|------|-------------|
-| `input` | `object` | Data and configuration supplied by the preceding workflow node. Parameters can be passed via expressions. |
+| `input` | `unknown` | Incoming workflow data triggers execution but is not read directly by the handler. Operation parameters come from the node configuration. |
 
 ### Outputs
 
 | Output | Type | Description |
 |--------|------|-------------|
-| `success` | `object` | The Rocket.Chat API response for the selected operation. |
-| `error` | `Error` | Emitted on validation errors, authentication failures, network issues, or API errors. |
+| `success` | `object` | The JSON response returned by the Rocket.Chat endpoint selected by `operation`. The response shape depends on the endpoint. |
+| `error` | `Error` | An error is raised if required configuration is missing, an operation-specific parameter is missing, the request fails, or the API returns a non-success HTTP status. |
 
-### Output Examples
+The handler returns parsed API JSON directly, without wrapping or transforming it. It checks the HTTP status with `res.ok` but does not inspect an API-level `success` field. A failure reported inside a successful HTTP response is therefore returned as JSON.
 
-#### `sendMessage`
-
-```json
-{
-  "success": true,
-  "message": {
-    "_id": "messageid123",
-    "rid": "GENERAL",
-    "msg": "Hello from Fusion!",
-    "ts": "2026-08-07T09:00:00.000Z",
-    "u": {
-      "_id": "userId123",
-      "username": "fusion-bot"
-    }
-  }
-}
-```
-
-#### `getChannels`
-
-```json
-{
-  "success": true,
-  "channels": [
-    { "_id": "GENERAL", "name": "general", "usersCount": 42 },
-    { "_id": "ch_dev", "name": "dev-team", "usersCount": 10 }
-  ],
-  "total": 2
-}
-```
-
-#### `getUsers`
-
-```json
-{
-  "success": true,
-  "users": [
-    { "_id": "u1", "username": "abdelkhalek", "name": "Abdelkhalek", "status": "online" },
-    { "_id": "u2", "username": "fusion-bot", "name": "Fusion Bot", "status": "online" }
-  ],
-  "total": 2
-}
-```
+Network failures and JSON parsing failures propagate as errors. HTTP errors include the status and status text, but not the response body. Each execution makes one request; the implementation provides no retries, pagination controls, or automatic retrieval of additional pages.
 
 <!-- /SECTION: inputs-outputs -->
 
@@ -155,18 +169,14 @@ src: example.workflow.json
 title: Use Rocket.Chat in a Workflow
 ```
 
-### How it flows
-
-1. **Manual Trigger:** Starts the workflow on demand.
-2. **Rocket.Chat Node:** Executes the configured operation (e.g., `sendMessage`) using the provided `host`, `userId`, `authToken`, and channel parameters.
-3. **Log Node:** Displays the API response.
+The embedded example contains manual-trigger paths for listing users, sending a message, retrieving channel history, and creating a channel, with results passed to Log nodes. Configure the server and credentials before running it.
 
 ### Common Patterns
 
-- **Alert on Error:** Connect the `error` output of any node to a Rocket.Chat node with `sendMessage` to notify a channel when a workflow fails.
-- **Daily Digest:** Use a Cron trigger to run `getMessages` every morning and summarize overnight activity with an AI Chat node before posting back to the channel.
-- **Onboarding Automation:** When a new user is created in your system, use `createChannel` to set up a dedicated channel and send a welcome `sendMessage` automatically.
-- **Channel Roster Sync:** Periodically call `getUsers` and cross-reference with an internal directory to detect inactive accounts.
+- **Alert on error:** Connect an error-handling path to a Rocket.Chat node configured with `sendMessage`.
+- **Channel history processing:** Use `getMessages` to pass a channel's returned history to downstream workflow steps.
+- **Channel provisioning:** Use `createChannel` to create a channel, then use `sendMessage` to post an initial message.
+- **User listing:** Use `getUsers` to pass the returned user list to downstream workflow steps.
 
 <!-- /SECTION: workflow-example -->
 
@@ -175,11 +185,9 @@ title: Use Rocket.Chat in a Workflow
 <!-- SECTION: security -->
 ## Security
 
-> Store `authToken` and `userId` in Fusion's **Secrets** system. Do not paste credentials directly into workflow parameters or commit them to version control.
-
-- Rocket.Chat auth tokens do not expire by default but can be revoked from the Rocket.Chat admin panel under **Administration → Users**.
-- Always use a **dedicated bot user** for automation — avoid using personal credentials.
-- Restrict the bot user's permissions to only the channels and actions required by your workflows.
+- Store `userId` and `authToken` in Fusion's **Secrets** system rather than directly in workflow parameters.
+- Use a dedicated Rocket.Chat account for automation and grant it only the permissions needed by the workflows.
+- Use HTTPS for the `host` URL when the Rocket.Chat server supports it.
 
 <!-- /SECTION: security -->
 
@@ -190,25 +198,33 @@ title: Use Rocket.Chat in a Workflow
 
 ### Common Issues
 
-#### `Unauthorized` — Authentication failed
-- **Cause:** The `userId` or `authToken` is missing, incorrect, or the token has been revoked.
-- **Solution:** Verify both values in your Rocket.Chat account settings under **My Account → Personal Access Tokens**. Regenerate the token if needed.
+#### `host, userId, and authToken are required`
+- **Cause:** One or more authentication settings are missing.
+- **Solution:** Provide the Rocket.Chat server URL, user ID, and auth token.
 
-#### `Channel not found`
-- **Cause:** The `channelId` does not match an existing channel, or the bot user does not have access to it.
-- **Solution:** Use `getChannels` first to retrieve the correct `_id` for the target channel. Ensure the bot user is a member of the channel.
+#### `channelId and message are required`
+- **Cause:** `sendMessage` was selected without both required parameters, or `message` is empty.
+- **Solution:** Set a channel ID and a non-empty message.
 
-#### `sendMessage` posts nothing / no error
-- **Cause:** The `message` field is empty.
-- **Solution:** Provide a non-empty string in the `message` parameter. You can use an expression to build the message dynamically from upstream data.
+#### `channelId is required`
+- **Cause:** `getMessages` was selected without a channel ID.
+- **Solution:** Set `channelId` to the target channel's ID.
 
-#### `createChannel` fails — channel already exists
-- **Cause:** A channel with the same `channelName` already exists in the instance.
-- **Solution:** Use `getChannels` to check if the channel exists before attempting to create it. Add an If/Else node to skip creation if the channel is already present.
+#### `channelName is required`
+- **Cause:** `createChannel` was selected without a channel name.
+- **Solution:** Set `channelName` to a non-empty value.
 
-#### Connection refused / network error
-- **Cause:** The `host` URL is incorrect, uses HTTP instead of HTTPS, or the Rocket.Chat instance is unreachable.
-- **Solution:** Verify the `host` URL (e.g., `https://chat.mycompany.com`) and confirm the instance is running and accessible from the workflow execution environment.
+#### `Rocket.Chat Error: <status> <statusText>`
+- **Cause:** The API request returned a non-success HTTP status. This can occur if the credentials are invalid, the account lacks permission, or the requested resource is unavailable.
+- **Solution:** Check the Rocket.Chat server URL, credentials, account permissions, and operation parameters.
+
+#### `Unknown operation: <operation>`
+- **Cause:** An unsupported operation reached the handler. The schema normally restricts the operation to the five documented values.
+- **Solution:** Select a supported operation.
+
+#### A Request Fails or the Response Cannot Be Parsed
+- **Cause:** The server cannot be reached, or its response is not valid JSON.
+- **Solution:** Check connectivity and ensure `host` points to the Rocket.Chat server rather than a page or a URL already ending in `/api/v1`.
 
 <!-- /SECTION: troubleshooting -->
 
@@ -217,10 +233,9 @@ title: Use Rocket.Chat in a Workflow
 <!-- SECTION: related -->
 ## Related
 
-- [Slack](./slack.md) – Send messages and manage Slack workspaces
-- [HTTP Request](./http-request.md) – Call Rocket.Chat REST API endpoints not covered by this node
-- [Function](./function.md) – Dynamically build message text or channel names from workflow data
-- [Cron](./cron.md) – Schedule periodic Rocket.Chat operations
+- [Slack Action](../slack-action/en.md) – Send messages and manage Slack workspaces
+- [HTTP Request](../http-request/en.md) – Call Rocket.Chat REST API endpoints not covered by this node
+- [Function](../function/en.md) – Dynamically build message text or channel names from workflow data
 
 <!-- /SECTION: related -->
 
@@ -231,6 +246,6 @@ title: Use Rocket.Chat in a Workflow
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0.0 | 2026-08-07 | Initial documentation |
+| 1.0.0 | 2026-10-05 | Regenerated documentation to match the implementation. |
 
 <!-- /SECTION: changelog -->

@@ -1,91 +1,557 @@
-{
-  "name": "Use Rocket.Chat",
-  "nodes": [
-    {
-      "id": "trigger",
-      "type": "trigger",
-      "position": {
-        "x": 80,
-        "y": 160
-      },
-      "data": {
-        "name": "manual-trigger",
-        "label": "Run",
-        "inputs": {},
-        "outputs": {
-          "success": {
-            "label": "Success"
-          },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "integration",
-      "type": "action",
-      "position": {
-        "x": 300,
-        "y": 160
-      },
-      "data": {
-        "name": "rocketchat",
-        "label": "Rocket.Chat",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+[
+  {
+    "name": "test-Rocket.Chat",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "position": {
+          "x": 683,
+          "y": 248.5
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "p1cfw6g68or5nmxfpqb4uazb",
+        "type": "action",
+        "data": {
+          "description": "Rocket.Chat API. Send messages, manage channels, and retrieve users.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "rocketchat",
+          "label": "Rocket.Chat-getUser",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
           },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "output",
-      "type": "display",
-      "position": {
-        "x": 520,
-        "y": 160
-      },
-      "data": {
-        "name": "log",
-        "label": "Result",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "getUsers",
+            "userId": "mFochwvnFqoMtC8Bs",
+            "authToken": "",
+            "host": "https://translate-giveaway-anymore.ngrok-free.dev"
+          },
+          "defaultOutput": null
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
-          }
-        }
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 516,
+          "y": 279
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "eu7t0kkhy4f1jhn50lmwvb0n",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 862,
+          "y": 287
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "id": "y1ejc3ypq828cl5r47vxqbju",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 657,
+          "y": 668
+        },
+        "width": 72,
+        "height": 72,
+        "selected": true,
+        "id": "xrnqqwrmecgdnse6q3d7iv23",
+        "type": "action",
+        "data": {
+          "description": "Rocket.Chat API. Send messages, manage channels, and retrieve users.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "rocketchat",
+          "label": "Rocket.Chat-sendMessage",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "sendMessage",
+            "userId": "mFochwvnFqoMtC8Bs",
+            "authToken": "",
+            "host": "https://translate-giveaway-anymore.ngrok-free.dev",
+            "channelId": "6ac394c99fb5987d063b2706",
+            "message": "we are testing fusion automation",
+            "channelName": "FusionTest"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 502,
+          "y": 710.5
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "qtr808ur8ypfzkmf0ud0g1ut",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 860,
+          "y": 730.5
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "id": "zia376oyu0ybf1rl10l704oh",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 644,
+          "y": 1038
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "aovmze1ttcz1wzna0vwqgama",
+        "type": "action",
+        "data": {
+          "description": "Rocket.Chat API. Send messages, manage channels, and retrieve users.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "rocketchat",
+          "label": "Rocket.Chat-getChannels",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "getChannels",
+            "authToken": "",
+            "host": "https://translate-giveaway-anymore.ngrok-free.dev",
+            "channelId": "6ac394c99fb5987d063b2706",
+            "userId": "mFochwvnFqoMtC8Bs"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 489,
+          "y": 1080.5
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "tv931cuw3tik4462yky9hu13",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 847,
+          "y": 1100.5
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "id": "g6zxrjeh5959xbln3nysziak",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 671,
+          "y": 1410
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "utmw00ehl59ubu6gv7v2mspo",
+        "type": "action",
+        "data": {
+          "description": "Rocket.Chat API. Send messages, manage channels, and retrieve users.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "rocketchat",
+          "label": "Rocket.Chat-createChannel",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "createChannel",
+            "userId": "mFochwvnFqoMtC8Bs",
+            "authToken": "",
+            "host": "https://translate-giveaway-anymore.ngrok-free.dev",
+            "channelName": "FusionTest",
+            "message": "we are testing fusion automation"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 516,
+          "y": 1452.5
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "vbkv5h1hb1qrx7wnrdgnrxtv",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 874,
+          "y": 1472.5
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "id": "njsvkk7i2ste7oz968x1sg0v",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
       }
+    ],
+    "connections": [
+      {
+        "type": "directed",
+        "id": "xy-edge__eu7t0kkhy4f1jhn50lmwvb0nsuccess-p1cfw6g68or5nmxfpqb4uazbinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "eu7t0kkhy4f1jhn50lmwvb0n",
+        "target": "p1cfw6g68or5nmxfpqb4uazb",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__p1cfw6g68or5nmxfpqb4uazbsuccess-y1ejc3ypq828cl5r47vxqbjuinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "p1cfw6g68or5nmxfpqb4uazb",
+        "target": "y1ejc3ypq828cl5r47vxqbju",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "g1t8fpoj2tro1gssb1rftkl4",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "qtr808ur8ypfzkmf0ud0g1ut",
+        "target": "xrnqqwrmecgdnse6q3d7iv23",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "lfwg3nx0btj9xm9ug4ryuy77",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "xrnqqwrmecgdnse6q3d7iv23",
+        "target": "zia376oyu0ybf1rl10l704oh",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "g0ejm6v139dtnxzsyxhaih66",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "tv931cuw3tik4462yky9hu13",
+        "target": "aovmze1ttcz1wzna0vwqgama",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "k3qj7t2oftcb6555yp22m9ax",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "aovmze1ttcz1wzna0vwqgama",
+        "target": "g6zxrjeh5959xbln3nysziak",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "apdjf6yi91569q44xstnapaf",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "vbkv5h1hb1qrx7wnrdgnrxtv",
+        "target": "utmw00ehl59ubu6gv7v2mspo",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "yup3p2ciw8q17gp7bk7989ah",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "utmw00ehl59ubu6gv7v2mspo",
+        "target": "njsvkk7i2ste7oz968x1sg0v",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "tenantId": "a530d869-882f-41ff-93db-cac990044c8e",
+    "workspaceId": "1e4b86de-68d6-44cb-856d-e5d1e1a7f57b",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1791202271100,
+    "updatedAt": 1791202741248,
+    "desiredStatus": "stopped",
+    "lastError": null,
+    "statusInfo": {
+      "type": "info",
+      "message": "Workflow stopped.",
+      "at": 1791202741248
     }
-  ],
-  "connections": [
-    {
-      "id": "trigger-integration",
-      "type": "directed",
-      "source": "trigger",
-      "target": "integration",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    },
-    {
-      "id": "integration-output",
-      "type": "directed",
-      "source": "integration",
-      "target": "output",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    }
-  ]
-}
+  }
+]
