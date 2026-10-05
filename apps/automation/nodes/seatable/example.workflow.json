@@ -1,0 +1,156 @@
+[
+  {
+    "name": "seatable",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "position": {
+          "x": 892,
+          "y": 122
+        },
+        "width": 72,
+        "height": 72,
+        "selected": true,
+        "id": "uzvjwl7izbapxddfc2nkjj6o",
+        "type": "action",
+        "data": {
+          "description": "Interact with Seatable database. Supports creating, reading, updating, and deleting rows in tables.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "seatable",
+          "label": "Seatable",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "apiToken": "",
+            "operation": "Get All Rows",
+            "tableId": "Table1"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 651,
+          "y": 76
+        },
+        "width": 72,
+        "height": 72,
+        "id": "gwlr9dq1wxztw4u2dq9unam1",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 1098,
+          "y": 52
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "id": "hik84oi97jwg4ikic8p3veih",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      }
+    ],
+    "connections": [
+      {
+        "type": "directed",
+        "id": "xy-edge__gwlr9dq1wxztw4u2dq9unam1success-uzvjwl7izbapxddfc2nkjj6oinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "gwlr9dq1wxztw4u2dq9unam1",
+        "target": "uzvjwl7izbapxddfc2nkjj6o",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__uzvjwl7izbapxddfc2nkjj6osuccess-hik84oi97jwg4ikic8p3veihinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "uzvjwl7izbapxddfc2nkjj6o",
+        "target": "hik84oi97jwg4ikic8p3veih",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "tenantId": "92a6f943-3901-43c7-bea6-f8ad59e2d1b7",
+    "workspaceId": "f7a19ef3-e4ca-4f40-a1c2-cfd5db0f7712",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1791215500411,
+    "updatedAt": 1791217872301,
+    "desiredStatus": "stopped",
+    "statusInfo": {
+      "type": "info",
+      "message": "Workflow stopped.",
+      "at": 1791217872301
+    },
+    "lastError": null
+  }
+]
