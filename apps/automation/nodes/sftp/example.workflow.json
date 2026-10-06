@@ -1,0 +1,826 @@
+[
+  {
+    "name": "TEST-sftp",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "position": {
+          "x": 876.9381919410351,
+          "y": 32.838247563857976
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "e6157h1dfhnrevmzqjs5zdwx",
+        "type": "action",
+        "data": {
+          "description": "Performs SFTP actions with support for uploading/downloading folders and large directories.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "sftp",
+          "label": "SFTP-upload",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "action": "upload-folder",
+            "host": "zahpj-197-230-172-128.run.pinggy-free.link",
+            "port": 43379,
+            "username": "testeur",
+            "remotePath": "/upload/essai-copie.txt",
+            "password": "TestSftp2026",
+            "localPath": "/tmp/fusion-sftp-test/essai.txt"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 489.93819194103514,
+          "y": 35.338247563857976
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "pnz4kjanug7wqzb0hafgacv2",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 1178.9381919410353,
+          "y": -19.661752436142024
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "id": "cj4eolorlp185yy421hkfyo7",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 891.4381919410353,
+          "y": 213.33824756385798
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "qz4ts14myrzdnmkcjz5yqilh",
+        "type": "action",
+        "data": {
+          "description": "Performs SFTP actions with support for uploading/downloading folders and large directories.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "sftp",
+          "label": "SFTP-upload-folder",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "action": "upload-folder",
+            "host": "zahpj-197-230-172-128.run.pinggy-free.link",
+            "username": "testeur",
+            "remotePath": "/upload",
+            "port": 43379,
+            "password": "TestSftp2026",
+            "localPath": "/tmp/fusion-sftp-test"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 899.4381919410353,
+          "y": 406.338247563858
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "qgat15wc477bw9rz3i1v6ksz",
+        "type": "action",
+        "data": {
+          "description": "Performs SFTP actions with support for uploading/downloading folders and large directories.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "sftp",
+          "label": "SFTP-DownloadFolder",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "action": "download-folder",
+            "host": "zahpj-197-230-172-128.run.pinggy-free.link",
+            "username": "testeur",
+            "remotePath": "/upload",
+            "port": 43379
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 913.4381919410353,
+          "y": 600.338247563858
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "tyjwdumtoox6hsngt1ute7pw",
+        "type": "action",
+        "data": {
+          "description": "Performs SFTP actions with support for uploading/downloading folders and large directories.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "sftp",
+          "label": "SFTP-download",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "action": "download",
+            "host": "zahpj-197-230-172-128.run.pinggy-free.link",
+            "port": 43379,
+            "username": "testeur",
+            "password": "TestSftp2026",
+            "remotePath": "/upload"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 922.4381919410353,
+          "y": 823.338247563858
+        },
+        "width": 72,
+        "height": 72,
+        "selected": true,
+        "id": "lvx4v8yxdjbvig6s9xgc5wlm",
+        "type": "action",
+        "data": {
+          "description": "Performs SFTP actions with support for uploading/downloading folders and large directories.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "sftp",
+          "label": "SFTP4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "action": "delete",
+            "host": "zahpj-197-230-172-128.run.pinggy-free.link",
+            "username": "testeur",
+            "remotePath": "/upload/second.txt",
+            "port": 43379,
+            "password": "TestSftp2026"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 474.43819194103526,
+          "y": 221.33824756385798
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "t761o115jj8x1xphz6ivcoqh",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 513.4381919410353,
+          "y": 414.338247563858
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "dex4emz6qxf9osyp6r5dbwu0",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 532.4381919410353,
+          "y": 622.338247563858
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "ta963z0y4ndtmu8qz6d47wg1",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 565.4381919410353,
+          "y": 822.338247563858
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "zk9cu6c3hha8w2ebhc0utawt",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 1186.4381919410353,
+          "y": 813.338247563858
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "id": "cxusp9lkmppuh1qg4cohnfpw",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 1275.4381919410353,
+          "y": 560.338247563858
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "id": "t1dpys89k79u2bm286ywd48q",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 1302.4381919410353,
+          "y": 364.338247563858
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "id": "cdzzqii049lt1gw9xpnwbzis",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 1262.4381919410353,
+          "y": 167.33824756385798
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "id": "d900sucbugp861brcmh84f1i",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 847.1154557419626,
+          "y": -205.58101911193822
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "uvu3kz428o3au4hjomyrbfys",
+        "type": "action",
+        "data": {
+          "description": "Performs SFTP actions with support for uploading/downloading folders and large directories.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "sftp",
+          "label": "SFTP-list",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "action": "list",
+            "host": "zahpj-197-230-172-128.run.pinggy-free.link",
+            "port": 43379,
+            "username": "testeur",
+            "password": "TestSftp2026",
+            "remotePath": "/upload"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 485.2420686417612,
+          "y": -180.51622848255687
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "vxohtjpawj8bc2l366v799a3",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 1234.5823281460102,
+          "y": -239.7690979500034
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "id": "lu3d1yrek7ekkpzve9vj533j",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      }
+    ],
+    "connections": [
+      {
+        "type": "directed",
+        "id": "xy-edge__pnz4kjanug7wqzb0hafgacv2success-e6157h1dfhnrevmzqjs5zdwxinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "pnz4kjanug7wqzb0hafgacv2",
+        "target": "e6157h1dfhnrevmzqjs5zdwx",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__e6157h1dfhnrevmzqjs5zdwxsuccess-cj4eolorlp185yy421hkfyo7input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "e6157h1dfhnrevmzqjs5zdwx",
+        "target": "cj4eolorlp185yy421hkfyo7",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__t761o115jj8x1xphz6ivcoqhsuccess-qz4ts14myrzdnmkcjz5yqilhinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "t761o115jj8x1xphz6ivcoqh",
+        "target": "qz4ts14myrzdnmkcjz5yqilh",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__dex4emz6qxf9osyp6r5dbwu0success-qgat15wc477bw9rz3i1v6kszinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "dex4emz6qxf9osyp6r5dbwu0",
+        "target": "qgat15wc477bw9rz3i1v6ksz",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__ta963z0y4ndtmu8qz6d47wg1success-tyjwdumtoox6hsngt1ute7pwinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "ta963z0y4ndtmu8qz6d47wg1",
+        "target": "tyjwdumtoox6hsngt1ute7pw",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__zk9cu6c3hha8w2ebhc0utawtsuccess-lvx4v8yxdjbvig6s9xgc5wlminput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "zk9cu6c3hha8w2ebhc0utawt",
+        "target": "lvx4v8yxdjbvig6s9xgc5wlm",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__lvx4v8yxdjbvig6s9xgc5wlmsuccess-cxusp9lkmppuh1qg4cohnfpwinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "lvx4v8yxdjbvig6s9xgc5wlm",
+        "target": "cxusp9lkmppuh1qg4cohnfpw",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__tyjwdumtoox6hsngt1ute7pwsuccess-t1dpys89k79u2bm286ywd48qinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "tyjwdumtoox6hsngt1ute7pw",
+        "target": "t1dpys89k79u2bm286ywd48q",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__qgat15wc477bw9rz3i1v6kszsuccess-cdzzqii049lt1gw9xpnwbzisinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "qgat15wc477bw9rz3i1v6ksz",
+        "target": "cdzzqii049lt1gw9xpnwbzis",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__qz4ts14myrzdnmkcjz5yqilhsuccess-d900sucbugp861brcmh84f1iinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "qz4ts14myrzdnmkcjz5yqilh",
+        "target": "d900sucbugp861brcmh84f1i",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__vxohtjpawj8bc2l366v799a3success-uvu3kz428o3au4hjomyrbfysinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "vxohtjpawj8bc2l366v799a3",
+        "target": "uvu3kz428o3au4hjomyrbfys",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__uvu3kz428o3au4hjomyrbfyssuccess-lu3d1yrek7ekkpzve9vj533jinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "uvu3kz428o3au4hjomyrbfys",
+        "target": "lu3d1yrek7ekkpzve9vj533j",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "tenantId": "a530d869-882f-41ff-93db-cac990044c8e",
+    "workspaceId": "1e4b86de-68d6-44cb-856d-e5d1e1a7f57b",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1791286845757,
+    "updatedAt": 1791289013208,
+    "desiredStatus": "stopped",
+    "lastError": null,
+    "statusInfo": {
+      "type": "info",
+      "message": "Workflow stopped.",
+      "at": 1791289013208
+    }
+  }
+]
