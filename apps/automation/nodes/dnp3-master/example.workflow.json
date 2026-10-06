@@ -1,0 +1,135 @@
+[
+  {
+    "name": "DNP3 Master Read Telemetry",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "trigger-1",
+        "position": {
+          "x": 100,
+          "y": 200
+        },
+        "width": 64,
+        "height": 64,
+        "type": "trigger",
+        "data": {
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      },
+      {
+        "id": "dnp3-master-1",
+        "position": {
+          "x": 300,
+          "y": 200
+        },
+        "width": 64,
+        "height": 64,
+        "type": "action",
+        "data": {
+          "name": "dnp3-master",
+          "label": "DNP3 Master",
+          "description": "Communicates with DNP3 outstations (RTUs/IEDs) as a master station. Supports reading and writing points, time synchronization, and control operations.",
+          "showRunningStatus": true,
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "parameters": {
+            "transport": "TCP",
+            "host": "192.168.1.100",
+            "port": 20000,
+            "outstationAddress": 1,
+            "operation": "read",
+            "pointType": "analog-input",
+            "startIndex": 0,
+            "count": 5
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "log-1",
+        "position": {
+          "x": 540,
+          "y": 200
+        },
+        "width": 256,
+        "height": 100,
+        "type": "display",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn-trigger-to-master",
+        "source": "trigger-1",
+        "sourceHandle": "success",
+        "target": "dnp3-master-1",
+        "targetHandle": "input",
+        "type": "directed",
+        "data": {
+          "isAnimated": false
+        }
+      },
+      {
+        "id": "conn-master-to-log",
+        "source": "dnp3-master-1",
+        "sourceHandle": "success",
+        "target": "log-1",
+        "targetHandle": "input",
+        "type": "directed",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "version": 1
+  }
+]
