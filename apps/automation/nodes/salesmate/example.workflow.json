@@ -1,91 +1,1188 @@
-{
-  "name": "Use Salesmate",
-  "nodes": [
-    {
-      "id": "trigger",
-      "type": "trigger",
-      "position": {
-        "x": 80,
-        "y": 160
-      },
-      "data": {
-        "name": "manual-trigger",
-        "label": "Run",
-        "inputs": {},
-        "outputs": {
-          "success": {
-            "label": "Success"
-          },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "integration",
-      "type": "action",
-      "position": {
-        "x": 300,
-        "y": 160
-      },
-      "data": {
-        "name": "salesmate",
-        "label": "Salesmate",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+[
+  {
+    "name": "test salesmate",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "position": {
+          "x": 0,
+          "y": 1244
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "f52a20exmmkaq38qo4ofyoc6",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
           },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "output",
-      "type": "display",
-      "position": {
-        "x": 520,
-        "y": 160
-      },
-      "data": {
-        "name": "log",
-        "label": "Result",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+          "parameters": {},
+          "defaultOutput": null
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
-          }
-        }
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 1120
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "j2k5zx8zcbm7e5imne07njb2",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 292,
+          "y": 1244
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "ok6chysiraoe54r46sb4r3cg",
+        "type": "action",
+        "data": {
+          "description": "Manage contacts, companies, deals and activities in Salesmate CRM",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "salesmate",
+          "label": "Salesmate1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "getActivities",
+            "sessionToken": "",
+            "domain": "mze",
+            "accessKey": ""
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 2924
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "k5edj24hse5omqoz0es6101e",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 2800
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "pbpnstqq3iuladfjpaz5oa4t",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 292,
+          "y": 2924
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "leun246b50rkv8iz3i9lcxnu",
+        "type": "action",
+        "data": {
+          "description": "Manage contacts, companies, deals and activities in Salesmate CRM",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "salesmate",
+          "label": "Salesmate2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "getActivities",
+            "sessionToken": "",
+            "domain": "mze",
+            "accessKey": ""
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 2364
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "ig0xrd1uyhm2w0180tpmu47r",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 2240
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "pg47tsxzyo9r017t1e5qkg5z",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 292,
+          "y": 2364
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "yudain83a5yy4uzgv2afrl3m",
+        "type": "action",
+        "data": {
+          "description": "Manage contacts, companies, deals and activities in Salesmate CRM",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "salesmate",
+          "label": "Salesmate3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "getActivities",
+            "sessionToken": "",
+            "domain": "mze",
+            "accessKey": ""
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 3484
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "naippruwvsffixvtqg8rv5ci",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 3360
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "xfxro2v941zqglk4zkrgihpk",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 292,
+          "y": 3484
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "qk2fc7u4fovw5zmt9oe3xcbn",
+        "type": "action",
+        "data": {
+          "description": "Manage contacts, companies, deals and activities in Salesmate CRM",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "salesmate",
+          "label": "Salesmate3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "getActivities",
+            "sessionToken": "",
+            "domain": "mze",
+            "accessKey": ""
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 1804
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "wqfhmpear2drps83zdukdmud",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 1680
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "gyi0bj7vb4hiu9a43q13imro",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 292,
+          "y": 1804
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "fs7g25sex8e23h5jekrgxhrf",
+        "type": "action",
+        "data": {
+          "description": "Manage contacts, companies, deals and activities in Salesmate CRM",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "salesmate",
+          "label": "Salesmate4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "getActivities",
+            "sessionToken": "",
+            "domain": "mze",
+            "accessKey": ""
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 684
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "w54yeh86rg1zpph2ra2htydf",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 560
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "eyxkxxim7jpedw91t1okq3vf",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 292,
+          "y": 684
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "mdsez7bc2ltdttndixlhyxje",
+        "type": "action",
+        "data": {
+          "description": "Manage contacts, companies, deals and activities in Salesmate CRM",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "salesmate",
+          "label": "Salesmate4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "getActivities",
+            "sessionToken": "",
+            "domain": "mze",
+            "accessKey": ""
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 292,
+          "y": 124
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "lh8mmz1i331i7xb6w98rxy6i",
+        "type": "action",
+        "data": {
+          "description": "Manage contacts, companies, deals and activities in Salesmate CRM",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "salesmate",
+          "label": "Salesmate5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "getActivities",
+            "sessionToken": "",
+            "domain": "mze",
+            "accessKey": ""
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 124
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "acljh2njlukwrvk0vlg4vjqu",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 0
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "wj1z1ssstwtvxflaknoj1cvv",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 308,
+          "y": 339
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "lkntxtfw1mkugwrmjhgkzvr5",
+        "type": "action",
+        "data": {
+          "description": "Performs SFTP actions with support for uploading/downloading folders and large directories.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "sftp",
+          "label": "SFTP",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "action": "list",
+            "host": "zahpj-197-230-172-128.run.pinggy-free.link",
+            "port": 43379,
+            "username": "testeur",
+            "password": "TestSftp2026",
+            "remotePath": "/upload"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": -26,
+          "y": 351
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "d5kaktz2lx8jt6snw1zccvs5",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 509.35112106255804,
+          "y": 299.5255435192082
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "id": "z9c5ihurfyjdtrdxpgq0lz2y",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 312.8264006405388,
+          "y": 480.85664131499414
+        },
+        "width": 72,
+        "height": 72,
+        "selected": true,
+        "id": "j4wes6cbnisaoa6fiwp9uymh",
+        "type": "action",
+        "data": {
+          "description": "Performs SFTP actions with support for uploading/downloading folders and large directories.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "sftp",
+          "label": "SFTP1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "action": "upload-folder",
+            "host": "zahpj-197-230-172-128.run.pinggy-free.link",
+            "port": 43379,
+            "username": "testeur",
+            "password": "TestSftp2026",
+            "remotePath": "/upload"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": -18.797298040712104,
+          "y": 508.7454844762614
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "k4p6pwkz91nsnmij4xcqtexd",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger6",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
       }
+    ],
+    "connections": [
+      {
+        "type": "directed",
+        "id": "xy-edge__f52a20exmmkaq38qo4ofyoc6success-ok6chysiraoe54r46sb4r3cginput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "f52a20exmmkaq38qo4ofyoc6",
+        "target": "ok6chysiraoe54r46sb4r3cg",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__ok6chysiraoe54r46sb4r3cgsuccess-j2k5zx8zcbm7e5imne07njb2input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "ok6chysiraoe54r46sb4r3cg",
+        "target": "j2k5zx8zcbm7e5imne07njb2",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "j2lbgkh2lw2w1xh8vu5rktg5",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "k5edj24hse5omqoz0es6101e",
+        "target": "leun246b50rkv8iz3i9lcxnu",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "uxwz86n26n3w2xzu8ld9bqgf",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "leun246b50rkv8iz3i9lcxnu",
+        "target": "pbpnstqq3iuladfjpaz5oa4t",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "cuhvqc8d7drmzhlw3tm6jtyi",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "ig0xrd1uyhm2w0180tpmu47r",
+        "target": "yudain83a5yy4uzgv2afrl3m",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "gbd41ll3yx4i3yymcmk531tk",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "yudain83a5yy4uzgv2afrl3m",
+        "target": "pg47tsxzyo9r017t1e5qkg5z",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "egxndfbrwinomteysa0mpz3p",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "naippruwvsffixvtqg8rv5ci",
+        "target": "qk2fc7u4fovw5zmt9oe3xcbn",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "rfffgz2blz3hv3avp8nz2sv4",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "qk2fc7u4fovw5zmt9oe3xcbn",
+        "target": "xfxro2v941zqglk4zkrgihpk",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "az7hkkh7a43g0x8x71k3ct1a",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "wqfhmpear2drps83zdukdmud",
+        "target": "fs7g25sex8e23h5jekrgxhrf",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "hcd3c2x8byqwnko3dge1ogfp",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "fs7g25sex8e23h5jekrgxhrf",
+        "target": "gyi0bj7vb4hiu9a43q13imro",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "p5nlbhiitjf3jy4k81231c3z",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "w54yeh86rg1zpph2ra2htydf",
+        "target": "mdsez7bc2ltdttndixlhyxje",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "du7fup80lmajauw48zxohrom",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "mdsez7bc2ltdttndixlhyxje",
+        "target": "eyxkxxim7jpedw91t1okq3vf",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__acljh2njlukwrvk0vlg4vjqusuccess-lh8mmz1i331i7xb6w98rxy6iinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "acljh2njlukwrvk0vlg4vjqu",
+        "target": "lh8mmz1i331i7xb6w98rxy6i",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__lh8mmz1i331i7xb6w98rxy6isuccess-wj1z1ssstwtvxflaknoj1cvvinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "lh8mmz1i331i7xb6w98rxy6i",
+        "target": "wj1z1ssstwtvxflaknoj1cvv",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__d5kaktz2lx8jt6snw1zccvs5success-lkntxtfw1mkugwrmjhgkzvr5input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "d5kaktz2lx8jt6snw1zccvs5",
+        "target": "lkntxtfw1mkugwrmjhgkzvr5",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__lkntxtfw1mkugwrmjhgkzvr5success-z9c5ihurfyjdtrdxpgq0lz2yinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "lkntxtfw1mkugwrmjhgkzvr5",
+        "target": "z9c5ihurfyjdtrdxpgq0lz2y",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__k4p6pwkz91nsnmij4xcqtexdsuccess-j4wes6cbnisaoa6fiwp9uymhinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "k4p6pwkz91nsnmij4xcqtexd",
+        "target": "j4wes6cbnisaoa6fiwp9uymh",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "tenantId": "a530d869-882f-41ff-93db-cac990044c8e",
+    "workspaceId": "1e4b86de-68d6-44cb-856d-e5d1e1a7f57b",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1791283328440,
+    "updatedAt": 1791286822779,
+    "desiredStatus": "stopped",
+    "lastError": null,
+    "statusInfo": {
+      "type": "info",
+      "message": "Workflow stopped.",
+      "at": 1791286822779
     }
-  ],
-  "connections": [
-    {
-      "id": "trigger-integration",
-      "type": "directed",
-      "source": "trigger",
-      "target": "integration",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    },
-    {
-      "id": "integration-output",
-      "type": "directed",
-      "source": "integration",
-      "target": "output",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    }
-  ]
-}
+  }
+]
