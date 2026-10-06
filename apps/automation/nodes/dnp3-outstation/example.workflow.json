@@ -1,0 +1,89 @@
+[
+  {
+    "name": "DNP3 Outstation Control Trigger",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "id": "dnp3-outstation-1",
+        "position": {
+          "x": 100,
+          "y": 200
+        },
+        "width": 64,
+        "height": 64,
+        "type": "trigger",
+        "data": {
+          "name": "dnp3-outstation",
+          "label": "DNP3 Outstation",
+          "description": "Acts as a DNP3 outstation (RTU/IED) that responds to master station requests and triggers workflows on control operations or data updates.",
+          "showRunningStatus": true,
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success"
+            },
+            "error": {
+              "label": "Error"
+            }
+          },
+          "parameters": {
+            "transport": "TCP",
+            "host": "0.0.0.0",
+            "port": 20000,
+            "outstationAddress": 1,
+            "eventBufferSize": 1000
+          },
+          "_morphing": false
+        },
+        "selected": true
+      },
+      {
+        "id": "log-1",
+        "position": {
+          "x": 360,
+          "y": 200
+        },
+        "width": 256,
+        "height": 100,
+        "type": "display",
+        "data": {
+          "name": "log",
+          "label": "Log",
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "_morphing": false
+        },
+        "selected": false
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn-outstation-to-log",
+        "source": "dnp3-outstation-1",
+        "sourceHandle": "success",
+        "target": "log-1",
+        "targetHandle": "input",
+        "type": "directed",
+        "data": {
+          "isAnimated": false
+        }
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "version": 1
+  }
+]
