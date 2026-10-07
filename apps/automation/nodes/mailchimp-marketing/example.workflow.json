@@ -1,0 +1,304 @@
+[
+  {
+    "name": "test-mailchimp",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "position": {
+          "x": 292,
+          "y": 684
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "l1myu7vz63n969w2rye80r7v",
+        "type": "action",
+        "data": {
+          "description": "Manage audiences and send marketing campaigns.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "mailchimp-marketing",
+          "label": "Mailchimp Marketing",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "create_send_campaign",
+            "status": "subscribed",
+            "apiKey": "",
+            "listId": "d653aaec3f",
+            "serverPrefix": "",
+            "email": "meryghan33@gmail.com",
+            "subject": "Test campagne Fusion",
+            "fromName": "Meryem - Test Fusion",
+            "replyTo": "ghanem.meryem1@gmail.com",
+            "htmlContent": "<!DOCTYPE html> <html>   <body>     <h1>Test Mailchimp depuis Fusion</h1>     <p>Cette campagne a été créée et envoyée avec le node Mailchimp Marketing.</p>   </body> </html>"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 684
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "ltr6tke8qhdujf9n1rx9il2r",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 560
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "yy1y8yy9xlckp7nvjnk2e6md",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 292,
+          "y": 124
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "c18123uju2u9v5h0pu1no50g",
+        "type": "action",
+        "data": {
+          "description": "Manage audiences and send marketing campaigns.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "mailchimp-marketing",
+          "label": "Mailchimp Marketing1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "add_subscriber",
+            "status": "subscribed",
+            "apiKey": "",
+            "listId": "d653aaec3f",
+            "serverPrefix": "",
+            "email": "meryghan33@gmail.com",
+            "mergeFields": "{\"FNAME\":\"Meryem\",\"LNAME\":\"Ghanem\"}"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 124
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "e075zu8znzj72b56t3ne6kpa",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 0
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "ecwvatdjqyu9nywfxqmauumu",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      }
+    ],
+    "connections": [
+      {
+        "type": "directed",
+        "id": "xy-edge__ltr6tke8qhdujf9n1rx9il2rsuccess-l1myu7vz63n969w2rye80r7vinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "ltr6tke8qhdujf9n1rx9il2r",
+        "target": "l1myu7vz63n969w2rye80r7v",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__l1myu7vz63n969w2rye80r7vsuccess-yy1y8yy9xlckp7nvjnk2e6mdinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "l1myu7vz63n969w2rye80r7v",
+        "target": "yy1y8yy9xlckp7nvjnk2e6md",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "a18vykbgvpyqaqp521fjqgu3",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "e075zu8znzj72b56t3ne6kpa",
+        "target": "c18123uju2u9v5h0pu1no50g",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "c2igqh5qkdqwtq0638nj72q4",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "c18123uju2u9v5h0pu1no50g",
+        "target": "ecwvatdjqyu9nywfxqmauumu",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "tenantId": "a530d869-882f-41ff-93db-cac990044c8e",
+    "workspaceId": "1e4b86de-68d6-44cb-856d-e5d1e1a7f57b",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1791370273945,
+    "updatedAt": 1791371052583,
+    "desiredStatus": "stopped",
+    "lastError": null,
+    "statusInfo": {
+      "type": "info",
+      "message": "Workflow stopped.",
+      "at": 1791370709409
+    }
+  }
+]
