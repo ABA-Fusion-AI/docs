@@ -322,6 +322,13 @@ Remove a record from the table.
 <!-- SECTION: workflow-example -->
 ## Workflow Integration
 
+### Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Append and inspect records in Airtable
+```
+
 ### Sample Workflow: Sync External API Data to Airtable
 
 Fetch product data from an API every hour and append new records to Airtable.

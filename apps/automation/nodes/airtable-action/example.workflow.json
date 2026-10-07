@@ -1,0 +1,699 @@
+[
+    {
+        "name": "Airtable Action",
+        "variables": {},
+        "secrets": {},
+        "nodes": [
+            {
+                "position": {
+                    "x": 831.042970777281,
+                    "y": 345.7531508307555
+                },
+                "width": 72,
+                "height": 72,
+                "selected": false,
+                "id": "ax7ymr65kot1n8innunc7g83",
+                "type": "trigger",
+                "data": {
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "_morphing": false,
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": null
+                        },
+                        "error": {
+                            "label": "Error",
+                            "isConnectable": null
+                        }
+                    },
+                    "parameters": {},
+                    "defaultOutput": null
+                },
+                "inputs": null,
+                "outputs": null
+            },
+            {
+                "position": {
+                    "x": 1028.4581216965885,
+                    "y": 339.93455463003426
+                },
+                "width": 72,
+                "height": 72,
+                "selected": true,
+                "id": "vup3cjsq8iksm8oitrrdw3o6",
+                "type": "action",
+                "data": {
+                    "description": "Create, read, update, delete and list Airtable records",
+                    "showRunningStatus": true,
+                    "_morphing": false,
+                    "name": "action-node",
+                    "label": "Airtable Action",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": null
+                        },
+                        "error": {
+                            "label": "Error",
+                            "isConnectable": null
+                        }
+                    },
+                    "parameters": {
+                        "operation": "Append data to table",
+                        "apiKey": "",
+                        "baseId": "appb4mnCIeeGrQUbe",
+                        "tableName": "tblIqLwffzDDlDz7T",
+                        "recordData": [
+                            {
+                                "fieldName": "Name",
+                                "fieldValue": "Test Task 1"
+                            }
+                        ]
+                    },
+                    "defaultOutput": null
+                },
+                "inputs": null,
+                "outputs": null
+            },
+            {
+                "position": {
+                    "x": 1216.4959794029162,
+                    "y": 330.86132591249213
+                },
+                "width": 256,
+                "height": 100,
+                "dragHandle": ".drag-handle__custom",
+                "selected": false,
+                "id": "qtz8hq1ey74gj6nlt7dalhx5",
+                "type": "display",
+                "data": {
+                    "description": "Logs the input data to the console.",
+                    "showRunningStatus": false,
+                    "_morphing": false,
+                    "name": "log",
+                    "label": "Log",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": false
+                        }
+                    },
+                    "parameters": {},
+                    "defaultOutput": null
+                },
+                "inputs": null,
+                "outputs": null
+            },
+            {
+                "position": {
+                    "x": 816.9947007403234,
+                    "y": 475.25619029445033
+                },
+                "width": 72,
+                "height": 72,
+                "selected": false,
+                "id": "n64iu14zeqzpftces6k8ah3d",
+                "type": "trigger",
+                "data": {
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "_morphing": false,
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger1",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": null
+                        },
+                        "error": {
+                            "label": "Error",
+                            "isConnectable": null
+                        }
+                    },
+                    "parameters": {},
+                    "defaultOutput": null
+                },
+                "inputs": null,
+                "outputs": null
+            },
+            {
+                "position": {
+                    "x": 1026.409851659631,
+                    "y": 481.4375940937291
+                },
+                "width": 72,
+                "height": 72,
+                "selected": false,
+                "id": "tevw6zvb6but3rohhcmq3vmp",
+                "type": "action",
+                "data": {
+                    "description": "Create, read, update, delete and list Airtable records",
+                    "showRunningStatus": true,
+                    "_morphing": false,
+                    "name": "action-node",
+                    "label": "Airtable Action1",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": null
+                        },
+                        "error": {
+                            "label": "Error",
+                            "isConnectable": null
+                        }
+                    },
+                    "parameters": {
+                        "operation": "Delete data from table",
+                        "apiKey": "",
+                        "baseId": "appb4mnCIeeGrQUbe",
+                        "tableName": "tblIqLwffzDDlDz7T",
+                        "recordId": "recADiL8ucQYqM3Hs"
+                    },
+                    "defaultOutput": null
+                },
+                "inputs": null,
+                "outputs": null
+            },
+            {
+                "position": {
+                    "x": 1226.4477093659586,
+                    "y": 484.364365376187
+                },
+                "width": 256,
+                "height": 100,
+                "dragHandle": ".drag-handle__custom",
+                "selected": false,
+                "id": "tcmh5540f3yxb3r9ppu54md2",
+                "type": "display",
+                "data": {
+                    "description": "Logs the input data to the console.",
+                    "showRunningStatus": false,
+                    "_morphing": false,
+                    "name": "log",
+                    "label": "Log1",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": false
+                        }
+                    },
+                    "parameters": {},
+                    "defaultOutput": null
+                },
+                "inputs": null,
+                "outputs": null
+            },
+            {
+                "position": {
+                    "x": 820.0972323245658,
+                    "y": 642.3274877013677
+                },
+                "width": 72,
+                "height": 72,
+                "selected": false,
+                "id": "uvfnlqajnkfel6h0uu5en8cm",
+                "type": "trigger",
+                "data": {
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "_morphing": false,
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger2",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": null
+                        },
+                        "error": {
+                            "label": "Error",
+                            "isConnectable": null
+                        }
+                    },
+                    "parameters": {},
+                    "defaultOutput": null
+                },
+                "inputs": null,
+                "outputs": null
+            },
+            {
+                "position": {
+                    "x": 1029.5123832438733,
+                    "y": 648.5088915006464
+                },
+                "width": 72,
+                "height": 72,
+                "selected": false,
+                "id": "e0cak21kmqxfvzb5i9xnssdu",
+                "type": "action",
+                "data": {
+                    "description": "Create, read, update, delete and list Airtable records",
+                    "showRunningStatus": true,
+                    "_morphing": false,
+                    "name": "action-node",
+                    "label": "Airtable Action2",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": null
+                        },
+                        "error": {
+                            "label": "Error",
+                            "isConnectable": null
+                        }
+                    },
+                    "parameters": {
+                        "operation": "Update data in table",
+                        "apiKey": "",
+                        "baseId": "appb4mnCIeeGrQUbe",
+                        "tableName": "tblIqLwffzDDlDz7T",
+                        "recordData": [
+                            {
+                                "fieldName": "Name",
+                                "fieldValue": "Test Task 1"
+                            }
+                        ],
+                        "recordId": "recADiL8ucQYqM3Hs"
+                    },
+                    "defaultOutput": null
+                },
+                "inputs": null,
+                "outputs": null
+            },
+            {
+                "position": {
+                    "x": 1229.550240950201,
+                    "y": 651.4356627831042
+                },
+                "width": 256,
+                "height": 100,
+                "dragHandle": ".drag-handle__custom",
+                "selected": false,
+                "id": "tds1jtr6wa2qtfez46v7dkrh",
+                "type": "display",
+                "data": {
+                    "description": "Logs the input data to the console.",
+                    "showRunningStatus": false,
+                    "_morphing": false,
+                    "name": "log",
+                    "label": "Log2",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": false
+                        }
+                    },
+                    "parameters": {},
+                    "defaultOutput": null
+                },
+                "inputs": null,
+                "outputs": null
+            },
+            {
+                "position": {
+                    "x": 820.0972323245658,
+                    "y": 810.4070984049887
+                },
+                "width": 72,
+                "height": 72,
+                "selected": false,
+                "id": "hhv9r77pwuyps358zijj7n6b",
+                "type": "trigger",
+                "data": {
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "_morphing": false,
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger3",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": null
+                        },
+                        "error": {
+                            "label": "Error",
+                            "isConnectable": null
+                        }
+                    },
+                    "parameters": {},
+                    "defaultOutput": null
+                },
+                "inputs": null,
+                "outputs": null
+            },
+            {
+                "position": {
+                    "x": 1029.5123832438733,
+                    "y": 816.5885022042675
+                },
+                "width": 72,
+                "height": 72,
+                "selected": false,
+                "id": "fw6wha2fj4ae4q8ov3k45580",
+                "type": "action",
+                "data": {
+                    "description": "Create, read, update, delete and list Airtable records",
+                    "showRunningStatus": true,
+                    "_morphing": false,
+                    "name": "action-node",
+                    "label": "Airtable Action3",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": null
+                        },
+                        "error": {
+                            "label": "Error",
+                            "isConnectable": null
+                        }
+                    },
+                    "parameters": {
+                        "operation": "Read data from table",
+                        "apiKey": "",
+                        "baseId": "appb4mnCIeeGrQUbe",
+                        "tableName": "tblIqLwffzDDlDz7T",
+                        "recordId": "recADiL8ucQYqM3Hs"
+                    },
+                    "defaultOutput": null
+                },
+                "inputs": null,
+                "outputs": null
+            },
+            {
+                "position": {
+                    "x": 1229.550240950201,
+                    "y": 819.5152734867253
+                },
+                "width": 256,
+                "height": 100,
+                "dragHandle": ".drag-handle__custom",
+                "selected": false,
+                "id": "yrfig1m0ydmxdjxu54nw66p1",
+                "type": "display",
+                "data": {
+                    "description": "Logs the input data to the console.",
+                    "showRunningStatus": false,
+                    "_morphing": false,
+                    "name": "log",
+                    "label": "Log3",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": false
+                        }
+                    },
+                    "parameters": {},
+                    "defaultOutput": null
+                },
+                "inputs": null,
+                "outputs": null
+            },
+            {
+                "position": {
+                    "x": 870.2119120171355,
+                    "y": 994.3537962384784
+                },
+                "width": 72,
+                "height": 72,
+                "selected": false,
+                "id": "bq9ecnhuxozlbq6jgxokv7e4",
+                "type": "trigger",
+                "data": {
+                    "description": "Triggers the workflow manually.",
+                    "showRunningStatus": false,
+                    "_morphing": false,
+                    "name": "manual-trigger",
+                    "label": "Manual Trigger4",
+                    "inputs": {},
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": null
+                        },
+                        "error": {
+                            "label": "Error",
+                            "isConnectable": null
+                        }
+                    },
+                    "parameters": {},
+                    "defaultOutput": null
+                },
+                "inputs": null,
+                "outputs": null
+            },
+            {
+                "position": {
+                    "x": 1079.627062936443,
+                    "y": 1000.5352000377571
+                },
+                "width": 72,
+                "height": 72,
+                "selected": false,
+                "id": "yvnkf0kmnfb2eqbnynr472lq",
+                "type": "action",
+                "data": {
+                    "description": "Create, read, update, delete and list Airtable records",
+                    "showRunningStatus": true,
+                    "_morphing": false,
+                    "name": "action-node",
+                    "label": "Airtable Action4",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": null
+                        },
+                        "error": {
+                            "label": "Error",
+                            "isConnectable": null
+                        }
+                    },
+                    "parameters": {
+                        "operation": "List data from table",
+                        "apiKey": "",
+                        "baseId": "appb4mnCIeeGrQUbe",
+                        "tableName": "tblIqLwffzDDlDz7T"
+                    },
+                    "defaultOutput": null
+                },
+                "inputs": null,
+                "outputs": null
+            },
+            {
+                "position": {
+                    "x": 1279.6649206427708,
+                    "y": 1003.4619713202151
+                },
+                "width": 256,
+                "height": 100,
+                "dragHandle": ".drag-handle__custom",
+                "selected": false,
+                "id": "g1y9lgj011e37hlzfqk56iso",
+                "type": "display",
+                "data": {
+                    "description": "Logs the input data to the console.",
+                    "showRunningStatus": false,
+                    "_morphing": false,
+                    "name": "log",
+                    "label": "Log4",
+                    "inputs": {
+                        "input": {
+                            "label": "Input"
+                        }
+                    },
+                    "outputs": {
+                        "success": {
+                            "label": "Success",
+                            "isConnectable": false
+                        }
+                    },
+                    "parameters": {},
+                    "defaultOutput": null
+                },
+                "inputs": null,
+                "outputs": null
+            }
+        ],
+        "connections": [
+            {
+                "type": "directed",
+                "id": "xy-edge__ax7ymr65kot1n8innunc7g83success-vup3cjsq8iksm8oitrrdw3o6input",
+                "data": {
+                    "isAnimated": false
+                },
+                "source": "ax7ymr65kot1n8innunc7g83",
+                "target": "vup3cjsq8iksm8oitrrdw3o6",
+                "sourceHandle": "success",
+                "targetHandle": "input"
+            },
+            {
+                "type": "directed",
+                "id": "xy-edge__vup3cjsq8iksm8oitrrdw3o6success-qtz8hq1ey74gj6nlt7dalhx5input",
+                "data": {
+                    "isAnimated": false
+                },
+                "source": "vup3cjsq8iksm8oitrrdw3o6",
+                "target": "qtz8hq1ey74gj6nlt7dalhx5",
+                "sourceHandle": "success",
+                "targetHandle": "input"
+            },
+            {
+                "type": "directed",
+                "id": "iihxv7ih4o4whia96jr1q5bs",
+                "data": {
+                    "isAnimated": false
+                },
+                "source": "n64iu14zeqzpftces6k8ah3d",
+                "target": "tevw6zvb6but3rohhcmq3vmp",
+                "sourceHandle": "success",
+                "targetHandle": "input"
+            },
+            {
+                "type": "directed",
+                "id": "owm6exj8puvnfsjxkmg2d82k",
+                "data": {
+                    "isAnimated": false
+                },
+                "source": "tevw6zvb6but3rohhcmq3vmp",
+                "target": "tcmh5540f3yxb3r9ppu54md2",
+                "sourceHandle": "success",
+                "targetHandle": "input"
+            },
+            {
+                "type": "directed",
+                "id": "eg78taudvhdnzryav3jdlr1h",
+                "data": {
+                    "isAnimated": false
+                },
+                "source": "uvfnlqajnkfel6h0uu5en8cm",
+                "target": "e0cak21kmqxfvzb5i9xnssdu",
+                "sourceHandle": "success",
+                "targetHandle": "input"
+            },
+            {
+                "type": "directed",
+                "id": "toxwc7z6iye9qijds4go4u3w",
+                "data": {
+                    "isAnimated": false
+                },
+                "source": "e0cak21kmqxfvzb5i9xnssdu",
+                "target": "tds1jtr6wa2qtfez46v7dkrh",
+                "sourceHandle": "success",
+                "targetHandle": "input"
+            },
+            {
+                "type": "directed",
+                "id": "p64p24o6bg58us3u76uu0t1e",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false,
+                "source": "hhv9r77pwuyps358zijj7n6b",
+                "target": "fw6wha2fj4ae4q8ov3k45580",
+                "sourceHandle": "success",
+                "targetHandle": "input"
+            },
+            {
+                "type": "directed",
+                "id": "imp1dfrvq8yyjimcx0tk6nqe",
+                "data": {
+                    "isAnimated": false
+                },
+                "selected": false,
+                "source": "fw6wha2fj4ae4q8ov3k45580",
+                "target": "yrfig1m0ydmxdjxu54nw66p1",
+                "sourceHandle": "success",
+                "targetHandle": "input"
+            },
+            {
+                "type": "directed",
+                "id": "v8q1z0kydxaobb5ghual4pcm",
+                "data": {
+                    "isAnimated": false
+                },
+                "source": "bq9ecnhuxozlbq6jgxokv7e4",
+                "target": "yvnkf0kmnfb2eqbnynr472lq",
+                "sourceHandle": "success",
+                "targetHandle": "input"
+            },
+            {
+                "type": "directed",
+                "id": "yipc520lw8sk72z84lhtqav9",
+                "data": {
+                    "isAnimated": false
+                },
+                "source": "yvnkf0kmnfb2eqbnynr472lq",
+                "target": "g1y9lgj011e37hlzfqk56iso",
+                "sourceHandle": "success",
+                "targetHandle": "input"
+            }
+        ],
+        "status": "stopped",
+        "tracingEnabled": true,
+        "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+        "tenantId": "c4e72c92-6d3f-4ac3-b029-b722160d1088",
+        "workspaceId": "9aae95bf-7bb8-4ec9-b268-e9337a62381f",
+        "folderId": null,
+        "version": 1,
+        "createdAt": 1791237483996,
+        "updatedAt": 1791372930361,
+        "desiredStatus": "stopped",
+        "lastError": null,
+        "statusInfo": {
+            "type": "info",
+            "message": "Workflow stopped.",
+            "at": 1791372930361
+        }
+    }
+]
