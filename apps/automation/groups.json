@@ -77,8 +77,7 @@
           "asana-trigger",
           "linear-trigger",
           "paypal-webhook-trigger",
-          "teams-on-new-channel-message-trigger",
-          "trigger-node"
+          "teams-on-new-channel-message-trigger"
         ],
         "subgroups": []
       },
@@ -510,8 +509,7 @@
           "eleven-labs-text-to-dialogue-with-timestamps",
           "eleven-labs-text-to-dialogue",
           "eleven-labs",
-          "aws-comprehend",
-          "airtable-action"
+          "aws-comprehend"
         ],
         "subgroups": []
       },
@@ -667,7 +665,7 @@
           "azure-maria-db",
           "om-db",
           "baserow",
-          "action-node",
+          "airtable-action",
           "data-platform-chunk",
           "data-platform-dataset",
           "data-platform-document",
