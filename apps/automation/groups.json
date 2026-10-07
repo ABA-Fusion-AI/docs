@@ -71,7 +71,6 @@
           "teams-on-new-team-member-trigger",
           "teams-on-new-planner-task-trigger",
           "teams-on-planner-task-updated-trigger",
-          "airtable-trigger",
           "discord-trigger",
           "azure-communication-chat-message-trigger",
           "asana-trigger",
@@ -665,7 +664,6 @@
           "azure-maria-db",
           "om-db",
           "baserow",
-          "airtable-action",
           "data-platform-chunk",
           "data-platform-dataset",
           "data-platform-document",
@@ -712,6 +710,14 @@
           "rymo-cache",
           "redis-publish",
           "redis-action"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "Airtable",
+        "nodes": [
+          "airtable-action",
+          "airtable-trigger"
         ],
         "subgroups": []
       }
