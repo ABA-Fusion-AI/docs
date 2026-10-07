@@ -71,12 +71,14 @@
           "teams-on-new-team-member-trigger",
           "teams-on-new-planner-task-trigger",
           "teams-on-planner-task-updated-trigger",
+          "airtable-trigger",
           "discord-trigger",
           "azure-communication-chat-message-trigger",
           "asana-trigger",
           "linear-trigger",
           "paypal-webhook-trigger",
-          "teams-on-new-channel-message-trigger"
+          "teams-on-new-channel-message-trigger",
+          "trigger-node"
         ],
         "subgroups": []
       },
@@ -508,7 +510,8 @@
           "eleven-labs-text-to-dialogue-with-timestamps",
           "eleven-labs-text-to-dialogue",
           "eleven-labs",
-          "aws-comprehend"
+          "aws-comprehend",
+          "airtable-action"
         ],
         "subgroups": []
       },
@@ -664,6 +667,7 @@
           "azure-maria-db",
           "om-db",
           "baserow",
+          "action-node",
           "data-platform-chunk",
           "data-platform-dataset",
           "data-platform-document",
@@ -710,14 +714,6 @@
           "rymo-cache",
           "redis-publish",
           "redis-action"
-        ],
-        "subgroups": []
-      },
-      {
-        "name": "Airtable",
-        "nodes": [
-          "airtable-action",
-          "airtable-trigger"
         ],
         "subgroups": []
       }
