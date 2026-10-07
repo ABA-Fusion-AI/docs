@@ -1,91 +1,1495 @@
-{
-  "name": "Use Mautic",
-  "nodes": [
-    {
-      "id": "trigger",
-      "type": "trigger",
-      "position": {
-        "x": 80,
-        "y": 160
-      },
-      "data": {
-        "name": "manual-trigger",
-        "label": "Run",
-        "inputs": {},
-        "outputs": {
-          "success": {
-            "label": "Success"
-          },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "integration",
-      "type": "action",
-      "position": {
-        "x": 300,
-        "y": 160
-      },
-      "data": {
-        "name": "mautic",
-        "label": "Mautic",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+
+  {
+    "name": "TEST-Mautic",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "position": {
+          "x": 252.98069923243747,
+          "y": 53.51352119408061
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "cz57909z6uvrnayt8kptgr77",
+        "type": "action",
+        "data": {
+          "description": "Manage contacts, campaigns, emails, and segments in Mautic marketing automation.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "mautic",
+          "label": "Mautic-listContacts",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
           },
-          "error": {
-            "label": "Error"
-          }
-        }
-      }
-    },
-    {
-      "id": "output",
-      "type": "display",
-      "position": {
-        "x": 520,
-        "y": 160
-      },
-      "data": {
-        "name": "log",
-        "label": "Result",
-        "inputs": {
-          "input": {
-            "label": "Input"
-          }
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "listContacts",
+            "host": "https://translate-giveaway-anymore.ngrok-free.dev",
+            "username": "mautic_db_user",
+            "password": "mautic_db_pwd"
+          },
+          "defaultOutput": null
         },
-        "outputs": {
-          "success": {
-            "label": "Success"
-          }
-        }
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 124
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "hwsstgkdzccy9ej4976eg2ns",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 0
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "icxuy8yyo1udvc7tz51zixzv",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 271.02595900502587,
+          "y": 248.58826730614874
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "q1w3we9yhd1pq9mdz7el4zub",
+        "type": "action",
+        "data": {
+          "description": "Manage contacts, campaigns, emails, and segments in Mautic marketing automation.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "mautic",
+          "label": "Mautic-getContact",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "getContact",
+            "host": "https://translate-giveaway-anymore.ngrok-free.dev",
+            "username": "mautic_db_user",
+            "password": "mautic_db_pwd"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 268.5085847619573,
+          "y": 448.71951963009843
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "hl5huznf9x36j5cokrg735ih",
+        "type": "action",
+        "data": {
+          "description": "Manage contacts, campaigns, emails, and segments in Mautic marketing automation.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "mautic",
+          "label": "Mautic-createContact",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "createContact",
+            "host": "https://translate-giveaway-anymore.ngrok-free.dev",
+            "username": "mautic_db_user",
+            "password": "mautic_db_pwd",
+            "firstName": "Test",
+            "emailId": "fusion.test@example.com",
+            "phone": "+212600000001",
+            "email": "fusion.test@example.com",
+            "lastName": "test"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 272.2846461265602,
+          "y": 655.1442075617194
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "rpwm6zxpe291kwybxiej36w7",
+        "type": "action",
+        "data": {
+          "description": "Manage contacts, campaigns, emails, and segments in Mautic marketing automation.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "mautic",
+          "label": "Mautic-updateContact",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "updateContact",
+            "host": "https://translate-giveaway-anymore.ngrok-free.dev",
+            "username": "mautic_db_user",
+            "password": "mautic_db_pwd"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 283.6128302203686,
+          "y": 842.6885886703263
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "zbs6vy0gr9x5zyg9bnlhxoy0",
+        "type": "action",
+        "data": {
+          "description": "Manage contacts, campaigns, emails, and segments in Mautic marketing automation.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "mautic",
+          "label": "Mautic-deleteContact",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "deleteContact",
+            "host": "https://translate-giveaway-anymore.ngrok-free.dev",
+            "username": "mautic_db_user",
+            "password": "mautic_db_pwd"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 291.1649529495743,
+          "y": 1084.356516004907
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "a9s3chqiry14mwzvxmrg1hbl",
+        "type": "action",
+        "data": {
+          "description": "Manage contacts, campaigns, emails, and segments in Mautic marketing automation.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "mautic",
+          "label": "Mautic-listCampaigns",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "listCampaigns",
+            "host": "https://translate-giveaway-anymore.ngrok-free.dev",
+            "username": "mautic_db_user",
+            "password": "mautic_db_pwd"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 289.90626582804,
+          "y": 1336.093940311762
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "gsfcwtqfhzlt7jink1qbtmlr",
+        "type": "action",
+        "data": {
+          "description": "Manage contacts, campaigns, emails, and segments in Mautic marketing automation.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "mautic",
+          "label": "Mautic-addCantactToCampaign",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "addContactToCampaign",
+            "host": "https://translate-giveaway-anymore.ngrok-free.dev",
+            "username": "mautic_db_user",
+            "password": "mautic_db_pwd"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 265.9912105188888,
+          "y": 1558.8815608233288
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "igsmj8e5ox2lwkx8mef1brc5",
+        "type": "action",
+        "data": {
+          "description": "Manage contacts, campaigns, emails, and segments in Mautic marketing automation.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "mautic",
+          "label": "Mautic-listEmails",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "listEmails",
+            "host": "https://translate-giveaway-anymore.ngrok-free.dev",
+            "username": "mautic_db_user",
+            "password": "mautic_db_pwd"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 243.33484233127183,
+          "y": 1725.0282608658529
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "lptvhw483u04ed7x6ouotolv",
+        "type": "action",
+        "data": {
+          "description": "Manage contacts, campaigns, emails, and segments in Mautic marketing automation.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "mautic",
+          "label": "Mautic-sendEmail",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "sendEmail",
+            "host": "https://translate-giveaway-anymore.ngrok-free.dev",
+            "username": "mautic_db_user",
+            "password": "mautic_db_pwd"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 210.6089771713807,
+          "y": 1892.4336480299114
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "lb52gbp2ef5mwgum9nmwnnp7",
+        "type": "action",
+        "data": {
+          "description": "Manage contacts, campaigns, emails, and segments in Mautic marketing automation.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "mautic",
+          "label": "Mautic-listSegments",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "listSegments",
+            "host": "https://translate-giveaway-anymore.ngrok-free.dev",
+            "username": "mautic_db_user",
+            "password": "mautic_db_pwd"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": -3.869760013939983,
+          "y": 290.88170291381994
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "mggfrpmiiqw321jcwnmurdpm",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 585.1958128641006,
+          "y": 212.84310137869483
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "u6mu2uyjsf4oksksc2ak1wjt",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 669.5278500068969,
+          "y": 434.3720347687272
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "a12agrmj1m9dycal5802wvr8",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log2",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": -47.294465706872415,
+          "y": 509.8932620607838
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "b9srmrdgqf8sawvkzwqygaxh",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger2",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 638.1031443139643,
+          "y": 665.3835939156911
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "aqr575ycve09cmszawllxfuy",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log3",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": -67.43345965142078,
+          "y": 701.2137045339936
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "lj2kgkvu7vkqdcuik7pcr0gd",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger3",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 617.9641503694161,
+          "y": 856.7040363889008
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "ymzwb99naaaovfeiys6xif7n",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log4",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": -14.56860054698125,
+          "y": 883.7233371564633
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "u3uprcjf3rsb4vmjzglwisj8",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger4",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 670.8290094738556,
+          "y": 1039.2136690113707
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "uerl2054wp1ba2qj36oqbnbj",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log5",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 43.33100704359538,
+          "y": 1109.0283319110986
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "j1v6wmj2auwg6rkf2nyya77t",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger5",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 776.5587276827347,
+          "y": 1282.1402834674857
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "vzmjscr1z9qle1i1n683suqv",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log6",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": -5.757790696241305,
+          "y": 1335.592013787268
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "ajl7u98wxf45lwi6yymnd9ih",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger6",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 679.6398193245956,
+          "y": 1491.0823456421751
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "dtxgjyxm1l5a950s47dm7wvw",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log7",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": -46.03577858533805,
+          "y": 1555.8622600557658
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "vzmtdo17edm1nnxiummf4cff",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger7",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 639.3618314354987,
+          "y": 1711.352591910673
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "dw86pz48dvn4pqhpsif744jx",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log8",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": -62.39871116528367,
+          "y": 1718.2328987336873
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "jz4dst2q806bw69req5daec5",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger8",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 622.9988988555531,
+          "y": 1873.7232305885946
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "hdba2sw90w688xrx74r0jsgz",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log9",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": -78.76164374522926,
+          "y": 1896.9664699915545
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "yc5h2sc5esopi6egxnubvplq",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger9",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 212.66822119585964,
+          "y": 2107.456963169372
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "f3hpkdmt0ncnujd0dd841bx6",
+        "type": "action",
+        "data": {
+          "description": "Manage contacts, campaigns, emails, and segments in Mautic marketing automation.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "mautic",
+          "label": "Mautic-addContactToSegments1",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "addContactToSegment",
+            "host": "https://translate-giveaway-anymore.ngrok-free.dev",
+            "username": "mautic_db_user",
+            "password": "mautic_db_pwd"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": -59.258471472690275,
+          "y": 2109.1459488381206
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "d9tzws3pvb7khdfm35nsl8mu",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger10",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 628.1586957080539,
+          "y": 2104.078991831874
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "nmxlqecaa6o3gcrpx5ww4xoe",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log10",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
       }
+    ],
+    "connections": [
+      {
+        "type": "directed",
+        "id": "xy-edge__hwsstgkdzccy9ej4976eg2nssuccess-cz57909z6uvrnayt8kptgr77input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "hwsstgkdzccy9ej4976eg2ns",
+        "target": "cz57909z6uvrnayt8kptgr77",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__cz57909z6uvrnayt8kptgr77success-icxuy8yyo1udvc7tz51zixzvinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "cz57909z6uvrnayt8kptgr77",
+        "target": "icxuy8yyo1udvc7tz51zixzv",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__mggfrpmiiqw321jcwnmurdpmsuccess-q1w3we9yhd1pq9mdz7el4zubinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "mggfrpmiiqw321jcwnmurdpm",
+        "target": "q1w3we9yhd1pq9mdz7el4zub",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__q1w3we9yhd1pq9mdz7el4zubsuccess-u6mu2uyjsf4oksksc2ak1wjtinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "q1w3we9yhd1pq9mdz7el4zub",
+        "target": "u6mu2uyjsf4oksksc2ak1wjt",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__hl5huznf9x36j5cokrg735ihsuccess-a12agrmj1m9dycal5802wvr8input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "hl5huznf9x36j5cokrg735ih",
+        "target": "a12agrmj1m9dycal5802wvr8",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__b9srmrdgqf8sawvkzwqygaxhsuccess-hl5huznf9x36j5cokrg735ihinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "b9srmrdgqf8sawvkzwqygaxh",
+        "target": "hl5huznf9x36j5cokrg735ih",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__rpwm6zxpe291kwybxiej36w7success-aqr575ycve09cmszawllxfuyinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "rpwm6zxpe291kwybxiej36w7",
+        "target": "aqr575ycve09cmszawllxfuy",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__lj2kgkvu7vkqdcuik7pcr0gdsuccess-rpwm6zxpe291kwybxiej36w7input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "lj2kgkvu7vkqdcuik7pcr0gd",
+        "target": "rpwm6zxpe291kwybxiej36w7",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__zbs6vy0gr9x5zyg9bnlhxoy0success-ymzwb99naaaovfeiys6xif7ninput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "zbs6vy0gr9x5zyg9bnlhxoy0",
+        "target": "ymzwb99naaaovfeiys6xif7n",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__u3uprcjf3rsb4vmjzglwisj8success-zbs6vy0gr9x5zyg9bnlhxoy0input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "u3uprcjf3rsb4vmjzglwisj8",
+        "target": "zbs6vy0gr9x5zyg9bnlhxoy0",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__a9s3chqiry14mwzvxmrg1hblsuccess-uerl2054wp1ba2qj36oqbnbjinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "a9s3chqiry14mwzvxmrg1hbl",
+        "target": "uerl2054wp1ba2qj36oqbnbj",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__j1v6wmj2auwg6rkf2nyya77tsuccess-a9s3chqiry14mwzvxmrg1hblinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "j1v6wmj2auwg6rkf2nyya77t",
+        "target": "a9s3chqiry14mwzvxmrg1hbl",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__gsfcwtqfhzlt7jink1qbtmlrsuccess-vzmjscr1z9qle1i1n683suqvinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "gsfcwtqfhzlt7jink1qbtmlr",
+        "target": "vzmjscr1z9qle1i1n683suqv",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__ajl7u98wxf45lwi6yymnd9ihsuccess-gsfcwtqfhzlt7jink1qbtmlrinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "ajl7u98wxf45lwi6yymnd9ih",
+        "target": "gsfcwtqfhzlt7jink1qbtmlr",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__igsmj8e5ox2lwkx8mef1brc5success-dtxgjyxm1l5a950s47dm7wvwinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "igsmj8e5ox2lwkx8mef1brc5",
+        "target": "dtxgjyxm1l5a950s47dm7wvw",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__vzmtdo17edm1nnxiummf4cffsuccess-igsmj8e5ox2lwkx8mef1brc5input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "vzmtdo17edm1nnxiummf4cff",
+        "target": "igsmj8e5ox2lwkx8mef1brc5",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__lptvhw483u04ed7x6ouotolvsuccess-dw86pz48dvn4pqhpsif744jxinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "lptvhw483u04ed7x6ouotolv",
+        "target": "dw86pz48dvn4pqhpsif744jx",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__jz4dst2q806bw69req5daec5success-lptvhw483u04ed7x6ouotolvinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "jz4dst2q806bw69req5daec5",
+        "target": "lptvhw483u04ed7x6ouotolv",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__lb52gbp2ef5mwgum9nmwnnp7success-hdba2sw90w688xrx74r0jsgzinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "lb52gbp2ef5mwgum9nmwnnp7",
+        "target": "hdba2sw90w688xrx74r0jsgz",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__yc5h2sc5esopi6egxnubvplqsuccess-lb52gbp2ef5mwgum9nmwnnp7input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "yc5h2sc5esopi6egxnubvplq",
+        "target": "lb52gbp2ef5mwgum9nmwnnp7",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__d9tzws3pvb7khdfm35nsl8musuccess-f3hpkdmt0ncnujd0dd841bx6input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "d9tzws3pvb7khdfm35nsl8mu",
+        "target": "f3hpkdmt0ncnujd0dd841bx6",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__f3hpkdmt0ncnujd0dd841bx6success-nmxlqecaa6o3gcrpx5ww4xoeinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "f3hpkdmt0ncnujd0dd841bx6",
+        "target": "nmxlqecaa6o3gcrpx5ww4xoe",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "tenantId": "a530d869-882f-41ff-93db-cac990044c8e",
+    "workspaceId": "1e4b86de-68d6-44cb-856d-e5d1e1a7f57b",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1791301598907,
+    "updatedAt": 1791386452285,
+    "desiredStatus": "stopped",
+    "lastError": null,
+    "statusInfo": {
+      "type": "info",
+      "message": "Workflow stopped.",
+      "at": 1791370284474
     }
-  ],
-  "connections": [
-    {
-      "id": "trigger-integration",
-      "type": "directed",
-      "source": "trigger",
-      "target": "integration",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    },
-    {
-      "id": "integration-output",
-      "type": "directed",
-      "source": "integration",
-      "target": "output",
-      "sourceHandle": "success",
-      "targetHandle": "input"
-    }
-  ]
-}
+  }

@@ -17,6 +17,7 @@ related_nodes: [http-request, function]
 
 > **Category:** Peer-only Integrations&nbsp;&nbsp;|&nbsp;&nbsp;**Type:** Action Node
 
+
 Manage contacts, campaigns, emails, and segments through the configured Mautic instance's API. The node supports eleven operations and authenticates with a username and password using HTTP Basic authentication.
 
 ### Use Cases
