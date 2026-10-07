@@ -272,6 +272,13 @@ Trigger a cleanup workflow when a record is removed.
 <!-- SECTION: workflow-example -->
 ## Workflow Integration
 
+### Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Listen for Airtable record changes
+```
+
 ### Sample Workflow: New Lead → Send Welcome Email
 
 Trigger a welcome email workflow whenever a new lead is added to an Airtable table.
