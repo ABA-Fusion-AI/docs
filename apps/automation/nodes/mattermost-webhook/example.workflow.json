@@ -1,0 +1,351 @@
+{
+    "name": "Mattermost Webhook",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+        {
+            "position": {
+                "x": 802,
+                "y": 417
+            },
+            "width": 72,
+            "height": 72,
+            "selected": false,
+            "id": "ebmtqrp6gtcwrdasa8qn3hpr",
+            "type": "action",
+            "data": {
+                "description": "Send messages to Mattermost using incoming webhooks. Supports text, attachments, channel overrides, and custom formatting.",
+                "showRunningStatus": true,
+                "_morphing": false,
+                "name": "mattermost-webhook",
+                "label": "Mattermost Webhook",
+                "inputs": {
+                    "input": {
+                        "label": "Input"
+                    }
+                },
+                "outputs": {
+                    "success": {
+                        "label": "Success",
+                        "isConnectable": null
+                    },
+                    "error": {
+                        "label": "Error",
+                        "isConnectable": null
+                    }
+                },
+                "parameters": {
+                    "webhookUrl": "https://mattermost.example.com/hooks/YOUR_INCOMING_WEBHOOK_URL",
+                    "text": {
+                        "$expr": "output",
+                        "node": "Function",
+                        "outputId": "success",
+                        "path": "text"
+                    },
+                    "iconEmoji": ":hammer_and_wrench:",
+                    "username": "System/CI-CD"
+                },
+                "defaultOutput": null
+            },
+            "inputs": null,
+            "outputs": null
+        },
+        {
+            "position": {
+                "x": 518,
+                "y": 423.0046272277832
+            },
+            "width": 72,
+            "height": 72,
+            "selected": false,
+            "id": "yd143hed038t5dex5v84rlkf",
+            "type": "trigger",
+            "data": {
+                "description": "Triggers the workflow manually.",
+                "showRunningStatus": false,
+                "_morphing": false,
+                "name": "manual-trigger",
+                "label": "Manual Trigger",
+                "inputs": {},
+                "outputs": {
+                    "success": {
+                        "label": "Success",
+                        "isConnectable": null
+                    },
+                    "error": {
+                        "label": "Error",
+                        "isConnectable": null
+                    }
+                },
+                "parameters": {},
+                "defaultOutput": null
+            },
+            "inputs": null,
+            "outputs": null
+        },
+        {
+            "position": {
+                "x": 1109.5336039865697,
+                "y": 440.8944389576873
+            },
+            "width": 256,
+            "height": 100,
+            "dragHandle": ".drag-handle__custom",
+            "selected": false,
+            "id": "qfyy9ukxmjf55uzraehpjni1",
+            "type": "display",
+            "data": {
+                "description": "Logs the input data to the console.",
+                "showRunningStatus": false,
+                "_morphing": false,
+                "name": "log",
+                "label": "Log",
+                "inputs": {
+                    "input": {
+                        "label": "Input"
+                    }
+                },
+                "outputs": {
+                    "success": {
+                        "label": "Success",
+                        "isConnectable": false
+                    }
+                },
+                "parameters": {},
+                "defaultOutput": null
+            },
+            "inputs": null,
+            "outputs": null
+        },
+        {
+            "position": {
+                "x": 651.1275735018548,
+                "y": 419.06307288604944
+            },
+            "width": 72,
+            "height": 72,
+            "selected": false,
+            "id": "khlfm5z9l6gs2666p0ox66ll",
+            "type": "action",
+            "data": {
+                "description": "Executes custom JavaScript code on the input data.",
+                "showRunningStatus": true,
+                "_morphing": false,
+                "name": "function",
+                "label": "Function",
+                "inputs": {
+                    "input": {
+                        "label": "Input"
+                    }
+                },
+                "outputs": {
+                    "success": {
+                        "label": "Success",
+                        "isConnectable": null
+                    },
+                    "error": {
+                        "label": "Error",
+                        "isConnectable": null
+                    }
+                },
+                "parameters": {
+                    "code": "// Write your code here\nreturn {\n\"text\":'test hada function wach khdama'\n};"
+                },
+                "defaultOutput": null
+            },
+            "inputs": null,
+            "outputs": null
+        },
+        {
+            "position": {
+                "x": 968.445372691438,
+                "y": 653.1919225632464
+            },
+            "width": 256,
+            "height": 100,
+            "dragHandle": ".drag-handle__custom",
+            "selected": false,
+            "id": "q01jazrooox4df5fk1cvx2uh",
+            "type": "display",
+            "data": {
+                "description": "Logs the input data to the console.",
+                "showRunningStatus": false,
+                "_morphing": false,
+                "name": "log",
+                "label": "Log1",
+                "inputs": {
+                    "input": {
+                        "label": "Input"
+                    }
+                },
+                "outputs": {
+                    "success": {
+                        "label": "Success",
+                        "isConnectable": false
+                    }
+                },
+                "parameters": {},
+                "defaultOutput": null
+            },
+            "inputs": null,
+            "outputs": null
+        },
+        {
+            "position": {
+                "x": 364.91176870486834,
+                "y": 623.3021108333423
+            },
+            "width": 72,
+            "height": 72,
+            "selected": false,
+            "id": "i2o9ouz9h7ljgg068a2gw04v",
+            "type": "trigger",
+            "data": {
+                "description": "Triggers the workflow manually.",
+                "showRunningStatus": false,
+                "_morphing": false,
+                "name": "manual-trigger",
+                "label": "Manual Trigger1",
+                "inputs": {},
+                "outputs": {
+                    "success": {
+                        "label": "Success",
+                        "isConnectable": null
+                    },
+                    "error": {
+                        "label": "Error",
+                        "isConnectable": null
+                    }
+                },
+                "parameters": {},
+                "defaultOutput": null
+            },
+            "inputs": null,
+            "outputs": null
+        },
+        {
+            "position": {
+                "x": 636.9117687048683,
+                "y": 625.7974836055591
+            },
+            "width": 72,
+            "height": 72,
+            "selected": true,
+            "id": "zlcjvi7r6ztt88qmektmhmbp",
+            "type": "action",
+            "data": {
+                "description": "Send messages to Mattermost using incoming webhooks. Supports text, attachments, channel overrides, and custom formatting.",
+                "showRunningStatus": true,
+                "_morphing": false,
+                "name": "mattermost-webhook",
+                "label": "Mattermost Webhook1",
+                "inputs": {
+                    "input": {
+                        "label": "Input"
+                    }
+                },
+                "outputs": {
+                    "success": {
+                        "label": "Success",
+                        "isConnectable": null
+                    },
+                    "error": {
+                        "label": "Error",
+                        "isConnectable": null
+                    }
+                },
+                "parameters": {
+                    "webhookUrl": "https://mattermost.example.com/hooks/YOUR_INCOMING_WEBHOOK_URL",
+                    "text": {
+                        "$expr": "output",
+                        "node": "Function",
+                        "outputId": "success",
+                        "path": "text"
+                    },
+                    "iconEmoji": ":hammer_and_wrench:",
+                    "username": "System/CI-CD",
+                    "channel": "town-square",
+                    "iconUrl": "https://cdn-icons-png.flaticon.com/512/4712/4712109.png",
+                    "priority": "standard"
+                },
+                "defaultOutput": null
+            },
+            "inputs": null,
+            "outputs": null
+        }
+    ],
+    "connections": [
+        {
+            "type": "directed",
+            "id": "xy-edge__ebmtqrp6gtcwrdasa8qn3hprsuccess-qfyy9ukxmjf55uzraehpjni1input",
+            "data": {
+                "isAnimated": false
+            },
+            "source": "ebmtqrp6gtcwrdasa8qn3hpr",
+            "target": "qfyy9ukxmjf55uzraehpjni1",
+            "sourceHandle": "success",
+            "targetHandle": "input"
+        },
+        {
+            "type": "directed",
+            "id": "xy-edge__yd143hed038t5dex5v84rlkfsuccess-khlfm5z9l6gs2666p0ox66llinput",
+            "data": {
+                "isAnimated": false
+            },
+            "source": "yd143hed038t5dex5v84rlkf",
+            "target": "khlfm5z9l6gs2666p0ox66ll",
+            "sourceHandle": "success",
+            "targetHandle": "input"
+        },
+        {
+            "type": "directed",
+            "id": "xy-edge__khlfm5z9l6gs2666p0ox66llsuccess-ebmtqrp6gtcwrdasa8qn3hprinput",
+            "data": {
+                "isAnimated": false
+            },
+            "source": "khlfm5z9l6gs2666p0ox66ll",
+            "target": "ebmtqrp6gtcwrdasa8qn3hpr",
+            "sourceHandle": "success",
+            "targetHandle": "input"
+        },
+        {
+            "type": "directed",
+            "id": "anip9wezq5pdg9z89up2yig1",
+            "data": {
+                "isAnimated": false
+            },
+            "source": "zlcjvi7r6ztt88qmektmhmbp",
+            "target": "q01jazrooox4df5fk1cvx2uh",
+            "sourceHandle": "success",
+            "targetHandle": "input"
+        },
+        {
+            "id": "i2o9ouz9h7ljgg068a2gw04v-zlcjvi7r6ztt88qmektmhmbp-43415158-8850-482b-a62a-265fa44a3f08",
+            "type": "directed",
+            "animated": false,
+            "data": {
+                "isAnimated": false
+            },
+            "source": "i2o9ouz9h7ljgg068a2gw04v",
+            "target": "zlcjvi7r6ztt88qmektmhmbp",
+            "sourceHandle": "success",
+            "targetHandle": "input"
+        }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "tenantId": "c4e72c92-6d3f-4ac3-b029-b722160d1088",
+    "workspaceId": "9aae95bf-7bb8-4ec9-b268-e9337a62381f",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1791453989832,
+    "updatedAt": 1791462962134,
+    "desiredStatus": "stopped",
+    "lastError": null,
+    "statusInfo": {
+        "type": "info",
+        "message": "Workflow stopped.",
+        "at": 1791462919503
+    }
+}
