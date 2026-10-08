@@ -1,0 +1,158 @@
+[
+  {
+    "name": "test-mahakim dossier",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "position": {
+          "x": 292,
+          "y": 124
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "t0fx5yfu68qm4ech3q4ro6i0",
+        "type": "action",
+        "data": {
+          "description": "Interact with Mahakim.ma API to list jurisdictions, get dossier information, decisions, parties, experts, and more.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "mahakim-dossier",
+          "label": "Mahakim Dossier",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "listJuridictions",
+            "codeD": "7206"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 124
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "ulq1682vxuvddhiukneg5jl6",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 0
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "draggable": true,
+        "id": "wfdn5aubjqy7zjcbuc4e9rk3",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      }
+    ],
+    "connections": [
+      {
+        "type": "directed",
+        "id": "xy-edge__ulq1682vxuvddhiukneg5jl6success-t0fx5yfu68qm4ech3q4ro6i0input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "ulq1682vxuvddhiukneg5jl6",
+        "target": "t0fx5yfu68qm4ech3q4ro6i0",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__t0fx5yfu68qm4ech3q4ro6i0success-wfdn5aubjqy7zjcbuc4e9rk3input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "t0fx5yfu68qm4ech3q4ro6i0",
+        "target": "wfdn5aubjqy7zjcbuc4e9rk3",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "tenantId": "a530d869-882f-41ff-93db-cac990044c8e",
+    "workspaceId": "1e4b86de-68d6-44cb-856d-e5d1e1a7f57b",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1791476414728,
+    "updatedAt": 1791481483880,
+    "desiredStatus": "stopped",
+    "lastError": null,
+    "statusInfo": {
+      "type": "info",
+      "message": "Workflow stopped.",
+      "at": 1791479425855
+    }
+  }
+]
