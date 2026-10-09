@@ -1,0 +1,246 @@
+
+  {
+    "name": "test-docu-sign",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "position": {
+          "x": 292,
+          "y": 124
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "draggable": true,
+        "id": "itutv3874uou878t8t9zdsfb",
+        "type": "action",
+        "data": {
+          "description": "DocuSign API - Electronic signature and document management. Create envelopes, manage recipients, and track signatures.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "docu-sign",
+          "label": "DocuSign",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "listBillingInvoices",
+            "accessToken": "",
+            "accountId": ""
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 124
+        },
+        "width": 72,
+        "height": 72,
+        "draggable": true,
+        "selected": false,
+        "id": "btvuu4qwe1dwo9wzw8495ilm",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 584,
+          "y": 0
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "draggable": true,
+        "id": "s3jv0s5nu4pooef0yfhi7r5b",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 258,
+          "y": -47.5
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "h8ixxt6288loew7fk7s6r4la",
+        "type": "action",
+        "data": {
+          "description": "Query earthquake data from the European-Mediterranean Seismological Centre (EMSC).",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "emsc-seismic",
+          "label": "EMSC Seismic Portal",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "lat": 31.7917,
+            "lon": -7.0926,
+            "maxradius": 10,
+            "minmagnitude": 2
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": -11.5,
+          "y": -56
+        },
+        "width": 72,
+        "height": 72,
+        "draggable": true,
+        "selected": true,
+        "id": "qwnkmrudk97q1ucowafinjct",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger1",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      }
+    ],
+    "connections": [
+      {
+        "type": "directed",
+        "id": "xy-edge__btvuu4qwe1dwo9wzw8495ilmsuccess-itutv3874uou878t8t9zdsfbinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "btvuu4qwe1dwo9wzw8495ilm",
+        "target": "itutv3874uou878t8t9zdsfb",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__itutv3874uou878t8t9zdsfbsuccess-s3jv0s5nu4pooef0yfhi7r5binput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "itutv3874uou878t8t9zdsfb",
+        "target": "s3jv0s5nu4pooef0yfhi7r5b",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__qwnkmrudk97q1ucowafinjctsuccess-h8ixxt6288loew7fk7s6r4lainput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "qwnkmrudk97q1ucowafinjct",
+        "target": "h8ixxt6288loew7fk7s6r4la",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "tenantId": "a530d869-882f-41ff-93db-cac990044c8e",
+    "workspaceId": "1e4b86de-68d6-44cb-856d-e5d1e1a7f57b",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1791452925118,
+    "updatedAt": 1791557249950,
+    "desiredStatus": "stopped",
+    "lastError": null,
+    "statusInfo": {
+      "type": "info",
+      "message": "Workflow stopped.",
+      "at": 1791557249950
+    }
+  }
