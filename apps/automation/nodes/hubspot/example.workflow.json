@@ -1,0 +1,156 @@
+[
+  {
+    "name": "HubSpot test",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "position": {
+          "x": 554.5,
+          "y": 248.5
+        },
+        "width": 72,
+        "height": 72,
+        "selected": true,
+        "id": "pjocds28r1a8wv0ookph8gyq",
+        "type": "action",
+        "data": {
+          "description": "HubSpot API - CRM and marketing automation. Manage contacts, companies, deals, tickets, and more.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "hub-spot",
+          "label": "HubSpot",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "deleteCompany",
+            "accessToken": ""
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 408.5,
+          "y": 210.5
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "xejaexq5o782uvnrx7g0732a",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 654.5,
+          "y": 237.5
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "id": "r7j8h2ljw2udvc1fz5jf041a",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      }
+    ],
+    "connections": [
+      {
+        "type": "directed",
+        "id": "xy-edge__xejaexq5o782uvnrx7g0732asuccess-pjocds28r1a8wv0ookph8gyqinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "xejaexq5o782uvnrx7g0732a",
+        "target": "pjocds28r1a8wv0ookph8gyq",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__pjocds28r1a8wv0ookph8gyqsuccess-r7j8h2ljw2udvc1fz5jf041ainput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "pjocds28r1a8wv0ookph8gyq",
+        "target": "r7j8h2ljw2udvc1fz5jf041a",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "4684bef7-222f-4f8d-a735-0a42e7ddc0c5",
+    "tenantId": "a530d869-882f-41ff-93db-cac990044c8e",
+    "workspaceId": "1e4b86de-68d6-44cb-856d-e5d1e1a7f57b",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1791799594957,
+    "updatedAt": 1791820175100,
+    "desiredStatus": "stopped",
+    "lastError": null,
+    "statusInfo": {
+      "type": "info",
+      "message": "Workflow stopped.",
+      "at": 1791820175100
+    }
+  }
+]
