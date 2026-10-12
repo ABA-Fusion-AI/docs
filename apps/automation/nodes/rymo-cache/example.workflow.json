@@ -1,40 +1,3 @@
-<<<<<<< Updated upstream
-{
-    "name": "rymo",
-    "variables": {},
-    "secrets": {},
-    "nodes": [
-      {
-        "id": "faz1vm56b54r0zr0qef0uomn",
-        "position": {
-          "x": 635.7163534235483,
-          "y": 106.00926474060991
-        },
-        "type": "display",
-        "width": 256,
-        "height": 100,
-        "dragHandle": ".drag-handle__custom",
-        "data": {
-          "name": "log",
-          "label": "Log",
-          "inputs": {
-            "input": {
-              "label": "Input"
-            }
-          },
-          "outputs": {
-            "success": {
-              "label": "Success",
-              "isConnectable": false
-            }
-          },
-          "description": "Logs the input data to the console.",
-          "showRunningStatus": false,
-          "parameters": {},
-          "_morphing": false
-        },
-        "selected": false
-=======
 ﻿{
   "name": "rymo",
   "variables": {},
@@ -45,7 +8,6 @@
       "position": {
         "x": 635.7163534235483,
         "y": 106.00926474060991
->>>>>>> Stashed changes
       },
       "type": "display",
       "width": 256,
@@ -728,18 +690,6 @@
       "data": {
         "isAnimated": false
       }
-<<<<<<< Updated upstream
-    ],
-    "status": "stopped",
-    "tracingEnabled": true,
-    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
-    "version": 1,
-    "createdAt": 1788361727701,
-    "updatedAt": 1788438051170,
-    "publishedNames": [],
-    "previousStatus": "running"
-  }
-=======
     },
     {
       "source": "v6w7e2tx83bix5qsrc7qyje2",
@@ -882,4 +832,3 @@
   "version": 1,
   "previousStatus": "running"
 }
->>>>>>> Stashed changes
