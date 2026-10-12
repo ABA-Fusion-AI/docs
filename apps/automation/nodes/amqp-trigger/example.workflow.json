@@ -1,0 +1,103 @@
+{
+  "name": "AMQP Trigger",
+  "variables": {},
+  "secrets": {},
+  "nodes": [
+    {
+      "position": {
+        "x": 894.0800592151497,
+        "y": 195.2794871137794
+      },
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "selected": false,
+      "id": "bgshz3eik7518ek58wkqf068",
+      "type": "display",
+      "data": {
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "_morphing": false,
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "parameters": {},
+        "defaultOutput": null
+      },
+      "inputs": null,
+      "outputs": null
+    },
+    {
+      "position": {
+        "x": 603.3654215950522,
+        "y": 183.31833984895786
+      },
+      "width": 72,
+      "height": 72,
+      "selected": true,
+      "id": "fecxm3m8c8e5yxdwyybxpn8i",
+      "type": "trigger",
+      "data": {
+        "description": "Triggers the workflow when a message arrives on an AMQP 1.0 address.",
+        "showRunningStatus": true,
+        "_morphing": false,
+        "name": "amqp-trigger",
+        "label": "AMQP Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": null
+          },
+          "error": {
+            "label": "Error",
+            "isConnectable": null
+          }
+        },
+        "parameters": {},
+        "defaultOutput": null
+      },
+      "inputs": null,
+      "outputs": null
+    }
+  ],
+  "connections": [
+    {
+      "type": "directed",
+      "id": "xy-edge__fecxm3m8c8e5yxdwyybxpn8isuccess-bgshz3eik7518ek58wkqf068input",
+      "data": {
+        "isAnimated": false
+      },
+      "source": "fecxm3m8c8e5yxdwyybxpn8i",
+      "target": "bgshz3eik7518ek58wkqf068",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    }
+  ],
+  "status": "stopped",
+  "tracingEnabled": true,
+  "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+  "tenantId": "c4e72c92-6d3f-4ac3-b029-b722160d1088",
+  "workspaceId": "9aae95bf-7bb8-4ec9-b268-e9337a62381f",
+  "folderId": null,
+  "version": 1,
+  "createdAt": 1791545993882,
+  "updatedAt": 1791803015334,
+  "desiredStatus": "stopped",
+  "lastError": null,
+  "statusInfo": {
+    "type": "info",
+    "message": "Workflow stopped.",
+    "at": 1791565589843
+  }
+}
