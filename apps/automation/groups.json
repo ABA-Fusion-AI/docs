@@ -2163,6 +2163,10 @@
           "gotowebinar",
           "jotform",
           "kobotoolbox",
+          "kobotoolbox-form",
+          "kobotoolbox-submission",
+          "kobotoolbox-file",
+          "kobotoolbox-hook",
           "microsoft-todo",
           "ms-todo"
         ],
