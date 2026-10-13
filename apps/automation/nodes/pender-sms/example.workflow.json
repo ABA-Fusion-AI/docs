@@ -1,0 +1,162 @@
+  {
+    "name": "pendersms",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "position": {
+          "x": 839,
+          "y": 106
+        },
+        "width": 72,
+        "height": 72,
+        "selected": true,
+        "id": "kp7tazwd8th9fjsop3bjidp5",
+        "type": "action",
+        "data": {
+          "description": "Send a single SMS message using PENDER/Piktar SMS API. Supports both 'devices' mode (using linked Android devices) and 'credits' mode (using gateways and partner devices). Phone numbers are automatically normalized to international format (e.g., +212612345678 for Morocco, +33612345678 for France).",
+          "showRunningStatus": true,
+          "metadata": {
+            "gateway": "text"
+          },
+          "_morphing": false,
+          "name": "pender-sms",
+          "label": "PENDER SMS - Send Single Message",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "mode": "devices",
+            "secret": "",
+            "phone": "",
+            "message": "hello from fusion automation",
+            "gateway": "1",
+            "device": "00000000-0000-0000-48c8-d3ba21dd9535",
+            "sim": 1
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 645,
+          "y": 67
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "r0ykad3njpga93t1smktbomq",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 1038,
+          "y": 77
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "id": "iwnl29ak23x74i19a3vhocnv",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      }
+    ],
+    "connections": [
+      {
+        "type": "directed",
+        "id": "xy-edge__r0ykad3njpga93t1smktbomqsuccess-kp7tazwd8th9fjsop3bjidp5input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "r0ykad3njpga93t1smktbomq",
+        "target": "kp7tazwd8th9fjsop3bjidp5",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__kp7tazwd8th9fjsop3bjidp5success-iwnl29ak23x74i19a3vhocnvinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "kp7tazwd8th9fjsop3bjidp5",
+        "target": "iwnl29ak23x74i19a3vhocnv",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "tenantId": "92a6f943-3901-43c7-bea6-f8ad59e2d1b7",
+    "workspaceId": "f7a19ef3-e4ca-4f40-a1c2-cfd5db0f7712",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1791823605584,
+    "updatedAt": 1791885232182,
+    "desiredStatus": "stopped",
+    "lastError": null,
+    "statusInfo": {
+      "type": "info",
+      "message": "Workflow stopped.",
+      "at": 1791885232182
+    }
+  }
