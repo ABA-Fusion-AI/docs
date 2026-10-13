@@ -1403,9 +1403,9 @@
   },
   {
     "id": "abuseipdb testing",
-    "name": "AbuseIPDB",
+    "name": "AbuseIPDB testing",
     "type": "tool",
-    "description": "Checks if an IP has been reported for hacking, DDoS, spamming, or abuse",
+    "description": "testing Checks if an IP has been reported for hacking, DDoS, spamming, or abuse ",
     "slogan": "abuseipdb",
     "icon": "icons/abuseipdb.svg",
     "integrations": {
