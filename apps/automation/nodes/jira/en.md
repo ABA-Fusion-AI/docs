@@ -442,66 +442,12 @@ Create a subtask under a parent issue using the `parent` field.
 <!-- SECTION: workflow-example -->
 ## Workflow Integration
 
-### Sample Workflow: Jenkins Build → Jira Transition → Slack Notification
+### Sample Workflow:
 
-When a Jenkins build succeeds, transition the associated Jira issue to "In Review" and post a Slack notification.
 
-```json
-{
-  "nodes": [
-    {
-      "id": "jenkins-webhook",
-      "type": "webhook-trigger",
-      "position": { "x": 100, "y": 100 }
-    },
-    {
-      "id": "check-success",
-      "type": "function",
-      "position": { "x": 300, "y": 100 },
-      "config": {
-        "code": "if (input.result !== 'SUCCESS') return null; return input;"
-      }
-    },
-    {
-      "id": "transition-issue",
-      "type": "jira",
-      "position": { "x": 500, "y": 100 },
-      "config": {
-        "host": "https://your-org.atlassian.net",
-        "email": "bot@example.com",
-        "apiToken": "your-api-token",
-        "operation": "transitionIssue",
-        "issueKey": "{{input.issueKey}}",
-        "transitionName": "In Review"
-      }
-    },
-    {
-      "id": "add-comment",
-      "type": "jira",
-      "position": { "x": 500, "y": 220 },
-      "config": {
-        "host": "https://your-org.atlassian.net",
-        "email": "bot@example.com",
-        "apiToken": "your-api-token",
-        "operation": "addComment",
-        "issueKey": "{{input.issueKey}}",
-        "commentBody": "✅ Build #{{input.buildNumber}} passed. Moved to In Review."
-      }
-    },
-    {
-      "id": "notify-slack",
-      "type": "slack-action",
-      "position": { "x": 700, "y": 160 },
-      "config": {
-        "token": "xoxb-your-bot-token",
-        "operation": "message",
-        "messageOperation": "send",
-        "messageChannelId": "C08XXXXXXXX",
-        "text": "🔁 *{{input.issueKey}}* moved to *In Review* after build #{{input.buildNumber}}."
-      }
-    }
-  ]
-}
+```fusion-workflow
+src: example.workflow.json
+title: Use Jira in a workflow
 ```
 
 ### Common Patterns

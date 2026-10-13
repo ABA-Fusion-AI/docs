@@ -1,0 +1,156 @@
+  {
+    "name": "jira",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "position": {
+          "x": 917,
+          "y": 136
+        },
+        "width": 72,
+        "height": 72,
+        "selected": true,
+        "id": "a8nur2rw8z6cvqonos7tttyk",
+        "type": "action",
+        "data": {
+          "description": "Perform operations on Jira using REST API",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "jira",
+          "label": "Jira Action",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "listBoards",
+            "apiToken": "=B28A0589",
+            "email": "@gmail.com",
+            "host": "-1791902877214.atlassian.net"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 714,
+          "y": 116
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "ymlb8ety55kbx0tuwvws9b4q",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 1109,
+          "y": 86
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "selected": false,
+        "id": "bxt9maa7fvor33sm5cof2rs3",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      }
+    ],
+    "connections": [
+      {
+        "type": "directed",
+        "id": "xy-edge__ymlb8ety55kbx0tuwvws9b4qsuccess-a8nur2rw8z6cvqonos7tttykinput",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "ymlb8ety55kbx0tuwvws9b4q",
+        "target": "a8nur2rw8z6cvqonos7tttyk",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__a8nur2rw8z6cvqonos7tttyksuccess-bxt9maa7fvor33sm5cof2rs3input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "a8nur2rw8z6cvqonos7tttyk",
+        "target": "bxt9maa7fvor33sm5cof2rs3",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "63fa65ca-2297-430e-b094-37f88ddf833d",
+    "tenantId": "92a6f943-3901-43c7-bea6-f8ad59e2d1b7",
+    "workspaceId": "f7a19ef3-e4ca-4f40-a1c2-cfd5db0f7712",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1791823216899,
+    "updatedAt": 1791903292893,
+    "desiredStatus": "stopped",
+    "lastError": null,
+    "statusInfo": {
+      "type": "info",
+      "message": "Workflow stopped.",
+      "at": 1791903292893
+    }
+  }
