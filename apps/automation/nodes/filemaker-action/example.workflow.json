@@ -1,0 +1,195 @@
+{
+    "name": "FileMaker",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+      {
+        "position": {
+          "x": 497.5,
+          "y": 154
+        },
+        "width": 72,
+        "height": 72,
+        "selected": false,
+        "id": "yabwporypy9nj3j9uobyhxmq",
+        "type": "trigger",
+        "data": {
+          "description": "Triggers the workflow manually.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "manual-trigger",
+          "label": "Manual Trigger",
+          "inputs": {},
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 819.5,
+          "y": 219
+        },
+        "width": 256,
+        "height": 100,
+        "dragHandle": ".drag-handle__custom",
+        "id": "jw7hp0xgnvgjs33kr5fbd2d0",
+        "type": "display",
+        "data": {
+          "description": "Logs the input data to the console.",
+          "showRunningStatus": false,
+          "_morphing": false,
+          "name": "log",
+          "label": "Log",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": false
+            }
+          },
+          "parameters": {},
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      },
+      {
+        "position": {
+          "x": 652,
+          "y": 178.5
+        },
+        "width": 72,
+        "height": 72,
+        "selected": true,
+        "id": "kddq9uj2sj4o5rsd3c6p0yn1",
+        "type": "action",
+        "data": {
+          "description": "Interact with FileMaker databases via the FileMaker Data API. Supports CRUD on records, find with criteria, script execution, and layout metadata.",
+          "showRunningStatus": true,
+          "_morphing": false,
+          "name": "filemaker-action",
+          "label": "FileMaker",
+          "inputs": {
+            "input": {
+              "label": "Input"
+            }
+          },
+          "outputs": {
+            "success": {
+              "label": "Success",
+              "isConnectable": null
+            },
+            "error": {
+              "label": "Error",
+              "isConnectable": null
+            }
+          },
+          "parameters": {
+            "operation": "duplicateRecord",
+            "host": "https://fdfe-197-230-172-128.ngrok-free.app",
+            "database": "MyDatabase",
+            "username": "admin",
+            "password": "secret",
+            "layout": "Contacts",
+            "recordId": "1"
+          },
+          "defaultOutput": null
+        },
+        "inputs": null,
+        "outputs": null
+      }
+    ],
+    "connections": [
+      {
+        "type": "directed",
+        "id": "xy-edge__yabwporypy9nj3j9uobyhxmqsuccess-kddq9uj2sj4o5rsd3c6p0yn1input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "yabwporypy9nj3j9uobyhxmq",
+        "target": "kddq9uj2sj4o5rsd3c6p0yn1",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__kddq9uj2sj4o5rsd3c6p0yn1success-jw7hp0xgnvgjs33kr5fbd2d0input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "kddq9uj2sj4o5rsd3c6p0yn1",
+        "target": "jw7hp0xgnvgjs33kr5fbd2d0",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__kddq9uj2sj4o5rsd3c6p0yn1success-jw7hp0xgnvgjs33kr5fbd2d0input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "kddq9uj2sj4o5rsd3c6p0yn1",
+        "target": "jw7hp0xgnvgjs33kr5fbd2d0",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      },
+      {
+        "type": "directed",
+        "id": "xy-edge__yabwporypy9nj3j9uobyhxmqsuccess-kddq9uj2sj4o5rsd3c6p0yn1input",
+        "data": {
+          "isAnimated": false
+        },
+        "source": "yabwporypy9nj3j9uobyhxmq",
+        "target": "kddq9uj2sj4o5rsd3c6p0yn1",
+        "sourceHandle": "success",
+        "targetHandle": "input"
+      }
+    ],
+    "status": "error",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "tenantId": "c4e72c92-6d3f-4ac3-b029-b722160d1088",
+    "workspaceId": "9aae95bf-7bb8-4ec9-b268-e9337a62381f",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1791894556296,
+    "updatedAt": 1791978391313,
+    "desiredStatus": "running",
+    "lastError": {
+      "message": "Failed to set up nodes",
+      "issues": [
+        {
+          "nodeId": "kddq9uj2sj4o5rsd3c6p0yn1",
+          "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+        }
+      ],
+      "at": 1791978371968
+    },
+    "statusInfo": {
+      "type": "error",
+      "message": "Failed to set up nodes",
+      "at": 1791978371968,
+      "issues": [
+        {
+          "nodeId": "kddq9uj2sj4o5rsd3c6p0yn1",
+          "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+        }
+      ]
+    }
+  }
