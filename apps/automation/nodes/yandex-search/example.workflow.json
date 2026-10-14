@@ -1,0 +1,165 @@
+{
+    "name": "Yandex Search",
+    "variables": {},
+    "secrets": {},
+    "nodes": [
+        {
+            "position": {
+                "x": 657.5,
+                "y": 35
+            },
+            "width": 72,
+            "height": 72,
+            "selected": false,
+            "id": "yabwporypy9nj3j9uobyhxmq",
+            "type": "trigger",
+            "data": {
+                "description": "Triggers the workflow manually.",
+                "showRunningStatus": false,
+                "_morphing": false,
+                "name": "manual-trigger",
+                "label": "Manual Trigger",
+                "inputs": {},
+                "outputs": {
+                    "success": {
+                        "label": "Success",
+                        "isConnectable": null
+                    },
+                    "error": {
+                        "label": "Error",
+                        "isConnectable": null
+                    }
+                },
+                "parameters": {},
+                "defaultOutput": null
+            },
+            "inputs": null,
+            "outputs": null
+        },
+        {
+            "position": {
+                "x": 1147.5,
+                "y": 26
+            },
+            "width": 256,
+            "height": 100,
+            "dragHandle": ".drag-handle__custom",
+            "selected": false,
+            "id": "jw7hp0xgnvgjs33kr5fbd2d0",
+            "type": "display",
+            "data": {
+                "description": "Logs the input data to the console.",
+                "showRunningStatus": false,
+                "_morphing": false,
+                "name": "log",
+                "label": "Log",
+                "inputs": {
+                    "input": {
+                        "label": "Input"
+                    }
+                },
+                "outputs": {
+                    "success": {
+                        "label": "Success",
+                        "isConnectable": false
+                    }
+                },
+                "parameters": {},
+                "defaultOutput": null
+            },
+            "inputs": null,
+            "outputs": null
+        },
+        {
+            "position": {
+                "x": 869.5,
+                "y": 31.5
+            },
+            "width": 72,
+            "height": 72,
+            "selected": true,
+            "id": "eefrtneg3eamlz47xentyxzj",
+            "type": "action",
+            "data": {
+                "description": "Search Yandex using SerpAPI. Returns structured web search results.",
+                "showRunningStatus": true,
+                "_morphing": false,
+                "name": "yandex-search",
+                "label": "Yandex Search",
+                "inputs": {
+                    "input": {
+                        "label": "Input"
+                    }
+                },
+                "outputs": {
+                    "success": {
+                        "label": "Success",
+                        "isConnectable": null
+                    },
+                    "error": {
+                        "label": "Error",
+                        "isConnectable": null
+                    }
+                },
+                "parameters": {
+                    "apiKey": "",
+                    "query": "sport"
+                },
+                "defaultOutput": null
+            },
+            "inputs": null,
+            "outputs": null
+        }
+    ],
+    "connections": [
+        {
+            "type": "directed",
+            "id": "xy-edge__yabwporypy9nj3j9uobyhxmqsuccess-eefrtneg3eamlz47xentyxzjinput",
+            "data": {
+                "isAnimated": false
+            },
+            "source": "yabwporypy9nj3j9uobyhxmq",
+            "target": "eefrtneg3eamlz47xentyxzj",
+            "sourceHandle": "success",
+            "targetHandle": "input"
+        },
+        {
+            "type": "directed",
+            "id": "xy-edge__eefrtneg3eamlz47xentyxzjsuccess-jw7hp0xgnvgjs33kr5fbd2d0input",
+            "data": {
+                "isAnimated": false
+            },
+            "source": "eefrtneg3eamlz47xentyxzj",
+            "target": "jw7hp0xgnvgjs33kr5fbd2d0",
+            "sourceHandle": "success",
+            "targetHandle": "input"
+        },
+        {
+            "type": "directed",
+            "id": "xy-edge__eefrtneg3eamlz47xentyxzjerror-jw7hp0xgnvgjs33kr5fbd2d0input",
+            "data": {
+                "isAnimated": false
+            },
+            "source": "eefrtneg3eamlz47xentyxzj",
+            "target": "jw7hp0xgnvgjs33kr5fbd2d0",
+            "sourceHandle": "error",
+            "targetHandle": "input"
+        }
+    ],
+    "status": "stopped",
+    "tracingEnabled": true,
+    "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+    "tenantId": "c4e72c92-6d3f-4ac3-b029-b722160d1088",
+    "workspaceId": "9aae95bf-7bb8-4ec9-b268-e9337a62381f",
+    "folderId": null,
+    "version": 1,
+    "createdAt": 1791894556296,
+    "updatedAt": 1791980855770,
+    "desiredStatus": "stopped",
+    "lastError": null,
+    "statusInfo": {
+        "type": "info",
+        "message": "Workflow stopped.",
+        "at": 1791980825693
+    }
+}
