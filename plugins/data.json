@@ -4549,7 +4549,7 @@
     "type": "tool",
     "description": "Final Fantasy XIV API - access game data including characters, items, and servers",
     "slogan": "ffxiv",
-    "icon": "icons/default-fill.svg",
+    "icon": "icons/ffxiv.svg",
     "integrations": {
       "automation": [
         "ffxiv"
