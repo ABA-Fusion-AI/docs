@@ -229,36 +229,9 @@ If your workflow requires specialized Invoice Ninja endpoints not directly expos
 
 Listen for new contacts via webhook and automatically create them as clients in Invoice Ninja.
 
-```json
-{
-  "nodes": [
-    {
-      "id": "crm-webhook",
-      "type": "webhook",
-      "position": { "x": 100, "y": 100 }
-    },
-    {
-      "id": "create-client",
-      "type": "invoice-ninja-clients",
-      "position": { "x": 320, "y": 100 },
-      "config": {
-        "operation": "create",
-        "name": "{{input.companyName}}",
-        "vatNumber": "{{input.vat}}",
-        "currencyId": "1"
-      }
-    },
-    {
-      "id": "log-result",
-      "type": "log",
-      "position": { "x": 540, "y": 100 }
-    }
-  ],
-  "connections": [
-    { "source": "crm-webhook", "target": "create-client", "sourceHandle": "success", "targetHandle": "input" },
-    { "source": "create-client", "target": "log-result", "sourceHandle": "success", "targetHandle": "input" }
-  ]
-}
+```fusion-workflow
+src: example.workflow.json
+title: Sync CRM Contacts to Invoice Ninja Clients
 ```
 
 **How it flows:**

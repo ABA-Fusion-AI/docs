@@ -236,39 +236,9 @@ If your workflow requires specialized Invoice Ninja endpoints not directly expos
 
 Receive a website proposal request form and immediately dispatch a quote to the client.
 
-```json
-{
-  "nodes": [
-    {
-      "id": "form-submit",
-      "type": "webhook",
-      "position": { "x": 80, "y": 120 }
-    },
-    {
-      "id": "create-quote",
-      "type": "invoice-ninja-quotes",
-      "position": { "x": 300, "y": 120 },
-      "config": {
-        "operation": "create",
-        "clientId": "{{input.clientId}}",
-        "lineItems": "{{input.lineItems}}"
-      }
-    },
-    {
-      "id": "email-quote",
-      "type": "invoice-ninja-quotes",
-      "position": { "x": 520, "y": 120 },
-      "config": {
-        "operation": "email",
-        "id": "{{input.data.id}}"
-      }
-    }
-  ],
-  "connections": [
-    { "source": "form-submit", "target": "create-quote", "sourceHandle": "success", "targetHandle": "input" },
-    { "source": "create-quote", "target": "email-quote", "sourceHandle": "success", "targetHandle": "input" }
-  ]
-}
+```fusion-workflow
+src: example.workflow.json
+title: Generate and Email Estimate from Web Inquiry
 ```
 
 **How it flows:**

@@ -232,37 +232,9 @@ If your workflow requires specialized Invoice Ninja endpoints not directly expos
 
 When an issue closes in GitHub, log the spent time as a billable task in Invoice Ninja.
 
-```json
-{
-  "nodes": [
-    {
-      "id": "github-webhook",
-      "type": "webhook",
-      "position": { "x": 80, "y": 100 }
-    },
-    {
-      "id": "log-task",
-      "type": "invoice-ninja-tasks",
-      "position": { "x": 300, "y": 100 },
-      "config": {
-        "operation": "create",
-        "clientId": "{{input.clientId}}",
-        "description": "Fix: {{input.issueTitle}}",
-        "duration": 3600,
-        "rate": 100
-      }
-    },
-    {
-      "id": "log",
-      "type": "log",
-      "position": { "x": 520, "y": 100 }
-    }
-  ],
-  "connections": [
-    { "source": "github-webhook", "target": "log-task", "sourceHandle": "success", "targetHandle": "input" },
-    { "source": "log-task", "target": "log", "sourceHandle": "success", "targetHandle": "input" }
-  ]
-}
+```fusion-workflow
+src: example.workflow.json
+title: Sync Completed GitHub Issues to Billable Tasks
 ```
 
 **How it flows:**

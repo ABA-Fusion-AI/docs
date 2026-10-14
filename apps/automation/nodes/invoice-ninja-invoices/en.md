@@ -239,39 +239,9 @@ If your workflow requires specialized Invoice Ninja endpoints not directly expos
 
 Generate a customer invoice when an e-commerce order completes, then dispatch it via email.
 
-```json
-{
-  "nodes": [
-    {
-      "id": "order-paid",
-      "type": "webhook",
-      "position": { "x": 80, "y": 120 }
-    },
-    {
-      "id": "create-invoice",
-      "type": "invoice-ninja-invoices",
-      "position": { "x": 300, "y": 120 },
-      "config": {
-        "operation": "create",
-        "clientId": "{{input.clientId}}",
-        "lineItems": "{{input.items}}"
-      }
-    },
-    {
-      "id": "send-email",
-      "type": "invoice-ninja-invoices",
-      "position": { "x": 520, "y": 120 },
-      "config": {
-        "operation": "email",
-        "id": "{{input.data.id}}"
-      }
-    }
-  ],
-  "connections": [
-    { "source": "order-paid", "target": "create-invoice", "sourceHandle": "success", "targetHandle": "input" },
-    { "source": "create-invoice", "target": "send-email", "sourceHandle": "success", "targetHandle": "input" }
-  ]
-}
+```fusion-workflow
+src: example.workflow.json
+title: Create and Automatically Email Invoice on Order Complete
 ```
 
 **How it flows:**

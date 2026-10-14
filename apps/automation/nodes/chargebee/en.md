@@ -143,56 +143,23 @@ The **Chargebee** node enables workflows to manage customer profiles, retrieve a
 
 ---
 
-<!-- SECTION: examples -->
-## Example Workflows
+<!-- SECTION: workflow-example -->
+## Example Workflow
 
-### Example 1: Generate and Send Invoice PDF
-```json
-{
-  "nodes": [
-    {
-      "id": "chargebee-invoice",
-      "type": "chargebee",
-      "config": {
-        "operation": "getInvoicePdfUrl",
-        "site": "your-site-test",
-        "apiKey": "{{secrets.CHARGEBEE_API_KEY}}",
-        "invoiceId": "{{input.invoiceId}}"
-      }
-    },
-    {
-      "id": "send-email",
-      "type": "sendgrid",
-      "config": {
-        "to": "{{input.customerEmail}}",
-        "subject": "Your Invoice is ready",
-        "content": "Download your invoice here: {{chargebee-invoice.download.download_url}}"
-      }
-    }
-  ]
-}
+### Generate and Email Invoice PDF via Chargebee
+
+This workflow triggers when an invoice is ready, retrieves the secure PDF download URL from Chargebee, and emails it to the customer.
+
+```fusion-workflow
+src: example.workflow.json
+title: Generate and Email Invoice PDF via Chargebee
 ```
 
-### Example 2: Cancel Subscription on User Request
-```json
-{
-  "nodes": [
-    {
-      "id": "cancel-sub",
-      "type": "chargebee",
-      "config": {
-        "operation": "cancelSubscription",
-        "site": "your-site-test",
-        "apiKey": "{{secrets.CHARGEBEE_API_KEY}}",
-        "subscriptionId": "{{input.subscriptionId}}",
-        "cancelEndOfTerm": true
-      }
-    }
-  ]
-}
-```
+### Common Patterns
 
-<!-- /SECTION: examples -->
+- **Invoice Notification:** Invoice Trigger ➔ Chargebee (`getInvoicePdfUrl`) ➔ SendGrid / Email
+- **Subscription Lifecycle:** Portal Cancellation Request ➔ Chargebee (`cancelSubscription`)
+<!-- /SECTION: workflow-example -->
 
 ---
 

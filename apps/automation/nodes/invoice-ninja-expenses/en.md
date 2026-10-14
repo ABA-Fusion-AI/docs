@@ -232,36 +232,9 @@ If your workflow requires specialized Invoice Ninja endpoints not directly expos
 
 Scheduled automation that captures AWS invoice data and logs it as a categorized expense in Invoice Ninja.
 
-```json
-{
-  "nodes": [
-    {
-      "id": "monthly-trigger",
-      "type": "cron",
-      "position": { "x": 80, "y": 100 }
-    },
-    {
-      "id": "create-expense",
-      "type": "invoice-ninja-expenses",
-      "position": { "x": 300, "y": 100 },
-      "config": {
-        "operation": "create",
-        "amount": 340.50,
-        "vendorId": "AWS-VENDOR-ID",
-        "categoryId": "INFRA-CAT-ID"
-      }
-    },
-    {
-      "id": "log",
-      "type": "log",
-      "position": { "x": 520, "y": 100 }
-    }
-  ],
-  "connections": [
-    { "source": "monthly-trigger", "target": "create-expense", "sourceHandle": "success", "targetHandle": "input" },
-    { "source": "create-expense", "target": "log", "sourceHandle": "success", "targetHandle": "input" }
-  ]
-}
+```fusion-workflow
+src: example.workflow.json
+title: Log Monthly Cloud Infrastructure Expenses
 ```
 
 **How it flows:**

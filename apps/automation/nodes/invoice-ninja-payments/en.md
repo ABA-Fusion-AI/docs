@@ -232,37 +232,9 @@ If your workflow requires specialized Invoice Ninja endpoints not directly expos
 
 Catch a charge.succeeded webhook and record the payment against the matching invoice.
 
-```json
-{
-  "nodes": [
-    {
-      "id": "stripe-webhook",
-      "type": "webhook",
-      "position": { "x": 100, "y": 100 }
-    },
-    {
-      "id": "record-payment",
-      "type": "invoice-ninja-payments",
-      "position": { "x": 320, "y": 100 },
-      "config": {
-        "operation": "create",
-        "invoiceId": "{{input.invoiceId}}",
-        "amount": "{{input.amount}}",
-        "transactionReference": "{{input.chargeId}}",
-        "typeId": "4"
-      }
-    },
-    {
-      "id": "notify",
-      "type": "log",
-      "position": { "x": 540, "y": 100 }
-    }
-  ],
-  "connections": [
-    { "source": "stripe-webhook", "target": "record-payment", "sourceHandle": "success", "targetHandle": "input" },
-    { "source": "record-payment", "target": "notify", "sourceHandle": "success", "targetHandle": "input" }
-  ]
-}
+```fusion-workflow
+src: example.workflow.json
+title: Reconcile Stripe Webhook Payments in Invoice Ninja
 ```
 
 **How it flows:**
