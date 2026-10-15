@@ -285,10 +285,10 @@ title: Sync CRM Contacts to Invoice Ninja Clients
 <!-- SECTION: related -->
 ## Related
 
-- [invoice-ninja-invoices](../invoice-ninja-invoices/en.md)
-- [invoice-ninja-payments](../invoice-ninja-payments/en.md)
-- [invoice-ninja-quotes](../invoice-ninja-quotes/en.md)
-- [http-request](../http-request/en.md)
+- [invoice-ninja-invoices](/docs/invoice-ninja-invoices)
+- [invoice-ninja-payments](/docs/invoice-ninja-payments)
+- [invoice-ninja-quotes](/docs/invoice-ninja-quotes)
+- [http-request](/docs/http-request)
 <!-- /SECTION: related -->
 
 ---

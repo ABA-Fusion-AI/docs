@@ -292,9 +292,9 @@ title: Calculate intercompany transfer prices using different methods
 <!-- SECTION: related -->
 ## Related
 
-- [Profit Margin Calculator](../profit-margin-calculator/en.md) - Calculate gross, operating, and net profit margins
-- [Break-Even Calculator](../break-even-calculator/en.md) - Determine break-even sales volume and revenue
-- [Financial Ratio Analyzer](../financial-ratio-analyzer/en.md) - Evaluate liquidity, solvency, and operational ratios
+- [Profit Margin Calculator](/docs/profit-margin-calculator) - Calculate gross, operating, and net profit margins
+- [Break-Even Calculator](/docs/break-even-calculator) - Determine break-even sales volume and revenue
+- [Financial Ratio Analyzer](/docs/financial-ratio-analyzer) - Evaluate liquidity, solvency, and operational ratios
 
 <!-- /SECTION: related -->
 

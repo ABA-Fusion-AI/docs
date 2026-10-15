@@ -341,10 +341,10 @@ title: Port Scanner Example Workflow
 <!-- SECTION: related -->
 ## Related Nodes
 
-- [DNS Lookup](../dns-lookup/en.md) — Query DNS record types (A, AAAA, MX, TXT)
-- [DNS to IP](../dns-to-ip/en.md) — Resolve domain names to IPv4 addresses
-- [HTTP Request](../http-request/en.md) — Send HTTP/HTTPS requests to open web ports
-- [Log](../log/en.md) — Print scan metrics to the execution log
+- [DNS Lookup](/docs/dns-lookup) — Query DNS record types (A, AAAA, MX, TXT)
+- [DNS to IP](/docs/dns-to-ip) — Resolve domain names to IPv4 addresses
+- [HTTP Request](/docs/http-request) — Send HTTP/HTTPS requests to open web ports
+- [Log](/docs/log) — Print scan metrics to the execution log
 
 <!-- /SECTION: related -->
 

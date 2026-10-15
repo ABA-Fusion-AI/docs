@@ -328,12 +328,12 @@ title: Lookup country information using REST Countries API
 <!-- SECTION: related -->
 ## Related
 
-- [GeoNames](../geo-names/en.md) — Search worldwide geographical places and postal codes
-- [IP Geolocation](../ip-geolocation/en.md) — Resolve IP addresses to country and coordinates
-- [Currency Converter](../currency-converter/en.md) — Perform foreign exchange rate calculations
-- [HTTP Request](../http-request/en.md) — Make custom API calls
-- [Function](../function/en.md) — Transform and parse country results
-- [Log](../log/en.md) — Inspect output structures in workflow console
+- [GeoNames](/docs/geo-names) — Search worldwide geographical places and postal codes
+- [IP Geolocation](/docs/ip-geolocation) — Resolve IP addresses to country and coordinates
+- [Currency Converter](/docs/currency-converter) — Perform foreign exchange rate calculations
+- [HTTP Request](/docs/http-request) — Make custom API calls
+- [Function](/docs/function) — Transform and parse country results
+- [Log](/docs/log) — Inspect output structures in workflow console
 
 <!-- /SECTION: related -->
 

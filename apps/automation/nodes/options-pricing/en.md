@@ -363,11 +363,11 @@ title: Calculate option prices using Black-Scholes model with Greeks (delta, gam
 <!-- SECTION: related -->
 ## Related Nodes
 
-- [Bond Pricing](../bond-pricing/en.md) — Calculate bond yields, dirty prices, and duration
-- [Loan Calculator](../loan-calculator/en.md) — Amortization schedules and payment calculations
-- [Financial Ratio Analyzer](../financial-ratio-analyzer/en.md) — Financial liquidity, leverage, and profitability ratios
-- [Function](../function/en.md) — Run custom multi-leg spread logic, iron condors, and portfolio aggregations
-- [Log](../log/en.md) — Inspect output payloads and Greeks in the execution console
+- [Bond Pricing](/docs/bond-pricing) — Calculate bond yields, dirty prices, and duration
+- [Loan Calculator](/docs/loan-calculator) — Amortization schedules and payment calculations
+- [Financial Ratio Analyzer](/docs/financial-ratio-analyzer) — Financial liquidity, leverage, and profitability ratios
+- [Function](/docs/function) — Run custom multi-leg spread logic, iron condors, and portfolio aggregations
+- [Log](/docs/log) — Inspect output payloads and Greeks in the execution console
 
 <!-- /SECTION: related -->
 

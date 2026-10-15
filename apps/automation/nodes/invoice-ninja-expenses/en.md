@@ -288,10 +288,10 @@ title: Log Monthly Cloud Infrastructure Expenses
 <!-- SECTION: related -->
 ## Related
 
-- [invoice-ninja-invoices](../invoice-ninja-invoices/en.md)
-- [invoice-ninja-clients](../invoice-ninja-clients/en.md)
-- [invoice-ninja-payments](../invoice-ninja-payments/en.md)
-- [http-request](../http-request/en.md)
+- [invoice-ninja-invoices](/docs/invoice-ninja-invoices)
+- [invoice-ninja-clients](/docs/invoice-ninja-clients)
+- [invoice-ninja-payments](/docs/invoice-ninja-payments)
+- [http-request](/docs/http-request)
 <!-- /SECTION: related -->
 
 ---

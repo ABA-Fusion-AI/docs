@@ -277,9 +277,9 @@ title: Search for Moroccan Company Information
 <!-- SECTION: related -->
 ## Related
 
-- [HTTP Request](./http-request.md) – Perform custom API queries to external business registries
-- [Function](./function.md) – Parse and transform company search payload data
-- [If](./if.md) – Route workflows based on company lookup outcomes
+- [HTTP Request](/docs/http-request) – Perform custom API queries to external business registries
+- [Function](/docs/function) – Parse and transform company search payload data
+- [If](/docs/if) – Route workflows based on company lookup outcomes
 
 <!-- /SECTION: related -->
 

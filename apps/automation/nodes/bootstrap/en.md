@@ -312,10 +312,10 @@ title: Calculate a bootstrap confidence interval for the mean
 <!-- SECTION: related -->
 ## Related
 
-- [Correlation](../correlation/en.md) — Compute correlation coefficients between two series
-- [Dispersion](../dispersion/en.md) — Measure spread and variability of a dataset
-- [Function](../function/en.md) — Post-process or validate the CI output
-- [Log](../log/en.md) — Inspect the bootstrap result
+- [Correlation](/docs/correlation) — Compute correlation coefficients between two series
+- [Dispersion](/docs/dispersion) — Measure spread and variability of a dataset
+- [Function](/docs/function) — Post-process or validate the CI output
+- [Log](/docs/log) — Inspect the bootstrap result
 
 <!-- /SECTION: related -->
 

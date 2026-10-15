@@ -246,10 +246,10 @@ title: Extract Medium Article Details
 <!-- SECTION: related -->
 ## Related
 
-- [HTTP Request](./http-request.md) – Send custom REST API calls to external services
-- [AI Chat](./ai-chat.md) – Generate summaries and insights using LLMs
-- [Slack](./slack.md) – Distribute notifications and articles to Slack channels
-- [Markdown](./markdown.md) – Parse, transform, or render markdown documents
+- [HTTP Request](/docs/http-request) – Send custom REST API calls to external services
+- [AI Chat](/docs/ai-chat) – Generate summaries and insights using LLMs
+- [Slack](/docs/slack) – Distribute notifications and articles to Slack channels
+- [Markdown](/docs/markdown) – Parse, transform, or render markdown documents
 
 <!-- /SECTION: related -->
 

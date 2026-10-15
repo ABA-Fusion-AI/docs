@@ -255,14 +255,14 @@ title: Fetch news from OujdaCity RSS feed
 <!-- SECTION: related -->
 ## Related
 
-- [Hespress](../hespress/en.md) — Fetch news from Hespress Arabic RSS feed
-- [Hespress English](../hespress-english/en.md) — Fetch news from Hespress English RSS feed
-- [Agadir 24](../agadir24/en.md) — Fetch news from Agadir 24 RSS feed
-- [Le Matin](../le-matin/en.md) — Fetch news from Le Matin RSS feed by category
-- [HTTP Request](../http-request/en.md) — Fetch custom RSS feeds or REST endpoints
-- [Filter Array](../filter-array/en.md) — Filter news articles by category or keywords
-- [Function](../function/en.md) — Transform news data into custom formats
-- [Log](../log/en.md) — Display news objects in workflow execution logs
+- [Hespress](/docs/hespress) — Fetch news from Hespress Arabic RSS feed
+- [Hespress English](/docs/hespress-english) — Fetch news from Hespress English RSS feed
+- [Agadir 24](/docs/agadir24) — Fetch news from Agadir 24 RSS feed
+- [Le Matin](/docs/le-matin) — Fetch news from Le Matin RSS feed by category
+- [HTTP Request](/docs/http-request) — Fetch custom RSS feeds or REST endpoints
+- [Filter Array](/docs/filter-array) — Filter news articles by category or keywords
+- [Function](/docs/function) — Transform news data into custom formats
+- [Log](/docs/log) — Display news objects in workflow execution logs
 
 <!-- /SECTION: related -->
 

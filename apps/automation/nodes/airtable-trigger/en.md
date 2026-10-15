@@ -389,10 +389,10 @@ Trigger a welcome email workflow whenever a new lead is added to an Airtable tab
 <!-- SECTION: related -->
 ## Related
 
-- [Airtable Action](./airtable-action.md) - Perform CRUD operations on Airtable records
-- [Baserow Action](./baserow.md) - Similar operations on self-hosted Baserow instances
-- [Interval](./interval.md) - Fixed-interval trigger for custom polling workflows
-- [Cron](./cron.md) - Schedule-based trigger
+- [Airtable Action](/docs/airtable-action) - Perform CRUD operations on Airtable records
+- [Baserow Action](/docs/baserow) - Similar operations on self-hosted Baserow instances
+- [Interval](/docs/interval) - Fixed-interval trigger for custom polling workflows
+- [Cron](/docs/cron) - Schedule-based trigger
 
 <!-- /SECTION: related -->
 

@@ -425,12 +425,12 @@ title: Calculate retirement savings projections and analyze if you're on track
 <!-- SECTION: related -->
 ## Related
 
-- [Salary Converter](../salary-converter/en.md) — Convert between annual, monthly, weekly, and hourly compensation
-- [Loan Calculator](../loan-calculator/en.md) — Calculate loan payments, interest, and amortization schedules
-- [Currency Converter](../currency-converter/en.md) — Convert financial projections across international currencies
-- [Date Calculator](../date-calculator/en.md) — Compute exact age, retirement dates, and working intervals
-- [Function](../function/en.md) — Apply custom tax brackets and inflation adjustments to retirement models
-- [Log](../log/en.md) — View retirement projection calculations in the debug console
+- [Salary Converter](/docs/salary-converter) — Convert between annual, monthly, weekly, and hourly compensation
+- [Loan Calculator](/docs/loan-calculator) — Calculate loan payments, interest, and amortization schedules
+- [Currency Converter](/docs/currency-converter) — Convert financial projections across international currencies
+- [Date Calculator](/docs/date-calculator) — Compute exact age, retirement dates, and working intervals
+- [Function](/docs/function) — Apply custom tax brackets and inflation adjustments to retirement models
+- [Log](/docs/log) — View retirement projection calculations in the debug console
 
 <!-- /SECTION: related -->
 

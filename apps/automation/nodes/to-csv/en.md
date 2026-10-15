@@ -281,10 +281,10 @@ title: Convert JSON arrays of objects to CSV strings with custom delimiters
 <!-- SECTION: related -->
 ## Related
 
-- [Parse CSV](../parse-csv/en.md) - Parse a CSV string back into an array of JSON objects
-- [Stringify JSON](../stringify-json/en.md) - Convert JavaScript objects into JSON strings
-- [Create File](../create-file/en.md) - Save generated CSV text as a file in the workspace
-- [Excel Add Rows](../excel-add-rows/en.md) - Append tabular records directly into Microsoft Excel worksheets
+- [Parse CSV](/docs/parse-csv) - Parse a CSV string back into an array of JSON objects
+- [Stringify JSON](/docs/stringify-json) - Convert JavaScript objects into JSON strings
+- [Create File](/docs/create-file) - Save generated CSV text as a file in the workspace
+- [Excel Add Rows](/docs/excel-add-rows) - Append tabular records directly into Microsoft Excel worksheets
 
 <!-- /SECTION: related -->
 

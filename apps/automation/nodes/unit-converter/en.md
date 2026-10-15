@@ -408,10 +408,10 @@ title: Convert units across weight, distance, temperature, volume, area, time, a
 <!-- SECTION: related -->
 ## Related
 
-- [Product & BOM Management](../bom-utils/en.md) - Bill of materials and cost rollups
-- [Currency Converter](../currency-converter/en.md) - Real-time foreign exchange conversions
-- [Geospatial Utils](../geospatial-utils/en.md) - Geographic distance and coordinate transformations
-- [Math Expression](../math-expression/en.md) - Evaluate custom mathematical formulas
+- [Product & BOM Management](/docs/bom-utils) - Bill of materials and cost rollups
+- [Currency Converter](/docs/currency-converter) - Real-time foreign exchange conversions
+- [Geospatial Utils](/docs/geospatial-utils) - Geographic distance and coordinate transformations
+- [Math Expression](/docs/math-expression) - Evaluate custom mathematical formulas
 
 <!-- /SECTION: related -->
 

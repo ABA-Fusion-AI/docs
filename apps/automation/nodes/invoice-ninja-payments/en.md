@@ -288,10 +288,10 @@ title: Reconcile Stripe Webhook Payments in Invoice Ninja
 <!-- SECTION: related -->
 ## Related
 
-- [invoice-ninja-invoices](../invoice-ninja-invoices/en.md)
-- [invoice-ninja-clients](../invoice-ninja-clients/en.md)
-- [invoice-ninja-expenses](../invoice-ninja-expenses/en.md)
-- [http-request](../http-request/en.md)
+- [invoice-ninja-invoices](/docs/invoice-ninja-invoices)
+- [invoice-ninja-clients](/docs/invoice-ninja-clients)
+- [invoice-ninja-expenses](/docs/invoice-ninja-expenses)
+- [http-request](/docs/http-request)
 <!-- /SECTION: related -->
 
 ---

@@ -374,11 +374,11 @@ title: Scrape Moroccan public tenders from marchespublics.gov.ma
 <!-- SECTION: related -->
 ## Related
 
-- [Filter Array](../filter-array/en.md) — Filter tenders by keyword, sector, or date
-- [For Each](../for-each/en.md) — Iterate over tender listings to fetch details
-- [Function](../function/en.md) — Transform or format tender data
-- [HTTP Request](../http-request/en.md) — Make custom requests to marchespublics.gov.ma
-- [Log](../log/en.md) — Inspect raw scraper output
+- [Filter Array](/docs/filter-array) — Filter tenders by keyword, sector, or date
+- [For Each](/docs/for-each) — Iterate over tender listings to fetch details
+- [Function](/docs/function) — Transform or format tender data
+- [HTTP Request](/docs/http-request) — Make custom requests to marchespublics.gov.ma
+- [Log](/docs/log) — Inspect raw scraper output
 
 <!-- /SECTION: related -->
 

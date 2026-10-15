@@ -404,11 +404,11 @@ A pipeline where incoming messages are analyzed, a reaction keyword is generated
 <!-- SECTION: related -->
 ## Related Nodes
 
-- [Unsplash Image Search](../unsplash-image-search/en.md) — Query high-resolution stock photography
-- [Pixabay Image Search](../pixabay-image-search/en.md) — Search royalty-free photos and illustrations
-- [Pexels Image Search](../pexels-image-search/en.md) — Search curated stock photos and videos
-- [Wikimedia Commons](../wikimedia-commons/en.md) — Query open media, vectors, and audio recordings
-- [Function](../function/en.md) — Extract and transform Giphy image URLs for messaging platforms
+- [Unsplash Image Search](/docs/unsplash-image-search) — Query high-resolution stock photography
+- [Pixabay Image Search](/docs/pixabay-image-search) — Search royalty-free photos and illustrations
+- [Pexels Image Search](/docs/pexels-image-search) — Search curated stock photos and videos
+- [Wikimedia Commons](/docs/wikimedia-commons) — Query open media, vectors, and audio recordings
+- [Function](/docs/function) — Extract and transform Giphy image URLs for messaging platforms
 
 <!-- /SECTION: related -->
 

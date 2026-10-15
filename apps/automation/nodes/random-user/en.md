@@ -403,13 +403,13 @@ title: Generate random user data using the RandomUser API
 <!-- SECTION: related -->
 ## Related
 
-- [JSONPlaceholder](../json-placeholder/en.md) — Mock REST API for posts, comments, and albums
-- [Lorem Picsum](../lorem-picsum/en.md) — Placeholder image generator for UI prototypes
-- [Barcode/QR Generator](../barcode-generator/en.md) — Generate 1D/2D barcodes and QR codes
-- [QuickChart](../quick-chart/en.md) — Generate dynamic charts and visual reports
-- [HTTP Request](../http-request/en.md) — Perform custom REST API calls
-- [Function](../function/en.md) — Transform and reshape mock user data
-- [Log](../log/en.md) — View generated user records in the execution console
+- [JSONPlaceholder](/docs/json-placeholder) — Mock REST API for posts, comments, and albums
+- [Lorem Picsum](/docs/lorem-picsum) — Placeholder image generator for UI prototypes
+- [Barcode/QR Generator](/docs/barcode-generator) — Generate 1D/2D barcodes and QR codes
+- [QuickChart](/docs/quick-chart) — Generate dynamic charts and visual reports
+- [HTTP Request](/docs/http-request) — Perform custom REST API calls
+- [Function](/docs/function) — Transform and reshape mock user data
+- [Log](/docs/log) — View generated user records in the execution console
 
 <!-- /SECTION: related -->
 

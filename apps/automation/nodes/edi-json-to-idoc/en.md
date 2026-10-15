@@ -189,10 +189,10 @@ title: Convert JSON to SAP IDoc XML
 <!-- SECTION: related -->
 ## Related
 
-- [IDoc](./idoc.md) – Parse or handle incoming SAP IDoc documents
-- [EDI Parse EDIFACT](./edi-parse-edifact.md) – Parse EDIFACT EDI messages
-- [HTTP Request](./http-request.md) – Send the generated IDoc XML to an SAP PI/PO or middleware endpoint
-- [Function](./function.md) – Shape and transform JSON data before passing it to this node
+- [IDoc](/docs/edi-json-to-idoc) – Parse or handle incoming SAP IDoc documents
+- [EDI Parse EDIFACT](/docs/edi-parse-edifact) – Parse EDIFACT EDI messages
+- [HTTP Request](/docs/http-request) – Send the generated IDoc XML to an SAP PI/PO or middleware endpoint
+- [Function](/docs/function) – Shape and transform JSON data before passing it to this node
 
 <!-- /SECTION: related -->
 

@@ -315,10 +315,10 @@ Incorrect: 2026-08-07
 <!-- SECTION: related -->
 ## Related
 
-- [GeoJSON Tools](../geojson/en.md) — Process, validate, and transform the GeoJSON output
-- [HTTP Request](../http-request/en.md) — Make custom requests to Maroc Météo or other weather APIs
-- [Function](../function/en.md) — Filter regions by vigilance level
-- [Log](../log/en.md) — Inspect the raw vigilance output
+- [GeoJSON Tools](/docs/geojson) — Process, validate, and transform the GeoJSON output
+- [HTTP Request](/docs/http-request) — Make custom requests to Maroc Météo or other weather APIs
+- [Function](/docs/function) — Filter regions by vigilance level
+- [Log](/docs/log) — Inspect the raw vigilance output
 
 <!-- /SECTION: related -->
 

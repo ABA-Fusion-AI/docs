@@ -450,12 +450,12 @@ Reconcile Paddle transactions with internal accounting ledgers:
 <!-- SECTION: related -->
 ## Related
 
-- [Stripe](./stripe.md) — Alternative payment processing integration
-- [PayPal](./paypal.md) — Process orders and payments via PayPal
-- [Chargebee](./chargebee.md) — Subscription management integration
-- [Manual Trigger](./manual-trigger.md) — Trigger workflows manually for testing
-- [Function](./function.md) — Transform, format, and construct API payloads
-- [Log](./log.md) — Inspect workflow outputs in the execution log
+- [Stripe](/docs/stripe) — Alternative payment processing integration
+- [PayPal](/docs/paypal) — Process orders and payments via PayPal
+- [Chargebee](/docs/chargebee) — Subscription management integration
+- [Manual Trigger](/docs/manual-trigger) — Trigger workflows manually for testing
+- [Function](/docs/function) — Transform, format, and construct API payloads
+- [Log](/docs/log) — Inspect workflow outputs in the execution log
 
 <!-- /SECTION: related -->
 

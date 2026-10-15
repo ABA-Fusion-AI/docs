@@ -292,10 +292,10 @@ title: Generate and Email Estimate from Web Inquiry
 <!-- SECTION: related -->
 ## Related
 
-- [invoice-ninja-invoices](../invoice-ninja-invoices/en.md)
-- [invoice-ninja-clients](../invoice-ninja-clients/en.md)
-- [invoice-ninja-tasks](../invoice-ninja-tasks/en.md)
-- [http-request](../http-request/en.md)
+- [invoice-ninja-invoices](/docs/invoice-ninja-invoices)
+- [invoice-ninja-clients](/docs/invoice-ninja-clients)
+- [invoice-ninja-tasks](/docs/invoice-ninja-tasks)
+- [http-request](/docs/http-request)
 <!-- /SECTION: related -->
 
 ---

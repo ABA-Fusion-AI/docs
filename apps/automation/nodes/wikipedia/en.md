@@ -581,11 +581,11 @@ A workflow where a JavaScript `Function` node computes or extracts a topic, and 
 <!-- SECTION: related -->
 ## Related Nodes
 
-- [Function](../function/en.md) — Transform, format, and filter Wikipedia article payloads
-- [Manual Trigger](../manual-trigger/en.md) — Manually initiate Wikipedia test workflows
-- [Google Search](../google-search/en.md) — Search the broader web via Google
-- [DuckDuckGo](../duck-duck-go-search/en.md) — Query instant answers and web links via DuckDuckGo
-- [ArXiv](../arxiv/en.md) — Search academic publications and scientific preprints
+- [Function](/docs/function) — Transform, format, and filter Wikipedia article payloads
+- [Manual Trigger](/docs/manual-trigger) — Manually initiate Wikipedia test workflows
+- [Google Search](/docs/google-search) — Search the broader web via Google
+- [DuckDuckGo](/docs/duck-duck-go-search) — Query instant answers and web links via DuckDuckGo
+- [ArXiv](/docs/arxiv) — Search academic publications and scientific preprints
 
 <!-- /SECTION: related -->
 

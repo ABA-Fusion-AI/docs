@@ -372,10 +372,10 @@ title: Validate Moroccan RIB and Retrieve Bank Details
 <!-- SECTION: related -->
 ## Related
 
-- [Banking Validator](./banking-validator.md) – Validate international IBAN and SWIFT/BIC codes
-- [Function](./function.md) – Transform and map validated bank payload details
-- [If](./if.md) – Branch workflows based on RIB checksum validation results
-- [HTTP Request](./http-request.md) – Send validated banking data to payment APIs or ERPs
+- [Banking Validator](/docs/banking-validator) – Validate international IBAN and SWIFT/BIC codes
+- [Function](/docs/function) – Transform and map validated bank payload details
+- [If](/docs/if) – Branch workflows based on RIB checksum validation results
+- [HTTP Request](/docs/http-request) – Send validated banking data to payment APIs or ERPs
 
 <!-- /SECTION: related -->
 

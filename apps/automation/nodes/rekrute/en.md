@@ -357,12 +357,12 @@ title: Scrapes job listings from Rekrute.com using fast HTML parsing
 <!-- SECTION: related -->
 ## Related
 
-- [Emploi.ma Scraper](../emploima/en.md) — Scrape job listings from Emploi.ma
-- [LinkedIn Job Scraper](../linkedin-job-scraper/en.md) — Extract job postings from LinkedIn
-- [HTTP Request](../http-request/en.md) — Perform custom REST/HTTP calls to job APIs
-- [Function](../function/en.md) — Filter, transform, and clean scraped job records
-- [Filter Array](../filter-array/en.md) — Filter job records by city, experience, or keywords
-- [Log](../log/en.md) — View scraped job payloads in the execution console
+- [Emploi.ma Scraper](/docs/emploima) — Scrape job listings from Emploi.ma
+- [LinkedIn Job Scraper](/docs/linkedin-job-scraper) — Extract job postings from LinkedIn
+- [HTTP Request](/docs/http-request) — Perform custom REST/HTTP calls to job APIs
+- [Function](/docs/function) — Filter, transform, and clean scraped job records
+- [Filter Array](/docs/filter-array) — Filter job records by city, experience, or keywords
+- [Log](/docs/log) — View scraped job payloads in the execution console
 
 <!-- /SECTION: related -->
 

@@ -396,12 +396,12 @@ title: Generate QR codes using QR Server API for product packaging or business c
 <!-- SECTION: related -->
 ## Related
 
-- [Barcode/QR Generator](../barcode-generator/en.md) — Generate local offline 1D and 2D barcodes using bwip-js
-- [QuickChart](../quick-chart/en.md) — Render dynamic charts and graphs via API
-- [Media Viewer / Media Log](../media-log/en.md) — Display rich media, images, and visual outputs directly on the canvas
-- [HTTP Request](../http-request/en.md) — Send custom HTTP requests to external REST APIs
-- [Function](../function/en.md) — Transform payloads and generate dynamic QR input strings
-- [Log](../log/en.md) — Inspect workflow outputs in the debug console
+- [Barcode/QR Generator](/docs/barcode-generator) — Generate local offline 1D and 2D barcodes using bwip-js
+- [QuickChart](/docs/quick-chart) — Render dynamic charts and graphs via API
+- [Media Viewer / Media Log](/docs/media-log) — Display rich media, images, and visual outputs directly on the canvas
+- [HTTP Request](/docs/http-request) — Send custom HTTP requests to external REST APIs
+- [Function](/docs/function) — Transform payloads and generate dynamic QR input strings
+- [Log](/docs/log) — Inspect workflow outputs in the debug console
 
 <!-- /SECTION: related -->
 

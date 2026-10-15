@@ -492,12 +492,12 @@ title: Search and retrieve curated stock images from Pexels
 <!-- SECTION: related -->
 ## Related Nodes
 
-- [Unsplash Image Search](../unsplash-image-search/en.md) — Search curated high-resolution photography on Unsplash
-- [Pixabay Image Search](../pixabay-image-search/en.md) — Find royalty-free stock photos, illustrations, and vector graphics
-- [Giphy GIF Search](../giphy-gif-search/en.md) — Search animated GIFs and stickers
-- [Google Images Search](../google-images-search/en.md) — Query web-wide image search index
-- [Function](../function/en.md) — Transform and format photo metadata into markdown or HTML embeds
-- [Discord Bot Send](../discord-bot-send/en.md) — Dispatch rich photo cards and embeds into Discord channels
+- [Unsplash Image Search](/docs/unsplash-image-search) — Search curated high-resolution photography on Unsplash
+- [Pixabay Image Search](/docs/pixabay-image-search) — Find royalty-free stock photos, illustrations, and vector graphics
+- [Giphy GIF Search](/docs/giphy-gif-search) — Search animated GIFs and stickers
+- [Google Images Search](/docs/google-images-search) — Query web-wide image search index
+- [Function](/docs/function) — Transform and format photo metadata into markdown or HTML embeds
+- [Discord Bot Send](/docs/discord-bot-send) — Dispatch rich photo cards and embeds into Discord channels
 
 <!-- /SECTION: related -->
 

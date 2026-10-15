@@ -405,11 +405,11 @@ title: Search for free books from Project Gutenberg via Gutendex API
 <!-- SECTION: related -->
 ## Related Nodes
 
-- [Open Library Search](../open-library-search/en.md) — Search millions of books and editions via Open Library API
-- [Wikipedia](../wikipedia/en.md) — Search and retrieve articles and summaries from Wikipedia
-- [HTTP Request](../http-request/en.md) — Download ebook binaries or query other public REST APIs
-- [Function](../function/en.md) — Transform, filter, and extract specific ebook format links
-- [Log](../log/en.md) — Inspect search results and metadata objects in the execution console
+- [Open Library Search](/docs/open-library-search) — Search millions of books and editions via Open Library API
+- [Wikipedia](/docs/wikipedia) — Search and retrieve articles and summaries from Wikipedia
+- [HTTP Request](/docs/http-request) — Download ebook binaries or query other public REST APIs
+- [Function](/docs/function) — Transform, filter, and extract specific ebook format links
+- [Log](/docs/log) — Inspect search results and metadata objects in the execution console
 
 <!-- /SECTION: related -->
 

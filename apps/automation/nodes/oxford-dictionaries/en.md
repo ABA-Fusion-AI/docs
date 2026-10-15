@@ -598,11 +598,11 @@ A workflow that retrieves definitions, extracts audio links, and logs clean resu
 <!-- SECTION: related -->
 ## Related Nodes
 
-- [Datamuse](../datamuse/en.md) — Find synonyms, rhymes, and word associations
-- [OpenThesaurus](../openthesaurus/en.md) — Query German synsets and thesaurus data
-- [LanguageTool](../language-tool/en.md) — Grammar and spelling checking
-- [DeepL](../deepl/en.md) — High-accuracy machine translation
-- [Function](../function/en.md) — Extract and transform Oxford dictionary structures
+- [Datamuse](/docs/datamuse) — Find synonyms, rhymes, and word associations
+- [OpenThesaurus](/docs/openthesaurus) — Query German synsets and thesaurus data
+- [LanguageTool](/docs/language-tool) — Grammar and spelling checking
+- [DeepL](/docs/deepl) — High-accuracy machine translation
+- [Function](/docs/function) — Extract and transform Oxford dictionary structures
 
 <!-- /SECTION: related -->
 

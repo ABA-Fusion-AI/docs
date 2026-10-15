@@ -1,7 +1,7 @@
 ---
 node_id: "rymo-cache"
 title: "Rymo Cache"
-description: "Manage query and data caching in Redis — store, retrieve, invalidate table queries, clear by pattern, and inspect cache performance."
+description: "Manage query and data caching in Redis â€” store, retrieve, invalidate table queries, clear by pattern, and inspect cache performance."
 category: "data"
 subcategory: "cache"
 version: "1.0.0"
@@ -67,7 +67,7 @@ It also functions as a standalone Redis key-value cache supporting time-to-live 
 
 | Parameter | Type | Required | Default | Description |
 |-----------|------|----------|---------|-------------|
-| `redisUrl` | `string` | ? Yes | — | Redis connection URL. Supports standard `redis://` and encrypted `rediss://` protocols. |
+| `redisUrl` | `string` | ? Yes | â€” | Redis connection URL. Supports standard `redis://` and encrypted `rediss://` protocols. |
 | `operation` | `enum` | ? Yes | `invalidateTable` | The cache operation to execute (see [Operations](#operations)). |
 | `keyPrefix` | `string` | ? No | `rymo` | Namespace prefix prepended to keys. Helps isolate cached datasets. |
 
@@ -79,8 +79,8 @@ Depending on the selected `operation`, additional conditional fields become avai
 |-----------|-------------|---------------------|---------------------|
 | `invalidateTable` | Invalidate all cached queries for a database table | `tableName` | `keyPrefix` |
 | `invalidatePattern` | Delete keys matching a glob wildcard pattern | `pattern` | `keyPrefix` |
-| `clearAll` | Delete all keys matching the namespace prefix | — | `keyPrefix` |
-| `getStats` | Retrieve key count and memory statistics | — | `keyPrefix` |
+| `clearAll` | Delete all keys matching the namespace prefix | â€” | `keyPrefix` |
+| `getStats` | Retrieve key count and memory statistics | â€” | `keyPrefix` |
 | `set` | Store a key-value pair with an expiration time | `cacheKey`, `value` | `ttl`, `keyPrefix` |
 | `get` | Retrieve the value of a specific key | `cacheKey` | `keyPrefix` |
 | `delete` | Remove a specific key from the cache | `cacheKey` | `keyPrefix` |
@@ -285,10 +285,10 @@ title: Manage Rymo Query Cache Operations
 <!-- SECTION: related -->
 ## Related Nodes
 
-- [Rymo Query](../rymo-query/en.md) – Execute safe queries against PostgreSQL with automatic query caching
-- [Rymo Create](../rymo-create/en.md) – Insert records into PostgreSQL tables
-- [Rymo Delete](../rymo-delete/en.md) – Delete database records and trigger cache invalidation
-- [Redis Action](../redis-action/en.md) – Generic Redis operations and Pub/Sub messaging
+- [Rymo Query](/docs/rymo-query) â€“ Execute safe queries against PostgreSQL with automatic query caching
+- [Rymo Create](/docs/rymo-create) â€“ Insert records into PostgreSQL tables
+- [Rymo Delete](/docs/rymo-delete) â€“ Delete database records and trigger cache invalidation
+- [Redis Action](/docs/redis-action) â€“ Generic Redis operations and Pub/Sub messaging
 
 <!-- /SECTION: related -->
 

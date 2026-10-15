@@ -170,9 +170,9 @@ title: Validate HTTP Headers Before Request
 <!-- SECTION: related -->
 ## Related
 
-- [HTTP Request](./http-request.md) – Send an outbound request using the validated headers
-- [Webhook](./webhook.md) – Receive and forward incoming HTTP headers for validation
-- [Function](./function.md) – Pre-process or extract specific headers before validation
+- [HTTP Request](/docs/http-request) – Send an outbound request using the validated headers
+- [Webhook](/docs/webhook) – Receive and forward incoming HTTP headers for validation
+- [Function](/docs/function) – Pre-process or extract specific headers before validation
 
 <!-- /SECTION: related -->
 

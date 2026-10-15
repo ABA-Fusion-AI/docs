@@ -415,10 +415,10 @@ In this workflow, a **Manual Trigger** starts the pipeline, a **Function** node 
 <!-- SECTION: related -->
 ## Related
 
-- [Function](./function.md) – Format custom dynamic payloads and Markdown messages using JavaScript
-- [Manual Trigger](./manual-trigger.md) – Trigger Mattermost notifications on demand
-- [Webhook](./webhook.md) – Receive incoming webhooks from third-party services to trigger workflows
-- [Log](./log.md) – Inspect and debug webhook responses and execution logs
+- [Function](/docs/function) – Format custom dynamic payloads and Markdown messages using JavaScript
+- [Manual Trigger](/docs/manual-trigger) – Trigger Mattermost notifications on demand
+- [Webhook](/docs/webhook) – Receive incoming webhooks from third-party services to trigger workflows
+- [Log](/docs/log) – Inspect and debug webhook responses and execution logs
 
 <!-- /SECTION: related -->
 

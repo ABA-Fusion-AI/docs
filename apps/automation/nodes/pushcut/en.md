@@ -252,9 +252,9 @@ title: Send Pushcut Notification on Event
 <!-- SECTION: related -->
 ## Related Nodes
 
-- [Webhook Trigger](../webhook-trigger/en.md) – Trigger push notifications from external third-party events
-- [Log](../log/en.md) – Inspect delivery receipts and debug error responses
-- [Filter](../filter/en.md) – Conditionally trigger urgent push alerts based on severity
+- [Webhook Trigger](/docs/webhook-trigger) – Trigger push notifications from external third-party events
+- [Log](/docs/log) – Inspect delivery receipts and debug error responses
+- [Filter](/docs/filter) – Conditionally trigger urgent push alerts based on severity
 
 <!-- /SECTION: related -->
 

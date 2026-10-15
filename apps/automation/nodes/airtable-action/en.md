@@ -435,9 +435,9 @@ Fetch product data from an API every hour and append new records to Airtable.
 <!-- SECTION: related -->
 ## Related
 
-- [Airtable Trigger](./airtable-trigger.md) - Trigger workflows on Airtable record changes
-- [Baserow Action](./baserow.md) - Similar operations on self-hosted Baserow instances
-- [Function](./function.md) - Transform data before appending or updating records
+- [Airtable Trigger](/docs/airtable-trigger) - Trigger workflows on Airtable record changes
+- [Baserow Action](/docs/baserow) - Similar operations on self-hosted Baserow instances
+- [Function](/docs/function) - Transform data before appending or updating records
 
 <!-- /SECTION: related -->
 

@@ -295,11 +295,11 @@ title: Search movie and series information using OMDb API
 <!-- SECTION: related -->
 ## Related
 
-- [TheMealDB](../the-meal-db/en.md) — Search recipes and culinary database
-- [HTTP Request](../http-request/en.md) — Custom HTTP requests to movie or entertainment APIs
-- [AI Chat](../ai-chat/en.md) — Analyze film plots and generate movie recommendations
-- [Discord Bot Send](../discord-bot-send/en.md) — Send movie review cards and posters to Discord
-- [Slack](../slack/en.md) — Broadcast movie night announcements to Slack channels
+- [TheMealDB](/docs/the-meal-db) — Search recipes and culinary database
+- [HTTP Request](/docs/http-request) — Custom HTTP requests to movie or entertainment APIs
+- [AI Chat](/docs/ai-chat) — Analyze film plots and generate movie recommendations
+- [Discord Bot Send](/docs/discord-bot-send) — Send movie review cards and posters to Discord
+- [Slack](/docs/slack) — Broadcast movie night announcements to Slack channels
 
 <!-- /SECTION: related -->
 

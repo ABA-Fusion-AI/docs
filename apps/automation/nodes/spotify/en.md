@@ -251,9 +251,9 @@ Spotify OAuth access tokens:
 <!-- SECTION: related -->
 ## Related
 
-- [HTTP Request](./http-request.md) – Call Spotify's OAuth token endpoint to refresh access tokens
-- [Function](./function.md) – Build dynamic search queries or extract specific fields from the response
-- [AI Chat](./ai-chat.md) – Generate playlist recommendations from Spotify search results
+- [HTTP Request](/docs/http-request) – Call Spotify's OAuth token endpoint to refresh access tokens
+- [Function](/docs/function) – Build dynamic search queries or extract specific fields from the response
+- [AI Chat](/docs/ai-chat) – Generate playlist recommendations from Spotify search results
 
 <!-- /SECTION: related -->
 

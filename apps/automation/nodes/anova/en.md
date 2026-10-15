@@ -315,9 +315,9 @@ title: Perform One-Way ANOVA on three experimental groups
 <!-- SECTION: related -->
 ## Related
 
-- [Bootstrap](../bootstrap/en.md) — Calculate non-parametric bootstrap confidence intervals
-- [Function](../function/en.md) — Pre-process group data or post-process ANOVA results
-- [Log](../log/en.md) — Output ANOVA results to console logs
+- [Bootstrap](/docs/bootstrap) — Calculate non-parametric bootstrap confidence intervals
+- [Function](/docs/function) — Pre-process group data or post-process ANOVA results
+- [Log](/docs/log) — Output ANOVA results to console logs
 
 <!-- /SECTION: related -->
 

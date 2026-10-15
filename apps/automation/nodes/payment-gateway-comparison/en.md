@@ -347,13 +347,13 @@ title: Payment Gateway Comparison Workflow
 <!-- SECTION: related -->
 ## Related Nodes
 
-- [Stripe Charges](../stripe-charges/en.md) — Create and manage Stripe payment charges
-- [PayPal Create Order](../paypal-create-order/en.md) — Create PayPal checkout orders
-- [Square](../square/en.md) — Process payments and manage inventory via Square
-- [Profit Margin Calculator](../profit-margin-calculator/en.md) — Calculate profit margins and cost markups
-- [Salary Converter](../salary-converter/en.md) — Convert compensation rates across multiple pay frequencies
-- [Function](../function/en.md) — Apply custom discount, tax, or surcharge logic
-- [Log](../log/en.md) — Print calculation results to the execution console
+- [Stripe Charges](/docs/stripe-charges) — Create and manage Stripe payment charges
+- [PayPal Create Order](/docs/paypal) — Create PayPal checkout orders
+- [Square](/docs/square) — Process payments and manage inventory via Square
+- [Profit Margin Calculator](/docs/profit-margin-calculator) — Calculate profit margins and cost markups
+- [Salary Converter](/docs/salary-converter) — Convert compensation rates across multiple pay frequencies
+- [Function](/docs/function) — Apply custom discount, tax, or surcharge logic
+- [Log](/docs/log) — Print calculation results to the execution console
 
 <!-- /SECTION: related -->
 

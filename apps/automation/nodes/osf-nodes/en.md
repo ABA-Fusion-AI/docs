@@ -323,13 +323,13 @@ title: Search nodes from Open Science Framework API
 <!-- SECTION: related -->
 ## Related
 
-- [ScienceDirect Search](../science-direct-search/en.md) — Search Elsevier full-text research articles
-- [Scopus Search](../scopus-search/en.md) — Search abstract and citation database for peer-reviewed literature
-- [Google Scholar](../google-scholar/en.md) — Generate Google Scholar search URLs for academic queries
-- [HTTP Request](../http-request/en.md) — Make custom API calls to OSF endpoints (e.g., users, files, registrations)
-- [Filter Array](../filter-array/en.md) — Filter node records by tags, dates, or categories
-- [Function](../function/en.md) — Transform OSF JSON:API responses into custom data models
-- [Log](../log/en.md) — Inspect node responses in the workflow console
+- [ScienceDirect Search](/docs/science-direct-search) — Search Elsevier full-text research articles
+- [Scopus Search](/docs/scopus-search) — Search abstract and citation database for peer-reviewed literature
+- [Google Scholar](/docs/google-scholar) — Generate Google Scholar search URLs for academic queries
+- [HTTP Request](/docs/http-request) — Make custom API calls to OSF endpoints (e.g., users, files, registrations)
+- [Filter Array](/docs/filter-array) — Filter node records by tags, dates, or categories
+- [Function](/docs/function) — Transform OSF JSON:API responses into custom data models
+- [Log](/docs/log) — Inspect node responses in the workflow console
 
 <!-- /SECTION: related -->
 

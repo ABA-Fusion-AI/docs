@@ -559,11 +559,11 @@ A workflow where a Wikipedia article lookup extracts lead image names, and queri
 <!-- SECTION: related -->
 ## Related Nodes
 
-- [Wikipedia](../wikipedia/en.md) — Search encyclopedia articles and summaries
-- [Function](../function/en.md) — Format file names and process media payloads
-- [Manual Trigger](../manual-trigger/en.md) — Manually trigger media retrieval workflows
-- [Google Images Search](../google-images-search/en.md) — Search Google Images
-- [Unsplash Image Search](../unsplash-image-search/en.md) — Query high-resolution stock photos
+- [Wikipedia](/docs/wikipedia) — Search encyclopedia articles and summaries
+- [Function](/docs/function) — Format file names and process media payloads
+- [Manual Trigger](/docs/manual-trigger) — Manually trigger media retrieval workflows
+- [Google Images Search](/docs/google-images-search) — Search Google Images
+- [Unsplash Image Search](/docs/unsplash-image-search) — Query high-resolution stock photos
 
 <!-- /SECTION: related -->
 

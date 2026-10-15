@@ -328,12 +328,12 @@ title: Extracts comprehensive job data from a single Rekrute job link
 <!-- SECTION: related -->
 ## Related
 
-- [Rekrute Scraper](../rekrute/en.md) — Crawl multi-page job listing summaries from ReKrute.com
-- [Emploi.ma Scraper](../emploima/en.md) — Scrape job listings from Emploi.ma
-- [LinkedIn Job Scraper](../linkedin-job-scraper/en.md) — Extract job listings from LinkedIn
-- [Function](../function/en.md) — Transform, sanitize, or filter parsed job records
-- [HTTP Request](../http-request/en.md) — Make custom API calls to external ATS or HR platforms
-- [Log](../log/en.md) — View extracted job data in the workflow debug console
+- [Rekrute Scraper](/docs/rekrute) — Crawl multi-page job listing summaries from ReKrute.com
+- [Emploi.ma Scraper](/docs/emploima) — Scrape job listings from Emploi.ma
+- [LinkedIn Job Scraper](/docs/linkedin-job-scraper) — Extract job listings from LinkedIn
+- [Function](/docs/function) — Transform, sanitize, or filter parsed job records
+- [HTTP Request](/docs/http-request) — Make custom API calls to external ATS or HR platforms
+- [Log](/docs/log) — View extracted job data in the workflow debug console
 
 <!-- /SECTION: related -->
 

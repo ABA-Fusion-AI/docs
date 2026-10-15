@@ -269,10 +269,10 @@ title: Search Baidu using SerpAPI
 <!-- SECTION: related -->
 ## Related
 
-- [HTTP Request](../http-request/en.md) — Make custom API calls or scrape web pages
-- [Function](../function/en.md) — Format or process search result items
-- [Filter Array](../filter-array/en.md) — Filter search results by keyword or position
-- [Log](../log/en.md) — Display search results in workflow console
+- [HTTP Request](/docs/http-request) — Make custom API calls or scrape web pages
+- [Function](/docs/function) — Format or process search result items
+- [Filter Array](/docs/filter-array) — Filter search results by keyword or position
+- [Log](/docs/log) — Display search results in workflow console
 
 <!-- /SECTION: related -->
 

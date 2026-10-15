@@ -239,11 +239,11 @@ title: Throttle high-frequency stream events
 <!-- SECTION: related -->
 ## Related
 
-- [Debounce Time](../debounce-time/en.md) — Emit the latest value after a quiet period
-- [Delay](../delay/en.md) — Delay all emitted items by a specified time
-- [Interval](../interval/en.md) — Generate ticks at regular time intervals
-- [Function](../function/en.md) — Execute custom JavaScript transformations
-- [Log](../log/en.md) — Output results to the console
+- [Debounce Time](/docs/debounce-time) — Emit the latest value after a quiet period
+- [Delay](/docs/delay) — Delay all emitted items by a specified time
+- [Interval](/docs/interval) — Generate ticks at regular time intervals
+- [Function](/docs/function) — Execute custom JavaScript transformations
+- [Log](/docs/log) — Output results to the console
 
 <!-- /SECTION: related -->
 

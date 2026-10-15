@@ -234,10 +234,10 @@ title: Fetch news from Hespress English RSS feed
 <!-- SECTION: related -->
 ## Related
 
-- [HTTP Request](../http-request/en.md) — Fetch custom RSS feeds or APIs
-- [Filter Array](../filter-array/en.md) — Filter news articles by category or keywords
-- [Function](../function/en.md) — Reformat news items into HTML/Markdown
-- [Log](../log/en.md) — Inspect fetched news objects
+- [HTTP Request](/docs/http-request) — Fetch custom RSS feeds or APIs
+- [Filter Array](/docs/filter-array) — Filter news articles by category or keywords
+- [Function](/docs/function) — Reformat news items into HTML/Markdown
+- [Log](/docs/log) — Inspect fetched news objects
 
 <!-- /SECTION: related -->
 

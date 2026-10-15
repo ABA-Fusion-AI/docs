@@ -294,10 +294,10 @@ title: Convert strings and flags to boolean values in lenient and strict modes
 <!-- SECTION: related -->
 ## Related
 
-- [To Number](../to-number/en.md) - Convert strings and booleans into numeric values
-- [To String](../to-string/en.md) - Convert booleans and numbers into text strings
-- [If / Else](../if-else/en.md) - Branch workflow execution based on boolean conditions
-- [Default Fill](../default-fill/en.md) - Replace null or undefined values with fallbacks
+- [To Number](/docs/to-number) - Convert strings and booleans into numeric values
+- [To String](/docs/to-string) - Convert booleans and numbers into text strings
+- [If / Else](/docs/if-else) - Branch workflow execution based on boolean conditions
+- [Default Fill](/docs/default-fill) - Replace null or undefined values with fallbacks
 
 <!-- /SECTION: related -->
 

@@ -228,10 +228,10 @@ In this workflow:
 <!-- SECTION: related -->
 ## Related Nodes
 
-- [DNP3 Outstation](./dnp3-outstation.md) — Listen for incoming DNP3 master control commands and trigger automation workflows.
-- [Modbus Read](../modbus-read/en.md) — Read registers and coils over Modbus TCP/RTU.
-- [Modbus Write](../modbus-write/en.md) — Write coils and holding registers on industrial PLCs.
-- [OPC UA](../opc/en.md) — Connect and subscribe to industrial OPC UA servers.
+- [DNP3 Outstation](/docs/dnp3-outstation) — Listen for incoming DNP3 master control commands and trigger automation workflows.
+- [Modbus Read](/docs/modbus-read) — Read registers and coils over Modbus TCP/RTU.
+- [Modbus Write](/docs/modbus-write) — Write coils and holding registers on industrial PLCs.
+- [OPC UA](/docs/opc) — Connect and subscribe to industrial OPC UA servers.
 <!-- /SECTION: related -->
 
 ---

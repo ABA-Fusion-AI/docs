@@ -348,10 +348,10 @@ title: LanguageTool Proofreading Example Workflow
 <!-- SECTION: related -->
 ## Related Nodes
 
-- [Google Translate](../google-translate-action/en.md) — Translate text between languages
-- [Free Dictionary](../free-dictionary/en.md) — Lookup word definitions, phonetics, and synonyms
-- [Normalize Whitespace](../normalize-whitespace/en.md) — Clean up extra spaces and formatting characters
-- [Log](../log/en.md) — Print proofreading results to the execution console
+- [Google Translate](/docs/google-translate-action) — Translate text between languages
+- [Free Dictionary](/docs/free-dictionary) — Lookup word definitions, phonetics, and synonyms
+- [Normalize Whitespace](/docs/normalize-whitespace) — Clean up extra spaces and formatting characters
+- [Log](/docs/log) — Print proofreading results to the execution console
 
 <!-- /SECTION: related -->
 

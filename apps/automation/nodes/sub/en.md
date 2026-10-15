@@ -350,12 +350,12 @@ title: Multi-Channel Subscriptions Example Workflow
 <!-- SECTION: related -->
 ## Related Nodes
 
-- [Pub](../pub/en.md) — Publish events and payloads to a named channel
-- [Manual Trigger](../manual-trigger/en.md) — Manually trigger workflows for testing
-- [Redis Subscribe](../redis-subscribe/en.md) — Listen to external Redis Pub/Sub channels
-- [Kafka Trigger](../kafka-trigger/en.md) — Consume event messages from Apache Kafka topics
-- [Function](../function/en.md) — Transform and reshape incoming event payloads
-- [Log](../log/en.md) — Output received channel data to the execution console
+- [Pub](/docs/pub) — Publish events and payloads to a named channel
+- [Manual Trigger](/docs/manual-trigger) — Manually trigger workflows for testing
+- [Redis Subscribe](/docs/redis-subscribe) — Listen to external Redis Pub/Sub channels
+- [Kafka Trigger](/docs/kafka-trigger) — Consume event messages from Apache Kafka topics
+- [Function](/docs/function) — Transform and reshape incoming event payloads
+- [Log](/docs/log) — Output received channel data to the execution console
 
 <!-- /SECTION: related -->
 

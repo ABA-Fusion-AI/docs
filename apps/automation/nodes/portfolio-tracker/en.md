@@ -316,11 +316,11 @@ title: Analyze investment portfolio performance and allocation
 <!-- SECTION: related -->
 ## Related
 
-- [Alpha Vantage](../alpha-vantage/en.md) — Retrieve real-time stock and forex quotes
-- [Financial Modeling Prep](../financial-modeling-prep/en.md) — Access institutional financial metrics and market data
-- [Currency Converter](../currency-converter/en.md) — Convert portfolio values across international currencies
-- [Function](../function/en.md) — Transform market data and calculate custom financial KPIs
-- [Log](../log/en.md) — Output portfolio analysis results in console
+- [Alpha Vantage](/docs/alpha-vantage) — Retrieve real-time stock and forex quotes
+- [Financial Modeling Prep](/docs/financial-modeling-prep) — Access institutional financial metrics and market data
+- [Currency Converter](/docs/currency-converter) — Convert portfolio values across international currencies
+- [Function](/docs/function) — Transform market data and calculate custom financial KPIs
+- [Log](/docs/log) — Output portfolio analysis results in console
 
 <!-- /SECTION: related -->
 

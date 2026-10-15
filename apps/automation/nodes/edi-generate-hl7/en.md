@@ -360,11 +360,11 @@ title: Generate HL7 v2.x message from JSON data
 <!-- SECTION: related -->
 ## Related
 
-- [EDI Parse HL7](../edi-parse-hl7/en.md) — Parse HL7 v2.x raw messages into JSON
-- [EDI Generate EDIFACT](../edi-generate-edifact/en.md) — Generate UN/EDIFACT documents from JSON
-- [EDI Parse EDIFACT](../edi-parse-edifact/en.md) — Parse UN/EDIFACT documents into JSON
-- [EDI Generate X12](../edi-generate-x12/en.md) — Generate ANSI ASC X12 documents from JSON
-- [EDI Parse X12](../edi-parse-x12/en.md) — Parse ANSI ASC X12 documents into JSON
+- [EDI Parse HL7](/docs/edi-parse-hl7) — Parse HL7 v2.x raw messages into JSON
+- [EDI Generate EDIFACT](/docs/edi-generate-edifact) — Generate UN/EDIFACT documents from JSON
+- [EDI Parse EDIFACT](/docs/edi-parse-edifact) — Parse UN/EDIFACT documents into JSON
+- [EDI Generate X12](/docs/edi-generate-x12) — Generate ANSI ASC X12 documents from JSON
+- [EDI Parse X12](/docs/edi-parse-x12) — Parse ANSI ASC X12 documents into JSON
 
 <!-- /SECTION: related -->
 

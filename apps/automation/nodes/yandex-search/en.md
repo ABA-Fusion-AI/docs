@@ -281,11 +281,11 @@ title: Search Yandex using SerpAPI
 <!-- SECTION: related -->
 ## Related
 
-- [Baidu Search](../baidu-search/en.md) — Search the Chinese web via SerpAPI
-- [Bing Search](../bing-search/en.md) — Search Bing via SerpAPI
-- [HTTP Request](../http-request/en.md) — Make custom API calls
-- [Function](../function/en.md) — Transform and filter search results
-- [Log](../log/en.md) — View execution outputs and logs
+- [Baidu Search](/docs/baidu-search) — Search the Chinese web via SerpAPI
+- [Bing Search](/docs/bing-search) — Search Bing via SerpAPI
+- [HTTP Request](/docs/http-request) — Make custom API calls
+- [Function](/docs/function) — Transform and filter search results
+- [Log](/docs/log) — View execution outputs and logs
 
 <!-- /SECTION: related -->
 

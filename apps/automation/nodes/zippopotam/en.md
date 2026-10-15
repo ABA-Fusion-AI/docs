@@ -570,11 +570,11 @@ title: Lookup geographic location and coordinates using Zippopotam.us
 <!-- SECTION: related -->
 ## Related Nodes
 
-- [IP Geolocation](../ip-geolocation/en.md) — Identify location, city, and coordinates from IP addresses
-- [Address Validator](../address-validator/en.md) — Validate and standardize street address records
-- [HTTP Request](../http-request/en.md) — Query custom external geocoding and mapping APIs
-- [Function](../function/en.md) — Transform coordinates, calculate distances, and structure address payloads
-- [Webhook](../webhook/en.md) — Ingest inbound postal code requests from web forms and e-commerce platforms
+- [IP Geolocation](/docs/ip-geolocation) — Identify location, city, and coordinates from IP addresses
+- [Address Validator](/docs/address-validator) — Validate and standardize street address records
+- [HTTP Request](/docs/http-request) — Query custom external geocoding and mapping APIs
+- [Function](/docs/function) — Transform coordinates, calculate distances, and structure address payloads
+- [Webhook](/docs/webhook) — Ingest inbound postal code requests from web forms and e-commerce platforms
 
 <!-- /SECTION: related -->
 

@@ -242,9 +242,9 @@ title: Get cryptocurrency price from Binance API
 <!-- SECTION: related -->
 ## Related
 
-- [HTTP Request](../http-request/en.md) — Make custom API calls to Binance or other crypto exchanges
-- [Function](../function/en.md) — Process and format price outputs or check thresholds
-- [Log](../log/en.md) — View price query results in workflow console
+- [HTTP Request](/docs/http-request) — Make custom API calls to Binance or other crypto exchanges
+- [Function](/docs/function) — Process and format price outputs or check thresholds
+- [Log](/docs/log) — View price query results in workflow console
 
 <!-- /SECTION: related -->
 

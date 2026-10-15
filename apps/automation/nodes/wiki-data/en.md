@@ -292,13 +292,13 @@ title: Search entity IDs in WikiData knowledge base
 <!-- SECTION: related -->
 ## Related
 
-- [REST Countries](../rest-countries/en.md) — Query country metadata, capitals, and currencies
-- [GeoNames](../geo-names/en.md) — Search geographical places and coordinates
-- [OpenAlex](../openalex/en.md) — Search scholarly research papers and authors
-- [Semantic Scholar](../semantic-scholar/en.md) — Academic paper and citation discovery
-- [HTTP Request](../http-request/en.md) — Make custom API calls
-- [Function](../function/en.md) — Parse and filter WikiData entities
-- [Log](../log/en.md) — Output entity search results in console
+- [REST Countries](/docs/rest-countries) — Query country metadata, capitals, and currencies
+- [GeoNames](/docs/geo-names) — Search geographical places and coordinates
+- [OpenAlex](/docs/openalex) — Search scholarly research papers and authors
+- [Semantic Scholar](/docs/semantic-scholar) — Academic paper and citation discovery
+- [HTTP Request](/docs/http-request) — Make custom API calls
+- [Function](/docs/function) — Parse and filter WikiData entities
+- [Log](/docs/log) — Output entity search results in console
 
 <!-- /SECTION: related -->
 

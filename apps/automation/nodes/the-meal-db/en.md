@@ -256,9 +256,9 @@ title: Search recipe ideas and ingredients using TheMealDB
 <!-- SECTION: related -->
 ## Related
 
-- [HTTP Request](../http-request/en.md) - Make custom API calls to external culinary APIs
-- [AI Chat](../ai-chat/en.md) - Enhance recipe instructions and suggest ingredient substitutes
-- [Discord Bot Send](../discord-bot-send/en.md) - Post recipe cards to Discord channels
+- [HTTP Request](/docs/http-request) - Make custom API calls to external culinary APIs
+- [AI Chat](/docs/ai-chat) - Enhance recipe instructions and suggest ingredient substitutes
+- [Discord Bot Send](/docs/discord-bot-send) - Post recipe cards to Discord channels
 
 <!-- /SECTION: related -->
 

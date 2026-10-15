@@ -413,10 +413,10 @@ Manual Trigger ──(success)──> FFXIV API ──(success)──> Log
 
 ## Related
 
-- [D&D 5e API](./dn-d5e.md) – Query Dungeons & Dragons 5th Edition rules and game reference data
-- [PokéAPI](./poke-api.md) – Search and retrieve Pokémon and generation information
-- [HTTP Request](../../../automation/nodes/http-request/en.md) – Execute custom HTTP requests against external REST APIs
-- [Log](../../../automation/nodes/log/en.md) – Log and inspect output payloads within workflows
+- [D&D 5e API](/docs/dn-d5e) – Query Dungeons & Dragons 5th Edition rules and game reference data
+- [PokéAPI](/docs/poke-api) – Search and retrieve Pokémon and generation information
+- [HTTP Request](/docs/http-request) – Execute custom HTTP requests against external REST APIs
+- [Log](/docs/log) – Log and inspect output payloads within workflows
 
 <!-- /SECTION: related -->
 

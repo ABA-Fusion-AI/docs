@@ -389,11 +389,11 @@ title: Convert between annual, monthly, weekly, and hourly salary rates
 <!-- SECTION: related -->
 ## Related
 
-- [Currency Converter](../currency-converter/en.md) — Convert monetary amounts across international exchange rates
-- [Loan Calculator](../loan-calculator/en.md) — Calculate loan payments, interest, and amortization schedules
-- [Date Calculator](../date-calculator/en.md) — Compute working days, payroll intervals, and date offsets
-- [Function](../function/en.md) — Perform custom mathematical logic and tax deductions on salary payloads
-- [Log](../log/en.md) — Print converted salary outputs to the debug console
+- [Currency Converter](/docs/currency-converter) — Convert monetary amounts across international exchange rates
+- [Loan Calculator](/docs/loan-calculator) — Calculate loan payments, interest, and amortization schedules
+- [Date Calculator](/docs/date-calculator) — Compute working days, payroll intervals, and date offsets
+- [Function](/docs/function) — Perform custom mathematical logic and tax deductions on salary payloads
+- [Log](/docs/log) — Print converted salary outputs to the debug console
 
 <!-- /SECTION: related -->
 

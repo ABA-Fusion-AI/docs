@@ -229,11 +229,11 @@ For direct prompt-to-response automation without an autonomous agent:
 <!-- SECTION: related -->
 ## Related Nodes
 
-- [Agent](../agent/en.md) – Autonomous agent capable of reasoning and orchestrating tools.
-- [OpenRouter LLM](../openrouter-llm/en.md) – LangChain LLM provider node specifically tailored as an Agent brain.
-- [AI Chat (Google)](../ai-chat-google/en.md) – Direct Gemini chat completions via the Gemini Developer API.
-- [Mistral LLM](../mistral-llm/en.md) – Dedicated Mistral AI LLM node.
-- [Function](../function/en.md) – Transform prompts or parse structured completion outputs.
+- [Agent](/docs/agent) – Autonomous agent capable of reasoning and orchestrating tools.
+- [OpenRouter LLM](/docs/ai-chat-openrouter) – LangChain LLM provider node specifically tailored as an Agent brain.
+- [AI Chat (Google)](/docs/ai-chat-google) – Direct Gemini chat completions via the Gemini Developer API.
+- [Mistral LLM](/docs/mistral-llm) – Dedicated Mistral AI LLM node.
+- [Function](/docs/function) – Transform prompts or parse structured completion outputs.
 
 <!-- /SECTION: related -->
 

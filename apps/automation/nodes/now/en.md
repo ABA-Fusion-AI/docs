@@ -258,10 +258,10 @@ title: Generate current UTC timestamps in different formats
 <!-- SECTION: related -->
 ## Related
 
-- [Format Date](../format-date/en.md) - Parse and format custom date strings
-- [Date Add](../date-add/en.md) - Add or subtract days, hours, or minutes from a date
-- [Date Compare](../date-compare/en.md) - Compare two dates to determine chronological order
-- [Convert Timezone](../convert-timezone/en.md) - Convert UTC dates into specific local timezones
+- [Format Date](/docs/format-date) - Parse and format custom date strings
+- [Date Add](/docs/date-add) - Add or subtract days, hours, or minutes from a date
+- [Date Compare](/docs/date-compare) - Compare two dates to determine chronological order
+- [Convert Timezone](/docs/convert-timezone) - Convert UTC dates into specific local timezones
 
 <!-- /SECTION: related -->
 

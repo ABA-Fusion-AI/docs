@@ -194,10 +194,10 @@ title: Collect Emploi.ma Listings
 <!-- SECTION: related -->
 ## Related
 
-- [Rekrute Scraper](./rekrute-scraper.md) – Scrape job listings from Rekrute.com
-- [LinkedIn Job Scraper](./linkedin-job-scraper.md) – Collect job listings from LinkedIn
-- [HTTP Request](./http-request.md) – Fetch the full job page content using the `lien_offre` URL
-- [Function](./function.md) – Post-process or filter the scraped job array
+- [Rekrute Scraper](/docs/rekrute) – Scrape job listings from Rekrute.com
+- [LinkedIn Job Scraper](/docs/linkedin-job-scraper) – Collect job listings from LinkedIn
+- [HTTP Request](/docs/http-request) – Fetch the full job page content using the `lien_offre` URL
+- [Function](/docs/function) – Post-process or filter the scraped job array
 
 <!-- /SECTION: related -->
 

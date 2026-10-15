@@ -183,10 +183,10 @@ In this workflow:
 <!-- SECTION: related -->
 ## Related Nodes
 
-- [DNP3 Master](../dnp3-master/en.md) — Connect to external DNP3 outstations to poll telemetry and dispatch control commands.
-- [Modbus Trigger](../modbus-trigger/en.md) — Monitor Modbus registers or coils and trigger workflows on change.
-- [OPC Trigger](../opc-trigger/en.md) — Trigger workflows on OPC UA subscription value changes.
-- [SCADA Trigger](../scada-trigger/en.md) — Ingress events from broader industrial SCADA systems.
+- [DNP3 Master](/docs/dnp3-master) — Connect to external DNP3 outstations to poll telemetry and dispatch control commands.
+- [Modbus Trigger](/docs/modbus-trigger) — Monitor Modbus registers or coils and trigger workflows on change.
+- [OPC Trigger](/docs/opc-trigger) — Trigger workflows on OPC UA subscription value changes.
+- [SCADA Trigger](/docs/scada-trigger) — Ingress events from broader industrial SCADA systems.
 <!-- /SECTION: related -->
 
 ---

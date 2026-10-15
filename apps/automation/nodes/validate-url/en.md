@@ -390,11 +390,11 @@ title: Validate URL format and enforce HTTPS protocol allowlist
 <!-- SECTION: related -->
 ## Related Nodes
 
-- [Schema Validate](../schema-validate/en.md) — Comprehensive JSON Schema and field-level data validation
-- [Validate Phone](../validate-phone/en.md) — Validate and standardize international phone numbers
-- [HTML Sanitize](../html-sanitize/en.md) — Clean HTML content and eliminate XSS vulnerabilities
-- [HTTP Request](../http-request/en.md) — Send web requests to validated endpoints
-- [Webhook](../webhook/en.md) — Ingest inbound HTTP payloads containing URLs
+- [Schema Validate](/docs/schema-validate) — Comprehensive JSON Schema and field-level data validation
+- [Validate Phone](/docs/validate-phone) — Validate and standardize international phone numbers
+- [HTML Sanitize](/docs/html-sanitize) — Clean HTML content and eliminate XSS vulnerabilities
+- [HTTP Request](/docs/http-request) — Send web requests to validated endpoints
+- [Webhook](/docs/webhook) — Ingest inbound HTTP payloads containing URLs
 
 <!-- /SECTION: related -->
 

@@ -233,9 +233,9 @@ The embedded example contains manual-trigger paths for listing users, sending a 
 <!-- SECTION: related -->
 ## Related
 
-- [Slack Action](../slack-action/en.md) – Send messages and manage Slack workspaces
-- [HTTP Request](../http-request/en.md) – Call Rocket.Chat REST API endpoints not covered by this node
-- [Function](../function/en.md) – Dynamically build message text or channel names from workflow data
+- [Slack Action](/docs/slack-action) – Send messages and manage Slack workspaces
+- [HTTP Request](/docs/http-request) – Call Rocket.Chat REST API endpoints not covered by this node
+- [Function](/docs/function) – Dynamically build message text or channel names from workflow data
 
 <!-- /SECTION: related -->
 

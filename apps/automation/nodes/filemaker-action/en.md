@@ -364,9 +364,9 @@ title: Query and inspect FileMaker records
 <!-- SECTION: related -->
 ## Related Nodes
 
-- [Airtable Action](../airtable-action/en.md) - Cloud-based relational spreadsheet and database actions
-- [MySQL Action](../mysql-action/en.md) - Execute queries against relational MySQL databases
-- [Function](../function/en.md) - Transform and manipulate FileMaker record data in JavaScript
+- [Airtable Action](/docs/airtable-action) - Cloud-based relational spreadsheet and database actions
+- [MySQL Action](/docs/mysql-action) - Execute queries against relational MySQL databases
+- [Function](/docs/function) - Transform and manipulate FileMaker record data in JavaScript
 
 <!-- /SECTION: related -->
 

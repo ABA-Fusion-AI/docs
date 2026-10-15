@@ -348,11 +348,11 @@ The `validate` parameter is `true`, `strictMode` is `true`, and mandatory fields
 <!-- SECTION: related -->
 ## Related
 
-- [EDI Generate HL7](../edi-generate-hl7/en.md) — Generate HL7 v2.x healthcare messages from JSON
-- [EDI Parse EDIFACT](../edi-parse-edifact/en.md) — Parse UN/EDIFACT documents into JSON
-- [EDI Generate EDIFACT](../edi-generate-edifact/en.md) — Generate UN/EDIFACT documents from JSON
-- [EDI Parse X12](../edi-parse-x12/en.md) — Parse ANSI ASC X12 documents into JSON
-- [EDI Generate X12](../edi-generate-x12/en.md) — Generate ANSI ASC X12 documents from JSON
+- [EDI Generate HL7](/docs/edi-generate-hl7) — Generate HL7 v2.x healthcare messages from JSON
+- [EDI Parse EDIFACT](/docs/edi-parse-edifact) — Parse UN/EDIFACT documents into JSON
+- [EDI Generate EDIFACT](/docs/edi-generate-edifact) — Generate UN/EDIFACT documents from JSON
+- [EDI Parse X12](/docs/edi-parse-x12) — Parse ANSI ASC X12 documents into JSON
+- [EDI Generate X12](/docs/edi-generate-x12) — Generate ANSI ASC X12 documents from JSON
 
 <!-- /SECTION: related -->
 

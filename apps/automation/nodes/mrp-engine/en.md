@@ -416,9 +416,9 @@ title: MRP Engine Example Workflow
 <!-- SECTION: related -->
 ## Related Nodes
 
-- [Log](../log/en.md) — Display MRP output results in the execution log console
-- [If / Else](../if-else/en.md) — Route workflow execution based on the `hasAlerts` flag
-- [Function](../function/en.md) — Pre-process custom inventory or BOM structures before MRP execution
+- [Log](/docs/log) — Display MRP output results in the execution log console
+- [If / Else](/docs/if-else) — Route workflow execution based on the `hasAlerts` flag
+- [Function](/docs/function) — Pre-process custom inventory or BOM structures before MRP execution
 
 <!-- /SECTION: related -->
 

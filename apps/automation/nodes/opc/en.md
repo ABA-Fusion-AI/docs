@@ -343,11 +343,11 @@ In this architecture:
 
 ## Related
 
-- [OPC Trigger](./opc-trigger.md) – Listen for tag changes and data events from OPC servers
-- [Modbus Read](./modbus-read.md) – Read registers from Modbus TCP/RTU devices
-- [Profinet Read](./profinet-read.md) – Integrate with Siemens Profinet industrial networks
-- [MQTT Publish](./mqtt-publish.md) – Publish telemetry data to industrial IoT brokers
-- [HTTP Request](./http-request.md) – Make general REST API calls
+- [OPC Trigger](/docs/opc-trigger) – Listen for tag changes and data events from OPC servers
+- [Modbus Read](/docs/modbus-read) – Read registers from Modbus TCP/RTU devices
+- [Profinet Read](/docs/profinet-read) – Integrate with Siemens Profinet industrial networks
+- [MQTT Publish](/docs/mqtt-publish) – Publish telemetry data to industrial IoT brokers
+- [HTTP Request](/docs/http-request) – Make general REST API calls
 
 <!-- /SECTION: related -->
 

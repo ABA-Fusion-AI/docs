@@ -365,9 +365,9 @@ The provided SWIFT code does not match ISO 9362 structural requirements (4 bank 
 <!-- SECTION: related -->
 ## Related
 
-- [Function](./function.md) – Execute custom JavaScript logic
-- [Webhook Trigger](./webhook-trigger.md) – Receive incoming payment webhooks
-- [HTTP Request](./http-request.md) – Connect to payment processing gateways
+- [Function](/docs/function) – Execute custom JavaScript logic
+- [Webhook Trigger](/docs/webhook-trigger) – Receive incoming payment webhooks
+- [HTTP Request](/docs/http-request) – Connect to payment processing gateways
 
 <!-- /SECTION: related -->
 

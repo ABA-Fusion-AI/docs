@@ -354,12 +354,12 @@ Validate Phone (Format: auto-detect)
 <!-- SECTION: related -->
 ## Related Nodes
 
-- [Validate Email](../validate-email/en.md) – Validate email address structure and syntax.
-- [Validate URL](../validate-url/en.md) – Validate web addresses, protocols, hostnames, and URLs.
-- [Schema Validate](../schema-validate/en.md) – Validate structured JSON objects using JSON Schema or Laravel rules.
-- [Regex Match](../regex-match/en.md) – Test and match custom regular expression patterns against strings.
-- [To String](../to-string/en.md) – Convert arbitrary data types into strings.
-- [HTML Sanitize](../html-sanitize/en.md) – Clean and sanitize HTML input.
+- [Validate Email](/docs/validate-email) – Validate email address structure and syntax.
+- [Validate URL](/docs/validate-url) – Validate web addresses, protocols, hostnames, and URLs.
+- [Schema Validate](/docs/schema-validate) – Validate structured JSON objects using JSON Schema or Laravel rules.
+- [Regex Match](/docs/regex-match) – Test and match custom regular expression patterns against strings.
+- [To String](/docs/to-string) – Convert arbitrary data types into strings.
+- [HTML Sanitize](/docs/html-sanitize) – Clean and sanitize HTML input.
 
 <!-- /SECTION: related -->
 

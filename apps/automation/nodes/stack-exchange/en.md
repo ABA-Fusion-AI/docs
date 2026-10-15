@@ -339,9 +339,9 @@ title: Search Stack Overflow and Ask Ubuntu questions
 <!-- SECTION: related -->
 ## Related
 
-- [HTTP Request](../http-request/en.md) - Make custom API requests to any external service
-- [GitHub](../github/en.md) - Search repositories, issues, and code on GitHub
-- [AI Chat](../ai-chat/en.md) - Analyze and summarize developer questions with AI models
+- [HTTP Request](/docs/http-request) - Make custom API requests to any external service
+- [GitHub](/docs/github) - Search repositories, issues, and code on GitHub
+- [AI Chat](/docs/ai-chat) - Analyze and summarize developer questions with AI models
 
 <!-- /SECTION: related -->
 

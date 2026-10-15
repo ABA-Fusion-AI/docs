@@ -325,11 +325,11 @@ title: Scrape Moroccan Parliament Questions and Details
 <!-- SECTION: related -->
 ## Related
 
-- [HTTP Request](../http-request/en.md) – Send generic HTTP requests to any web endpoint or API
-- [Function](../function/en.md) – Process, transform, or aggregate scraped parliamentary records
-- [Filter Array](../filter-array/en.md) – Filter question records by ministry, group, or keyword
-- [Log](../log/en.md) – Output scraped question summaries to the workflow execution console
-- [Hespress](../hespress/en.md) – Monitor Moroccan national and political news feeds
+- [HTTP Request](/docs/http-request) – Send generic HTTP requests to any web endpoint or API
+- [Function](/docs/function) – Process, transform, or aggregate scraped parliamentary records
+- [Filter Array](/docs/filter-array) – Filter question records by ministry, group, or keyword
+- [Log](/docs/log) – Output scraped question summaries to the workflow execution console
+- [Hespress](/docs/hespress) – Monitor Moroccan national and political news feeds
 
 <!-- /SECTION: related -->
 
