@@ -359,7 +359,6 @@ Validate Phone (Format: auto-detect)
 - [Schema Validate](/docs/schema-validate) – Validate structured JSON objects using JSON Schema or Laravel rules.
 - [Regex Match](/docs/regex-match) – Test and match custom regular expression patterns against strings.
 - [To String](/docs/to-string) – Convert arbitrary data types into strings.
-- [HTML Sanitize](/docs/html-sanitize) – Clean and sanitize HTML input.
 
 <!-- /SECTION: related -->
 

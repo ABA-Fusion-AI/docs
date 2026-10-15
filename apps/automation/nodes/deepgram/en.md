@@ -247,7 +247,6 @@ Verify your key in the Deepgram Console dashboard and ensure TTS permissions are
 ## Related
 
 - [Function](/docs/function) – Process or format text before speech generation
-- [Webhook Trigger](/docs/webhook-trigger) – Receive incoming requests for voice synthesis
 - [HTTP Request](/docs/http-request) – Forward generated audio binary payloads to external APIs
 
 <!-- /SECTION: related -->

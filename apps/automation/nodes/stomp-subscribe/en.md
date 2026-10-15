@@ -379,7 +379,6 @@ title: Real-time STOMP message subscription and logging
 - [NATS Subscribe](/docs/nats-subscribe) — Subscribe to NATS messaging subjects
 - [WebSocket Trigger](/docs/web-socket-trigger) — Ingest generic raw WebSocket streaming events
 - [Function](/docs/function) — Transform and parse message payloads with custom JavaScript
-- [Log](/docs/log) — Inspect real-time message payloads and diagnostic logs
 
 <!-- /SECTION: related -->
 

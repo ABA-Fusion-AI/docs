@@ -306,7 +306,6 @@ title: Test and inspect API payloads using Beeceptor
 
 - [HTTP Request](/docs/http-request) - Make custom HTTP/REST requests to external APIs
 - [PostBin](/docs/postbin) - Create temporary bins to capture and inspect HTTP requests
-- [JSON Placeholder](/docs/json-placeholder) - Fake online REST API for testing and prototyping
 
 <!-- /SECTION: related -->
 

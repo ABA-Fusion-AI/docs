@@ -345,10 +345,10 @@ Custom SQL requires `acknowledgeRisk: true`. Put dynamic values in bindings rath
 <!-- SECTION: related -->
 ## Related
 
-- [Snowflake](./snowflake.md) – Earlier version with `executeQuery`, `getQueryResults`, `listDatabases`, and `listSchemas`
-- [HTTP Request](./http-request.md) – Call other Snowflake REST endpoints
-- [Function](./function.md) – Convert Snowflake `data` rows into objects
-- [Cron](./cron.md) – Schedule recurring queries
+- [Snowflake](/docs/snowflake) – Earlier version with `executeQuery`, `getQueryResults`, `listDatabases`, and `listSchemas`
+- [HTTP Request](/docs/http-request) – Call other Snowflake REST endpoints
+- [Function](/docs/function) – Convert Snowflake `data` rows into objects
+- [Cron](/docs/cron) – Schedule recurring queries
 
 <!-- /SECTION: related -->
 

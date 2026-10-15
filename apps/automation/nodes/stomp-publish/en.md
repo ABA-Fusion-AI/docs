@@ -658,8 +658,6 @@ title: Publish messages to STOMP destination
 - [STOMP Subscribe](/docs/stomp-subscribe) — Subscribe to STOMP destinations and trigger workflows on incoming messages
 - [NATS Publish](/docs/nats-publish) — Publish messages to NATS subjects
 - [Function](/docs/function) — Construct and transform dynamic payload messages
-- [Manual Trigger](/docs/manual-trigger) — Manually trigger workflows for testing
-- [Log](/docs/log) — Inspect publishing confirmations and execution logs
 
 <!-- /SECTION: related -->
 

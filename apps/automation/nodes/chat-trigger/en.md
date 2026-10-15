@@ -127,9 +127,7 @@ Chat Trigger  →  Agent / LLM  →  Chat Response
 <!-- SECTION: related -->
 ## Related Nodes
 
-- **[Chat Response](../chat-respond/en.md)** — the other end; sends the reply back
-- **[Manual Trigger](../manual-trigger/en.md)** — starts a workflow with no payload
-- **[Tool Input](../tool-input/en.md)** — the equivalent entry point for AI agents calling over MCP
+- **[Chat Response](/docs/chat-respond)** — the other end; sends the reply back
 
 <!-- /SECTION: related -->
 

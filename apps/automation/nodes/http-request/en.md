@@ -340,8 +340,8 @@ text and any byte that isn't valid UTF-8 is destroyed.
 <!-- SECTION: related -->
 ## Related
 
-- [Function](./function.md) – Reshape a response body before using it
-- [Gmail](../gmail/en.md) – Email a file downloaded with `responseType: binary`
+- [Function](/docs/function) – Reshape a response body before using it
+- [Gmail](/docs/gmail) – Email a file downloaded with `responseType: binary`
 
 <!-- /SECTION: related -->
 

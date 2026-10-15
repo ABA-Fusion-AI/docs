@@ -569,9 +569,8 @@ See [example.workflow.json](./example.workflow.json) for a minimal workflow.
 <!-- SECTION: related -->
 ## Related
 
-- [MySQL Action](./mysql.md) - Relational SQL database operations
-- [Redis Action](./redis-action.md) - Key-value cache operations
-- [Function](./function.md) - Transform data before inserting into MongoDB
+- [Redis Action](/docs/redis-action) - Key-value cache operations
+- [Function](/docs/function) - Transform data before inserting into MongoDB
 
 <!-- /SECTION: related -->
 

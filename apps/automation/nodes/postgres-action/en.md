@@ -582,9 +582,7 @@ Run every night to delete expired sessions from the database.
 
 ## Related
 
-- [MySQL Action](./mysql.md) - MySQL relational database operations
-- [MongoDB Action](./mongodb.md) - Document-based NoSQL operations
-- [Function](./function.md) - Transform data before inserting
+- [Function](/docs/function) - Transform data before inserting
 
 <!-- /SECTION: related -->
 

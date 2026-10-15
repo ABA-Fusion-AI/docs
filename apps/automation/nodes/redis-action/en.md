@@ -427,9 +427,7 @@ Check the cache before calling an external API. Store the result if it was a cac
 <!-- SECTION: related -->
 ## Related
 
-- [Redis Subscribe](./redis-subscribe.md) - Trigger workflows from Redis Pub/Sub channels
-- [MongoDB Action](./mongodb.md) - Document-based NoSQL operations
-- [MySQL Action](./mysql.md) - Relational database operations
+- [Redis Subscribe](/docs/redis-subscribe) - Trigger workflows from Redis Pub/Sub channels
 
 <!-- /SECTION: related -->
 

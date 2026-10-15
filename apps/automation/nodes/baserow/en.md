@@ -455,9 +455,8 @@ Receive a form submission via webhook and save it directly to a Baserow table.
 <!-- SECTION: related -->
 ## Related
 
-- [Airtable Action](./airtable-action.md) - Similar operations on Airtable bases
-- [MongoDB Action](./mongodb.md) - Document-based NoSQL operations
-- [Function](./function.md) - Transform data before creating or updating rows
+- [Airtable Action](/docs/airtable-action) - Similar operations on Airtable bases
+- [Function](/docs/function) - Transform data before creating or updating rows
 
 <!-- /SECTION: related -->
 

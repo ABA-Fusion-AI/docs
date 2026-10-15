@@ -514,9 +514,9 @@ Verify an incoming webhook's HMAC signature, then process and store the event if
 <!-- SECTION: related -->
 ## Related
 
-- [Function](./function.md) - Custom JavaScript for advanced data transformations
-- [Webhook Trigger](./whatsapp-webhook.md) - Receive and verify signed incoming webhooks
-- [HTTP Request](./http-request.md) - Call external APIs that require signed or encrypted payloads
+- [Function](/docs/function) - Custom JavaScript for advanced data transformations
+- [Webhook Trigger](/docs/whatsapp-webhook) - Receive and verify signed incoming webhooks
+- [HTTP Request](/docs/http-request) - Call external APIs that require signed or encrypted payloads
 
 <!-- /SECTION: related -->
 

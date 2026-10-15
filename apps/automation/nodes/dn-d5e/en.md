@@ -284,9 +284,7 @@ title: Retrieve D&D 5e data and inspect the result
 <!-- SECTION: related -->
 ## Related
 
-- [Deck of Cards](../deck-of-cards/en.md) - Work with card and deck data
-- [Open Trivia](../open-trivia/en.md) - Retrieve trivia questions
-- [Jikan](../jikan/en.md) - Query anime and manga data
+- [Deck of Cards](/docs/deck-of-cards) - Work with card and deck data
 
 <!-- /SECTION: related -->
 

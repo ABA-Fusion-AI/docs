@@ -407,7 +407,6 @@ Validate Email
 - [Validate URL](/docs/validate-url) – Validate web addresses, URLs, hostnames, and enforce protocol allowlists.
 - [Schema Validate](/docs/schema-validate) – Validate complex JSON payloads with JSON Schema or Laravel-style rules.
 - [SMTP: Send Email](/docs/smtp) – Send transactional emails using custom SMTP server credentials.
-- [SendGrid](/docs/sendgrid) – Deliver marketing and transactional emails via the SendGrid API.
 - [Gmail](/docs/gmail) – Send and receive emails through Google Workspace or Gmail.
 
 <!-- /SECTION: related -->

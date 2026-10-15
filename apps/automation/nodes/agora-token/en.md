@@ -287,10 +287,8 @@ A mobile client sends an HTTP POST request to request an Agora RTC token before 
 <!-- SECTION: related -->
 ## Related
 
-- [Agora Event Trigger](/docs/agorawebrtc) – Trigger workflows on Agora Webhook events (e.g. channel destroy, user leave).
-- [Webhook](/docs/webhook) – Receive incoming token requests from client apps.
-- [Respond to Webhook](/docs/respond-to-webhook) – Send HTTP responses containing generated tokens back to callers.
-- [JWT](/docs/jwt) – Generate JSON Web Tokens for general API authentication.
+- [Crypto](/docs/crypto) – Cryptographic utilities and token operations
+- [HTTP Request](/docs/http-request) – Call external REST APIs and webhook endpoints
 
 <!-- /SECTION: related -->
 

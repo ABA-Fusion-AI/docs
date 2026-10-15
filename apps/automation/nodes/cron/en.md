@@ -204,7 +204,6 @@ return {
 ## Related
 
 - [Interval](/docs/interval) – Trigger at fixed time intervals without cron syntax
-- [Manual Trigger](/docs/manual-trigger) – Start a workflow on demand
 - [Delay](/docs/delay) – Add a timed pause between nodes inside a workflow
 
 <!-- /SECTION: related -->

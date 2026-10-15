@@ -411,9 +411,7 @@ When an action node in a critical workflow encounters an error, route the failur
 
 - [NATS Subscribe](/docs/nats-subscribe) — Subscribe to NATS subjects and trigger workflows on incoming messages
 - [Kafka Publish](/docs/kafka-publish) — Publish messages to Apache Kafka topics
-- [MQTT Publisher](/docs/mqtt-publisher) — Publish MQTT messages to IoT topics
 - [Function](/docs/function) — Prepare, validate, and construct message payloads
-- [Manual Trigger](/docs/manual-trigger) — Manually trigger workflow execution for testing
 
 <!-- /SECTION: related -->
 

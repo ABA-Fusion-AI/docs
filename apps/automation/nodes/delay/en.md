@@ -163,7 +163,6 @@ title: AI Interview Question Generator with Throttled LLM
 <!-- SECTION: related -->
 ## Related
 
-- [Debounce Time](/docs/debounce-time) – Emit only after a quiet period with no new items
 - [Interval](/docs/interval) – Emit items on a recurring timer
 - [Function](/docs/function) – Dynamically compute the delay duration based on workflow data
 - [HTTP Request](/docs/http-request) – Pair with Delay to pace outbound API calls

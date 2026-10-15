@@ -334,9 +334,7 @@ title: Subscribe to NATS messages and log payload
 
 - [NATS Publish](/docs/nats-publish) — Publish messages to NATS subjects
 - [Kafka Trigger](/docs/kafka-trigger) — Trigger workflows on Apache Kafka topic events
-- [MQTT Subscriber](/docs/mqtt-subscriber) — Ingest messages from MQTT brokers
 - [Function](/docs/function) — Transform, validate, and enrich incoming message payloads
-- [Log](/docs/log) — Inspect workflow outputs in the execution log
 
 <!-- /SECTION: related -->
 

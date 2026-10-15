@@ -217,9 +217,8 @@ title: Store a value for later steps
 <!-- SECTION: related -->
 ## Related
 
-- [Function](./function.md) – Read stored variables via the `variables` object and run custom logic
-- [Merge](./merge.md) – Combine data streams before storing a result
-- [Filter](./filter.md) – Filter items before deciding what to store
+- [Function](/docs/function) – Read stored variables via the `variables` object and run custom logic
+- [Merge](/docs/merge) – Combine data streams before storing a result
 
 <!-- /SECTION: related -->
 

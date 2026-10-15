@@ -296,7 +296,6 @@ title: Convert strings and flags to boolean values in lenient and strict modes
 
 - [To Number](/docs/to-number) - Convert strings and booleans into numeric values
 - [To String](/docs/to-string) - Convert booleans and numbers into text strings
-- [If / Else](/docs/if-else) - Branch workflow execution based on boolean conditions
 - [Default Fill](/docs/default-fill) - Replace null or undefined values with fallbacks
 
 <!-- /SECTION: related -->

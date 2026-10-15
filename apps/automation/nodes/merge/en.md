@@ -409,7 +409,6 @@ A webhook delivers order information containing only a customer ID. Merge it wit
 ## Related
 
 - [Function](/docs/function) – Further transform merged data with custom JavaScript
-- [Filter](/docs/filter) – Filter items after merging
 - [Set Variable](/docs/set-variable) – Store merged results for later use
 
 <!-- /SECTION: related -->

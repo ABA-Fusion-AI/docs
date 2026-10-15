@@ -277,14 +277,11 @@ title: Tick every minute
 <!-- SECTION: related -->
 ## Related
 
-- [Cron](./cron.md) - Schedule-based triggering
-- [Delay](../utilities/delay.md) - Add delays between operations
-- [Debounce Time](../utilities/debounce-time.md) - Rate limit triggers
+- [Cron](/docs/cron) - Schedule-based triggering
+- [Delay](/docs/delay) - Add delays between operations
 
 ### See Also
 
-- [Triggers Category Overview](../index.en.md#triggers)
-- [Performance Optimization Guide](../../guides/performance.md)
 
 <!-- /SECTION: related -->
 

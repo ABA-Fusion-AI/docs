@@ -218,11 +218,8 @@ title: AI History Teacher Powered by Mistral LLM
 <!-- SECTION: related -->
 ## Related
 
-- [Agent](./agent.md) – The AI Agent node that uses Mistral LLM as its intelligence backbone
-- [AI Chat](./ai-chat.md) – Direct conversational interface with Mistral and other LLM providers
-- [Function](./function.md) – Dynamically build prompts or preprocess data before sending to the agent
-- [HTTP Request](./http-request.md) – Call the Mistral REST API directly for advanced use cases
-- [Google LLM](./google-llm.md) – Alternative LLM provider using Google Gemini models
+- [Function](/docs/function) – Dynamically build prompts or preprocess data before sending to the agent
+- [HTTP Request](/docs/http-request) – Call the Mistral REST API directly for advanced use cases
 
 <!-- /SECTION: related -->
 

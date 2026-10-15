@@ -253,7 +253,6 @@ Spotify OAuth access tokens:
 
 - [HTTP Request](/docs/http-request) – Call Spotify's OAuth token endpoint to refresh access tokens
 - [Function](/docs/function) – Build dynamic search queries or extract specific fields from the response
-- [AI Chat](/docs/ai-chat) – Generate playlist recommendations from Spotify search results
 
 <!-- /SECTION: related -->
 

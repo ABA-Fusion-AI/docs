@@ -375,9 +375,7 @@ title: Transform incoming data
 <!-- SECTION: related -->
 ## Related
 
-- [Filter](./filter.md) - Simple condition-based filtering
-- [Set Variable](./set-variable.md) - Store values in workflow variables
-- [Switch](./switch.md) - Conditional routing
+- [Set Variable](/docs/set-variable) - Store values in workflow variables
 
 <!-- /SECTION: related -->
 

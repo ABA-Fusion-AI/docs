@@ -333,11 +333,7 @@ title: Unflatten flat key-value pairs into nested objects
 <!-- SECTION: related -->
 ## Related
 
-- [Flatten](/docs/flatten) — Flatten deeply nested objects into single-level delimited keys
-- [Map Keys](/docs/map-keys) — Rename or re-map object keys
-- [Select Key](/docs/select-key) — Extract specific keys from an object
 - [Function](/docs/function) — Run custom JavaScript transformations
-- [Log](/docs/log) — Inspect output structures in workflow console
 
 <!-- /SECTION: related -->
 

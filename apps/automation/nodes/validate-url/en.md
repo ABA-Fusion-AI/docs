@@ -392,9 +392,7 @@ title: Validate URL format and enforce HTTPS protocol allowlist
 
 - [Schema Validate](/docs/schema-validate) — Comprehensive JSON Schema and field-level data validation
 - [Validate Phone](/docs/validate-phone) — Validate and standardize international phone numbers
-- [HTML Sanitize](/docs/html-sanitize) — Clean HTML content and eliminate XSS vulnerabilities
 - [HTTP Request](/docs/http-request) — Send web requests to validated endpoints
-- [Webhook](/docs/webhook) — Ingest inbound HTTP payloads containing URLs
 
 <!-- /SECTION: related -->
 

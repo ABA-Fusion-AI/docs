@@ -22,6 +22,31 @@ Copy an existing page (`merge` is a good template) and keep the `<!-- SECTION: �
 markers paired. To show the node in the builder's palette, also add its id to the
 right group → subgroup `nodes` array in `apps/automation/groups.json`.
 
+### Related Nodes and Cross-Links
+
+When linking related nodes in the YAML frontmatter (`related_nodes`) or under `<!-- SECTION: related -->`:
+
+- **YAML Frontmatter (`related_nodes`)**: List exact target `<node_id>` values that match folder names in `apps/automation/nodes/`:
+  ```yaml
+  related_nodes:
+    - function
+    - filter
+    - set-variable
+  ```
+- **Markdown Links (`## Related`)**: Always link to the platform documentation route using `/docs/<node_id>`:
+  ```markdown
+  <!-- SECTION: related -->
+  ## Related
+
+  - [Function](/docs/function) – Further transform merged data with custom JavaScript
+  - [Filter](/docs/filter) – Filter items after merging
+  - [Set Variable](/docs/set-variable) – Store merged results for later use
+
+  <!-- /SECTION: related -->
+  ```
+- **Never include `.md` extensions**: Do not write `./function.md` or `../function.md`. The platform routes documentation via `/docs/<node_id>`. Appending `.md` causes the router to search for a folder named `<node_id>.md`, triggering a *"No documentation yet"* error.
+- **Never use relative filesystem paths**: Do not write `../../automation/nodes/<node_id>/en.md` or `../<node_id>/en.md`. In web browsers, these jump outside the `/docs/` route and cause 404 navigation errors.
+
 ### Every node must ship an example workflow
 
 **This is required, not optional.** Whoever writes the node writes the example.

@@ -128,9 +128,7 @@ to an expression such as `{{ $node["Agent"].answer }}`.
 <!-- SECTION: related -->
 ## Related Nodes
 
-- **[Chat Trigger](../chat-trigger/en.md)** — the other end; starts the run
-- **[Tool Output](../tool-output/en.md)** — the equivalent for AI agents calling over MCP
-- **[Respond to Webhook](../respond-to-webhook/en.md)** — the equivalent for HTTP callers
+- **[Chat Trigger](/docs/chat-trigger)** — the other end; starts the run
 
 <!-- /SECTION: related -->
 

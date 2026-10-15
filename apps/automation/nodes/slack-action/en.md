@@ -474,9 +474,9 @@ Notify the team on deployment start, then update the message with the result.
 <!-- SECTION: related -->
 ## Related
 
-- [Slack Trigger](./slack-trigger.md) - Trigger workflows on incoming Slack events
-- [Jenkins Action](./jenkins.md) - Trigger builds and post results to Slack
-- [Jira Action](./jira.md) - Create Jira issues and notify teams on Slack
+- [Slack Trigger](/docs/slack-trigger) - Trigger workflows on incoming Slack events
+- [Jenkins Action](/docs/jenkins) - Trigger builds and post results to Slack
+- [Jira Action](/docs/jira) - Create Jira issues and notify teams on Slack
 
 <!-- /SECTION: related -->
 

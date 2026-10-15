@@ -246,7 +246,6 @@ For direct prompt-to-response automation without an autonomous agent:
 <!-- SECTION: related -->
 ## Related Nodes
 
-- [Agent](/docs/agent) – Autonomous agent capable of reasoning and orchestrating tools.
 - [AI Chat (OpenRouter)](/docs/ai-chat-openrouter) – Access 200+ models via OpenRouter's unified gateway.
 - [AI Chat (Google)](/docs/ai-chat-google) – Direct Gemini chat completions via the Gemini Developer API.
 - [Mistral LLM](/docs/mistral-llm) – Dedicated Mistral AI LLM node.

@@ -566,9 +566,8 @@ Receive an incoming webhook, validate the payload, and insert it into MySQL.
 
 ## Related
 
-- [MongoDB Action](./mongodb.md) - Document-based NoSQL operations
-- [Redis Action](./redis-action.md) - Key-value cache operations
-- [Function](./function.md) - Transform data before inserting
+- [Redis Action](/docs/redis-action) - Key-value cache operations
+- [Function](/docs/function) - Transform data before inserting
 
 <!-- /SECTION: related -->
 

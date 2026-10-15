@@ -275,7 +275,6 @@ title: Convert strings and dynamic payloads to numeric values
 - [To String](/docs/to-string) - Convert numbers and objects into text strings
 - [To Boolean](/docs/to-boolean) - Convert strings and numbers into boolean true/false
 - [Default Fill](/docs/default-fill) - Fill missing or null fields with default values
-- [Clamp](/docs/clamp) - Restrict a numeric value within a minimum and maximum range
 
 <!-- /SECTION: related -->
 

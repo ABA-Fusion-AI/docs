@@ -443,8 +443,8 @@ breaking-change table under Configuration.
 <!-- SECTION: related -->
 ## Related
 
-- [Gmail - New Message Trigger](../gmail-trigger/en.md) – Start a workflow when mail arrives
-- [HTTP Request](../http-request/en.md) – Download a file with `responseType: binary` and attach it
+- [Gmail - New Message Trigger](/docs/gmail-trigger) – Start a workflow when mail arrives
+- [HTTP Request](/docs/http-request) – Download a file with `responseType: binary` and attach it
 
 <!-- /SECTION: related -->
 

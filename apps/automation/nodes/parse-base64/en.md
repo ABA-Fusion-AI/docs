@@ -252,9 +252,6 @@ Hello Fusion!
 <!-- SECTION: related -->
 ## Related
 
-- [Parse JSON](/docs/parse-json) – Parse a raw JSON string into an object
-- [Parse CSV](/docs/parse-csv) – Parse a raw CSV string into an array
-- [Encode Base64](/docs/encode-base64) – Encode data to Base64
 - [Function](/docs/function) – Generate or transform a Base64 string before passing it to this node
 
 <!-- /SECTION: related -->

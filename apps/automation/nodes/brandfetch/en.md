@@ -325,7 +325,6 @@ title: Retrieve Brand Assets with Brandfetch
 
 - [HTTP Request](/docs/http-request) – Perform custom API requests to external brand services
 - [Function](/docs/function) – Transform and format Brandfetch logo URLs and color schemes
-- [If](/docs/if) – Branch workflow logic based on brand lookup results
 
 <!-- /SECTION: related -->
 

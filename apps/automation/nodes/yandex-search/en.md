@@ -285,7 +285,6 @@ title: Search Yandex using SerpAPI
 - [Bing Search](/docs/bing-search) — Search Bing via SerpAPI
 - [HTTP Request](/docs/http-request) — Make custom API calls
 - [Function](/docs/function) — Transform and filter search results
-- [Log](/docs/log) — View execution outputs and logs
 
 <!-- /SECTION: related -->
 
