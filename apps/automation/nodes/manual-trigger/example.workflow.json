@@ -1,0 +1,104 @@
+{
+  "name": "Manual Trigger",
+  "variables": {},
+  "secrets": {},
+  "nodes": [
+    {
+      "position": {
+        "x": -173.91195523490458,
+        "y": -112.57336256029424
+      },
+      "width": 72,
+      "height": 72,
+      "selected": false,
+      "id": "yq83zqgc7ntk5mumj4lvxyds",
+      "type": "trigger",
+      "data": {
+        "description": "Triggers the workflow manually.",
+        "showRunningStatus": false,
+        "_morphing": false,
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": null
+          },
+          "error": {
+            "label": "Error",
+            "isConnectable": null
+          }
+        },
+        "parameters": {},
+        "defaultOutput": null
+      },
+      "inputs": null,
+      "outputs": null
+    },
+    {
+      "position": {
+        "x": 211.13286033350994,
+        "y": -139.93884230682312
+      },
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "selected": false,
+      "id": "knermdokndn7uihvk7kwuwv0",
+      "type": "display",
+      "data": {
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "_morphing": false,
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "parameters": {},
+        "defaultOutput": null
+      },
+      "inputs": null,
+      "outputs": null
+    }
+  ],
+  "connections": [
+    {
+      "id": "yq83zqgc7ntk5mumj4lvxyds-knermdokndn7uihvk7kwuwv0-e28afcc9-5470-4fac-8b9c-36670e2b1be9",
+      "type": "directed",
+      "animated": false,
+      "data": {
+        "isAnimated": false
+      },
+      "source": "yq83zqgc7ntk5mumj4lvxyds",
+      "target": "knermdokndn7uihvk7kwuwv0",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    }
+  ],
+  "status": "stopped",
+  "tracingEnabled": true,
+  "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+  "tenantId": "c4e72c92-6d3f-4ac3-b029-b722160d1088",
+  "workspaceId": "9aae95bf-7bb8-4ec9-b268-e9337a62381f",
+  "folderId": null,
+  "version": 1,
+  "createdAt": 1790846794189,
+  "updatedAt": 1792164871386,
+  "desiredStatus": "stopped",
+  "lastError": null,
+  "statusInfo": {
+    "type": "info",
+    "message": "Workflow stopped.",
+    "at": 1792164868073
+  }
+}
