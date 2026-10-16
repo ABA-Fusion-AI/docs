@@ -1,0 +1,303 @@
+{
+  "name": "If-Else",
+  "variables": {},
+  "secrets": {},
+  "nodes": [
+    {
+      "position": {
+        "x": 216,
+        "y": 552
+      },
+      "width": 72,
+      "height": 72,
+      "selected": false,
+      "draggable": true,
+      "id": "yq83zqgc7ntk5mumj4lvxyds",
+      "type": "trigger",
+      "data": {
+        "description": "Triggers the workflow manually.",
+        "showRunningStatus": false,
+        "_morphing": false,
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": null
+          },
+          "error": {
+            "label": "Error",
+            "isConnectable": null
+          }
+        },
+        "parameters": {},
+        "defaultOutput": null
+      },
+      "inputs": null,
+      "outputs": null
+    },
+    {
+      "position": {
+        "x": 378,
+        "y": 550
+      },
+      "width": 72,
+      "height": 72,
+      "selected": false,
+      "draggable": true,
+      "id": "mzf9sm5mt5jft80zs54axhca",
+      "type": "action",
+      "data": {
+        "description": "Executes custom JavaScript code on the input data.",
+        "showRunningStatus": true,
+        "_morphing": false,
+        "name": "function",
+        "label": "Function",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": null
+          },
+          "error": {
+            "label": "Error",
+            "isConnectable": null
+          }
+        },
+        "parameters": {
+          "code": "const test=5;// Write your code here\nreturn {test};"
+        },
+        "defaultOutput": null
+      },
+      "inputs": null,
+      "outputs": null
+    },
+    {
+      "position": {
+        "x": 584,
+        "y": 544
+      },
+      "width": 72,
+      "height": 72,
+      "selected": true,
+      "draggable": true,
+      "id": "czg5kdkj20d2zj4b11uj1ial",
+      "type": "utility",
+      "data": {
+        "description": "Executes different branches based on a condition",
+        "showRunningStatus": false,
+        "_morphing": false,
+        "name": "if-else",
+        "label": "If-Else",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "true": {
+            "label": "True",
+            "isConnectable": null
+          },
+          "false": {
+            "label": "False",
+            "isConnectable": null
+          },
+          "error": {
+            "label": "Error",
+            "isConnectable": null
+          }
+        },
+        "parameters": {
+          "condition": "input.test > 3"
+        },
+        "defaultOutput": null
+      },
+      "inputs": null,
+      "outputs": null
+    },
+    {
+      "position": {
+        "x": 886,
+        "y": 420
+      },
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "selected": false,
+      "draggable": true,
+      "id": "hj9manhw70x0nu5fnl184gpn",
+      "type": "display",
+      "data": {
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "_morphing": false,
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "parameters": {},
+        "defaultOutput": null
+      },
+      "inputs": null,
+      "outputs": null
+    },
+    {
+      "position": {
+        "x": 888,
+        "y": 684
+      },
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "selected": false,
+      "draggable": true,
+      "id": "q4i0tainksg57e65ph9uy7iv",
+      "type": "display",
+      "data": {
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "_morphing": false,
+        "name": "log",
+        "label": "Log1",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "parameters": {},
+        "defaultOutput": null
+      },
+      "inputs": null,
+      "outputs": null
+    },
+    {
+      "position": {
+        "x": 878,
+        "y": 552
+      },
+      "width": 256,
+      "height": 100,
+      "dragHandle": ".drag-handle__custom",
+      "selected": false,
+      "draggable": true,
+      "id": "vn50tr1razc1ugx2ko7clelj",
+      "type": "display",
+      "data": {
+        "description": "Logs the input data to the console.",
+        "showRunningStatus": false,
+        "_morphing": false,
+        "name": "log",
+        "label": "Log2",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "parameters": {},
+        "defaultOutput": null
+      },
+      "inputs": null,
+      "outputs": null
+    }
+  ],
+  "connections": [
+    {
+      "type": "directed",
+      "id": "xy-edge__yq83zqgc7ntk5mumj4lvxydssuccess-mzf9sm5mt5jft80zs54axhcainput",
+      "data": {
+        "isAnimated": false
+      },
+      "source": "yq83zqgc7ntk5mumj4lvxyds",
+      "target": "mzf9sm5mt5jft80zs54axhca",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    },
+    {
+      "type": "directed",
+      "id": "xy-edge__mzf9sm5mt5jft80zs54axhcasuccess-czg5kdkj20d2zj4b11uj1ialinput",
+      "data": {
+        "isAnimated": false
+      },
+      "source": "mzf9sm5mt5jft80zs54axhca",
+      "target": "czg5kdkj20d2zj4b11uj1ial",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    },
+    {
+      "type": "directed",
+      "id": "xy-edge__czg5kdkj20d2zj4b11uj1ialtrue-hj9manhw70x0nu5fnl184gpninput",
+      "data": {
+        "isAnimated": false
+      },
+      "source": "czg5kdkj20d2zj4b11uj1ial",
+      "target": "hj9manhw70x0nu5fnl184gpn",
+      "sourceHandle": "true",
+      "targetHandle": "input"
+    },
+    {
+      "type": "directed",
+      "id": "xy-edge__czg5kdkj20d2zj4b11uj1ialfalse-vn50tr1razc1ugx2ko7cleljinput",
+      "data": {
+        "isAnimated": false
+      },
+      "source": "czg5kdkj20d2zj4b11uj1ial",
+      "target": "vn50tr1razc1ugx2ko7clelj",
+      "sourceHandle": "false",
+      "targetHandle": "input"
+    },
+    {
+      "type": "directed",
+      "id": "xy-edge__czg5kdkj20d2zj4b11uj1ialerror-q4i0tainksg57e65ph9uy7ivinput",
+      "data": {
+        "isAnimated": false
+      },
+      "source": "czg5kdkj20d2zj4b11uj1ial",
+      "target": "q4i0tainksg57e65ph9uy7iv",
+      "sourceHandle": "error",
+      "targetHandle": "input"
+    }
+  ],
+  "status": "stopped",
+  "tracingEnabled": true,
+  "userId": "593a70dc-76b4-4abf-ac4f-de40c6d89861",
+  "tenantId": "c4e72c92-6d3f-4ac3-b029-b722160d1088",
+  "workspaceId": "9aae95bf-7bb8-4ec9-b268-e9337a62381f",
+  "folderId": null,
+  "version": 1,
+  "createdAt": 1790846794189,
+  "updatedAt": 1792165860515,
+  "desiredStatus": "stopped",
+  "lastError": null,
+  "statusInfo": {
+    "type": "info",
+    "message": "Workflow stopped.",
+    "at": 1792165860514
+  }
+}
