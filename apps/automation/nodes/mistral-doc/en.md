@@ -199,9 +199,9 @@ Run OCR (text + table extraction with confidence scores) or ask a question about
 <!-- SECTION: related -->
 ## Related
 
-- [AWS Textract](./aws-textract.md) – Alternative OCR/table extraction via AWS
-- [Azure Document Intelligence](./azure-document-intelligence.md) – Alternative OCR/table extraction via Azure
-- [Google Document AI](./google-document-ai.md) – Alternative OCR/table extraction via Google Cloud
+- [AWS Textract](/docs/aws-textract) – Alternative OCR/table extraction via AWS
+- [Azure Document Intelligence](/docs/azure-document-intelligence) – Alternative OCR/table extraction via Azure
+- [Google Document AI](/docs/google-document-ai) – Alternative OCR/table extraction via Google Cloud
 
 <!-- /SECTION: related -->
 

@@ -302,7 +302,7 @@ The supplied node does not expose a host-key verification setting, key passphras
 <!-- SECTION: related -->
 ## Related
 
-- [Function](../function/en.md) – Process listing batches and prepare downstream file-processing data.
+- [Function](/docs/function) – Process listing batches and prepare downstream file-processing data.
 
 <!-- /SECTION: related -->
 

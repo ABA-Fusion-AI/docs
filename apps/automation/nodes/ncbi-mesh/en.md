@@ -278,11 +278,11 @@ title: Search and retrieve NCBI MeSH records
 <!-- SECTION: related -->
 ## Related
 
-- [PubMed Search](./pub-med-search.md) - Search biomedical literature
-- [NCBI MedGen](./ncbi-medgen.md) - Search medical concepts and terminology
-- [NCBI ClinVar](./ncbi-clinvar.md) - Search clinical variant records
-- [NCBI GTR](./ncbi-gtr.md) - Search genetic test records
-- [PMC](./pmc.md) - Retrieve PubMed Central content
+- [PubMed Search](/docs/pub-med-search) - Search biomedical literature
+- [NCBI MedGen](/docs/ncbi-medgen) - Search medical concepts and terminology
+- [NCBI ClinVar](/docs/ncbi-clinvar) - Search clinical variant records
+- [NCBI GTR](/docs/ncbi-gtr) - Search genetic test records
+- [PMC](/docs/pmc) - Retrieve PubMed Central content
 
 <!-- /SECTION: related -->
 

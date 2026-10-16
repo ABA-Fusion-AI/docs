@@ -364,9 +364,7 @@ title: Generate DNA or RNA sequences with Evo2
 
 ## Related
 
-- [BioNeMo: MSA Search](../nvidia-bionemo-msa-search/en.md) - Search or analyze biological sequence data
-- [BioNeMo: SMILES to SDF](../nvidia-bionemo-smiles-to-sdf/en.md) - Convert molecular SMILES into SDF structures
-- [Log](./log.md) - Inspect Evo2 generation results
+- [BioNeMo: SMILES to SDF](/docs/nvidia-bionemo-smiles-to-sdf) - Convert molecular SMILES into SDF structures
 
 <!-- /SECTION: related -->
 
@@ -381,4 +379,3 @@ title: Generate DNA or RNA sequences with Evo2
 | 1.0.0 | 2026-09-09 | Added Evo2 sequence-generation documentation and security guidance |
 
 <!-- /SECTION: changelog -->
-

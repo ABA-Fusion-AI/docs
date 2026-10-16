@@ -318,7 +318,6 @@ Incorrect: 2026-08-07
 - [GeoJSON Tools](/docs/geojson) — Process, validate, and transform the GeoJSON output
 - [HTTP Request](/docs/http-request) — Make custom requests to Maroc Météo or other weather APIs
 - [Function](/docs/function) — Filter regions by vigilance level
-- [Log](/docs/log) — Inspect the raw vigilance output
 
 <!-- /SECTION: related -->
 

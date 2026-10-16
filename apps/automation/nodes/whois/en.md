@@ -447,8 +447,6 @@ A scheduled workflow that checks domain expiration weekly and alerts Slack if re
 
 - [DNS Lookup](/docs/dns-lookup) — Resolve A, AAAA, MX, TXT, and CNAME DNS records
 - [DNS to IP](/docs/dns-to-ip) — Quick IP address resolution for domain names
-- [SSL Checker](/docs/ssl-checker) — Inspect SSL/TLS certificate validity and expiration
-- [IP Info](/docs/ip-info) — Fetch geolocation and ASN details for IP addresses
 - [Function](/docs/function) — Parse dates and compute expiration thresholds
 
 <!-- /SECTION: related -->

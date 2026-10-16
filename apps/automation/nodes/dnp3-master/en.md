@@ -232,6 +232,7 @@ In this workflow:
 - [Modbus Read](/docs/modbus-read) — Read registers and coils over Modbus TCP/RTU.
 - [Modbus Write](/docs/modbus-write) — Write coils and holding registers on industrial PLCs.
 - [OPC UA](/docs/opc) — Connect and subscribe to industrial OPC UA servers.
+
 <!-- /SECTION: related -->
 
 ---

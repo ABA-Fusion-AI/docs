@@ -237,9 +237,9 @@ title: Search bioRxiv preprints and inspect the results
 <!-- SECTION: related -->
 ## Related
 
-- [PMC](../pmc/en.md) - Search biomedical articles and abstracts
-- [Google Scholar](../google-scholar/en.md) - Search scholarly publications
-- [Clinical Trials Search](../clinical-trials-search/en.md) - Search registered clinical studies
+- [PMC](/docs/pmc) - Search biomedical articles and abstracts
+- [Google Scholar](/docs/google-scholar) - Search scholarly publications
+- [Clinical Trials Search](/docs/clinical-trials-search) - Search registered clinical studies
 
 <!-- /SECTION: related -->
 

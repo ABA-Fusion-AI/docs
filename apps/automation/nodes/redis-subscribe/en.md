@@ -278,9 +278,9 @@ Send a Slack message every time a new order event is published to Redis.
 <!-- SECTION: related -->
 ## Related
 
-- [Redis Action](./redis-action.md) - Perform key operations and publish messages
-- [Cron](./cron.md) - Time-based workflow trigger
-- [Interval](./interval.md) - Fixed-interval workflow trigger
+- [Redis Action](/docs/redis-action) - Perform key operations and publish messages
+- [Cron](/docs/cron) - Time-based workflow trigger
+- [Interval](/docs/interval) - Fixed-interval workflow trigger
 
 <!-- /SECTION: related -->
 

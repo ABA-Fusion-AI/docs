@@ -570,10 +570,8 @@ It is intended to provide a single, unified entry point to the 45 BAR API operat
 
 ## Related
 
-- [Function](./function.md) – Transform and process genomics results per operation
-- [If](./if.md) – Route workflows based on query results
-- [HTTP Request](./http-request.md) – Make additional custom requests to BAR or related APIs
-
+- [Function](/docs/function) – Transform and process genomics results per operation
+- [HTTP Request](/docs/http-request) – Make additional custom requests to BAR or related APIs
 ---
 
 **---**

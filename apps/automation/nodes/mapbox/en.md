@@ -212,7 +212,6 @@ Below is an overview of how the **Mapbox Geocoding** node functions in a standar
 ## Related
 
 - [Address Validator](/docs/address-validator) – Validate address structure before geocoding
-- [OpenStreetMap](/docs/open-street-map) – Alternative open-source mapping services
 - [GraphHopper Route](/docs/graph-hopper-route) – Calculate routing directions using geographic coordinates
 - [GeoNames](/docs/geo-names) – Query global postal code and geographical databases
 

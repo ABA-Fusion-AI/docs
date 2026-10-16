@@ -244,11 +244,11 @@ title: Search and retrieve NCBI ClinVar records
 <!-- SECTION: related -->
 ## Related
 
-- [NCBI BioProject](./ncbi-bioproject.md) - Work with study and project records
-- [NCBI BioSample](./ncbi-biosample.md) - Work with biological sample records
-- [NCBI Conserved Domains](./ncbi-cdd.md) - Retrieve conserved protein-domain records
-- [NCBI Assembly](./ncbi-assembly.md) - Retrieve genome assembly records
-- [PubMed Search](./pub-med-search.md) - Search related biomedical literature
+- [NCBI BioProject](/docs/ncbi-bioproject) - Work with study and project records
+- [NCBI BioSample](/docs/ncbi-biosample) - Work with biological sample records
+- [NCBI Conserved Domains](/docs/ncbi-cdd) - Retrieve conserved protein-domain records
+- [NCBI Assembly](/docs/ncbi-assembly) - Retrieve genome assembly records
+- [PubMed Search](/docs/pub-med-search) - Search related biomedical literature
 
 <!-- /SECTION: related -->
 

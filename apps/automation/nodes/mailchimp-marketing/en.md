@@ -214,8 +214,8 @@ Keep the Marketing API key in protected configuration and avoid including real k
 <!-- SECTION: related -->
 ## Related
 
-- [HTTP Request](../http-request/en.md) – Make custom Marketing API requests beyond these two operations.
-- [Function](../function/en.md) – Prepare merge-field JSON or process subscriber and campaign results.
+- [HTTP Request](/docs/http-request) – Make custom Marketing API requests beyond these two operations.
+- [Function](/docs/function) – Prepare merge-field JSON or process subscriber and campaign results.
 
 <!-- /SECTION: related -->
 

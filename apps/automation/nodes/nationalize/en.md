@@ -317,9 +317,9 @@ title: Predict nationality from a name and inspect the result
 <!-- SECTION: related -->
 ## Related
 
-- [Function](../function/en.md) — Transform or filter prediction results
-- [Restructure](../restructure/en.md) — Map the response into a downstream schema
-- [Merge](../merge/en.md) — Combine predictions from multiple names
+- [Function](/docs/function) — Transform or filter prediction results
+- [Restructure](/docs/restructure) — Map the response into a downstream schema
+- [Merge](/docs/merge) — Combine predictions from multiple names
 - Log — Inspect Nationalize.io responses during workflow development
 
 <!-- /SECTION: related -->

@@ -446,10 +446,8 @@ It is intended to compute a single two-sample statistical test result for downst
 
 ## Related
 
-- [Function](./function.md) – Transform and format test results
-- [If](./if.md) – Route workflows based on `significant` output
-- [HTTP Request](./http-request.md) – Fetch or post experiment data externally
-
+- [Function](/docs/function) – Transform and format test results
+- [HTTP Request](/docs/http-request) – Fetch or post experiment data externally
 ---
 
 **---**

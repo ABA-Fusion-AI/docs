@@ -327,8 +327,6 @@ title: Scrape Moroccan Parliament Questions and Details
 
 - [HTTP Request](/docs/http-request) – Send generic HTTP requests to any web endpoint or API
 - [Function](/docs/function) – Process, transform, or aggregate scraped parliamentary records
-- [Filter Array](/docs/filter-array) – Filter question records by ministry, group, or keyword
-- [Log](/docs/log) – Output scraped question summaries to the workflow execution console
 - [Hespress](/docs/hespress) – Monitor Moroccan national and political news feeds
 
 <!-- /SECTION: related -->

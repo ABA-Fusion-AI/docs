@@ -280,6 +280,5 @@ The node package is not loaded or registered in the Fusion runtime.
 
 ## Related Nodes
 
-- [BioNeMo: OpenFold2 Predict](../nvidia-bionemo-openfold2-predict/en.md) - Predict protein structures from sequence data
-- [BioNeMo: OpenFold3 Predict](../nvidia-bionemo-openfold3-predict/en.md) - Predict biomolecular structures with the latest OpenFold model
-- [Log](../log/en.md) - Inspect raw node outputs for debugging and data mapping
+- [BioNeMo: OpenFold2 Predict](/docs/nvidia-bionemo-openfold2-predict) - Predict protein structures from sequence data
+- [BioNeMo: OpenFold3 Predict](/docs/nvidia-bionemo-openfold3-predict) - Predict biomolecular structures with the latest OpenFold model

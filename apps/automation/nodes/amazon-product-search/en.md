@@ -578,7 +578,7 @@ title: Search Amazon products
 <!-- SECTION: related -->
 ## Related
 
-- [Google Dork](./google-dork.md) - Perform advanced Google searches
+- [Google Dork](/docs/google-dork) - Perform advanced Google searches
 
 <!-- /SECTION: related -->
 

@@ -286,7 +286,6 @@ title: Search TV shows and retrieve series metadata using TVMaze
 ## Related
 
 - [Rick and Morty API](/docs/rick-and-morty) - Explore characters and episodes from Rick and Morty
-- [Jikan](/docs/jikan) - Query anime and manga series from MyAnimeList
 - [HTTP Request](/docs/http-request) - Make custom API calls to TVMaze episode or cast endpoints
 - [Discord Bot Send](/docs/discord-bot-send) - Post TV show cards and posters to Discord channels
 

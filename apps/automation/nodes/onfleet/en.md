@@ -195,8 +195,8 @@ Reference the API key through an expression and avoid exposing it in request log
 <!-- SECTION: related -->
 ## Related
 
-- [HTTP Request](../http-request/en.md) – Call additional endpoints or supply query parameters beyond those exposed by this node.
-- [Function](../function/en.md) – Prepare destination strings, recipient information, and notes from workflow data.
+- [HTTP Request](/docs/http-request) – Call additional endpoints or supply query parameters beyond those exposed by this node.
+- [Function](/docs/function) – Prepare destination strings, recipient information, and notes from workflow data.
 
 <!-- /SECTION: related -->
 

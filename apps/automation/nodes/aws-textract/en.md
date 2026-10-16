@@ -190,9 +190,9 @@ Provide **either** `s3Bucket`+`s3Key` **or** `documentBytes` — one of the two 
 <!-- SECTION: related -->
 ## Related
 
-- [Mistral Document AI](./mistral-doc.md) – Alternative OCR/table extraction via Mistral
-- [Azure Document Intelligence](./azure-document-intelligence.md) – Alternative OCR/table extraction via Azure
-- [Google Document AI](./google-document-ai.md) – Alternative OCR/table extraction via Google Cloud
+- [Mistral Document AI](/docs/mistral-doc) – Alternative OCR/table extraction via Mistral
+- [Azure Document Intelligence](/docs/azure-document-intelligence) – Alternative OCR/table extraction via Azure
+- [Google Document AI](/docs/google-document-ai) – Alternative OCR/table extraction via Google Cloud
 
 <!-- /SECTION: related -->
 

@@ -321,10 +321,8 @@ It is intended to provide a straightforward solar-event lookup for a single loca
 
 ## Related
 
-- [Function](./function.md) – Convert times to local time zone or compute schedules
-- [If](./if.md) – Route workflows based on time-of-day logic
-- [HTTP Request](./http-request.md) – Make additional custom Sunrise-Sunset API calls (e.g. with `formatted=0`)
-
+- [Function](/docs/function) – Convert times to local time zone or compute schedules
+- [HTTP Request](/docs/http-request) – Make additional custom Sunrise-Sunset API calls (e.g. with `formatted=0`)
 ---
 
 **---**

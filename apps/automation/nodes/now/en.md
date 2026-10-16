@@ -258,10 +258,7 @@ title: Generate current UTC timestamps in different formats
 <!-- SECTION: related -->
 ## Related
 
-- [Format Date](/docs/format-date) - Parse and format custom date strings
-- [Date Add](/docs/date-add) - Add or subtract days, hours, or minutes from a date
-- [Date Compare](/docs/date-compare) - Compare two dates to determine chronological order
-- [Convert Timezone](/docs/convert-timezone) - Convert UTC dates into specific local timezones
+- [Function](/docs/function) – Transform and manipulate date timestamps using JavaScript
 
 <!-- /SECTION: related -->
 

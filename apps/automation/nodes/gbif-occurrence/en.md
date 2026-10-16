@@ -746,10 +746,8 @@ Returns biodiversity occurrence records. Example: Find Brown Bear sightings in t
 
 ## Related
 
-- [Function](./function.md) – Transform and process biodiversity occurrence records
-- [If](./if.md) – Filter and route occurrence data based on conditions
-- [HTTP Request](./http-request.md) – Make requests to external APIs
-
+- [Function](/docs/function) – Transform and process biodiversity occurrence records
+- [HTTP Request](/docs/http-request) – Make requests to external APIs
 ---
 
 ## Changelog

@@ -391,9 +391,7 @@ title: Convert between annual, monthly, weekly, and hourly salary rates
 
 - [Currency Converter](/docs/currency-converter) — Convert monetary amounts across international exchange rates
 - [Loan Calculator](/docs/loan-calculator) — Calculate loan payments, interest, and amortization schedules
-- [Date Calculator](/docs/date-calculator) — Compute working days, payroll intervals, and date offsets
 - [Function](/docs/function) — Perform custom mathematical logic and tax deductions on salary payloads
-- [Log](/docs/log) — Print converted salary outputs to the debug console
 
 <!-- /SECTION: related -->
 

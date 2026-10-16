@@ -266,10 +266,9 @@ title: Get weather data for a city
 <!-- SECTION: related -->
 ## Related
 
-- [OpenWeatherMap](./openweathermap.md) — Retrieve weather data using OpenWeatherMap
-- [Weather Search](./weather-search.md) — Query weather from multiple providers
-- [Global Solar Atlas](./global-solar-atlas.md) — Retrieve solar and irradiation data
-- [Log](./log.md) — Inspect weather responses
+- [OpenWeatherMap](/docs/openweathermap) — Retrieve weather data using OpenWeatherMap
+- [Weather Search](/docs/weather-search) — Query weather from multiple providers
+- [Global Solar Atlas](/docs/global-solar-atlas) — Retrieve solar and irradiation data
 
 <!-- /SECTION: related -->
 

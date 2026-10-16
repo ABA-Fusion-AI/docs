@@ -314,10 +314,8 @@ It is intended to provide simple, filtered access to Rick and Morty character da
 
 ## Related
 
-- [Function](./function.md) – Transform, filter, or format character results
-- [If](./if.md) – Route workflows based on character status or pagination
-- [HTTP Request](./http-request.md) – Query the API's `/location` or `/episode` endpoints directly
-
+- [Function](/docs/function) – Transform, filter, or format character results
+- [HTTP Request](/docs/http-request) – Query the API's `/location` or `/episode` endpoints directly
 ---
 
 **---**

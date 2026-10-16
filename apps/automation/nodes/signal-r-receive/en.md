@@ -345,9 +345,9 @@ When a client emits a `reportBug` event on the `support` hub, automatically crea
 <!-- SECTION: related -->
 ## Related
 
-- [SignalR Action](./signal-r-action.md) - Send messages and manage connections/groups via the REST API
-- [Event Hub Receive](./event-hub-receive.md) - Receive high-throughput events from Azure Event Hubs
-- [Kafka Trigger](./kafka-trigger.md) - Consume events from Apache Kafka topics
+- [SignalR Action](/docs/signal-r-action) - Send messages and manage connections/groups via the REST API
+- [Event Hub Receive](/docs/event-hub-receive) - Receive high-throughput events from Azure Event Hubs
+- [Kafka Trigger](/docs/kafka-trigger) - Consume events from Apache Kafka topics
 
 <!-- /SECTION: related -->
 

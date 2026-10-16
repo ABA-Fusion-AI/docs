@@ -327,12 +327,7 @@ title: Solar Calculator Location Example Workflow
 <!-- SECTION: related -->
 ## Related Nodes
 
-- [IP Geolocation](/docs/ip-geolocation) — Lookup geographic coordinates from IP addresses
-- [Open-Meteo Climate](/docs/open-meteo-climate) — Retrieve solar radiation and climate metrics
 - [Weather Search](/docs/weather-search) — Access real-time weather and cloud coverage conditions
-- [Date Calculator](/docs/date-calculator) — Perform date arithmetic and duration conversions
-- [Format Date](/docs/format-date) — Convert UTC timestamps to localized time formats
-- [Log](/docs/log) — Print astronomical outputs to the execution console
 
 <!-- /SECTION: related -->
 

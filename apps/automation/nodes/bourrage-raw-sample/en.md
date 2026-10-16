@@ -253,10 +253,9 @@ the server received, and stop the intermediary from rewriting keys.
 <!-- SECTION: related -->
 ## Related
 
-- [OPC](./opc.md) – Read the mill tags that feed this node
-- [Interval](./interval.md) – Drive the one-sample-per-minute cadence
-- [If/Else](./if-else.md) – Branch on the returned risk level
-- [HTTP Request](./http-request.md) – Generic alternative when you need a different payload shape
+- [OPC](/docs/opc) – Read the mill tags that feed this node
+- [Interval](/docs/interval) – Drive the one-sample-per-minute cadence
+- [HTTP Request](/docs/http-request) – Generic alternative when you need a different payload shape
 
 <!-- /SECTION: related -->
 

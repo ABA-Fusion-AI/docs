@@ -245,7 +245,6 @@ title: Fetch the latest Tanja News articles and inspect the feed
 - [Hespress](/docs/hespress) - Fetch national news from Hespress RSS feed
 - [Hespress English](/docs/hespress-english) - Fetch English-language news from Hespress
 - [OujdaCity](/docs/oujdacity) - Fetch regional news from Eastern Morocco (Oujda)
-- [AI Chat](/docs/ai-chat) - Summarize and translate Arabic news headlines
 
 <!-- /SECTION: related -->
 

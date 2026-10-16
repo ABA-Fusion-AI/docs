@@ -250,7 +250,7 @@ title: Receive CoAP messages and inspect them
 <!-- SECTION: related -->
 ## Related
 
-- [CoAP Client](../coap-client/en.md) - Send GET, POST, PUT, and DELETE requests to CoAP servers
+- [CoAP Client](/docs/coap-client) - Send GET, POST, PUT, and DELETE requests to CoAP servers
 - **MQTT Trigger** - Receive MQTT messages in workflows
 - **Log** - Inspect incoming request data
 

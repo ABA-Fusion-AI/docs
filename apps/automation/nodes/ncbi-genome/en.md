@@ -278,11 +278,10 @@ title: Search and retrieve NCBI Genome records
 <!-- SECTION: related -->
 ## Related
 
-- [NCBI Assembly](./ncbi-assembly.md) - Retrieve genome assembly records
-- [NCBI BioProject](./ncbi-bioproject.md) - Work with study and project records
-- [NCBI BioSample](./ncbi-biosample.md) - Work with biological sample records
-- [NCBI Gene](./ncbi-gene.md) - Retrieve gene records and annotations
-- [NCBI SRA](./ncbi-sra.md) - Retrieve sequencing read archive data
+- [NCBI Assembly](/docs/ncbi-assembly) - Retrieve genome assembly records
+- [NCBI BioProject](/docs/ncbi-bioproject) - Work with study and project records
+- [NCBI BioSample](/docs/ncbi-biosample) - Work with biological sample records
+- [NCBI SRA](/docs/ncbi-sra) - Retrieve sequencing read archive data
 
 <!-- /SECTION: related -->
 

@@ -374,8 +374,8 @@ After a GitHub Actions workflow completes, post the result to a Discord channel.
 <!-- SECTION: related -->
 ## Related
 
-- [Discord Trigger](./discord-trigger.md) - Trigger workflows on Discord message events
-- [Slack Action](./slack-action.md) - Send messages and manage Slack channels
+- [Discord Trigger](/docs/discord-trigger) - Trigger workflows on Discord message events
+- [Slack Action](/docs/slack-action) - Send messages and manage Slack channels
 
 <!-- /SECTION: related -->
 

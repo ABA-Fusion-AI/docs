@@ -299,6 +299,7 @@ title: Create and Automatically Email Invoice on Order Complete
 - [invoice-ninja-payments](/docs/invoice-ninja-payments)
 - [invoice-ninja-quotes](/docs/invoice-ninja-quotes)
 - [http-request](/docs/http-request)
+
 <!-- /SECTION: related -->
 
 ---

@@ -426,10 +426,8 @@ The node does not:
 
 ## Related
 
-- [A/B Test Calculator](./ab-test.md) – Analyze results once the planned experiment has run
-- [Function](./function.md) – Convert sample size into estimated experiment duration
-- [If](./if.md) – Route workflows based on feasibility of the required sample size
-
+- [A/B Test Calculator](/docs/ab-test) – Analyze results once the planned experiment has run
+- [Function](/docs/function) – Convert sample size into estimated experiment duration
 ---
 
 **---**

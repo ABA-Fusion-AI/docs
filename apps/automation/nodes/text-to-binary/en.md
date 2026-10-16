@@ -225,9 +225,8 @@ title: Convert static and dynamic text to binary data
 
 ## Related
 
-- [Binary to Text](./binary-to-text.md) — Decode binary data back into text
-- [Encode Base64](./encode-base64.md) — Convert data to a Base64 string
-- [Function](./function.md) — Generate or transform text before encoding
+- [Binary to Text](/docs/binary-to-text) — Decode binary data back into text
+- [Function](/docs/function) — Generate or transform text before encoding
 
 <!-- /SECTION: related -->
 

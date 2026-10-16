@@ -292,9 +292,9 @@ title: Retrieve, search, and stream UniProtKB protein data
 <!-- SECTION: related -->
 ## Related
 
-- [PubMed Search](./pub-med-search.md) — Search biomedical literature
-- [Clinical Trials Search](./clinical-trials-search.md) — Find clinical trial records
-- [Function](./function.md) — Transform UniProtKB results
+- [PubMed Search](/docs/pub-med-search) — Search biomedical literature
+- [Clinical Trials Search](/docs/clinical-trials-search) — Find clinical trial records
+- [Function](/docs/function) — Transform UniProtKB results
 
 <!-- /SECTION: related -->
 

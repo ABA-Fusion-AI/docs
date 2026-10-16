@@ -424,10 +424,10 @@ title: Replace text pattern in string
 <!-- SECTION: related -->
 ## Related
 
-- [Extract](../extract/en.md) — Extract substrings or regex groups
-- [Regex Match](../regex-match/en.md) — Test if text matches a pattern
-- [Regex Replace](../regex-replace/en.md) — Advanced regex replacement
-- [Function](../function/en.md) — Custom text transformation logic
+- [Extract](/docs/extract) — Extract substrings or regex groups
+- [Regex Match](/docs/regex-match) — Test if text matches a pattern
+- [Regex Replace](/docs/regex-replace) — Advanced regex replacement
+- [Function](/docs/function) — Custom text transformation logic
 
 <!-- /SECTION: related -->
 

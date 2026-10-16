@@ -394,9 +394,8 @@ It is intended to provide a fast, straightforward stock-photo search step for do
 
 ## Related
 
-- [Function](./function.md) – Select, filter, or format search results
-- [If](./if.md) – Route workflows based on result count or content
-- [HTTP Request](./http-request.md) – Make additional custom Pixabay API calls
+- [Function](/docs/function) – Select, filter, or format search results
+- [HTTP Request](/docs/http-request) – Make additional custom Pixabay API calls
 ---
 
 **---**

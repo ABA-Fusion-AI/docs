@@ -377,8 +377,8 @@ When a new microservice is registered in the platform, automatically provision i
 <!-- SECTION: related -->
 ## Related
 
-- [Event Hub Send](./event-hub-send.md) - Publish events to a provisioned Event Hub
-- [Event Hub Receive](./event-hub-receive.md) - Consume events from an Event Hub
+- [Event Hub Send](/docs/event-hub-send) - Publish events to a provisioned Event Hub
+- [Event Hub Receive](/docs/event-hub-receive) - Consume events from an Event Hub
 
 <!-- /SECTION: related -->
 

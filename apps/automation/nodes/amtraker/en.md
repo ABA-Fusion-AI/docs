@@ -303,9 +303,8 @@ It is intended to retrieve the current Amtrak trains snapshot for downstream wor
 
 ## Related
 
-- [Function](./function.md) – Filter, transform, and process train data
-- [If](./if.md) – Route workflows based on train status or delay conditions
-- [HTTP Request](./http-request.md) – Make additional Amtraker API calls (e.g. per-station or per-train endpoints)
+- [Function](/docs/function) – Filter, transform, and process train data
+- [HTTP Request](/docs/http-request) – Make additional Amtraker API calls (e.g. per-station or per-train endpoints)
 ---
 
 **---**

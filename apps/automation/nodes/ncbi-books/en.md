@@ -242,11 +242,11 @@ title: Search and retrieve NCBI Books records
 <!-- SECTION: related -->
 ## Related
 
-- [NCBI BioProject](./ncbi-bioproject.md) - Work with study and project records
-- [NCBI BioSample](./ncbi-biosample.md) - Work with biological sample records
-- [PubMed Search](./pub-med-search.md) - Search biomedical literature
-- [PMC](./pmc.md) - Retrieve PubMed Central content
-- [UniProtKB](./uni-prot-kb.md) - Retrieve protein and annotation data
+- [NCBI BioProject](/docs/ncbi-bioproject) - Work with study and project records
+- [NCBI BioSample](/docs/ncbi-biosample) - Work with biological sample records
+- [PubMed Search](/docs/pub-med-search) - Search biomedical literature
+- [PMC](/docs/pmc) - Retrieve PubMed Central content
+- [UniProtKB](/docs/uni-prot-kb) - Retrieve protein and annotation data
 
 <!-- /SECTION: related -->
 

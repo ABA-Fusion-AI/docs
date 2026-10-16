@@ -333,7 +333,6 @@ title: Extracts comprehensive job data from a single Rekrute job link
 - [LinkedIn Job Scraper](/docs/linkedin-job-scraper) — Extract job listings from LinkedIn
 - [Function](/docs/function) — Transform, sanitize, or filter parsed job records
 - [HTTP Request](/docs/http-request) — Make custom API calls to external ATS or HR platforms
-- [Log](/docs/log) — View extracted job data in the workflow debug console
 
 <!-- /SECTION: related -->
 

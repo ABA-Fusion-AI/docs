@@ -1004,10 +1004,7 @@ The node returns calculated values and leaves interpretation to downstream workf
 
 ## Related
 
-- [Function](./function.md) – Transform and process financial analysis results
-- [If](./if.md) – Filter and route workflows based on calculated ratios
-- [Calculator](./calculator.md) – Perform additional calculations
-
+- [Function](/docs/function) – Transform and process financial analysis results
 ---
 
 ## Changelog

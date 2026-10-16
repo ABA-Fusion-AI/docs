@@ -297,10 +297,10 @@ title: Retrieve VirusTotal reports for IP indicators
 <!-- SECTION: related -->
 ## Related
 
-- [AbuseIPDB](./abuse-ipdb.md) — Check IP abuse reports and reputation
-- [Shodan IP Lookup](./shodan-lookup.md) — Inspect exposed services and host intelligence
-- [GreyNoise](./grey-noise.md) — Identify scanners and benign internet noise
-- [HTTP Request](./http-request.md) — Call other security-intelligence APIs
+- [AbuseIPDB](/docs/abuse-ipdb) — Check IP abuse reports and reputation
+- [Shodan IP Lookup](/docs/shodan-lookup) — Inspect exposed services and host intelligence
+- [GreyNoise](/docs/grey-noise) — Identify scanners and benign internet noise
+- [HTTP Request](/docs/http-request) — Call other security-intelligence APIs
 
 <!-- /SECTION: related -->
 

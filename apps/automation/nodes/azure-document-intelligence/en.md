@@ -159,9 +159,9 @@ This node submits the document to Azure's asynchronous `analyze` endpoint, then 
 <!-- SECTION: related -->
 ## Related
 
-- [Mistral Document AI](./mistral-doc.md) – Alternative OCR/table extraction via Mistral
-- [AWS Textract](./aws-textract.md) – Alternative OCR/table extraction via AWS
-- [Google Document AI](./google-document-ai.md) – Alternative OCR/table extraction via Google Cloud
+- [Mistral Document AI](/docs/mistral-doc) – Alternative OCR/table extraction via Mistral
+- [AWS Textract](/docs/aws-textract) – Alternative OCR/table extraction via AWS
+- [Google Document AI](/docs/google-document-ai) – Alternative OCR/table extraction via Google Cloud
 
 <!-- /SECTION: related -->
 

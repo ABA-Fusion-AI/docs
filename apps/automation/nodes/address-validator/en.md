@@ -426,9 +426,8 @@ Use **validateWithGoogle** for complete address normalization.
 <!-- SECTION: related -->
 ## Related
 
-- [Function](./function.md) – Execute custom JavaScript
-- [Webhook Trigger](./webhook-trigger.md) – Receive incoming requests
-- [HTTP Request](./http-request.md) – Call external APIs
+- [Function](/docs/function) – Execute custom JavaScript
+- [HTTP Request](/docs/http-request) – Call external APIs
 
 <!-- /SECTION: related -->
 

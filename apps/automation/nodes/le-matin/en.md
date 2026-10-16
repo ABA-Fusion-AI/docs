@@ -731,11 +731,8 @@ It is intended to retrieve and structure Le Matin RSS content for downstream wor
 
 ## Related
 
-- [Function](./function.md) – Transform and process RSS articles
-- [If](./if.md) – Filter and route articles based on conditions
-- [HTTP Request](./http-request.md) – Make additional HTTP requests
-- [Database](./database.md) – Store retrieved articles
-
+- [Function](/docs/function) – Transform and process RSS articles
+- [HTTP Request](/docs/http-request) – Make additional HTTP requests
 ---
 
 ## Changelog

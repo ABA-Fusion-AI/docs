@@ -504,11 +504,8 @@ It is intended to provide fast, rate-limit-safe search and lookup access to PMC 
 
 ## Related
 
-- [Function](./function.md) – Transform, filter, or format article results
-- [If](./if.md) – Route workflows based on search results or article metadata
-- [HTTP Request](./http-request.md) – Make additional custom NCBI E-utilities calls
-- [LLM](./llm.md) – Summarize or synthesize retrieved abstracts
-
+- [Function](/docs/function) – Transform, filter, or format article results
+- [HTTP Request](/docs/http-request) – Make additional custom NCBI E-utilities calls
 ---
 
 **---**

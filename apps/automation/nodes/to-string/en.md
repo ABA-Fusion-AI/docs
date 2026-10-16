@@ -311,9 +311,8 @@ The node does not:
 
 ## Related
 
-- [Function](./function.md) – Custom or formatted string conversion beyond this node's default behavior
-- [Prefix & Suffix](./prefix-suffix.md) – Wrap the converted string with additional text
-
+- [Function](/docs/function) – Custom or formatted string conversion beyond this node's default behavior
+- [Prefix & Suffix](/docs/prefix-suffix) – Wrap the converted string with additional text
 ---
 
 **---**

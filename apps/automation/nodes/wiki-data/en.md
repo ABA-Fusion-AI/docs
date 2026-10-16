@@ -294,11 +294,8 @@ title: Search entity IDs in WikiData knowledge base
 
 - [REST Countries](/docs/rest-countries) — Query country metadata, capitals, and currencies
 - [GeoNames](/docs/geo-names) — Search geographical places and coordinates
-- [OpenAlex](/docs/openalex) — Search scholarly research papers and authors
-- [Semantic Scholar](/docs/semantic-scholar) — Academic paper and citation discovery
 - [HTTP Request](/docs/http-request) — Make custom API calls
 - [Function](/docs/function) — Parse and filter WikiData entities
-- [Log](/docs/log) — Output entity search results in console
 
 <!-- /SECTION: related -->
 

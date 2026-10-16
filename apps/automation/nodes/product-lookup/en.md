@@ -287,10 +287,9 @@ title: Look up and validate products using multiple identifiers
 <!-- SECTION: related -->
 ## Related
 
-- [Amazon Product Search](./amazon-product-search.md) — Search Amazon product listings
-- [Barcode Generator](./barcode-generator.md) — Generate product barcodes
-- [Function](./function.md) — Transform lookup results or prepare dynamic inputs
-- [Log](./log.md) — Inspect product lookup output
+- [Amazon Product Search](/docs/amazon-product-search) — Search Amazon product listings
+- [Barcode Generator](/docs/barcode-generator) — Generate product barcodes
+- [Function](/docs/function) — Transform lookup results or prepare dynamic inputs
 
 <!-- /SECTION: related -->
 

@@ -279,11 +279,10 @@ title: Search and retrieve NCBI dbVar records
 <!-- SECTION: related -->
 ## Related
 
-- [NCBI ClinVar](./ncbi-clinvar.md) - Search clinical variant records
-- [NCBI Gene](./ncbi-gene.md) - Retrieve gene records and annotations
-- [NCBI Genome](./ncbi-genome.md) - Retrieve genome records
-- [NCBI BioProject](./ncbi-bioproject.md) - Work with study and project records
-- [PubMed Search](./pub-med-search.md) - Search related biomedical literature
+- [NCBI ClinVar](/docs/ncbi-clinvar) - Search clinical variant records
+- [NCBI Genome](/docs/ncbi-genome) - Retrieve genome records
+- [NCBI BioProject](/docs/ncbi-bioproject) - Work with study and project records
+- [PubMed Search](/docs/pub-med-search) - Search related biomedical literature
 
 <!-- /SECTION: related -->
 

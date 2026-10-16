@@ -1,4 +1,4 @@
-﻿---
+---
 node_id: "icd11-search"
 title: "ICD11 Search"
 description: "Search ICD-11 medical codes and terms through a configurable search endpoint."
@@ -205,7 +205,7 @@ The implementation defines no automatic retry, explicit timeout, pagination, or 
 <!-- SECTION: related -->
 ## Related
 
-- [Clinical Tables NLM Search](../clinical-tables-search/en.md)
+- [Clinical Tables NLM Search](/docs/clinical-tables-search)
 - Log: inspect the returned JSON in the workflow.
 
 <!-- /SECTION: related -->
@@ -220,4 +220,3 @@ The implementation defines no automatic retry, explicit timeout, pagination, or 
 | 1.0.0 | 2026-09-28 | Initial documentation based on the supplied ICD11SearchNode implementation. |
 
 <!-- /SECTION: changelog -->
-

@@ -481,9 +481,9 @@ When a Jira issue is moved to "In Review", create a GitHub branch, open a PR, an
 <!-- SECTION: related -->
 ## Related
 
-- [GitLab Action](./gitlab.md) - Equivalent operations for GitLab repositories
-- [Jenkins Action](./jenkins.md) - Trigger and monitor Jenkins CI builds
-- [Jira Action](./jira.md) - Link GitHub operations to Jira issues and transitions
+- [GitLab Action](/docs/gitlab) - Equivalent operations for GitLab repositories
+- [Jenkins Action](/docs/jenkins) - Trigger and monitor Jenkins CI builds
+- [Jira Action](/docs/jira) - Link GitHub operations to Jira issues and transitions
 
 <!-- /SECTION: related -->
 

@@ -335,9 +335,7 @@ title: Fetch news from MAP News RSS feed
 - [Hespress English](/docs/hespress-english) — Fetch news from Hespress English RSS feed
 - [Le Matin](/docs/le-matin) — Fetch news from Le Matin RSS feeds
 - [HTTP Request](/docs/http-request) — Custom HTTP requests and generic RSS polling
-- [Filter Array](/docs/filter-array) — Filter news items by keywords or categories
 - [Function](/docs/function) — Transform and format news articles
-- [Log](/docs/log) — Output and inspect news data in the workflow console
 
 <!-- /SECTION: related -->
 

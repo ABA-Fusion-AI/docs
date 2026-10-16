@@ -332,10 +332,8 @@ title: Generate fragment-based molecules with GenMol
 
 ## Related
 
-- [BioNeMo: Filter Molecules](../nvidia-bionemo-filter-molecules/en.md) - Filter or select generated candidates
-- [BioNeMo: MolMIM Generate](../nvidia-bionemo-molmim-generate/en.md) - Generate property-optimized molecules
-- [BioNeMo: SMILES to SDF](../nvidia-bionemo-smiles-to-sdf/en.md) - Convert generated SMILES into SDF format
-- [Log](./log.md) - Inspect GenMol generation results
+- [BioNeMo: MolMIM Generate](/docs/nvidia-bionemo-molmim-generate) - Generate property-optimized molecules
+- [BioNeMo: SMILES to SDF](/docs/nvidia-bionemo-smiles-to-sdf) - Convert generated SMILES into SDF format
 
 <!-- /SECTION: related -->
 
@@ -350,4 +348,3 @@ title: Generate fragment-based molecules with GenMol
 | 1.0.0 | 2026-09-09 | Added GenMol molecular-generation documentation and security guidance |
 
 <!-- /SECTION: changelog -->
-

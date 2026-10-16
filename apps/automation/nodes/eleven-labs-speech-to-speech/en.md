@@ -259,7 +259,7 @@ title: Convert source audio to an ElevenLabs voice
 - **Eleven Labs: List Voices** - Discover available target voice IDs
 - **Eleven Labs: Text to Speech** - Generate speech from text using a selected voice
 - **Eleven Labs: Speech to Text** - Transcribe audio into text
-- [HTTP Request](../http-request/en.md) - Send generic HTTP requests
+- [HTTP Request](/docs/http-request) - Send generic HTTP requests
 
 <!-- /SECTION: related -->
 

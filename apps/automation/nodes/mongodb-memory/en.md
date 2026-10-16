@@ -136,7 +136,8 @@ the three collection fields per environment.
 
 - **Agent V2** — the node this attaches to.
 - **Postgres Memory**, **Redis Memory** — the other durable, worker-shared
-  options.
 - **Memory** — in-process, for development.
+
+  options.
 
 <!-- /SECTION: related -->

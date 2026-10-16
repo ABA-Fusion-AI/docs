@@ -393,9 +393,6 @@ title: Calculate working capital, liquidity ratios, and cash conversion cycle
 ## Related
 
 - [Function](/docs/function) — Execute custom financial transformation logic
-- [Slack](/docs/slack) — Broadcast automated financial health summaries to Slack channels
-- [Webhook](/docs/webhook) — Ingest trial balance data from external ERP and billing services
-- [Filter Array](/docs/filter-array) — Filter and route workflows based on ratio thresholds
 
 <!-- /SECTION: related -->
 

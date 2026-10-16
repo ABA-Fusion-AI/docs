@@ -239,10 +239,9 @@ title: Look up a UK postcode and inspect the location data
 <!-- SECTION: related -->
 ## Related
 
-- [GeoNames](./geo-names.md) — Search for geographical places and locations
-- [Data.gouv.fr](./data-gouv-fr.md) — Search and validate French addresses
-- [Google Maps](./google-maps.md) — Work with Google Maps and location services
-- [HTTP Request](./http-request.md) — Call a custom geocoding or postcode API
+- [GeoNames](/docs/geo-names) — Search for geographical places and locations
+- [Data.gouv.fr](/docs/data-gouv-fr) — Search and validate French addresses
+- [HTTP Request](/docs/http-request) — Call a custom geocoding or postcode API
 
 <!-- /SECTION: related -->
 

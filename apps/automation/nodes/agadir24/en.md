@@ -411,10 +411,8 @@ The URL is hardcoded in the node implementation and is not configurable through 
 
 ## Related
 
-- [Function](./function.md) – Transform and process RSS articles
-- [If](./if.md) – Filter and route articles based on conditions
-- [HTTP Request](./http-request.md) – Make requests to external services
-
+- [Function](/docs/function) – Transform and process RSS articles
+- [HTTP Request](/docs/http-request) – Make requests to external services
 ---
 
 ## Changelog

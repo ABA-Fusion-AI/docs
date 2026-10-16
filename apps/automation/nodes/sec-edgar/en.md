@@ -309,9 +309,9 @@ title: Retrieve SEC EDGAR filings and inspect the response
 <!-- SECTION: related -->
 ## Related
 
-- [Function](../function/en.md) — Filter or transform filing data with custom logic
-- [Restructure](../restructure/en.md) — Map filing responses into a downstream schema
-- [Merge](../merge/en.md) — Combine results from multiple company lookups
+- [Function](/docs/function) — Filter or transform filing data with custom logic
+- [Restructure](/docs/restructure) — Map filing responses into a downstream schema
+- [Merge](/docs/merge) — Combine results from multiple company lookups
 - Log — Inspect SEC EDGAR responses during workflow development
 
 <!-- /SECTION: related -->

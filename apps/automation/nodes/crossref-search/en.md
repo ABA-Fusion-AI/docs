@@ -263,9 +263,8 @@ title: Search Crossref publications and inspect the results
 <!-- SECTION: related -->
 ## Related
 
-- [Google Scholar Search URL](../google-scholar-search-url/en.md) - Generate Google Scholar search URLs
-- [Semantic Scholar](../semantic-scholar/en.md) - Search scholarly literature and citation data
-- [OpenAlex](../openalex/en.md) - Search open scholarly metadata
+- [PubMed Search](/docs/pub-med-search) – Query biomedical citations and scientific literature
+- [HTTP Request](/docs/http-request) – Make custom API requests to scholarly APIs
 
 <!-- /SECTION: related -->
 

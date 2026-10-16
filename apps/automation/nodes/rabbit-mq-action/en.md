@@ -488,9 +488,9 @@ Receive an HTTP webhook and forward the payload to a RabbitMQ queue for async pr
 <!-- SECTION: related -->
 ## Related
 
-- [RabbitMQ Trigger](./rabbit-mq-trigger.md) - Consume messages from a RabbitMQ queue
-- [Kafka Publish](./kafka-publish.md) - Alternative high-throughput message publishing
-- [Redis Action](./redis-action.md) - Lightweight Pub/Sub alternative
+- [RabbitMQ Trigger](/docs/rabbit-mq-trigger) - Consume messages from a RabbitMQ queue
+- [Kafka Publish](/docs/kafka-publish) - Alternative high-throughput message publishing
+- [Redis Action](/docs/redis-action) - Lightweight Pub/Sub alternative
 
 <!-- /SECTION: related -->
 

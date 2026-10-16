@@ -361,8 +361,6 @@ title: Scrapes job listings from Rekrute.com using fast HTML parsing
 - [LinkedIn Job Scraper](/docs/linkedin-job-scraper) — Extract job postings from LinkedIn
 - [HTTP Request](/docs/http-request) — Perform custom REST/HTTP calls to job APIs
 - [Function](/docs/function) — Filter, transform, and clean scraped job records
-- [Filter Array](/docs/filter-array) — Filter job records by city, experience, or keywords
-- [Log](/docs/log) — View scraped job payloads in the execution console
 
 <!-- /SECTION: related -->
 

@@ -522,12 +522,7 @@ Layer a corporate logo over a background video with a lower-third text banner:
 <!-- SECTION: related -->
 ## Related
 
-- [Manual Trigger](/docs/manual-trigger) — Trigger workflows manually for testing and development
 - [Function](/docs/function) — Dynamically construct and transform Shotstack timeline JSON payloads
-- [Log](/docs/log) — Inspect queued render IDs and diagnostic outputs
-- [D-ID](/docs/did) — AI avatar video generation
-- [Synthesia](/docs/synthesia) — AI video presentation generation
-- [HeyGen](/docs/hey-gen) — AI spokesperson and avatar video rendering
 
 <!-- /SECTION: related -->
 

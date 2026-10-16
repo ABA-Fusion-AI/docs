@@ -238,10 +238,9 @@ title: Search and retrieve NCBI GEO Profiles
 <!-- SECTION: related -->
 ## Related
 
-- [NCBI BioProject](./ncbi-bioproject.md) - Work with study and project records
-- [NCBI BioSample](./ncbi-biosample.md) - Work with biological sample records
-- [NCBI Gene](./ncbi-gene.md) - Retrieve gene records and annotations
-- [PubMed Search](./pub-med-search.md) - Search related biomedical literature
+- [NCBI BioProject](/docs/ncbi-bioproject) - Work with study and project records
+- [NCBI BioSample](/docs/ncbi-biosample) - Work with biological sample records
+- [PubMed Search](/docs/pub-med-search) - Search related biomedical literature
 
 <!-- /SECTION: related -->
 

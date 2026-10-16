@@ -341,9 +341,9 @@ Receive a webhook and forward the payload to Kafka for downstream processing.
 <!-- SECTION: related -->
 ## Related
 
-- [Kafka Trigger](./kafka-trigger.md) - Trigger workflows from incoming Kafka messages
-- [Redis Action](./redis-action.md) - Lightweight Pub/Sub alternative
-- [Function](./function.md) - Transform or serialize data before publishing
+- [Kafka Trigger](/docs/kafka-trigger) - Trigger workflows from incoming Kafka messages
+- [Redis Action](/docs/redis-action) - Lightweight Pub/Sub alternative
+- [Function](/docs/function) - Transform or serialize data before publishing
 
 <!-- /SECTION: related -->
 

@@ -296,10 +296,8 @@ title: Cactus NCI Chemical Property and Structure Resolver
 <!-- SECTION: related -->
 ## Related Nodes
 
-- [PubChem](/docs/pub-chem) – Search compounds, bioassays, and patents in the NCBI PubChem database
-- [ChEMBL](/docs/chembl) – Query bioactive molecules, drug targets, and bioactivities
-- [NCBI PCCompound](/docs/ncbi-pccompound) – Access compound records from NCBI Entrez
-- [NCBI PCSubstance](/docs/ncbi-pcsubstance) – Query substance depositions in NCBI PubChem
+- [PubMed Search](/docs/pub-med-search) – Search scientific literature and publications
+- [HTTP Request](/docs/http-request) – Query external chemical and biological databases
 
 <!-- /SECTION: related -->
 

@@ -276,8 +276,7 @@ title: Convert SMILES to SDF with BioNeMo
 
 ## Related
 
-- [Cactus NCI](../cactus/en.md) - Convert and resolve chemical structures through the CACTUS service
-- [Log](./log.md) - Inspect conversion results during workflow development
+- [Cactus NCI](/docs/cactus) - Convert and resolve chemical structures through the CACTUS service
 
 <!-- /SECTION: related -->
 
@@ -292,4 +291,3 @@ title: Convert SMILES to SDF with BioNeMo
 | 1.0.0 | 2026-09-09 | Added documentation for SMILES-to-SDF conversion and the example workflow |
 
 <!-- /SECTION: changelog -->
-

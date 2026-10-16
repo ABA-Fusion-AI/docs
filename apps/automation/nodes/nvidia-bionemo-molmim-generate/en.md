@@ -318,9 +318,7 @@ title: Generate property-optimized molecules with MolMIM
 
 ## Related
 
-- [BioNeMo: Filter Molecules](../nvidia-bionemo-filter-molecules/en.md) - Filter or select generated molecular candidates
-- [BioNeMo: GenMol Generate](../nvidia-bionemo-genmol-generate/en.md) - Generate molecules with another BioNeMo workflow
-- [Log](./log.md) - Inspect MolMIM generation results
+- [BioNeMo: GenMol Generate](/docs/nvidia-bionemo-genmol-generate) - Generate molecules with another BioNeMo workflow
 
 <!-- /SECTION: related -->
 
@@ -335,4 +333,3 @@ title: Generate property-optimized molecules with MolMIM
 | 1.0.0 | 2026-09-09 | Added MolMIM molecular-generation documentation and security guidance |
 
 <!-- /SECTION: changelog -->
-

@@ -307,11 +307,10 @@ title: Search and retrieve NCBI Protein records
 <!-- SECTION: related -->
 ## Related
 
-- [NCBI Gene](./ncbi-gene.md) - Retrieve gene records
-- [NCBI Assembly](./ncbi-assembly.md) - Retrieve genome assembly records
-- [NCBI BioProject](./ncbi-bioproject.md) - Retrieve project metadata
-- [NCBI SRA](./ncbi-sra.md) - Work with sequencing archive data
-- [UniProtKB](./uni-prot-kb.md) - Retrieve protein annotations and sequences
+- [NCBI Assembly](/docs/ncbi-assembly) - Retrieve genome assembly records
+- [NCBI BioProject](/docs/ncbi-bioproject) - Retrieve project metadata
+- [NCBI SRA](/docs/ncbi-sra) - Work with sequencing archive data
+- [UniProtKB](/docs/uni-prot-kb) - Retrieve protein annotations and sequences
 
 <!-- /SECTION: related -->
 

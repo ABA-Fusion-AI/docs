@@ -137,7 +137,8 @@ across environments.
 
 - **Agent V2** — the node this attaches to.
 - **Redis Memory**, **MongoDB Memory** — the other durable, worker-shared
-  options.
 - **Memory** — in-process, for development.
+
+  options.
 
 <!-- /SECTION: related -->

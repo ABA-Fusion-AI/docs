@@ -675,9 +675,8 @@ This validation occurs before the GraphQL HTTP request is executed.
 
 ## Related
 
-- [HTTP Request](./http-request.md) - Send generic HTTP requests
-- [Function](./function.md) - Transform GraphQL response data
-- [Log](./log.md) - Inspect GraphQL output
+- [HTTP Request](/docs/http-request) - Send generic HTTP requests
+- [Function](/docs/function) - Transform GraphQL response data
 
 <!-- /SECTION: related -->
 

@@ -463,9 +463,9 @@ When a Jira issue transitions to "Ready for Deploy", trigger a Jenkins build and
 <!-- SECTION: related -->
 ## Related
 
-- [Slack Action](./slack-action.md) - Post build notifications and results to Slack
-- [Jira Action](./jira.md) - Create issues or transition tickets on build events
-- [Cron](./cron.md) - Schedule periodic builds or maintenance operations
+- [Slack Action](/docs/slack-action) - Post build notifications and results to Slack
+- [Jira Action](/docs/jira) - Create issues or transition tickets on build events
+- [Cron](/docs/cron) - Schedule periodic builds or maintenance operations
 
 <!-- /SECTION: related -->
 

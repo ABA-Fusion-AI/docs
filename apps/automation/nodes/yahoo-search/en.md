@@ -273,10 +273,9 @@ title: Search Yahoo and inspect structured results
 <!-- SECTION: related -->
 ## Related
 
-- [Bing Search](./bing-search.md) — Search Bing through SerpAPI
-- [Baidu Search](./baidu-search.md) — Search Baidu through SerpAPI
-- [HTTP Request](./http-request.md) — Call a custom search endpoint
-- [Log](./log.md) — Inspect search results
+- [Bing Search](/docs/bing-search) — Search Bing through SerpAPI
+- [Baidu Search](/docs/baidu-search) — Search Baidu through SerpAPI
+- [HTTP Request](/docs/http-request) — Call a custom search endpoint
 
 <!-- /SECTION: related -->
 

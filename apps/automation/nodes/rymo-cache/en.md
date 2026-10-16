@@ -286,8 +286,6 @@ title: Manage Rymo Query Cache Operations
 ## Related Nodes
 
 - [Rymo Query](/docs/rymo-query) – Execute safe queries against PostgreSQL with automatic query caching
-- [Rymo Create](/docs/rymo-create) – Insert records into PostgreSQL tables
-- [Rymo Delete](/docs/rymo-delete) – Delete database records and trigger cache invalidation
 - [Redis Action](/docs/redis-action) – Generic Redis operations and Pub/Sub messaging
 
 <!-- /SECTION: related -->

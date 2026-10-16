@@ -136,7 +136,8 @@ or switch to Postgres or MongoDB memory.
 
 - **Agent V2** — the node this attaches to.
 - **Postgres Memory**, **MongoDB Memory** — the other durable, worker-shared
-  options.
 - **Memory** — in-process, for development.
+
+  options.
 
 <!-- /SECTION: related -->

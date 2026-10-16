@@ -328,10 +328,8 @@ title: Serialize Canonical JSON Example Workflow
 <!-- SECTION: related -->
 ## Related Nodes
 
-- [Parse JSON](/docs/parse-json) — Parse JSON strings into structured JavaScript objects
 - [Checksum Calculator](/docs/checksum-calculator) — Generate MD5, SHA256, and SHA512 hashes
 - [Default Fill](/docs/default-fill) — Fill missing object fields with default fallback values
-- [Log](/docs/log) — Output workflow data to execution logs
 
 <!-- /SECTION: related -->
 

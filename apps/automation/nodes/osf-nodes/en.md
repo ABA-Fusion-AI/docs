@@ -327,9 +327,7 @@ title: Search nodes from Open Science Framework API
 - [Scopus Search](/docs/scopus-search) — Search abstract and citation database for peer-reviewed literature
 - [Google Scholar](/docs/google-scholar) — Generate Google Scholar search URLs for academic queries
 - [HTTP Request](/docs/http-request) — Make custom API calls to OSF endpoints (e.g., users, files, registrations)
-- [Filter Array](/docs/filter-array) — Filter node records by tags, dates, or categories
 - [Function](/docs/function) — Transform OSF JSON:API responses into custom data models
-- [Log](/docs/log) — Inspect node responses in the workflow console
 
 <!-- /SECTION: related -->
 

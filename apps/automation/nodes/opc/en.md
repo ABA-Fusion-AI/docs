@@ -343,10 +343,8 @@ In this architecture:
 
 ## Related
 
-- [OPC Trigger](/docs/opc-trigger) – Listen for tag changes and data events from OPC servers
 - [Modbus Read](/docs/modbus-read) – Read registers from Modbus TCP/RTU devices
 - [Profinet Read](/docs/profinet-read) – Integrate with Siemens Profinet industrial networks
-- [MQTT Publish](/docs/mqtt-publish) – Publish telemetry data to industrial IoT brokers
 - [HTTP Request](/docs/http-request) – Make general REST API calls
 
 <!-- /SECTION: related -->

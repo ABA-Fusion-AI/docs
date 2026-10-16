@@ -278,9 +278,9 @@ Run a scheduled database query and publish each row as an event for stream proce
 <!-- SECTION: related -->
 ## Related
 
-- [Event Hub Receive](./event-hub-receive.md) - Consume events from an Event Hub in real time
-- [Event Hub Admin](./event-hub-admin.md) - Create and manage Event Hubs and consumer groups
-- [Kafka Publish](./kafka-publish.md) - Publish messages to Apache Kafka topics
+- [Event Hub Receive](/docs/event-hub-receive) - Consume events from an Event Hub in real time
+- [Event Hub Admin](/docs/event-hub-admin) - Create and manage Event Hubs and consumer groups
+- [Kafka Publish](/docs/kafka-publish) - Publish messages to Apache Kafka topics
 
 <!-- /SECTION: related -->
 

@@ -291,8 +291,8 @@ Error text redacts configured session-token and access-key values, including tri
 <!-- SECTION: related -->
 ## Related
 
-- [HTTP Request](../http-request/en.md) – Make custom CRM requests beyond this node's supported operations.
-- [Function](../function/en.md) – Prepare record fields or process CRM results.
+- [HTTP Request](/docs/http-request) – Make custom CRM requests beyond this node's supported operations.
+- [Function](/docs/function) – Prepare record fields or process CRM results.
 
 <!-- /SECTION: related -->
 

@@ -277,12 +277,10 @@ title: Fetch news from La Vie Eco RSS feed
 <!-- SECTION: related -->
 ## Related
 
-- [HTTP Request](../http-request/en.md) — Fetch custom RSS feeds or APIs
-- [Filter Array](../filter-array/en.md) — Filter news articles by category or keywords
-- [Function](../function/en.md) — Reformat news items into HTML/Markdown
-- [Hespress](../hespress/en.md) — Moroccan general news feed
-- [Le Matin](../le-matin/en.md) — Moroccan news by category
-- [Log](../log/en.md) — Inspect fetched news objects
+- [HTTP Request](/docs/http-request) — Fetch custom RSS feeds or APIs
+- [Function](/docs/function) — Reformat news items into HTML/Markdown
+- [Hespress](/docs/hespress) — Moroccan general news feed
+- [Le Matin](/docs/le-matin) — Moroccan news by category
 
 <!-- /SECTION: related -->
 

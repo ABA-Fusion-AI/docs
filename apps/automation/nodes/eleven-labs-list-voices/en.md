@@ -254,7 +254,7 @@ title: List ElevenLabs voices and inspect the response
 
 - **Eleven Labs: Text to Speech** - Generate speech using a selected voice
 - **Eleven Labs: Speech to Speech** - Transform audio using an ElevenLabs voice
-- [HTTP Request](../http-request/en.md) - Send generic HTTP requests
+- [HTTP Request](/docs/http-request) - Send generic HTTP requests
 - **Log** - Inspect the list of returned voices
 
 <!-- /SECTION: related -->

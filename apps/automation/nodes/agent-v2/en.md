@@ -186,8 +186,9 @@ agent needs fewer round trips.
   ## Related Nodes
 
 - **Agent** — the original agent. Unchanged, still supported, still the right
-  choice for existing workflows.
 - **Agentic Flow** — multi-step orchestration.
+
+  choice for existing workflows.
 
 <!-- /SECTION: related -->
 

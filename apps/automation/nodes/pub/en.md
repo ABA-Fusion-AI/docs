@@ -346,9 +346,7 @@ title: Multi-Channel Publishing Example Workflow
 ## Related Nodes
 
 - [Sub (Subscribe)](/docs/sub) — Listen to published channels and trigger workflows
-- [Manual Trigger](/docs/manual-trigger) — Manually trigger workflows during testing
 - [Function](/docs/function) — Construct, transform, and format payload data prior to publishing
-- [Log](/docs/log) — Print workflow output to the execution console
 - [Redis Action](/docs/redis-action) — Publish messages to external Redis channels
 - [Kafka Publish](/docs/kafka-publish) — Publish streaming event records to Apache Kafka topics
 

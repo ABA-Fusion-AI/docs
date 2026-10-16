@@ -253,10 +253,8 @@ title: Look up a slang term and inspect its definitions
 <!-- SECTION: related -->
 ## Related
 
-- [Free Dictionary](./free-dictionary.md) — Retrieve standard dictionary definitions
-- [Oxford Dictionaries](./oxford-dictionaries.md) — Query dictionary definitions and word metadata
-- [Google Translate](./google-translate-action.md) — Translate terms between languages
-- [Log](./log.md) — Inspect lookup results
+- [Free Dictionary](/docs/free-dictionary) — Retrieve standard dictionary definitions
+- [Oxford Dictionaries](/docs/oxford-dictionaries) — Query dictionary definitions and word metadata
 
 <!-- /SECTION: related -->
 

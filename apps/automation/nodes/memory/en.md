@@ -128,7 +128,8 @@ node — the external backends have no such ceiling.
 
 - **Agent V2** — the node this attaches to.
 - **Postgres Memory**, **Redis Memory**, **MongoDB Memory** — durable and
-  reachable from every worker.
 - **SQLite Memory** — durable on one worker's disk, no external service.
+
+  reachable from every worker.
 
 <!-- /SECTION: related -->

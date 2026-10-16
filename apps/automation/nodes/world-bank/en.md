@@ -354,10 +354,9 @@ title: Retrieve World Bank development data and reference resources
 <!-- SECTION: related -->
 ## Related
 
-- [Census.gov](./census-gov.md) — Retrieve public demographic and economic statistics
-- [GeoNames](./geo-names.md) — Search geographical places and locations
-- [Currency Converter](./currency-converter.md) — Convert monetary values between currencies
-- [Log](./log.md) — Inspect World Bank responses
+- [Census.gov](/docs/census-gov) — Retrieve public demographic and economic statistics
+- [GeoNames](/docs/geo-names) — Search geographical places and locations
+- [Currency Converter](/docs/currency-converter) — Convert monetary values between currencies
 
 <!-- /SECTION: related -->
 

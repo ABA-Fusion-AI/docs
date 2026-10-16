@@ -433,9 +433,8 @@ Verify your Firebase project configuration and credentials.
 <!-- SECTION: related -->
 ## Related
 
-- [Function](./function.md) – Transform Firestore data
-- [If](./if.md) – Route workflows based on query results
-- [HTTP Request](./http-request.md) – Integrate with external services
+- [Function](/docs/function) – Transform Firestore data
+- [HTTP Request](/docs/http-request) – Integrate with external services
 
 <!-- /SECTION: related -->
 

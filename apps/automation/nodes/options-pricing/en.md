@@ -367,7 +367,6 @@ title: Calculate option prices using Black-Scholes model with Greeks (delta, gam
 - [Loan Calculator](/docs/loan-calculator) — Amortization schedules and payment calculations
 - [Financial Ratio Analyzer](/docs/financial-ratio-analyzer) — Financial liquidity, leverage, and profitability ratios
 - [Function](/docs/function) — Run custom multi-leg spread logic, iron condors, and portfolio aggregations
-- [Log](/docs/log) — Inspect output payloads and Greeks in the execution console
 
 <!-- /SECTION: related -->
 

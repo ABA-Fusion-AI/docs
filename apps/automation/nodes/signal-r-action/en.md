@@ -371,9 +371,9 @@ After a batch data processing workflow finishes, broadcast the result to all das
 <!-- SECTION: related -->
 ## Related
 
-- [SignalR Trigger](./signal-r-receive.md) - Receive real-time events from SignalR clients
-- [Event Hub Send](./event-hub-send.md) - Send events to Azure Event Hubs for large-scale ingestion
-- [Slack Action](./slack-action.md) - Alternative messaging channel for human-readable notifications
+- [SignalR Trigger](/docs/signal-r-receive) - Receive real-time events from SignalR clients
+- [Event Hub Send](/docs/event-hub-send) - Send events to Azure Event Hubs for large-scale ingestion
+- [Slack Action](/docs/slack-action) - Alternative messaging channel for human-readable notifications
 
 <!-- /SECTION: related -->
 

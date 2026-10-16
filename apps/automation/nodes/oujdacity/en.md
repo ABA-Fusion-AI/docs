@@ -260,9 +260,7 @@ title: Fetch news from OujdaCity RSS feed
 - [Agadir 24](/docs/agadir24) — Fetch news from Agadir 24 RSS feed
 - [Le Matin](/docs/le-matin) — Fetch news from Le Matin RSS feed by category
 - [HTTP Request](/docs/http-request) — Fetch custom RSS feeds or REST endpoints
-- [Filter Array](/docs/filter-array) — Filter news articles by category or keywords
 - [Function](/docs/function) — Transform news data into custom formats
-- [Log](/docs/log) — Display news objects in workflow execution logs
 
 <!-- /SECTION: related -->
 

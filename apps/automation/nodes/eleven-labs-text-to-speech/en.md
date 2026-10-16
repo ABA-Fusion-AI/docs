@@ -320,7 +320,7 @@ title: Convert text into ElevenLabs speech
 - **Eleven Labs: List Voices** - Discover available voice IDs
 - **Eleven Labs: Speech to Speech** - Convert an existing recording to another voice
 - **Eleven Labs: Speech to Text** - Transcribe audio into text
-- [HTTP Request](../http-request/en.md) - Send generic HTTP requests
+- [HTTP Request](/docs/http-request) - Send generic HTTP requests
 
 <!-- /SECTION: related -->
 

@@ -606,10 +606,8 @@ Return Prediction
 
 ## Related
 
-- [Function](./function.md) – Transform and process prediction results
-- [If](./if.md) – Filter or route workflow data
-- [HTTP Request](./http-request.md) – Make requests to external APIs
-
+- [Function](/docs/function) – Transform and process prediction results
+- [HTTP Request](/docs/http-request) – Make requests to external APIs
 ---
 
 ## Changelog

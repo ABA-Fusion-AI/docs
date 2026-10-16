@@ -514,9 +514,9 @@ title: Use Jira in a workflow
 <!-- SECTION: related -->
 ## Related
 
-- [Slack Action](./slack-action.md) - Post issue notifications and build results to Slack channels
-- [Jenkins Action](./jenkins.md) - Trigger builds and retrieve results to drive issue transitions
-- [Cron](./cron.md) - Schedule sprint rollovers or recurring project health checks
+- [Slack Action](/docs/slack-action) - Post issue notifications and build results to Slack channels
+- [Jenkins Action](/docs/jenkins) - Trigger builds and retrieve results to drive issue transitions
+- [Cron](/docs/cron) - Schedule sprint rollovers or recurring project health checks
 
 <!-- /SECTION: related -->
 

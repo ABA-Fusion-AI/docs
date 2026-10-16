@@ -279,11 +279,9 @@ title: Search and retrieve NCBI OMIM records
 <!-- SECTION: related -->
 ## Related
 
-- [NCBI Gene](./ncbi-gene.md) - Retrieve gene records
-- [NCBI ClinVar](./ncbi-clinvar.md) - Work with clinical variant records
-- [NCBI MedGen](./ncbi-medgen.md) - Retrieve medical-genetics concepts
-- [NCBI SNP](./ncbi-snp.md) - Retrieve variant records
-- [PubMed Search](./pub-med-search.md) - Search related biomedical literature
+- [NCBI ClinVar](/docs/ncbi-clinvar) - Work with clinical variant records
+- [NCBI MedGen](/docs/ncbi-medgen) - Retrieve medical-genetics concepts
+- [PubMed Search](/docs/pub-med-search) - Search related biomedical literature
 
 <!-- /SECTION: related -->
 

@@ -398,9 +398,9 @@ A team lead reacts with ✅ to approve a deployment request posted by a bot.
 <!-- SECTION: related -->
 ## Related
 
-- [Slack Action](./slack-action.md) - Send messages, manage channels, upload files
-- [Kafka Trigger](./kafka-trigger.md) - Real-time event trigger via Kafka
-- [Redis Subscribe](./redis-subscribe.md) - Pub/Sub trigger via Redis
+- [Slack Action](/docs/slack-action) - Send messages, manage channels, upload files
+- [Kafka Trigger](/docs/kafka-trigger) - Real-time event trigger via Kafka
+- [Redis Subscribe](/docs/redis-subscribe) - Pub/Sub trigger via Redis
 
 <!-- /SECTION: related -->
 

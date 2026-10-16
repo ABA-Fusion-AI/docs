@@ -344,9 +344,6 @@ In this workflow, a **Manual Trigger** initiates execution, the **Adalo** node q
 ## Related
 
 - [Function](/docs/function) – Prepare and format dynamic payloads and record IDs for Adalo
-- [Manual Trigger](/docs/manual-trigger) – Trigger Adalo database automations on demand
-- [Webhook](/docs/webhook) – Receive webhooks from third-party services to create records in Adalo
-- [Log](/docs/log) – Inspect Adalo query outputs and debugging logs
 
 <!-- /SECTION: related -->
 

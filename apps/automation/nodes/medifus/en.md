@@ -432,10 +432,8 @@ Every Monday, pull overview statistics and store them in PostgreSQL.
 <!-- SECTION: related -->
 ## Related
 
-- [Cron](./cron.md) - Schedule periodic Medifus data pulls
-- [Function](./function.md) - Transform or aggregate Visiostation API responses
-- [PostgreSQL Action](./postgres.md) - Store fetched statistics in a relational database
-- [MongoDB Action](./mongodb.md) - Store fetched statistics in a document database
+- [Cron](/docs/cron) - Schedule periodic Medifus data pulls
+- [Function](/docs/function) - Transform or aggregate Visiostation API responses
 
 <!-- /SECTION: related -->
 

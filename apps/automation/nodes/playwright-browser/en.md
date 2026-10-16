@@ -186,8 +186,8 @@
 <!-- SECTION: related -->
 ## Related
 
-- [HTTP Request](./http-request.md) – Lighter-weight option when JavaScript rendering isn't required
-- [Function](./function.md) – Post-process the script's result with custom JavaScript
+- [HTTP Request](/docs/http-request) – Lighter-weight option when JavaScript rendering isn't required
+- [Function](/docs/function) – Post-process the script's result with custom JavaScript
 
 <!-- /SECTION: related -->
 

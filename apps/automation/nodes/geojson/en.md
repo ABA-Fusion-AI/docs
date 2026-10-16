@@ -644,9 +644,8 @@ A closed polygon ring repeats the first coordinate as its final coordinate.
 <!-- SECTION: related -->
 ## Related
 
-- [HTTP Request](./http-request.md) - Retrieve GeoJSON from an API
-- [Function](./function.md) - Transform GeoJSON data
-- [Log](./log.md) - Inspect GeoJSON operation results
+- [HTTP Request](/docs/http-request) - Retrieve GeoJSON from an API
+- [Function](/docs/function) - Transform GeoJSON data
 
 <!-- /SECTION: related -->
 

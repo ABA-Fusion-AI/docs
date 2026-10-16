@@ -299,10 +299,10 @@ title: Search and retrieve NCBI BioCollections records
 <!-- SECTION: related -->
 ## Related
 
-- [NCBI Assembly](../ncbi-assembly/en.md) - Retrieve genome assembly records
-- [PubMed Search](../pub-med-search/en.md) - Search biomedical publications
-- [PMC](../pmc/en.md) - Retrieve biomedical literature from PubMed Central
-- [UniProt Knowledgebase](../uni-prot-kb/en.md) - Query protein and biological data
+- [NCBI Assembly](/docs/ncbi-assembly) - Retrieve genome assembly records
+- [PubMed Search](/docs/pub-med-search) - Search biomedical publications
+- [PMC](/docs/pmc) - Retrieve biomedical literature from PubMed Central
+- [UniProt Knowledgebase](/docs/uni-prot-kb) - Query protein and biological data
 
 <!-- /SECTION: related -->
 

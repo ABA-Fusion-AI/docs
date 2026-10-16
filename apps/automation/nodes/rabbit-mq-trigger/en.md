@@ -349,9 +349,9 @@ Consume orders from RabbitMQ, validate, and save to PostgreSQL.
 <!-- SECTION: related -->
 ## Related
 
-- [RabbitMQ Action](./rabbit-mq-action.md) - Publish messages and manage queues/exchanges
-- [Kafka Trigger](./kafka-trigger.md) - Consumer trigger for Apache Kafka
-- [Redis Subscribe](./redis-subscribe.md) - Lightweight Pub/Sub trigger
+- [RabbitMQ Action](/docs/rabbit-mq-action) - Publish messages and manage queues/exchanges
+- [Kafka Trigger](/docs/kafka-trigger) - Consumer trigger for Apache Kafka
+- [Redis Subscribe](/docs/redis-subscribe) - Lightweight Pub/Sub trigger
 
 <!-- /SECTION: related -->
 

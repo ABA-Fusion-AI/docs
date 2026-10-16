@@ -339,10 +339,10 @@ Endpoints:
 <!-- SECTION: related -->
 ## Related
 
-- [Google Scholar](../google-scholar/en.md) — Academic research and publication search
-- [Science Direct Search](../science-direct-search/en.md) — Scientific article search
-- [Random User](../random-user/en.md) — Generate test data
-- [HTTP Request](../http-request/en.md) — Custom API queries
+- [Google Scholar](/docs/google-scholar) — Academic research and publication search
+- [Science Direct Search](/docs/science-direct-search) — Scientific article search
+- [Random User](/docs/random-user) — Generate test data
+- [HTTP Request](/docs/http-request) — Custom API queries
 
 <!-- /SECTION: related -->
 

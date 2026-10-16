@@ -428,9 +428,8 @@ Possible causes:
 <!-- SECTION: related -->
 ## Related
 
-- [Webhook](./webhook.md) - Receive contact or form data
-- [Function](./function.md) - Validate and transform contact fields
-- [HTTP Request](./http-request.md) - Call unsupported GetResponse operations
+- [Function](/docs/function) - Validate and transform contact fields
+- [HTTP Request](/docs/http-request) - Call unsupported GetResponse operations
 
 <!-- /SECTION: related -->
 

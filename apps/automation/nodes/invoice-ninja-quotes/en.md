@@ -296,6 +296,7 @@ title: Generate and Email Estimate from Web Inquiry
 - [invoice-ninja-clients](/docs/invoice-ninja-clients)
 - [invoice-ninja-tasks](/docs/invoice-ninja-tasks)
 - [http-request](/docs/http-request)
+
 <!-- /SECTION: related -->
 
 ---

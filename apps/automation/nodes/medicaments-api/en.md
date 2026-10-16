@@ -570,10 +570,8 @@ The `baseUrl` parameter can be overridden when using another compatible API endp
 
 ## Related
 
-- [Function](./function.md) – Transform and process medication API data
-- [If](./if.md) – Route workflows based on API results
-- [HTTP Request](./http-request.md) – Integrate with other external APIs
-
+- [Function](/docs/function) – Transform and process medication API data
+- [HTTP Request](/docs/http-request) – Integrate with other external APIs
 ---
 
 ## Changelog

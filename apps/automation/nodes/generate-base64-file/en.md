@@ -369,9 +369,7 @@ title: Generate a CSV and inspect it
 <!-- SECTION: related -->
 ## Related
 
-- [Encode Base64](./encode-base64.md) – Encode an existing string or buffer
-- [Decode Base64](./decode-base64.md) – Turn a base64 string back into content
-- [HTTP Request](./http-request.md) – Upload the generated file to an external API
+- [HTTP Request](/docs/http-request) – Upload the generated file to an external API
 
 <!-- /SECTION: related -->
 

@@ -280,11 +280,10 @@ title: Search and retrieve NCBI Taxonomy records
 <!-- SECTION: related -->
 ## Related
 
-- [NCBI Gene](./ncbi-gene.md) - Retrieve gene records
-- [NCBI Assembly](./ncbi-assembly.md) - Retrieve genome assembly records
-- [NCBI BioProject](./ncbi-bioproject.md) - Retrieve project metadata
-- [NCBI BioSample](./ncbi-biosample.md) - Retrieve sample records
-- [NCBI SRA](./ncbi-sra.md) - Retrieve sequencing records
+- [NCBI Assembly](/docs/ncbi-assembly) - Retrieve genome assembly records
+- [NCBI BioProject](/docs/ncbi-bioproject) - Retrieve project metadata
+- [NCBI BioSample](/docs/ncbi-biosample) - Retrieve sample records
+- [NCBI SRA](/docs/ncbi-sra) - Retrieve sequencing records
 
 <!-- /SECTION: related -->
 

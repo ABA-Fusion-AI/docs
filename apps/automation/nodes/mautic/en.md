@@ -313,8 +313,8 @@ Use HTTPS for `host` because Basic authentication encodes credentials in Base64.
 <!-- SECTION: related -->
 ## Related
 
-- [HTTP Request](../http-request/en.md) – Make custom Mautic requests beyond this node's supported operations.
-- [Function](../function/en.md) – Prepare contact fields and process returned marketing data.
+- [HTTP Request](/docs/http-request) – Make custom Mautic requests beyond this node's supported operations.
+- [Function](/docs/function) – Prepare contact fields and process returned marketing data.
 
 <!-- /SECTION: related -->
 

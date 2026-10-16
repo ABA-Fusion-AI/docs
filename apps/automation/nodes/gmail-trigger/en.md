@@ -225,7 +225,7 @@ at `message.preview`. Earlier versions of this page documented a flat
 <!-- SECTION: related -->
 ## Related
 
-- [Gmail](../gmail/en.md) – Act on the messages this trigger emits
+- [Gmail](/docs/gmail) – Act on the messages this trigger emits
 
 <!-- /SECTION: related -->
 

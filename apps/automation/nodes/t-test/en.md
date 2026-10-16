@@ -332,7 +332,6 @@ title: Run one-sample, Welch two-sample, and paired t-tests
 - [ANOVA](/docs/anova) - Compare means across three or more sample groups
 - [KS Test](/docs/ks-test) - Test distribution shapes and two-sample distribution equality
 - [Normality](/docs/normality) - Verify whether sample data follows a normal distribution before running parametric t-tests
-- [Confidence Interval](/docs/confidence-interval) - Calculate upper and lower confidence bounds for sample means
 
 <!-- /SECTION: related -->
 

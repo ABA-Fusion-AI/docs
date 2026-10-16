@@ -281,11 +281,10 @@ title: Search and retrieve NCBI MedGen concepts
 <!-- SECTION: related -->
 ## Related
 
-- [NCBI ClinVar](./ncbi-clinvar.md) - Search clinical variant records
-- [NCBI GTR](./ncbi-gtr.md) - Search genetic test records
-- [NCBI Gene](./ncbi-gene.md) - Retrieve gene records and annotations
-- [NCBI dbVar](./ncbi-dbvar.md) - Search structural variation records
-- [PubMed Search](./pub-med-search.md) - Search related biomedical literature
+- [NCBI ClinVar](/docs/ncbi-clinvar) - Search clinical variant records
+- [NCBI GTR](/docs/ncbi-gtr) - Search genetic test records
+- [NCBI dbVar](/docs/ncbi-dbvar) - Search structural variation records
+- [PubMed Search](/docs/pub-med-search) - Search related biomedical literature
 
 <!-- /SECTION: related -->
 

@@ -288,11 +288,11 @@ title: Search and retrieve NCBI dbGaP records
 <!-- SECTION: related -->
 ## Related
 
-- [NCBI BioProject](./ncbi-bioproject.md) - Work with study and project records
-- [NCBI BioSample](./ncbi-biosample.md) - Work with biological sample records
-- [NCBI ClinVar](./ncbi-clinvar.md) - Search clinical variant records
-- [NCBI Genome](./ncbi-genome.md) - Retrieve genome records
-- [PubMed Search](./pub-med-search.md) - Search related biomedical literature
+- [NCBI BioProject](/docs/ncbi-bioproject) - Work with study and project records
+- [NCBI BioSample](/docs/ncbi-biosample) - Work with biological sample records
+- [NCBI ClinVar](/docs/ncbi-clinvar) - Search clinical variant records
+- [NCBI Genome](/docs/ncbi-genome) - Retrieve genome records
+- [PubMed Search](/docs/pub-med-search) - Search related biomedical literature
 
 <!-- /SECTION: related -->
 

@@ -248,9 +248,9 @@ Keep the SerpAPI API key in protected configuration or the runtime environment. 
 <!-- SECTION: related -->
 ## Related
 
-- [Amazon Product Search](../amazon-product-search/en.md) – Search another product marketplace.
-- [HTTP Request](../http-request/en.md) – Make custom API requests.
-- [Function](../function/en.md) – Prepare search text or process returned products.
+- [Amazon Product Search](/docs/amazon-product-search) – Search another product marketplace.
+- [HTTP Request](/docs/http-request) – Make custom API requests.
+- [Function](/docs/function) – Prepare search text or process returned products.
 
 <!-- /SECTION: related -->
 

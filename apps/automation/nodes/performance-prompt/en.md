@@ -293,10 +293,7 @@ It is intended to be a fetch-and-compile step that decouples prompt content and 
 
 ## Related
 
-- [LLM](./llm.md) – Send the compiled prompt to a language model
-- [Function](./function.md) – Build or transform the `variables` object before compilation
-- [If](./if.md) – Route workflows based on prompt content or fetch success
-
+- [Function](/docs/function) – Build or transform the `variables` object before compilation
 ---
 
 **---**

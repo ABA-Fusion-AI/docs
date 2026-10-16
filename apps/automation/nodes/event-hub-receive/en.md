@@ -296,9 +296,9 @@ Receive sensor events, enrich with a database lookup, and insert into MongoDB.
 <!-- SECTION: related -->
 ## Related
 
-- [Event Hub Send](./event-hub-send.md) - Publish events to an Azure Event Hub
-- [Event Hub Admin](./event-hub-admin.md) - Create and manage Event Hubs and consumer groups
-- [Kafka Trigger](./kafka-trigger.md) - Consume events from Apache Kafka topics
+- [Event Hub Send](/docs/event-hub-send) - Publish events to an Azure Event Hub
+- [Event Hub Admin](/docs/event-hub-admin) - Create and manage Event Hubs and consumer groups
+- [Kafka Trigger](/docs/kafka-trigger) - Consume events from Apache Kafka topics
 
 <!-- /SECTION: related -->
 

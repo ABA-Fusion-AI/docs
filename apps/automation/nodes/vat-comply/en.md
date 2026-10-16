@@ -264,10 +264,9 @@ title: Validate EU VAT numbers for B2B workflows
 <!-- SECTION: related -->
 ## Related
 
-- [Currency Converter](./currency-converter.md) — Convert invoice and settlement amounts
-- [Invoice Ninja](./invoice-ninja.md) — Generate and manage invoices after validation
-- [QuickBooks](./quickbooks.md) — Connect validated customer data to accounting workflows
-- [Log](./log.md) — Inspect validation results
+- [Currency Converter](/docs/currency-converter) — Convert invoice and settlement amounts
+- [Invoice Ninja](/docs/invoice-ninja) — Generate and manage invoices after validation
+- [QuickBooks](/docs/quickbooks) — Connect validated customer data to accounting workflows
 
 <!-- /SECTION: related -->
 

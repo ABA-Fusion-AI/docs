@@ -261,9 +261,8 @@ title: Check a webpage's historical availability
 <!-- SECTION: related -->
 ## Related
 
-- [HTTP Request](./http-request.md) — Retrieve or inspect a returned snapshot URL
-- [URL Encode](./url-encode.md) — Prepare URL values with special characters
-- [Log](./log.md) — Inspect availability results
+- [HTTP Request](/docs/http-request) — Retrieve or inspect a returned snapshot URL
+- [URL Encode](/docs/url-encode) — Prepare URL values with special characters
 
 <!-- /SECTION: related -->
 

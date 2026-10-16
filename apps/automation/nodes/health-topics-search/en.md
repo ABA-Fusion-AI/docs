@@ -173,7 +173,6 @@ return "diabetes";
 ## Related
 
 - [HTTP Request](/docs/http-request) – Fetch the full article content using the `url` field from the results
-- [AI Chat](/docs/ai-chat) – Summarize or explain returned health topics using an LLM
 - [Function](/docs/function) – Build or transform the search topic before passing it to this node
 
 <!-- /SECTION: related -->

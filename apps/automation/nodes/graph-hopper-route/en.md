@@ -296,7 +296,7 @@ title: Calculate a route between coordinate points
 
 - **Geospatial Utils** - Transform and analyze geospatial data
 - **GeoJSON** - Work with GeoJSON structures and geometry
-- [HTTP Request](../http-request/en.md) - Send generic HTTP requests
+- [HTTP Request](/docs/http-request) - Send generic HTTP requests
 
 <!-- /SECTION: related -->
 

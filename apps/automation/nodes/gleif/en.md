@@ -316,9 +316,9 @@ title: Search the Global LEI Index and inspect entity data
 <!-- SECTION: related -->
 ## Related
 
-- [Function](../function/en.md) — Filter or transform GLEIF entity data
-- [Restructure](../restructure/en.md) — Map entity records into a downstream schema
-- [Merge](../merge/en.md) — Combine results from multiple entity searches
+- [Function](/docs/function) — Filter or transform GLEIF entity data
+- [Restructure](/docs/restructure) — Map entity records into a downstream schema
+- [Merge](/docs/merge) — Combine results from multiple entity searches
 - Log — Inspect GLEIF responses during workflow development
 
 <!-- /SECTION: related -->

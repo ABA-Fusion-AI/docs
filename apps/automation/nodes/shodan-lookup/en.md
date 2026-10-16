@@ -247,10 +247,9 @@ title: Look up IP intelligence with InternetDB or Shodan API
 <!-- SECTION: related -->
 ## Related
 
-- [BinaryEdge IP Lookup](./binary-edge.md) — Query another IP intelligence provider
-- [AbuseIPDB](./abuse-ipdb.md) — Check abuse reports and reputation for an IP
-- [GreyNoise](./grey-noise.md) — Add internet-scanner and noise context
-- [IP Geolocation](./ip-geolocation.md) — Retrieve IP geolocation and network context
+- [BinaryEdge IP Lookup](/docs/binary-edge) — Query another IP intelligence provider
+- [AbuseIPDB](/docs/abuse-ipdb) — Check abuse reports and reputation for an IP
+- [GreyNoise](/docs/grey-noise) — Add internet-scanner and noise context
 
 <!-- /SECTION: related -->
 

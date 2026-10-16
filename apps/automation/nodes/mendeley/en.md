@@ -951,10 +951,8 @@ It is intended to retrieve and structure academic publication metadata for downs
 
 ## Related
 
-- [Function](./function.md) – Transform and process academic publication results
-- [If](./if.md) – Filter and route publications
-- [HTTP Request](./http-request.md) – Make additional HTTP requests
-
+- [Function](/docs/function) – Transform and process academic publication results
+- [HTTP Request](/docs/http-request) – Make additional HTTP requests
 ---
 
 ## Changelog

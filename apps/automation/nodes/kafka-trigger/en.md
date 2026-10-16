@@ -377,9 +377,9 @@ Consume messages from a Kafka topic and insert each one into PostgreSQL.
 <!-- SECTION: related -->
 ## Related
 
-- [Kafka Publish](./kafka-publish.md) - Publish messages to Kafka topics
-- [Redis Subscribe](./redis-subscribe.md) - Lightweight alternative for Pub/Sub triggers
-- [Function](./function.md) - Parse and transform incoming Kafka message payloads
+- [Kafka Publish](/docs/kafka-publish) - Publish messages to Kafka topics
+- [Redis Subscribe](/docs/redis-subscribe) - Lightweight alternative for Pub/Sub triggers
+- [Function](/docs/function) - Parse and transform incoming Kafka message payloads
 
 <!-- /SECTION: related -->
 

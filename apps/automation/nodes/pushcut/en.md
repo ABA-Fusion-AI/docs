@@ -252,9 +252,8 @@ title: Send Pushcut Notification on Event
 <!-- SECTION: related -->
 ## Related Nodes
 
-- [Webhook Trigger](/docs/webhook-trigger) – Trigger push notifications from external third-party events
-- [Log](/docs/log) – Inspect delivery receipts and debug error responses
-- [Filter](/docs/filter) – Conditionally trigger urgent push alerts based on severity
+- [Slack Action](/docs/slack-action) – Send automated notifications to Slack channels
+- [Discord Bot Send](/docs/discord-bot-send) – Send alert messages to Discord channels
 
 <!-- /SECTION: related -->
 

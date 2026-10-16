@@ -501,10 +501,8 @@ It is intended to provide direct, low-level access to ChromaDB collection and qu
 
 ## Related
 
-- [Function](./function.md) – Transform, flatten, or format query results
-- [If](./if.md) – Route workflows based on query results or heartbeat status
-- [HTTP Request](./http-request.md) – Make additional custom ChromaDB API calls
-
+- [Function](/docs/function) – Transform, flatten, or format query results
+- [HTTP Request](/docs/http-request) – Make additional custom ChromaDB API calls
 ---
 
 **---**

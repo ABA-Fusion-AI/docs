@@ -282,9 +282,9 @@ title: Search podcasts and episodes with Listen Notes
 <!-- SECTION: related -->
 ## Related
 
-- [News API](../news-api/en.md) - Search and retrieve news content
-- [GIPHY GIF Search](../giphy-gif-search/en.md) - Search media content and GIFs
-- [TV Maze](../tv-maze/en.md) - Search television shows and episodes
+- [News API](/docs/news-api) - Search and retrieve news content
+- [GIPHY GIF Search](/docs/giphy-gif-search) - Search media content and GIFs
+- [TV Maze](/docs/tv-maze) - Search television shows and episodes
 - **Log** - Inspect node output
 
 <!-- /SECTION: related -->

@@ -471,9 +471,7 @@ When an external webhook delivers a community event (such as a GitHub sponsorshi
 <!-- SECTION: related -->
 ## Related Nodes
 
-- [Webhook Trigger](/docs/webhook-trigger) – Ingest real-time event payloads from GitHub, Discord, or external services.
 - [HTTP Request](/docs/http-request) – Execute direct HTTP requests to complementary third-party services.
-- [If](/docs/if) – Branch workflows based on member scores, tags, or activity types.
 - [Function](/docs/function) – Format, transform, or filter member data before sending it to crowd.dev.
 
 <!-- /SECTION: related -->

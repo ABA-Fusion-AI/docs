@@ -383,10 +383,8 @@ It is intended to provide direct search and detail lookup access to Perenual's p
 
 ## Related
 
-- [Function](./function.md) – Extract `speciesId` or format care-guide fields
-- [If](./if.md) – Route workflows based on care requirements
-- [HTTP Request](./http-request.md) – Make additional custom Perenual API calls
-
+- [Function](/docs/function) – Extract `speciesId` or format care-guide fields
+- [HTTP Request](/docs/http-request) – Make additional custom Perenual API calls
 ---
 
 **---**

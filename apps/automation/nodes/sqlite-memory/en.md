@@ -138,6 +138,7 @@ backends before scaling up.
 - **Agent V2** — the node this attaches to.
 - **Memory** — in-process memory, for when durability is not needed at all.
 - **Postgres Memory**, **Redis Memory**, **MongoDB Memory** — durable *and*
+
   reachable from every worker.
 
 <!-- /SECTION: related -->

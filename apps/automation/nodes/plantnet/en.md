@@ -353,10 +353,8 @@ It is intended to provide a single-image, single-call plant identification step 
 
 ## Related
 
-- [Function](./function.md) – Transform or format identification results
-- [If](./if.md) – Route workflows based on match score or species
-- [HTTP Request](./http-request.md) – Make additional custom Pl@ntNet API calls
-
+- [Function](/docs/function) – Transform or format identification results
+- [HTTP Request](/docs/http-request) – Make additional custom Pl@ntNet API calls
 ---
 
 ## Changelog

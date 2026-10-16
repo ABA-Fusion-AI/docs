@@ -194,8 +194,8 @@ The `enrich → loop.next` edge is the **loop-back** that drives the iteration.
 <!-- SECTION: related -->
 ## Related
 
-- [Function](./function.md) – Transform each batch inside the loop body, or post-process the `done` result
-- [Merge](./merge.md) – Join parallel branches (different role from looping)
+- [Function](/docs/function) – Transform each batch inside the loop body, or post-process the `done` result
+- [Merge](/docs/merge) – Join parallel branches (different role from looping)
 
 <!-- /SECTION: related -->
 

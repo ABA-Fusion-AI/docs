@@ -887,10 +887,8 @@ Use the 'meanings' field for definitions and 'phonetics.audio' for pronunciation
 
 ## Related
 
-- [Function](./function.md) – Transform and process dictionary results
-- [If](./if.md) – Filter and route dictionary results
-- [HTTP Request](./http-request.md) – Make requests to external APIs
-
+- [Function](/docs/function) – Transform and process dictionary results
+- [HTTP Request](/docs/http-request) – Make requests to external APIs
 ---
 
 ## Changelog

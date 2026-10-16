@@ -277,11 +277,11 @@ title: Search and retrieve NCBI BioProject records
 <!-- SECTION: related -->
 ## Related
 
-- [NCBI Assembly](./ncbi-assembly.md) - Retrieve genome assembly records
-- [NCBI BioSample](./ncbi-biosample.md) - Work with biological sample records
-- [NCBI SRA](./ncbi-sra.md) - Retrieve sequencing read archive data
-- [PubMed Search](./pub-med-search.md) - Search related biomedical literature
-- [UniProtKB](./uni-prot-kb.md) - Retrieve protein and annotation data
+- [NCBI Assembly](/docs/ncbi-assembly) - Retrieve genome assembly records
+- [NCBI BioSample](/docs/ncbi-biosample) - Work with biological sample records
+- [NCBI SRA](/docs/ncbi-sra) - Retrieve sequencing read archive data
+- [PubMed Search](/docs/pub-med-search) - Search related biomedical literature
+- [UniProtKB](/docs/uni-prot-kb) - Retrieve protein and annotation data
 
 <!-- /SECTION: related -->
 

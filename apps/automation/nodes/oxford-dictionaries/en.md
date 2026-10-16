@@ -598,7 +598,6 @@ A workflow that retrieves definitions, extracts audio links, and logs clean resu
 <!-- SECTION: related -->
 ## Related Nodes
 
-- [Datamuse](/docs/datamuse) — Find synonyms, rhymes, and word associations
 - [OpenThesaurus](/docs/openthesaurus) — Query German synsets and thesaurus data
 - [LanguageTool](/docs/language-tool) — Grammar and spelling checking
 - [DeepL](/docs/deepl) — High-accuracy machine translation

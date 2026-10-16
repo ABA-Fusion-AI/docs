@@ -410,7 +410,6 @@ title: Search and retrieve curated stock images from Unsplash
 - [Pexels Image Search](/docs/pexels-image-search) — Search alternative curated stock photography from Pexels
 - [Pixabay Image Search](/docs/pixabay-image-search) — Search royalty-free photos, illustrations, and vector graphics
 - [Giphy GIF Search](/docs/giphy-gif-search) — Search animated GIFs and reaction stickers
-- [Google Images Search](/docs/google-images-search) — Search the web for images
 - [Function](/docs/function) — Format and customize image URLs before sending to other apps
 - [Discord Bot Send](/docs/discord-bot-send) — Post image cards into Discord channels
 

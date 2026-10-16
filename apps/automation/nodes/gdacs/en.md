@@ -791,11 +791,8 @@ Workflow builders should consider the sensitivity of any downstream processing w
 
 ## Related
 
-- [Function](./function.md) – Transform and process disaster events
-- [If](./if.md) – Filter and route disaster events
-- [HTTP Request](./http-request.md) – Make requests to external APIs
-- [Notification](./notification.md) – Send disaster alerts to users
-
+- [Function](/docs/function) – Transform and process disaster events
+- [HTTP Request](/docs/http-request) – Make requests to external APIs
 ---
 
 ## Changelog

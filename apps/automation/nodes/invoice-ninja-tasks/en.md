@@ -292,6 +292,7 @@ title: Sync Completed GitHub Issues to Billable Tasks
 - [invoice-ninja-quotes](/docs/invoice-ninja-quotes)
 - [invoice-ninja-clients](/docs/invoice-ninja-clients)
 - [http-request](/docs/http-request)
+
 <!-- /SECTION: related -->
 
 ---

@@ -302,9 +302,8 @@ This is expected and indicates that AbuseIPDB has no confirmed abuse reports for
 <!-- SECTION: related -->
 ## Related
 
-- [HTTP Request](./http-request.md) – Call external threat intelligence APIs
-- [Function](./function.md) – Process reputation scores
-- [If](./if.md) – Route workflows based on abuse confidence
+- [HTTP Request](/docs/http-request) – Call external threat intelligence APIs
+- [Function](/docs/function) – Process reputation scores
 
 <!-- /SECTION: related -->
 

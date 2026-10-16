@@ -291,10 +291,7 @@ title: Predict a protein structure with BioNeMo OpenFold2
 
 ## Related
 
-- [BioNeMo: MSA Search](../nvidia-bionemo-msa-search/en.md) - Prepare or search multiple sequence alignment data
-- [BioNeMo: AlphaFold2 Predict](../nvidia-bionemo-alphafold2-predict/en.md) - Run an alternative protein-structure prediction workflow
-- [BioNeMo: OpenFold3 Predict](../nvidia-bionemo-openfold3-predict/en.md) - Use the newer OpenFold3 prediction node
-- [Log](../log/en.md) - Inspect prediction responses during workflow development
+- [BioNeMo: OpenFold3 Predict](/docs/nvidia-bionemo-openfold3-predict) - Use the newer OpenFold3 prediction node
 
 <!-- /SECTION: related -->
 

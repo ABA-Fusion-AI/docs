@@ -169,9 +169,9 @@ The OAuth client must be granted the `https://www.googleapis.com/auth/cloud-plat
 <!-- SECTION: related -->
 ## Related
 
-- [Mistral Document AI](./mistral-doc.md) – Alternative OCR/table extraction via Mistral
-- [AWS Textract](./aws-textract.md) – Alternative OCR/table extraction via AWS
-- [Azure Document Intelligence](./azure-document-intelligence.md) – Alternative OCR/table extraction via Azure
+- [Mistral Document AI](/docs/mistral-doc) – Alternative OCR/table extraction via Mistral
+- [AWS Textract](/docs/aws-textract) – Alternative OCR/table extraction via AWS
+- [Azure Document Intelligence](/docs/azure-document-intelligence) – Alternative OCR/table extraction via Azure
 
 <!-- /SECTION: related -->
 

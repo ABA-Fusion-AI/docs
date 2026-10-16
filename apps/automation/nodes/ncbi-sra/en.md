@@ -279,11 +279,11 @@ title: Search and retrieve NCBI SRA records
 <!-- SECTION: related -->
 ## Related
 
-- [NCBI BioProject](./ncbi-bioproject.md) - Retrieve project metadata
-- [NCBI BioSample](./ncbi-biosample.md) - Retrieve sample records
-- [NCBI Assembly](./ncbi-assembly.md) - Retrieve genome assembly records
-- [NCBI Protein](./ncbi-protein.md) - Retrieve protein records
-- [PubMed Search](./pub-med-search.md) - Search related biomedical literature
+- [NCBI BioProject](/docs/ncbi-bioproject) - Retrieve project metadata
+- [NCBI BioSample](/docs/ncbi-biosample) - Retrieve sample records
+- [NCBI Assembly](/docs/ncbi-assembly) - Retrieve genome assembly records
+- [NCBI Protein](/docs/ncbi-protein) - Retrieve protein records
+- [PubMed Search](/docs/pub-med-search) - Search related biomedical literature
 
 <!-- /SECTION: related -->
 

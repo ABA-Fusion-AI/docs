@@ -280,11 +280,10 @@ title: Search and retrieve NCBI Protein Cluster records
 <!-- SECTION: related -->
 ## Related
 
-- [NCBI Protein](./ncbi-protein.md) - Retrieve individual protein records
-- [NCBI Gene](./ncbi-gene.md) - Retrieve gene records
-- [NCBI Assembly](./ncbi-assembly.md) - Retrieve genome assembly records
-- [NCBI BioProject](./ncbi-bioproject.md) - Retrieve project metadata
-- [UniProtKB](./uni-prot-kb.md) - Retrieve protein annotations and sequences
+- [NCBI Protein](/docs/ncbi-protein) - Retrieve individual protein records
+- [NCBI Assembly](/docs/ncbi-assembly) - Retrieve genome assembly records
+- [NCBI BioProject](/docs/ncbi-bioproject) - Retrieve project metadata
+- [UniProtKB](/docs/uni-prot-kb) - Retrieve protein annotations and sequences
 
 <!-- /SECTION: related -->
 

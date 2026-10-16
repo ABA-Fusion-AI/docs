@@ -279,11 +279,11 @@ title: Search and retrieve NCBI NLM Catalog records
 <!-- SECTION: related -->
 ## Related
 
-- [PubMed Search](./pub-med-search.md) - Search biomedical literature
-- [PMC](./pmc.md) - Retrieve PubMed Central content
-- [NCBI MeSH](./ncbi-mesh.md) - Search controlled biomedical vocabulary
-- [NCBI Books](./ncbi-books.md) - Search biomedical books and records
-- [NCBI BioProject](./ncbi-bioproject.md) - Work with study and project records
+- [PubMed Search](/docs/pub-med-search) - Search biomedical literature
+- [PMC](/docs/pmc) - Retrieve PubMed Central content
+- [NCBI MeSH](/docs/ncbi-mesh) - Search controlled biomedical vocabulary
+- [NCBI Books](/docs/ncbi-books) - Search biomedical books and records
+- [NCBI BioProject](/docs/ncbi-bioproject) - Work with study and project records
 
 <!-- /SECTION: related -->
 

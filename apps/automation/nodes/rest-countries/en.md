@@ -329,11 +329,9 @@ title: Lookup country information using REST Countries API
 ## Related
 
 - [GeoNames](/docs/geo-names) — Search worldwide geographical places and postal codes
-- [IP Geolocation](/docs/ip-geolocation) — Resolve IP addresses to country and coordinates
 - [Currency Converter](/docs/currency-converter) — Perform foreign exchange rate calculations
 - [HTTP Request](/docs/http-request) — Make custom API calls
 - [Function](/docs/function) — Transform and parse country results
-- [Log](/docs/log) — Inspect output structures in workflow console
 
 <!-- /SECTION: related -->
 

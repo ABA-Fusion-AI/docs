@@ -329,8 +329,8 @@ When a user posts `!bug <description>` in `#bug-reports`, automatically create a
 <!-- SECTION: related -->
 ## Related
 
-- [Discord Action](./discord-action.md) - Send messages, embeds, reactions, and DMs on Discord
-- [Slack Trigger](./slack-trigger.md) - Trigger workflows on Slack message events
+- [Discord Action](/docs/discord-action) - Send messages, embeds, reactions, and DMs on Discord
+- [Slack Trigger](/docs/slack-trigger) - Trigger workflows on Slack message events
 
 <!-- /SECTION: related -->
 

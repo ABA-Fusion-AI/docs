@@ -331,8 +331,7 @@ title: Manage Raindrop.io bookmarks and collections
 
 ## Related
 
-- [HTTP Request](./http-request.md) - Send requests to APIs that do not have a dedicated node
-- [Log](./log.md) - Inspect Raindrop.io responses during workflow development
+- [HTTP Request](/docs/http-request) - Send requests to APIs that do not have a dedicated node
 
 <!-- /SECTION: related -->
 
@@ -347,4 +346,3 @@ title: Manage Raindrop.io bookmarks and collections
 | 1.0.0 | 2026-09-09 | Expanded documentation and documented the example workflow operations |
 
 <!-- /SECTION: changelog -->
-

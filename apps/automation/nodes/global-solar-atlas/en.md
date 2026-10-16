@@ -222,8 +222,8 @@ title: Retrieve solar potential for a location and inspect the result
 <!-- SECTION: related -->
 ## Related
 
-- [Solar Calculator](../solar-calculator/en.md) - Calculate solar-position and solar-energy values
-- [Sunrise Sunset](../sunrise-sunset/en.md) - Retrieve sunrise and sunset information
+- [Solar Calculator](/docs/solar-calculator) - Calculate solar-position and solar-energy values
+- [Sunrise Sunset](/docs/sunrise-sunset) - Retrieve sunrise and sunset information
 
 <!-- /SECTION: related -->
 

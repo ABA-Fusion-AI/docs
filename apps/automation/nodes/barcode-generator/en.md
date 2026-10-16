@@ -430,7 +430,6 @@ Increase the `scale` parameter before generating the image.
 - Base64
 - QuickChart
 
-
 <!-- /SECTION: related -->
 
 ---

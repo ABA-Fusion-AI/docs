@@ -241,11 +241,11 @@ title: Search and retrieve NCBI conserved-domain records
 <!-- SECTION: related -->
 ## Related
 
-- [NCBI BioProject](./ncbi-bioproject.md) - Work with study and project records
-- [NCBI BioSample](./ncbi-biosample.md) - Work with biological sample records
-- [NCBI Assembly](./ncbi-assembly.md) - Retrieve genome assembly records
-- [UniProtKB](./uni-prot-kb.md) - Retrieve protein and annotation data
-- [PubMed Search](./pub-med-search.md) - Search related biomedical literature
+- [NCBI BioProject](/docs/ncbi-bioproject) - Work with study and project records
+- [NCBI BioSample](/docs/ncbi-biosample) - Work with biological sample records
+- [NCBI Assembly](/docs/ncbi-assembly) - Retrieve genome assembly records
+- [UniProtKB](/docs/uni-prot-kb) - Retrieve protein and annotation data
+- [PubMed Search](/docs/pub-med-search) - Search related biomedical literature
 
 <!-- /SECTION: related -->
 

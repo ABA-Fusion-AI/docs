@@ -305,10 +305,10 @@ title: Retrieve an NCBI genome assembly record
 <!-- SECTION: related -->
 ## Related
 
-- [PubMed Search](../pub-med-search/en.md) - Search biomedical publications
-- [PMC](../pmc/en.md) - Retrieve biomedical literature from PubMed Central
-- [UniProt Knowledgebase](../uni-prot-kb/en.md) - Query protein and genome-related data
-- [HTTP Request](../http-request/en.md) - Send generic HTTP requests
+- [PubMed Search](/docs/pub-med-search) - Search biomedical publications
+- [PMC](/docs/pmc) - Retrieve biomedical literature from PubMed Central
+- [UniProt Knowledgebase](/docs/uni-prot-kb) - Query protein and genome-related data
+- [HTTP Request](/docs/http-request) - Send generic HTTP requests
 
 <!-- /SECTION: related -->
 
