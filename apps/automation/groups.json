@@ -876,6 +876,8 @@
       {
         "name": "Files & Documents",
         "nodes": [
+          "write-file",
+          "read-file",
           "linkedin-profile",
           "file-size-converter",
           "html-to-pdf",
