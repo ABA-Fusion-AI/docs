@@ -43,7 +43,7 @@
 |-----------|------|----------|---------|-------------|
 | `file` | `file` | ✅ Yes | — | The file to read. **Choose file** opens a dialog: **From a step** picks a file an earlier step attached (e.g. *Webhook › invoice*); **Upload** uploads one into this workflow. |
 | `as` | `enum` | ✅ Yes | `text` | `text`: UTF-8 text. `json`: parsed JSON. `base64`: the bytes as base64 text. |
-| `maxBytes` | `number` | ✅ Yes | `10485760` (10 MB) | Largest file this step reads. A larger file fails the step without being read. |
+| `maxSizeMb` | `number` | ✅ Yes | `10` | Max size (MB): the largest file this step reads, in megabytes. A larger file fails the step without being read. |
 
 <!-- /SECTION: configuration -->
 
@@ -63,7 +63,7 @@
 **Error output:** the step fails on its error output, and the workflow keeps running, when:
 
 - the file is not available to this workflow: deleted, or another workflow's;
-- the file is larger than `maxBytes`;
+- the file is larger than **Max size (MB)**;
 - `as` is `json` and the file is not valid JSON.
 
 <!-- /SECTION: inputs-outputs -->
@@ -83,7 +83,7 @@
 ## Troubleshooting
 
 - **"File … is not available to this workflow"**: the file was deleted, removed with an old run, or belongs to another workflow. Pick it again or upload it again.
-- **"File … is larger than the … limit for reading."** Raise `maxBytes`, up to what the data can sensibly hold.
+- **"File … is larger than the … limit for reading."** Raise **Max size (MB)**, up to what the data can sensibly hold.
 - **"Choose a file to read."** The `file` setting is empty.
 
 <!-- /SECTION: troubleshooting -->
