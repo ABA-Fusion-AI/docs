@@ -42,8 +42,8 @@
 | Parameter | Type | Required | Default | Description |
 |-----------|------|----------|---------|-------------|
 | `name` | `string` | ✅ Yes | `file.txt` | The file's name, with its extension. Accepts expressions. |
-| `mimeType` | `string` | ✅ Yes | `text/plain` | The file's type, e.g. `text/csv`, `application/json`, `application/pdf`. |
-| `content` | `any` | ❌ No | — | What to write, usually an earlier step's output. |
+| `mimeType` | `string` | ❌ No | from the name | The file's type, e.g. `text/csv`. Left empty, it follows the name's extension (`report.xlsx` is an Excel file). |
+| `content` | `any` | ❌ No | — | What to write, usually an earlier step's output. Bytes (an Excel or PDF a step made) are written as they are, whatever `encoding` says. |
 | `encoding` | `enum` | ✅ Yes | `text` | `text`: written as UTF-8 (a value that is not text is written as JSON).<br>`base64`: decoded to the bytes it carries.<br>`json`: the value as formatted JSON. |
 
 <!-- /SECTION: configuration -->
@@ -59,16 +59,13 @@
 
 ```json
 {
-  "name": "report.csv",
-  "mimeType": "text/csv",
-  "size": 1024,
   "$files": {
     "file": { "id": "…", "name": "report.csv", "mimeType": "text/csv", "size": 1024 }
   }
 }
 ```
 
-`$files` belongs to the platform: the editor shows it as a file card you can download, and it cannot be edited. A later step picks the file as **Write file › file**.
+The output is the file. The editor shows it as a file card you can download; `$files` belongs to the platform and cannot be edited. A later step picks the file as **Write file › file**, and reads its details as `$files.file.name`, `.mimeType` and `.size`.
 
 **Error output:** the file is larger than the platform's file limit (25 MB unless your administrator changed it), or the worker has no database to store files in.
 
