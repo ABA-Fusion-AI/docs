@@ -878,6 +878,7 @@
         "nodes": [
           "write-file",
           "read-file",
+          "save-file",
           "linkedin-profile",
           "file-size-converter",
           "html-to-pdf",

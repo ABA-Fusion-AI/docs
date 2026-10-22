@@ -24,7 +24,7 @@
 
   > **Category:** Storage & Files&nbsp;&nbsp;|&nbsp;&nbsp;**Type:** Action Node
 
-  Reads a file into the data as text, parsed JSON, or base64. The file is one an earlier step attached (a webhook upload, a **Write file** output) or one you upload in the node's settings.
+  Reads a file into the data as text, parsed JSON, or base64. The file is one of your files (chosen in the settings) or one an earlier step attached (a webhook upload, a **Write file** output), chosen in expression mode.
 
 ### Use Cases
 
@@ -41,7 +41,7 @@
 
 | Parameter | Type | Required | Default | Description |
 |-----------|------|----------|---------|-------------|
-| `file` | `file` | ✅ Yes | — | The file to read. **Choose file** opens a dialog: **From a step** picks a file an earlier step attached (e.g. *Webhook › invoice*); **Upload** uploads one into this workflow. |
+| `file` | `file` | ✅ Yes | — | The file to read. **Choose file** opens your files: your drives, folders and files, with search; **Upload here** adds one. For a file an earlier step attached, switch the field to **expression** and pick it, e.g. `$files.invoice` of the Webhook step. |
 | `as` | `enum` | ✅ Yes | `text` | `text`: UTF-8 text. `json`: parsed JSON. `base64`: the bytes as base64 text. |
 | `maxSizeMb` | `number` | ✅ Yes | `10` | Max size (MB): the largest file this step reads, in megabytes. A larger file fails the step without being read. |
 
@@ -73,7 +73,7 @@
 <!-- SECTION: workflow-example -->
 ## Workflow Example
 
-**Webhook → Read file → Parse CSV**: a form posts a CSV as the field `rates`. In **Read file**, choose **From a step › Webhook › rates**, `as: text`. **Parse CSV** turns `{{ Read file.content }}` into rows.
+**Webhook → Read file → Parse CSV**: a form posts a CSV as the field `rates`. In **Read file**, switch `file` to expression mode and pick `$files.rates` of the Webhook step, `as: text`. **Parse CSV** turns `{{ Read file.content }}` into rows.
 
 <!-- /SECTION: workflow-example -->
 
@@ -82,7 +82,7 @@
 <!-- SECTION: troubleshooting -->
 ## Troubleshooting
 
-- **"File … is not available to this workflow"**: the file was deleted, removed with an old run, or belongs to another workflow. Pick it again or upload it again.
+- **"File … is not available to this workflow"**: the file was deleted, removed with an old run, or is someone else's. Pick it again or upload it again.
 - **"File … is larger than the … limit for reading."** Raise **Max size (MB)**, up to what the data can sensibly hold.
 - **"Choose a file to read."** The `file` setting is empty.
 
