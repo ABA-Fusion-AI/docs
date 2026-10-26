@@ -1,16 +1,34 @@
-<svg width="396" height="480" viewBox="0 0 396 480" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M362 83L279 241L362 399L396 380V102L362 83Z" fill="currentColor"/>
-    <path opacity="0.8" fill-rule="evenodd" clip-rule="evenodd" d="M362 83L196 102L111.5 241L196 380L362 399V83Z" fill="currentColor"/>
-    <path opacity="0.79" fill-rule="evenodd" clip-rule="evenodd" d="M27 83L0 95V387L27 399L196 241L27 83Z" fill="currentColor"/>
-    <path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" d="M26.6367 82.668L196.224 129.779V356.445L26.6367 399.112V82.668Z" fill="currentColor"/>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M196.313 154.666L124.305 143.11L196.313 61.332L268.143 143.11L196.313 154.666Z" fill="currentColor"/>
-    <path opacity="0.8" fill-rule="evenodd" clip-rule="evenodd" d="M268.143 143.11L196.224 154.843L124.305 143.11V61.332" fill="currentColor"/>
-    <path opacity="0.8" fill-rule="evenodd" clip-rule="evenodd" d="M196.313 326.223L124.305 339.557L196.313 409.779L268.143 339.557L196.313 326.223Z" fill="currentColor"/>
-    <path opacity="0.79" fill-rule="evenodd" clip-rule="evenodd" d="M196 0L124 38V143L196.224 122.667L196 0Z" fill="currentColor"/>
-    <path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" d="M196.224 180.443L124.305 188.266V293.104L196.224 301.332V180.443Z" fill="currentColor"/>
-    <path opacity="0.79" fill-rule="evenodd" clip-rule="evenodd" d="M196.224 357.334L124.305 339.301V442.364L196.224 480.001V357.334Z" fill="currentColor"/>
-    <path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" d="M268.143 339.301L196.224 357.339V480.001L268.143 442.364V339.301Z" fill="currentColor"/>
-    <path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" d="M196.224 180.443L268.143 188.266V293.104L196.224 301.332V180.443Z" fill="currentColor"/>
-    <path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" d="M196 0L268 38V143L196 123V0Z" fill="currentColor"/>
-    </svg>
-    
+<svg xmlns="http://www.w3.org/2000/svg" width="428" height="512" viewBox="0 0 428 512">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e25444;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #7b1d13;
+      }
+
+      .cls-3 {
+        fill: #58150d;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M378,99L295,257l83,158,34-19V118Z"/>
+  <path class="cls-2" d="M378,99L212,118,127.5,257,212,396l166,19V99Z"/>
+  <path class="cls-3" d="M43,99L16,111V403l27,12L212,257Z"/>
+  <path class="cls-1" d="M42.637,98.667l169.587,47.111V372.444L42.637,415.111V98.667Z"/>
+  <path class="cls-3" d="M212.313,170.667l-72.008-11.556,72.008-81.778,71.83,81.778Z"/>
+  <path class="cls-3" d="M284.143,159.111l-71.919,11.733-71.919-11.733V77.333"/>
+  <path class="cls-3" d="M212.313,342.222l-72.008,13.334,72.008,70.222,71.83-70.222Z"/>
+  <path class="cls-2" d="M212,16L140,54V159l72.224-20.333Z"/>
+  <path class="cls-2" d="M212.224,196.444l-71.919,7.823V309.105l71.919,8.228V196.444Z"/>
+  <path class="cls-2" d="M212.224,373.333L140.305,355.3V458.363L212.224,496V373.333Z"/>
+  <path class="cls-1" d="M284.143,355.3l-71.919,18.038V496l71.919-37.637V355.3Z"/>
+  <path class="cls-1" d="M212.224,196.444l71.919,7.823V309.105l-71.919,8.228V196.444Z"/>
+  <path class="cls-1" d="M212,16l72,38V159l-72-20V16Z"/>
+</svg>

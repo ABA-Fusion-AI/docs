@@ -1,11 +1,1 @@
-<svg width="548" height="552" viewBox="0 0 548 552" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M194.293 551.229H353.122L273.711 435.114L194.293 551.229Z" fill="currentColor"/>
-    <path d="M273.823 235.128L113.71 0V201.837L205.138 336.199L273.667 235.328L273.823 235.128Z" fill="currentColor"/>
-    <path d="M273.823 235.128L342.778 336.414L433.624 203.519V0L273.823 235.13" fill="currentColor"/>
-    <path d="M273.67 235.328L205.138 336.199L273.893 437.197L342.778 336.414L273.823 235.13L273.667 235.328" fill="currentColor"/>
-    <path d="M0 437.468H113.71V201.837L0 34.8379V437.468Z" fill="currentColor"/>
-    <path d="M0 0V34.8408L113.71 201.837V0H0Z" fill="currentColor"/>
-    <path d="M433.624 203.519V437.465H547.292V37.2631L433.624 203.519Z" fill="currentColor"/>
-    <path d="M547.289 0H433.624V203.519L547.292 37.2631V0" fill="currentColor"/>
-    </svg>
-    
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"><path d="M32.05 33.927L13.287 6.44v23.53l10.65 15.72 8.114-11.765" fill="#1a1918"/><path d="M32.05 33.927l8.013 11.867 10.65-15.518V6.44L32.05 33.927" fill="#ed9d4a"/><path d="M31.95 33.927l-8.013 11.765 8.013 11.765 8.013-11.765-8.013-11.765" fill="#ba7730"/><path d="M0 57.56h13.287V30.073L0 10.498V57.56" fill="#4cb2d4"/><path d="M0 6.44v4.057L13.287 29.97V6.44H0" fill="#1c82ad"/><path d="M50.713 30.276V57.56H64V10.802L50.713 30.276" fill="#c02439"/><path d="M64 6.44H50.713v23.734L64 10.7V6.44" fill="#8f212f"/></svg>

@@ -31,7 +31,7 @@
     "type": "agent",
     "description": "langchain agent",
     "slogan": "agent",
-    "icon": "icons/ai-agent.svg",
+    "icon": "icons/agent.svg",
     "integrations": {
       "automation": [
         "agent",
@@ -273,7 +273,7 @@
     "type": "tool",
     "description": "Azure IoT Hub - device management, telemetry ingestion, and cloud-to-device messaging",
     "slogan": "azure-iot-hub",
-    "icon": "icons/iot.svg",
+    "icon": "icons/azure-iot-hub.svg",
     "integrations": {
       "automation": [
         "io-t-hub-device-manager",
@@ -392,7 +392,7 @@
     "type": "tool",
     "description": "Azure IoT Hub - manage devices, send commands, and receive IoT telemetry data",
     "slogan": "azure-iothub",
-    "icon": "icons/iot.svg",
+    "icon": "icons/azure-iot-hub--azure-node-.svg",
     "integrations": {
       "automation": [
         "azure-io-t-hub"
@@ -605,7 +605,7 @@
     "type": "tool",
     "description": "Azure Event Hub - high-throughput event streaming and real-time data ingestion",
     "slogan": "azure-event-hub",
-    "icon": "icons/eventhub.svg",
+    "icon": "icons/azure-event-hub.svg",
     "integrations": {
       "automation": [
         "event-hub-admin",
@@ -1013,7 +1013,7 @@
     "type": "tool",
     "description": "Search Google Hotels by scraping results. Returns hotel listings with prices, ratings, and availability.",
     "slogan": "google-hotels-search",
-    "icon": "icons/google-hotels.svg",
+    "icon": "icons/google-hotels-search.svg",
     "integrations": {
       "automation": [
         "google-hotels-search"
@@ -1026,7 +1026,7 @@
     "type": "tool",
     "description": "Search Google Images by scraping results. Returns image URLs, titles, and metadata.",
     "slogan": "google-images-search",
-    "icon": "icons/google-images.svg",
+    "icon": "icons/google-images-search.svg",
     "integrations": {
       "automation": [
         "google-images-search"
@@ -1065,7 +1065,7 @@
     "type": "tool",
     "description": "Search Google News using SerpAPI. Returns news articles with titles, URLs, snippets, source, and timestamps.",
     "slogan": "google-news-search",
-    "icon": "icons/google-news.svg",
+    "icon": "icons/google-news-search.svg",
     "integrations": {
       "automation": [
         "google-news-search"
@@ -1078,7 +1078,7 @@
     "type": "tool",
     "description": "Search Google Patents by scraping results. Returns patent listings with titles, URLs, and metadata.",
     "slogan": "google-patents-search",
-    "icon": "icons/google-patents.svg",
+    "icon": "icons/google-patents-search.svg",
     "integrations": {
       "automation": [
         "google-patents-search"
@@ -1117,7 +1117,7 @@
     "type": "tool",
     "description": "Google Scholar - search academic papers, citations, and scholarly literature",
     "slogan": "google-scholar",
-    "icon": "icons/Google_Scholar_logo.svg",
+    "icon": "icons/google-scholar.svg",
     "integrations": {
       "automation": [
         "google-scholar"
@@ -1143,7 +1143,7 @@
     "type": "tool",
     "description": "Search Google Shopping by scraping results. Returns product listings with prices, titles, and URLs.",
     "slogan": "google-shopping-search",
-    "icon": "icons/google-shopping.svg",
+    "icon": "icons/google-shopping-search.svg",
     "integrations": {
       "automation": [
         "google-shopping-search"
@@ -1221,7 +1221,7 @@
     "type": "tool",
     "description": "Search Google Trends by scraping results. Returns trending topics and interest over time data.",
     "slogan": "google-trends-search",
-    "icon": "icons/google-trends.svg",
+    "icon": "icons/google-trends-search.svg",
     "integrations": {
       "automation": [
         "google-trends-search"
@@ -1234,7 +1234,7 @@
     "type": "tool",
     "description": "Search Google Videos by scraping results. Returns video listings with titles, URLs, and metadata.",
     "slogan": "google-videos-search",
-    "icon": "icons/google-videos.svg",
+    "icon": "icons/google-videos-search.svg",
     "integrations": {
       "automation": [
         "google-videos-search"
@@ -1247,7 +1247,7 @@
     "type": "tool",
     "description": "Google YouTube Data API - manage channels, playlists, videos, and analytics",
     "slogan": "google-you-tube-data",
-    "icon": "icons/youtube.svg",
+    "icon": "icons/google-you-tube-data.svg",
     "integrations": {
       "automation": [
         "google-you-tube-data"
@@ -1525,7 +1525,7 @@
     "type": "tool",
     "description": "Cohere chat node supporting Command R Plus, Command R, and other Cohere model.",
     "slogan": "ai-chat-cohere",
-    "icon": "icons/cohere.svg",
+    "icon": "icons/ai-chat-cohere.svg",
     "integrations": {
       "automation": [
         "ai-chat-cohere"
@@ -1538,7 +1538,7 @@
     "type": "tool",
     "description": "Deepseek chat node supporting Deepseek Chat, Deepseek Coder, and other Deepseek model.",
     "slogan": "ai-chat-deepseek",
-    "icon": "icons/deepseek.svg",
+    "icon": "icons/ai-chat-deepseek.svg",
     "integrations": {
       "automation": [
         "ai-chat-deepseek"
@@ -1577,7 +1577,7 @@
     "type": "tool",
     "description": "Groq chat node supporting Llama 3.1, Llama 3.3, and other Groq model with fast inference.",
     "slogan": "ai-chat-groq",
-    "icon": "icons/groq.svg",
+    "icon": "icons/ai-chat-groq.svg",
     "integrations": {
       "automation": [
         "ai-chat-groq"
@@ -1603,7 +1603,7 @@
     "type": "tool",
     "description": "Hyperbolic chat node supporting Qwen, DeepSeek, and other model via Hyperbolic API.",
     "slogan": "ai-chat-hyperbolic",
-    "icon": "icons/aichat.svg",
+    "icon": "icons/ai-chat-hyperbolic.svg",
     "integrations": {
       "automation": [
         "ai-chat-hyperbolic"
@@ -1681,7 +1681,7 @@
     "type": "tool",
     "description": "OpenRouter chat node supporting multiple AI model from various providers through a unified API.",
     "slogan": "ai-chat-openrouter",
-    "icon": "icons/openrouter.svg",
+    "icon": "icons/ai-chat-openrouter.svg",
     "integrations": {
       "automation": [
         "ai-chat-openrouter"
@@ -1707,7 +1707,7 @@
     "type": "tool",
     "description": "Together AI chat node supporting various open-source model like Llama, Mistral, and more.",
     "slogan": "ai-chat-together",
-    "icon": "icons/aichat.svg",
+    "icon": "icons/ai-chat-together.svg",
     "integrations": {
       "automation": [
         "ai-chat-together"
@@ -1733,7 +1733,7 @@
     "type": "tool",
     "description": "Unified AI chat node supporting multiple providers (OpenAI, Anthropic, Ollama, Google). Uses LangChain for compatibility and supports streaming, tools, and advanced features.",
     "slogan": "ai-chat",
-    "icon": "icons/aichat.svg",
+    "icon": "icons/ai-chat.svg",
     "integrations": {
       "automation": [
         "ai-chat"
@@ -2063,7 +2063,7 @@
     "type": "tool",
     "description": "Search Bing Copilot (AI chat) by scraping results. Returns AI-generated responses and search results.",
     "slogan": "bing-copilot-search",
-    "icon": "icons/bing-copilot.svg",
+    "icon": "icons/bing-copilot-search.svg",
     "integrations": {
       "automation": [
         "bing-copilot-search"
@@ -3224,7 +3224,7 @@
     "type": "tool",
     "description": "Azure Service Bus advanced messaging - queues, topics, subscriptions, and message routing",
     "slogan": "Service Bus Messaging",
-    "icon": "icons/servicebus.svg",
+    "icon": "icons/service-bus.svg",
     "integrations": {
       "automation": [
         "service-bus-queue",
@@ -3354,7 +3354,7 @@
     "type": "tool",
     "description": "Azure Blob Storage - upload, download, and manage binary large objects in the cloud",
     "slogan": "blob-storage",
-    "icon": "icons/azure-blob.svg",
+    "icon": "icons/blob-storage.svg",
     "integrations": {
       "automation": [
         "blob-storage"
@@ -3380,7 +3380,7 @@
     "type": "tool",
     "description": "Bill of Materials utilities - validate, compare, and analyze component lists",
     "slogan": "bom-utils",
-    "icon": "icons/factory.svg",
+    "icon": "icons/bom-utils.svg",
     "integrations": {
       "automation": [
         "bom-utils"
@@ -3485,7 +3485,7 @@
     "type": "tool",
     "description": "Apache Cassandra query executor - run CQL queries on Cassandra databases",
     "slogan": "cassandra-query",
-    "icon": "icons/cassandra.svg",
+    "icon": "icons/cassandra-query.svg",
     "integrations": {
       "automation": [
         "cosmos-cassandra-query"
@@ -3815,7 +3815,7 @@
     "type": "tool",
     "description": "Credit card validator - verify card numbers using the Luhn algorithm",
     "slogan": "credit-card-validator",
-    "icon": "icons/finance.svg",
+    "icon": "icons/credit-card-validator.svg",
     "integrations": {
       "automation": [
         "credit-card-validator"
@@ -3828,7 +3828,7 @@
     "type": "tool",
     "description": "Credit score estimator - calculate estimated credit scores from financial data",
     "slogan": "credit-score-estimator",
-    "icon": "icons/finance.svg",
+    "icon": "icons/credit-score-estimator.svg",
     "integrations": {
       "automation": [
         "credit-score-estimator"
@@ -3867,7 +3867,7 @@
     "type": "tool",
     "description": "Currency converter - convert between world currencies using live exchange rates",
     "slogan": "currency-converter",
-    "icon": "icons/finance.svg",
+    "icon": "icons/currency-converter.svg",
     "integrations": {
       "automation": [
         "currency-converter"
@@ -4026,7 +4026,7 @@
     "type": "tool",
     "description": "Debt consolidation calculator - compare loan options and monthly payment plans",
     "slogan": "debt-consolidation",
-    "icon": "icons/finance.svg",
+    "icon": "icons/debt-consolidation.svg",
     "integrations": {
       "automation": [
         "debt-consolidation"
@@ -4104,7 +4104,7 @@
     "type": "tool",
     "description": "Asset depreciation calculator - compute straight-line and declining balance depreciation",
     "slogan": "depreciation-calculator",
-    "icon": "icons/finance.svg",
+    "icon": "icons/depreciation-calculator.svg",
     "integrations": {
       "automation": [
         "depreciation-calculator"
@@ -4247,7 +4247,7 @@
     "type": "tool",
     "description": "Docker container management - create, start, stop, and manage Docker containers",
     "slogan": "docker",
-    "icon": "icons/code.svg",
+    "icon": "icons/docker.svg",
     "integrations": {
       "automation": [
         "docker"
@@ -4260,7 +4260,7 @@
     "type": "tool",
     "description": "Docker Hub - search repositories, get image tags, and manage container images",
     "slogan": "docker-hub",
-    "icon": "icons/code.svg",
+    "icon": "icons/docker-hub.svg",
     "integrations": {
       "automation": [
         "docker-hub"
@@ -4419,7 +4419,7 @@
     "type": "tool",
     "description": "Escrow payment calculator - estimate escrow amounts for mortgage payments",
     "slogan": "escrow-calculator",
-    "icon": "icons/finance.svg",
+    "icon": "icons/escrow-calculator.svg",
     "integrations": {
       "automation": [
         "escrow-calculator"
@@ -4471,7 +4471,7 @@
     "type": "tool",
     "description": "Exchange rate API - get live and historical currency exchange rates",
     "slogan": "exchangerate-api",
-    "icon": "icons/finance.svg",
+    "icon": "icons/exchangerate-api.svg",
     "integrations": {
       "automation": [
         "exchange-rate-api"
@@ -4601,7 +4601,7 @@
     "type": "tool",
     "description": "Financial Modeling Prep - stock prices, financial statements, and market data",
     "slogan": "financial-modeling-prep",
-    "icon": "icons/finance.svg",
+    "icon": "icons/financial-modeling-prep.svg",
     "integrations": {
       "automation": [
         "financial-modeling-prep"
@@ -4614,7 +4614,7 @@
     "type": "tool",
     "description": "Financial ratio analyzer - compute liquidity, profitability, and efficiency ratios",
     "slogan": "financial-ratio-analyzer",
-    "icon": "icons/finance.svg",
+    "icon": "icons/financial-ratio-analyzer.svg",
     "integrations": {
       "automation": [
         "financial-ratio-analyzer"
@@ -4692,7 +4692,7 @@
     "type": "tool",
     "description": "Frankfurter exchange rates - free currency conversion using ECB reference rates",
     "slogan": "frankfurter-exchange",
-    "icon": "icons/finance.svg",
+    "icon": "icons/frankfurter-exchange.svg",
     "integrations": {
       "automation": [
         "frankfurter-exchange"
@@ -4731,7 +4731,7 @@
     "type": "tool",
     "description": "FX hedging calculator - evaluate foreign exchange risk mitigation strategies",
     "slogan": "fx-hedging",
-    "icon": "icons/finance.svg",
+    "icon": "icons/fx-hedging.svg",
     "integrations": {
       "automation": [
         "fx-hedging"
@@ -4913,7 +4913,7 @@
     "type": "tool",
     "description": "GLEIF Legal Entity Identifier - lookup company LEI codes and corporate hierarchy",
     "slogan": "gleif",
-    "icon": "icons/finance.svg",
+    "icon": "icons/gleif.svg",
     "integrations": {
       "automation": [
         "gleif"
@@ -4965,7 +4965,7 @@
     "type": "tool",
     "description": "Apache Gremlin graph query - traverse and query graph databases",
     "slogan": "gremlin-query",
-    "icon": "icons/cosmosdb.svg",
+    "icon": "icons/gremlin-query.svg",
     "integrations": {
       "automation": [
         "cosmos-gremlin-query"
@@ -5421,7 +5421,7 @@
     "type": "tool",
     "description": "IoT Hub device management - send commands, receive telemetry, and manage IoT devices",
     "slogan": "iot-hub",
-    "icon": "icons/iot.svg",
+    "icon": "icons/iot-hub.svg",
     "integrations": {
       "automation": [
         "io-t-hub-device-manager",
@@ -6261,7 +6261,7 @@
     "type": "tool",
     "description": "MongoDB query executor - run find, aggregate, and other MongoDB queries",
     "slogan": "mongo-query",
-    "icon": "icons/cosmosdb.svg",
+    "icon": "icons/mongo-query.svg",
     "integrations": {
       "automation": [
         "cosmos-mongo-query"
@@ -8766,7 +8766,7 @@
     "type": "tool",
     "description": "Symptomator health checker - analyze symptoms and suggest possible conditions",
     "slogan": "symptomator",
-    "icon": "icons/medical.svg",
+    "icon": "icons/symptomator.svg",
     "integrations": {
       "automation": [
         "symptomator"
@@ -8792,7 +8792,7 @@
     "type": "tool",
     "description": "Table query engine - run SQL-like queries on tabular data",
     "slogan": "table-query",
-    "icon": "icons/cosmosdb.svg",
+    "icon": "icons/table-query.svg",
     "integrations": {
       "automation": [
         "cosmos-table-query"
