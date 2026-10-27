@@ -870,7 +870,7 @@
     "type": "tool",
     "description": "Google Classroom - manage courses, assignments, and student submissions",
     "slogan": "google-classroom",
-    "icon": "icons/Google.svg",
+    "icon": "icons/googleclassroom.svg",
     "integrations": {
       "automation": [
         "google-classroom"
@@ -974,7 +974,7 @@
     "type": "tool",
     "description": "Google Forms - create surveys, quizzes, and collect form responses",
     "slogan": "google-forms",
-    "icon": "icons/Google.svg",
+    "icon": "icons/googleForms.svg",
     "integrations": {
       "automation": [
         "google-forms"
@@ -4939,7 +4939,7 @@
     "type": "tool",
     "description": "GraphHopper routing - calculate driving, cycling, and walking routes with directions",
     "slogan": "graphhopper-route",
-    "icon": "icons/google-maps.svg",
+    "icon": "icons/graphhopperroute.svg",
     "integrations": {
       "automation": [
         "graph-hopper-route"
@@ -5981,7 +5981,7 @@
     "type": "tool",
     "description": "Mapbox mapping platform - geocoding, directions, and interactive map features",
     "slogan": "mapbox",
-    "icon": "icons/google-maps.svg",
+    "icon": "icons/mapbox.svg",
     "integrations": {
       "automation": [
         "mapbox"
@@ -6817,7 +6817,7 @@
     "type": "tool",
     "description": "OpenStreetMap - geocoding, reverse geocoding, and map data queries",
     "slogan": "openstreetmap",
-    "icon": "icons/google-maps.svg",
+    "icon": "icons/openstreetmap.svg",
     "integrations": {
       "automation": [
         "open-street-map"
@@ -8987,7 +8987,7 @@
     "type": "tool",
     "description": "TomTom maps and routing - geocoding, traffic, and turn-by-turn navigation",
     "slogan": "tomtom",
-    "icon": "icons/google-maps.svg",
+    "icon": "icons/tomtom.svg",
     "integrations": {
       "automation": [
         "tom-tom"
@@ -10068,7 +10068,7 @@
     "type": "tool",
     "description": "Contact management with Google Contacts",
     "slogan": "google-contacts-action",
-    "icon": "icons/Google.svg",
+    "icon": "icons/googlecontacts.png",
     "integrations": {
       "automation": [
         "google-contacts-action"
