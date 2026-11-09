@@ -34,11 +34,13 @@
       {
         "name": "Manual & Scheduled",
         "nodes": [
+          "schedule-trigger",
           "cron",
           "interval",
           "manual-trigger",
           "chat-trigger",
-          "chat-respond"
+          "chat-respond",
+          "error-trigger"
         ],
         "subgroups": []
       },
@@ -151,7 +153,9 @@
           "take",
           "merge",
           "switch",
-          "if-else"
+          "if-else",
+          "no-op",
+          "stop-and-error"
         ],
         "subgroups": []
       },
