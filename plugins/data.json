@@ -5820,7 +5820,7 @@
     "type": "tool",
     "description": "Connect contacts, campaigns, and marketing automation workflows to ActiveCampaign through the included API connector.",
     "slogan": "activecampaign",
-    "icon": "icons/activecampaign.svg",
+    "icon": "icons/activeCampaign.svg",
     "integrations": {
       "automation": [
         "activecampaign"
