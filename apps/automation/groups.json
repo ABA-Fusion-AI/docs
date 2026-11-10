@@ -39,8 +39,7 @@
           "interval",
           "manual-trigger",
           "chat-trigger",
-          "chat-respond",
-          "error-trigger"
+          "chat-respond"
         ],
         "subgroups": []
       },
@@ -153,9 +152,21 @@
           "take",
           "merge",
           "switch",
-          "if-else",
-          "no-op",
-          "stop-and-error"
+          "if-else"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "Workflow Control",
+        "nodes": [
+          "error-trigger",
+          "raise-error",
+          "stop-workflow",
+          "pause-workflow",
+          "resume-workflow",
+          "start-workflow",
+          "workflow-info",
+          "no-op"
         ],
         "subgroups": []
       },

@@ -1,12 +1,12 @@
 ---
 node_id: "error-trigger"
 title: "Error Trigger"
-description: "Starts this workflow when a workflow that uses it as its error workflow fails."
+description: "Starts this workflow when a workflow it watches fails."
 category: "triggers"
-subcategory: "Error Handling"
+subcategory: "Workflow Control"
 version: "1.0.0"
 language: "en"
-last_updated: "2026-11-09"
+last_updated: "2026-11-10"
 author: "Fusion Team"
 tags:
   - trigger
@@ -14,28 +14,30 @@ tags:
   - alerting
   - monitoring
 related_nodes:
-  - stop-and-error
-  - schedule-trigger
-  - no-op
+  - raise-error
+  - stop-workflow
+  - workflow-info
 ---
 
 <!-- SECTION: overview -->
 # Error Trigger
 
-> **Category:** Triggers &nbsp;&nbsp;|&nbsp;&nbsp;**Type:** Trigger Node
+> **Category:** Workflow Control &nbsp;&nbsp;|&nbsp;&nbsp;**Type:** Trigger Node
 
-Build one workflow that hears about failures in others — and alert someone, open a ticket or retry. A workflow that holds an **Error Trigger** is an **error workflow**. Any workflow can name it in its settings, under **Error workflow**; when that workflow fails, the Error Trigger starts with a report of what went wrong.
+Build one workflow that hears about failures in others, then alert someone, open a ticket or start a fallback. Pick the workflows to watch; when one of them fails, the Error Trigger starts with a report of what went wrong.
 
 ### What counts as a failure
 
-- **A node error nothing handles:** a node emits on its `error` output and that output is **not connected**. Connect the error output to handle it yourself, and the error workflow is not told.
-- **The workflow failing:** a **Stop and Error** node, a node that cannot be set up, or a crash that stops the workflow.
+- **A node error nothing handles:** a node emits on its `error` output and that output is **not connected**. The watched workflow keeps running. Connect the error output to handle it yourself, and nothing is reported.
+- **The workflow failing:** a **Raise Error** node, a node that cannot be set up, or a crash that stops the workflow.
+
+Stopping a workflow on purpose (the Stop button, or a **Stop Workflow** node) is not a failure.
 
 ### Use Cases
 
 - **Alerting:** post every failure to Slack or email with the workflow, node and message.
-- **One place for all errors:** many workflows name the same error workflow.
-- **Tickets:** open an issue for each workflow stopped by a Stop and Error.
+- **One place for many workflows:** one Error Trigger can watch them all.
+- **Fallbacks:** when the main sync fails, **Start Workflow** a backup one.
 
 <!-- /SECTION: overview -->
 
@@ -44,13 +46,18 @@ Build one workflow that hears about failures in others — and alert someone, op
 <!-- SECTION: configuration -->
 ## Configuration
 
-The node has no settings. To use it:
+### Parameters
 
-1. Create a workflow (say *Alerts*) starting with an **Error Trigger**, followed by whatever should happen.
-2. **Start** it. It must be running to hear about failures.
-3. Open the settings (⚙) of each workflow to watch, and pick *Alerts* under **Error workflow**. Only workflows with an Error Trigger are offered.
+| Parameter | Type | Required | Default | Description |
+|-----------|------|----------|---------|-------------|
+| `workflows` | list of workflows | Yes | — | The workflows to watch. Each is picked from a searchable list of the workflows you can access. |
 
-A workflow cannot be its own error workflow. Failures are limited to 10 reports per workflow per minute, so a node failing on every tick of a fast trigger cannot flood the error workflow.
+### Good to know
+
+- **This workflow must be running** to hear about failures. A report sent while it is stopped is lost.
+- **Access:** only workflows you can access are offered. When the workflow starts, each watched workflow is checked again as its owner; any they cannot access is left out, and the Error Trigger says so on its error output.
+- **Tenant:** an Error Trigger only ever hears workflows in its own tenant.
+- **Rate limit:** at most 10 reports a minute per watched workflow, so a node failing on every tick of a fast trigger cannot flood you.
 
 <!-- /SECTION: configuration -->
 
@@ -68,7 +75,7 @@ This is a trigger node — it has no data inputs.
 | Output | Type | Description |
 |--------|------|-------------|
 | `success` | `object` | One report per failure. |
-| `error` | `object` | Emitted if the engine cannot deliver reports at all. |
+| `error` | `object` | Watched workflows that were left out (no access), or an engine that cannot deliver reports. |
 
 ### Output Schema
 
@@ -79,7 +86,7 @@ This is a trigger node — it has no data inputs.
     "runId": "4f1c…",
     "sessionId": "session-1762689600000-…",
     "mode": "node",
-    "time": "2026-11-09T12:00:00.000Z",
+    "time": "2026-11-10T12:00:00.000Z",
     "error": { "name": "AxiosError", "message": "Request failed with status code 502", "status": 502 },
     "lastNodeExecuted": "Fetch orders",
     "node": { "id": "node-3", "label": "Fetch orders", "type": "http-request" }
@@ -91,8 +98,8 @@ This is a trigger node — it has no data inputs.
 |-------|------|-------------|
 | `workflow.id` / `workflow.name` | `string` | The workflow that failed. |
 | `execution.mode` | `node \| workflow` | `node`: a node error nothing handled; the workflow keeps running. `workflow`: the workflow itself failed and stopped. |
-| `execution.error` | `object` | The error: always a `message`, plus whatever else it carried (`name`, `status`, `code`, or a Stop and Error's `details`). |
-| `execution.node` | `object \| null` | The node that failed. `null` for a workflow failure no single node caused. |
+| `execution.error` | `object` | Always a `message`, plus whatever else the error carried (`name`, `status`, `code`, or a Raise Error's `details`). |
+| `execution.node` | `object \| null` | The node that failed; `null` for a failure no single node caused. |
 | `execution.lastNodeExecuted` | `string \| null` | That node's label. |
 | `execution.runId`, `sessionId`, `time` | `string` | Which run and item, and when. |
 
@@ -105,15 +112,15 @@ This is a trigger node — it has no data inputs.
 
 ### How it flows
 
-1. **Error Trigger:** fires with the report.
-2. **Function:** builds the message from `workflow.name`, `execution.error.message` and `execution.lastNodeExecuted`.
-3. **Slack / Email:** sends it.
+1. **Error Trigger** watching *Orders sync* and *Billing* fires with the report.
+2. **Function** builds a message from `workflow.name`, `execution.error.message` and `execution.lastNodeExecuted`.
+3. **Slack / Email** sends it.
 
 ### Common Patterns
 
 - **Alert:** Error Trigger → Function (format) → Slack
-- **Only workflow stops:** Error Trigger → If/Else (`execution.mode == "workflow"`) → Email
-- **Ticket:** Error Trigger → HTTP Request (issue tracker API)
+- **Only stops:** Error Trigger → If/Else (`execution.mode == "workflow"`) → Email
+- **Fallback:** Error Trigger → Start Workflow (backup)
 
 <!-- /SECTION: workflow-example -->
 
@@ -125,15 +132,15 @@ This is a trigger node — it has no data inputs.
 ### Common Issues
 
 #### Nothing arrives
-- **Cause:** The error workflow is not running. Reports are delivered live; one sent while it is stopped is lost.
-- **Solution:** Start the error workflow. The settings dialog warns when the chosen one is not running.
+- **Cause:** This workflow is not running. Reports are delivered live.
+- **Solution:** Start it.
 
 #### A handled error did not arrive
-- **Cause:** The failing node's `error` output is connected, so the error is handled there.
-- **Solution:** That is by design. Leave the error output unconnected to report it, or end your handler with **Stop and Error**.
+- **Cause:** The failing node's `error` output is connected, so the error is handled there. That is by design.
 
-#### "That workflow has no Error Trigger node"
-- **Solution:** Add an Error Trigger to the workflow you want to pick, save it, then choose it again.
+#### "Not watching N workflow(s)"
+- **Cause:** This workflow's owner cannot access them, or they were deleted.
+- **Solution:** Share them with the owner (through a project), or remove them from the list.
 
 #### Some reports are missing during a burst
 - **Cause:** More than 10 failures in a minute from one workflow; the rest are dropped.
@@ -145,8 +152,9 @@ This is a trigger node — it has no data inputs.
 <!-- SECTION: related -->
 ## Related
 
-- [Stop and Error](/docs/stop-and-error) – Fail a workflow on purpose, with your own message
-- [No Operation](/docs/no-op) – End a branch on purpose
+- [Raise Error](/docs/raise-error) – Fail a workflow on purpose, with your own message
+- [Stop Workflow](/docs/stop-workflow) – Stop a workflow without an error
+- [Workflow Info](/docs/workflow-info) – Read a workflow's status
 
 <!-- /SECTION: related -->
 
@@ -157,6 +165,6 @@ This is a trigger node — it has no data inputs.
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0.0 | 2026-11-09 | Initial release |
+| 1.0.0 | 2026-11-10 | Initial release |
 
 <!-- /SECTION: changelog -->

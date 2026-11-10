@@ -1,9 +1,9 @@
 ---
-node_id: "stop-and-error"
-title: "Stop and Error"
-description: "Stops the workflow and marks it failed with your error."
+node_id: "raise-error"
+title: "Raise Error"
+description: "Fails the workflow with your error: it stops and stays stopped."
 category: "orchestration"
-subcategory: "Flow Control"
+subcategory: "Workflow Control"
 version: "1.0.0"
 language: "en"
 last_updated: "2026-11-09"
@@ -20,17 +20,19 @@ related_nodes:
 ---
 
 <!-- SECTION: overview -->
-# Stop and Error
+# Raise Error
 
 > **Category:** Orchestration &nbsp;&nbsp;|&nbsp;&nbsp;**Type:** Action Node
 
-Stop the whole workflow, on purpose, with an error you write. When an item reaches this node, the workflow fails: every trigger stops, its status turns to **error** with your message, and it **stays stopped** until someone runs it again. If the workflow has an **error workflow**, that workflow's Error Trigger is told.
+Fail the whole workflow, on purpose, with an error you write: the node throws. When an item reaches it, the workflow fails: every trigger stops, its status turns to **error** with your message, and it **stays stopped** until someone runs it again. Error Triggers watching the workflow are told.
+
+To stop a workflow **without** an error, use [Stop Workflow](/docs/stop-workflow).
 
 ### Use Cases
 
 - **Guard rails:** stop when data is impossible (a negative total, a missing customer id).
 - **Give up after a failure:** connect a node's error output here to stop the workflow instead of carrying on.
-- **Custom errors for alerting:** send a structured error (a code, a customer, a link) to your error workflow.
+- **Custom errors for alerting:** send a structured error (a code, a customer, a link) to the Error Triggers watching this workflow.
 
 <!-- /SECTION: overview -->
 
@@ -45,7 +47,7 @@ Stop the whole workflow, on purpose, with an error you write. When an item reach
 |-----------|------|----------|---------|-------------|
 | `errorType` | `message \| object` | Yes | `message` | Fail with a text, or with an object. |
 | `message` | `string` | message | — | The error message. Supports expressions, e.g. `Order {{ $node.Webhook.body.id }} has a negative total`. |
-| `errorObject` | `object` | object | — | The error as an object, e.g. `{ "code": "E42", "message": "Out of stock" }`. Its `message` becomes the workflow's error; the whole object reaches the error workflow as `details`. Supports expressions. |
+| `errorObject` | `object` | object | — | The error as an object, e.g. `{ "code": "E42", "message": "Out of stock" }`. Its `message` becomes the workflow's error; the whole object reaches watching Error Triggers as `details`. Supports expressions. |
 
 <!-- /SECTION: configuration -->
 
@@ -70,7 +72,7 @@ Stop the whole workflow, on purpose, with an error you write. When an item reach
 
 ```json
 {
-  "name": "StopAndError",
+  "name": "RaiseError",
   "message": "Out of stock",
   "details": { "code": "E42", "message": "Out of stock" }
 }
@@ -89,13 +91,13 @@ Stop the whole workflow, on purpose, with an error you write. When an item reach
 
 1. **Webhook** receives an order.
 2. **If/Else** checks `total >= 0`.
-3. **false →** **Stop and Error** with `Order {{ $node.Webhook.body.id }} has a negative total`.
-4. The workflow stops with that message; the error workflow posts it to Slack.
+3. **false →** **Raise Error** with `Order {{ $node.Webhook.body.id }} has a negative total`.
+4. The workflow stops with that message; an Error Trigger watching it posts it to Slack.
 
 ### Common Patterns
 
-- **Validate then stop:** Trigger → If/Else → (false) Stop and Error
-- **Stop on a failed call:** HTTP Request → (error) Stop and Error
+- **Validate then fail:** Trigger → If/Else → (false) Raise Error
+- **Fail on a failed call:** HTTP Request → (error) Raise Error
 
 <!-- /SECTION: workflow-example -->
 
@@ -107,7 +109,7 @@ Stop the whole workflow, on purpose, with an error you write. When an item reach
 ### Common Issues
 
 #### The workflow does not restart on its own
-- **Cause:** By design. A workflow stopped by Stop and Error is kept stopped, so it cannot fail and restart forever.
+- **Cause:** By design. A workflow failed by Raise Error is kept stopped, so it cannot fail and restart forever.
 - **Solution:** Fix the cause, then run it again.
 
 #### Items after the first did nothing
@@ -123,7 +125,8 @@ Stop the whole workflow, on purpose, with an error you write. When an item reach
 <!-- SECTION: related -->
 ## Related
 
-- [Error Trigger](/docs/error-trigger) – Hear about the stop in another workflow
+- [Error Trigger](/docs/error-trigger) – Hear about the failure in another workflow
+- [Stop Workflow](/docs/stop-workflow) – Stop a workflow without an error
 - [If/Else](/docs/if-else) – Decide when to stop
 - [No Operation](/docs/no-op) – End a branch without stopping anything
 

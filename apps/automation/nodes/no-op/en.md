@@ -3,7 +3,7 @@ node_id: "no-op"
 title: "No Operation"
 description: "Does nothing: passes each item through unchanged."
 category: "orchestration"
-subcategory: "Flow Control"
+subcategory: "Workflow Control"
 version: "1.0.0"
 language: "en"
 last_updated: "2026-11-09"
@@ -13,7 +13,7 @@ tags:
   - flow control
   - placeholder
 related_nodes:
-  - stop-and-error
+  - stop-workflow
   - if-else
   - merge
 ---
@@ -89,7 +89,7 @@ Nothing can go wrong in this node: it does nothing.
 <!-- SECTION: related -->
 ## Related
 
-- [Stop and Error](/docs/stop-and-error) – Stop the workflow instead
+- [Stop Workflow](/docs/stop-workflow) – Stop the workflow instead
 - [If/Else](/docs/if-else) – Split items into branches
 
 <!-- /SECTION: related -->
