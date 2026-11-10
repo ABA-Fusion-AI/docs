@@ -34,6 +34,7 @@
       {
         "name": "Manual & Scheduled",
         "nodes": [
+          "schedule-trigger",
           "cron",
           "interval",
           "manual-trigger",
@@ -152,6 +153,20 @@
           "merge",
           "switch",
           "if-else"
+        ],
+        "subgroups": []
+      },
+      {
+        "name": "Workflow Control",
+        "nodes": [
+          "error-trigger",
+          "raise-error",
+          "stop-workflow",
+          "pause-workflow",
+          "resume-workflow",
+          "start-workflow",
+          "workflow-info",
+          "no-op"
         ],
         "subgroups": []
       },
