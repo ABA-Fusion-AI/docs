@@ -110,6 +110,7 @@
           "respond-to-webhook",
           "microsoft-excel-webhook",
           "aws-dynamo-db-trigger",
+          "mongodb-v2-trigger",
           "google-chat-message-trigger",
           "google-sheets-trigger",
           "clickup-trigger",
@@ -183,7 +184,9 @@
       {
         "name": "Iteration",
         "nodes": [
-          "loop"
+          "loop",
+          "split-out",
+          "accumulate"
         ],
         "subgroups": []
       },
@@ -714,6 +717,7 @@
           "cosmos-table-manage",
           "aws-dynamo-db",
           "mongodb-action",
+          "mongodb-v2",
           "cosmos-upsert",
           "cosmos-database",
           "cosmos-change-feed",

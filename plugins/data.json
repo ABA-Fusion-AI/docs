@@ -1169,12 +1169,14 @@
     "id": "mongodb",
     "name": "MongoDB",
     "type": "tool",
-    "description": "Execute MongoDB operations; find, insert, update, delete, aggregate, and count documents.",
+    "description": "Execute MongoDB operations; find, insert, update, delete, aggregate, bulk write and transactions, and start workflows when documents change.",
     "slogan": "mongodb",
     "icon": "icons/mongodb.svg",
     "integrations": {
       "automation": [
-        "mongodb-action"
+        "mongodb-action",
+        "mongodb-v2",
+        "mongodb-v2-trigger"
       ]
     }
   },

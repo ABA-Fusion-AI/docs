@@ -1,0 +1,231 @@
+{
+  "name": "Split an order into line items and total them",
+  "nodes": [
+    {
+      "id": "trigger",
+      "type": "trigger",
+      "position": {
+        "x": 80,
+        "y": 200
+      },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        }
+      }
+    },
+    {
+      "id": "order",
+      "type": "action",
+      "position": {
+        "x": 260,
+        "y": 200
+      },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "function",
+        "label": "Order",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "parameters": {
+          "code": "return { orderId: \"ORD-1001\", customer: { name: \"Alice\" }, lines: [\n  { sku: \"A-1\", qty: 2, price: 9.5 },\n  { sku: \"B-7\", qty: 1, price: 24 },\n  { sku: \"C-3\", qty: 4, price: 3.25 }\n] };"
+        }
+      }
+    },
+    {
+      "id": "split",
+      "type": "utility",
+      "position": {
+        "x": 440,
+        "y": 200
+      },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "split-out",
+        "label": "Split Out",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "parameters": {
+          "list": "{{ outputs.Order.success.lines }}",
+          "keepInputFields": "Selected",
+          "fieldsToKeep": [
+            "orderId"
+          ]
+        }
+      }
+    },
+    {
+      "id": "line-total",
+      "type": "action",
+      "position": {
+        "x": 620,
+        "y": 200
+      },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "function",
+        "label": "Line Total",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "parameters": {
+          "code": "return { ...input, total: input.qty * input.price };"
+        }
+      }
+    },
+    {
+      "id": "accumulate",
+      "type": "utility",
+      "position": {
+        "x": 800,
+        "y": 200
+      },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "accumulate",
+        "label": "Accumulate",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "parameters": {
+          "combine": "Selected Fields",
+          "fields": [
+            {
+              "field": "sku",
+              "outputName": "skus"
+            },
+            {
+              "field": "total",
+              "outputName": "lineTotals"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "log",
+      "type": "display",
+      "position": {
+        "x": 980,
+        "y": 200
+      },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        }
+      }
+    }
+  ],
+  "connections": [
+    {
+      "id": "xy-edge__triggersuccess-orderinput",
+      "type": "directed",
+      "source": "trigger",
+      "target": "order",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    },
+    {
+      "id": "xy-edge__ordersuccess-splitinput",
+      "type": "directed",
+      "source": "order",
+      "target": "split",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    },
+    {
+      "id": "xy-edge__splitsuccess-line-totalinput",
+      "type": "directed",
+      "source": "split",
+      "target": "line-total",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    },
+    {
+      "id": "xy-edge__line-totalsuccess-accumulateinput",
+      "type": "directed",
+      "source": "line-total",
+      "target": "accumulate",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    },
+    {
+      "id": "xy-edge__accumulatesuccess-loginput",
+      "type": "directed",
+      "source": "accumulate",
+      "target": "log",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    }
+  ]
+}
