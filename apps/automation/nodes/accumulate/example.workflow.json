@@ -1,0 +1,225 @@
+{
+  "name": "Check every user and collect the results in order",
+  "nodes": [
+    {
+      "id": "trigger",
+      "type": "trigger",
+      "position": {
+        "x": 80,
+        "y": 200
+      },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        }
+      }
+    },
+    {
+      "id": "users",
+      "type": "action",
+      "position": {
+        "x": 260,
+        "y": 200
+      },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "function",
+        "label": "Users",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "parameters": {
+          "code": "return [\n  { id: 1, email: \"a@example.com\" },\n  { id: 2, email: \"not-an-email\" },\n  { id: 3, email: \"c@example.com\" }\n];"
+        }
+      }
+    },
+    {
+      "id": "split",
+      "type": "utility",
+      "position": {
+        "x": 440,
+        "y": 200
+      },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "split-out",
+        "label": "Split Out",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "parameters": {}
+      }
+    },
+    {
+      "id": "check",
+      "type": "action",
+      "position": {
+        "x": 620,
+        "y": 200
+      },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "function",
+        "label": "Check Email",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "parameters": {
+          "code": "return { id: input.id, valid: /^[^@\\s]+@[^@\\s]+$/.test(input.email) };"
+        }
+      }
+    },
+    {
+      "id": "accumulate",
+      "type": "utility",
+      "position": {
+        "x": 800,
+        "y": 200
+      },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "accumulate",
+        "label": "Accumulate",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "parameters": {
+          "combine": "All Items",
+          "outputField": "results",
+          "waitForMissingItems": 60
+        }
+      }
+    },
+    {
+      "id": "log",
+      "type": "display",
+      "position": {
+        "x": 980,
+        "y": 200
+      },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        }
+      }
+    }
+  ],
+  "connections": [
+    {
+      "id": "xy-edge__triggersuccess-usersinput",
+      "type": "directed",
+      "source": "trigger",
+      "target": "users",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    },
+    {
+      "id": "xy-edge__userssuccess-splitinput",
+      "type": "directed",
+      "source": "users",
+      "target": "split",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    },
+    {
+      "id": "xy-edge__splitsuccess-checkinput",
+      "type": "directed",
+      "source": "split",
+      "target": "check",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    },
+    {
+      "id": "xy-edge__checksuccess-accumulateinput",
+      "type": "directed",
+      "source": "check",
+      "target": "accumulate",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    },
+    {
+      "id": "xy-edge__checkerror-accumulateinput",
+      "type": "directed",
+      "source": "check",
+      "target": "accumulate",
+      "sourceHandle": "error",
+      "targetHandle": "input"
+    },
+    {
+      "id": "xy-edge__accumulatesuccess-loginput",
+      "type": "directed",
+      "source": "accumulate",
+      "target": "log",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    }
+  ]
+}

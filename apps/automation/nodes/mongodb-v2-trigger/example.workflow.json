@@ -1,0 +1,151 @@
+{
+  "name": "React to new and changed orders",
+  "nodes": [
+    {
+      "id": "watch",
+      "type": "trigger",
+      "position": {
+        "x": 80,
+        "y": 200
+      },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "mongodb-v2-trigger",
+        "label": "Watch Orders",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "parameters": {
+          "uri": "mongodb://user:password@localhost:27017/?replicaSet=rs0&authSource=admin",
+          "database": "shop",
+          "collection": "orders",
+          "operationTypes": [
+            "insert",
+            "update",
+            "replace"
+          ],
+          "pipeline": "[{\"$match\": {\"fullDocument.total\": {\"$gte\": 100}}}]",
+          "fullDocument": "updateLookup",
+          "fullDocumentBeforeChange": "off"
+        }
+      }
+    },
+    {
+      "id": "summary",
+      "type": "action",
+      "position": {
+        "x": 260,
+        "y": 200
+      },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "function",
+        "label": "Summary",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "parameters": {
+          "code": "return { orderId: input.fullDocument._id, change: input.operationType, total: input.fullDocument.total };"
+        }
+      }
+    },
+    {
+      "id": "log",
+      "type": "display",
+      "position": {
+        "x": 440,
+        "y": 200
+      },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        }
+      }
+    },
+    {
+      "id": "log-error",
+      "type": "display",
+      "position": {
+        "x": 260,
+        "y": 340
+      },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        }
+      }
+    }
+  ],
+  "connections": [
+    {
+      "id": "xy-edge__watchsuccess-summaryinput",
+      "type": "directed",
+      "source": "watch",
+      "target": "summary",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    },
+    {
+      "id": "xy-edge__summarysuccess-loginput",
+      "type": "directed",
+      "source": "summary",
+      "target": "log",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    },
+    {
+      "id": "xy-edge__watcherror-log-errorinput",
+      "type": "directed",
+      "source": "watch",
+      "target": "log-error",
+      "sourceHandle": "error",
+      "targetHandle": "input"
+    }
+  ]
+}
