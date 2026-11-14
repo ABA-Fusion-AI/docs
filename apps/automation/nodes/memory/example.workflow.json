@@ -1,0 +1,193 @@
+{
+  "name": "Memory example",
+  "nodes": [
+    {
+      "id": "trigger01",
+      "position": {
+        "x": 0,
+        "y": 8
+      },
+      "type": "trigger",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "chat-trigger",
+        "label": "Chat Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Starts the workflow when someone sends a message in the chat box.",
+        "showRunningStatus": false,
+        "parameters": {
+          "placeholder": "Ask me anything\u2026"
+        }
+      }
+    },
+    {
+      "id": "agent0001",
+      "position": {
+        "x": 208,
+        "y": -8
+      },
+      "type": "agent",
+      "width": 96,
+      "height": 96,
+      "data": {
+        "name": "agent-v2",
+        "label": "Agent V2",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "An AI agent with composable memory, queued turns and bounded iterations.",
+        "showRunningStatus": true,
+        "parameters": {}
+      }
+    },
+    {
+      "id": "respond01",
+      "position": {
+        "x": 416,
+        "y": 8
+      },
+      "type": "action",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "chat-respond",
+        "label": "Chat Response",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "Sends a reply back to the chat box.",
+        "showRunningStatus": false,
+        "parameters": {}
+      }
+    },
+    {
+      "id": "llm00001",
+      "position": {
+        "x": 144,
+        "y": 216
+      },
+      "type": "agent-llm",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "openai-llm",
+        "label": "OpenAI LLM",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "description": "The model the agent reasons with.",
+        "showRunningStatus": false,
+        "parameters": {
+          "model": "gpt-4o-mini"
+        }
+      }
+    },
+    {
+      "id": "memory001",
+      "position": {
+        "x": 320,
+        "y": 216
+      },
+      "type": "agent-memory",
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "memory",
+        "label": "Memory",
+        "inputs": {},
+        "outputs": {},
+        "description": "Conversation memory held in the worker's own process.",
+        "showRunningStatus": false,
+        "parameters": {}
+      }
+    }
+  ],
+  "connections": [
+    {
+      "source": "trigger01",
+      "sourceHandle": "success",
+      "target": "agent0001",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__trigger01success-agent0001input",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "source": "agent0001",
+      "sourceHandle": "success",
+      "target": "respond01",
+      "targetHandle": "input",
+      "type": "directed",
+      "id": "xy-edge__agent0001success-respond01input",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "source": "llm00001",
+      "sourceHandle": "llm",
+      "target": "agent0001",
+      "targetHandle": "llm",
+      "type": "agentConnection",
+      "id": "xy-edge__llm00001llm-agent0001llm",
+      "data": {
+        "isAnimated": false
+      }
+    },
+    {
+      "source": "memory001",
+      "sourceHandle": "memory",
+      "target": "agent0001",
+      "targetHandle": "memory",
+      "type": "agentConnection",
+      "id": "xy-edge__memory001memory-agent0001memory",
+      "data": {
+        "isAnimated": false
+      }
+    }
+  ],
+  "status": "stopped",
+  "tracingEnabled": true,
+  "version": 1
+}
