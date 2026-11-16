@@ -8199,5 +8199,22 @@
         "bourrage-raw-sample"
       ]
     }
+  },
+  {
+    "id": "tailscale",
+    "name": "Tailscale",
+    "type": "action",
+    "description": "Manage Tailscale devices, subnet routes, auth keys, and DNS settings.",
+    "slogan": "Automate tailnet administration",
+    "icon": "icons/tailscale.svg",
+    "integrations": {
+      "automation": [
+        "tailscale-devices",
+        "tailscale-routes",
+        "tailscale-keys",
+        "tailscale-dns"
+      ]
+    }
   }
+
 ]

@@ -1,0 +1,97 @@
+{
+  "name": "Inspect tailnet nameservers",
+  "nodes": [
+    {
+      "id": "trigger",
+      "type": "trigger",
+      "position": {
+        "x": 80,
+        "y": 160
+      },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        }
+      }
+    },
+    {
+      "id": "tailscale",
+      "type": "action",
+      "position": {
+        "x": 280,
+        "y": 160
+      },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "tailscale-dns",
+        "label": "Tailscale DNS",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        }
+      }
+    },
+    {
+      "id": "out",
+      "type": "display",
+      "position": {
+        "x": 480,
+        "y": 160
+      },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "log",
+        "label": "Inspect devices",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          }
+        }
+      }
+    }
+  ],
+  "connections": [
+    {
+      "id": "trigger-tailscale",
+      "type": "directed",
+      "source": "trigger",
+      "target": "tailscale",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    },
+    {
+      "id": "tailscale-out",
+      "type": "directed",
+      "source": "tailscale",
+      "target": "out",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    }
+  ]
+}

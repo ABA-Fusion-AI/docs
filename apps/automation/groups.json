@@ -2261,7 +2261,11 @@
           "vast-ai-add-network-disk",
           "action-network",
           "netscaler",
-          "netscaler-adc"
+          "netscaler-adc",
+           "tailscale-devices",
+          "tailscale-routes",
+          "tailscale-keys",
+          "tailscale-dns"
         ],
         "subgroups": []
       },
