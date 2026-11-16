@@ -176,6 +176,7 @@
         "nodes": [
           "throttle",
           "delay",
+          "wait-until",
           "debounce-time",
           "throttle-time"
         ],
