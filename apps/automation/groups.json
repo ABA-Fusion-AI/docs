@@ -2265,7 +2265,9 @@
            "tailscale-devices",
           "tailscale-routes",
           "tailscale-keys",
-          "tailscale-dns"
+          "tailscale-dns",
+          "tailscale-users",
+          "tailscale-user-invites"
         ],
         "subgroups": []
       },

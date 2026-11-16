@@ -8204,7 +8204,7 @@
     "id": "tailscale",
     "name": "Tailscale",
     "type": "action",
-    "description": "Manage Tailscale devices, subnet routes, auth keys, and DNS settings.",
+    "description": "Manage Tailscale devices, routes, keys, DNS, users, and user invitations.",
     "slogan": "Automate tailnet administration",
     "icon": "icons/tailscale.svg",
     "integrations": {
@@ -8212,7 +8212,9 @@
         "tailscale-devices",
         "tailscale-routes",
         "tailscale-keys",
-        "tailscale-dns"
+        "tailscale-dns",
+          "tailscale-users",
+          "tailscale-user-invites"
       ]
     }
   }
