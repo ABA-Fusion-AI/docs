@@ -1,0 +1,78 @@
+{
+  "name": "space-x-launches",
+  "nodes": [
+    {
+      "position": { "x": 645, "y": 67 },
+      "width": 72,
+      "height": 72,
+      "id": "trigger01",
+      "type": "trigger",
+      "data": {
+        "description": "Triggers the workflow manually.",
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": { "label": "Success" },
+          "error": { "label": "Error" }
+        }
+      }
+    },
+    {
+      "position": { "x": 839, "y": 106 },
+      "width": 72,
+      "height": 72,
+      "id": "spacex01",
+      "type": "action",
+      "data": {
+        "description": "Get SpaceX launch data from Launch Library 2 API.",
+        "showRunningStatus": true,
+        "name": "space-x-launches",
+        "label": "SpaceX Launch Library",
+        "inputs": {
+          "input": { "label": "Input" }
+        },
+        "outputs": {
+          "success": { "label": "Success" },
+          "error": { "label": "Error" }
+        }
+      }
+    },
+    {
+      "position": { "x": 1038, "y": 77 },
+      "width": 256,
+      "height": 100,
+      "id": "log01",
+      "type": "display",
+      "data": {
+        "description": "Logs the input data to the console.",
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": { "label": "Input" }
+        },
+        "outputs": {
+          "success": { "label": "Success" }
+        }
+      }
+    }
+  ],
+  "connections": [
+    {
+      "type": "directed",
+      "id": "edge-trigger01-spacex01",
+      "source": "trigger01",
+      "target": "spacex01",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    },
+    {
+      "type": "directed",
+      "id": "edge-spacex01-log01",
+      "source": "spacex01",
+      "target": "log01",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    }
+  ]
+}

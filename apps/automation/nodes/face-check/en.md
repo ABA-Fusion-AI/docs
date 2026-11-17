@@ -292,6 +292,17 @@ The node does not transform the successful API response into a custom output sch
 
 ## Examples
 
+### Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Get FaceCheck account info
+```
+
+1. **Manual Trigger:** Starts the workflow.
+2. **FaceCheck Node:** Calls the FaceCheck API with the selected operation (e.g. `getInfo`).
+3. **Log Node:** Displays the API response.
+
 ### Example 1 — Get Info
 
 ```json
