@@ -1,321 +1,195 @@
 ---
 node_id: "bar"
 title: "BAR API"
-description: "Bio-Analytic Resource API for plant genomics data, gene expression, interactions, and more."
+description: "Query the Bio-Analytic Resource (BAR) for plant genomics: gene information, expression (eFP, RNA-Seq, microarray), interactions, localizations, sequences, SNPs and ThaleMine data."
 category: "Genomics"
+subcategory: "Plant Biology"
 version: "1.0.0"
 language: "en"
-last_updated: "2026-08-12"
+last_updated: "2026-11-17"
 author: "Fusion Team"
 tags:
-
-- bar
-- bio-analytic-resource
-- genomics
-- plant-biology
-- gene-expression
-- efp
-- rna-seq
-- gene-annotation
-- interactions
-- snps
-- thalemine
-- arabidopsis
-- api
-
+  - bar
+  - bio-analytic-resource
+  - genomics
+  - plant-biology
+  - arabidopsis
+  - gene-expression
+  - interactions
 related_nodes:
-- function
-- if
-- http-request
-
+  - rcsbpdb
+  - gbif
+  - function
+  - http-request
 ---
 
+<!-- SECTION: overview -->
 # BAR API
 
-> **Category:** genomics-nodes | **Type:** Action Node
+> **Category:** Genomics &nbsp;&nbsp;|&nbsp;&nbsp;**Type:** Action Node
 
-Access the **Bio-Analytic Resource (BAR)** API from the University of Toronto, a large multi-operation node covering plant genomics data: gene expression, gene annotation, gene-gene interactions, subcellular localizations, sequences, SNPs/structural data, and ThaleMine gene records.
+Access the **Bio-Analytic Resource for Plant Biology** (BAR, University of Toronto — `https://bar.utoronto.ca/api`) from a Fusion workflow. BAR gathers plant genomics data, mainly for *Arabidopsis thaliana*, but also rice, tomato, poplar, sorghum, canola and more. The node exposes **47 operations** in 12 groups:
 
-The **BAR API** node exposes a single `operation` selector that maps to one of 45 underlying BAR endpoints. Only the parameters relevant to the selected `operation` are shown, using conditional field visibility.
+LLaMA · eFP Image · FastPheno · Gene Annotation · Gene Information · Interactions · Localizations · Microarray Expression · Proxy (ATTED) · RNA-Seq Expression · Sequence · SNPs · ThaleMine
 
-### Supported Features
-
-- 45 selectable BAR API operations across 13 functional categories
-- Configurable `baseUrl` (defaults to the official BAR API)
-- Conditional parameter display based on selected `operation`
-- Support for both `GET`-style and `POST`-style (JSON payload) operations
-- JSON payload parsing for array/object parameters
-- Dedicated error handling for malformed JSON payloads
-- Unified error wrapping for all API failures
+No API key is required. Every parameter has a working default value, so each operation can be tried right away.
 
 ### Use Cases
 
-- Retrieve electronic Fluorescent Pictograph (eFP) gene expression images
-- Query gene annotations and gene aliases/isoforms
-- Look up gene-gene interaction networks and supporting literature
-- Retrieve subcellular localization predictions
-- Fetch RNA-Seq and microarray gene expression data
-- Retrieve DNA/protein sequences for a gene
-- Query SNP, docking, and structural homology data
-- Query ThaleMine gene information, GeneRIFs, and publications
-- Build plant genomics research and bioinformatics workflows
-- Feed genomics results into a `Function` node for downstream analysis
+- **Gene lookup:** Get the description, aliases, isoforms and publications of a gene (e.g. `AT1G01010`).
+- **Expression analysis:** Retrieve RNA-Seq, single-cell or microarray expression of a gene across tissues and conditions.
+- **Interaction networks:** Find protein–protein and protein–DNA interactions, gene regulatory networks and their source papers.
+- **Structural biology:** Get homologs, SNP hotspots and protein structure data (PyMOL, Phenix, docking).
+- **Visualization:** Generate eFP expression pictures for reports.
+
+<!-- /SECTION: overview -->
 
 ---
 
+<!-- SECTION: configuration -->
 ## Configuration
 
-### Base Parameter
+### Common Parameters
 
 | Parameter | Type | Required | Default | Description |
-| --------- | ---- | -------- | ------- | ----------- |
-| `baseUrl` | `string` | ❌ No | `"https://bar.utoronto.ca/api"` | BAR API base URL. |
-| `operation` | `enum` | ❌ No | `"getSingleGeneQuery"` | Selects which BAR API operation to perform. See [Operations](#operations) below. |
+|-----------|------|----------|---------|-------------|
+| `baseUrl` | `string` | No | `https://bar.utoronto.ca/api` | BAR API base URL. |
+| `operation` | `enum` | Yes | `getSingleGeneQuery` | Operation to perform (see tables below). |
 
-All other parameters are conditionally shown based on the selected `operation`, grouped by category below.
+Only the parameters of the selected operation are shown in the builder.
 
----
+### Operations
 
-## Operations
+#### LLaMA, eFP Image & FastPheno
 
-### LLaMA
+| Operation | Endpoint | Parameters (defaults) |
+|-----------|----------|------------------------|
+| `getLlama` | `GET /LLaMA/{gene}` | `llamaGeneId` (e.g. `AT3G18850`) |
+| `getEfpImageList` | `GET /efp_image/` | — |
+| `getEfpDataSource` | `GET /efp_image/get_efp_data_source/{species}` | `efpSpecies` (e.g. `sorghum`) |
+| `getEfpDir` | `GET /efp_image/get_efp_dir/{species}` | `efpSpecies` |
+| `getEfpImage` | `GET /efp_image/{efp}/{view}/{mode}/{gene1}` | `efp` (`efp_arabidopsis`), `view` (`Developmental_Map`), `mode` (`Absolute`), `gene1` (`At1g01010`) |
+| `getEfpImageWithGene2` | `GET /efp_image/{efp}/{view}/{mode}/{gene1}/{gene2}` | same + `gene2` (`At3g27340`) |
+| `getFastPhenoBands` | `GET /fastpheno/get_bands/{site}/{month}/{band}` | `fastPhenoSite` (`pintendre`), `fastPhenoMonth` (`jan`), `fastPhenoBand` (`band_1`) |
+| `getFastPhenoTrees` | `GET /fastpheno/get_trees/{genotype}` | `fastPhenoGenotypeId` (`C`) |
 
-| Operation | Parameters | Description |
-| --------- | ---------- | ----------- |
-| `getLlama` | `llamaGeneId` (string, required) | Get LLaMA data for a gene ID (e.g. `AT3G18850`). |
+#### Gene Annotation & Gene Information
 
-### eFP Image
+| Operation | Endpoint | Parameters (defaults) |
+|-----------|----------|------------------------|
+| `getGeneAnnotation` | `GET /gene_annotation/{query}` | `geneAnnotationQuery` (`alpha-1 protein`) |
+| `postGeneAnnotation` | `POST /gene_annotation/` | `geneAnnotationPayload` — JSON `{"species":"rice","genes":[...]}` |
+| `getSingleGeneQuery` | `GET /gene_information/single_gene_query/{species}/{term}` | `geneInfoSpecies` (`arabidopsis`), `geneInfoTerm` (`AT1G01010`) |
+| `getGeneIsoforms` | `GET /gene_information/gene_isoforms/{species}/{gene}` | `geneInfoSpecies`, `geneInfoGeneId` (`AT1G01020`) |
+| `getGenePublications` | `GET /gene_information/gene_publications/{species}/{gene}` | `geneInfoSpecies`, `geneInfoGeneId` |
+| `getGenesByPosition` | `GET /gene_information/genes_by_position/{species}/{chr}/{start}/{end}` | `geneInfoSpecies`, `geneInfoChromosome` (`1`), `geneInfoStart` (`3000`), `geneInfoEnd` (`6000`) |
+| `postGeneAliases` | `POST /gene_information/gene_aliases` | `geneInfoSpecies`, `geneInfoTerms` (`["AT1G01010"]`) |
+| `postGeneIsoforms` | `POST /gene_information/gene_isoforms/` | `geneInfoSpecies`, `geneInfoTerms` |
+| `postGeneQuery` | `POST /gene_information/gene_query` | `geneInfoSpecies`, `geneInfoTerms` |
 
-| Operation | Parameters | Description |
-| --------- | ---------- | ----------- |
-| `getEfpImageList` | — | List available eFP images. |
-| `getEfpDataSource` | `efpSpecies` (string) | Get the eFP data source for a species (e.g. `sorghum`, `arabidopsis`). |
-| `getEfpDir` | `efpSpecies` (string) | Get the eFP directory for a species. |
-| `getEfpImage` | `efp` (default `efp_arabidopsis`), `view` (default `Developmental_Map`), `mode` (default `Absolute`), `gene1` (default `At1g01010`) | Get an eFP expression image for a single gene. |
-| `getEfpImageWithGene2` | `efp`, `view`, `mode`, `gene1`, `gene2` (default `At3g27340`) | Get an eFP expression comparison image for two genes. |
+#### Interactions & Localizations
 
-### FastPheno
+| Operation | Endpoint | Parameters (defaults) |
+|-----------|----------|------------------------|
+| `getInteractions` | `GET /interactions/{species}/{gene}` | `interactionsSpecies` (`rice`), `interactionsQueryGene` (`LOC_Os01g52560`) |
+| `postInteractions` | `POST /interactions/` | `interactionsSpecies`, `interactionsGenes` — JSON array of genes |
+| `getAllTags` / `getAllGrns` / `getAllPapers` | `GET /interactions/all_tags` · `/get_all_grns` · `/get_all_papers` | — |
+| `getPaper` | `GET /interactions/get_paper/{n}` | `interactionsPaperNumber` (`14`) |
+| `getPaperByAgi` | `GET /interactions/get_paper_by_agi/{agi}` | `interactionsStringAgi` (`AT2G30530`) |
+| `getPaperByAgiPair` | `GET /interactions/get_paper_by_agi_pair/{agi1}/{agi2}` | `interactionsAgi1`, `interactionsAgi2` (`AT4G33430`) |
+| `getInteractionsByRef` | `GET /interactions/interactions_by_ref/{paperId}` | `interactionsPaperId` (`15`) |
+| `searchByTag` | `GET /interactions/search_by_tag/{tag}` | `interactionsTag` (`CBF`) |
+| `getSingleInteraction` | `GET /interactions/single_interaction/{id}` | `interactionsInteractionId` (`70`) |
+| `postMFinder` | `POST /interactions/mfinder` | `interactionsMFinderData` — JSON gene pairs |
+| `getLocalizations` | `GET /loc/{species}/{gene}` | `localizationsSpecies` (`rice`), `localizationsQueryGene` (`LOC_Os01g52560.1`) |
+| `postLocalizations` | `POST /loc/` | `localizationsSpecies`, `localizationsGenes` — JSON array of isoforms |
 
-| Operation | Parameters | Description |
-| --------- | ---------- | ----------- |
-| `getFastPhenoBands` | `fastPhenoSite` (default `pintendre`), `fastPhenoMonth` (default `jan`), `fastPhenoBand` (default `band_1`) | Get FastPheno band data for a site/month/band. |
-| `getFastPhenoTrees` | `fastPhenoGenotypeId` (default `C`) | Get FastPheno tree data for a genotype. |
+#### Expression, Proxy & Sequence
 
-### Gene Annotation
+| Operation | Endpoint | Parameters (defaults) |
+|-----------|----------|------------------------|
+| `getWorldEfpExpression` | `GET /microarray_gene_expression/world_efp/{species}/{gene}` | `microarraySpecies` (`arabidopsis`), `microarrayGeneId` (`At1g01010`) |
+| `getAttedApi5` | `GET /proxy/atted_api5/{gene}/{topN}` | `proxyGeneId` (`At1g01010`), `proxyTopN` (`5`) |
+| `getRnaSeqGeneExpression` | `GET /rnaseq_gene_expression/{species}/{db}/{gene}` | `rnaSeqSpecies` (`arabidopsis`), `rnaSeqDatabase` (`single_cell`), `rnaSeqGeneId` (`At1g01010`) |
+| `getRnaSeqGeneExpressionSample` | `GET /rnaseq_gene_expression/{species}/{db}/{gene}/{sample}` | same + `rnaSeqSampleId` (`cluster0_WT1.ExprMean`) |
+| `postRnaSeqExpression` | `POST /rnaseq_gene_expression/` | `rnaSeqPayload` — full JSON payload |
+| `getSequence` | `GET /sequence/{species}/{gene}` | `sequenceSpecies` (`tomato`), `sequenceGeneId` (`Solyc00g005445.1.1`) |
 
-| Operation | Parameters | Description |
-| --------- | ---------- | ----------- |
-| `getGeneAnnotation` | `geneAnnotationQuery` (default `alpha-1 protein`) | Search gene annotations by keyword query. |
-| `postGeneAnnotation` | `geneAnnotationPayload` (JSON string, e.g. `{"species":"rice","genes":["LOC_Os01g01010"]}`) | Get gene annotations for a species and gene list. |
+#### SNPs & ThaleMine
 
-### Gene Information
+| Operation | Endpoint | Parameters (defaults) |
+|-----------|----------|------------------------|
+| `getDocking` | `GET /snps/docking/{receptor}/{ligand}` | `snpsReceptor` (`bri1`), `snpsLigand` (`brass`) |
+| `getHomologs` | `GET /snps/homologs/{species}/{gene}/{target}` | `snpsSearchSpecies` (`canola`), `snpsSearchGene` (`BnaA07g31480D`), `snpsTargetSpecies` (`arabidopsis`) |
+| `getPhenix` | `GET /snps/phenix/{fixed}/{moving}` | `snpsFixedPdb`, `snpsMovingPdb` |
+| `getPymol` | `GET /snps/pymol/{model}?snps=…&chain=…` | `snpsModel`, `snpsSnps` (JSON array, e.g. `["V25L"]`), `snpsChain` (`None`) |
+| `getSeqHotspots` / `getStructHotspots` | `GET /snps/seq_hotspot/…` · `/struct_hotspot/{pval}/{araid}/{popid}` | `snpsPval` (`0.95`), `snpsAraid` (`AT1G56500.1`), `snpsPopid` (`Potri.013G007800.2`) |
+| `getSampleDefinitions` | `GET /snps/{species}/samples` | `snpsSpecies` (`tomato`) |
+| `getGeneSnps` | `GET /snps/{species}/{gene}` | `snpsSpecies`, `snpsGeneId` (`Potri.019G123900.1`) |
+| `getThaleMineGeneInformation` / `getThaleMineGeneRifs` / `getThaleMinePublications` | `GET /thalemine/gene_information/{gene}` · `/gene_rifs/…` · `/publications/…` | `thaleMineGeneId` (`At1g01010`) |
 
-| Operation | Parameters | Description |
-| --------- | ---------- | ----------- |
-| `postGeneAliases` | `geneInfoSpecies` (default `arabidopsis`), `geneInfoTerms` (JSON array) | Get gene aliases for a list of gene terms. |
-| `postGeneIsoforms` | `geneInfoSpecies`, `geneInfoTerms` (JSON array) | Get gene isoforms for a list of gene terms. |
-| `getGeneIsoforms` | `geneInfoSpecies`, `geneInfoGeneId` (default `AT1G01020`) | Get isoforms for a single gene. |
-| `getGenePublications` | `geneInfoSpecies`, `geneInfoGeneId` | Get publications associated with a gene. |
-| `postGeneQuery` | `geneInfoSpecies`, `geneInfoTerms` (JSON array) | Query gene information for a list of gene terms. |
-| `getGenesByPosition` | `geneInfoSpecies`, `geneInfoChromosome` (default `1`), `geneInfoStart` (default `3000`), `geneInfoEnd` (default `6000`) | Get genes within a chromosomal position range. |
-| `getSingleGeneQuery` | `geneInfoSpecies`, `geneInfoTerm` (default `AT1G01010`) | Query information for a single gene term. |
+### Authentication
 
-### Interactions
+No authentication is needed. The BAR API is public.
 
-| Operation | Parameters | Description |
-| --------- | ---------- | ----------- |
-| `postInteractions` | `interactionsSpecies` (default `rice`), `interactionsGenes` (JSON array) | Get interactions for a list of genes. |
-| `getAllTags` | — | List all interaction tags. |
-| `getAllGrns` | — | List all gene regulatory networks. |
-| `getAllPapers` | — | List all indexed interaction papers. |
-| `getPaper` | `interactionsPaperNumber` (default `14`) | Get a paper by its number. |
-| `getPaperByAgi` | `interactionsStringAgi` (default `AT2G30530`) | Get papers referencing an AGI identifier. |
-| `getPaperByAgiPair` | `interactionsAgi1` (default `AT2G30530`), `interactionsAgi2` (default `AT4G33430`) | Get papers referencing a pair of AGI identifiers. |
-| `getInteractionsByRef` | `interactionsPaperId` (default `15`) | Get interactions referenced by a paper ID. |
-| `postMFinder` | `interactionsMFinderData` (JSON array of gene pairs) | Run motif-finder analysis on gene pairs. |
-| `searchByTag` | `interactionsTag` (default `CBF`) | Search interactions by tag name. |
-| `getSingleInteraction` | `interactionsInteractionId` (default `70`) | Get a single interaction by ID. |
-| `getInteractions` | `interactionsSpecies`, `interactionsQueryGene` (default `LOC_Os01g52560`) | Get interactions for a query gene. |
-
-### Localizations
-
-| Operation | Parameters | Description |
-| --------- | ---------- | ----------- |
-| `postLocalizations` | `localizationsSpecies` (default `rice`), `localizationsGenes` (JSON array of gene isoforms) | Get subcellular localizations for a list of gene isoforms. |
-| `getLocalizations` | `localizationsSpecies`, `localizationsQueryGene` (default `LOC_Os01g52560.1`) | Get subcellular localization for a single gene isoform. |
-
-### Microarray Gene Expression
-
-| Operation | Parameters | Description |
-| --------- | ---------- | ----------- |
-| `getWorldEfpExpression` | `microarraySpecies` (default `arabidopsis`), `microarrayGeneId` (default `At1g01010`) | Get World eFP microarray expression data for a gene. |
-
-### Proxy
-
-| Operation | Parameters | Description |
-| --------- | ---------- | ----------- |
-| `getAttedApi5` | `proxyGeneId` (default `At1g01010`), `proxyTopN` (number, default `5`) | Proxy request to ATTED-II API v5 for coexpression data. |
-
-### RNA-Seq Gene Expression
-
-| Operation | Parameters | Description |
-| --------- | ---------- | ----------- |
-| `postRnaSeqExpression` | `rnaSeqPayload` (JSON object, e.g. `{"species":"arabidopsis","database":"single_cell","gene_id":"At1g01010","sample_ids":["cluster0_WT1.ExprMean"]}`) | Get RNA-Seq expression data via a full JSON payload. |
-| `getRnaSeqGeneExpression` | `rnaSeqSpecies` (default `arabidopsis`), `rnaSeqDatabase` (default `single_cell`), `rnaSeqGeneId` (default `At1g01010`) | Get RNA-Seq gene expression across all samples. |
-| `getRnaSeqGeneExpressionSample` | `rnaSeqSpecies`, `rnaSeqDatabase`, `rnaSeqGeneId`, `rnaSeqSampleId` (default `cluster0_WT1.ExprMean`) | Get RNA-Seq gene expression for a specific sample. |
-
-### Sequence
-
-| Operation | Parameters | Description |
-| --------- | ---------- | ----------- |
-| `getSequence` | `sequenceSpecies` (default `tomato`), `sequenceGeneId` (default `Solyc00g005445.1.1`) | Get the DNA/protein sequence for a gene. |
-
-### SNPs
-
-| Operation | Parameters | Description |
-| --------- | ---------- | ----------- |
-| `getDocking` | `snpsReceptor` (default `bri1`), `snpsLigand` (default `brass`) | Get molecular docking data for a receptor/ligand pair. |
-| `getHomologs` | `snpsSearchSpecies` (default `canola`), `snpsSearchGene` (default `BnaA07g31480D`), `snpsTargetSpecies` (default `arabidopsis`) | Get homologous genes across species. |
-| `getPhenix` | `snpsFixedPdb` (default `Potri.016G107900.1`), `snpsMovingPdb` (default `AT5G01040.1`) | Get Phenix structural alignment data. |
-| `getPymol` | `snpsModel` (default `Potri.016G107900.1`), `snpsSnps` (JSON array, e.g. `["V25L","E26A"]`), `snpsChain` (default `None`) | Get PyMOL structure visualization data with SNP annotations. |
-| `getSeqHotspots` | `snpsPval` (default `0.95`), `snpsAraid` (default `AT1G56500.1`), `snpsPopid` (default `Potri.013G007800.2`) | Get sequence-based SNP hotspots. |
-| `getStructHotspots` | `snpsPval`, `snpsAraid`, `snpsPopid` | Get structure-based SNP hotspots. |
-| `getSampleDefinitions` | `snpsSpecies` (default `tomato`) | Get SNP sample definitions for a species. |
-| `getGeneSnps` | `snpsSpecies`, `snpsGeneId` (default `Potri.019G123900.1`) | Get SNPs for a specific gene. |
-
-### ThaleMine
-
-| Operation | Parameters | Description |
-| --------- | ---------- | ----------- |
-| `getThaleMineGeneInformation` | `thaleMineGeneId` (default `At1g01010`) | Get ThaleMine gene information. |
-| `getThaleMineGeneRifs` | `thaleMineGeneId` | Get ThaleMine GeneRIFs (Reference Into Function) for a gene. |
-| `getThaleMinePublications` | `thaleMineGeneId` | Get ThaleMine publications associated with a gene. |
+<!-- /SECTION: configuration -->
 
 ---
 
-## Parameters Reference
-
-Full parameter list. Only parameters relevant to the selected `operation` are used at runtime; all others are ignored.
-
-| Parameter | Type | Default | Applies To |
-| --------- | ---- | ------- | ---------- |
-| `baseUrl` | `string` | `https://bar.utoronto.ca/api` | All operations |
-| `operation` | `enum` | `getSingleGeneQuery` | — (selector) |
-| `llamaGeneId` | `string` | — | `getLlama` |
-| `efpSpecies` | `string` | — | `getEfpDataSource`, `getEfpDir` |
-| `efp` | `string` | `efp_arabidopsis` | `getEfpImage`, `getEfpImageWithGene2` |
-| `view` | `string` | `Developmental_Map` | `getEfpImage`, `getEfpImageWithGene2` |
-| `mode` | `string` | `Absolute` | `getEfpImage`, `getEfpImageWithGene2` |
-| `gene1` | `string` | `At1g01010` | `getEfpImage`, `getEfpImageWithGene2` |
-| `gene2` | `string` | `At3g27340` | `getEfpImageWithGene2` |
-| `fastPhenoSite` | `string` | `pintendre` | `getFastPhenoBands` |
-| `fastPhenoMonth` | `string` | `jan` | `getFastPhenoBands` |
-| `fastPhenoBand` | `string` | `band_1` | `getFastPhenoBands` |
-| `fastPhenoGenotypeId` | `string` | `C` | `getFastPhenoTrees` |
-| `geneAnnotationQuery` | `string` | `alpha-1 protein` | `getGeneAnnotation` |
-| `geneAnnotationPayload` | `string` (JSON) | — | `postGeneAnnotation` |
-| `geneInfoSpecies` | `string` | `arabidopsis` | `postGeneAliases`, `postGeneIsoforms`, `postGeneQuery`, `getGeneIsoforms`, `getGenePublications`, `getGenesByPosition`, `getSingleGeneQuery` |
-| `geneInfoTerms` | `string[]` (JSON array) | — | `postGeneAliases`, `postGeneIsoforms`, `postGeneQuery` |
-| `geneInfoGeneId` | `string` | `AT1G01020` | `getGeneIsoforms`, `getGenePublications` |
-| `geneInfoChromosome` | `string` | `1` | `getGenesByPosition` |
-| `geneInfoStart` | `string` | `3000` | `getGenesByPosition` |
-| `geneInfoEnd` | `string` | `6000` | `getGenesByPosition` |
-| `geneInfoTerm` | `string` | `AT1G01010` | `getSingleGeneQuery` |
-| `interactionsSpecies` | `string` | `rice` | `postInteractions`, `getInteractions` |
-| `interactionsGenes` | `string` (JSON array) | — | `postInteractions` |
-| `interactionsQueryGene` | `string` | `LOC_Os01g52560` | `getInteractions` |
-| `interactionsPaperNumber` | `string` | `14` | `getPaper` |
-| `interactionsStringAgi` | `string` | `AT2G30530` | `getPaperByAgi` |
-| `interactionsAgi1` | `string` | `AT2G30530` | `getPaperByAgiPair` |
-| `interactionsAgi2` | `string` | `AT4G33430` | `getPaperByAgiPair` |
-| `interactionsPaperId` | `string` | `15` | `getInteractionsByRef` |
-| `interactionsMFinderData` | `string` (JSON array) | — | `postMFinder` |
-| `interactionsTag` | `string` | `CBF` | `searchByTag` |
-| `interactionsInteractionId` | `string` | `70` | `getSingleInteraction` |
-| `localizationsSpecies` | `string` | `rice` | `postLocalizations`, `getLocalizations` |
-| `localizationsGenes` | `string` (JSON array) | — | `postLocalizations` |
-| `localizationsQueryGene` | `string` | `LOC_Os01g52560.1` | `getLocalizations` |
-| `microarraySpecies` | `string` | `arabidopsis` | `getWorldEfpExpression` |
-| `microarrayGeneId` | `string` | `At1g01010` | `getWorldEfpExpression` |
-| `proxyGeneId` | `string` | `At1g01010` | `getAttedApi5` |
-| `proxyTopN` | `number` | `5` | `getAttedApi5` |
-| `rnaSeqPayload` | `string` (JSON) | — | `postRnaSeqExpression` |
-| `rnaSeqSpecies` | `string` | `arabidopsis` | `getRnaSeqGeneExpression`, `getRnaSeqGeneExpressionSample` |
-| `rnaSeqDatabase` | `string` | `single_cell` | `getRnaSeqGeneExpression`, `getRnaSeqGeneExpressionSample` |
-| `rnaSeqGeneId` | `string` | `At1g01010` | `getRnaSeqGeneExpression`, `getRnaSeqGeneExpressionSample` |
-| `rnaSeqSampleId` | `string` | `cluster0_WT1.ExprMean` | `getRnaSeqGeneExpressionSample` |
-| `sequenceSpecies` | `string` | `tomato` | `getSequence` |
-| `sequenceGeneId` | `string` | `Solyc00g005445.1.1` | `getSequence` |
-| `snpsReceptor` | `string` | `bri1` | `getDocking` |
-| `snpsLigand` | `string` | `brass` | `getDocking` |
-| `snpsSearchSpecies` | `string` | `canola` | `getHomologs` |
-| `snpsSearchGene` | `string` | `BnaA07g31480D` | `getHomologs` |
-| `snpsTargetSpecies` | `string` | `arabidopsis` | `getHomologs` |
-| `snpsFixedPdb` | `string` | `Potri.016G107900.1` | `getPhenix` |
-| `snpsMovingPdb` | `string` | `AT5G01040.1` | `getPhenix` |
-| `snpsModel` | `string` | `Potri.016G107900.1` | `getPymol` |
-| `snpsSnps` | `string` (JSON array) | — | `getPymol` |
-| `snpsChain` | `string` | `None` | `getPymol` |
-| `snpsPval` | `string` | `0.95` | `getSeqHotspots`, `getStructHotspots` |
-| `snpsAraid` | `string` | `AT1G56500.1` | `getSeqHotspots`, `getStructHotspots` |
-| `snpsPopid` | `string` | `Potri.013G007800.2` | `getSeqHotspots`, `getStructHotspots` |
-| `snpsSpecies` | `string` | `tomato` | `getSampleDefinitions`, `getGeneSnps` |
-| `snpsGeneId` | `string` | `Potri.019G123900.1` | `getGeneSnps` |
-| `thaleMineGeneId` | `string` | `At1g01010` | `getThaleMineGeneInformation`, `getThaleMineGeneRifs`, `getThaleMinePublications` |
-
----
-
+<!-- SECTION: inputs-outputs -->
 ## Inputs & Outputs
 
 ### Inputs
 
-The node does not require workflow input. All configuration is provided through the node configuration, driven by the selected `operation`.
+| Input | Type | Description |
+|-------|------|-------------|
+| `input` | `object` | Triggers the node. Use upstream values in the parameters through expressions. |
 
 ### Outputs
 
-The node returns the raw response from the underlying `BarClient` call for the selected operation. The output shape varies entirely by operation — there is no unified output schema across operations.
+| Output | Type | Description |
+|--------|------|-------------|
+| `success` | `object` | Raw JSON response of the BAR API (`null` if the response is empty). |
+| `error` | `Error` | Emitted on invalid JSON payloads or API errors. |
 
----
-
-## Output Example
-
-### `getSingleGeneQuery`
+### Output Example (`getSingleGeneQuery`)
 
 ```json
 {
-  "species": "arabidopsis",
-  "term": "AT1G01010",
-  "results": [
-    {
-      "geneId": "AT1G01010",
-      "name": "NAC domain containing protein 1",
-      "chromosome": "1",
-      "start": 3631,
-      "end": 5899
+  "wasSuccessful": true,
+  "data": {
+    "AT1G01010": {
+      "gene": "AT1G01010",
+      "aliases": ["ANAC001", "NAC001", "NTL10"],
+      "brief_description": "NAC domain containing protein 1"
     }
-  ]
+  }
 }
 ```
 
-### `getEfpImage`
+Most BAR endpoints answer with `{ "wasSuccessful": true, "data": ... }`; the content of `data` depends on the operation.
 
-```json
-{
-  "imageUrl": "https://bar.utoronto.ca/efp_arabidopsis/cgi-bin/efpWeb.cgi?...",
-  "efp": "efp_arabidopsis",
-  "view": "Developmental_Map",
-  "mode": "Absolute",
-  "gene1": "At1g01010"
-}
-```
-
-The exact response shape depends entirely on the selected operation and the live BAR API.
+<!-- /SECTION: inputs-outputs -->
 
 ---
 
-## Configuration Examples
+<!-- SECTION: workflow-example -->
+## Workflow Integration
 
-### Single Gene Query (Default)
+### Example Workflow
+
+```fusion-workflow
+src: example.workflow.json
+title: Try the BAR API operations
+```
+
+### How it flows
+
+Each Manual Trigger runs one BAR API node with a different operation (LLaMA, eFP, FastPheno, annotations, gene information, interactions…), so every operation can be tested separately and its output read in a Log node.
+
+### Example Configurations
+
+#### Gene information
 
 ```json
 {
@@ -325,268 +199,54 @@ The exact response shape depends entirely on the selected operation and the live
 }
 ```
 
-### eFP Expression Image
+#### RNA-Seq expression
 
 ```json
 {
-  "operation": "getEfpImage",
-  "efp": "efp_arabidopsis",
-  "view": "Developmental_Map",
-  "mode": "Absolute",
-  "gene1": "At1g01010"
+  "operation": "postRnaSeqExpression",
+  "rnaSeqPayload": "{\"species\":\"arabidopsis\",\"database\":\"single_cell\",\"gene_id\":\"At1g01010\",\"sample_ids\":[\"cluster0_WT1.ExprMean\"]}"
 }
 ```
 
-### Gene Annotation Search (POST)
-
-```json
-{
-  "operation": "postGeneAnnotation",
-  "geneAnnotationPayload": "{\"species\":\"rice\",\"genes\":[\"LOC_Os01g01010\"]}"
-}
-```
-
-### RNA-Seq Gene Expression
-
-```json
-{
-  "operation": "getRnaSeqGeneExpression",
-  "rnaSeqSpecies": "arabidopsis",
-  "rnaSeqDatabase": "single_cell",
-  "rnaSeqGeneId": "At1g01010"
-}
-```
-
-### Gene Interactions
-
-```json
-{
-  "operation": "getInteractions",
-  "interactionsSpecies": "rice",
-  "interactionsQueryGene": "LOC_Os01g52560"
-}
-```
-
-### ThaleMine Gene Information
-
-```json
-{
-  "operation": "getThaleMineGeneInformation",
-  "thaleMineGeneId": "At1g01010"
-}
-```
+<!-- /SECTION: workflow-example -->
 
 ---
 
-## Workflow Integration
-
-### Sample Workflow: Gene Query → Function
-
-```json
-{
-  "nodes": [
-    {
-      "id": "bar-gene-query",
-      "type": "bar-api",
-      "config": {
-        "operation": "getSingleGeneQuery",
-        "geneInfoSpecies": "arabidopsis",
-        "geneInfoTerm": "AT1G01010"
-      }
-    },
-    {
-      "id": "process-gene-data",
-      "type": "function"
-    }
-  ]
-}
-```
-
-### Sample Workflow: eFP Image → Notification
-
-```json
-{
-  "nodes": [
-    {
-      "id": "bar-efp-image",
-      "type": "bar-api",
-      "config": {
-        "operation": "getEfpImage",
-        "efp": "efp_arabidopsis",
-        "view": "Developmental_Map",
-        "mode": "Absolute",
-        "gene1": "At1g01010"
-      }
-    }
-  ]
-}
-```
-
-### Sample Workflow: Interactions → If → Database
-
-```json
-{
-  "nodes": [
-    {
-      "id": "bar-interactions",
-      "type": "bar-api",
-      "config": {
-        "operation": "getInteractions",
-        "interactionsSpecies": "rice",
-        "interactionsQueryGene": "LOC_Os01g52560"
-      }
-    },
-    {
-      "id": "filter-interactions",
-      "type": "if"
-    },
-    {
-      "id": "store-interactions",
-      "type": "database"
-    }
-  ]
-}
-```
-
-### Common Patterns
-
-- BAR API (`getSingleGeneQuery`) → Function → BAR API (`getEfpImage`) — enrich a gene lookup with an expression image
-- BAR API (`postGeneQuery`) → Function → Database — batch gene metadata lookups
-- BAR API (`getInteractions`) → If → Notification — alert on new interaction data
-- BAR API (`getRnaSeqGeneExpression`) → Function → Chart/visualization pipeline
-
----
-
-## Error Handling
-
-If the selected operation is not recognized, the node throws:
-
-```text
-Unknown operation: <operation>
-```
-
-If a JSON payload parameter (e.g. `geneAnnotationPayload`, `geneInfoTerms`, `interactionsGenes`) is malformed, the node throws:
-
-```text
-BAR API error: Invalid JSON in payload - <parse error message>
-```
-
-For all other failures (network errors, non-OK HTTP responses from the underlying `BarClient`), the node throws:
-
-```text
-BAR API error: <error message>
-```
-
----
-
+<!-- SECTION: troubleshooting -->
 ## Troubleshooting
 
-### "Unknown operation: <operation>"
+### Common Issues
 
-**Cause**
+#### `BAR API error: Invalid JSON in payload - ...`
+- **Cause:** A JSON parameter (`interactionsGenes`, `localizationsGenes`, `interactionsMFinderData`, `rnaSeqPayload`, `snpsSnps`) is not valid JSON.
+- **Solution:** Use double quotes and valid brackets, e.g. `["LOC_Os01g01080", "LOC_Os01g73310"]`.
 
-The `operation` value does not match any of the 45 supported operations.
+#### `Bad Request - Check your parameters. BAR API error (400): ...`
+- **Cause:** A species, gene ID or value is not supported by this endpoint (e.g. a rice gene with `arabidopsis`).
+- **Solution:** Check that the species and the gene ID format match (`AT1G01010` for Arabidopsis, `LOC_Os…` for rice, `Solyc…` for tomato, `Potri…` for poplar).
 
-**Solution**
+#### `Not Found - Resource not found. BAR API error (404)`
+- **Cause:** Unknown gene, paper, tag or interaction ID.
+- **Solution:** Check the identifier; try the default values first.
 
-Select a valid `operation` value from the [Operations](#operations) list above.
+#### `BAR API error (400)` on `postGeneAnnotation`, `postGeneAliases`, `postGeneIsoforms`, `postGeneQuery`, `postInteractions`, `postLocalizations` or `postMFinder`
+- **Cause:** Known limitation of version 1.0.0: these POST operations do not send the request body expected by BAR (the species is not included, or the payload is sent as text).
+- **Solution:** Use the matching GET operation (e.g. `getSingleGeneQuery`, `getInteractions`, `getLocalizations`), or call the endpoint with an **HTTP Request** node. `postRnaSeqExpression` is not affected.
 
----
+#### `Service Unavailable` / `Internal Server Error`
+- **Cause:** The BAR server is busy or under maintenance.
+- **Solution:** Retry later.
 
-### "BAR API error: Invalid JSON in payload - ..."
-
-**Cause**
-
-A parameter expecting a JSON string (array or object) — such as `geneAnnotationPayload`, `geneInfoTerms`, `interactionsGenes`, `localizationsGenes`, `interactionsMFinderData`, `rnaSeqPayload`, or `snpsSnps` — contains malformed JSON.
-
-**Solution**
-
-Verify the JSON syntax of the affected parameter. For example, `geneInfoTerms` must be a valid JSON array string like `["AT1G01010", "AT1G01020"]`.
-
----
-
-### "BAR API error: <message>"
-
-**Cause**
-
-The underlying BAR API request failed — this can be a network issue, an invalid gene/species identifier, or a non-OK response from the BAR service.
-
-**Solution**
-
-Verify the required parameters for the selected operation (see the [Parameters Reference](#parameters-reference) table) and confirm the gene ID, species, or identifiers used are valid for the BAR API.
+<!-- /SECTION: troubleshooting -->
 
 ---
 
-### Missing Required Parameter for an Operation
-
-**Cause**
-
-Certain operations require a parameter that has no default (e.g. `llamaGeneId`, `geneAnnotationPayload`, `geneInfoTerms`, `interactionsGenes`) and it was left empty.
-
-**Solution**
-
-Check the [Operations](#operations) tables above to confirm which parameters are required for the selected `operation`, and provide a value.
-
----
-
-### Unexpected Output Shape
-
-**Cause**
-
-Each of the 45 operations returns a different response shape from the BAR API, and there is no unified output schema.
-
-**Solution**
-
-Use a `Function` node downstream to defensively access the fields relevant to the specific operation used.
-
----
-
-## Security
-
-The node performs outbound HTTP requests to the configured `baseUrl` (default: the official BAR API at `bar.utoronto.ca`).
-
-No API key or authentication credential is required.
-
-The `baseUrl` parameter can be overridden, allowing requests to a self-hosted or mirrored BAR API instance.
-
----
-
-## Notes
-
-The node returns the raw response from the underlying BAR API operation rather than a normalized structure.
-
-The node does not:
-
-- Validate gene IDs or species names against a known list
-- Cache results between calls
-- Normalize output shapes across different operations
-- Store or persist genomics data
-- Generate visualizations from image or structural data
-- Perform its own bioinformatics analysis beyond the wrapped `BarClient` call
-
-It is intended to provide a single, unified entry point to the 45 BAR API operations for downstream workflow processing.
-
----
-
-## Related
-
-- [Function](/docs/function) – Transform and process genomics results per operation
-- [HTTP Request](/docs/http-request) – Make additional custom requests to BAR or related APIs
----
-
-**---**
-
-<!-- SECTION: examples -->
-## Example Workflow
-
-```fusion-workflow
-src: example.workflow.json
-title: Use BAR API in a workflow
-```
-<!-- /SECTION: examples -->
-
+<!-- SECTION: changelog -->
 ## Changelog
 
 | Version | Date | Changes |
-| ------- | ---- | ------- |
-| 1.0.0 | 2026-08-12 | Initial release — 45 operations across 13 categories |
+|---------|------|---------|
+| 1.0.0 | 2026-11-17 | Documentation rewritten in the standard format: 47 operations with endpoints and defaults, output example, known POST limitations |
+| 1.0.0 | 2026-08-12 | Initial documentation |
+
+<!-- /SECTION: changelog -->

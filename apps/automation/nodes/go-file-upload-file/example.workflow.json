@@ -1,0 +1,101 @@
+{
+  "name": "go-file-upload-file",
+  "nodes": [
+    {
+      "position": {
+        "x": 645,
+        "y": 67
+      },
+      "width": 72,
+      "height": 72,
+      "id": "trigger01",
+      "type": "trigger",
+      "data": {
+        "description": "Triggers the workflow manually.",
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        }
+      }
+    },
+    {
+      "position": {
+        "x": 839,
+        "y": 106
+      },
+      "width": 72,
+      "height": 72,
+      "id": "gofile01",
+      "type": "action",
+      "data": {
+        "description": "Download a file from a URL and upload it to GoFile.io, then get its download page.",
+        "showRunningStatus": true,
+        "name": "go-file-upload-file",
+        "label": "GoFile Upload File",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        }
+      }
+    },
+    {
+      "position": {
+        "x": 1038,
+        "y": 77
+      },
+      "width": 256,
+      "height": 100,
+      "id": "log01",
+      "type": "display",
+      "data": {
+        "description": "Logs the input data to the console.",
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          }
+        }
+      }
+    }
+  ],
+  "connections": [
+    {
+      "type": "directed",
+      "id": "edge-trigger01-gofile01",
+      "source": "trigger01",
+      "target": "gofile01",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    },
+    {
+      "type": "directed",
+      "id": "edge-gofile01-log01",
+      "source": "gofile01",
+      "target": "log01",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    }
+  ]
+}

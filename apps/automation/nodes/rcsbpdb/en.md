@@ -1,375 +1,272 @@
 ---
-node_id: rcsb-pdb
-title: RCSB PDB
-description: Search, retrieve metadata, and download protein structure files from the RCSB Protein Data Bank.
-category: Bioinformatics
-version: 1.0.0
-language: en
-last_updated: 2026-09-04
-author: ABA Fusion AI
+node_id: "rcsbpdb"
+title: "RCSB PDB"
+description: "Search, retrieve metadata, and download protein structure files from the RCSB Protein Data Bank."
+category: "Bioinformatics"
+subcategory: "Protein Structures"
+version: "1.0.0"
+language: "en"
+last_updated: "2026-11-17"
+author: "Fusion Team"
 tags:
   - rcsb
   - pdb
   - protein
   - structure
   - bioinformatics
-related_nodes: []
+  - biology
+related_nodes:
+  - gbif
+  - pmc
+  - medrxiv-search
+  - function
 ---
 
+<!-- SECTION: overview -->
 # RCSB PDB
 
-**Category:** Bioinformatics  
-**Type:** Action Node
+> **Category:** Bioinformatics &nbsp;&nbsp;|&nbsp;&nbsp;**Type:** Action Node
 
-## Overview
+Search and retrieve protein structures from the **RCSB Protein Data Bank** (`https://www.rcsb.org`), the main public archive of 3D structures of proteins, nucleic acids and complexes. The node supports three operations:
+- **`search`:** Find structures by text, by maximum resolution, or with a custom RCSB Search API query.
+- **`getMetadata`:** Get the full metadata of one or several PDB entries (title, authors, method, resolution…).
+- **`downloadFile`:** Download a structure file in **PDB** or **mmCIF** format.
 
-The **RCSB PDB** node allows you to search the RCSB Protein Data Bank, retrieve metadata for PDB entries, and download protein structure files.
+No API key is required.
 
-It supports:
+### Use Cases
 
-- Text searches
-- Resolution-based searches
-- Advanced JSON searches
-- Metadata retrieval for a single PDB entry
-- Metadata retrieval for multiple PDB entries
-- PDB and mmCIF file downloads
+- **Research pipelines:** Search structures on a protein or a disease and collect their metadata for analysis.
+- **Structure quality filtering:** Keep only high-resolution structures (e.g. ≤ 2.0 Å) for modeling or docking.
+- **File retrieval:** Download structure files to feed molecular viewers, docking tools or storage.
+- **Literature & data enrichment:** Combine PDB metadata with publications from PMC or medRxiv.
 
-## Operations
+<!-- /SECTION: overview -->
 
-### Search
+---
 
-Searches the RCSB Protein Data Bank.
+<!-- SECTION: configuration -->
+## Configuration
 
-Three search types are available:
-
-- `text`
-- `resolution`
-- `advanced`
-
-#### Text Search
-
-Searches RCSB PDB using a text term such as a protein name.
-
-Example:
-
-```text
-hemoglobin
-```
-
-#### Resolution Search
-
-Searches structures using a maximum experimental resolution.
-
-A search term can also be provided to combine text and resolution filtering.
-
-Example:
-
-```text
-Search Query: hemoglobin
-Max Resolution: 2
-```
-
-#### Advanced Search
-
-Runs a custom RCSB search query supplied as JSON.
-
-### Get Metadata
-
-Retrieves metadata for one or multiple PDB entries.
-
-For a single entry, provide `pdbId`.
-
-For multiple entries, provide `pdbIds` as an array of PDB IDs.
-
-### Download File
-
-Downloads the structure file associated with a PDB entry.
-
-Supported formats:
-
-- `pdb`
-- `mmcif`
-
-## Parameters
+### Parameters
 
 | Parameter | Type | Required | Default | Description |
-| --- | --- | --- | --- | --- |
-| `operation` | enum | No | `search` | Operation to perform: `search`, `getMetadata`, or `downloadFile`. |
-| `searchQuery` | string | Conditional | — | Search term or advanced JSON search query. |
-| `searchType` | enum | No | `text` | Search type: `text`, `advanced`, or `resolution`. |
-| `returnType` | enum | No | `entry` | Type of RCSB result to return. |
-| `start` | number | No | `0` | Starting position for paginated search results. |
-| `rows` | number | No | `20` | Number of search results to return. |
-| `maxResolution` | number | Conditional | — | Maximum resolution for a resolution search. |
-| `pdbId` | string | Conditional | — | PDB identifier for metadata retrieval or file download. |
-| `pdbIds` | array of strings | Conditional | — | PDB identifiers for retrieving metadata for multiple entries. |
-| `format` | enum | No | `pdb` | File format: `pdb` or `mmcif`. |
+|-----------|------|----------|---------|-------------|
+| `operation` | `enum` | Yes | `search` | `search`, `getMetadata` or `downloadFile`. |
+| `searchQuery` | `string` | For `search`* | — | Search term (`text`, `resolution`), or a full RCSB Search API query in JSON (`advanced`). |
+| `searchType` | `enum` | No | `text` | `text` (full-text search), `resolution` (filter by resolution) or `advanced` (custom JSON query). |
+| `returnType` | `enum` | No | `entry` | Type of results: `entry`, `assembly`, `polymer_entity`, `non_polymer_entity`, `polymer_instance`. |
+| `start` | `number` | No | `0` | Pagination offset. |
+| `rows` | `number` | No | `20` | Number of results per page. |
+| `maxResolution` | `number` | For `resolution` | — | Maximum resolution in Ångström (e.g. `2.0`). |
+| `pdbId` | `string` | For `getMetadata` / `downloadFile`* | — | One PDB ID (e.g. `4HHB`). Case-insensitive. |
+| `pdbIds` | `string[]` | No | — | Several PDB IDs for `getMetadata` (e.g. `["4HHB", "1CRN"]`). |
+| `format` | `enum` | No | `pdb` | File format for `downloadFile`: `pdb` or `mmcif`. |
 
-### Return Types
+\* These values can also come from the incoming data (see below).
 
-The `returnType` parameter supports:
+### Search Types
 
-```text
-entry
-assembly
-polymer_entity
-non_polymer_entity
-polymer_instance
-```
+| `searchType` | What it does | Required |
+|--------------|--------------|----------|
+| `text` | Full-text search on all entry fields | `searchQuery` |
+| `resolution` | Structures with resolution ≤ `maxResolution`, optionally combined with `searchQuery` | `maxResolution` |
+| `advanced` | Sends your own RCSB Search API query (JSON). `start`, `rows` and `returnType` are applied to it | `searchQuery` (JSON) or a query object as input |
 
-## Outputs
+### Values from the Incoming Data
 
-### Search
+When the parameters are empty, the node reads the input:
 
-Search operations return the matching RCSB search results.
+| Operation | Accepted input |
+|-----------|----------------|
+| `search` | A string used as the search term (or a query object for `advanced`) |
+| `getMetadata` | A PDB ID string, an array of IDs, `{ "pdbId": "..." }`, `{ "pdbIds": [...] }`, or a `search` result (`result_set`) |
+| `downloadFile` | A PDB ID string, `{ "pdbId": "..." }` or `{ "identifier": "..." }` |
 
-The response can include:
+This makes it possible to chain **search → getMetadata** directly: the IDs of the search results are read from `result_set`.
 
-- Result type
-- Total number of matches
-- Matching PDB identifiers
-- Search scores
+### Authentication
 
-### Get Metadata
+No authentication is needed. The RCSB APIs are public.
 
-For a single PDB ID, the node returns the metadata associated with that PDB entry.
+<!-- /SECTION: configuration -->
 
-For multiple PDB IDs, the output contains metadata grouped by PDB ID.
+---
 
-Example:
+<!-- SECTION: inputs-outputs -->
+## Inputs & Outputs
+
+### Inputs
+
+| Input | Type | Description |
+|-------|------|-------------|
+| `input` | `string` / `object` / `array` | Triggers the node. Can carry the search term or PDB IDs. |
+
+### Outputs
+
+| Output | Type | Description |
+|--------|------|-------------|
+| `success` | `object` | Search results, entry metadata or file content (see below). |
+| `error` | `Error` | Emitted on missing parameters, unknown IDs or API errors. |
+
+### Output Examples
+
+#### `search`
 
 ```json
 {
-  "4HHB": {
-    "...": "metadata"
-  },
-  "1CRN": {
-    "...": "metadata"
-  }
+  "query_id": "6c1b6f0e-3a2b-4d7e-9f1a-2b3c4d5e6f70",
+  "result_type": "entry",
+  "total_count": 1543,
+  "result_set": [
+    { "identifier": "4HHB", "score": 1.0 },
+    { "identifier": "2HHB", "score": 0.97 }
+  ]
 }
 ```
 
-### Download File
+#### `getMetadata` (one ID)
 
-The download operation returns:
+Full entry metadata from the RCSB Data API, for example:
+
+```json
+{
+  "rcsb_id": "4HHB",
+  "struct": { "title": "THE CRYSTAL STRUCTURE OF HUMAN DEOXYHAEMOGLOBIN AT 1.74 ANGSTROMS RESOLUTION" },
+  "exptl": [{ "method": "X-RAY DIFFRACTION" }],
+  "rcsb_entry_info": { "resolution_combined": [1.74], "polymer_entity_count": 2 },
+  "rcsb_accession_info": { "initial_release_date": "1984-07-17T00:00:00+0000" }
+}
+```
+
+#### `getMetadata` (several IDs)
+
+An object keyed by PDB ID. IDs that could not be found are left out.
+
+```json
+{
+  "4HHB": { "rcsb_id": "4HHB", "...": "..." },
+  "1CRN": { "rcsb_id": "1CRN", "...": "..." }
+}
+```
+
+#### `downloadFile`
 
 ```json
 {
   "pdbId": "4HHB",
   "format": "pdb",
-  "content": "...",
-  "size": 123456
+  "content": "HEADER    OXYGEN TRANSPORT    07-MAR-84   4HHB ...",
+  "size": 482355
 }
 ```
 
-| Field | Description |
-| --- | --- |
-| `pdbId` | PDB identifier. |
-| `format` | Downloaded file format. |
-| `content` | Structure file content as text. |
-| `size` | Size of the returned text content. |
+<!-- /SECTION: inputs-outputs -->
 
-## Examples
+---
 
-### Search by Text
+<!-- SECTION: workflow-example -->
+## Workflow Integration
 
-```text
-Operation: search
-Search Query: hemoglobin
-Search Type: text
-Return Type: entry
-Start: 0
-Rows: 5
-```
-
-### Search by Resolution
-
-```text
-Operation: search
-Search Query: hemoglobin
-Search Type: resolution
-Return Type: entry
-Start: 0
-Rows: 5
-Max Resolution: 2
-```
-
-### Advanced Search
-
-```text
-Operation: search
-Search Type: advanced
-Return Type: entry
-Start: 0
-Rows: 5
-```
-
-Example `searchQuery`:
-
-```json
-{
-  "query": {
-    "type": "terminal",
-    "service": "full_text",
-    "parameters": {
-      "value": "hemoglobin"
-    }
-  },
-  "return_type": "entry"
-}
-```
-
-### Get Metadata for One PDB Entry
-
-```text
-Operation: getMetadata
-PDB ID: 4HHB
-```
-
-### Get Metadata for Multiple PDB Entries
-
-```text
-Operation: getMetadata
-PDB IDs:
-- 4HHB
-- 1CRN
-- 1BNA
-```
-
-Equivalent array:
-
-```json
-["4HHB", "1CRN", "1BNA"]
-```
-
-### Download a PDB File
-
-```text
-Operation: downloadFile
-PDB ID: 4HHB
-Format: pdb
-```
-
-### Download an mmCIF File
-
-```text
-Operation: downloadFile
-PDB ID: 4HHB
-Format: mmcif
-```
-
-## cURL Tests
-
-### Text Search
-
-```bash
-curl.exe -X POST "https://search.rcsb.org/rcsbsearch/v2/query" ^
-  -H "Content-Type: application/json" ^
-  --data-raw "{\"query\":{\"type\":\"group\",\"nodes\":[{\"type\":\"terminal\",\"service\":\"full_text\",\"parameters\":{\"value\":\"hemoglobin\"}}],\"logical_operator\":\"and\"},\"return_type\":\"entry\",\"request_options\":{\"paginate\":{\"start\":0,\"rows\":5}}}"
-```
-
-### Resolution Search
-
-```bash
-curl.exe -X POST "https://search.rcsb.org/rcsbsearch/v2/query" ^
-  -H "Content-Type: application/json" ^
-  --data-raw "{\"query\":{\"type\":\"group\",\"logical_operator\":\"and\",\"nodes\":[{\"type\":\"terminal\",\"service\":\"full_text\",\"parameters\":{\"value\":\"hemoglobin\"}},{\"type\":\"terminal\",\"service\":\"text\",\"parameters\":{\"attribute\":\"rcsb_entry_info.resolution_combined\",\"operator\":\"less_or_equal\",\"value\":2}}]},\"return_type\":\"entry\",\"request_options\":{\"paginate\":{\"start\":0,\"rows\":5},\"return_all_hits\":false,\"sort\":[{\"sort_by\":\"score\",\"direction\":\"desc\"}]}}"
-```
-
-### Get Metadata
-
-```bash
-curl.exe -L "https://data.rcsb.org/rest/v1/core/entry/4HHB"
-```
-
-### Download PDB File
-
-```bash
-curl.exe -L "https://files.rcsb.org/download/4HHB.pdb"
-```
-
-### Download mmCIF File
-
-```bash
-curl.exe -L "https://files.rcsb.org/download/4HHB.cif"
-```
-
-## Troubleshooting
-
-### Search Query Is Required
-
-For a text search, provide a value in `searchQuery`.
-
-Example:
-
-```text
-hemoglobin
-```
-
-### Max Resolution Is Required
-
-When using the `resolution` search type, provide `maxResolution`.
-
-Example:
-
-```text
-2
-```
-
-### Invalid Advanced Search Query
-
-For an advanced search, provide a valid RCSB search query in JSON format.
-
-### PDB ID Is Required
-
-For `getMetadata`, provide either a single `pdbId` or an array in `pdbIds`.
-
-For `downloadFile`, provide a single `pdbId`.
-
-### PDB Entry Not Found
-
-Check that the PDB identifier exists and is spelled correctly.
-
-Example of a valid PDB ID:
-
-```text
-4HHB
-```
-
-### Multiple Metadata Inputs
-
-When retrieving multiple entries, enter the IDs as an array of strings.
-
-Example:
-
-```json
-["4HHB", "1CRN", "1BNA"]
-```
-
-Do not enter all IDs as one comma-separated string.
-
-### File Download Error
-
-Verify that the PDB ID exists and select one of the supported formats:
-
-```text
-pdb
-mmcif
-```
-
-## Version History
-
-| Version | Date | Changes |
-| --- | --- | --- |
-| 1.0.0 | 2026-09-04 | Initial release. |
-
-**---**
-
-<!-- SECTION: examples -->
-## Example Workflow
+### Example Workflow
 
 ```fusion-workflow
 src: example.workflow.json
-title: Use RCSB PDB in a workflow
+title: Search, inspect and download protein structures
 ```
-<!-- /SECTION: examples -->
+
+### How it flows
+
+Each Manual Trigger runs one RCSB PDB node, to try every operation separately:
+
+1. **Text search** for `hemoglobin`.
+2. **Advanced search** with a custom JSON query.
+3. **Resolution search**: `hemoglobin` structures at ≤ 2.0 Å.
+4. **Get metadata** for `4HHB`, then for `4HHB`, `1CRN` and `1BNA`.
+5. **Download** `4HHB` in PDB and in mmCIF format.
+
+### Example Configurations
+
+#### Resolution search
+
+```json
+{
+  "operation": "search",
+  "searchType": "resolution",
+  "searchQuery": "hemoglobin",
+  "maxResolution": 2.0,
+  "rows": 5
+}
+```
+
+#### Advanced search
+
+```json
+{
+  "operation": "search",
+  "searchType": "advanced",
+  "searchQuery": "{ \"query\": { \"type\": \"terminal\", \"service\": \"full_text\", \"parameters\": { \"value\": \"hemoglobin\" } }, \"return_type\": \"entry\" }",
+  "rows": 5
+}
+```
+
+#### Download a file
+
+```json
+{
+  "operation": "downloadFile",
+  "pdbId": "4HHB",
+  "format": "mmcif"
+}
+```
+
+<!-- /SECTION: workflow-example -->
+
+---
+
+<!-- SECTION: troubleshooting -->
+## Troubleshooting
+
+### Common Issues
+
+#### `RCSB PDB search failed: Search query is required for text search`
+- **Cause:** `searchQuery` is empty with `searchType` `text`.
+- **Solution:** Fill in `searchQuery`, or send a string from the previous node.
+
+#### Results for `[object Object]`
+- **Cause:** `searchQuery` is empty and the input is an object; it is converted to text for `text` and `resolution` searches.
+- **Solution:** Set `searchQuery` explicitly, e.g. `{{ input.term }}`.
+
+#### `RCSB PDB search failed: Max resolution is required for resolution search`
+- **Cause:** `searchType` is `resolution` without `maxResolution`.
+- **Solution:** Set `maxResolution` (e.g. `2.0`).
+
+#### `RCSB PDB search failed: Invalid JSON query format`
+- **Cause:** `searchQuery` is not valid JSON with `searchType` `advanced`.
+- **Solution:** Validate the JSON; it must follow the RCSB Search API format (`query`, `return_type`…).
+
+#### `RCSB PDB getMetadata failed: PDB entry XXXX not found`
+- **Cause:** The PDB ID does not exist.
+- **Solution:** Check the ID on `https://www.rcsb.org`. With several IDs, unknown ones are skipped instead.
+
+#### `RCSB PDB downloadFile failed: Failed to download PDB file: 404`
+- **Cause:** Unknown ID, or the PDB format is not available for this entry (very large structures exist only in mmCIF).
+- **Solution:** Check the ID, or use `format: mmcif`.
+
+#### `RCSB PDB search failed: Unexpected end of JSON input`
+- **Cause:** No structure matches the query. RCSB answers with an empty response (HTTP 204), which the node cannot parse.
+- **Solution:** Broaden the search term or increase `maxResolution`.
+
+<!-- /SECTION: troubleshooting -->
+
+---
+
+<!-- SECTION: changelog -->
+## Changelog
+
+| Version | Date | Changes |
+|---------|------|---------|
+| 1.0.0 | 2026-11-17 | Documentation rewritten in the standard format: operations, search types, input resolution, output examples, and example workflow |
+| 1.0.0 | 2026-09-04 | Initial documentation |
+
+<!-- /SECTION: changelog -->
