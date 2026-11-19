@@ -1,0 +1,65 @@
+{
+  "name": "linear-trigger",
+  "nodes": [
+    {
+      "position": {
+        "x": 700,
+        "y": 100
+      },
+      "width": 72,
+      "height": 72,
+      "id": "lineartrig01",
+      "type": "trigger",
+      "data": {
+        "description": "Triggers workflow when events occur in Linear (issues, projects, teams, etc.)",
+        "showRunningStatus": true,
+        "name": "linear-trigger",
+        "label": "Linear Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        }
+      }
+    },
+    {
+      "position": {
+        "x": 1038,
+        "y": 77
+      },
+      "width": 256,
+      "height": 100,
+      "id": "log01",
+      "type": "display",
+      "data": {
+        "description": "Logs the input data to the console.",
+        "name": "log",
+        "label": "Log",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          }
+        }
+      }
+    }
+  ],
+  "connections": [
+    {
+      "type": "directed",
+      "id": "edge-lineartrig01-log01",
+      "source": "lineartrig01",
+      "target": "log01",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    }
+  ]
+}

@@ -1,469 +1,297 @@
 ---
 node_id: "vonage"
-
 title: "Vonage"
-
-description: "Send SMS messages, make voice calls, check account balance, and verify phone numbers using Vonage APIs."
-
-category: "Communication / Messaging"
-
+description: "Send SMS, make voice calls, check the account balance and verify phone numbers with the Vonage (Nexmo) APIs."
+category: "peer-only"
+subcategory: "Communication"
 version: "1.0.0"
-
 language: "en"
-
-last_updated: "2026-09-14"
-
+last_updated: "2026-11-19"
 author: "Fusion Team"
-
 tags:
-
-- vonage
-- nexmo
-- sms
-- voice
-- calls
-- verification
-- phone
-- messaging
-- api
-
+  - vonage
+  - nexmo
+  - sms
+  - voice
+  - verify
+  - otp
 related_nodes:
+  - messagebird
+  - seven
+  - infobip-sms
+---
 
-- http-request
-- function
-- if
-- infobip
+<!-- SECTION: overview -->
+# Vonage
+
+> **Category:** Peer-Only Integrations &nbsp;&nbsp;|&nbsp;&nbsp;**Type:** Action Node
+
+Send **SMS**, place **voice calls**, read the **account balance** and run **phone number verification (OTP)** with **Vonage** (formerly Nexmo). The node offers **5 operations**:
+
+| Resource | Operations |
+|----------|------------|
+| Messages | `sendSms` |
+| Voice | `makeCall` |
+| Verify | `verifyNumber`, `checkVerification` |
+| Account | `getBalance` |
+
+### Use Cases
+
+- **Notifications:** Send order updates and alerts by SMS.
+- **Two-factor authentication:** Send a verification code to a user and check the code they enter.
+- **Voice alerts:** Call an on-call engineer and play a spoken message when a critical alert fires.
+- **Budget monitoring:** Check the account balance before a large sending campaign.
+
+<!-- /SECTION: overview -->
 
 ---
 
-**# Vonage**
+<!-- SECTION: configuration -->
+## Configuration
 
-> **\*\*Category:\*\*** communication-nodes | **\*\*Type:\*\*** Action Node
+### Parameters
 
-Integrate **\*\*Vonage (Nexmo)\*\*** communication APIs into Fusion workflows.
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| `operation` | `enum` | Yes | Operation to perform (default `sendSms`). |
+| `apiKey` | `string` | Yes | Vonage API key. |
+| `apiSecret` | `string` | Yes | Vonage API secret. |
+| `jwt` | `string` | For `makeCall` | JWT generated from a Vonage application (Voice API). |
+| `from` | `string` | For `sendSms`, `makeCall` | Sender. For SMS: a name (e.g. `Vonage APIs`) or a number. For calls: a phone number (digits only or `+` prefix, up to 15 digits). |
+| `to` | `string` | For `sendSms`, `makeCall`, `verifyNumber` | Recipient number in international format (e.g. `212612345678`). |
+| `text` | `string` | For `sendSms` | SMS text. |
+| `answerUrl` | `string` | For `makeCall` | URL returning the NCCO (call script) to run when the call is answered. |
+| `brand` | `string` | No | Brand name shown in the verification message (default `Fusion`). |
+| `requestId` | `string` | For `checkVerification` | `request_id` returned by `verifyNumber`. |
+| `code` | `string` | For `checkVerification` | Code received by the user. |
 
-The **\*\*Vonage\*\*** node supports sending SMS messages, creating outbound voice calls, checking account balance, starting phone-number verification, and checking verification codes.
+> All parameters are shown for every operation in the builder; only the ones listed in the table below are used.
 
-The node uses Vonage API key and secret credentials for SMS, balance, and verification operations. Voice calls use a Vonage JWT supplied through the `jwt` configuration field.
+### Operations
 
-**### Supported Features**
+| Operation | Endpoint | Auth | Required |
+|-----------|----------|------|----------|
+| `sendSms` | `POST https://rest.nexmo.com/sms/json` | API key + secret | `from`, `to`, `text` |
+| `makeCall` | `POST https://api.nexmo.com/v1/calls` | JWT (Bearer) | `jwt`, `from`, `to`, `answerUrl` |
+| `getBalance` | `GET https://rest.nexmo.com/account/get-balance` | API key + secret | — |
+| `verifyNumber` | `POST https://api.nexmo.com/verify/json` | API key + secret | `to` (optional `brand`) |
+| `checkVerification` | `POST https://api.nexmo.com/verify/check/json` | API key + secret | `requestId`, `code` |
 
-\- Send SMS messages using the Vonage SMS API
+### Authentication
 
-\- Create outbound voice calls using the Vonage Voice API
+#### API key and secret
+1. Log in to the **Vonage API Dashboard**.
+2. Copy the **API key** and **API secret** shown on the home page.
+3. Paste them into `apiKey` and `apiSecret` (or store them in Fusion Secrets).
 
-\- Configure a voice-call NCCO answer URL
+#### JWT (for `makeCall`)
+1. In the dashboard, open **Applications → Create a new application**.
+2. Click **Generate public and private key** (a `private.key` file is downloaded) and enable **Voice**.
+3. Save, then copy the **Application ID**.
+4. Generate a JWT from the Application ID and the private key, with the **Vonage JWT generator** on developer.vonage.com or the CLI:
+   ```bash
+   npm i -g @vonage/cli
+   vonage jwt --app_id=<APP_ID> --private_key=./private.key
+   ```
+5. Paste the token into `jwt`.
 
-\- Check Vonage account balance
+> A JWT expires (often after 15 minutes). Generate a new one when calls fail with `401`.
 
-\- Start phone-number verification
+#### Answer URL (for `makeCall`)
+`answerUrl` must return an **NCCO** (JSON list of call actions). For a quick test, use Vonage's text-to-speech example:
+`https://raw.githubusercontent.com/nexmo-community/ncco-examples/gh-pages/text-to-speech.json`
 
-\- Check a verification code using a request ID
+> **Trial accounts** can only send SMS and calls to the numbers added under **Test numbers** in the dashboard.
 
-\- Configure a verification brand name
+<!-- /SECTION: configuration -->
 
-\- Use Vonage API key and API secret authentication
+---
 
-\- Use Bearer JWT authentication for voice calls
+<!-- SECTION: inputs-outputs -->
+## Inputs & Outputs
 
-\- Return parsed Vonage API JSON responses directly
+### Inputs
 
-**### Use Cases**
+| Input | Type | Description |
+|-------|------|-------------|
+| `input` | `object` | Triggers the node. Use upstream values in the parameters through expressions. |
 
-\- Send SMS notifications from workflows
+### Outputs
 
-\- Trigger automated outbound calls
+| Output | Type | Description |
+|--------|------|-------------|
+| `success` | `object` | JSON response of Vonage. |
+| `error` | `Error` | Emitted on missing fields or HTTP errors (`Vonage API Error: <status> <statusText> <body>`). |
 
-\- Verify user phone numbers
+> `sendSms`, `verifyNumber` and `checkVerification` answer with HTTP `200` even when Vonage refuses the request: check the `status` field (`"0"` = success) and `error_text` in the success output.
 
-\- Validate one-time verification codes
+### Output Examples
 
-\- Check Vonage account credit
-
-\- Build communication workflows combining SMS and voice
-
-**---**
-
-**## Configuration**
-
-**### Base Parameters**
-
-| Parameter | Type | Required | Default | Description |
-| --------- | ---- | -------- | ------- | ----------- |
-| `operation` | `enum` | ❌ No | `"sendSms"` | `sendSms`, `makeCall`, `getBalance`, `verifyNumber`, or `checkVerification`. |
-| `apiKey` | `string` | ✅ Yes | — | Vonage API key. |
-| `apiSecret` | `string` | ✅ Yes | — | Vonage API secret. |
-| `jwt` | `string` | ❌ No | — | Vonage JWT token for `makeCall`. |
-| `from` | `string` | ❌ No | — | Sender number or name. |
-| `to` | `string` | ❌ No | — | Recipient phone number. |
-| `text` | `string` | ❌ No | — | SMS message text. |
-| `answerUrl` | `string` | ❌ No | — | NCCO answer URL for voice calls. |
-| `brand` | `string` | ❌ No | — | Brand name for verification. |
-| `requestId` | `string` | ❌ No | — | Verification request ID. |
-| `code` | `string` | ❌ No | — | Verification code to check. |
-
-**### makeCall Parameters**
-
-| Parameter | Type | Required | Default | Description |
-| --------- | ---- | -------- | ------- | ----------- |
-| `jwt` | `string` | ✅ Yes | — | Bearer JWT used for Voice API authentication. |
-| `to` | `string` | ✅ Yes | — | Recipient phone number. |
-| `from` | `string` | ✅ Yes | — | Sender phone number. |
-| `answerUrl` | `string` | ✅ Yes | — | URL returning NCCO instructions. |
-
-**### verifyNumber Parameters**
-
-| Parameter | Type | Required | Default | Description |
-| --------- | ---- | -------- | ------- | ----------- |
-| `to` | `string` | ⚠️ Operation input | — | Number sent to Vonage as `number`. |
-| `brand` | `string` | ❌ No | `"Fusion"` | Verification brand. |
-
-**### checkVerification Parameters**
-
-| Parameter | Type | Required | Default | Description |
-| --------- | ---- | -------- | ------- | ----------- |
-| `requestId` | `string` | ⚠️ Operation input | — | Sent as `request_id`. |
-| `code` | `string` | ⚠️ Operation input | — | Verification code. |
-
-**---**
-
-**## Operations**
-
-| Operation | Endpoint | Method | Description |
-| --------- | -------- | ------ | ----------- |
-| `sendSms` | `https://rest.nexmo.com/sms/json` | `POST` | Send an SMS message. |
-| `makeCall` | `https://api.nexmo.com/v1/calls` | `POST` | Create an outbound voice call. |
-| `getBalance` | `https://rest.nexmo.com/account/get-balance` | `GET` | Retrieve account balance. |
-| `verifyNumber` | `https://api.nexmo.com/verify/json` | `POST` | Start phone-number verification. |
-| `checkVerification` | `https://api.nexmo.com/verify/check/json` | `POST` | Check a verification code. |
-
-**---**
-
-**## Request Body Construction**
-
-**### Send SMS**
+#### `sendSms`
 
 ```json
 {
-  "api_key": "YOUR_API_KEY",
-  "api_secret": "YOUR_API_SECRET",
-  "from": "Fusion",
-  "to": "212600000000",
-  "text": "Hello from Fusion"
-}
-```
-
-**### Make Call**
-
-```json
-{
-  "to": [
+  "message-count": "1",
+  "messages": [
     {
-      "type": "phone",
-      "number": "212600000000"
+      "to": "212612345678",
+      "message-id": "6918e69c-8923-42ed-b63d-ebb92b94688a",
+      "status": "0",
+      "remaining-balance": "0.30573000",
+      "message-price": "0.20258000",
+      "network": "60400"
     }
-  ],
-  "from": {
-    "type": "phone",
-    "number": "212500000000"
-  },
-  "answer_url": [
-    "https://example.com/answer"
   ]
 }
 ```
 
-Header:
-
-```text
-Authorization: Bearer <jwt>
-```
-
-**### Get Balance**
-
-```text
-GET https://rest.nexmo.com/account/get-balance?api_key=<apiKey>&api_secret=<apiSecret>
-```
-
-**### Verify Number**
+#### `makeCall`
 
 ```json
 {
-  "api_key": "YOUR_API_KEY",
-  "api_secret": "YOUR_API_SECRET",
-  "number": "212600000000",
-  "brand": "Fusion"
+  "status": "started",
+  "direction": "outbound",
+  "uuid": "c48c2eb0-2107-48fc-9c34-4ef2dc9635bc",
+  "conversation_uuid": "CON-0d8268b3-7720-42a7-866a-aaee36286d4f"
 }
 ```
 
-**### Check Verification**
+#### `getBalance`
+
+```json
+{ "value": 0.30573, "autoReload": false }
+```
+
+#### `verifyNumber`
+
+```json
+{ "request_id": "12c7d3f6b1e846d39fa8f498093bef0a", "status": "0" }
+```
+
+#### `checkVerification` (expired or already verified request)
 
 ```json
 {
-  "api_key": "YOUR_API_KEY",
-  "api_secret": "YOUR_API_SECRET",
-  "request_id": "REQUEST_ID",
-  "code": "1234"
+  "status": "6",
+  "error_text": "The Nexmo platform was unable to process this message for the following reason: Request '...' was not found or it has been verified already."
 }
 ```
 
-**---**
+<!-- /SECTION: inputs-outputs -->
 
-**## Inputs & Outputs**
+---
 
-**### Inputs**
+<!-- SECTION: workflow-example -->
+## Workflow Integration
 
-The node does not use incoming workflow data directly.
+### Example Workflow
 
-**### Outputs**
+```fusion-workflow
+src: example.workflow.json
+title: Use Vonage in a workflow
+```
 
-Successful requests return `response.json()` directly.
+### How it flows
 
-The node does not wrap or normalize successful API responses.
+1. **Manual Trigger:** Starts the workflow.
+2. **Vonage Node:** Runs the selected operation.
+3. **Log Node:** Displays the response.
 
-**---**
+### Example Configurations
 
-**## Configuration Examples**
-
-**### Send SMS**
+#### Send an SMS
 
 ```json
 {
   "operation": "sendSms",
-  "apiKey": "YOUR_VONAGE_API_KEY",
-  "apiSecret": "YOUR_VONAGE_API_SECRET",
+  "apiKey": "{{ secrets.VONAGE_API_KEY }}",
+  "apiSecret": "{{ secrets.VONAGE_API_SECRET }}",
   "from": "Fusion",
-  "to": "212600000000",
-  "text": "Hello from Fusion"
+  "to": "212612345678",
+  "text": "Your order {{ input.orderId }} has shipped."
 }
 ```
 
-**### Make Call**
+#### Voice call
 
 ```json
 {
   "operation": "makeCall",
-  "apiKey": "YOUR_VONAGE_API_KEY",
-  "apiSecret": "YOUR_VONAGE_API_SECRET",
-  "jwt": "YOUR_VONAGE_JWT",
-  "from": "212500000000",
-  "to": "212600000000",
-  "answerUrl": "https://example.com/answer"
+  "apiKey": "{{ secrets.VONAGE_API_KEY }}",
+  "apiSecret": "{{ secrets.VONAGE_API_SECRET }}",
+  "jwt": "{{ secrets.VONAGE_JWT }}",
+  "from": "212612345678",
+  "to": "212612345678",
+  "answerUrl": "https://example.com/ncco.json"
 }
 ```
 
-**### Get Balance**
+#### Verify a number (two steps)
 
 ```json
-{
-  "operation": "getBalance",
-  "apiKey": "YOUR_VONAGE_API_KEY",
-  "apiSecret": "YOUR_VONAGE_API_SECRET"
-}
+{ "operation": "verifyNumber", "to": "212612345678", "brand": "Fusion" }
 ```
-
-**### Verify Number**
 
 ```json
-{
-  "operation": "verifyNumber",
-  "apiKey": "YOUR_VONAGE_API_KEY",
-  "apiSecret": "YOUR_VONAGE_API_SECRET",
-  "to": "212600000000",
-  "brand": "Fusion"
-}
+{ "operation": "checkVerification", "requestId": "{{ input.request_id }}", "code": "{{ input.code }}" }
 ```
 
-**### Check Verification**
-
-```json
-{
-  "operation": "checkVerification",
-  "apiKey": "YOUR_VONAGE_API_KEY",
-  "apiSecret": "YOUR_VONAGE_API_SECRET",
-  "requestId": "VERIFY_REQUEST_ID",
-  "code": "1234"
-}
-```
-
-**---**
-
-**## Workflow Integration**
-
-**### Common Patterns**
-
-\- Trigger → Vonage (`sendSms`)
-
-\- Trigger → Vonage (`makeCall`)
-
-\- Form Submission → Vonage (`verifyNumber`)
-
-\- User Code Input → Vonage (`checkVerification`)
-
-\- Scheduler → Vonage (`getBalance`)
-
-\- Vonage → If
-
-**---**
-
-**## Error Handling**
-
-**### Generic API Error**
-
-```text
-Vonage API Error: <status> <statusText> <response body>
-```
-
-**### Missing JWT**
-
-```text
-JWT is required for makeCall
-```
-
-**### Missing Recipient Number**
-
-```text
-Recipient number is required for makeCall
-```
-
-**### Missing Sender Number**
-
-```text
-Sender number is required for makeCall
-```
-
-**### Missing Answer URL**
-
-```text
-answerUrl is required for makeCall
-```
-
-**### Unknown Operation**
-
-```text
-Unknown operation: <operation>
-```
-
-**---**
-
-**## Troubleshooting**
-
-**### Voice Call Validation Errors**
-
-The `makeCall` operation explicitly requires `jwt`, `to`, `from`, and `answerUrl`.
-
-Provide all four values before executing the node.
+<!-- /SECTION: workflow-example -->
 
 ---
 
-**### SMS Request Fails**
+<!-- SECTION: security -->
+## Security
 
-The `sendSms` operation does not perform explicit local validation for `from`, `to`, or `text`.
+> Store `apiKey`, `apiSecret` and `jwt` in Fusion's **Secrets** vault. Do not commit them into version control.
 
-Verify these values if Vonage rejects the request.
+- `getBalance` sends the key and secret in the URL query string: avoid logging the request URL.
+- Keep the application's `private.key` out of workflows and repositories; only the generated JWT is needed.
+- Each SMS, call and verification costs credit: protect workflows from loops and repeated triggers.
+
+<!-- /SECTION: security -->
 
 ---
 
-**### Verification Request Fails**
+<!-- SECTION: troubleshooting -->
+## Troubleshooting
 
-`verifyNumber` sends `to` directly as the API `number` field and falls back to `"Fusion"` when `brand` is missing.
+### Common Issues
+
+#### `JWT is required for makeCall` / `Recipient number is required...` / `Sender number is required...` / `answerUrl is required...`
+- **Cause:** A field needed by `makeCall` is empty.
+- **Solution:** Fill in `jwt`, `to`, `from` and `answerUrl`.
+
+#### `Vonage API Error: 400 Bad Request` with `"name":"number"` on `makeCall`
+- **Cause:** `from` or `to` is not a phone number (e.g. `Vonage APIs`).
+- **Solution:** Use a phone number of up to 15 digits for both fields.
+
+#### `Vonage API Error: 401` on `makeCall`
+- **Cause:** Expired or invalid JWT.
+- **Solution:** Generate a new JWT from the application ID and private key.
+
+#### `sendSms` returns `"status": "29"` (non-whitelisted destination)
+- **Cause:** Trial account sending to a number that is not a test number.
+- **Solution:** Add the number under **Test numbers**, or upgrade the account.
+
+#### `checkVerification` returns `"status": "6"`
+- **Cause:** The request expired, was cancelled, or was already verified.
+- **Solution:** Run `verifyNumber` again and check the new code within a few minutes.
+
+#### `checkVerification` returns `"status": "16"`
+- **Cause:** Wrong code.
+- **Solution:** Ask the user to enter the code again.
+
+<!-- /SECTION: troubleshooting -->
 
 ---
 
-**### Verification Check Fails**
-
-`requestId` and `code` are passed directly to Vonage without explicit local validation.
-
-Verify both values.
-
-**---**
-
-**## Security**
-
-SMS and verification operations send:
-
-```text
-api_key
-api_secret
-```
-
-in the JSON body.
-
-Balance lookup includes credentials directly in the URL query string:
-
-```text
-?api_key=<apiKey>&api_secret=<apiSecret>
-```
-
-Voice calls use:
-
-```text
-Authorization: Bearer <jwt>
-```
-
-For production workflows:
-
-\- Store `apiKey`, `apiSecret`, and `jwt` securely
-
-\- Avoid logging URLs containing balance credentials
-
-\- Avoid logging request bodies containing `api_secret`
-
-\- Avoid exposing Bearer JWT values
-
-\- Use trusted HTTPS `answerUrl` values
-
-**---**
-
-**## Notes**
-
-The default operation is:
-
-```text
-sendSms
-```
-
-The default verification brand is:
-
-```text
-Fusion
-```
-
-The node transforms:
-
-```text
-answerUrl → answer_url
-requestId → request_id
-```
-
-The node does not:
-
-\- Generate JWTs
-
-\- Refresh expired JWTs
-
-\- Generate NCCO content
-
-\- Host the answer URL
-
-\- Poll call status
-
-\- Poll verification status
-
-\- Retry failed requests
-
-\- Normalize phone numbers
-
-\- Validate E.164 formatting locally
-
-\- Transform successful API responses
-
-The `stop()` method performs no cleanup logic.
-
-**---**
-
-**## Changelog**
+<!-- SECTION: changelog -->
+## Changelog
 
 | Version | Date | Changes |
-| ------- | ---- | ------- |
-| 1.0.0 | 2026-09-14 | Initial release |
+|---------|------|---------|
+| 1.0.0 | 2026-11-19 | Full documentation: 5 operations, API key and JWT setup, answer URL, output examples, troubleshooting |
+| 1.0.0 | 2026-09-14 | Initial documentation |
+
+<!-- /SECTION: changelog -->
