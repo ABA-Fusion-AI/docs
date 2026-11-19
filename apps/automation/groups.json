@@ -754,6 +754,7 @@
           "mailchimp-transactional",
           "sendgrid",
           "smtp",
+          "smtp-reply",
           "aws-ses",
           "gmail",
           "outlook-mail",
