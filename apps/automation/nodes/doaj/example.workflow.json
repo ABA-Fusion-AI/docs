@@ -1,0 +1,71 @@
+{
+  "name": "Look up a journal in DOAJ",
+  "nodes": [
+    {
+      "id": "jzzld4vk9kpgh8fngz3147fw",
+      "type": "trigger",
+      "position": {
+        "x": 0,
+        "y": 100
+      },
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "description": "Triggers the workflow manually.",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": null
+          },
+          "error": {
+            "label": "Error",
+            "isConnectable": null
+          }
+        },
+        "showRunningStatus": false,
+        "defaultOutput": null
+      }
+    },
+    {
+      "id": "0861f4d2-fc43-4a34-9a2a-e16470ea947e",
+      "type": "action",
+      "position": {
+        "x": 260,
+        "y": 100
+      },
+      "data": {
+        "name": "doaj",
+        "label": "DOAJ",
+        "description": "Search Directory of Open Access Journals (DOAJ) to verify if a journal is truly open access.",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": null
+          },
+          "error": {
+            "label": "Error",
+            "isConnectable": null
+          }
+        },
+        "showRunningStatus": true,
+        "defaultOutput": null
+      }
+    }
+  ],
+  "connections": [
+    {
+      "id": "xy-edge__jzzld4vk9kpgh8fngz3147fwsuccess-0861f4d2-fc43-4a34-9a2a-e16470ea947einput",
+      "type": "directed",
+      "source": "jzzld4vk9kpgh8fngz3147fw",
+      "target": "0861f4d2-fc43-4a34-9a2a-e16470ea947e",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    }
+  ]
+}
