@@ -1,0 +1,105 @@
+{
+  "name": "Fetch L'Opinion sport articles",
+  "nodes": [
+    {
+      "id": "5d3da451-ef1e-4df7-b99f-1cd0eb2ced16",
+      "type": "trigger",
+      "position": {
+        "y": 100,
+        "x": 0
+      },
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "description": "Triggers the workflow manually.",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": null
+          },
+          "error": {
+            "label": "Error",
+            "isConnectable": null
+          }
+        },
+        "showRunningStatus": false,
+        "defaultOutput": null
+      }
+    },
+    {
+      "id": "af20f239-fb8c-4571-a7b3-0ed50740e20d",
+      "type": "action",
+      "position": {
+        "y": 100,
+        "x": 260
+      },
+      "data": {
+        "name": "lopinion",
+        "label": "L'Opinion",
+        "description": "Fetch news from L'Opinion RSS feed.",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": null
+          },
+          "error": {
+            "label": "Error",
+            "isConnectable": null
+          }
+        },
+        "showRunningStatus": true,
+        "defaultOutput": null
+      }
+    },
+    {
+      "id": "bello1qdbaa9y1onelvjj3wz",
+      "type": "display",
+      "position": {
+        "y": 100,
+        "x": 520
+      },
+      "data": {
+        "name": "log",
+        "label": "Log",
+        "description": "Logs the input data to the console.",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success",
+            "isConnectable": false
+          }
+        },
+        "showRunningStatus": false,
+        "defaultOutput": null
+      }
+    }
+  ],
+  "connections": [
+    {
+      "id": "xy-edge__v7697fds2h8hzmelcjv3o560success-n36l7t658t34drbwft33x72qinput",
+      "type": "directed",
+      "source": "5d3da451-ef1e-4df7-b99f-1cd0eb2ced16",
+      "target": "af20f239-fb8c-4571-a7b3-0ed50740e20d",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    },
+    {
+      "id": "xy-edge__af20f239-fb8c-4571-a7b3-0ed50740e20dsuccess-bello1qdbaa9y1onelvjj3wzinput",
+      "type": "directed",
+      "source": "af20f239-fb8c-4571-a7b3-0ed50740e20d",
+      "target": "bello1qdbaa9y1onelvjj3wz",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    }
+  ]
+}
