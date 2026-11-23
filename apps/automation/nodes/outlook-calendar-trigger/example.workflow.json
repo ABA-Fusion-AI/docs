@@ -1,0 +1,58 @@
+{
+  "name": "Listen with Outlook Calendar Trigger",
+  "nodes": [
+    {
+      "id": "trigger",
+      "type": "trigger",
+      "position": {
+        "x": 80,
+        "y": 160
+      },
+      "data": {
+        "name": "outlook-calendar-trigger",
+        "label": "Outlook Calendar Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        }
+      }
+    },
+    {
+      "id": "output",
+      "type": "display",
+      "position": {
+        "x": 300,
+        "y": 160
+      },
+      "data": {
+        "name": "log",
+        "label": "Result",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          }
+        }
+      }
+    }
+  ],
+  "connections": [
+    {
+      "id": "trigger-output",
+      "type": "directed",
+      "source": "trigger",
+      "target": "output",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    }
+  ]
+}
