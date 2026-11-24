@@ -1,0 +1,122 @@
+{
+  "name": "Trigger Pusher Event from Workflow",
+  "nodes": [
+    {
+      "id": "trigger",
+      "type": "trigger",
+      "position": {
+        "x": 100,
+        "y": 200
+      },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "parameters": {}
+      }
+    },
+    {
+      "id": "prepare-payload",
+      "type": "action",
+      "position": {
+        "x": 300,
+        "y": 200
+      },
+      "width": 72,
+      "height": 72,
+      "data": {
+        "name": "function",
+        "label": "Function",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "parameters": {
+          "code": "return {\n  userId: \"user_10\",\n  action: \"user-registered\",\n  name: \"Alex\",\n  role: \"admin\"\n};"
+        }
+      }
+    },
+    {
+      "id": "pusher-send",
+      "type": "action",
+      "position": {
+        "x": 520,
+        "y": 200
+      },
+      "width": 72,
+      "height": 72,
+      "data": {
+        "name": "pusher-action",
+        "label": "Pusher Send",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "parameters": {
+          "appId": "your-pusher-app-id",
+          "key": "your-pusher-key",
+          "secret": "your-pusher-secret",
+          "cluster": "eu",
+          "channel": "notifications",
+          "event": "user-registered",
+          "data": {
+            "$expr": "output",
+            "node": "Function",
+            "outputId": "success"
+          },
+          "channels": [
+            "notifications",
+            "audit-log"
+          ],
+          "useTLS": true
+        }
+      }
+    }
+  ],
+  "connections": [
+    {
+      "type": "directed",
+      "id": "edge-trigger-to-function",
+      "source": "trigger",
+      "target": "prepare-payload",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    },
+    {
+      "type": "directed",
+      "id": "edge-function-to-pusher",
+      "source": "prepare-payload",
+      "target": "pusher-send",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    }
+  ]
+}
