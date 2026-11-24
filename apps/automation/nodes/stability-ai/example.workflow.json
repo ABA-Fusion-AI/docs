@@ -1,0 +1,122 @@
+{
+  "name": "Generate Images with Stability AI",
+  "nodes": [
+    {
+      "id": "trigger",
+      "type": "trigger",
+      "position": {
+        "x": 100,
+        "y": 200
+      },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "parameters": {}
+      }
+    },
+    {
+      "id": "prepare-prompt",
+      "type": "action",
+      "position": {
+        "x": 300,
+        "y": 200
+      },
+      "width": 72,
+      "height": 72,
+      "data": {
+        "name": "function",
+        "label": "Prepare Prompt",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "parameters": {
+          "code": "return {\n  aiPrompt: \"A futuristic robotic Falcon with golden wings, octane render, 8k\",\n  ratio: \"16:9\"\n};"
+        }
+      }
+    },
+    {
+      "id": "stability-ai-node",
+      "type": "action",
+      "position": {
+        "x": 520,
+        "y": 200
+      },
+      "width": 72,
+      "height": 72,
+      "data": {
+        "name": "stability-ai",
+        "label": "Stability AI: Generate Images",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "parameters": {
+          "apiKey": "your-stability-ai-api-key",
+          "prompt": {
+            "$expr": "output",
+            "node": "Function",
+            "outputId": "success",
+            "path": "aiPrompt"
+          },
+          "aspectRatio": {
+            "$expr": "output",
+            "node": "Function",
+            "outputId": "success",
+            "path": "ratio"
+          },
+          "mode": "text-to-image",
+          "outputFormat": "png",
+          "seed": 42
+        }
+      }
+    }
+  ],
+  "connections": [
+    {
+      "type": "directed",
+      "id": "edge-trigger-to-function",
+      "source": "trigger",
+      "target": "prepare-prompt",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    },
+    {
+      "type": "directed",
+      "id": "edge-function-to-stability",
+      "source": "prepare-prompt",
+      "target": "stability-ai-node",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    }
+  ]
+}
