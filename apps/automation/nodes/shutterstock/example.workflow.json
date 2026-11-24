@@ -1,0 +1,155 @@
+{
+  "name": "Search and Access Shutterstock Media",
+  "nodes": [
+    {
+      "id": "trigger",
+      "type": "trigger",
+      "position": {
+        "x": 100,
+        "y": 200
+      },
+      "width": 64,
+      "height": 64,
+      "data": {
+        "name": "manual-trigger",
+        "label": "Manual Trigger",
+        "inputs": {},
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "parameters": {}
+      }
+    },
+    {
+      "id": "function-query",
+      "type": "action",
+      "position": {
+        "x": 280,
+        "y": 200
+      },
+      "width": 72,
+      "height": 72,
+      "data": {
+        "name": "function",
+        "label": "Prepare Query",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "parameters": {
+          "code": "return {\n  searchTerm: \"morocco\",\n  limit: 2\n};"
+        }
+      }
+    },
+    {
+      "id": "shutterstock-node",
+      "type": "action",
+      "position": {
+        "x": 500,
+        "y": 200
+      },
+      "width": 72,
+      "height": 72,
+      "data": {
+        "name": "shutterstock",
+        "label": "Shutterstock",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          },
+          "error": {
+            "label": "Error"
+          }
+        },
+        "parameters": {
+          "operation": "searchImages",
+          "accessToken": "your-shutterstock-access-token",
+          "searchParams": {
+            "query": {
+              "$expr": "output",
+              "node": "Function",
+              "outputId": "success",
+              "path": "searchTerm"
+            },
+            "per_page": {
+              "$expr": "output",
+              "node": "Function",
+              "outputId": "success",
+              "path": "limit"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "log-output",
+      "type": "display",
+      "position": {
+        "x": 720,
+        "y": 200
+      },
+      "width": 72,
+      "height": 72,
+      "data": {
+        "name": "log",
+        "label": "Log Results",
+        "inputs": {
+          "input": {
+            "label": "Input"
+          }
+        },
+        "outputs": {
+          "success": {
+            "label": "Success"
+          }
+        },
+        "parameters": {}
+      }
+    }
+  ],
+  "connections": [
+    {
+      "type": "directed",
+      "id": "edge-trigger-to-function",
+      "source": "trigger",
+      "target": "function-query",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    },
+    {
+      "type": "directed",
+      "id": "edge-function-to-shutterstock",
+      "source": "function-query",
+      "target": "shutterstock-node",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    },
+    {
+      "type": "directed",
+      "id": "edge-shutterstock-to-log",
+      "source": "shutterstock-node",
+      "target": "log-output",
+      "sourceHandle": "success",
+      "targetHandle": "input"
+    }
+  ]
+}
