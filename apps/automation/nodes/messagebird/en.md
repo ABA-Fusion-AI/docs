@@ -6,7 +6,7 @@ category: "peer-only"
 subcategory: "Communication"
 version: "1.0.0"
 language: "en"
-last_updated: "2026-11-19"
+last_updated: "2026-11-24"
 author: "Fusion Team"
 tags:
   - messagebird
@@ -88,7 +88,6 @@ Send **SMS** and **voice calls**, **look up phone numbers** and read your **SMS 
 - **SMS senders:** Add the sender you will use as `originator` under **SMS senders**, and register it for destination countries that require it.
 - **SMS destinations:** Enable each destination country (e.g. Morocco) in the **SMS destination settings**. A change takes up to a minute to apply.
 - **Voice sequence:** Create a voice sequence (e.g. *Start call* → *Say*), publish it, and copy its ID (`vsq_...`) and the **Step ID** of its first step (shown in the step's **Details** tab, e.g. `start`).
-- **Wallet:** `lookupNumber`, SMS and calls are paid from the organization wallet.
 
 <!-- /SECTION: configuration -->
 
@@ -203,7 +202,7 @@ title: Use MessageBird in a workflow
 
 > Store the Bird `apiKey` in Fusion's **Secrets** vault. Do not commit it into version control.
 
-- Each SMS, call and lookup costs credit: protect workflows that send messages from loops and repeated triggers.
+- Protect workflows that send messages or place calls from loops and repeated triggers.
 - Respect local rules on commercial messages and phone calls (consent, opt-out).
 
 <!-- /SECTION: security -->
@@ -239,9 +238,9 @@ title: Use MessageBird in a workflow
 - **Cause:** `originator` is not a phone number, or `voiceEntryNodeId` is empty.
 - **Solution:** Use a calling number in international format and the Step ID of the sequence's first step.
 
-#### `MessageBird API error (402)`: `LookupInsufficientBalance`
-- **Cause:** The organization wallet is empty.
-- **Solution:** Top up the wallet in **Billing**, then retry.
+#### `MessageBird API error (422)` on `getMessageById` (`message_id` must match ...)
+- **Cause:** `messageId` is not a Bird SMS message ID.
+- **Solution:** Use the `id` returned by `sendSms` or `listMessages` (e.g. `sms_01...`).
 
 <!-- /SECTION: troubleshooting -->
 
@@ -252,6 +251,7 @@ title: Use MessageBird in a workflow
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 1.0.0 | 2026-11-24 | Updated troubleshooting (getMessageById ID format) |
 | 1.0.0 | 2026-11-19 | Full documentation: 6 operations, parameters, workspace setup, output examples, troubleshooting |
 | 1.0.0 | 2026-08-04 | Initial documentation |
 
